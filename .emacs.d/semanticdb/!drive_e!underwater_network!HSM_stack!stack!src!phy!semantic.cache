@@ -1,0 +1,1679 @@
+;; Object phy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "phy/"
+  :tables (list 
+   (semanticdb-table "aquasent.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("boost/regex.hpp" include (:system-flag t) nil [1 27])
+            ("cassert" include (:system-flag t) nil [28 46])
+            ("string" include (:system-flag t) nil [47 64])
+            ("cstring" include (:system-flag t) nil [65 83])
+            ("string" include (:system-flag t) nil [84 101])
+            ("dap.h" include nil nil [102 118])
+            ("driver.h" include nil nil [119 138])
+            ("event.h" include nil nil [139 157])
+            ("hsm.h" include nil nil [158 174])
+            ("message.h" include nil nil [175 195])
+            ("packet.h" include nil nil [196 215])
+            ("schedule.h" include nil nil [216 237])
+            ("serial.h" include nil nil [238 257])
+            ("CURRENT_LAYER" variable (:constant-flag t) nil [267 280])
+            ("CURRENT_PID" variable (:constant-flag t) nil [291 302])
+            ("UPPER_LAYER" variable (:constant-flag t) nil [313 324])
+            ("UPPER_PID" variable (:constant-flag t) nil [335 344])
+            ("aquasent" type
+               (:members 
+                  ( ("std::string" using (:type ("std::string" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [370 388])
+                    ("serial::Serial" using (:type ("serial::Serial" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [389 410])
+                    ("msg::MsgSendDataReq" using (:type ("msg::MsgSendDataReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [437 463])
+                    ("msg::MsgSendAckReq" using (:type ("msg::MsgSendAckReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [464 489])
+                    ("msg::MsgSendDataRsp" using (:type ("msg::MsgSendDataRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [490 516])
+                    ("msg::MsgSendAckRsp" using (:type ("msg::MsgSendAckRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [517 542])
+                    ("msg::MsgRecvDataNtf" using (:type ("msg::MsgRecvDataNtf" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [543 569])
+                    ("msg::MsgTimeOut" using (:type ("msg::MsgTimeOut" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [570 592])
+                    ("msg::MsgSendAckNtf" using (:type ("msg::MsgSendAckNtf" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [593 618])
+                    ("pkt::Packet" using (:type ("pkt::Packet" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [620 638])
+                    ("correct_data" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [640 673])
+                    ("MODEM_ERROR" variable (:constant-flag t) (reparse-symbol namespacesubparts) [800 811])
+                    ("MODEM_DATA" variable (:constant-flag t) (reparse-symbol namespacesubparts) [881 891])
+                    ("MODEM_TDN" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1093 1102])
+                    ("SENDDATA_COMMAND" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1156 1172])
+                    ("COMMAND_RESPONSE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1426 1442])
+                    ("COMMAND_INDEX" type (:type "enum") (reparse-symbol namespacesubparts) [5929 6048])
+                    ("DATA_INDEX" type (:type "enum") (reparse-symbol namespacesubparts) [6050 6119])
+                    ("ERROR_INDEX" type (:type "enum") (reparse-symbol namespacesubparts) [6121 6188])
+                    ("command_string" variable
+                       (:pointer 1
+                        :dereference 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [6190 6324])
+                    ("hex_to_num" variable (:constant-flag t) (reparse-symbol namespacesubparts) [6334 6344])
+                    ("hex_table" variable
+                       (:dereference 1
+                        :typemodifiers ("static")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [6402 6548])
+                    ("EvBase" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("data_index" variable (:type ("DATA_INDEX" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6657 6679])
+                            ("result" variable (:type ("boost::cmatch" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6684 6705]))                          
+                        :superclasses 
+                          ( ("hsm::Event" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [6578 6708])
+                    ("EvTxCmd" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6710 6747])
+                    ("EvRxErr" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6748 6785])
+                    ("EvRxUnknow" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6786 6829])
+                    ("EvRxData" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6830 6869])
+                    ("EvRxDataBegin" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6870 6919])
+                    ("EvRxDataEnd" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6920 6965])
+                    ("EvRxRsp" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6966 7003])
+                    ("EvRxRspEnd" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7004 7047])
+                    ("EvRxTdn" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7048 7085])
+                    ("EvRxTxRsp" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7086 7127])
+                    ("Aquasent" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7129 7144])
+                    ("Parser" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7161 7168])
+                            ("Parse" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7184 7197]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7173 7198])
+                            ("SetCmd" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("cmd" variable (:type ("COMMAND_INDEX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7243 7261]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7224 7282])
+                            ("SetOwner" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("owner" variable
+                                       (:pointer 1
+                                        :type ("Aquasent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7308 7324]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7287 7344])
+                            ("Owner" function
+                               (:pointer 1
+                                :typemodifiers ("inline")
+                                :type ("Aquasent" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7349 7398])
+                            ("private" label nil (reparse-symbol classsubparts) [7399 7407])
+                            ("last_cmd_" variable (:type ("COMMAND_INDEX" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7412 7436])
+                            ("owner_" variable
+                               (:pointer 1
+                                :type ("Aquasent" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7442 7459]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7146 7462])
+                    ("Top" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7477 7488])
+                    ("Idle" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7489 7501])
+                    ("WaitRsp" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7502 7517])
+                    ("WaitTdn" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [7518 7533])
+                    ("Aquasent" type
+                       (:superclasses 
+                          ( ("drv::Driver" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7654 7661])
+                            ("Aquasent" function
+                               (:constructor-flag t
+                                :type ("Aquasent" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7666 7852])
+                            ("Init" function (:type "void") (reparse-symbol classsubparts) [7858 8308])
+                            ("SendDown" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgSendDataReq" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8328 8356]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8314 8357])
+                            ("SendUp" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("EvRxData" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8374 8396]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8362 8397])
+                            ("SendBackRsp" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("EvRxRsp" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8419 8440]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8402 8441])
+                            ("SendDataRsp" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("EvRxTdn" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8463 8484]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8446 8485])
+                            ("HandleMMRXA" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [8508 8512])
+                                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [8513 8517])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8518 8533]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8491 8534])
+                            ("HandleMMRXD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [8574 8578])
+                                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [8579 8583])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8584 8599]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8557 8600])
+                            ("Notify" function (:type "void") (reparse-symbol classsubparts) [8606 9299])
+                            ("Byte2Hex" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("hex" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9326 9336])
+                                    ("src" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9337 9353])
+                                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9354 9366]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9305 9558])
+                            ("Hex2Byte" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("dst" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9585 9595])
+                                    ("hex" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [9596 9612])
+                                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9613 9625]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9564 9786])
+                            ("private" label nil (reparse-symbol classsubparts) [9788 9796])
+                            ("GetSerial" function
+                               (:typemodifiers ("inline")
+                                :type ("Serial" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9801 9847])
+                            ("GetFd" function
+                               (:typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol classsubparts) [9852 9902])
+                            ("GetParser" function
+                               (:typemodifiers ("inline")
+                                :type ("Parser" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9907 9953])
+                            ("private" label nil (reparse-symbol classsubparts) [9954 9962])
+                            ("serial_" variable (:type ("Serial" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9967 9982])
+                            ("parser_" variable (:type ("Parser" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9987 10002]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7535 10005])
+                    ("Top" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil)
+                                          ("EvRxErr" type nil nil nil)
+                                          ("EvRxData" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10067 10131])
+                            ("HSM_DISCARD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxErr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10149 10157]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [10137 10158])
+                            ("HSM_WORK" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10197 10206])
+                                    ("" variable (:type ("Aquasent::SendUp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10208 10225]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [10188 10226])
+                            ("HSM_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10281 10296]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [10271 10297]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [10007 10320])
+                    ("Idle" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10363 10408])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10426 10441])
+                                    ("" variable (:type ("WaitRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10442 10450])
+                                    ("" variable (:type ("Aquasent::SendDown" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10452 10471]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [10414 10472]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [10321 10483])
+                    ("WaitRsp" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("EvRxRsp" type nil nil nil)
+                                          ("EvRxTxRsp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10532 10581])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10599 10607])
+                                    ("" variable (:type ("Idle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10608 10613])
+                                    ("" variable (:type ("Aquasent::SendBackRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10615 10637]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [10587 10638])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxTxRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10655 10665])
+                                    ("" variable (:type ("WaitTdn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10666 10674]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [10643 10675]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [10484 10695])
+                    ("WaitTdn" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("EvRxTdn" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10744 10782])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxTdn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10800 10808])
+                                    ("" variable (:type ("Idle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10809 10814])
+                                    ("" variable (:type ("Aquasent::SendDataRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10816 10838]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [10788 10839]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [10696 10842])
+                    ("Parse" function
+                       (:parent "Parser"
+                        :arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10863 10881]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10844 14190])
+                    ("SendDown" function
+                       (:parent "Aquasent"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14216 14247]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14192 15194])
+                    ("SendUp" function
+                       (:parent "Aquasent"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("EvRxData" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15218 15243]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15196 15683])
+                    ("SendBackRsp" function
+                       (:parent "Aquasent"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("EvRxRsp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15712 15736]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15685 15739])
+                    ("SendDataRsp" function
+                       (:parent "Aquasent"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("EvRxTdn" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15789 15813]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15762 15951])
+                    ("HandleMMRXA" function
+                       (:parent "Aquasent"
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [15980 15984])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [15985 15989])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15990 16009]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [15953 16276])
+                    ("HandleMMRXD" function
+                       (:parent "Aquasent"
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [16305 16309])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [16310 16314])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16315 16334]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16278 16743]))                  
+                :type "namespace")
+                nil [348 16769]))          
+    :file "aquasent.cc"
+    :pointmax 16797
+    :fsize 17876
+    :lastmodtime '(22519 21930 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MODEM_TDN" (spp-arg-list ("XX") 1102 . 1106) . ((symbol "XX" 1107 . 1109) (semantic-list "(MMTDN, \"\\\\$MMTDN,([0-9]+),([0-9]+)\")" 1109 . 1146)))
+          ("MODEM_DATA" (spp-arg-list ("XX") 891 . 895) . 
+              ((symbol "XX" 958 . 960) (semantic-list "(MMRXA, \"\\\\$MMRXA,([0-9]+),([0-9]+),(.*)\")" 960 . 1002) (symbol "XX" 1039 . 1041) (semantic-list "(MMRXD, \"\\\\$MMRXD,([0-9]+),([0-9]+),(.*)\")" 1041 . 1083)))
+          ("hex_to_num" (spp-arg-list ("c") 6344 . 6347) . ((semantic-list "((unsigned char)(c >= 'A' ? c - 'A' + 10 : c - '0'))" 6348 . 6400)))
+          ("UPPER_LAYER" . ((number "2" 325 . 326)))
+          ("MODEM_ERROR" (spp-arg-list ("XX") 811 . 815) . ((symbol "XX" 816 . 818) (semantic-list "(MMERR, \"\\\\$MMERR,([0-9]+)\")" 818 . 846)))
+          ("CURRENT_LAYER" . ((number "1" 281 . 282)))
+          ("UPPER_PID" . ((number "2" 345 . 346)))
+          ("CURRENT_PID" . ((number "2" 303 . 304)))
+          ("SENDDATA_COMMAND" (spp-arg-list ("XX") 1172 . 1176) . 
+              ((symbol "XX" 1233 . 1235) (semantic-list "(CMD_HHTXD, \"$HHTXD,%d,%d,%d,%s\\r\\n\", \"\\\\$MMOKY,HHTXD,([0-9]+)\")" 1235 . 1299) (symbol "XX" 1314 . 1316) (semantic-list "(CMD_HHTXA, \"$HHTXA,%d,%d,%d,%s\\r\\n\", \"\\\\$MMOKY,HHTXA,([0-9]+)\")" 1316 . 1380)))
+          ("COMMAND_RESPONSE" (spp-arg-list ("XX") 1442 . 1446) . 
+              ((symbol "XX" 1509 . 1511) (semantic-list "(CMD_HHCTD,         \"$HHCTD\\r\\n\",            \"\\\\$MMOKY,HHCTD\")" 1511 . 1573) (symbol "XX" 1596 . 1598) (semantic-list "(CMD_ESCAPE,        \"%s\\r\\n\",                \"\\\\$MMOKY\")" 1598 . 1654) (symbol "XX" 1683 . 1685) (semantic-list "(CMD_HHCRR_MID,     \"$HHCRR,MID\\r\\n\",        \"\\\\$MMOKY,HHCRR,MID,([0-9]+)\")" 1685 . 1760) (symbol "XX" 1770 . 1772) (semantic-list "(CMD_HHCRR_BD,      \"$HHCRR,BD\\r\\n\",         \"\\\\$MMOKY,HHCRR,BD,([0-9]+)\")" 1772 . 1846) (symbol "XX" 1857 . 1859) (semantic-list "(CMD_HHCRR_ECHO,    \"$HHCRR,ECHO\\r\\n\",       \"\\\\$MMOKY,HHCRR,ECHO,([0-9])\")" 1859 . 1934) (symbol "XX" 1944 . 1946) (semantic-list "(CMD_HHCRR_MMCHK,   \"$HHCRR,MMCHK\\r\\n\",      \"\\\\$MMOKY,HHCRR,MMCHK,([0-9])\")" 1946 . 2022) (symbol "XX" 2031 . 2033) (semantic-list "(CMD_HHCRR_PGAP,    \"$HHCRR,PGAP\\r\\n\",       \"\\\\$MMOKY,HHCRR,PGAP,([0-9]+)\")" 2033 . 2109) (symbol "XX" 2118 . 2120) (semantic-list "(CMD_HHCRR_ESC,     \"$HHCRR,ESC\\r\\n\",        \"\\\\$MMOKY,HHCRR,ESC,(.+)\")" 2120 . 2191) (symbol "XX" 2205 . 2207) (semantic-list "(CMD_HHCRR_RXFMT,   \"$HHCRR,RXFMT\\r\\n\",      \"\\\\$MMOKY,HHCRR,RXFMT,([0-9])\")" 2207 . 2283) (symbol "XX" 2292 . 2294) (semantic-list "(CMD_HHCRR_TXDONE,  \"$HHCRR,TXDONE\\r\\n\",     \"\\\\$MMOKY,HHCRR,TXDONE,([0-9])\")" 2294 . 2371) (symbol "XX" 2379 . 2381) (semantic-list "(CMD_HHCRR_UIMODE,  \"$HHCRR,UIMODE\\r\\n\",     \"\\\\$MMOKY,HHCRR,UIMODE,([A-Z]+)\")" 2381 . 2459) (symbol "XX" 2466 . 2468) (semantic-list "(CMD_HHCRR_CMDTERM, \"$HHCRR,CMDTERM\\r\\n\",    \"\\\\$MMOKY,HHCRR,CMDTERM,(.*)\")" 2468 . 2543) (symbol "XX" 2553 . 2555) (semantic-list "(CMD_HHCRR_DEBUG_R, \"$HHCRR,DEBUG,R\\r\\n\",    \"\\\\$MMOKY,HHCRR,DEBUG,(.*)\")" 2555 . 2628) (symbol "XX" 2640 . 2642) (semantic-list "(CMD_HHCRR_DEBUG_T, \"$HHCRR,DEBUG,T\\r\\n\",    \"\\\\$MMOKY,HHCRR,DEBUG,(.*)\")" 2642 . 2715) (symbol "XX" 2727 . 2729) (semantic-list "(CMD_HHCRR_ERRPKT,  \"$HHCRR,ERRPKT\\r\\n\",     \"\\\\$MMOKY,HHCRR,ERRPKT,([0-9]+)\")" 2729 . 2807) (symbol "XX" 2814 . 2816) (semantic-list "(CMD_HHCRR_RTC,     \"$HHCRR,RTC\\r\\n\",        \"\\\\$MMOKY,HHCRR,RTC,(.*)\")" 2816 . 2887) (symbol "XX" 2901 . 2903) (semantic-list "(CMD_HHCRR_GDT,     \"$HHCRR,GDT\\r\\n\",        \"\\\\$MMOKY,HHCRR,GDT,([0-9]+)\")" 2903 . 2978) (symbol "XX" 2988 . 2990) (semantic-list "(CMD_HHCRR_NUMCHL,  \"$HHCRR,NUMCHL\\r\\n\",     \"\\\\$MMOKY,HHCRR,NUMCHL,([0-9]+)\")" 2990 . 3068) (symbol "XX" 3075 . 3077) (semantic-list "(CMD_HHCRR_RXGAIN,  \"$HHCRR,RXGAIN\\r\\n\",     \"\\\\$MMOKY,HHCRR,RXGAIN,([0-9]+)\")" 3077 . 3155) (symbol "XX" 3162 . 3164) (semantic-list "(CMD_HHCRR_TXPWR,   \"$HHCRR,TXPWR\\r\\n\",      \"\\\\$MMOKY,HHCRR,TXPWR,([-0-9]+)\")" 3164 . 3242) (symbol "XX" 3249 . 3251) (semantic-list "(CMD_HHCRR_RXFLG,   \"$HHCRR,RXFLG\\r\\n\",      \"\\\\$MMOKY,HHCRR,RXFLG,(*)\")" 3251 . 3323) (symbol "XX" 3336 . 3338) (semantic-list "(CMD_HHCRR_TXDST,   \"$HHCRR,TXDST\\r\\n\",      \"\\\\$MMOKY,HHCRR,TXDST,([0-9]+)\")" 3338 . 3415) (symbol "XX" 3423 . 3425) (semantic-list "(CMD_HHCRR_TXMODE,  \"$HHCRR,TXMODE\\r\\n\",     \"\\\\$MMOKY,HHCRR,TXMODE,([0-9]+)\")" 3425 . 3503) (symbol "XX" 3510 . 3512) (semantic-list "(CMD_HHCRR_TXTYPE,  \"$HHCRR,TXTYPE\\r\\n\",     \"\\\\$MMOKY,HHCRR,TXTYPE,([0-9]+)\")" 3512 . 3590) (symbol "XX" 3597 . 3599) (semantic-list "(CMD_HHCRR_BIV_C5,  \"$HHCRR,BIV,C5\\r\\n\",     \"\\\\$MMOKY,HHCRR,BIV,C5,(.*)\")" 3599 . 3673) (symbol "XX" 3684 . 3686) (semantic-list "(CMD_HHCRR_BIV_C7,  \"$HHCRR,BIV,C7\\r\\n\",     \"\\\\$MMOKY,HHCRR,BIV,C7,(.*)\")" 3686 . 3760) (symbol "XX" 3771 . 3773) (semantic-list "(CMD_HHCRR_LSMODE,  \"$HHCRR,LSMODE\\r\\n\",     \"\\\\$MMOKY,HHCRR,LSMODE,([0-9])\")" 3773 . 3850) (symbol "XX" 3858 . 3860) (semantic-list "(CMD_HHCRR_TSTDB,   \"$HHCRR,TSTDB\\r\\n\",      \"\\\\$MMOKY,HHCRR,TSTDB,([0-9]+)\")" 3860 . 3937) (symbol "XX" 3945 . 3947) (semantic-list "(CMD_HHCRW_MID,     \"$HHCRW,MID,%d\\r\\n\",     \"\\\\$MMOKY,HHCRW,MID\")" 3947 . 4013) (symbol "XX" 4032 . 4034) (semantic-list "(CMD_HHCRW_BD,      \"$HHCRW,BD,%d\\r\\n\",      \"\\\\$MMOKY,HHCRW,BD\")" 4034 . 4099) (symbol "XX" 4119 . 4121) (semantic-list "(CMD_HHCRW_ECHO,    \"$HHCRW,ECHO,%d\\r\\n\",    \"\\\\$MMOKY,HHCRW,ECHO\")" 4121 . 4188) (symbol "XX" 4206 . 4208) (semantic-list "(CMD_HHCRW_MMCHK,   \"$HHCRW,MMCHK,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,MMCHK\")" 4208 . 4276) (symbol "XX" 4293 . 4295) (semantic-list "(CMD_HHCRW_PGAP,    \"$HHCRW,PGAP,%d\\r\\n\",    \"\\\\$MMOKY,HHCRW,PGAP\")" 4295 . 4362) (symbol "XX" 4380 . 4382) (semantic-list "(CMD_HHCRW_ESC,     \"$HHCRW,ESC,%s\\r\\n\",     \"\\\\$MMOKY,HHCRW,ESC\")" 4382 . 4448) (symbol "XX" 4467 . 4469) (semantic-list "(CMD_HHCRW_RXFMT,   \"$HHCRW,RXFMT,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,RXFMT\")" 4469 . 4537) (symbol "XX" 4554 . 4556) (semantic-list "(CMD_HHCRW_TXDONE,  \"$HHCRW,TXDONE,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,TXDONE\")" 4556 . 4625) (symbol "XX" 4641 . 4643) (semantic-list "(CMD_HHCRW_UIMODE,  \"$HHCRW,UIMODE,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,UIMODE\")" 4643 . 4712) (symbol "XX" 4728 . 4730) (semantic-list "(CMD_HHCRW_CMDTERM, \"$HHCRW,CMDTERM,%s\\r\\n\", \"\\\\$MMOKY,HHCRW,CMDTERM\")" 4730 . 4800) (symbol "XX" 4815 . 4817) (semantic-list "(CMD_HHCRW_DEBUG_R, \"$HHCRW,DEBUG,R,%d\\r\\n\", \"\\\\$MMOKY,HHCRW,DEBUG\")" 4817 . 4885) (symbol "XX" 4902 . 4904) (semantic-list "(CMD_HHCRW_DEBUG_T, \"$HHCRW,DEBUG,T,%d\\r\\n\", \"\\\\$MMOKY,HHCRW,DEBUG\")" 4904 . 4972) (symbol "XX" 4989 . 4991) (semantic-list "(CMD_HHCRW_RTC,     \"$HHCRW,RTC,%s\\r\\n\",     \"\\\\$MMOKY,HHCRW,RTC\")" 4991 . 5057) (symbol "XX" 5076 . 5078) (semantic-list "(CMD_HHCRW_GDT,     \"$HHCRW,GDT,%d\\r\\n\",     \"\\\\$MMOKY,HHCRW,GDT\")" 5078 . 5144) (symbol "XX" 5163 . 5165) (semantic-list "(CMD_HHCRW_RXGAIN,  \"$HHCRW,RXGAIN,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,RXGAIN\")" 5165 . 5234) (symbol "XX" 5250 . 5252) (semantic-list "(CMD_HHCRW_TXPWR,   \"$HHCRW,TXPWR,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,TXPWR\")" 5252 . 5320) (symbol "XX" 5337 . 5339) (semantic-list "(CMD_HHCRW_RXFLG,   \"$HHCRW,RXFLG,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,RXFLG\")" 5339 . 5407) (symbol "XX" 5424 . 5426) (semantic-list "(CMD_HHCRW_TXDST,   \"$HHCRW,TXDST,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,TXDST\")" 5426 . 5494) (symbol "XX" 5511 . 5513) (semantic-list "(CMD_HHCRW_TXMODE,  \"$HHCRW,TXMODE,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,TXMODE\")" 5513 . 5582) (symbol "XX" 5598 . 5600) (semantic-list "(CMD_HHCRW_TXTYPE,  \"$HHCRW,TXTYPE,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,TXTYPE\")" 5600 . 5669) (symbol "XX" 5685 . 5687) (semantic-list "(CMD_HHCRW_LSMODE,  \"$HHCRW,LSMODE,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,LSMODE\")" 5687 . 5756) (symbol "XX" 5772 . 5774) (semantic-list "(CMD_HHCRW_TSTDB,   \"$HHCRW,TSTDB,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,TSTDB\")" 5774 . 5842) (symbol "XX" 5859 . 5861) (semantic-list "(CMD_HHCRW_FXN,     \"$HHCRW,FXN,%s\\r\\n\",     \"\\\\$MMOKY,HHCRW,FXN\")" 5861 . 5927)))
+          )
+
+    )
+   (semanticdb-table "simulate.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("netdb.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("sys/socket.h" include (:system-flag t) nil [40 63])
+            ("sys/types.h" include (:system-flag t) nil [64 86])
+            ("unistd.h" include (:system-flag t) nil [87 106])
+            ("driver.h" include nil nil [108 127])
+            ("schedule.h" include nil nil [128 149])
+            ("sim_channel.h" include nil nil [150 174])
+            ("UPPER_LAYER" variable (:constant-flag t) nil [184 195])
+            ("UPPER_PROTOCOL" variable (:constant-flag t) nil [206 220])
+            ("CURRENT_LAYER" variable (:constant-flag t) nil [231 244])
+            ("CURRENT_PROTOCOL" variable (:constant-flag t) nil [255 271])
+            ("sim_channel" type
+               (:members 
+                  ( ("msg::MsgSendDataReq" using (:type ("msg::MsgSendDataReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [300 326])
+                    ("msg::MsgSendAckReq" using (:type ("msg::MsgSendAckReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [327 352])
+                    ("msg::MsgSendDataRsp" using (:type ("msg::MsgSendDataRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [353 379])
+                    ("msg::MsgSendAckRsp" using (:type ("msg::MsgSendAckRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [380 405])
+                    ("msg::MsgRecvDataNtf" using (:type ("msg::MsgRecvDataNtf" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [406 432])
+                    ("msg::MsgTimeOut" using (:type ("msg::MsgTimeOut" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [433 455])
+                    ("msg::MsgPosReq" using (:type ("msg::MsgPosReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [456 477])
+                    ("msg::MsgPosRsp" using (:type ("msg::MsgPosRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [478 499])
+                    ("pkt::Packet" using (:type ("pkt::Packet" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [501 519])
+                    ("msg::Position" using (:type ("msg::Position" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [520 540])
+                    ("PacketType" type
+                       (:members 
+                          ( ("PACKET_TYPE_DATA" variable
+                               (:constant-flag t
+                                :default-value (583 584)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [564 584])
+                            ("PACKET_TYPE_POSITION_REQ" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [590 615])
+                            ("PACKET_TYPE_POSITION_RSP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [620 645])
+                            ("PACKET_TYPE_ENERGY_REQ" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [650 673])
+                            ("PACKET_TYPE_ENERGY_RSP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [678 701])
+                            ("PACKET_TYPE_STATE_REQ" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [706 728])
+                            ("PACKET_TYPE_STATE_RSP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [733 755]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [542 758])
+                    ("Top" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [760 771])
+                    ("Idle" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [772 784])
+                    ("WaitRsp" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [785 800])
+                    ("SimulateChannelHeader" type
+                       (:members 
+                          ( ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [837 850]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [802 853])
+                    ("SimulateChannel" type
+                       (:superclasses 
+                          ( ("drv::Driver" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [954 961])
+                            ("SimulateChannel" function
+                               (:constructor-flag t
+                                :type ("SimulateChannel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [966 1010])
+                            ("Init" function (:type "void") (reparse-symbol classsubparts) [1015 1270])
+                            ("SendDownData" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgSendDataReq" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1294 1322]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1276 1323])
+                            ("SendDownAck" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgSendAckReq" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1345 1372]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1328 1373])
+                            ("SendPosReq" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1378 1396])
+                            ("RespondPosReq" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgPosReq" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1420 1443]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1401 1444])
+                            ("SendUp" function
+                               (:arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgRecvDataNtf" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1462 1493]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1450 1556])
+                            ("HandleDataNtf" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("IOData" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1581 1601]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1562 1602])
+                            ("HandlePosRsp" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("IOData" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1625 1645]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1607 1646])
+                            ("Notify" function (:type "void") (reparse-symbol classsubparts) [1652 2199])
+                            ("GetChannel" function
+                               (:typemodifiers ("inline")
+                                :type ("SimChannel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2205 2257])
+                            ("GetFd" function
+                               (:typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2262 2313])
+                            ("private" label nil (reparse-symbol classsubparts) [2314 2322])
+                            ("channel_" variable (:type ("SimChannel" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2327 2347])
+                            ("position_" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2353 2372])
+                            ("has_req_for_pos_" variable (:type "bool") (reparse-symbol classsubparts) [2378 2400])
+                            ("pos_req_" variable (:type "char") (reparse-symbol classsubparts) [2406 2420]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [855 2423])
+                    ("Top" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil)
+                                          ("MsgRecvDataNtf" type nil nil nil)
+                                          ("MsgPosReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2485 2557])
+                            ("HSM_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2573 2588]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2563 2589])
+                            ("HSM_WORK" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgRecvDataNtf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2603 2618])
+                                    ("" variable (:type ("SimulateChannel::SendUp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2620 2644]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2594 2645])
+                            ("HSM_WORK" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgPosReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2659 2669])
+                                    ("" variable (:type ("SimulateChannel::RespondPosReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2671 2702]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2650 2703]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2425 2706])
+                    ("Idle" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil)
+                                          ("MsgSendAckReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2750 2810])
+                            ("HSM_WORK" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2825 2840])
+                                    ("" variable (:type ("SimulateChannel::SendDownData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2842 2872]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2816 2873])
+                            ("HSM_WORK" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendAckReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2887 2901])
+                                    ("" variable (:type ("SimulateChannel::SendDownAck" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2903 2932]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2878 2933]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2708 2936])
+                    ("Busy" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2938 2978])
+                    ("Tx" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2980 3016])
+                    ("Rx" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3017 3053])
+                    ("Sleep" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3054 3093])
+                    ("SendDownData" function
+                       (:parent "SimulateChannel"
+                        :arguments 
+                          ( ("req" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3130 3161]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3095 3591])
+                    ("SendDownAck" function
+                       (:parent "SimulateChannel"
+                        :arguments 
+                          ( ("req" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgSendAckReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3627 3657]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3593 4085])
+                    ("RespondPosReq" function
+                       (:parent "SimulateChannel"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgPosReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4123 4146]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4087 4497])
+                    ("SendPosReq" function
+                       (:parent "SimulateChannel"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4499 4797])
+                    ("HandleDataNtf" function
+                       (:parent "SimulateChannel"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("IOData" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4835 4859]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4799 5083])
+                    ("HandlePosRsp" function
+                       (:parent "SimulateChannel"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("IOData" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5120 5144]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5085 5707]))                  
+                :type "namespace")
+                nil [275 5778]))          
+    :file "simulate.cc"
+    :pointmax 5779
+    :fsize 5811
+    :lastmodtime '(22503 52666 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UPPER_LAYER" . ((number "2" 196 . 197)))
+          ("CURRENT_LAYER" . ((number "1" 245 . 246)))
+          ("CURRENT_PROTOCOL" . ((number "1" 272 . 273)))
+          ("UPPER_PROTOCOL" . ((number "2" 221 . 222)))
+          )
+
+    )
+   (semanticdb-table "clisocket_sim.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("netdb.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("sys/socket.h" include (:system-flag t) nil [40 63])
+            ("sys/types.h" include (:system-flag t) nil [64 86])
+            ("unistd.h" include (:system-flag t) nil [87 106])
+            ("driver.h" include nil nil [108 127])
+            ("schedule.h" include nil nil [128 149])
+            ("clientsocket.h" include nil nil [150 175])
+            ("boost/regex.hpp" include (:system-flag t) nil [177 203])
+            ("cassert" include (:system-flag t) nil [204 222])
+            ("string" include (:system-flag t) nil [223 240])
+            ("cstring" include (:system-flag t) nil [241 259])
+            ("string" include (:system-flag t) nil [260 277])
+            ("dap.h" include nil nil [278 294])
+            ("driver.h" include nil nil [295 314])
+            ("event.h" include nil nil [315 333])
+            ("hsm.h" include nil nil [334 350])
+            ("message.h" include nil nil [351 371])
+            ("packet.h" include nil nil [372 391])
+            ("schedule.h" include nil nil [392 413])
+            ("stdlib.h" include (:system-flag t) nil [414 433])
+            ("UPPER_LAYER" variable (:constant-flag t) nil [444 455])
+            ("UPPER_PID" variable (:constant-flag t) nil [466 475])
+            ("CURRENT_LAYER" variable (:constant-flag t) nil [486 499])
+            ("CURRENT_PID" variable (:constant-flag t) nil [510 521])
+            ("PER_MSG_SIZE" variable (:constant-flag t) nil [532 544])
+            ("clisocket_sim" type
+               (:members 
+                  ( ("msg::MsgSendDataReq" using (:type ("msg::MsgSendDataReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [578 604])
+                    ("msg::MsgSendAckReq" using (:type ("msg::MsgSendAckReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [605 630])
+                    ("msg::MsgSendDataRsp" using (:type ("msg::MsgSendDataRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [631 657])
+                    ("msg::MsgSendAckRsp" using (:type ("msg::MsgSendAckRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [658 683])
+                    ("msg::MsgRecvDataNtf" using (:type ("msg::MsgRecvDataNtf" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [684 710])
+                    ("msg::MsgTimeOut" using (:type ("msg::MsgTimeOut" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [711 733])
+                    ("pkt::Packet" using (:type ("pkt::Packet" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [785 803])
+                    ("EvBase" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("data_index" variable (:type ("DATA_INDEX" type (:type "class") nil nil)) (reparse-symbol classsubparts) [975 997])
+                            ("result" variable (:type ("boost::cmatch" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1006 1027]))                          
+                        :superclasses 
+                          ( ("hsm::Event" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [884 1034])
+                    ("EvRxData" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("msg_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1089 1104])
+                            ("msg" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [1113 1123]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1040 1130])
+                    ("EvRxErr" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1135 1181])
+                    ("EvRxConNtf" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1186 1238])
+                    ("EvTxSetting" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1243 1297])
+                    ("EvRxSettingRsp" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1302 1362])
+                    ("EvRxSettingAllRsp" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1367 1433])
+                    ("EvDataRsp" type
+                       (:superclasses 
+                          ( ("EvBase" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1438 1488])
+                    ("Top" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1509 1520])
+                    ("Idle" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1525 1537])
+                    ("WaitDataRsp" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1542 1561])
+                    ("SendSettingReq" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1566 1588])
+                    ("WaitSettingRsp" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1593 1615])
+                    ("WaitConNtf" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1620 1638])
+                    ("ClisocketSim" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1644 1663])
+                    ("MyParser" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1689 1696])
+                            ("Parse" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1716 1729]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1705 1730])
+                            ("SetOwner" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ClisocketSim" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1760 1784]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1739 1799])
+                            ("Owner" function
+                               (:pointer 1
+                                :typemodifiers ("inline")
+                                :type ("ClisocketSim" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1809 1861])
+                            ("private" label nil (reparse-symbol classsubparts) [1868 1876])
+                            ("owner_" variable
+                               (:pointer 1
+                                :type ("ClisocketSim" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1885 1906]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1669 1914])
+                    ("ClisocketSim" type
+                       (:superclasses 
+                          ( ("drv::Driver" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2001 2008])
+                            ("ClisocketSim" function
+                               (:constructor-flag t
+                                :type ("ClisocketSim" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2013 2914])
+                            ("Init" function (:type "void") (reparse-symbol classsubparts) [2920 3468])
+                            ("SendUp" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("EvRxData" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3486 3508]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3474 3509])
+                            ("SendDownSetting1" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("EvRxConNtf" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3536 3560]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3514 3561])
+                            ("SendDownSetting2" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("EvRxSettingRsp" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3588 3616]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3566 3617])
+                            ("SendDownData" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgSendDataReq" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3640 3668]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3622 3669])
+                            ("SendDataRsp" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("EvDataRsp" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3691 3712]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3674 3713])
+                            ("Notify" function (:type "void") (reparse-symbol classsubparts) [3719 3971])
+                            ("GetClientsocket" function
+                               (:typemodifiers ("inline")
+                                :type ("ClientSocket" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3977 4040])
+                            ("GetFd" function
+                               (:typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol classsubparts) [4045 4101])
+                            ("private" label nil (reparse-symbol classsubparts) [4177 4185])
+                            ("clientsocket_" variable (:type ("ClientSocket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4190 4217])
+                            ("parser_" variable (:type ("MyParser" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4222 4239])
+                            ("TimeTxSettingREQ" variable (:type "int") (reparse-symbol classsubparts) [4244 4265])
+                            ("sampleRate" variable (:type "int") (reparse-symbol classsubparts) [4270 4285])
+                            ("gain" variable (:type "unsigned short") (reparse-symbol classsubparts) [4290 4310])
+                            ("cyclePrefixMs" variable (:type "short") (reparse-symbol classsubparts) [4315 4335])
+                            ("correlateThreadShort" variable (:type "unsigned short") (reparse-symbol classsubparts) [4340 4376])
+                            ("transmitAmp" variable (:type "float") (reparse-symbol classsubparts) [4381 4399])
+                            ("msgLenMax" variable (:type "int") (reparse-symbol classsubparts) [4404 4418]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1917 4504])
+                    ("Top" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("EvRxData" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4584 4623])
+                            ("HSM_WORK" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4706 4715])
+                                    ("" variable (:type ("ClisocketSim::SendUp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4717 4738]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [4697 4739])
+                            ("HSM_DISCARD" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxErr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4760 4768]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [4748 4769]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4510 4841])
+                    ("WaitConNtf" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("EvRxConNtf" type nil nil nil)
+                                          ("EvTxSetting" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4904 4958])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxConNtf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4980 4991])
+                                    ("" variable (:type ("SendSettingReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4992 5007])
+                                    ("" variable (:type ("ClisocketSim::SendDownSetting1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5009 5040]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [4968 5041])
+                            ("HSM_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvTxSetting" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5154 5166]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5144 5167]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4847 5192])
+                    ("SendSettingReq" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("EvTxSetting" type nil nil nil)
+                                          ("EvRxSettingRsp" type nil nil nil)
+                                          ("EvRxSettingAllRsp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5263 5340])
+                            ("HSM_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxSettingRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5359 5374]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5349 5375])
+                            ("HSM_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxSettingAllRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5419 5437]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5409 5438])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvTxSetting" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5459 5471])
+                                    ("" variable (:type ("WaitSettingRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5472 5487]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5447 5488]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [5198 5496])
+                    ("WaitSettingRsp" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("EvTxSetting" type nil nil nil)
+                                          ("EvRxSettingRsp" type nil nil nil)
+                                          ("EvRxSettingAllRsp" type nil nil nil)
+                                          ("MsgSendDataReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5568 5661])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxSettingRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5683 5698])
+                                    ("" variable (:type ("SendSettingReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5699 5714])
+                                    ("" variable (:type ("ClisocketSim::SendDownSetting2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5716 5747]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5671 5748])
+                            ("HSM_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvTxSetting" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5767 5779]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5757 5780])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvRxSettingAllRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5801 5819])
+                                    ("" variable (:type ("Idle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5820 5825]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5789 5826])
+                            ("HSM_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5845 5860]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5835 5861]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [5502 5886])
+                    ("Idle" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5942 5987])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6009 6024])
+                                    ("" variable (:type ("WaitDataRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6025 6037])
+                                    ("" variable (:type ("ClisocketSim::SendDownData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6039 6066]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5997 6067]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [5892 6141])
+                    ("WaitDataRsp" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("EvDataRsp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "hsm_vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [6207 6247])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EvDataRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6268 6278])
+                                    ("" variable (:type ("Idle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6279 6284])
+                                    ("" variable (:type ("ClisocketSim::SendDataRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6286 6312]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [6256 6313]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6147 6320])
+                    ("Busy" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6326 6374])
+                    ("Tx" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6380 6424])
+                    ("Rx" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6429 6473])
+                    ("Sleep" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6478 6525])
+                    ("Parse" function
+                       (:parent "MyParser"
+                        :arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6553 6571]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6532 8700])
+                    ("SendUp" function
+                       (:parent "ClisocketSim"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("EvRxData" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8736 8761]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8706 9044])
+                    ("SendDownSetting1" function
+                       (:parent "ClisocketSim"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("EvRxConNtf" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9090 9114]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9050 10052])
+                    ("SendDownSetting2" function
+                       (:parent "ClisocketSim"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("EvRxSettingRsp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10098 10126]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10058 11544])
+                    ("SendDownData" function
+                       (:parent "ClisocketSim"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11586 11617]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11550 12670])
+                    ("SendDataRsp" function
+                       (:parent "ClisocketSim"
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("EvDataRsp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12711 12732]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12676 13268]))                  
+                :type "namespace")
+                nil [551 13339]))          
+    :file "clisocket_sim.cc"
+    :pointmax 13340
+    :fsize 13680
+    :lastmodtime '(22520 54671 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PER_MSG_SIZE" . ((number "1032" 545 . 549)))
+          ("UPPER_LAYER" . ((number "2" 456 . 457)))
+          ("UPPER_PID" . ((number "2" 476 . 477)))
+          ("CURRENT_LAYER" . ((number "1" 500 . 501)))
+          ("CURRENT_PID" . ((number "2" 522 . 523)))
+          )
+
+    )
+   )
+  :file "!drive_e!underwater_network!HSM_stack!stack!src!phy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

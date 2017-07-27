@@ -1,0 +1,263 @@
+;; Object testconfmodule/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testconfmodule/"
+  :tables
+  (list
+    (semanticdb-table "config"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "config"
+      :pointmax 170
+      :fsize 169
+      :lastmodtime '(22792 11947 342554 303000)
+      :unmatched-syntax '((string 110 . 169) (punctuation 109 . 110) (symbol 95 . 109) (string 54 . 94) (punctuation 53 . 54) (symbol 41 . 53) (symbol 16 . 40) (punctuation 15 . 16) (symbol 1 . 15) (string 110 . 161) (punctuation 109 . 110) (symbol 95 . 109) (string 54 . 94) (punctuation 53 . 54) (symbol 41 . 53) (symbol 16 . 40) (punctuation 15 . 16) (symbol 1 . 15) (string 110 . 166) (punctuation 109 . 110) (symbol 95 . 109) (string 54 . 94) (punctuation 53 . 54) (symbol 41 . 53) (symbol 16 . 40) (punctuation 15 . 16) (symbol 1 . 15) (string 102 . 158) (punctuation 101 . 102) (symbol 87 . 101) (string 54 . 86) (punctuation 53 . 54) (symbol 41 . 53) (symbol 16 . 40) (punctuation 15 . 16) (symbol 1 . 15) (string 103 . 159) (punctuation 102 . 103) (symbol 88 . 102) (string 50 . 87) (punctuation 49 . 50) (symbol 37 . 49) (symbol 16 . 36) (punctuation 15 . 16) (symbol 1 . 15) (string 99 . 155) (punctuation 98 . 99) (symbol 84 . 98) (string 46 . 83) (punctuation 45 . 46) (symbol 33 . 45) (symbol 16 . 32) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 160) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15)))
+    (semanticdb-table "ngx_http_testconf_module.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [1 24])
+            ("ngx_core.h" include (:system-flag t) nil [25 46])
+            ("ngx_http.h" include (:system-flag t) nil [47 68])
+            ("ngx_myconfig_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("my_config_str" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [89 113])
+                          ("my_config_num" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [116 140]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [70 158])
+            ("ngx_http_testconf_conf_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("my_str" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [179 199])
+                          ("my_num" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [202 222])
+                          ("my_flag" variable (:type ("ngx_flag_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [225 246])
+                          ("my_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [249 270])
+                          ("my_str_array" variable
+                             (:pointer 1
+                              :type ("ngx_array_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [273 299])
+                          ("my_keyval" variable
+                             (:pointer 1
+                              :type ("ngx_array_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [302 325])
+                          ("my_off" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [328 348])
+                          ("my_msec" variable (:type ("ngx_msec_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [351 372])
+                          ("my_sec" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [375 395])
+                          ("my_bufs" variable (:type ("ngx_bufs_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [398 419])
+                          ("my_enum_seq" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [422 447])
+                          ("my_bitmask" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [450 474])
+                          ("my_access" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [477 500])
+                          ("my_path" variable
+                             (:pointer 1
+                              :type ("ngx_path_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [503 524])
+                          ("my_conf" variable (:type ("ngx_myconfig_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [528 551]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [160 580])
+            ("globalConf" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("ngx_http_testconf_conf_t" type (:type "class") nil nil))
+                nil [582 626])
+            ("ngx_http_log_config_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [673 695]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [628 2301])
+            ("ngx_conf_set_myconfig" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2339 2354])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2355 2374])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2375 2386]))                  
+                :type "char")
+                nil [2304 2779])
+            ("ngx_log_config" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2809 2824])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2825 2844])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2845 2856]))                  
+                :type "char")
+                nil [2781 3101])
+            ("test_enums" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  { ngx_string(\"apple\"), 1},
+  { ngx_string(\"banana\"), 2},
+  { ngx_string(\"orange\"), 3},
+  {ngx_null_string, 0}
+}"
+                :type ("ngx_conf_enum_t" type (:type "class") nil nil))
+                nil [3103 3257])
+            ("ngx_http_testconf_commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{ // P122
+  {                                                   // P122
+    ngx_string(\"test_flag\"),
+    NGX_HTTP_LOC_CONF|NGX_CONF_FLAG,
+    ngx_conf_set_flag_slot,
+    NGX_HTTP_LOC_CONF_OFFSET,
+    offsetof(ngx_http_testconf_conf_t, my_flag),
+    NULL
+  },
+
+  {                             // P123
+    ngx_string(\"test_str\"),
+    NGX_HTTP_MAIN_CONF|NGX_HTTP_SRV_CONF|NGX_HTTP_LOC_CONF|NGX_CONF_TAKE1,
+    ngx_conf_set_str_slot,
+    NGX_HTTP_LOC_CONF_OFFSET,
+    offsetof(ngx_http_testconf_conf_t, my_str),
+    NULL
+  },
+
+  {                             // P123
+    ngx_string(\"test_str_array\"),
+    NGX_HTTP_LOC_CONF|NGX_CONF_TAKE1,
+    ngx_conf_set_str_array_slot,
+    NGX_HTTP_LOC_CONF_OFFSET,
+    offsetof(ngx_http_testconf_conf_t, my_str_array),
+    NULL
+  },
+
+  {                             // P124
+    ngx_string(\"test_keyval\"),
+    NGX_HTTP_LOC_CONF|NGX_CONF_TAKE2,
+    ngx_conf_set_keyval_slot,
+    NGX_HTTP_LOC_CONF_OFFSET,
+    offsetof(ngx_http_testconf_conf_t, my_keyval),
+    NULL
+  },
+
+  {                             // P125
+    ngx_string(\"test_num\"),
+    NGX_HTTP_LOC_CONF|NGX_CONF_TAKE1,
+    ngx_conf_set_num_slot,
+    NGX_HTTP_LOC_CONF_OFFSET,
+    offsetof(ngx_http_testconf_conf_t, my_num),
+    NULL
+  },
+
+  {                             // P125
+    ngx_string(\"test_size\"),
+    NGX_HTTP_LOC_CONF|NGX_CONF_TAKE1,
+    ngx_conf_set_size_slot,
+    NGX_HTTP_LOC_CONF_OFFSET,
+    offsetof(ngx_http_testconf_conf_t, my_size),
+    NULL
+  },
+
+  {                             // P129
+    ngx_string(\"test_enum\"),
+    NGX_HTTP_LOC_CONF|NGX_CONF_TAKE1,
+    ngx_conf_set_enum_slot,
+    NGX_HTTP_LOC_CONF_OFFSET,
+    offsetof(ngx_http_testconf_conf_t, my_enum_seq),
+    test_enums
+  },
+
+  {                             // P132
+    ngx_string(\"test_myconfig\"),
+    NGX_HTTP_LOC_CONF | NGX_CONF_TAKE12,
+    ngx_conf_set_myconfig,
+    NGX_HTTP_LOC_CONF_OFFSET,
+    offsetof(ngx_http_testconf_conf_t, my_conf),
+    NULL
+  },
+
+  {
+    ngx_string(\"log_config\"),
+    NGX_HTTP_LOC_CONF|NGX_CONF_NOARGS,
+    ngx_log_config,
+    NGX_HTTP_LOC_CONF_OFFSET,
+    0,
+    NULL
+
+  },
+
+  ngx_null_command
+}"
+                :type ("ngx_command_t" type (:type "class") nil nil))
+                nil [3259 5409])
+            ("ngx_http_testconf_create_loc_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5458 5473]))                  
+                :type "void")
+                nil [5411 6029])
+            ("ngx_http_testconf_module_ctx" variable
+               (:typemodifiers ("static")
+                :default-value "{ // P114 115
+  NULL,
+  NULL,
+
+  NULL,
+  NULL,
+
+  NULL,
+  NULL,
+
+  ngx_http_testconf_create_loc_conf,
+  NULL,
+}"
+                :type ("ngx_http_module_t" type (:type "class") nil nil))
+                nil [6032 6200])
+            ("ngx_http_testconf_module" variable
+               (:default-value "{ // P88
+  NGX_MODULE_V1,
+  &ngx_http_testconf_module_ctx,
+  ngx_http_testconf_commands,
+  NGX_HTTP_MODULE,
+
+  NULL,
+  NULL,
+  NULL,
+  NULL,
+  NULL,
+  NULL,
+  NULL,
+  NGX_MODULE_V1_PADDING
+}"
+                :type ("ngx_module_t" type (:type "class") nil nil))
+                nil [6202 6433]))          
+      :file "ngx_http_testconf_module.c"
+      :pointmax 6434
+      :fsize 6481
+      :lastmodtime '(22793 19543 94865 800000)
+      :unmatched-syntax nil))
+  :file "!home!czh!Nginx!testconfmodule!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

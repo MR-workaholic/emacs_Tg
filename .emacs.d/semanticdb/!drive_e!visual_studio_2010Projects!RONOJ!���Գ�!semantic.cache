@@ -1,0 +1,48 @@
+;; Object ’“ ‘≥°/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "’“ ‘≥°/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("math.h" include (:system-flag t) nil [39 56])
+            ("stdio.h" include (:system-flag t) nil [57 75])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [77 97])
+            ("point" type
+               (:typedef ("point" type (:type "struct") nil nil)
+                :superclasses "point"
+                :type "typedef")
+                nil [99 151])
+            ("point" type
+               (:members 
+                  ( ("x" variable (:type "long") (reparse-symbol classsubparts) [124 132])
+                    ("y" variable (:type "long") (reparse-symbol classsubparts) [135 143]))                  
+                :type "struct")
+                nil [99 151])
+            ("now" variable
+               (:typemodifiers ("static")
+                :type ("point" type (:type "class") nil nil))
+                nil [153 170])
+            ("print_pos" function
+               (:arguments 
+                  ( ("dir" variable (:type "short") (reparse-symbol arg-sub-list) [187 197])
+                    ("step" variable (:type "long") (reparse-symbol arg-sub-list) [199 209]))                  
+                :type "void")
+                nil [172 482])
+            ("main" function (:type "int") nil [485 1665]))          
+    :file "main.cpp"
+    :pointmax 1666
+    :fsize 1795
+    :lastmodtime '(22361 34681 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!RONOJ!’“ ‘≥°!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

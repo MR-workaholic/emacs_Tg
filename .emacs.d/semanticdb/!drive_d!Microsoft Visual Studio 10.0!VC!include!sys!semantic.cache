@@ -1,0 +1,524 @@
+;; Object sys/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sys/"
+  :tables (list 
+   (semanticdb-table "types.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_INC_TYPES" variable (:constant-flag t) nil [382 392])
+            ("_W64" variable (:constant-flag t) nil [584 588])
+            ("__time32_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [706 735])
+            ("_TIME32_T_DEFINED" variable (:constant-flag t) nil [770 787])
+            ("__time64_t" type
+               (:typedef ("__int64" type (:type "class") nil nil)
+                :superclasses "__int64"
+                :type "typedef")
+                nil [822 849])
+            ("_TIME64_T_DEFINED" variable (:constant-flag t) nil [886 903])
+            ("time_t" type
+               (:typedef ("__time64_t" type (:type "class") nil nil)
+                :superclasses "__time64_t"
+                :type "typedef")
+                nil [1016 1042])
+            ("_TIME_T_DEFINED" variable (:constant-flag t) nil [1080 1095])
+            ("_ino_t" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [1174 1204])
+            ("ino_t" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [1309 1338])
+            ("_INO_T_DEFINED" variable (:constant-flag t) nil [1355 1369])
+            ("_dev_t" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [1403 1431])
+            ("dev_t" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [1518 1545])
+            ("_DEV_T_DEFINED" variable (:constant-flag t) nil [1562 1576])
+            ("_off_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [1610 1630])
+            ("off_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [1731 1750])
+            ("_OFF_T_DEFINED" variable (:constant-flag t) nil [1767 1781]))          
+    :file "types.h"
+    :pointmax 1815
+    :fsize 1911
+    :lastmodtime '(19190 49744 0 0)
+    :unmatched-syntax '((punctuation 460 . 461) (symbol 451 . 460) (symbol 444 . 450) (symbol 438 . 443) (symbol 433 . 437) (punctuation 431 . 432) (symbol 426 . 431) (symbol 420 . 425) (punctuation 419 . 420) (symbol 349 . 353) (symbol 342 . 348) (punctuation 341 . 342))
+    :lexical-table 
+        '(("_W64")
+          ("_TIME64_T_DEFINED")
+          ("_INC_TYPES")
+          ("_OFF_T_DEFINED")
+          ("_TIME32_T_DEFINED")
+          ("_TIME_T_DEFINED")
+          ("_INO_T_DEFINED")
+          ("_DEV_T_DEFINED")
+          )
+
+    )
+   (semanticdb-table "stat.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_INC_STAT" variable (:constant-flag t) nil [323 332])
+            ("crtdefs.h" include (:system-flag t) nil [410 430])
+            ("_CRTIMP" variable (:constant-flag t) nil [630 637])
+            ("sys/types.h" include (:system-flag t) nil [680 702])
+            ("_W64" variable (:constant-flag t) nil [817 821])
+            ("__time32_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [863 892])
+            ("_TIME32_T_DEFINED" variable (:constant-flag t) nil [927 944])
+            ("__time64_t" type
+               (:typedef ("__int64" type (:type "class") nil nil)
+                :superclasses "__int64"
+                :type "typedef")
+                nil [979 1006])
+            ("_TIME64_T_DEFINED" variable (:constant-flag t) nil [1043 1060])
+            ("time_t" type
+               (:typedef ("__time64_t" type (:type "class") nil nil)
+                :superclasses "__time64_t"
+                :type "typedef")
+                nil [1173 1199])
+            ("_TIME_T_DEFINED" variable (:constant-flag t) nil [1237 1252])
+            ("_WCHAR_T_DEFINED" variable (:constant-flag t) nil [1371 1387])
+            ("_stat32" type
+               (:members 
+                  ( ("st_dev" variable (:type ("_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1502 1520])
+                    ("st_ino" variable (:type ("_ino_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1529 1547])
+                    ("st_mode" variable (:type "unsigned short") (reparse-symbol classsubparts) [1556 1579])
+                    ("st_nlink" variable (:type "short") (reparse-symbol classsubparts) [1588 1608])
+                    ("st_uid" variable (:type "short") (reparse-symbol classsubparts) [1617 1635])
+                    ("st_gid" variable (:type "short") (reparse-symbol classsubparts) [1644 1662])
+                    ("st_rdev" variable (:type ("_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1671 1690])
+                    ("st_size" variable (:type ("_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1699 1718])
+                    ("st_atime" variable (:type ("__time32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1727 1747])
+                    ("st_mtime" variable (:type ("__time32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1756 1776])
+                    ("st_ctime" variable (:type ("__time32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1785 1805]))                  
+                :type "struct")
+                nil [1477 1816])
+            ("stat" type
+               (:members 
+                  ( ("st_dev" variable (:type ("_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1897 1915])
+                    ("st_ino" variable (:type ("_ino_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1924 1942])
+                    ("st_mode" variable (:type "unsigned short") (reparse-symbol classsubparts) [1951 1974])
+                    ("st_nlink" variable (:type "short") (reparse-symbol classsubparts) [1983 2003])
+                    ("st_uid" variable (:type "short") (reparse-symbol classsubparts) [2012 2030])
+                    ("st_gid" variable (:type "short") (reparse-symbol classsubparts) [2039 2057])
+                    ("st_rdev" variable (:type ("_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2066 2085])
+                    ("st_size" variable (:type ("_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2094 2113])
+                    ("st_atime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2122 2138])
+                    ("st_mtime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2147 2163])
+                    ("st_ctime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2172 2188]))                  
+                :type "struct")
+                nil [1875 2199])
+            ("_stat32i64" type
+               (:members 
+                  ( ("st_dev" variable (:type ("_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2253 2271])
+                    ("st_ino" variable (:type ("_ino_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2280 2298])
+                    ("st_mode" variable (:type "unsigned short") (reparse-symbol classsubparts) [2307 2330])
+                    ("st_nlink" variable (:type "short") (reparse-symbol classsubparts) [2339 2359])
+                    ("st_uid" variable (:type "short") (reparse-symbol classsubparts) [2368 2386])
+                    ("st_gid" variable (:type "short") (reparse-symbol classsubparts) [2395 2413])
+                    ("st_rdev" variable (:type ("_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2422 2441])
+                    ("st_size" variable (:type ("__int64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2450 2469])
+                    ("st_atime" variable (:type ("__time32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2478 2498])
+                    ("st_mtime" variable (:type ("__time32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2507 2527])
+                    ("st_ctime" variable (:type ("__time32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2536 2556]))                  
+                :type "struct")
+                nil [2225 2567])
+            ("_stat64i32" type
+               (:members 
+                  ( ("st_dev" variable (:type ("_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2597 2615])
+                    ("st_ino" variable (:type ("_ino_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2624 2642])
+                    ("st_mode" variable (:type "unsigned short") (reparse-symbol classsubparts) [2651 2674])
+                    ("st_nlink" variable (:type "short") (reparse-symbol classsubparts) [2683 2703])
+                    ("st_uid" variable (:type "short") (reparse-symbol classsubparts) [2712 2730])
+                    ("st_gid" variable (:type "short") (reparse-symbol classsubparts) [2739 2757])
+                    ("st_rdev" variable (:type ("_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2766 2785])
+                    ("st_size" variable (:type ("_off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2794 2813])
+                    ("st_atime" variable (:type ("__time64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2822 2842])
+                    ("st_mtime" variable (:type ("__time64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2851 2871])
+                    ("st_ctime" variable (:type ("__time64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2880 2900]))                  
+                :type "struct")
+                nil [2569 2911])
+            ("_stat64" type
+               (:members 
+                  ( ("st_dev" variable (:type ("_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2938 2956])
+                    ("st_ino" variable (:type ("_ino_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2965 2983])
+                    ("st_mode" variable (:type "unsigned short") (reparse-symbol classsubparts) [2992 3015])
+                    ("st_nlink" variable (:type "short") (reparse-symbol classsubparts) [3024 3044])
+                    ("st_uid" variable (:type "short") (reparse-symbol classsubparts) [3053 3071])
+                    ("st_gid" variable (:type "short") (reparse-symbol classsubparts) [3080 3098])
+                    ("st_rdev" variable (:type ("_dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3107 3126])
+                    ("st_size" variable (:type ("__int64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3135 3154])
+                    ("st_atime" variable (:type ("__time64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3163 3183])
+                    ("st_mtime" variable (:type ("__time64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3192 3212])
+                    ("st_ctime" variable (:type ("__time64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3221 3241]))                  
+                :type "struct")
+                nil [2913 3252])
+            ("__stat64" variable (:constant-flag t) nil [3414 3422])
+            ("_fstat" variable (:constant-flag t) nil [3656 3662])
+            ("_fstati64" variable (:constant-flag t) nil [3688 3697])
+            ("_stat" variable (:constant-flag t) nil [3717 3722])
+            ("_stati64" variable (:constant-flag t) nil [3748 3756])
+            ("_wstat" variable (:constant-flag t) nil [3776 3782])
+            ("_wstati64" variable (:constant-flag t) nil [3808 3817])
+            ("_STAT_DEFINED" variable (:constant-flag t) nil [3846 3859])
+            ("_S_IFMT" variable (:constant-flag t) nil [3877 3884])
+            ("_S_IFDIR" variable (:constant-flag t) nil [3938 3946])
+            ("_S_IFCHR" variable (:constant-flag t) nil [3994 4002])
+            ("_S_IFIFO" variable (:constant-flag t) nil [4058 4066])
+            ("_S_IFREG" variable (:constant-flag t) nil [4109 4117])
+            ("_S_IREAD" variable (:constant-flag t) nil [4163 4171])
+            ("_S_IWRITE" variable (:constant-flag t) nil [4232 4241])
+            ("_S_IEXEC" variable (:constant-flag t) nil [4302 4310])
+            ("_fstat32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("_In_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4431 4439])
+                    ("_FileDes" variable (:type "int") (reparse-symbol arg-sub-list) [4436 4449])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4450 4462])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat32" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4456 4479]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [4414 4480])
+            ("_stat32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("_In_z_" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4509 4526])
+                    ("_Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4522 4535])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4536 4548])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat32" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4542 4565]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [4493 4566])
+            ("_fstat32i64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("_In_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4600 4608])
+                    ("_FileDes" variable (:type "int") (reparse-symbol arg-sub-list) [4605 4618])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4619 4631])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat32i64" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4625 4651]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [4580 4652])
+            ("_fstat64i32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("_In_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4685 4693])
+                    ("_FileDes" variable (:type "int") (reparse-symbol arg-sub-list) [4690 4703])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4704 4716])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat64i32" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4710 4736]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [4665 4737])
+            ("_fstat64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("_In_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4767 4775])
+                    ("_FileDes" variable (:type "int") (reparse-symbol arg-sub-list) [4772 4785])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4786 4798])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat64" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4792 4815]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [4750 4816])
+            ("_stat32i64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("_In_z_" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4848 4865])
+                    ("_Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4861 4874])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4875 4887])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat32i64" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4881 4907]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [4829 4908])
+            ("_stat64i32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("_In_z_" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4940 4957])
+                    ("_Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4953 4966])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4967 4979])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat64i32" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4973 4999]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [4921 5000])
+            ("_stat64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("_In_z_" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5029 5046])
+                    ("_Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5042 5055])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5056 5068])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat64" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5062 5085]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [5013 5086])
+            ("_wstat32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("_In_z_" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5173 5193])
+                    ("_Name" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [5186 5202])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5203 5215])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat32" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5209 5232]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [5156 5233])
+            ("_wstat32i64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("_In_z_" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5267 5287])
+                    ("_Name" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [5280 5296])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5297 5309])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat32i64" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5303 5329]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [5247 5330])
+            ("_wstat64i32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("_In_z_" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5363 5383])
+                    ("_Name" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [5376 5392])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5393 5405])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat64i32" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5399 5425]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [5343 5426])
+            ("_wstat64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("_In_z_" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5456 5476])
+                    ("_Name" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol arg-sub-list) [5469 5485])
+                    ("" variable (:type ("_Out_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5486 5498])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("_stat64" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5492 5515]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [5439 5516])
+            ("_WSTAT_DEFINED" variable (:constant-flag t) nil [5526 5540])
+            ("S_IFMT" variable (:constant-flag t) nil [5616 5622])
+            ("S_IFDIR" variable (:constant-flag t) nil [5641 5648])
+            ("S_IFCHR" variable (:constant-flag t) nil [5667 5674])
+            ("S_IFREG" variable (:constant-flag t) nil [5693 5700])
+            ("S_IREAD" variable (:constant-flag t) nil [5719 5726])
+            ("S_IWRITE" variable (:constant-flag t) nil [5745 5753])
+            ("S_IEXEC" variable (:constant-flag t) nil [5772 5779])
+            ("sys/stat.inl" include (:system-flag t) nil [5946 5969]))          
+    :file "stat.h"
+    :pointmax 6051
+    :fsize 6298
+    :lastmodtime '(19190 49744 0 0)
+    :unmatched-syntax '((semantic-list 6020 . 6025) (symbol 6016 . 6020) (symbol 6009 . 6015) (punctuation 6008 . 6009) (INT 5435 . 5438) (INT 5339 . 5342) (INT 5243 . 5246) (INT 5152 . 5155) (INT 5009 . 5012) (INT 4917 . 4920) (INT 4825 . 4828) (INT 4746 . 4749) (INT 4661 . 4664) (INT 4576 . 4579) (INT 4489 . 4492) (INT 4410 . 4413) (punctuation 1361 . 1362) (WCHAR 1354 . 1361) (SHORT 1348 . 1353) (UNSIGNED 1339 . 1347) (TYPEDEF 1331 . 1338) (semantic-list 445 . 464) (symbol 441 . 445) (symbol 434 . 440) (punctuation 433 . 434) (punctuation 400 . 401) (symbol 391 . 400) (symbol 384 . 390) (symbol 378 . 383) (symbol 373 . 377) (punctuation 371 . 372) (symbol 366 . 371) (symbol 360 . 365) (punctuation 359 . 360) (symbol 291 . 295) (symbol 284 . 290) (punctuation 283 . 284))
+    :lexical-table 
+        '(("_INC_STAT")
+          ("_W64")
+          ("_S_IFMT" . ((number "0xF000" 3893 . 3899)))
+          ("_WSTAT_DEFINED")
+          ("_wstati64" . ((symbol "_wstat64" 3820 . 3828)))
+          ("_STAT_DEFINED")
+          ("_TIME64_T_DEFINED")
+          ("__stat64" . ((symbol "_stat64" 3426 . 3433)))
+          ("_WCHAR_T_DEFINED")
+          ("S_IREAD" . ((symbol "_S_IREAD" 5728 . 5736)))
+          ("S_IEXEC" . ((symbol "_S_IEXEC" 5781 . 5789)))
+          ("_stat" . ((symbol "_stat64i32" 3729 . 3739)))
+          ("_S_IFIFO" . ((number "0x1000" 4074 . 4080)))
+          ("_CRTIMP")
+          ("_TIME32_T_DEFINED")
+          ("_TIME_T_DEFINED")
+          ("_S_IREAD" . ((number "0x0100" 4179 . 4185)))
+          ("_S_IEXEC" . ((number "0x0040" 4318 . 4324)))
+          ("S_IFREG" . ((symbol "_S_IFREG" 5702 . 5710)))
+          ("S_IWRITE" . ((symbol "_S_IWRITE" 5754 . 5763)))
+          ("S_IFDIR" . ((symbol "_S_IFDIR" 5650 . 5658)))
+          ("_wstat" . ((symbol "_wstat64i32" 3788 . 3799)))
+          ("S_IFMT" . ((symbol "_S_IFMT" 5625 . 5632)))
+          ("S_IFCHR" . ((symbol "_S_IFCHR" 5676 . 5684)))
+          ("_fstat" . ((symbol "_fstat64i32" 3668 . 3679)))
+          ("_fstati64" . ((symbol "_fstat64" 3700 . 3708)))
+          ("_S_IFREG" . ((number "0x8000" 4125 . 4131)))
+          ("_stati64" . ((symbol "_stat64" 3760 . 3767)))
+          ("_S_IFDIR" . ((number "0x4000" 3954 . 3960)))
+          ("_S_IWRITE" . ((number "0x0080" 4248 . 4254)))
+          ("_S_IFCHR" . ((number "0x2000" 4010 . 4016)))
+          )
+
+    )
+   (semanticdb-table "stat.inl"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("__CRTDECL" variable (:constant-flag t) nil [397 406])
+            ("_INC_STAT_INL" variable (:constant-flag t) nil [462 475])
+            ("_STATIC_ASSERT" variable (:constant-flag t) nil [718 732])
+            ("fstat" function
+               (:arguments 
+                  ( ("_Desc" variable (:type "int") (reparse-symbol arg-sub-list) [1315 1325])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("stat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1326 1346]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [1299 1480])
+            ("stat" function
+               (:arguments 
+                  ( ("_Filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1516 1539])
+                    ("_Stat" variable
+                       (:pointer 1
+                        :type ("stat" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1540 1560]))                  
+                :type ("__cdecl" type (:type "class") nil nil))
+                nil [1501 1697]))          
+    :file "stat.inl"
+    :pointmax 1760
+    :fsize 1823
+    :lastmodtime '(19098 50740 0 0)
+    :unmatched-syntax '((INT 1497 . 1500) (symbol 1488 . 1496) (STATIC 1481 . 1487) (INT 1295 . 1298) (symbol 1286 . 1294) (STATIC 1279 . 1285) (symbol 310 . 314) (symbol 303 . 309) (punctuation 302 . 303))
+    :lexical-table 
+        '(("__CRTDECL" . ((symbol "__cdecl" 409 . 416)))
+          ("_STATIC_ASSERT" (spp-arg-list ("expr") 732 . 738) . 
+              ((TYPEDEF "typedef" 739 . 746) (CHAR "char" 747 . 751) (symbol "__static_assert_t" 752 . 769) (semantic-list "[ (expr) ]" 769 . 779)))
+          ("_INC_STAT_INL")
+          )
+
+    )
+   )
+  :file "!drive_d!Microsoft Visual Studio 10.0!VC!include!sys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

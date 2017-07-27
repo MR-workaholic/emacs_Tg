@@ -1,0 +1,226 @@
+;; Object browser/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "browser/"
+  :tables
+  (list
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("selenium" include nil nil [16 46])
+            ("selenium.webdriver.common.action_chains" include nil nil [47 111])
+            ("selenium.webdriver.support.ui" include nil nil [198 253])
+            ("selenium.webdriver.support" include nil nil [254 318])
+            ("selenium.webdriver.common.by" include nil nil [319 362])
+            ("time" include nil nil [364 375])
+            ("PIL.Image" include nil nil [377 402])
+            ("re" include nil nil [403 412])
+            ("cStringIO" include nil nil [413 429])
+            ("urllib2" include nil nil [430 444])
+            ("random" include nil nil [445 458])
+            ("s" function (:arguments 
+              ( ("int" variable nil (reparse-symbol function_parameters) [467 470]))              ) nil [461 493])
+            ("get_merge_image" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [515 523])
+                ("location_list" variable nil (reparse-symbol function_parameters) [525 538]))              ) nil [495 1406])
+            ("get_token" function (:arguments 
+              ( ("driver" variable nil (reparse-symbol function_parameters) [1422 1428])
+                ("div" variable nil (reparse-symbol function_parameters) [1430 1433]))              ) nil [1408 1652])
+            ("get_image" function (:arguments 
+              ( ("driver" variable nil (reparse-symbol function_parameters) [1668 1674])
+                ("div" variable nil (reparse-symbol function_parameters) [1676 1679]))              ) nil [1654 2755])
+            ("is_similar" function (:arguments 
+              ( ("image1" variable nil (reparse-symbol function_parameters) [2772 2778])
+                ("image2" variable nil (reparse-symbol function_parameters) [2780 2786])
+                ("x" variable nil (reparse-symbol function_parameters) [2788 2789])
+                ("y" variable nil (reparse-symbol function_parameters) [2791 2792]))              ) nil [2757 3020])
+            ("get_diff_location" function (:arguments 
+              ( ("image1" variable nil (reparse-symbol function_parameters) [3044 3050])
+                ("image2" variable nil (reparse-symbol function_parameters) [3052 3058]))              ) nil [3022 3244])
+            ("get_track" function (:arguments 
+              ( ("length" variable nil (reparse-symbol function_parameters) [3260 3266]))              ) nil [3246 3751])
+            ("index_url" variable nil nil [3753 3800])
+            ("chrome_driver" variable nil nil [3801 3840])
+            ("browser" variable nil nil [3841 3882])
+            ("browser" code nil nil [3883 3905])
+            ("print" code nil nil [4093 4106])
+            ("browser" code nil nil [4107 4152])
+            ("browser" code nil nil [4153 4219])
+            ("s" code nil nil [4342 4346])
+            ("print" code nil nil [4347 4361])
+            ("browser" code nil nil [4362 4409])
+            ("s" code nil nil [4410 4414])
+            ("cur_token" variable nil nil [4416 4432])
+            ("while" code nil nil [4433 10607])
+            ("print" code nil nil [10853 10878])
+            ("browser" code nil nil [10880 10894]))          
+      :file "test.py"
+      :pointmax 10895
+      :fsize 12230
+      :lastmodtime '(22888 32151 372430 238000)
+      :unmatched-syntax nil)
+    (semanticdb-table "geetest_gsxt_selenium.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("requests" include nil nil [21 36])
+            ("re" include nil nil [37 46])
+            ("StringIO" include nil nil [47 62])
+            ("PIL" include nil nil [63 84])
+            ("random" include nil nil [85 98])
+            ("math" include nil nil [99 110])
+            ("time" include nil nil [111 122])
+            ("selenium.webdriver.common.desired_capabilities" include nil nil [123 201])
+            ("selenium.webdriver.support.ui" include nil nil [202 257])
+            ("selenium.webdriver.support" include nil nil [258 322])
+            ("selenium.webdriver.common.by" include nil nil [323 366])
+            ("selenium.webdriver.common.action_chains" include nil nil [367 431])
+            ("selenium" include nil nil [432 462])
+            ("bs4" include nil nil [463 492])
+            ("crack_picture" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self, self" code nil (reparse-symbol indented_block_body) [576 635]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [541 545])
+                            ("img_url1" variable nil (reparse-symbol function_parameters) [547 555])
+                            ("img_url2" variable nil (reparse-symbol function_parameters) [557 565]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [528 636])
+                    ("picture_get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [657 661])
+                            ("img_url1" variable nil (reparse-symbol function_parameters) [663 671])
+                            ("img_url2" variable nil (reparse-symbol function_parameters) [673 681]))                          )
+                        (reparse-symbol indented_block_body) [641 1030])
+                    ("repeat" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1046 1050])
+                            ("url" variable nil (reparse-symbol function_parameters) [1052 1055])
+                            ("hd" variable nil (reparse-symbol function_parameters) [1057 1059]))                          )
+                        (reparse-symbol indented_block_body) [1035 1249])
+                    ("pictures_recover" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1275 1279]))                          )
+                        (reparse-symbol indented_block_body) [1254 1454])
+                    ("picture_recover" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1479 1483])
+                            ("img" variable nil (reparse-symbol function_parameters) [1485 1488])
+                            ("name" variable nil (reparse-symbol function_parameters) [1490 1494]))                          )
+                        (reparse-symbol indented_block_body) [1459 2309])
+                    ("darbra_track" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2331 2335])
+                            ("distance" variable nil (reparse-symbol function_parameters) [2337 2345]))                          )
+                        (reparse-symbol indented_block_body) [2314 2384])
+                    ("diff" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2439 2443])
+                            ("img1" variable nil (reparse-symbol function_parameters) [2445 2449])
+                            ("img2" variable nil (reparse-symbol function_parameters) [2451 2455])
+                            ("wd" variable nil (reparse-symbol function_parameters) [2457 2459])
+                            ("ht" variable nil (reparse-symbol function_parameters) [2461 2463]))                          )
+                        (reparse-symbol indented_block_body) [2430 2701])
+                    ("col" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2714 2718])
+                            ("img1" variable nil (reparse-symbol function_parameters) [2720 2724])
+                            ("img2" variable nil (reparse-symbol function_parameters) [2726 2730])
+                            ("cl" variable nil (reparse-symbol function_parameters) [2732 2734]))                          )
+                        (reparse-symbol indented_block_body) [2706 2869])
+                    ("judge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2884 2888])
+                            ("img1" variable nil (reparse-symbol function_parameters) [2890 2894])
+                            ("img2" variable nil (reparse-symbol function_parameters) [2896 2900]))                          )
+                        (reparse-symbol indented_block_body) [2874 3024]))                  
+                :type "class")
+                nil [495 3024])
+            ("gsxt" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3099 3136])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3145 3188])
+                            ("self" code nil (reparse-symbol indented_block_body) [3197 3229])
+                            ("self" code nil (reparse-symbol indented_block_body) [3238 3267]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3063 3067])
+                            ("br_name" variable nil (reparse-symbol function_parameters) [3069 3076]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3050 3268])
+                    ("input_params" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3290 3294])
+                            ("name" variable nil (reparse-symbol function_parameters) [3296 3300]))                          )
+                        (reparse-symbol indented_block_body) [3273 3561])
+                    ("drag_pic" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3579 3583]))                          )
+                        (reparse-symbol indented_block_body) [3566 3758])
+                    ("wait_for" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3776 3780])
+                            ("by1" variable nil (reparse-symbol function_parameters) [3782 3785])
+                            ("by2" variable nil (reparse-symbol function_parameters) [3787 3790]))                          )
+                        (reparse-symbol indented_block_body) [3763 3868])
+                    ("find_img_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3890 3894])
+                            ("element" variable nil (reparse-symbol function_parameters) [3896 3903]))                          )
+                        (reparse-symbol indented_block_body) [3873 4145])
+                    ("emulate_track" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4168 4172])
+                            ("tracks" variable nil (reparse-symbol function_parameters) [4174 4180]))                          )
+                        (reparse-symbol indented_block_body) [4150 4906])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4919 4923]))                          )
+                        (reparse-symbol indented_block_body) [4911 5061])
+                    ("hack_geetest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5083 5087])
+                            ("company" variable nil (reparse-symbol function_parameters) [5089 5096]))                          )
+                        (reparse-symbol indented_block_body) [5066 5823])
+                    ("quit_webdriver" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5847 5851]))                          )
+                        (reparse-symbol indented_block_body) [5828 5877])
+                    ("get_webdriver" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5900 5904])
+                            ("name" variable nil (reparse-symbol function_parameters) [5906 5910]))                          )
+                        (reparse-symbol indented_block_body) [5882 6350]))                  
+                :type "class")
+                nil [3026 6350])
+            ("if" code nil nil [6352 6582]))          
+      :file "geetest_gsxt_selenium.py"
+      :pointmax 6582
+      :fsize 6619
+      :lastmodtime '(22888 25554 231987 912000)
+      :unmatched-syntax '((RETURN 2664 . 2670) (IF 2676 . 2678) (ELSE 2690 . 2694) (NAME 1937 . 1941) (IF 1947 . 1949) (ELSE 1976 . 1980))))
+  :file "!home!harlan!PythonPro!browser!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

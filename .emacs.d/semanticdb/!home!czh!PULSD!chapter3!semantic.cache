@@ -1,0 +1,37 @@
+;; Object chapter3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter3/"
+  :tables
+  (list
+    (semanticdb-table "httpd-vhosts.conf"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "httpd-vhosts.conf"
+      :pointmax 2251
+      :fsize 2321
+      :lastmodtime '(22558 54087 872517 9000)
+      :unmatched-syntax nil)
+    (semanticdb-table "apache_conf_docroot_replace.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''find the virtualhost and replace its documentroot
+
+input the virtualhost and the new documentroot.'''" code nil nil [23 127])
+            ("re" include nil nil [129 138])
+            ("cStringIO" include nil nil [139 169])
+            ("vhost_start" variable nil nil [171 219])
+            ("vhost_end" variable nil nil [220 261])
+            ("docroot_re" variable nil nil [311 359])
+            ("replace_docroot" function (:arguments 
+              ( ("conf_string" variable nil (reparse-symbol function_parameters) [382 393])
+                ("vhost" variable nil (reparse-symbol function_parameters) [395 400])
+                ("newdocroot" variable nil (reparse-symbol function_parameters) [402 412]))              ) nil [362 1208])
+            ("if" code nil nil [1209 1457]))          
+      :file "apache_conf_docroot_replace.py"
+      :pointmax 1457
+      :fsize 1456
+      :lastmodtime '(22558 49038 673905 266000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapter3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

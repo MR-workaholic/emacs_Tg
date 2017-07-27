@@ -1,0 +1,1837 @@
+;; Object node/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "node/"
+  :tables
+  (list
+    (semanticdb-table "node.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("NODE_NODE_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [66 114])
+            ("stdexcept" include (:system-flag t) nil [350 370])
+            ("yaml-cpp/dll.h" include nil nil [372 397])
+            ("yaml-cpp/emitterstyle.h" include nil nil [398 432])
+            ("yaml-cpp/node/detail/bool_type.h" include nil nil [433 476])
+            ("yaml-cpp/node/detail/iterator_fwd.h" include nil nil [477 523])
+            ("yaml-cpp/node/ptr.h" include nil nil [524 554])
+            ("yaml-cpp/node/type.h" include nil nil [555 586])
+            ("YAML" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("node" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [624 635])
+                            ("node_data" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [636 652])
+                            ("iterator_value" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [653 675]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [605 677]))                  
+                :type "namespace")
+                nil [588 700])
+            ("YAML" type
+               (:members 
+                  ( ("Node" variable (:type ("YAML_CPP_API" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [738 3472])
+                    ("==" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3503 3519])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3520 3536]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3487 3537])
+                    ("Clone" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3563 3580]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3552 3581])
+                    ("convert" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [3583 3620]))                  
+                :type "namespace")
+                nil [721 3622]))          
+      :file "node.h"
+      :pointmax 3684
+      :fsize 3683
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 3539 . 3551) (symbol 3474 . 3486) (symbol 337 . 341) (symbol 330 . 336) (punctuation 329 . 330) (semantic-list 190 . 277))
+      :lexical-table 
+        '(("NODE_NODE_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "impl.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("NODE_IMPL_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [66 114])
+            ("yaml-cpp/node/node.h" include nil nil [350 381])
+            ("yaml-cpp/node/iterator.h" include nil nil [382 417])
+            ("yaml-cpp/node/detail/memory.h" include nil nil [418 458])
+            ("yaml-cpp/node/detail/node.h" include nil nil [459 497])
+            ("yaml-cpp/exceptions.h" include nil nil [498 530])
+            ("string" include (:system-flag t) nil [531 548])
+            ("YAML" type
+               (:members 
+                  ( ("Node" function
+                       (:constructor-flag t
+                        :parent "Node"
+                        :typemodifiers ("inline")
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [567 622])
+                    ("Node" function
+                       (:constructor-flag t
+                        :parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("type" variable (:type ("NodeType::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [642 663]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [624 802])
+                    ("Node" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Node" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [844 857]))                          
+                        :typemodifiers ("inline")
+                        :parent "Node"
+                        :constructor-flag t)
+                        (reparse-symbol namespacesubparts) [804 984])
+                    ("Node" function
+                       (:constructor-flag t
+                        :parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("detail::iterator_value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1004 1038]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [986 1132])
+                    ("Node" function
+                       (:constructor-flag t
+                        :parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1152 1168]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1134 1262])
+                    ("Node" function
+                       (:constructor-flag t
+                        :parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable (:type ("Zombie" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1282 1289]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1264 1326])
+                    ("Node" function
+                       (:constructor-flag t
+                        :parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :type ("detail::node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1346 1365])
+                            ("pMemory" variable (:type ("detail::shared_memory_holder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1366 1403]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1328 1464])
+                    ("Node" function
+                       (:destructor-flag t
+                        :parent "Node"
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1466 1489])
+                    ("EnsureNodeExists" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1491 1716])
+                    ("IsDefined" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1718 1848])
+                    ("Type" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :type ("NodeType::value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1850 1991])
+                    ("as_if" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("as_if" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("node_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2090 2108]))                                  
+                                :type ("as_if" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2084 2125])
+                            ("node" variable
+                               (:constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2128 2145])
+                            ("()" function
+                               (:operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("fallback" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("S" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2168 2186]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2149 2328]))                          )
+                        (reparse-symbol namespacesubparts) [2024 2331])
+                    ("as_if" type
+                       (:template 
+                          ( ("S" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("as_if" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("node_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2403 2421]))                                  
+                                :type ("as_if" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2397 2438])
+                            ("node" variable
+                               (:constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2441 2458])
+                            ("()" function
+                               (:operator-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("fallback" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("S" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2491 2509]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2462 2611]))                          
+                        :template-specifier 
+                          ( ("std::string" type nil nil nil)
+                            ("S" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2333 2614])
+                    ("as_if" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("as_if" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("node_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2679 2697]))                                  
+                                :type ("as_if" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2673 2714])
+                            ("node" variable
+                               (:constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2717 2734])
+                            ("()" function
+                               (:operator-flag t
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2738 2928]))                          
+                        :template-specifier 
+                          ( ("T" type nil nil nil)
+                            ("void" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2616 2931])
+                    ("as_if" type
+                       (:type "struct"
+                        :members 
+                          ( ("as_if" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("node_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2996 3014]))                                  
+                                :type ("as_if" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2990 3031])
+                            ("node" variable
+                               (:constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3034 3051])
+                            ("()" function
+                               (:operator-flag t
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3055 3211]))                          
+                        :template-specifier 
+                          ( ("std::string" type nil nil nil)
+                            ("void" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2933 3214])
+                    ("as" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :constant-flag t
+                        :typemodifiers ("inline")
+                        :parent "Node")
+                        (reparse-symbol namespacesubparts) [3236 3370])
+                    ("as" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("fallback" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("S" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3430 3448]))                          
+                        :constant-flag t
+                        :typemodifiers ("inline")
+                        :parent "Node")
+                        (reparse-symbol namespacesubparts) [3372 3540])
+                    ("Scalar" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3542 3707])
+                    ("Tag" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3709 3868])
+                    ("SetTag" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3895 3918]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3870 4012])
+                    ("Style" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :type ("EmitterStyle::value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4014 4168])
+                    ("SetStyle" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("style" variable (:type ("EmitterStyle::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4197 4223]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4170 4321])
+                    ("is" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4358 4374]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4337 4531])
+                    ("=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Node" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4584 4597]))                          
+                        :typemodifiers ("inline")
+                        :parent "Node"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [4533 4675])
+                    ("reset" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("YAML::Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4701 4723]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4677 4842])
+                    ("Assign" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4891 4904]))                          
+                        :typemodifiers ("inline")
+                        :parent "Node")
+                        (reparse-symbol namespacesubparts) [4844 4990])
+                    ("Assign" function
+                       (:type "void"
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5029 5052]))                          
+                        :typemodifiers ("inline")
+                        :parent "Node")
+                        (reparse-symbol namespacesubparts) [4992 5149])
+                    ("Assign" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5176 5192]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5151 5289])
+                    ("Assign" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5316 5326]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5291 5423])
+                    ("=" function
+                       (:operator-flag t
+                        :parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5454 5470]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5425 5603])
+                    ("AssignData" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5634 5650]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5605 5835])
+                    ("AssignNode" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5866 5882]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5837 6162])
+                    ("size" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6181 6305])
+                    ("begin" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :type ("const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6307 6495])
+                    ("begin" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6497 6644])
+                    ("end" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :type ("const_iterator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6646 6813])
+                    ("end" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6815 6958])
+                    ("push_back" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7022 7035]))                          
+                        :typemodifiers ("inline")
+                        :parent "Node")
+                        (reparse-symbol namespacesubparts) [6972 7106])
+                    ("push_back" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7136 7152]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7108 7349])
+                    ("detail" type
+                       (:members 
+                          ( ("to_value_t" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("to_value_t" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("t_" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7458 7470]))                                          
+                                        :type ("to_value_t" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [7447 7481])
+                                    ("t" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7484 7495])
+                                    ("return_type" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7506 7527])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7531 7572]))                                  )
+                                (reparse-symbol namespacesubparts) [7394 7575])
+                            ("to_value_t" type
+                               (:type "struct"
+                                :members 
+                                  ( ("to_value_t" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("t_" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [7644 7659]))                                          
+                                        :type ("to_value_t" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [7633 7670])
+                                    ("t" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [7673 7687])
+                                    ("return_type" type
+                                       (:typedef ("std::string" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7690 7722])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7726 7776]))                                  
+                                :template-specifier 
+                                  ( ("char" type
+                                       (:pointer 1
+                                        :constant-flag t)
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7577 7779])
+                            ("to_value_t" type
+                               (:type "struct"
+                                :members 
+                                  ( ("to_value_t" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("t_" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [7842 7851]))                                          
+                                        :type ("to_value_t" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [7831 7862])
+                                    ("t" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [7865 7879])
+                                    ("return_type" type
+                                       (:typedef ("std::string" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [7882 7914])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7918 7968]))                                  
+                                :template-specifier 
+                                  ( ("char" type (:pointer 1) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7781 7971])
+                            ("to_value" function
+                               (:arguments 
+                                  ( ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8320 8331]))                                  
+                                :type ("return_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8299 8364]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [7375 8366])
+                    ("[]" function
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil))                          
+                        :type ("Node" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Key" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8439 8454]))                          
+                        :constant-flag t
+                        :typemodifiers ("inline")
+                        :parent "Node"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [8380 8747])
+                    ("[]" function
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil))                          
+                        :type ("Node" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Key" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8802 8817]))                          
+                        :typemodifiers ("inline")
+                        :parent "Node"
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [8749 8991])
+                    ("remove" function
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Key" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9042 9057]))                          
+                        :typemodifiers ("inline")
+                        :parent "Node")
+                        (reparse-symbol namespacesubparts) [8993 9186])
+                    ("[]" function
+                       (:operator-flag t
+                        :parent "Node"
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9223 9239]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9188 9580])
+                    ("[]" function
+                       (:operator-flag t
+                        :parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9611 9627]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [9582 9872])
+                    ("remove" function
+                       (:parent "Node"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9899 9915]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [9874 10079])
+                    ("force_insert" function
+                       (:template 
+                          ( ("Key" type (:type "class") nil nil)
+                            ("Value" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Key" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10159 10174])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10175 10194]))                          
+                        :typemodifiers ("inline")
+                        :parent "Node")
+                        (reparse-symbol namespacesubparts) [10088 10371])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("lhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10414 10430])
+                            ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10431 10447]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [10391 10471]))                  
+                :type "namespace")
+                nil [550 10473]))          
+      :file "impl.h"
+      :pointmax 10535
+      :fsize 10534
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((punctuation 8298 . 8299) (punctuation 8297 . 8298) (punctuation 8296 . 8297) (symbol 8295 . 8296) (punctuation 8294 . 8295) (symbol 8284 . 8294) (TYPENAME 8275 . 8283) (INLINE 8268 . 8274) (punctuation 8266 . 8267) (symbol 8265 . 8266) (TYPENAME 8256 . 8264) (punctuation 8255 . 8256) (TEMPLATE 8246 . 8254) (punctuation 8183 . 8184) (semantic-list 8025 . 8183) (punctuation 8023 . 8024) (semantic-list 8020 . 8023) (CHAR 8016 . 8020) (punctuation 8015 . 8016) (symbol 8005 . 8015) (STRUCT 7998 . 8004) (punctuation 7996 . 7997) (symbol 7995 . 7996) (symbol 7988 . 7994) (punctuation 7987 . 7988) (punctuation 7986 . 7987) (symbol 7983 . 7986) (punctuation 7982 . 7983) (TEMPLATE 7973 . 7981) (EXPLICIT 7822 . 7830) (EXPLICIT 7624 . 7632) (TYPEDEF 7498 . 7505) (EXPLICIT 7438 . 7446) (EXPLICIT 2981 . 2989) (EXPLICIT 2664 . 2672) (EXPLICIT 2388 . 2396) (EXPLICIT 2075 . 2083) (symbol 337 . 341) (symbol 330 . 336) (punctuation 329 . 330) (semantic-list 190 . 277))
+      :lexical-table 
+        '(("NODE_IMPL_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "convert.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("NODE_CONVERT_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [69 120])
+            ("limits" include (:system-flag t) nil [356 373])
+            ("list" include (:system-flag t) nil [374 389])
+            ("map" include (:system-flag t) nil [390 404])
+            ("sstream" include (:system-flag t) nil [405 423])
+            ("vector" include (:system-flag t) nil [424 441])
+            ("yaml-cpp/binary.h" include nil nil [443 471])
+            ("yaml-cpp/node/impl.h" include nil nil [472 503])
+            ("yaml-cpp/node/iterator.h" include nil nil [504 539])
+            ("yaml-cpp/node/node.h" include nil nil [540 571])
+            ("yaml-cpp/node/type.h" include nil nil [572 603])
+            ("yaml-cpp/null.h" include nil nil [604 630])
+            ("YAML" type
+               (:members 
+                  ( ("Binary" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [649 662])
+                    ("_Null" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [663 676])
+                    ("convert" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [677 714]))                  
+                :type "namespace")
+                nil [632 716])
+            ("YAML" type
+               (:members 
+                  ( ("conversion" type
+                       (:members 
+                          ( ("IsInfinity" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("input" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [800 825]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [777 962])
+                            ("IsNegativeInfinity" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("input" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [995 1020]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [964 1091])
+                            ("IsNaN" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("input" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1111 1136]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [1093 1204]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [754 1206])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1286 1309]))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1267 1331])
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1354 1371])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1372 1389]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1335 1483]))                          
+                        :template-specifier 
+                          ( ("std::string" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1223 1486])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1584 1596])
+                                    ("" variable (:type ("rhs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1597 1601]))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1565 1623]))                          
+                        :template-specifier 
+                          ( ("char" type
+                               (:pointer 1
+                                :constant-flag t)
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1521 1626])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("_Null" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1810 1833]))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1791 1852])
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1875 1892])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("_Null" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1893 1910]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1856 1942]))                          
+                        :template-specifier 
+                          ( ("_Null" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1753 1945])
+                    ("YAML_DEFINE_CONVERT_STREAMABLE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1955 1985])
+                    ("YAML_DEFINE_CONVERT_STREAMABLE_SIGNED" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4660 4697])
+                    ("YAML_DEFINE_CONVERT_STREAMABLE_UNSIGNED" variable (:constant-flag t) (reparse-symbol namespacesubparts) [4757 4796])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4848 4891])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4892 4937])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4938 4982])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4983 5032])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5033 5083])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5084 5140])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5141 5196])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5197 5257])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5259 5303])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5304 5355])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5356 5411])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5413 5458])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5459 5505])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) nil)
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil)
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) nil))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) nil))                          
+                        :template-specifier 
+                          ( ("type" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5506 5557])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable (:type "bool") (reparse-symbol arg-sub-list) [5754 5763]))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5735 5810])
+                            ("decode" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5846 5863])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [5864 5874]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5827 5875]))                          
+                        :template-specifier 
+                          ( ("bool" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5698 5878])
+                    ("convert" type
+                       (:template 
+                          ( ("K" type (:type "class") nil nil)
+                            ("V" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::map" type
+                                             (:template-specifier 
+                                                ( ("K" type nil nil nil)
+                                                  ("V" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5981 6007]))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5962 6207])
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6230 6247])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("std::map" type
+                                             (:template-specifier 
+                                                ( ("K" type nil nil nil)
+                                                  ("V" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6248 6268]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6211 6621]))                          
+                        :template-specifier 
+                          ( ("std::map" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5892 6624])
+                    ("convert" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6718 6744]))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6699 6928])
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6951 6968])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6969 6989]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6932 7304]))                          
+                        :template-specifier 
+                          ( ("std::vector" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [6641 7307])
+                    ("convert" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::list" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7397 7421]))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7378 7603])
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7626 7643])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("std::list" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7644 7662]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7607 7977]))                          
+                        :template-specifier 
+                          ( ("std::list" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7322 7980])
+                    ("convert" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("U" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("U" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8085 8112]))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8066 8233])
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8256 8273])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("U" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8274 8295]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8237 8725]))                          
+                        :template-specifier 
+                          ( ("std::pair" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7995 8728])
+                    ("convert" type
+                       (:type "struct"
+                        :members 
+                          ( ("encode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Binary" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8798 8816]))                                  
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8779 8877])
+                            ("decode" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8900 8917])
+                                    ("rhs" variable
+                                       (:reference 1
+                                        :type ("Binary" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8918 8930]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8881 9156]))                          
+                        :template-specifier 
+                          ( ("Binary" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [8740 9159]))                  
+                :type "namespace")
+                nil [737 9161]))          
+      :file "convert.h"
+      :pointmax 9226
+      :fsize 9225
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 5814 . 5826) (punctuation 1750 . 1751) (semantic-list 1683 . 1750) (punctuation 1681 . 1682) (semantic-list 1678 . 1681) (CHAR 1674 . 1678) (CONST 1668 . 1673) (punctuation 1667 . 1668) (symbol 1660 . 1667) (STRUCT 1653 . 1659) (punctuation 1651 . 1652) (symbol 1650 . 1651) (symbol 1643 . 1649) (punctuation 1642 . 1643) (punctuation 1641 . 1642) (symbol 1638 . 1641) (punctuation 1637 . 1638) (TEMPLATE 1628 . 1636) (punctuation 1595 . 1596) (symbol 343 . 347) (symbol 336 . 342) (punctuation 335 . 336) (semantic-list 196 . 283))
+      :lexical-table 
+        '(("NODE_CONVERT_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          ("type"nil ;; bogus macro found.
+)
+          ("negative_op")
+          )
+)
+    (semanticdb-table "iterator.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VALUE_ITERATOR_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [71 124])
+            ("yaml-cpp/dll.h" include nil nil [360 385])
+            ("yaml-cpp/node/node.h" include nil nil [386 417])
+            ("yaml-cpp/node/detail/iterator_fwd.h" include nil nil [418 464])
+            ("yaml-cpp/node/detail/iterator.h" include nil nil [465 507])
+            ("list" include (:system-flag t) nil [508 523])
+            ("utility" include (:system-flag t) nil [524 542])
+            ("vector" include (:system-flag t) nil [543 560])
+            ("YAML" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("iterator_value" type
+                               (:superclasses 
+                                  ( ("Node" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("std::pair" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("iterator_value" function
+                                       (:constructor-flag t
+                                        :type ("iterator_value" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [661 680])
+                                    ("iterator_value" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Node" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [707 723]))                                          
+                                        :type ("iterator_value" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [692 823])
+                                    ("iterator_value" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("key" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Node" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [850 866])
+                                            ("value" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Node" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [867 885]))                                          
+                                        :type ("iterator_value" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [835 954]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [598 957]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [579 959]))                  
+                :type "namespace")
+                nil [562 961]))          
+      :file "iterator.h"
+      :pointmax 1028
+      :fsize 1027
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((EXPLICIT 826 . 834) (EXPLICIT 683 . 691) (symbol 347 . 351) (symbol 340 . 346) (punctuation 339 . 340) (semantic-list 200 . 287))
+      :lexical-table 
+        '(("VALUE_ITERATOR_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "parse.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VALUE_PARSE_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [68 118])
+            ("iosfwd" include (:system-flag t) nil [354 371])
+            ("string" include (:system-flag t) nil [372 389])
+            ("vector" include (:system-flag t) nil [390 407])
+            ("yaml-cpp/dll.h" include nil nil [409 434])
+            ("YAML" type
+               (:members 
+                  ( ("Node" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [453 464])
+                    ("Load" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("input" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [489 514]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [479 515])
+                    ("Load" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [539 557]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [529 558])
+                    ("Load" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("input" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [582 602]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [572 603])
+                    ("LoadFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [631 659]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [617 660])
+                    ("LoadAll" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("input" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [701 726]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Node" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [675 727])
+                    ("LoadAll" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("input" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [767 785]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Node" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [741 786])
+                    ("LoadAll" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("input" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [826 846]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Node" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [800 847])
+                    ("LoadAllFromFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [895 923]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Node" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [861 924]))                  
+                :type "namespace")
+                nil [436 926]))          
+      :file "parse.h"
+      :pointmax 990
+      :fsize 989
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 848 . 860) (symbol 787 . 799) (symbol 728 . 740) (symbol 662 . 674) (symbol 604 . 616) (symbol 559 . 571) (symbol 516 . 528) (symbol 466 . 478) (symbol 341 . 345) (symbol 334 . 340) (punctuation 333 . 334) (semantic-list 194 . 281))
+      :lexical-table 
+        '(("VALUE_PARSE_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "emit.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("NODE_EMIT_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [66 114])
+            ("string" include (:system-flag t) nil [350 367])
+            ("iosfwd" include (:system-flag t) nil [368 385])
+            ("yaml-cpp/dll.h" include nil nil [387 412])
+            ("YAML" type
+               (:members 
+                  ( ("Emitter" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [431 445])
+                    ("Node" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [446 457])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [492 505])
+                            ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [506 523]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [472 524])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [563 581])
+                            ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [582 599]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [538 600])
+                    ("Dump" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [632 649]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [615 650]))                  
+                :type "namespace")
+                nil [414 652]))          
+      :file "emit.h"
+      :pointmax 714
+      :fsize 713
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 602 . 614) (symbol 525 . 537) (symbol 459 . 471) (symbol 337 . 341) (symbol 330 . 336) (punctuation 329 . 330) (semantic-list 190 . 277))
+      :lexical-table 
+        '(("NODE_EMIT_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "ptr.h"
+      :file "ptr.h"
+      :fsize 855
+      :lastmodtime '(21784 46492 0 0))
+    (semanticdb-table "type.h"
+      :file "type.h"
+      :fsize 510
+      :lastmodtime '(21784 46492 0 0)))
+  :file "!usr!include!yaml-cpp!node!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

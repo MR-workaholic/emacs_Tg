@@ -1,0 +1,163 @@
+;; Object python-cc-base/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python-cc-base/"
+  :tables
+  (list
+    (semanticdb-table "wrapper.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Python.h" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("algorithm" include (:system-flag t) nil [39 59])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [61 81])
+            ("TestExample" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [102 109])
+                    ("GetInstance" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("TestExample" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [112 173])
+                    ("fact" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [186 192]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [177 193])
+                    ("StrReverse" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [214 225]))                          
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [196 226])
+                    ("private" label nil (reparse-symbol classsubparts) [228 236])
+                    ("TestExample" function
+                       (:constructor-flag t
+                        :type ("TestExample" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [239 254])
+                    ("m_Instance" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("TestExample" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [258 289])
+                    ("GC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [305 312])
+                            ("GC" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [317 423]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [293 428])
+                    ("gc" variable
+                       (:typemodifiers ("static")
+                        :type ("GC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [431 444]))                  
+                :type "class")
+                nil [83 447])
+            ("TestExample::m_Instance" variable
+               (:pointer 1
+                :default-value "new TestExample()"
+                :type ("TestExample" type (:type "class") nil nil))
+                nil [449 506])
+            ("TestExample::gc" variable (:type ("TestExample::GC" type (:type "class") nil nil)) nil [507 539])
+            ("fact" function
+               (:parent "TestExample"
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [563 569]))                  
+                :type "int")
+                nil [541 649])
+            ("StrReverse" function
+               (:parent "TestExample"
+                :arguments 
+                  ( ("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [682 693]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [651 771])
+            ("fact" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [782 788]))                  
+                :type "int")
+                nil [773 874])
+            ("StrReverse" function
+               (:arguments 
+                  ( ("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [894 905]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [876 998])
+            ("wrap_fact" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1020 1035])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1036 1051]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [1000 1193])
+            ("wrap_StrReverse" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1221 1236])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1237 1252]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [1195 1554])
+            ("exampleMethods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    {\"fact\", wrap_fact, METH_VARARGS, \"Caculate N!\"},
+    {\"StrReverse\", wrap_StrReverse, METH_VARARGS, \"Reverse the string\"},
+    {NULL, NULL}
+  }"
+                :type ("PyMethodDef" type (:type "class") nil nil))
+                nil [1557 1747])
+            ("initexample" function (:type "void") nil [1795 1880]))          
+      :file "wrapper.cc"
+      :pointmax 1881
+      :fsize 1936
+      :lastmodtime '(22564 10546 368120 85000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("algorithm" include (:system-flag t) nil [39 59])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [61 81])
+            ("StrRev" function
+               (:arguments 
+                  ( ("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97 108]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [83 186])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [197 206])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [207 220]))                  
+                :type "int")
+                nil [188 327]))          
+      :file "test.cc"
+      :pointmax 328
+      :fsize 363
+      :lastmodtime '(22564 10583 220241 485000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapterc!python-cc-base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

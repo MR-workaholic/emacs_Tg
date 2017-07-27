@@ -1,0 +1,28 @@
+;; Object testpython/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testpython/"
+  :tables
+  (list
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("a_list" variable nil nil [1 24])
+            ("print_a_list" function (:arguments 
+              ( ("a_list" variable nil (reparse-symbol function_parameters) [44 50]))              ) nil [27 97])
+            ("a_list" code nil nil [193 219])
+            ("a_list" code nil nil [220 241])
+            ("a_list" code nil nil [242 267])
+            ("a_list" code nil nil [268 306])
+            ("a_list" code nil nil [307 343])
+            ("a_list" code nil nil [344 366])
+            ("a_list" code nil nil [367 390])
+            ("a_list" code nil nil [391 411])
+            ("print_a_list" code nil nil [412 432]))          
+      :file "test.py"
+      :pointmax 433
+      :fsize 432
+      :lastmodtime '(22557 36346 144547 774000)
+      :unmatched-syntax '((NAME 433 . 436) ($EOI 436 . 436) (NAME 433 . 434) ($EOI 434 . 434))))
+  :file "!home!czh!文档!emacs!testpython!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

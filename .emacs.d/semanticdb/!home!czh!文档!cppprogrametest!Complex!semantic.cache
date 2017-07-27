@@ -1,0 +1,312 @@
+;; Object Complex/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Complex/"
+  :tables
+  (list
+    (semanticdb-table "MyComplex.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cmath" include (:system-flag t) nil [1 17])
+            ("iostream" include (:system-flag t) nil [18 37])
+            ("MyComplex.h" include nil nil [38 60])
+            ("MyComplex" function
+               (:constructor-flag t
+                :parent "MyComplex"
+                :type ("MyComplex" type (:type "class") nil nil))
+                nil [62 124])
+            ("MyComplex" function
+               (:constructor-flag t
+                :parent "MyComplex"
+                :arguments 
+                  ( ("real" variable (:type "int") (reparse-symbol arg-sub-list) [147 156])
+                    ("imag" variable (:type "int") (reparse-symbol arg-sub-list) [157 166]))                  
+                :type ("MyComplex" type (:type "class") nil nil))
+                nil [126 202])
+            ("MyComplex" function
+               (:constructor-flag t
+                :parent "MyComplex"
+                :arguments 
+                  ( ("Obj" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [225 246]))                  
+                :type ("MyComplex" type (:type "class") nil nil))
+                nil [204 324])
+            ("+" function
+               (:operator-flag t
+                :parent "MyComplex"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [357 378]))                  
+                :type ("MyComplex" type (:type "class") nil nil))
+                nil [326 497])
+            ("+" function
+               (:operator-flag t
+                :parent "MyComplex"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [530 545]))                  
+                :type ("MyComplex" type (:type "class") nil nil))
+                nil [499 646])
+            ("+" function
+               (:operator-flag t
+                :arguments 
+                  ( ("lhs" variable (:type "int") (reparse-symbol arg-sub-list) [668 676])
+                    ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [677 698]))                  
+                :type ("MyComplex" type (:type "class") nil nil))
+                nil [648 749])
+            ("-" function
+               (:operator-flag t
+                :parent "MyComplex"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [783 804]))                  
+                :type ("MyComplex" type (:type "class") nil nil))
+                nil [752 923])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :parent "MyComplex"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [956 977]))                  
+                :type ("MyComplex" type (:type "class") nil nil))
+                nil [925 1136])
+            ("/" function
+               (:operator-flag t
+                :parent "MyComplex"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1169 1190]))                  
+                :type ("MyComplex" type (:type "class") nil nil))
+                nil [1138 1452])
+            ("==" function
+               (:operator-flag t
+                :parent "MyComplex"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1481 1502]))                  
+                :type "bool")
+                nil [1454 1563])
+            ("=" function
+               (:operator-flag t
+                :parent "MyComplex"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1597 1618]))                  
+                :type ("MyComplex" type (:type "class") nil nil))
+                nil [1565 1800])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1827 1844])
+                    ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1845 1866]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [1802 1982]))          
+      :file "MyComplex.cpp"
+      :pointmax 1983
+      :fsize 2106
+      :lastmodtime '(22802 35017 750275 362000)
+      :unmatched-syntax nil)
+    (semanticdb-table "MyComplex.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_MYCOMPLEX_H_" variable (:constant-flag t) nil [31 44])
+            ("iostream" include (:system-flag t) nil [46 65])
+            ("MyComplex" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [85 92])
+                    ("MyComplex" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [95 107])
+                    ("MyComplex" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [120 124])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [125 129]))                          
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [110 130])
+                    ("MyComplex" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyComplex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [143 160]))                          
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [133 161])
+                    ("MyComplex" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [263 277])
+                    ("+" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyComplex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [302 319]))                          
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [282 326])
+                    ("+" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [407 418]))                          
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [387 425])
+                    ("+" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [497 501])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyComplex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [502 519]))                          
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [470 520])
+                    ("-" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyComplex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [631 648]))                          
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [611 655])
+                    ("" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyComplex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [678 695]))                          
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [658 702])
+                    ("/" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyComplex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [725 742]))                          
+                        :type ("MyComplex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [705 749])
+                    ("==" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyComplex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [768 785]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [752 792])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [870 884])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyComplex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [885 902]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [838 903])
+                    ("private" label nil (reparse-symbol classsubparts) [967 975])
+                    ("_real" variable (:type "int") (reparse-symbol classsubparts) [978 988])
+                    ("_imag" variable (:type "int") (reparse-symbol classsubparts) [991 1001]))                  
+                :type "class")
+                nil [67 1005]))          
+      :file "MyComplex.h"
+      :pointmax 1014
+      :fsize 1535
+      :lastmodtime '(22785 43402 787883 209000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_MYCOMPLEX_H_")
+          )
+)
+    (semanticdb-table "TestComplex.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("MyComplex.h" include nil nil [21 43])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [54 63])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64 77]))                  
+                :type "int")
+                nil [45 366]))          
+      :file "TestComplex.cpp"
+      :pointmax 367
+      :fsize 366
+      :lastmodtime '(22785 43350 388265 722000)
+      :unmatched-syntax nil))
+  :file "!home!czh!文档!cppprogrametest!Complex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

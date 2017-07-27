@@ -1,0 +1,16 @@
+;; Object czh/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "czh/"
+  :tables
+  (list
+    (semanticdb-table ".emacs"
+      :major-mode 'c++-mode
+      :tags nil
+      :file ".emacs"
+      :pointmax 16637
+      :fsize 18028
+      :lastmodtime '(22802 35642 732531 414000)
+      :unmatched-syntax nil))
+  :file "!home!czh!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

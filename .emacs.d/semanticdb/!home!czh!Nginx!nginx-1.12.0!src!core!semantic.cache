@@ -1,0 +1,1500 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "ngx_core.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_NGX_CORE_H_INCLUDED_" variable (:constant-flag t) nil [107 128])
+            ("ngx_config.h" include (:system-flag t) nil [131 154])
+            ("ngx_module_t" type
+               (:typedef ("ngx_module_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [157 207])
+            ("ngx_conf_t" type
+               (:typedef ("ngx_conf_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [208 256])
+            ("ngx_cycle_t" type
+               (:typedef ("ngx_cycle_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [257 306])
+            ("ngx_pool_t" type
+               (:typedef ("ngx_pool_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [307 355])
+            ("ngx_chain_t" type
+               (:typedef ("ngx_chain_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [356 405])
+            ("ngx_log_t" type
+               (:typedef ("ngx_log_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [406 453])
+            ("ngx_open_file_t" type
+               (:typedef ("ngx_open_file_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [454 507])
+            ("ngx_command_t" type
+               (:typedef ("ngx_command_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [508 559])
+            ("ngx_file_t" type
+               (:typedef ("ngx_file_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [560 608])
+            ("ngx_event_t" type
+               (:typedef ("ngx_event_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [609 658])
+            ("ngx_event_aio_t" type
+               (:typedef ("ngx_event_aio_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [659 712])
+            ("ngx_connection_t" type
+               (:typedef ("ngx_connection_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [713 767])
+            ("ngx_thread_task_t" type
+               (:typedef ("ngx_thread_task_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [768 823])
+            ("ngx_ssl_t" type
+               (:typedef ("ngx_ssl_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [824 871])
+            ("ngx_ssl_connection_t" type
+               (:typedef ("ngx_ssl_connection_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [872 930])
+            ("ngx_event_handler_pt" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [969 985]))                  
+                :type "void")
+                nil [940 986])
+            ("ngx_connection_handler_pt" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1029 1049]))                  
+                :type "void")
+                nil [995 1050])
+            ("NGX_OK" variable (:constant-flag t) nil [1062 1068])
+            ("NGX_ERROR" variable (:constant-flag t) nil [1089 1098])
+            ("NGX_AGAIN" variable (:constant-flag t) nil [1116 1125])
+            ("NGX_BUSY" variable (:constant-flag t) nil [1143 1151])
+            ("NGX_DONE" variable (:constant-flag t) nil [1170 1178])
+            ("NGX_DECLINED" variable (:constant-flag t) nil [1197 1209])
+            ("NGX_ABORT" variable (:constant-flag t) nil [1224 1233])
+            ("ngx_errno.h" include (:system-flag t) nil [1244 1266])
+            ("ngx_atomic.h" include (:system-flag t) nil [1267 1290])
+            ("ngx_thread.h" include (:system-flag t) nil [1291 1314])
+            ("ngx_rbtree.h" include (:system-flag t) nil [1315 1338])
+            ("ngx_time.h" include (:system-flag t) nil [1339 1360])
+            ("ngx_socket.h" include (:system-flag t) nil [1361 1384])
+            ("ngx_string.h" include (:system-flag t) nil [1385 1408])
+            ("ngx_files.h" include (:system-flag t) nil [1409 1431])
+            ("ngx_shmem.h" include (:system-flag t) nil [1432 1454])
+            ("ngx_process.h" include (:system-flag t) nil [1455 1479])
+            ("ngx_user.h" include (:system-flag t) nil [1480 1501])
+            ("ngx_dlopen.h" include (:system-flag t) nil [1502 1525])
+            ("ngx_parse.h" include (:system-flag t) nil [1526 1548])
+            ("ngx_parse_time.h" include (:system-flag t) nil [1549 1576])
+            ("ngx_log.h" include (:system-flag t) nil [1577 1597])
+            ("ngx_alloc.h" include (:system-flag t) nil [1598 1620])
+            ("ngx_palloc.h" include (:system-flag t) nil [1621 1644])
+            ("ngx_buf.h" include (:system-flag t) nil [1645 1665])
+            ("ngx_queue.h" include (:system-flag t) nil [1666 1688])
+            ("ngx_array.h" include (:system-flag t) nil [1689 1711])
+            ("ngx_list.h" include (:system-flag t) nil [1712 1733])
+            ("ngx_hash.h" include (:system-flag t) nil [1734 1755])
+            ("ngx_file.h" include (:system-flag t) nil [1756 1777])
+            ("ngx_crc.h" include (:system-flag t) nil [1778 1798])
+            ("ngx_crc32.h" include (:system-flag t) nil [1799 1821])
+            ("ngx_murmurhash.h" include (:system-flag t) nil [1822 1849])
+            ("ngx_radix_tree.h" include (:system-flag t) nil [1895 1922])
+            ("ngx_times.h" include (:system-flag t) nil [1923 1945])
+            ("ngx_rwlock.h" include (:system-flag t) nil [1946 1969])
+            ("ngx_shmtx.h" include (:system-flag t) nil [1970 1992])
+            ("ngx_slab.h" include (:system-flag t) nil [1993 2014])
+            ("ngx_inet.h" include (:system-flag t) nil [2015 2036])
+            ("ngx_cycle.h" include (:system-flag t) nil [2037 2059])
+            ("ngx_resolver.h" include (:system-flag t) nil [2060 2085])
+            ("ngx_process_cycle.h" include (:system-flag t) nil [2142 2172])
+            ("ngx_conf_file.h" include (:system-flag t) nil [2173 2199])
+            ("ngx_module.h" include (:system-flag t) nil [2200 2223])
+            ("ngx_open_file_cache.h" include (:system-flag t) nil [2224 2256])
+            ("ngx_os.h" include (:system-flag t) nil [2257 2276])
+            ("ngx_connection.h" include (:system-flag t) nil [2277 2304])
+            ("ngx_syslog.h" include (:system-flag t) nil [2305 2328])
+            ("ngx_proxy_protocol.h" include (:system-flag t) nil [2329 2360])
+            ("LF" variable (:constant-flag t) nil [2371 2373])
+            ("CR" variable (:constant-flag t) nil [2400 2402])
+            ("CRLF" variable (:constant-flag t) nil [2429 2433])
+            ("ngx_abs" variable (:constant-flag t) nil [2453 2460])
+            ("ngx_max" variable (:constant-flag t) nil [2521 2528])
+            ("ngx_min" variable (:constant-flag t) nil [2584 2591])
+            ("ngx_cpuinfo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2657 2662]))                  
+                :type "void")
+                nil [2640 2663]))          
+      :file "ngx_core.h"
+      :pointmax 2856
+      :fsize 2855
+      :lastmodtime '(22766 15785 0 0)
+      :unmatched-syntax '((TYPEDEF 987 . 994) (TYPEDEF 932 . 939))
+      :lexical-table 
+        '(("NGX_ABORT" . ((punctuation "-" 1239 . 1240) (number "6" 1240 . 1241)))
+          ("NGX_AGAIN" . ((punctuation "-" 1131 . 1132) (number "2" 1132 . 1133)))
+          ("NGX_BUSY" . ((punctuation "-" 1158 . 1159) (number "3" 1159 . 1160)))
+          ("ngx_abs" (spp-arg-list ("value") 2460 . 2467) . ((semantic-list "(((value) >= 0) ? (value) : - (value))" 2474 . 2512)))
+          ("NGX_ERROR" . ((punctuation "-" 1104 . 1105) (number "1" 1105 . 1106)))
+          ("NGX_DONE" . ((punctuation "-" 1185 . 1186) (number "4" 1186 . 1187)))
+          ("NGX_DECLINED" . ((punctuation "-" 1212 . 1213) (number "5" 1213 . 1214)))
+          ("_NGX_CORE_H_INCLUDED_")
+          ("CR" . ((semantic-list "(u_char)" 2407 . 2415) (string "'\\r'" 2416 . 2420)))
+          ("CRLF" . ((string "\"\\r\\n\"" 2436 . 2442)))
+          ("ngx_max" (spp-arg-list ("val1" "val2") 2528 . 2540) . ((semantic-list "((val1 < val2) ? (val2) : (val1))" 2542 . 2575)))
+          ("NGX_OK" . ((number "0" 1078 . 1079)))
+          ("LF" . ((semantic-list "(u_char)" 2378 . 2386) (string "'\\n'" 2387 . 2391)))
+          ("ngx_min" (spp-arg-list ("val1" "val2") 2591 . 2603) . ((semantic-list "((val1 > val2) ? (val2) : (val1))" 2605 . 2638)))
+          )
+)
+    (semanticdb-table "ngx_config.h"
+      :file "ngx_config.h"
+      :fsize 2777
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_rbtree.h"
+      :file "ngx_rbtree.h"
+      :fsize 2290
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_string.h"
+      :file "ngx_string.h"
+      :fsize 6550
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_parse.h"
+      :file "ngx_parse.h"
+      :fsize 362
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_parse_time.h"
+      :file "ngx_parse_time.h"
+      :fsize 382
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_log.h"
+      :file "ngx_log.h"
+      :fsize 9697
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_palloc.h"
+      :file "ngx_palloc.h"
+      :fsize 2357
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_buf.h"
+      :file "ngx_buf.h"
+      :fsize 4996
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_queue.h"
+      :file "ngx_queue.h"
+      :fsize 3533
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_array.h"
+      :file "ngx_array.h"
+      :fsize 1069
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_list.h"
+      :file "ngx_list.h"
+      :fsize 1436
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_hash.h"
+      :file "ngx_hash.h"
+      :fsize 2812
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_file.h"
+      :file "ngx_file.h"
+      :fsize 4667
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_crc.h"
+      :file "ngx_crc.h"
+      :fsize 616
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_crc32.h"
+      :file "ngx_crc32.h"
+      :fsize 1359
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_murmurhash.h"
+      :file "ngx_murmurhash.h"
+      :fsize 286
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_radix_tree.h"
+      :file "ngx_radix_tree.h"
+      :fsize 1318
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_times.h"
+      :file "ngx_times.h"
+      :fsize 1198
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_rwlock.h"
+      :file "ngx_rwlock.h"
+      :fsize 354
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_shmtx.h"
+      :file "ngx_shmtx.h"
+      :fsize 943
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_slab.h"
+      :file "ngx_slab.h"
+      :fsize 1451
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_inet.h"
+      :file "ngx_inet.h"
+      :fsize 3556
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_cycle.h"
+      :file "ngx_cycle.h"
+      :fsize 4113
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_resolver.h"
+      :file "ngx_resolver.h"
+      :fsize 6305
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_conf_file.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_NGX_CONF_FILE_H_INCLUDED_" variable (:constant-flag t) nil [112 138])
+            ("ngx_config.h" include (:system-flag t) nil [141 164])
+            ("ngx_core.h" include (:system-flag t) nil [165 186])
+            ("NGX_CONF_NOARGS" variable (:constant-flag t) nil [342 357])
+            ("NGX_CONF_TAKE1" variable (:constant-flag t) nil [382 396])
+            ("NGX_CONF_TAKE2" variable (:constant-flag t) nil [422 436])
+            ("NGX_CONF_TAKE3" variable (:constant-flag t) nil [462 476])
+            ("NGX_CONF_TAKE4" variable (:constant-flag t) nil [502 516])
+            ("NGX_CONF_TAKE5" variable (:constant-flag t) nil [542 556])
+            ("NGX_CONF_TAKE6" variable (:constant-flag t) nil [582 596])
+            ("NGX_CONF_TAKE7" variable (:constant-flag t) nil [622 636])
+            ("NGX_CONF_MAX_ARGS" variable (:constant-flag t) nil [663 680])
+            ("NGX_CONF_TAKE12" variable (:constant-flag t) nil [695 710])
+            ("NGX_CONF_TAKE13" variable (:constant-flag t) nil [756 771])
+            ("NGX_CONF_TAKE23" variable (:constant-flag t) nil [818 833])
+            ("NGX_CONF_TAKE123" variable (:constant-flag t) nil [880 896])
+            ("NGX_CONF_TAKE1234" variable (:constant-flag t) nil [956 973])
+            ("NGX_CONF_ARGS_NUMBER" variable (:constant-flag t) nil [1083 1103])
+            ("NGX_CONF_BLOCK" variable (:constant-flag t) nil [1123 1137])
+            ("NGX_CONF_FLAG" variable (:constant-flag t) nil [1163 1176])
+            ("NGX_CONF_ANY" variable (:constant-flag t) nil [1203 1215])
+            ("NGX_CONF_1MORE" variable (:constant-flag t) nil [1243 1257])
+            ("NGX_CONF_2MORE" variable (:constant-flag t) nil [1283 1297])
+            ("NGX_DIRECT_CONF" variable (:constant-flag t) nil [1324 1339])
+            ("NGX_MAIN_CONF" variable (:constant-flag t) nil [1365 1378])
+            ("NGX_ANY_CONF" variable (:constant-flag t) nil [1405 1417])
+            ("NGX_CONF_UNSET" variable (:constant-flag t) nil [1448 1462])
+            ("NGX_CONF_UNSET_UINT" variable (:constant-flag t) nil [1480 1499])
+            ("NGX_CONF_UNSET_PTR" variable (:constant-flag t) nil [1525 1543])
+            ("NGX_CONF_UNSET_SIZE" variable (:constant-flag t) nil [1566 1585])
+            ("NGX_CONF_UNSET_MSEC" variable (:constant-flag t) nil [1607 1626])
+            ("NGX_CONF_OK" variable (:constant-flag t) nil [1654 1665])
+            ("NGX_CONF_ERROR" variable (:constant-flag t) nil [1688 1702])
+            ("NGX_CONF_BLOCK_START" variable (:constant-flag t) nil [1730 1750])
+            ("NGX_CONF_BLOCK_DONE" variable (:constant-flag t) nil [1761 1780])
+            ("NGX_CONF_FILE_DONE" variable (:constant-flag t) nil [1792 1810])
+            ("NGX_CORE_MODULE" variable (:constant-flag t) nil [1824 1839])
+            ("NGX_CONF_MODULE" variable (:constant-flag t) nil [1878 1893])
+            ("NGX_MAX_CONF_ERRSTR" variable (:constant-flag t) nil [1934 1953])
+            ("ngx_command_s" type
+               (:members 
+                  ( ("name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1989 2016])
+                    ("type" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2021 2048])
+                    ("set" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("cf" variable
+                               (:pointer 1
+                                :type ("ngx_conf_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2080 2095])
+                            ("cmd" variable
+                               (:pointer 1
+                                :type ("ngx_command_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2096 2115])
+                            ("conf" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2116 2127]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [2053 2128])
+                    ("conf" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2133 2160])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2165 2194])
+                    ("post" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2199 2226]))                  
+                :type "struct")
+                nil [1962 2229])
+            ("ngx_null_command" variable (:constant-flag t) nil [2239 2255])
+            ("ngx_open_file_s" type
+               (:members 
+                  ( ("fd" variable (:type ("ngx_fd_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2329 2354])
+                    ("name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2359 2386])
+                    ("flush" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("file" variable
+                               (:pointer 1
+                                :type ("ngx_open_file_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2421 2443])
+                            ("log" variable
+                               (:pointer 1
+                                :type ("ngx_log_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2444 2459]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2392 2460])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2465 2492]))                  
+                :type "struct")
+                nil [2300 2495])
+            ("ngx_conf_file_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("file" variable (:type ("ngx_file_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2519 2546])
+                          ("buffer" variable
+                             (:pointer 1
+                              :type ("ngx_buf_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2551 2580])
+                          ("dump" variable
+                             (:pointer 1
+                              :type ("ngx_buf_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2585 2612])
+                          ("line" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2617 2644]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2498 2663])
+            ("ngx_conf_dump_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2687 2714])
+                          ("buffer" variable
+                             (:pointer 1
+                              :type ("ngx_buf_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2719 2748]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2666 2767])
+            ("ngx_conf_handler_pt" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2807 2822])
+                    ("dummy" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2827 2848])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2849 2860]))                  
+                :type "char")
+                nil [2778 2861])
+            ("ngx_conf_s" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2888 2915])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2920 2947])
+                    ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2953 2981])
+                    ("pool" variable
+                       (:pointer 1
+                        :type ("ngx_pool_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2986 3013])
+                    ("temp_pool" variable
+                       (:pointer 1
+                        :type ("ngx_pool_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3018 3050])
+                    ("conf_file" variable
+                       (:pointer 1
+                        :type ("ngx_conf_file_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3055 3087])
+                    ("log" variable
+                       (:pointer 1
+                        :type ("ngx_log_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3092 3118])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3124 3150])
+                    ("module_type" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3155 3189])
+                    ("cmd_type" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3194 3225])
+                    ("handler" variable (:type ("ngx_conf_handler_pt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3231 3261])
+                    ("handler_conf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3266 3301]))                  
+                :type "struct")
+                nil [2864 3304])
+            ("ngx_conf_post_handler_pt" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3350 3365])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3370 3381])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3382 3393]))                  
+                :type "char")
+                nil [3315 3394])
+            ("ngx_conf_post_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("post_handler" variable (:type ("ngx_conf_post_handler_pt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3417 3456]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3396 3475])
+            ("ngx_conf_deprecated_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("post_handler" variable (:type ("ngx_conf_post_handler_pt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3499 3538])
+                          ("old_name" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [3543 3578])
+                          ("new_name" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [3583 3618]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3478 3643])
+            ("ngx_conf_num_bounds_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("post_handler" variable (:type ("ngx_conf_post_handler_pt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3667 3706])
+                          ("low" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3711 3741])
+                          ("high" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3746 3777]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3646 3802])
+            ("ngx_conf_enum_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3826 3857])
+                          ("value" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3862 3894]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3805 3913])
+            ("NGX_CONF_BITMASK_SET" variable (:constant-flag t) nil [3924 3944])
+            ("ngx_conf_bitmask_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3970 4001])
+                          ("mask" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4006 4037]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3949 4059])
+            ("ngx_conf_deprecated" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4090 4105])
+                    ("post" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4106 4117])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4118 4129]))                  
+                :type "char")
+                nil [4063 4130])
+            ("ngx_conf_check_num_bounds" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4163 4178])
+                    ("post" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4179 4190])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4191 4202]))                  
+                :type "char")
+                nil [4131 4203])
+            ("ngx_get_conf" variable (:constant-flag t) nil [4214 4226])
+            ("ngx_conf_init_value" variable (:constant-flag t) nil [4280 4299])
+            ("ngx_conf_init_ptr_value" variable (:constant-flag t) nil [4524 4547])
+            ("ngx_conf_init_uint_value" variable (:constant-flag t) nil [4768 4792])
+            ("ngx_conf_init_size_value" variable (:constant-flag t) nil [5012 5036])
+            ("ngx_conf_init_msec_value" variable (:constant-flag t) nil [5256 5280])
+            ("ngx_conf_merge_value" variable (:constant-flag t) nil [5500 5520])
+            ("ngx_conf_merge_ptr_value" variable (:constant-flag t) nil [5744 5768])
+            ("ngx_conf_merge_uint_value" variable (:constant-flag t) nil [5988 6013])
+            ("ngx_conf_merge_msec_value" variable (:constant-flag t) nil [6232 6257])
+            ("ngx_conf_merge_sec_value" variable (:constant-flag t) nil [6476 6500])
+            ("ngx_conf_merge_size_value" variable (:constant-flag t) nil [6720 6745])
+            ("ngx_conf_merge_off_value" variable (:constant-flag t) nil [6964 6988])
+            ("ngx_conf_merge_str_value" variable (:constant-flag t) nil [7208 7232])
+            ("ngx_conf_merge_bufs_value" variable (:constant-flag t) nil [7926 7951])
+            ("ngx_conf_merge_bitmask_value" variable (:constant-flag t) nil [8644 8672])
+            ("ngx_conf_param" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8902 8917]))                  
+                :type "char")
+                nil [8881 8918])
+            ("ngx_conf_parse" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8940 8955])
+                    ("filename" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8956 8976]))                  
+                :type "char")
+                nil [8919 8977])
+            ("ngx_conf_include" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9001 9016])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9017 9036])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9037 9048]))                  
+                :type "char")
+                nil [8978 9049])
+            ("ngx_conf_full_name" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9081 9100])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9101 9117])
+                    ("conf_prefix" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9122 9145]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [9052 9146])
+            ("ngx_conf_open_file" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9183 9202])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9203 9219]))                  
+                :type ("ngx_open_file_t" type (:type "class") nil nil))
+                nil [9147 9220])
+            ("ngx_conf_log_error" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("level" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9255 9272])
+                    ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9273 9288])
+                    ("err" variable (:type ("ngx_err_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9293 9307])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9308 9324])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [9325 9329]))                  
+                :type ("ngx_cdecl" type (:type "class") nil nil))
+                nil [9226 9330])
+            ("ngx_conf_set_flag_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9362 9377])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9378 9397])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9398 9409]))                  
+                :type "char")
+                nil [9333 9410])
+            ("ngx_conf_set_str_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9439 9454])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9455 9474])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9475 9486]))                  
+                :type "char")
+                nil [9411 9487])
+            ("ngx_conf_set_str_array_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9522 9537])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9538 9557])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9562 9573]))                  
+                :type "char")
+                nil [9488 9574])
+            ("ngx_conf_set_keyval_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9606 9621])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9622 9641])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9642 9653]))                  
+                :type "char")
+                nil [9575 9654])
+            ("ngx_conf_set_num_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9683 9698])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9699 9718])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9719 9730]))                  
+                :type "char")
+                nil [9655 9731])
+            ("ngx_conf_set_size_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9761 9776])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9777 9796])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9797 9808]))                  
+                :type "char")
+                nil [9732 9809])
+            ("ngx_conf_set_off_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9838 9853])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9854 9873])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9874 9885]))                  
+                :type "char")
+                nil [9810 9886])
+            ("ngx_conf_set_msec_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9916 9931])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9932 9951])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9952 9963]))                  
+                :type "char")
+                nil [9887 9964])
+            ("ngx_conf_set_sec_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9993 10008])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10009 10028])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10029 10040]))                  
+                :type "char")
+                nil [9965 10041])
+            ("ngx_conf_set_bufs_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10071 10086])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10087 10106])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10107 10118]))                  
+                :type "char")
+                nil [10042 10119])
+            ("ngx_conf_set_enum_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10149 10164])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10165 10184])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10185 10196]))                  
+                :type "char")
+                nil [10120 10197])
+            ("ngx_conf_set_bitmask_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10230 10245])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10246 10265])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10266 10277]))                  
+                :type "char")
+                nil [10198 10278]))          
+      :file "ngx_conf_file.h"
+      :pointmax 10321
+      :fsize 10320
+      :lastmodtime '(22766 15785 0 0)
+      :unmatched-syntax '((VOID 9221 . 9225) (TYPEDEF 3307 . 3314) (TYPEDEF 2770 . 2777))
+      :lexical-table 
+        '(("_NGX_CONF_FILE_H_INCLUDED_")
+          ("NGX_CONF_UNSET_PTR" . 
+              ((semantic-list "(void *)" 1546 . 1554) (punctuation "-" 1555 . 1556) (number "1" 1556 . 1557)))
+          ("ngx_conf_merge_str_value" (spp-arg-list ("conf" "prev" "default") 7232 . 7253) . 
+              ((IF "if" 7283 . 7285) (semantic-list "(conf.data == NULL)" 7286 . 7305) (semantic-list "{                                                 \\
+        if (prev.data) {                                                     \\
+            conf.len = prev.len;                                             \\
+            conf.data = prev.data;                                           \\
+        } else {                                                             \\
+            conf.len = sizeof(default) - 1;                                  \\
+            conf.data = (u_char *) default;                                  \\
+        }                                                                    \\
+    }" 7306 . 7916)))
+          ("ngx_conf_merge_bitmask_value" (spp-arg-list ("conf" "prev" "default") 8672 . 8693) . 
+              ((IF "if" 8719 . 8721) (semantic-list "(conf == 0)" 8722 . 8733) (semantic-list "{                                                         \\
+        conf = (prev == 0) ? default : prev;                                 \\
+    }" 8734 . 8878)))
+          ("NGX_CONF_TAKE23" . ((semantic-list "(NGX_CONF_TAKE2|NGX_CONF_TAKE3)" 839 . 870)))
+          ("NGX_CONF_TAKE1234" . ((semantic-list "(NGX_CONF_TAKE1|NGX_CONF_TAKE2|NGX_CONF_TAKE3   \\
+                              |NGX_CONF_TAKE4)" 977 . 1073)))
+          ("NGX_CONF_UNSET_MSEC" . 
+              ((semantic-list "(ngx_msec_t)" 1628 . 1640) (punctuation "-" 1641 . 1642) (number "1" 1642 . 1643)))
+          ("ngx_null_command" . ((semantic-list "{ ngx_null_string, 0, NULL, 0, 0, NULL }" 2257 . 2297)))
+          ("ngx_conf_init_value" (spp-arg-list ("conf" "default") 4299 . 4314) . 
+              ((IF "if" 4355 . 4357) (semantic-list "(conf == NGX_CONF_UNSET)" 4358 . 4382) (semantic-list "{                                            \\
+        conf = default;                                                      \\
+    }" 4383 . 4514)))
+          ("ngx_conf_merge_size_value" (spp-arg-list ("conf" "prev" "default") 6745 . 6766) . 
+              ((IF "if" 6795 . 6797) (semantic-list "(conf == NGX_CONF_UNSET_SIZE)" 6798 . 6827) (semantic-list "{                                       \\
+        conf = (prev == NGX_CONF_UNSET_SIZE) ? default : prev;               \\
+    }" 6828 . 6954)))
+          ("ngx_conf_merge_off_value" (spp-arg-list ("conf" "prev" "default") 6988 . 7009) . 
+              ((IF "if" 7039 . 7041) (semantic-list "(conf == NGX_CONF_UNSET)" 7042 . 7066) (semantic-list "{                                            \\
+        conf = (prev == NGX_CONF_UNSET) ? default : prev;                    \\
+    }" 7067 . 7198)))
+          ("NGX_CONF_UNSET_UINT" . 
+              ((semantic-list "(ngx_uint_t)" 1501 . 1513) (punctuation "-" 1514 . 1515) (number "1" 1515 . 1516)))
+          ("NGX_CONF_FLAG" . ((number "0x00000200" 1184 . 1194)))
+          ("ngx_conf_init_size_value" (spp-arg-list ("conf" "default") 5036 . 5051) . 
+              ((IF "if" 5087 . 5089) (semantic-list "(conf == NGX_CONF_UNSET_SIZE)" 5090 . 5119) (semantic-list "{                                       \\
+        conf = default;                                                      \\
+    }" 5120 . 5246)))
+          ("NGX_CONF_TAKE1" . ((number "0x00000002" 403 . 413)))
+          ("NGX_CONF_BLOCK" . ((number "0x00000100" 1144 . 1154)))
+          ("NGX_CONF_OK" . ((symbol "NULL" 1675 . 1679)))
+          ("NGX_CONF_FILE_DONE" . ((number "3" 1813 . 1814)))
+          ("NGX_CONF_TAKE2" . ((number "0x00000004" 443 . 453)))
+          ("NGX_DIRECT_CONF" . ((number "0x00010000" 1345 . 1355)))
+          ("NGX_CONF_MODULE" . ((number "0x464E4F43" 1899 . 1909)))
+          ("ngx_get_conf" (spp-arg-list ("conf_ctx" "module") 4226 . 4244) . ((symbol "conf_ctx" 4246 . 4254) (semantic-list "[module.index]" 4254 . 4268)))
+          ("ngx_conf_merge_sec_value" (spp-arg-list ("conf" "prev" "default") 6500 . 6521) . 
+              ((IF "if" 6551 . 6553) (semantic-list "(conf == NGX_CONF_UNSET)" 6554 . 6578) (semantic-list "{                                            \\
+        conf = (prev == NGX_CONF_UNSET) ? default : prev;                    \\
+    }" 6579 . 6710)))
+          ("NGX_CONF_TAKE3" . ((number "0x00000008" 483 . 493)))
+          ("NGX_CONF_TAKE123" . ((semantic-list "(NGX_CONF_TAKE1|NGX_CONF_TAKE2|NGX_CONF_TAKE3)" 901 . 947)))
+          ("NGX_CONF_1MORE" . ((number "0x00000800" 1264 . 1274)))
+          ("NGX_CONF_TAKE4" . ((number "0x00000010" 523 . 533)))
+          ("NGX_CONF_ARGS_NUMBER" . ((number "0x000000ff" 1104 . 1114)))
+          ("NGX_MAX_CONF_ERRSTR" . ((number "1024" 1955 . 1959)))
+          ("ngx_conf_merge_msec_value" (spp-arg-list ("conf" "prev" "default") 6257 . 6278) . 
+              ((IF "if" 6307 . 6309) (semantic-list "(conf == NGX_CONF_UNSET_MSEC)" 6310 . 6339) (semantic-list "{                                       \\
+        conf = (prev == NGX_CONF_UNSET_MSEC) ? default : prev;               \\
+    }" 6340 . 6466)))
+          ("ngx_conf_merge_bufs_value" (spp-arg-list ("conf" "prev" "default_num" "default_size") 7951 . 7990) . 
+              ((IF "if" 8001 . 8003) (semantic-list "(conf.num == 0)" 8004 . 8019) (semantic-list "{                                                     \\
+        if (prev.num) {                                                      \\
+            conf.num = prev.num;                                             \\
+            conf.size = prev.size;                                           \\
+        } else {                                                             \\
+            conf.num = default_num;                                          \\
+            conf.size = default_size;                                        \\
+        }                                                                    \\
+    }" 8020 . 8634)))
+          ("NGX_CONF_TAKE5" . ((number "0x00000020" 563 . 573)))
+          ("NGX_CONF_UNSET_SIZE" . 
+              ((semantic-list "(size_t)" 1587 . 1595) (punctuation "-" 1596 . 1597) (number "1" 1597 . 1598)))
+          ("ngx_conf_init_ptr_value" (spp-arg-list ("conf" "default") 4547 . 4562) . 
+              ((IF "if" 4599 . 4601) (semantic-list "(conf == NGX_CONF_UNSET_PTR)" 4602 . 4630) (semantic-list "{                                        \\
+        conf = default;                                                      \\
+    }" 4631 . 4758)))
+          ("ngx_conf_merge_uint_value" (spp-arg-list ("conf" "prev" "default") 6013 . 6034) . 
+              ((IF "if" 6063 . 6065) (semantic-list "(conf == NGX_CONF_UNSET_UINT)" 6066 . 6095) (semantic-list "{                                       \\
+        conf = (prev == NGX_CONF_UNSET_UINT) ? default : prev;               \\
+    }" 6096 . 6222)))
+          ("NGX_CONF_NOARGS" . ((number "0x00000001" 363 . 373)))
+          ("NGX_CONF_TAKE6" . ((number "0x00000040" 603 . 613)))
+          ("NGX_CONF_2MORE" . ((number "0x00001000" 1304 . 1314)))
+          ("NGX_ANY_CONF" . ((number "0x1F000000" 1426 . 1436)))
+          ("NGX_CONF_BLOCK_DONE" . ((number "2" 1782 . 1783)))
+          ("ngx_conf_init_msec_value" (spp-arg-list ("conf" "default") 5280 . 5295) . 
+              ((IF "if" 5331 . 5333) (semantic-list "(conf == NGX_CONF_UNSET_MSEC)" 5334 . 5363) (semantic-list "{                                       \\
+        conf = default;                                                      \\
+    }" 5364 . 5490)))
+          ("ngx_conf_merge_value" (spp-arg-list ("conf" "prev" "default") 5520 . 5541) . 
+              ((IF "if" 5575 . 5577) (semantic-list "(conf == NGX_CONF_UNSET)" 5578 . 5602) (semantic-list "{                                            \\
+        conf = (prev == NGX_CONF_UNSET) ? default : prev;                    \\
+    }" 5603 . 5734)))
+          ("NGX_CONF_TAKE7" . ((number "0x00000080" 643 . 653)))
+          ("NGX_CONF_TAKE12" . ((semantic-list "(NGX_CONF_TAKE1|NGX_CONF_TAKE2)" 716 . 747)))
+          ("NGX_CONF_ANY" . ((number "0x00000400" 1224 . 1234)))
+          ("NGX_CONF_UNSET" . ((punctuation "-" 1469 . 1470) (number "1" 1470 . 1471)))
+          ("ngx_conf_init_uint_value" (spp-arg-list ("conf" "default") 4792 . 4807) . 
+              ((IF "if" 4843 . 4845) (semantic-list "(conf == NGX_CONF_UNSET_UINT)" 4846 . 4875) (semantic-list "{                                       \\
+        conf = default;                                                      \\
+    }" 4876 . 5002)))
+          ("NGX_CONF_MAX_ARGS" . ((number "8" 684 . 685)))
+          ("NGX_CONF_TAKE13" . ((semantic-list "(NGX_CONF_TAKE1|NGX_CONF_TAKE3)" 777 . 808)))
+          ("NGX_MAIN_CONF" . ((number "0x01000000" 1386 . 1396)))
+          ("NGX_CONF_ERROR" . 
+              ((semantic-list "(void *)" 1709 . 1717) (punctuation "-" 1718 . 1719) (number "1" 1719 . 1720)))
+          ("NGX_CONF_BITMASK_SET" . ((number "1" 3946 . 3947)))
+          ("NGX_CONF_BLOCK_START" . ((number "1" 1751 . 1752)))
+          ("NGX_CORE_MODULE" . ((number "0x45524F43" 1845 . 1855)))
+          ("ngx_conf_merge_ptr_value" (spp-arg-list ("conf" "prev" "default") 5768 . 5789) . 
+              ((IF "if" 5819 . 5821) (semantic-list "(conf == NGX_CONF_UNSET_PTR)" 5822 . 5850) (semantic-list "{                                        \\
+        conf = (prev == NGX_CONF_UNSET_PTR) ? default : prev;                \\
+    }" 5851 . 5978)))
+          )
+)
+    (semanticdb-table "ngx_module.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_NGX_MODULE_H_INCLUDED_" variable (:constant-flag t) nil [139 162])
+            ("ngx_config.h" include (:system-flag t) nil [165 188])
+            ("ngx_core.h" include (:system-flag t) nil [189 210])
+            ("nginx.h" include (:system-flag t) nil [211 229])
+            ("NGX_MODULE_UNSET_INDEX" variable (:constant-flag t) nil [240 262])
+            ("NGX_MODULE_SIGNATURE_0" variable (:constant-flag t) nil [290 312])
+            ("NGX_MODULE_SIGNATURE_1" variable (:constant-flag t) nil [631 653])
+            ("NGX_MODULE_SIGNATURE_2" variable (:constant-flag t) nil [739 761])
+            ("NGX_MODULE_SIGNATURE_3" variable (:constant-flag t) nil [865 887])
+            ("NGX_MODULE_SIGNATURE_4" variable (:constant-flag t) nil [995 1017])
+            ("NGX_MODULE_SIGNATURE_5" variable (:constant-flag t) nil [1106 1128])
+            ("NGX_MODULE_SIGNATURE_6" variable (:constant-flag t) nil [1215 1237])
+            ("NGX_MODULE_SIGNATURE_7" variable (:constant-flag t) nil [1336 1358])
+            ("NGX_MODULE_SIGNATURE_8" variable (:constant-flag t) nil [1445 1467])
+            ("NGX_MODULE_SIGNATURE_9" variable (:constant-flag t) nil [1490 1512])
+            ("NGX_MODULE_SIGNATURE_10" variable (:constant-flag t) nil [1527 1550])
+            ("NGX_MODULE_SIGNATURE_11" variable (:constant-flag t) nil [1666 1689])
+            ("NGX_MODULE_SIGNATURE_12" variable (:constant-flag t) nil [1711 1734])
+            ("NGX_MODULE_SIGNATURE_13" variable (:constant-flag t) nil [1814 1837])
+            ("NGX_MODULE_SIGNATURE_14" variable (:constant-flag t) nil [1930 1953])
+            ("NGX_MODULE_SIGNATURE_15" variable (:constant-flag t) nil [2045 2068])
+            ("NGX_MODULE_SIGNATURE_16" variable (:constant-flag t) nil [2164 2187])
+            ("NGX_MODULE_SIGNATURE_17" variable (:constant-flag t) nil [2209 2232])
+            ("NGX_MODULE_SIGNATURE_18" variable (:constant-flag t) nil [2246 2269])
+            ("NGX_MODULE_SIGNATURE_19" variable (:constant-flag t) nil [2349 2372])
+            ("NGX_MODULE_SIGNATURE_20" variable (:constant-flag t) nil [2463 2486])
+            ("NGX_MODULE_SIGNATURE_21" variable (:constant-flag t) nil [2576 2599])
+            ("NGX_MODULE_SIGNATURE_22" variable (:constant-flag t) nil [2696 2719])
+            ("NGX_MODULE_SIGNATURE_23" variable (:constant-flag t) nil [2799 2822])
+            ("NGX_MODULE_SIGNATURE_24" variable (:constant-flag t) nil [2920 2943])
+            ("NGX_MODULE_SIGNATURE_25" variable (:constant-flag t) nil [2965 2988])
+            ("NGX_MODULE_SIGNATURE_26" variable (:constant-flag t) nil [3066 3089])
+            ("NGX_MODULE_SIGNATURE_27" variable (:constant-flag t) nil [3111 3134])
+            ("NGX_MODULE_SIGNATURE_28" variable (:constant-flag t) nil [3223 3246])
+            ("NGX_MODULE_SIGNATURE_29" variable (:constant-flag t) nil [3333 3356])
+            ("NGX_MODULE_SIGNATURE_30" variable (:constant-flag t) nil [3444 3467])
+            ("NGX_MODULE_SIGNATURE_31" variable (:constant-flag t) nil [3551 3574])
+            ("NGX_MODULE_SIGNATURE_32" variable (:constant-flag t) nil [3660 3683])
+            ("NGX_MODULE_SIGNATURE_33" variable (:constant-flag t) nil [3777 3800])
+            ("NGX_MODULE_SIGNATURE_34" variable (:constant-flag t) nil [3882 3905])
+            ("NGX_MODULE_SIGNATURE" variable (:constant-flag t) nil [3927 3947])
+            ("NGX_MODULE_V1" variable (:constant-flag t) nil [4941 4954])
+            ("NGX_MODULE_V1_PADDING" variable (:constant-flag t) nil [5154 5175])
+            ("ngx_module_s" type
+               (:members 
+                  ( ("ctx_index" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5228 5260])
+                    ("index" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5265 5293])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5299 5326])
+                    ("spare0" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5332 5361])
+                    ("spare1" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5366 5395])
+                    ("version" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5401 5431])
+                    ("signature" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [5436 5468])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [5474 5500])
+                    ("commands" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5505 5536])
+                    ("type" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5541 5568])
+                    ("init_master" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("log" variable
+                               (:pointer 1
+                                :type ("ngx_log_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5609 5624]))                          
+                        :type ("ngx_int_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5574 5625])
+                    ("init_module" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cycle" variable
+                               (:pointer 1
+                                :type ("ngx_cycle_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5666 5685]))                          
+                        :type ("ngx_int_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5631 5686])
+                    ("init_process" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cycle" variable
+                               (:pointer 1
+                                :type ("ngx_cycle_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5728 5747]))                          
+                        :type ("ngx_int_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5692 5748])
+                    ("init_thread" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cycle" variable
+                               (:pointer 1
+                                :type ("ngx_cycle_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5788 5807]))                          
+                        :type ("ngx_int_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5753 5808])
+                    ("exit_thread" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cycle" variable
+                               (:pointer 1
+                                :type ("ngx_cycle_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5848 5867]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5813 5868])
+                    ("exit_process" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cycle" variable
+                               (:pointer 1
+                                :type ("ngx_cycle_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5909 5928]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5873 5929])
+                    ("exit_master" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cycle" variable
+                               (:pointer 1
+                                :type ("ngx_cycle_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5970 5989]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5935 5990])
+                    ("spare_hook0" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5996 6030])
+                    ("spare_hook1" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6035 6069])
+                    ("spare_hook2" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6074 6108])
+                    ("spare_hook3" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6113 6147])
+                    ("spare_hook4" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6152 6186])
+                    ("spare_hook5" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6191 6225])
+                    ("spare_hook6" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6230 6264])
+                    ("spare_hook7" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6269 6303]))                  
+                :type "struct")
+                nil [5202 6306])
+            ("ngx_core_module_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6330 6357])
+                          ("create_conf" function
+                             (:prototype-flag t
+                              :pointer 1
+                              :function-pointer t
+                              :arguments 
+                                ( ("cycle" variable
+                                     (:pointer 1
+                                      :type ("ngx_cycle_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [6397 6416]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [6362 6417])
+                          ("init_conf" function
+                             (:prototype-flag t
+                              :pointer 1
+                              :function-pointer t
+                              :arguments 
+                                ( ("cycle" variable
+                                     (:pointer 1
+                                      :type ("ngx_cycle_t" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [6455 6474])
+                                  ("conf" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [6475 6486]))                                
+                              :type "char")
+                              (reparse-symbol classsubparts) [6422 6487]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [6309 6508])
+            ("ngx_preinit_modules" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6541 6546]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [6511 6547])
+            ("ngx_cycle_modules" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6576 6595]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [6548 6596])
+            ("ngx_init_modules" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6624 6643]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [6597 6644])
+            ("ngx_count_modules" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6673 6692])
+                    ("type" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6693 6709]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [6645 6710])
+            ("ngx_add_module" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6738 6753])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6754 6770])
+                    ("module" variable
+                       (:pointer 1
+                        :type ("ngx_module_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6775 6796])
+                    ("order" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6797 6810]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [6713 6811])
+            ("ngx_modules" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :type ("ngx_module_t" type (:type "class") nil nil))
+                nil [6814 6850])
+            ("ngx_max_module" variable
+               (:typemodifiers ("extern")
+                :type ("ngx_uint_t" type (:type "class") nil nil))
+                nil [6851 6888])
+            ("ngx_module_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :type "char")
+                nil [6890 6931]))          
+      :file "ngx_module.h"
+      :pointmax 6971
+      :fsize 6970
+      :lastmodtime '(22766 15785 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_NGX_MODULE_H_INCLUDED_")
+          ("NGX_MODULE_SIGNATURE_27" . ((string "\"1\"" 3136 . 3139)))
+          ("NGX_MODULE_SIGNATURE_34" . ((string "\"0\"" 3907 . 3910)))
+          ("NGX_MODULE_SIGNATURE" . 
+              ((symbol "NGX_MODULE_SIGNATURE_0" 4003 . 4025) (symbol "NGX_MODULE_SIGNATURE_1" 4026 . 4048) (symbol "NGX_MODULE_SIGNATURE_2" 4049 . 4071) (symbol "NGX_MODULE_SIGNATURE_3" 4083 . 4105) (symbol "NGX_MODULE_SIGNATURE_4" 4106 . 4128) (symbol "NGX_MODULE_SIGNATURE_5" 4129 . 4151) (symbol "NGX_MODULE_SIGNATURE_6" 4163 . 4185) (symbol "NGX_MODULE_SIGNATURE_7" 4186 . 4208) (symbol "NGX_MODULE_SIGNATURE_8" 4209 . 4231) (symbol "NGX_MODULE_SIGNATURE_9" 4243 . 4265) (symbol "NGX_MODULE_SIGNATURE_10" 4266 . 4289) (symbol "NGX_MODULE_SIGNATURE_11" 4290 . 4313) (symbol "NGX_MODULE_SIGNATURE_12" 4323 . 4346) (symbol "NGX_MODULE_SIGNATURE_13" 4347 . 4370) (symbol "NGX_MODULE_SIGNATURE_14" 4371 . 4394) (symbol "NGX_MODULE_SIGNATURE_15" 4403 . 4426) (symbol "NGX_MODULE_SIGNATURE_16" 4427 . 4450) (symbol "NGX_MODULE_SIGNATURE_17" 4451 . 4474) (symbol "NGX_MODULE_SIGNATURE_18" 4483 . 4506) (symbol "NGX_MODULE_SIGNATURE_19" 4507 . 4530) (symbol "NGX_MODULE_SIGNATURE_20" 4531 . 4554) (symbol "NGX_MODULE_SIGNATURE_21" 4563 . 4586) (symbol "NGX_MODULE_SIGNATURE_22" 4587 . 4610) (symbol "NGX_MODULE_SIGNATURE_23" 4611 . 4634) (symbol "NGX_MODULE_SIGNATURE_24" 4643 . 4666) (symbol "NGX_MODULE_SIGNATURE_25" 4667 . 4690) (symbol "NGX_MODULE_SIGNATURE_26" 4691 . 4714) (symbol "NGX_MODULE_SIGNATURE_27" 4723 . 4746) (symbol "NGX_MODULE_SIGNATURE_28" 4747 . 4770) (symbol "NGX_MODULE_SIGNATURE_29" 4771 . 4794) (symbol "NGX_MODULE_SIGNATURE_30" 4803 . 4826) (symbol "NGX_MODULE_SIGNATURE_31" 4827 . 4850) (symbol "NGX_MODULE_SIGNATURE_32" 4851 . 4874) (symbol "NGX_MODULE_SIGNATURE_33" 4883 . 4906) (symbol "NGX_MODULE_SIGNATURE_34" 4907 . 4930)))
+          ("NGX_MODULE_SIGNATURE_28" . ((string "\"0\"" 3248 . 3251)))
+          ("NGX_MODULE_SIGNATURE_29" . ((string "\"0\"" 3358 . 3361)))
+          ("NGX_MODULE_SIGNATURE_0" . 
+              ((symbol "ngx_value" 366 . 375) (semantic-list "(NGX_PTR_SIZE)" 375 . 389) (string "\",\"" 390 . 393) (symbol "ngx_value" 446 . 455) (semantic-list "(NGX_SIG_ATOMIC_T_SIZE)" 455 . 478) (string "\",\"" 479 . 482) (symbol "ngx_value" 526 . 535) (semantic-list "(NGX_TIME_T_SIZE)" 535 . 552) (string "\",\"" 553 . 556)))
+          ("NGX_MODULE_SIGNATURE_10" . ((string "\"1\"" 1552 . 1555)))
+          ("NGX_MODULE_SIGNATURE_1" . ((string "\"0\"" 656 . 659)))
+          ("NGX_MODULE_SIGNATURE_11" . ((string "\"0\"" 1691 . 1694)))
+          ("NGX_MODULE_V1_PADDING" . 
+              ((number "0" 5177 . 5178) (punctuation "," 5178 . 5179) (number "0" 5180 . 5181) (punctuation "," 5181 . 5182) (number "0" 5183 . 5184) (punctuation "," 5184 . 5185) (number "0" 5186 . 5187) (punctuation "," 5187 . 5188) (number "0" 5189 . 5190) (punctuation "," 5190 . 5191) (number "0" 5192 . 5193) (punctuation "," 5193 . 5194) (number "0" 5195 . 5196) (punctuation "," 5196 . 5197) (number "0" 5198 . 5199)))
+          ("NGX_MODULE_SIGNATURE_2" . ((string "\"0\"" 764 . 767)))
+          ("NGX_MODULE_SIGNATURE_12" . ((string "\"1\"" 1736 . 1739)))
+          ("NGX_MODULE_SIGNATURE_3" . ((string "\"0\"" 890 . 893)))
+          ("NGX_MODULE_SIGNATURE_13" . ((string "\"0\"" 1839 . 1842)))
+          ("NGX_MODULE_SIGNATURE_20" . ((string "\"0\"" 2488 . 2491)))
+          ("NGX_MODULE_SIGNATURE_4" . ((string "\"0\"" 1020 . 1023)))
+          ("NGX_MODULE_SIGNATURE_14" . ((string "\"0\"" 1955 . 1958)))
+          ("NGX_MODULE_SIGNATURE_21" . ((string "\"0\"" 2601 . 2604)))
+          ("NGX_MODULE_SIGNATURE_5" . ((string "\"0\"" 1131 . 1134)))
+          ("NGX_MODULE_SIGNATURE_15" . ((string "\"0\"" 2070 . 2073)))
+          ("NGX_MODULE_SIGNATURE_22" . ((string "\"0\"" 2721 . 2724)))
+          ("NGX_MODULE_V1" . 
+              ((symbol "NGX_MODULE_UNSET_INDEX" 5017 . 5039) (punctuation "," 5039 . 5040) (symbol "NGX_MODULE_UNSET_INDEX" 5041 . 5063) (punctuation "," 5063 . 5064) (symbol "NULL" 5097 . 5101) (punctuation "," 5101 . 5102) (number "0" 5103 . 5104) (punctuation "," 5104 . 5105) (number "0" 5106 . 5107) (punctuation "," 5107 . 5108) (symbol "nginx_version" 5109 . 5122) (punctuation "," 5122 . 5123) (symbol "NGX_MODULE_SIGNATURE" 5124 . 5144)))
+          ("NGX_MODULE_UNSET_INDEX" . 
+              ((semantic-list "(ngx_uint_t)" 264 . 276) (punctuation "-" 277 . 278) (number "1" 278 . 279)))
+          ("NGX_MODULE_SIGNATURE_6" . ((string "\"0\"" 1240 . 1243)))
+          ("NGX_MODULE_SIGNATURE_16" . ((string "\"0\"" 2189 . 2192)))
+          ("NGX_MODULE_SIGNATURE_23" . ((string "\"0\"" 2824 . 2827)))
+          ("NGX_MODULE_SIGNATURE_30" . ((string "\"0\"" 3469 . 3472)))
+          ("NGX_MODULE_SIGNATURE_7" . ((string "\"0\"" 1361 . 1364)))
+          ("NGX_MODULE_SIGNATURE_17" . ((string "\"0\"" 2234 . 2237)))
+          ("NGX_MODULE_SIGNATURE_24" . ((string "\"0\"" 2945 . 2948)))
+          ("NGX_MODULE_SIGNATURE_31" . ((string "\"0\"" 3576 . 3579)))
+          ("NGX_MODULE_SIGNATURE_8" . ((string "\"0\"" 1470 . 1473)))
+          ("NGX_MODULE_SIGNATURE_18" . ((string "\"0\"" 2271 . 2274)))
+          ("NGX_MODULE_SIGNATURE_25" . ((string "\"1\"" 2990 . 2993)))
+          ("NGX_MODULE_SIGNATURE_32" . ((string "\"0\"" 3685 . 3688)))
+          ("NGX_MODULE_SIGNATURE_9" . ((string "\"1\"" 1515 . 1518)))
+          ("NGX_MODULE_SIGNATURE_19" . ((string "\"0\"" 2374 . 2377)))
+          ("NGX_MODULE_SIGNATURE_26" . ((string "\"0\"" 3091 . 3094)))
+          ("NGX_MODULE_SIGNATURE_33" . ((string "\"0\"" 3802 . 3805)))
+          )
+)
+    (semanticdb-table "ngx_open_file_cache.h"
+      :file "ngx_open_file_cache.h"
+      :fsize 3305
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_connection.h"
+      :file "ngx_connection.h"
+      :fsize 6170
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_syslog.h"
+      :file "ngx_syslog.h"
+      :fsize 731
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_proxy_protocol.h"
+      :file "ngx_proxy_protocol.h"
+      :fsize 466
+      :lastmodtime '(22766 15785 0 0))
+    (semanticdb-table "ngx_module.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [99 122])
+            ("ngx_core.h" include (:system-flag t) nil [123 144])
+            ("NGX_MAX_DYNAMIC_MODULES" variable (:constant-flag t) nil [155 178])
+            ("ngx_module_index" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [221 240]))                  
+                :type ("ngx_uint_t" type (:type "class") nil nil))
+                nil [186 241])
+            ("ngx_module_ctx_index" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [281 300])
+                    ("type" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [301 317])
+                    ("index" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [322 339]))                  
+                :type ("ngx_uint_t" type (:type "class") nil nil))
+                nil [242 340])
+            ("ngx_max_module" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) nil [343 377])
+            ("ngx_modules_n" variable
+               (:typemodifiers ("static")
+                :type ("ngx_uint_t" type (:type "class") nil nil))
+                nil [378 411])
+            ("ngx_preinit_modules" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [444 449]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [414 711])
+            ("ngx_cycle_modules" function
+               (:arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [742 761]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [714 1239])
+            ("ngx_init_modules" function
+               (:arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1269 1288]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [1242 1551])
+            ("ngx_count_modules" function
+               (:arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1582 1601])
+                    ("type" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1602 1618]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [1554 3223])
+            ("ngx_add_module" function
+               (:arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3251 3266])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3267 3283])
+                    ("module" variable
+                       (:pointer 1
+                        :type ("ngx_module_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3284 3305])
+                    ("order" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3310 3323]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [3226 6724])
+            ("ngx_module_index" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6762 6781]))                  
+                :type ("ngx_uint_t" type (:type "class") nil nil))
+                nil [6727 7420])
+            ("ngx_module_ctx_index" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7462 7481])
+                    ("type" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7482 7498])
+                    ("index" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7499 7516]))                  
+                :type ("ngx_uint_t" type (:type "class") nil nil))
+                nil [7423 8294]))          
+      :file "ngx_module.c"
+      :pointmax 8295
+      :fsize 8294
+      :lastmodtime '(22766 15785 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NGX_MAX_DYNAMIC_MODULES" . ((number "128" 180 . 183)))
+          )
+)
+    (semanticdb-table "nginx.h"
+      :file "nginx.h"
+      :fsize 476
+      :lastmodtime '(22766 15785 0 0)))
+  :file "!home!czh!Nginx!nginx-1.12.0!src!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

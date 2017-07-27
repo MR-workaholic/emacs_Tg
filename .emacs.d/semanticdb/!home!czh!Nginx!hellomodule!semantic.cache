@@ -1,0 +1,106 @@
+;; Object hellomodule/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hellomodule/"
+  :tables
+  (list
+    (semanticdb-table "config"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "config"
+      :pointmax 161
+      :fsize 160
+      :lastmodtime '(22782 47512 199773 955000)
+      :unmatched-syntax '((string 104 . 160) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 160) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 158) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 151) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 146) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 140) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 136) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 132) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 126) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 124) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 126) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 123) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 122) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 121) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 117) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 116) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 112) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 110) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 107) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 104 . 106) (punctuation 103 . 104) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 89 . 103) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 89 . 102) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 89 . 98) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 89 . 93) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 89 . 92) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 88) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 89) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 81) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 75) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 71) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 67) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 66) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 65) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 58) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 54) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (string 51 . 53) (punctuation 50 . 51) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 38 . 50) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 38 . 43) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 38 . 39) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 16 . 37) (punctuation 15 . 16) (symbol 1 . 15) (symbol 16 . 30) (punctuation 15 . 16) (symbol 1 . 15) (symbol 16 . 24) (punctuation 15 . 16) (symbol 1 . 15) (symbol 16 . 19) (punctuation 15 . 16) (symbol 1 . 15) (punctuation 15 . 16) (symbol 1 . 15) (symbol 1 . 15) (symbol 1 . 10) (symbol 1 . 10) (symbol 1 . 4)))
+    (semanticdb-table "ngx_http_hello_module.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [1 24])
+            ("ngx_core.h" include (:system-flag t) nil [25 46])
+            ("ngx_http.h" include (:system-flag t) nil [47 68])
+            ("ngx_http_hello_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110 132]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [70 1013])
+            ("ngx_http_hello" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1043 1058])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1059 1078])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1079 1090]))                  
+                :type "char")
+                nil [1015 1270])
+            ("ngx_http_hello_commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{ // P86
+  {
+    ngx_string(\"hello\"),
+    NGX_HTTP_MAIN_CONF|NGX_HTTP_SRV_CONF|NGX_HTTP_LOC_CONF|NGX_HTTP_LMT_CONF|NGX_CONF_NOARGS,
+    ngx_http_hello,
+    NGX_HTTP_LOC_CONF_OFFSET,
+    0,
+    NULL
+  },
+
+  ngx_null_command
+}"
+                :type ("ngx_command_t" type (:type "class") nil nil))
+                nil [1273 1547])
+            ("ngx_http_hello_module_ctx" variable
+               (:typemodifiers ("static")
+                :default-value "{ // P88
+  NULL,
+  NULL,
+
+  NULL,
+  NULL,
+
+  NULL,
+  NULL,
+
+  NULL,
+  NULL,
+}"
+                :type ("ngx_http_module_t" type (:type "class") nil nil))
+                nil [1550 1681])
+            ("ngx_http_hello_module" variable
+               (:default-value "{ // P88
+  NGX_MODULE_V1,
+  &ngx_http_hello_module_ctx,
+  ngx_http_hello_commands,
+  NGX_HTTP_MODULE,
+
+  NULL,
+  NULL,
+  NULL,
+  NULL,
+  NULL,
+  NULL,
+  NULL,
+  NGX_MODULE_V1_PADDING
+}"
+                :type ("ngx_module_t" type (:type "class") nil nil))
+                nil [1683 1905]))          
+      :file "ngx_http_hello_module.c"
+      :pointmax 1906
+      :fsize 1905
+      :lastmodtime '(22793 19826 152799 206000)
+      :unmatched-syntax nil))
+  :file "!home!czh!Nginx!hellomodule!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,87 @@
+;; Object A/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "A/"
+  :tables
+  (list
+    (semanticdb-table "demo.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("netdb.h" include (:system-flag t) nil [1 19])
+            ("stdio.h" include (:system-flag t) nil [20 38])
+            ("string.h" include (:system-flag t) nil [39 58])
+            ("sys/socket.h" include (:system-flag t) nil [59 82])
+            ("sys/types.h" include (:system-flag t) nil [83 105])
+            ("string" include (:system-flag t) nil [106 123])
+            ("event.h" include nil nil [124 142])
+            ("hsm.h" include nil nil [143 159])
+            ("message.h" include nil nil [160 180])
+            ("module.h" include nil nil [181 200])
+            ("sap.h" include nil nil [201 217])
+            ("schedule.h" include nil nil [218 239])
+            ("unp.h" include nil nil [240 256])
+            ("smallserver.h" include nil nil [257 281])
+            ("client.h" include nil nil [282 301])
+            ("m_fd" variable
+               (:default-value "STDIN_FILENO"
+                :type "int")
+                nil [329 353])
+            ("listenfd" variable (:type "int") nil [354 367])
+            ("servaddr" variable (:type ("sockaddr_in" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [368 396])
+            ("read_stdin" function
+               (:arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [413 422]))                  
+                :type "int")
+                nil [398 728])
+            ("read_conn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [744 753]))                  
+                :type "int")
+                nil [730 754])
+            ("read_listen" function
+               (:arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [771 780]))                  
+                :type "int")
+                nil [755 1495])
+            ("read_conn" function
+               (:arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1511 1522]))                  
+                :type "int")
+                nil [1497 2092])
+            ("send" function (:type "int") nil [2094 2369])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2382 2387]))                  
+                :type "int")
+                nil [2373 3670]))          
+      :file "demo.cc"
+      :pointmax 3671
+      :fsize 3670
+      :lastmodtime '(22777 27006 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "TAGS"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "TAGS"
+      :pointmax 1392404
+      :fsize 1392403
+      :lastmodtime '(22774 50834 0 0)
+      :unmatched-syntax nil))
+  :file "!media!czh!CENA_X64FRE!ForPoolTest!A!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

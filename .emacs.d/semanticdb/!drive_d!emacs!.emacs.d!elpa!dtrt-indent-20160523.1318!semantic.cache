@@ -1,0 +1,45 @@
+;; Object dtrt-indent-20160523.1318/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dtrt-indent-20160523.1318/"
+  :tables (list 
+   (semanticdb-table "dtrt-indent-autoloads.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "dtrt-indent-autoloads.el"
+    :pointmax 1386
+    :fsize 1385
+    :lastmodtime '(22354 35544 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dtrt-indent-diag.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "dtrt-indent-diag.el"
+    :pointmax 7789
+    :fsize 7788
+    :lastmodtime '(22354 35543 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dtrt-indent-pkg.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "dtrt-indent-pkg.el"
+    :pointmax 195
+    :fsize 194
+    :lastmodtime '(22354 35543 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dtrt-indent.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "dtrt-indent.el"
+    :pointmax 43337
+    :fsize 43336
+    :lastmodtime '(22354 35543 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!emacs!.emacs.d!elpa!dtrt-indent-20160523.1318!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

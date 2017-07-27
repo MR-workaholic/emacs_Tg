@@ -1,0 +1,60 @@
+;; Object À≥ ±’Î¥Ú”°æÿ’Û/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "À≥ ±’Î¥Ú”°æÿ’Û/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("fuzhi" function
+               (:arguments 
+                  ( ("map" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [73 97])
+                    ("aval" variable (:type "int") (reparse-symbol arg-sub-list) [98 107])
+                    ("bs" variable (:type "int") (reparse-symbol arg-sub-list) [108 115])
+                    ("be" variable (:type "int") (reparse-symbol arg-sub-list) [116 123])
+                    ("aorb" variable (:type "int") (reparse-symbol arg-sub-list) [124 133])
+                    ("res" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [134 151])
+                    ("startnum" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [152 166])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [167 175]))                  
+                :type "void")
+                nil [62 1486])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1499 1508])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1509 1522]))                  
+                :type "int")
+                nil [1489 3024]))          
+    :file "main.cpp"
+    :pointmax 3025
+    :fsize 3165
+    :lastmodtime '(22364 4892 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!NOWCODER!À≥ ±’Î¥Ú”°æÿ’Û!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

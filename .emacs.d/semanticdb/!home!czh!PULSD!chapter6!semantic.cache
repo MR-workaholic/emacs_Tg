@@ -1,0 +1,112 @@
+;; Object chapter6/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter6/"
+  :tables
+  (list
+    (semanticdb-table "diskwalk_api.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("diskwalk" type
+               (:members 
+                  ( ("'''API for getting directory walking collection'''" code nil (reparse-symbol indented_block_body) [57 107])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [147 163]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [126 130])
+                            ("path" variable nil (reparse-symbol function_parameters) [132 136]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [113 164])
+                    ("enumeratePaths" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [188 192]))                          )
+                        (reparse-symbol indented_block_body) [169 516])
+                    ("enumerateFiles" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [540 544]))                          )
+                        (reparse-symbol indented_block_body) [521 796])
+                    ("enumerateDir" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [818 822]))                          )
+                        (reparse-symbol indented_block_body) [801 1065]))                  
+                :type "class")
+                nil [35 1065]))          
+      :file "diskwalk_api.py"
+      :pointmax 1065
+      :fsize 1064
+      :lastmodtime '(22561 24037 268889 288000)
+      :unmatched-syntax nil)
+    (semanticdb-table "find_dupes.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("diskwalk_api" include nil nil [24 57])
+            ("checksum" include nil nil [58 73])
+            ("os.path" include nil nil [74 101])
+            ("sys" include nil nil [102 112])
+            ("findDupes" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [129 133]))              ) nil [115 737])
+            ("if" code nil nil [738 1037]))          
+      :file "find_dupes.py"
+      :pointmax 1037
+      :fsize 1036
+      :lastmodtime '(22562 46809 539797 504000)
+      :unmatched-syntax nil)
+    (semanticdb-table "checksum.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("hashlib" include nil nil [24 38])
+            ("create_checksum" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [61 65]))              ) nil [41 305]))          
+      :file "checksum.py"
+      :pointmax 305
+      :fsize 304
+      :lastmodtime '(22561 25761 950570 795000)
+      :unmatched-syntax nil)
+    (semanticdb-table "delete.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [24 33])
+            ("sys" include nil nil [34 44])
+            ("Delete" type
+               (:members 
+                  ( ("'''Delete Methods for file object'''" code nil (reparse-symbol indented_block_body) [67 103])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [143 165]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [122 126])
+                            ("path" variable nil (reparse-symbol function_parameters) [128 132]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [109 166])
+                    ("interactive" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [187 191]))                          )
+                        (reparse-symbol indented_block_body) [171 530])
+                    ("dryrun" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [546 550]))                          )
+                        (reparse-symbol indented_block_body) [535 657])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [673 677]))                          )
+                        (reparse-symbol indented_block_body) [662 942]))                  
+                :type "class")
+                nil [47 942])
+            ("if" code nil nil [943 1555]))          
+      :file "delete.py"
+      :pointmax 1555
+      :fsize 1554
+      :lastmodtime '(22562 57870 344234 395000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapter6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,84 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "enable_if.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ENABLE_IF_23022003THW_HPP" variable (:constant-flag t) nil [319 350])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [352 390])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [391 424])
+            ("boost/iterator/detail/config_def.hpp" include (:system-flag t) nil [426 473])
+            ("boost" type
+               (:members 
+                  ( ("iterators" type
+                       (:members 
+                          ( ("enabled" type
+                               (:template 
+                                  ( ("bool" type nil nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("base" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [813 828]))                                          )
+                                        (reparse-symbol classsubparts) [758 837]))                                  )
+                                (reparse-symbol namespacesubparts) [712 844])
+                            ("enabled" type
+                               (:type "struct"
+                                :members 
+                                  ( ("base" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [1104 1518]))                                  
+                                :template-specifier 
+                                  ( ("false" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1055 1525])
+                            ("base" variable (:type "int") (reparse-symbol namespacesubparts) [1712 1782]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [621 1787]))                  
+                :type "namespace")
+                nil [600 1813])
+            ("boost/iterator/detail/config_undef.hpp" include (:system-flag t) nil [1834 1883]))          
+      :file "enable_if.hpp"
+      :pointmax 1927
+      :fsize 1926
+      :lastmodtime '(22367 50487 0 0)
+      :unmatched-syntax '((TEMPLATE 1703 . 1711) (punctuation 1702 . 1703) (punctuation 1701 . 1702) (punctuation 1700 . 1701) (semantic-list 1687 . 1700) (punctuation 1686 . 1687) (symbol 1679 . 1686) (punctuation 1677 . 1678) (symbol 1593 . 1602) (STRUCT 1586 . 1592) (punctuation 1580 . 1581) (symbol 1574 . 1580) (CLASS 1568 . 1573) (punctuation 1552 . 1553) (symbol 1548 . 1552) (CLASS 1542 . 1547) (punctuation 1541 . 1542) (TEMPLATE 1532 . 1540))
+      :lexical-table 
+        '(("BOOST_ENABLE_IF_23022003THW_HPP")
+          )
+)
+    (semanticdb-table "config_def.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("boost/config.hpp" include (:system-flag t) nil [434 461])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [475 513])
+            ("BOOST_ITERATOR_CONFIG_DEF" variable (:constant-flag t) nil [611 636]))          
+      :file "config_def.hpp"
+      :pointmax 4033
+      :fsize 4032
+      :lastmodtime '(22367 50487 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ITERATOR_CONFIG_DEF")
+          )
+)
+    (semanticdb-table "config_undef.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "config_undef.hpp"
+      :pointmax 687
+      :fsize 686
+      :lastmodtime '(22367 50487 0 0)
+      :unmatched-syntax '((symbol 668 . 678) (symbol 660 . 667) (punctuation 659 . 660) (symbol 652 . 658) (symbol 649 . 651) (symbol 641 . 648) (symbol 635 . 640) (punctuation 633 . 634))))
+  :file "!usr!include!boost!iterator!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,217 @@
+;; Object dev/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dev/"
+  :tables (list 
+   (semanticdb-table "serial.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("serial.h" include nil nil [1 20])
+            ("schedule.h" include nil nil [21 42])
+            ("utils.h" include nil nil [43 61])
+            ("serial" type
+               (:members 
+                  ( ("Init" function
+                       (:parent "Serial"
+                        :arguments 
+                          ( ("port" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101 113])
+                            ("baudrate" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114 130]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [83 725])
+                    ("Open" function
+                       (:parent "Serial"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [727 1721])
+                    ("Free" function
+                       (:parent "Serial"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1723 1765])
+                    ("Flush" function
+                       (:parent "Serial"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1766 1888])
+                    ("ReadCB" function
+                       (:parent "Serial"
+                        :arguments 
+                          ( ("w" variable
+                               (:pointer 1
+                                :type ("ev_io_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1909 1920]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1890 2766])
+                    ("Write" function
+                       (:parent "Serial"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2768 2999])
+                    ("WriteCB" function
+                       (:parent "Serial"
+                        :arguments 
+                          ( ("w" variable
+                               (:pointer 1
+                                :type ("ev_io_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3021 3032]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3001 3438]))                  
+                :type "namespace")
+                nil [63 3440]))          
+    :file "serial.cc"
+    :pointmax 3441
+    :fsize 3543
+    :lastmodtime '(22503 53835 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sim_channel.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("errno.h" include (:system-flag t) nil [1 19])
+            ("fcntl.h" include (:system-flag t) nil [20 38])
+            ("netdb.h" include (:system-flag t) nil [39 57])
+            ("string.h" include (:system-flag t) nil [58 77])
+            ("sys/socket.h" include (:system-flag t) nil [78 101])
+            ("sys/types.h" include (:system-flag t) nil [102 124])
+            ("unistd.h" include (:system-flag t) nil [125 144])
+            ("schedule.h" include nil nil [146 167])
+            ("sim_channel.h" include nil nil [168 192])
+            ("WriteCB" function
+               (:parent "SimChannel"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [218 229]))                  
+                :type "int")
+                nil [194 581])
+            ("ReadCB" function
+               (:parent "SimChannel"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [606 617]))                  
+                :type "int")
+                nil [583 1876])
+            ("Init" function
+               (:parent "SimChannel"
+                :type "bool")
+                nil [1878 3165])
+            ("Free" function
+               (:parent "SimChannel"
+                :type "bool")
+                nil [3167 3267])
+            ("Write" function
+               (:parent "SimChannel"
+                :type "void")
+                nil [3269 3378])
+            ("GetFd" function
+               (:parent "SimChannel"
+                :type "int")
+                nil [3380 3419])
+            ("Setnonblock" function
+               (:parent "SimChannel"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [3449 3456]))                  
+                :type "int")
+                nil [3421 3559])
+            ("Readn" function
+               (:parent "SimChannel"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [3587 3594])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3595 3605])
+                    ("n_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3606 3620]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [3561 4260]))          
+    :file "sim_channel.cc"
+    :pointmax 4261
+    :fsize 4471
+    :lastmodtime '(22504 34912 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "clientsocket.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("errno.h" include (:system-flag t) nil [1 19])
+            ("fcntl.h" include (:system-flag t) nil [20 38])
+            ("netdb.h" include (:system-flag t) nil [39 57])
+            ("sys/socket.h" include (:system-flag t) nil [79 102])
+            ("sys/types.h" include (:system-flag t) nil [103 125])
+            ("unistd.h" include (:system-flag t) nil [126 145])
+            ("schedule.h" include nil nil [147 168])
+            ("clientsocket.h" include nil nil [169 194])
+            ("WriteCB" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [308 319]))                  
+                :type "int")
+                nil [282 777])
+            ("ReadCB" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [804 815]))                  
+                :type "int")
+                nil [779 2231])
+            ("Init" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("hostname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2257 2273])
+                    ("port" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2274 2286]))                  
+                :type "bool")
+                nil [2233 3698])
+            ("Free" function
+               (:parent "ClientSocket"
+                :type "bool")
+                nil [3700 3802])
+            ("Write" function
+               (:parent "ClientSocket"
+                :type "void")
+                nil [3804 3915])
+            ("GetFd" function
+               (:parent "ClientSocket"
+                :type "int")
+                nil [3917 3958])
+            ("Setnonblock" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [3990 3997]))                  
+                :type "int")
+                nil [3960 4100])
+            ("Readn" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [4130 4137])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4138 4148])
+                    ("n_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4149 4163]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [4102 4839])
+            ("Writen" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [4870 4877])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4878 4888])
+                    ("n_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4889 4903]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [4841 5335]))          
+    :file "clientsocket.cc"
+    :pointmax 5336
+    :fsize 5672
+    :lastmodtime '(22519 6573 0 0)
+    :unmatched-syntax '((punctuation 77 . 78) (symbol 76 . 77) (punctuation 75 . 76) (symbol 72 . 75) (symbol 68 . 71) (punctuation 67 . 68) (symbol 59 . 66) (punctuation 58 . 59))
+    )
+   )
+  :file "!drive_e!underwater_network!HSM_stack!stack!src!dev!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

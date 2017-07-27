@@ -1,0 +1,339 @@
+;; Object scratch/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scratch/"
+  :tables
+  (list
+    (semanticdb-table "duor.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DUOR_H" variable (:constant-flag t) nil [24 30])
+            ("ns3/network-module.h" include nil nil [32 63])
+            ("ns3/stats-module.h" include nil nil [64 93])
+            ("ns3/uan-module.h" include nil nil [94 121])
+            ("ns3/core-module.h" include nil nil [122 150])
+            ("ns3/mobility-module.h" include nil nil [151 183])
+            ("vector" include (:system-flag t) nil [184 201])
+            ("utility" include (:system-flag t) nil [202 220])
+            ("map" include (:system-flag t) nil [221 235])
+            ("math.h" include (:system-flag t) nil [236 253])
+            ("ns3" using (:type ("ns3" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [255 275])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [276 296])
+            ("DUORExperiment" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [322 329])
+                    ("DUORExperiment" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("DUORExperiment" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [332 349])
+                    ("HandlePkt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [367 389])
+                            ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [390 405])
+                            ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [406 422]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [352 423])
+                    ("NCHandlePkt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [443 465])
+                            ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [466 481])
+                            ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [482 498]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [426 499])
+                    ("SINKHandlePkt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [521 543])
+                            ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [544 559])
+                            ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [560 576]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [502 577])
+                    ("SendPkt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sender" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [593 610])
+                            ("recver" variable (:type ("Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [611 626])
+                            ("pkt" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [627 643]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [580 644])
+                    ("UpdatePos" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sender" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [696 713])
+                            ("dis" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [714 727]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [681 728])
+                    ("HandleSendPkt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [750 772])
+                            ("protocol" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [773 791])
+                            ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [792 808]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [731 809])
+                    ("HandleSendPktRoute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pkt" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [836 858])
+                            ("protocol" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [859 877])
+                            ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [878 894]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [812 895])
+                    ("PoissonTraffic" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sender" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [918 935])
+                            ("pktid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [936 951])
+                            ("nodeid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [952 967]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [898 968])
+                    ("m_numNodes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [972 992])
+                    ("m_dataRate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1045 1065])
+                    ("m_depth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1105 1122])
+                    ("m_boundary" variable (:type "double") (reparse-symbol classsubparts) [1188 1206])
+                    ("m_packetSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1259 1281])
+                    ("m_txPower" variable (:type "double") (reparse-symbol classsubparts) [1334 1351])
+                    ("m_disStep" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1354 1373])
+                    ("m_disMin" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1376 1394])
+                    ("m_simTime" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1397 1412])
+                    ("m_simQueryTime" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1415 1435])
+                    ("m_numnc" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1438 1455])
+                    ("m_queryCycle" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1458 1476])
+                    ("m_querySize" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1479 1499])
+                    ("m_lamba" variable (:type "double") (reparse-symbol classsubparts) [1502 1517])
+                    ("m_lambda" variable (:type "double") (reparse-symbol classsubparts) [1520 1536])
+                    ("m_cw" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1539 1553])
+                    ("m_stime" variable (:type "float") (reparse-symbol classsubparts) [1556 1570])
+                    ("m_xyz" variable (:type "float") (reparse-symbol classsubparts) [1573 1585])
+                    ("m_xyk" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1588 1603])
+                    ("m_soundsp" variable (:type "float") (reparse-symbol classsubparts) [1606 1622])
+                    ("m_Rs" variable (:type "float") (reparse-symbol classsubparts) [1625 1636])
+                    ("m_record" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("uint8_t" type nil nil nil)
+                              ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1639 1671])
+                    ("m_recordns" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("uint8_t" type nil nil nil)
+                              ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1674 1708])
+                    ("m_godtool1" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("uint16_t" type nil nil nil)
+                              ("pair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1711 1760])
+                    ("m_recordsink" variable (:type ("set" type
+                         (:template-specifier 
+                            ( ("uint16_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1763 1790])
+                    ("m_nc" variable (:type ("NodeContainer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1794 1813])
+                    ("m_sink" variable (:type ("NodeContainer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1816 1837])
+                    ("m_routenode" variable (:type ("NodeContainer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1840 1866])
+                    ("erv" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("ExponentialRandomVariable" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1870 1905])
+                    ("derv" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("ExponentialRandomVariable" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1908 1944]))                  
+                :type "class")
+                nil [299 1949]))          
+      :file "duor.h"
+      :pointmax 1958
+      :fsize 1957
+      :lastmodtime '(22593 23159 396276 630000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DUOR_H")
+          )
+)
+    (semanticdb-table "duor.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("duor.h" include nil nil [1 18])
+            ("ns3" using (:type ("ns3" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [20 40])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [41 61])
+            ("NS_LOG_COMPONENT_DEFINE" function
+               (:prototype-flag t
+                :type "int")
+                nil [64 104])
+            ("DUORExperiment" function
+               (:constructor-flag t
+                :parent "DUORExperiment"
+                :type ("DUORExperiment" type (:type "class") nil nil))
+                nil [106 536])
+            ("HandlePkt" function
+               (:parent "DUORExperiment"
+                :arguments 
+                  ( ("pkt" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Packet" type (:constant-flag t) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [569 591])
+                    ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [592 607])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [608 624]))                  
+                :type "void")
+                nil [538 4270])
+            ("NCHandlePkt" function
+               (:parent "DUORExperiment"
+                :arguments 
+                  ( ("pkt" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Packet" type (:constant-flag t) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [4305 4327])
+                    ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4327 4342])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4342 4358]))                  
+                :type "void")
+                nil [4272 5045])
+            ("SINKHandlePkt" function
+               (:parent "DUORExperiment"
+                :arguments 
+                  ( ("pkt" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Packet" type (:constant-flag t) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5082 5104])
+                    ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5104 5119])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5119 5135]))                  
+                :type "void")
+                nil [5047 5412])
+            ("SendPkt" function
+               (:parent "DUORExperiment"
+                :arguments 
+                  ( ("sender" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5443 5460])
+                    ("recver" variable (:type ("Address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5461 5476])
+                    ("pkt" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Packet" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5477 5493]))                  
+                :type "void")
+                nil [5414 5669])
+            ("UpdatePos" function
+               (:parent "DUORExperiment"
+                :arguments 
+                  ( ("sender" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5881 5898])
+                    ("dis" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5899 5912]))                  
+                :type "void")
+                nil [5850 6091])
+            ("HandleSendPkt" function
+               (:parent "DUORExperiment"
+                :arguments 
+                  ( ("pkt" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Packet" type (:constant-flag t) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [6128 6150])
+                    ("protocol" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6151 6169])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6170 6186]))                  
+                :type "void")
+                nil [6093 6243])
+            ("HandleSendPktRoute" function
+               (:parent "DUORExperiment"
+                :arguments 
+                  ( ("pkt" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Packet" type (:constant-flag t) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [6285 6307])
+                    ("protocol" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6307 6325])
+                    ("nodeId" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6325 6341]))                  
+                :type "void")
+                nil [6245 6868])
+            ("PoissonTraffic" function
+               (:parent "DUORExperiment"
+                :arguments 
+                  ( ("sender" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [6906 6923])
+                    ("pktid" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6924 6939])
+                    ("nodeid" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6940 6955]))                  
+                :type "void")
+                nil [6870 7756])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7767 7776])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7777 7790]))                  
+                :type "int")
+                nil [7758 15380]))          
+      :file "duor.cc"
+      :pointmax 15381
+      :fsize 15676
+      :lastmodtime '(22593 23386 433537 389000)
+      :unmatched-syntax nil))
+  :file "!home!czh!NS3_26!ns-allinone-3.26!ns-3.26!scratch!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

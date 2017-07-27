@@ -1,0 +1,32 @@
+;; Object cl-generic-0.3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cl-generic-0.3/"
+  :tables
+  (list
+    (semanticdb-table "cl-generic-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "cl-generic-autoloads.el"
+      :pointmax 562
+      :fsize 561
+      :lastmodtime '(22557 36568 295845 763000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cl-generic-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "cl-generic-pkg.el"
+      :pointmax 156
+      :fsize 155
+      :lastmodtime '(22557 36568 319845 687000)
+      :unmatched-syntax nil)
+    (semanticdb-table "cl-generic.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "cl-generic.el"
+      :pointmax 6938
+      :fsize 6943
+      :lastmodtime '(22557 36568 175846 142000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!cl-generic-0.3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

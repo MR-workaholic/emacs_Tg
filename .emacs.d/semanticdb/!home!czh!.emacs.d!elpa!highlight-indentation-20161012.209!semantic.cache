@@ -1,0 +1,32 @@
+;; Object highlight-indentation-20161012.209/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "highlight-indentation-20161012.209/"
+  :tables
+  (list
+    (semanticdb-table "highlight-indentation-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "highlight-indentation-autoloads.el"
+      :pointmax 1100
+      :fsize 1099
+      :lastmodtime '(22556 27398 128908 588000)
+      :unmatched-syntax nil)
+    (semanticdb-table "highlight-indentation-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "highlight-indentation-pkg.el"
+      :pointmax 170
+      :fsize 169
+      :lastmodtime '(22556 27398 156908 657000)
+      :unmatched-syntax nil)
+    (semanticdb-table "highlight-indentation.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "highlight-indentation.el"
+      :pointmax 10914
+      :fsize 10913
+      :lastmodtime '(22556 27397 976908 209000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!highlight-indentation-20161012.209!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

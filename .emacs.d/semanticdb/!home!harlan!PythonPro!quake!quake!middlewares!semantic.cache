@@ -1,0 +1,132 @@
+;; Object middlewares/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "middlewares/"
+  :tables
+  (list
+    (semanticdb-table "proxy_downloader_middleware.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [92 101])
+            ("time" include nil nil [102 113])
+            ("twisted.internet" include nil nil [114 157])
+            ("twisted.web.client" include nil nil [158 204])
+            ("random" include nil nil [205 218])
+            ("json" include nil nil [219 230])
+            ("logging" include nil nil [231 245])
+            ("base64" include nil nil [246 259])
+            ("requests" include nil nil [260 275])
+            ("logger" variable nil nil [278 306])
+            ("ProxyDownloaderMiddleware" type
+               (:documentation "Use proxy for exact cookiejar"
+                :superclasses ("object")
+                :members 
+                  ( ("kunpeng_apis" variable nil (reparse-symbol indented_block_body) [395 725])
+                    ("proxies" variable nil (reparse-symbol indented_block_body) [730 742])
+                    ("fullset" variable nil (reparse-symbol indented_block_body) [747 759])
+                    ("agent" variable nil (reparse-symbol indented_block_body) [764 786])
+                    ("_get_proxies_callback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [818 822])
+                            ("body" variable nil (reparse-symbol function_parameters) [824 828]))                          )
+                        (reparse-symbol indented_block_body) [792 1098])
+                    ("_get_proxies_errback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1128 1132])
+                            ("err" variable nil (reparse-symbol function_parameters) [1134 1137]))                          )
+                        (reparse-symbol indented_block_body) [1103 1220])
+                    ("_get_proxies" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1242 1246]))                          )
+                        (reparse-symbol indented_block_body) [1225 1686])
+                    ("_get_proxies_sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1713 1717]))                          )
+                        (reparse-symbol indented_block_body) [1691 2261])
+                    ("get_random_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2316 2320]))                          )
+                        (reparse-symbol indented_block_body) [2295 2708])
+                    ("process_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2734 2738])
+                            ("request" variable nil (reparse-symbol function_parameters) [2740 2747])
+                            ("response" variable nil (reparse-symbol function_parameters) [2749 2757])
+                            ("spider" variable nil (reparse-symbol function_parameters) [2759 2765]))                          )
+                        (reparse-symbol indented_block_body) [2713 3165])
+                    ("process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3219 3223])
+                            ("request" variable nil (reparse-symbol function_parameters) [3225 3232])
+                            ("spider" variable nil (reparse-symbol function_parameters) [3234 3240]))                          )
+                        (reparse-symbol indented_block_body) [3199 4757]))                  
+                :type "class")
+                nil [309 4757])
+            ("GreenPoolProxyDownloaderMiddleware" type
+               (:documentation "Use proxy for exact cookiejar"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [4892 4951])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4971 5023])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5042 5089])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5111 5167])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5213 5483]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4867 4871])
+                            ("settings" variable nil (reparse-symbol function_parameters) [4873 4881]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4854 5484])
+                    ("from_crawler" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5523 5526])
+                            ("crawler" variable nil (reparse-symbol function_parameters) [5528 5535]))                          )
+                        (reparse-symbol indented_block_body) [5489 5575])
+                    ("proxies" variable nil (reparse-symbol indented_block_body) [5580 5592])
+                    ("fullset" variable nil (reparse-symbol indented_block_body) [5597 5609])
+                    ("agent" variable nil (reparse-symbol indented_block_body) [5614 5636])
+                    ("_get_proxies_sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5664 5668]))                          )
+                        (reparse-symbol indented_block_body) [5642 6856])
+                    ("get_random_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6882 6886]))                          )
+                        (reparse-symbol indented_block_body) [6861 7139])
+                    ("process_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7165 7169])
+                            ("request" variable nil (reparse-symbol function_parameters) [7171 7178])
+                            ("response" variable nil (reparse-symbol function_parameters) [7180 7188])
+                            ("spider" variable nil (reparse-symbol function_parameters) [7190 7196]))                          )
+                        (reparse-symbol indented_block_body) [7144 7596])
+                    ("process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7621 7625])
+                            ("request" variable nil (reparse-symbol function_parameters) [7627 7634])
+                            ("spider" variable nil (reparse-symbol function_parameters) [7636 7642]))                          )
+                        (reparse-symbol indented_block_body) [7601 9121]))                  
+                :type "class")
+                nil [4759 9121]))          
+      :file "proxy_downloader_middleware.py"
+      :pointmax 9121
+      :fsize 9216
+      :lastmodtime '(22892 15253 922078 83000)
+      :unmatched-syntax '((NAME 7851 . 7856) (IF 7881 . 7883) (ELSE 7908 . 7912) (INDENT_BLOCK 6820 . 6856) (NEWLINE 6819 . 6820) (COLON 6818 . 6819) (TRY 5749 . 5752) (AS 6814 . 6816) (NAME 3447 . 3452) (IF 3477 . 3479) (ELSE 3504 . 3508) (INDENT_BLOCK 2225 . 2261) (NEWLINE 2224 . 2225) (COLON 2223 . 2224) (TRY 1796 . 1799) (AS 2219 . 2221))))
+  :file "!home!harlan!PythonPro!quake!quake!middlewares!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

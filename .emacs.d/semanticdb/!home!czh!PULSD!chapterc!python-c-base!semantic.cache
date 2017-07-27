@@ -1,0 +1,130 @@
+;; Object python-c-base/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python-c-base/"
+  :tables
+  (list
+    (semanticdb-table "wrapper.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Python.h" include (:system-flag t) nil [48 67])
+            ("string.h" include (:system-flag t) nil [68 87])
+            ("stdlib.h" include (:system-flag t) nil [88 107])
+            ("fact" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [118 124]))                  
+                :type "int")
+                nil [109 191])
+            ("inc" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [201 207]))                  
+                :type "int")
+                nil [193 225])
+            ("StrReverse" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [245 255]))                  
+                :type "char")
+                nil [228 463])
+            ("wrap_fact" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [673 688])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [689 704]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [653 875])
+            ("wrap_inc" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [896 911])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [912 927]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [877 1096])
+            ("wrap_StrReverse" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1126 1141])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1142 1157]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [1100 1585])
+            ("exampleMethods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+  {\"fact\", wrap_fact, METH_VARARGS, \"Caculate N!\"}, // 第一个参数是函数名，第二个参数也是函数名， 最后一个参数是函数的介绍，计算阶乘，即是docstring
+  {\"inc\", wrap_inc, METH_VARARGS, \"inc a number\"},
+  {\"StrReverse\", wrap_StrReverse, METH_VARARGS, \"Reverse the string\"},
+  {NULL, NULL}
+}"
+                :type ("PyMethodDef" type (:type "class") nil nil))
+                nil [1843 2129])
+            ("initexample" function (:type "void") nil [2131 2250]))          
+      :file "wrapper.c"
+      :pointmax 2251
+      :fsize 3012
+      :lastmodtime '(22564 2994 623242 861000)
+      :unmatched-syntax nil)
+    (semanticdb-table "pyexample.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("example" include nil nil [24 38])
+            ("if" code nil nil [40 207]))          
+      :file "pyexample.py"
+      :pointmax 207
+      :fsize 206
+      :lastmodtime '(22564 118 821769 295000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "test.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("string.h" include (:system-flag t) nil [21 40])
+            ("stdio.h" include (:system-flag t) nil [41 59])
+            ("StrReverse" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [78 88]))                  
+                :type "char")
+                nil [61 296])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [308 317])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [318 331]))                  
+                :type "int")
+                nil [299 475]))          
+      :file "test.c"
+      :pointmax 476
+      :fsize 475
+      :lastmodtime '(22564 1830 935409 400000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapterc!python-c-base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

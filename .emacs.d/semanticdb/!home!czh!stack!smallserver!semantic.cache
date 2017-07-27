@@ -1,0 +1,211 @@
+;; Object smallserver/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "smallserver/"
+  :tables
+  (list
+    (semanticdb-table "smallserver.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("smallserver.h" include nil nil [1 25])
+            ("hex_to_num" variable (:constant-flag t) nil [34 44])
+            ("hex_table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{'0', '1', '2', '3', '4', '5', '6', '7',
+                                 '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'}"
+                :type "char")
+                nil [103 249])
+            ("Byte2Hex" function
+               (:arguments 
+                  ( ("hex" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [265 275])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [276 292])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [293 305]))                  
+                :type "void")
+                nil [251 469])
+            ("Hex2Byte" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [485 495])
+                    ("hex" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [496 512])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [513 525]))                  
+                :type "void")
+                nil [471 662])
+            ("smallserverInit" function
+               (:parent "SmallServer"
+                :type "bool")
+                nil [666 1195])
+            ("startwork" function
+               (:parent "SmallServer"
+                :type "void")
+                nil [1197 3530])
+            ("max" function
+               (:parent "SmallServer"
+                :arguments 
+                  ( ("fda" variable (:type "int") (reparse-symbol arg-sub-list) [3553 3561])
+                    ("fdb" variable (:type "int") (reparse-symbol arg-sub-list) [3562 3570]))                  
+                :type "int")
+                nil [3532 3605]))          
+      :file "smallserver.cc"
+      :pointmax 3606
+      :fsize 3605
+      :lastmodtime '(22573 44469 590674 373000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("hex_to_num" (spp-arg-list ("c") 44 . 47) . ((semantic-list "((unsigned char)(c >= 'A' ? c - 'A' + 10 : c - '0'))" 48 . 100)))
+          )
+)
+    (semanticdb-table "smallserver.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_SMALLSERVER_H_" variable (:constant-flag t) nil [33 48])
+            ("sys/socket.h" include (:system-flag t) nil [50 73])
+            ("sys/types.h" include (:system-flag t) nil [74 96])
+            ("netinet/in.h" include (:system-flag t) nil [97 120])
+            ("sys/time.h" include (:system-flag t) nil [121 142])
+            ("sys/select.h" include (:system-flag t) nil [143 166])
+            ("arpa/inet.h" include (:system-flag t) nil [167 189])
+            ("string.h" include (:system-flag t) nil [190 209])
+            ("stdlib.h" include (:system-flag t) nil [210 229])
+            ("string" include (:system-flag t) nil [230 247])
+            ("unistd.h" include (:system-flag t) nil [248 267])
+            ("iostream" include (:system-flag t) nil [268 287])
+            ("MAXSIZE" variable (:constant-flag t) nil [296 303])
+            ("MAXLINE" variable (:constant-flag t) nil [315 322])
+            ("SA" type
+               (:typedef ("sockaddr" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [329 356])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [358 378])
+            ("SmallServer" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [399 406])
+                    ("GetInstance" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("SmallServer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [409 470])
+                    ("smallserverInit" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [473 496])
+                    ("startwork" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [499 516])
+                    ("private" label nil (reparse-symbol classsubparts) [518 526])
+                    ("m_Instance" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("SmallServer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [529 560])
+                    ("SmallServer" function
+                       (:constructor-flag t
+                        :type ("SmallServer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [563 712])
+                    ("GC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [727 734])
+                            ("GC" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [739 845]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [715 850])
+                    ("gc" variable
+                       (:typemodifiers ("static")
+                        :type ("GC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [853 866])
+                    ("servaddr" variable (:type ("sockaddr_in" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [870 898])
+                    ("cliaddr" variable (:type ("sockaddr_in" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [901 928])
+                    ("listenfd" variable (:type "int") (reparse-symbol classsubparts) [931 961])
+                    ("connfd" variable (:type "int") (reparse-symbol classsubparts) [931 961])
+                    ("stdinfd" variable (:type "int") (reparse-symbol classsubparts) [931 961])
+                    ("clilen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [964 981])
+                    ("m_port" variable (:type "short") (reparse-symbol classsubparts) [984 997])
+                    ("maxi" variable (:type "int") (reparse-symbol classsubparts) [1000 1026])
+                    ("client" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1000 1026])
+                    ("maxfd" variable (:type "int") (reparse-symbol classsubparts) [1029 1039])
+                    ("readset" variable (:type ("fd_set" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1042 1065])
+                    ("allset" variable (:type ("fd_set" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1042 1065])
+                    ("nready" variable (:type "int") (reparse-symbol classsubparts) [1068 1079])
+                    ("buff" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1082 1101])
+                    ("max" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1113 1117])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1118 1122]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1105 1123]))                  
+                :type "class")
+                nil [380 1128]))          
+      :file "smallserver.h"
+      :pointmax 1138
+      :fsize 1137
+      :lastmodtime '(22573 41554 705718 291000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAXSIZE" . ((number "20" 304 . 306)))
+          ("_SMALLSERVER_H_")
+          ("MAXLINE" . ((number "1000" 323 . 327)))
+          )
+)
+    (semanticdb-table "main.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("smallserver.h" include nil nil [1 25])
+            ("SmallServer::m_Instance" variable
+               (:pointer 1
+                :default-value "new SmallServer()"
+                :type ("SmallServer" type (:type "class") nil nil))
+                nil [27 84])
+            ("SmallServer::gc" variable (:type ("SmallServer::GC" type (:type "class") nil nil)) nil [85 117])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [128 137])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [138 151]))                  
+                :type "int")
+                nil [119 387]))          
+      :file "main.cc"
+      :pointmax 388
+      :fsize 403
+      :lastmodtime '(22573 22012 849084 854000)
+      :unmatched-syntax nil))
+  :file "!home!czh!stack!smallserver!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1394 @@
+;; Object yaml-cpp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "yaml-cpp/"
+  :tables
+  (list
+    (semanticdb-table "yaml.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("YAML_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [61 104])
+            ("yaml-cpp/parser.h" include nil nil [340 368])
+            ("yaml-cpp/emitter.h" include nil nil [369 398])
+            ("yaml-cpp/emitterstyle.h" include nil nil [399 433])
+            ("yaml-cpp/stlemitter.h" include nil nil [434 466])
+            ("yaml-cpp/exceptions.h" include nil nil [467 499])
+            ("yaml-cpp/node/node.h" include nil nil [501 532])
+            ("yaml-cpp/node/impl.h" include nil nil [533 564])
+            ("yaml-cpp/node/convert.h" include nil nil [565 599])
+            ("yaml-cpp/node/iterator.h" include nil nil [600 635])
+            ("yaml-cpp/node/detail/impl.h" include nil nil [636 674])
+            ("yaml-cpp/node/parse.h" include nil nil [675 707])
+            ("yaml-cpp/node/emit.h" include nil nil [708 739]))          
+      :file "yaml.h"
+      :pointmax 796
+      :fsize 795
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 327 . 331) (symbol 320 . 326) (punctuation 319 . 320) (semantic-list 180 . 267))
+      :lexical-table 
+        '(("YAML_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "parser.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("PARSER_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [63 108])
+            ("ios" include (:system-flag t) nil [344 358])
+            ("memory" include (:system-flag t) nil [359 376])
+            ("yaml-cpp/dll.h" include nil nil [378 403])
+            ("yaml-cpp/noncopyable.h" include nil nil [404 437])
+            ("YAML" type
+               (:members 
+                  ( ("EventHandler" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [456 475])
+                    ("Node" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [476 487])
+                    ("Scanner" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [488 502])
+                    ("Directives" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [503 521])
+                    ("Token" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [522 535])
+                    ("noncopyable" variable (:type "int") (reparse-symbol namespacesubparts) [573 1071]))                  
+                :type "namespace")
+                nil [439 1073]))          
+      :file "parser.h"
+      :pointmax 1132
+      :fsize 1131
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((PRIVATE 565 . 572) (punctuation 563 . 564) (symbol 556 . 562) (symbol 543 . 555) (CLASS 537 . 542) (symbol 331 . 335) (symbol 324 . 330) (punctuation 323 . 324) (semantic-list 184 . 271))
+      :lexical-table 
+        '(("PARSER_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "emitter.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("EMITTER_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [64 110])
+            ("cstddef" include (:system-flag t) nil [346 364])
+            ("memory" include (:system-flag t) nil [365 382])
+            ("sstream" include (:system-flag t) nil [383 401])
+            ("string" include (:system-flag t) nil [402 419])
+            ("yaml-cpp/binary.h" include nil nil [421 449])
+            ("yaml-cpp/dll.h" include nil nil [450 475])
+            ("yaml-cpp/emitterdef.h" include nil nil [476 508])
+            ("yaml-cpp/emittermanip.h" include nil nil [509 543])
+            ("yaml-cpp/noncopyable.h" include nil nil [544 577])
+            ("yaml-cpp/null.h" include nil nil [578 604])
+            ("yaml-cpp/ostream_wrapper.h" include nil nil [605 642])
+            ("YAML" type
+               (:members 
+                  ( ("Binary" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [661 674])
+                    ("_Null" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [675 688]))                  
+                :type "namespace")
+                nil [644 690])
+            ("YAML" type
+               (:members 
+                  ( ("EmitterState" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [728 747])
+                    ("noncopyable" variable (:type "int") (reparse-symbol namespacesubparts) [786 3738])
+                    ("WriteIntegralType" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Emitter" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3805 3813]))                          
+                        :typemodifiers ("inline")
+                        :parent "Emitter")
+                        (reparse-symbol namespacesubparts) [3740 4037])
+                    ("WriteStreamable" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Emitter" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4102 4110]))                          
+                        :typemodifiers ("inline")
+                        :parent "Emitter")
+                        (reparse-symbol namespacesubparts) [4039 4338])
+                    ("SetStreamablePrecision" function
+                       (:type "void"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("std::stringstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4403 4429]))                          
+                        :typemodifiers ("inline")
+                        :parent "Emitter"
+                        :template-specifier 
+                          ( ("float" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4340 4474])
+                    ("SetStreamablePrecision" function
+                       (:type "void"
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("std::stringstream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4540 4566]))                          
+                        :typemodifiers ("inline")
+                        :parent "Emitter"
+                        :template-specifier 
+                          ( ("double" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4476 4612])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4667 4684])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4685 4706]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4640 4737])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4765 4782])
+                            ("v" variable (:type "bool") (reparse-symbol arg-sub-list) [4783 4790]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4738 4821])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4849 4866])
+                            ("v" variable (:type "char") (reparse-symbol arg-sub-list) [4867 4874]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4822 4905])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4933 4950])
+                            ("v" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [4951 4967]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4906 5017])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5045 5062])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Alias" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5063 5079]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5018 5110])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5138 5155])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Anchor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5156 5173]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5111 5204])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5232 5249])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Tag" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5250 5264]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5205 5295])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5323 5340])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Comment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5341 5359]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5296 5390])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5418 5435])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Null" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5436 5451]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5391 5482])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5510 5527])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Binary" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5528 5544]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5483 5575])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5604 5621])
+                            ("v" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [5622 5636]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5577 5680])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5709 5726])
+                            ("v" variable (:type "int") (reparse-symbol arg-sub-list) [5727 5733]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5682 5776])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5804 5821])
+                            ("v" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5822 5837]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5777 5880])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5908 5925])
+                            ("v" variable (:type "short") (reparse-symbol arg-sub-list) [5926 5934]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5881 5977])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6005 6022])
+                            ("v" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [6023 6040]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5978 6083])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6111 6128])
+                            ("v" variable (:type "long") (reparse-symbol arg-sub-list) [6129 6136]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6084 6179])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6207 6224])
+                            ("v" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6225 6241]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6180 6284])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6312 6329])
+                            ("v" variable (:type "long long") (reparse-symbol arg-sub-list) [6330 6342]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6285 6385])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6413 6430])
+                            ("v" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [6431 6452]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6386 6495])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6524 6541])
+                            ("v" variable (:type "float") (reparse-symbol arg-sub-list) [6542 6550]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6497 6591])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6619 6636])
+                            ("v" variable (:type "double") (reparse-symbol arg-sub-list) [6637 6646]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6592 6687])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6716 6733])
+                            ("value" variable (:type ("EMITTER_MANIP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6734 6754]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6689 6797])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6826 6843])
+                            ("indent" variable (:type ("_Indent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6844 6859]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6799 6904])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6933 6950])
+                            ("precision" variable (:type ("_Precision" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6951 6972]))                          
+                        :type ("Emitter" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6906 7023]))                  
+                :type "namespace")
+                nil [711 7025]))          
+      :file "emitter.h"
+      :pointmax 7085
+      :fsize 7084
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((PRIVATE 778 . 785) (punctuation 776 . 777) (symbol 768 . 775) (symbol 755 . 767) (CLASS 749 . 754) (symbol 333 . 337) (symbol 326 . 332) (punctuation 325 . 326) (semantic-list 186 . 273))
+      :lexical-table 
+        '(("EMITTER_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "emitterstyle.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("EMITTERSTYLE_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [69 120])
+            ("YAML" type
+               (:members 
+                  ( ("EmitterStyle" type
+                       (:members 
+                          ( ("value" type
+                               (:members 
+                                  ( ("Default" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [410 418])
+                                    ("Block" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [419 425])
+                                    ("Flow" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [426 432]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [397 433]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [373 436]))                  
+                :type "namespace")
+                nil [356 438]))          
+      :file "emitterstyle.h"
+      :pointmax 503
+      :fsize 502
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 343 . 347) (symbol 336 . 342) (punctuation 335 . 336) (semantic-list 196 . 283))
+      :lexical-table 
+        '(("EMITTERSTYLE_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "stlemitter.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("STLEMITTER_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [67 116])
+            ("vector" include (:system-flag t) nil [352 369])
+            ("list" include (:system-flag t) nil [370 385])
+            ("set" include (:system-flag t) nil [386 400])
+            ("map" include (:system-flag t) nil [401 415])
+            ("YAML" type
+               (:members 
+                  ( ("EmitSeq" function
+                       (:template 
+                          ( ("Seq" type (:type "class") nil nil))                          
+                        :type ("Emitter" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [482 499])
+                            ("seq" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Seq" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [500 515]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [434 678])
+                    ("<<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Emitter" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [729 746])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [747 771]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [680 805])
+                    ("<<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Emitter" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [856 873])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::list" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [874 896]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [807 930])
+                    ("<<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Emitter" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [981 998])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::set" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [999 1020]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [932 1054])
+                    ("<<" function
+                       (:template 
+                          ( ("K" type (:type "class") nil nil)
+                            ("V" type (:type "class") nil nil))                          
+                        :type ("Emitter" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("emitter" variable
+                               (:reference 1
+                                :type ("Emitter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1117 1134])
+                            ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("K" type nil nil nil)
+                                          ("V" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1135 1159]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1056 1393]))                  
+                :type "namespace")
+                nil [417 1395]))          
+      :file "stlemitter.h"
+      :pointmax 1458
+      :fsize 1457
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 339 . 343) (symbol 332 . 338) (punctuation 331 . 332) (semantic-list 192 . 279))
+      :lexical-table 
+        '(("STLEMITTER_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "exceptions.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("EXCEPTIONS_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [67 116])
+            ("yaml-cpp/mark.h" include nil nil [352 378])
+            ("yaml-cpp/traits.h" include nil nil [379 407])
+            ("stdexcept" include (:system-flag t) nil [408 428])
+            ("string" include (:system-flag t) nil [429 446])
+            ("sstream" include (:system-flag t) nil [447 465])
+            ("YAML" type
+               (:members 
+                  ( ("ErrorMsg" type
+                       (:members 
+                          ( ("YAML_DIRECTIVE_ARGS" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"YAML directives must have exactly one argument\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [523 616])
+                            ("YAML_VERSION" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"bad YAML version: \""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [617 671])
+                            ("YAML_MAJOR_VERSION" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"YAML major version too large\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [672 742])
+                            ("REPEATED_YAML_DIRECTIVE" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"repeated YAML directive\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [743 813])
+                            ("TAG_DIRECTIVE_ARGS" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"TAG directives must have exactly two arguments\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [814 906])
+                            ("REPEATED_TAG_DIRECTIVE" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"repeated TAG directive\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [907 975])
+                            ("CHAR_IN_TAG_HANDLE" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal character found while scanning tag handle\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [976 1071])
+                            ("TAG_WITH_NO_SUFFIX" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"tag handle with no suffix\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1072 1139])
+                            ("END_OF_VERBATIM_TAG" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"end of verbatim tag not found\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1140 1212])
+                            ("END_OF_MAP" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"end of map not found\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1213 1267])
+                            ("END_OF_MAP_FLOW" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"end of map flow not found\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1268 1332])
+                            ("END_OF_SEQ" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"end of sequence not found\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1333 1392])
+                            ("END_OF_SEQ_FLOW" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"end of sequence flow not found\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1393 1462])
+                            ("MULTIPLE_TAGS" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"cannot assign multiple tags to the same node\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1463 1548])
+                            ("MULTIPLE_ANCHORS" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"cannot assign multiple anchors to the same node\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1549 1640])
+                            ("MULTIPLE_ALIASES" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"cannot assign multiple aliases to the same node\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1641 1732])
+                            ("ALIAS_CONTENT" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"aliases can't have any content, *including* tags\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1733 1822])
+                            ("INVALID_HEX" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"bad character found while scanning hex number\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1823 1903])
+                            ("INVALID_UNICODE" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"invalid unicode: \""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1904 1960])
+                            ("INVALID_ESCAPE" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"unknown escape character: \""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [1961 2025])
+                            ("UNKNOWN_TOKEN" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"unknown token\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2026 2076])
+                            ("DOC_IN_SCALAR" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal document indicator in scalar\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2077 2150])
+                            ("EOF_IN_SCALAR" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal EOF in scalar\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2151 2209])
+                            ("CHAR_IN_SCALAR" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal character in scalar\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2210 2275])
+                            ("TAB_IN_INDENTATION" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal tab when looking for indentation\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2276 2362])
+                            ("FLOW_END" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal flow end\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2363 2411])
+                            ("BLOCK_ENTRY" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal block entry\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2412 2466])
+                            ("MAP_KEY" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal map key\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2467 2513])
+                            ("MAP_VALUE" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal map value\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2514 2564])
+                            ("ALIAS_NOT_FOUND" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"alias not found after *\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2565 2627])
+                            ("ANCHOR_NOT_FOUND" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"anchor not found after &\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2628 2692])
+                            ("CHAR_IN_ALIAS" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal character found while scanning alias\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2693 2778])
+                            ("CHAR_IN_ANCHOR" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"illegal character found while scanning anchor\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2779 2866])
+                            ("ZERO_INDENT_IN_BLOCK" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"cannot set zero indentation for a block scalar\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2867 2961])
+                            ("CHAR_IN_BLOCK" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"unexpected character in block scalar\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [2962 3035])
+                            ("AMBIGUOUS_ANCHOR" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"cannot assign the same alias to multiple nodes\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3036 3126])
+                            ("UNKNOWN_ANCHOR" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"the referenced anchor is not defined\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3127 3201])
+                            ("INVALID_NODE" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"invalid node; this may result from using a map iterator as a sequence \"
+    \"iterator, or vice-versa\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3203 3343])
+                            ("INVALID_SCALAR" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"invalid scalar\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3344 3396])
+                            ("KEY_NOT_FOUND" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"key not found\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3397 3447])
+                            ("BAD_CONVERSION" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"bad conversion\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3448 3500])
+                            ("BAD_DEREFERENCE" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"bad dereference\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3501 3555])
+                            ("BAD_SUBSCRIPT" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"operator[] call on a scalar\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3556 3620])
+                            ("BAD_PUSHBACK" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"appending to a non-sequence\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3621 3684])
+                            ("BAD_INSERT" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"inserting in a non-convertible-to-map\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3685 3756])
+                            ("UNMATCHED_GROUP_TAG" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"unmatched group tag\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3758 3820])
+                            ("UNEXPECTED_END_SEQ" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"unexpected end sequence token\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3821 3892])
+                            ("UNEXPECTED_END_MAP" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"unexpected end map token\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3893 3959])
+                            ("SINGLE_QUOTED_CHAR" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"invalid character in single-quoted string\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [3960 4047])
+                            ("INVALID_ANCHOR" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"invalid anchor\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4048 4100])
+                            ("INVALID_ALIAS" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"invalid alias\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4101 4151])
+                            ("INVALID_TAG" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"invalid tag\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4152 4198])
+                            ("BAD_FILE" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "\"bad file\""
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [4199 4239])
+                            ("KEY_NOT_FOUND_WITH_KEY" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("std::string" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4316 4325])
+                                    ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("disable_if" type
+                                             (:template-specifier 
+                                                ( ("is_numeric" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4326 4362])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4363 4372]))                                  
+                                :constant-flag t
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [4241 4401])
+                            ("KEY_NOT_FOUND_WITH_KEY" function
+                               (:typemodifiers ("inline")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4451 4474]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4403 4571])
+                            ("KEY_NOT_FOUND_WITH_KEY" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("std::string" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("key" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4648 4661])
+                                    ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("enable_if" type
+                                             (:template-specifier 
+                                                ( ("is_numeric" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4662 4697])
+                                    ("" variable
+                                       (:pointer 1
+                                        :type ("type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4698 4707]))                                  
+                                :constant-flag t
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [4573 4805]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [502 4807])
+                    ("Exception" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4856 4863])
+                            ("Exception" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("mark_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mark" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4876 4894])
+                                    ("msg_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4895 4919]))                                  
+                                :type ("Exception" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4866 4998])
+                            ("Exception" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [5001 5032])
+                            ("mark" variable (:type ("Mark" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5036 5046])
+                            ("msg" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5049 5065])
+                            ("private" label nil (reparse-symbol classsubparts) [5068 5076])
+                            ("build_what" function
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("mark" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mark" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5115 5132])
+                                    ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5171 5194]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5079 5374]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4809 5377])
+                    ("ParserException" type
+                       (:superclasses 
+                          ( ("Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5423 5430])
+                            ("ParserException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("mark_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mark" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5449 5467])
+                                    ("msg_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5468 5492]))                                  
+                                :type ("ParserException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5433 5526]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5379 5529])
+                    ("RepresentationException" type
+                       (:superclasses 
+                          ( ("Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5583 5590])
+                            ("RepresentationException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("mark_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mark" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5617 5635])
+                                    ("msg_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5636 5660]))                                  
+                                :type ("RepresentationException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5593 5694]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5531 5697])
+                    ("InvalidScalar" type
+                       (:superclasses 
+                          ( ("RepresentationException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5784 5791])
+                            ("InvalidScalar" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("mark_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mark" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5808 5826]))                                  
+                                :type ("InvalidScalar" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5794 5894]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5728 5897])
+                    ("KeyNotFound" type
+                       (:superclasses 
+                          ( ("RepresentationException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5953 5960])
+                            ("KeyNotFound" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("KeyNotFound" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("mark_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mark" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5999 6017])
+                                    ("key_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6018 6032]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [5963 6117]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5899 6120])
+                    ("TypedKeyNotFound" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6191 6198])
+                            ("TypedKeyNotFound" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("mark_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Mark" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6218 6236])
+                                    ("key_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6237 6251]))                                  
+                                :type ("TypedKeyNotFound" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6201 6298])
+                            ("TypedKeyNotFound" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [6301 6339])
+                            ("key" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6343 6349]))                          
+                        :superclasses 
+                          ( ("KeyNotFound" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [6122 6352])
+                    ("MakeTypedKeyNotFound" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("TypedKeyNotFound" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("mark" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mark" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6424 6441])
+                            ("key" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6490 6503]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [6354 6548])
+                    ("InvalidNode" type
+                       (:superclasses 
+                          ( ("RepresentationException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6604 6611])
+                            ("InvalidNode" function
+                               (:constructor-flag t
+                                :type ("InvalidNode" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6614 6705]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [6550 6708])
+                    ("BadConversion" type
+                       (:superclasses 
+                          ( ("RepresentationException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6766 6773])
+                            ("BadConversion" function
+                               (:constructor-flag t
+                                :type ("BadConversion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6776 6871]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [6710 6874])
+                    ("TypedBadConversion" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6949 6956])
+                            ("TypedBadConversion" function
+                               (:constructor-flag t
+                                :type ("TypedBadConversion" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6959 7000]))                          
+                        :superclasses 
+                          ( ("BadConversion" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [6876 7003])
+                    ("BadDereference" type
+                       (:superclasses 
+                          ( ("RepresentationException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7062 7069])
+                            ("BadDereference" function
+                               (:constructor-flag t
+                                :type ("BadDereference" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7072 7169]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7005 7172])
+                    ("BadSubscript" type
+                       (:superclasses 
+                          ( ("RepresentationException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7229 7236])
+                            ("BadSubscript" function
+                               (:constructor-flag t
+                                :type ("BadSubscript" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7239 7332]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7174 7335])
+                    ("BadPushback" type
+                       (:superclasses 
+                          ( ("RepresentationException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7391 7398])
+                            ("BadPushback" function
+                               (:constructor-flag t
+                                :type ("BadPushback" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7401 7492]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7337 7495])
+                    ("BadInsert" type
+                       (:superclasses 
+                          ( ("RepresentationException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7549 7556])
+                            ("BadInsert" function
+                               (:constructor-flag t
+                                :type ("BadInsert" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7559 7646]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7497 7649])
+                    ("EmitterException" type
+                       (:superclasses 
+                          ( ("Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7696 7703])
+                            ("EmitterException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("msg_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7723 7747]))                                  
+                                :type ("EmitterException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7706 7793]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7651 7796])
+                    ("BadFile" type
+                       (:superclasses 
+                          ( ("Exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7834 7841])
+                            ("BadFile" function
+                               (:constructor-flag t
+                                :type ("BadFile" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7844 7907]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [7798 7910]))                  
+                :type "namespace")
+                nil [467 7912]))          
+      :file "exceptions.h"
+      :pointmax 7975
+      :fsize 7974
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((punctuation 4697 . 4698) (punctuation 4696 . 4697) (punctuation 4362 . 4363) (punctuation 4361 . 4362) (symbol 339 . 343) (symbol 332 . 338) (punctuation 331 . 332) (semantic-list 192 . 279))
+      :lexical-table 
+        '(("EXCEPTIONS_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
+    (semanticdb-table "dll.h"
+      :file "dll.h"
+      :fsize 1493
+      :lastmodtime '(21784 46492 0 0))
+    (semanticdb-table "noncopyable.h"
+      :file "noncopyable.h"
+      :fsize 687
+      :lastmodtime '(21784 46492 0 0))
+    (semanticdb-table "binary.h"
+      :file "binary.h"
+      :fsize 1938
+      :lastmodtime '(21784 46492 0 0))
+    (semanticdb-table "emitterdef.h"
+      :file "emitterdef.h"
+      :fsize 541
+      :lastmodtime '(21784 46492 0 0))
+    (semanticdb-table "emittermanip.h"
+      :file "emittermanip.h"
+      :fsize 3147
+      :lastmodtime '(21784 46492 0 0))
+    (semanticdb-table "null.h"
+      :file "null.h"
+      :fsize 716
+      :lastmodtime '(21784 46492 0 0))
+    (semanticdb-table "ostream_wrapper.h"
+      :file "ostream_wrapper.h"
+      :fsize 1766
+      :lastmodtime '(21784 46492 0 0))
+    (semanticdb-table "mark.h"
+      :file "mark.h"
+      :fsize 709
+      :lastmodtime '(21784 46492 0 0))
+    (semanticdb-table "traits.h"
+      :file "traits.h"
+      :fsize 2085
+      :lastmodtime '(21784 46492 0 0)))
+  :file "!usr!include!yaml-cpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

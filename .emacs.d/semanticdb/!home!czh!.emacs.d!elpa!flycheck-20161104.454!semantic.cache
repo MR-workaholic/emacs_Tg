@@ -1,0 +1,48 @@
+;; Object flycheck-20161104.454/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "flycheck-20161104.454/"
+  :tables
+  (list
+    (semanticdb-table "flycheck-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "flycheck-autoloads.el"
+      :pointmax 8521
+      :fsize 8520
+      :lastmodtime '(22557 20214 51526 122000)
+      :unmatched-syntax nil)
+    (semanticdb-table "flycheck-buttercup.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "flycheck-buttercup.el"
+      :pointmax 4875
+      :fsize 4874
+      :lastmodtime '(22557 20213 559527 676000)
+      :unmatched-syntax nil)
+    (semanticdb-table "flycheck-ert.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "flycheck-ert.el"
+      :pointmax 16816
+      :fsize 16815
+      :lastmodtime '(22557 20213 583527 600000)
+      :unmatched-syntax nil)
+    (semanticdb-table "flycheck-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "flycheck-pkg.el"
+      :pointmax 307
+      :fsize 306
+      :lastmodtime '(22557 20213 527527 777000)
+      :unmatched-syntax nil)
+    (semanticdb-table "flycheck.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "flycheck.el"
+      :pointmax 367429
+      :fsize 367431
+      :lastmodtime '(22557 20213 607527 525000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!flycheck-20161104.454!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object datafiles/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "datafiles/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "Makefile"
+      :pointmax 274
+      :fsize 273
+      :lastmodtime '(21290 16233 0 0)
+      :unmatched-syntax '((symbol 270 . 273) (punctuation 269 . 270) (symbol 262 . 269) (punctuation 261 . 262) (symbol 257 . 261) (punctuation 256 . 257) (semantic-list 250 . 256) (symbol 249 . 250) (symbol 241 . 248) (symbol 238 . 239) (punctuation 237 . 238) (punctuation 236 . 237) (semantic-list 224 . 235) (symbol 223 . 224) (semantic-list 215 . 222) (symbol 214 . 215) (symbol 212 . 213) (punctuation 211 . 212) (symbol 208 . 210) (punctuation 205 . 206) (symbol 200 . 205) (semantic-list 190 . 198) (symbol 189 . 190) (semantic-list 179 . 188) (symbol 178 . 179) (punctuation 176 . 177) (symbol 175 . 176) (symbol 173 . 174) (punctuation 172 . 173) (symbol 170 . 171) (punctuation 169 . 170) (punctuation 168 . 169) (symbol 167 . 168) (semantic-list 158 . 166) (symbol 157 . 158) (semantic-list 152 . 156) (symbol 151 . 152) (semantic-list 140 . 149) (symbol 139 . 140) (symbol 137 . 138) (punctuation 136 . 137) (punctuation 135 . 136) (punctuation 133 . 134) (punctuation 132 . 133) (symbol 129 . 130) (punctuation 128 . 129) (symbol 120 . 128) (semantic-list 112 . 119) (symbol 111 . 112) (punctuation 109 . 110) (symbol 106 . 109) (symbol 96 . 104) (punctuation 94 . 95) (symbol 88 . 93) (semantic-list 76 . 86) (symbol 75 . 76) (punctuation 74 . 75) (symbol 67 . 74) (punctuation 66 . 67) (symbol 62 . 66) (punctuation 61 . 62) (semantic-list 55 . 61) (symbol 54 . 55) (symbol 46 . 53) (semantic-list 19 . 45) (symbol 18 . 19) (punctuation 41 . 42) (punctuation 33 . 34) (semantic-list 27 . 33) (punctuation 17 . 18) (symbol 9 . 17) (punctuation 7 . 8) (punctuation 6 . 7) (punctuation 5 . 6) (symbol 1 . 5))))
+  :file "!home!czh!Advanced_Programming_in_the_Unix_Environment!apue.3e!datafiles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

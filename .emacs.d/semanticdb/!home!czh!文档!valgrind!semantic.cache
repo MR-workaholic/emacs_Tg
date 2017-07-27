@@ -1,0 +1,109 @@
+;; Object valgrind/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "valgrind/"
+  :tables
+  (list
+    (semanticdb-table ".projectile"
+      :major-mode 'c++-mode
+      :tags nil
+      :file ".projectile"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22523 30809 953161 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "test.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("f" function (:type "void") nil [22 91])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [102 111])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [112 125]))                  
+                :type "int")
+                nil [93 148]))          
+      :file "test.c"
+      :pointmax 149
+      :fsize 148
+      :lastmodtime '(22698 42932 856630 675000)
+      :unmatched-syntax nil)
+    (semanticdb-table "makefile"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "makefile"
+      :pointmax 29
+      :fsize 42
+      :lastmodtime '(22698 51096 538398 11000)
+      :unmatched-syntax '((symbol 24 . 28) (symbol 22 . 23) (punctuation 21 . 22) (symbol 19 . 20) (punctuation 18 . 19) (symbol 16 . 17) (punctuation 15 . 16) (symbol 11 . 15) (symbol 6 . 10) (punctuation 5 . 6) (symbol 1 . 4) (symbol 16 . 17) (punctuation 15 . 16) (symbol 11 . 15) (symbol 6 . 10) (punctuation 5 . 6) (symbol 1 . 4)))
+    (semanticdb-table "badloop.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [134 152])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [163 172])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [173 186]))                  
+                :type "int")
+                nil [154 368]))          
+      :file "badloop.c"
+      :pointmax 369
+      :fsize 384
+      :lastmodtime '(22698 51749 550003 417000)
+      :unmatched-syntax nil)
+    (semanticdb-table "badacc.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [125 144])
+            ("vector" include (:system-flag t) nil [145 162])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [164 184])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [195 204])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [205 218]))                  
+                :type "int")
+                nil [186 421]))          
+      :file "badacc.cpp"
+      :pointmax 422
+      :fsize 433
+      :lastmodtime '(22698 48971 567618 147000)
+      :unmatched-syntax nil)
+    (semanticdb-table "badlap.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [121 139])
+            ("stdlib.h" include (:system-flag t) nil [140 159])
+            ("string.h" include (:system-flag t) nil [160 179])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [190 199])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [200 213]))                  
+                :type "int")
+                nil [181 591]))          
+      :file "badlap.c"
+      :pointmax 592
+      :fsize 599
+      :lastmodtime '(22698 49821 950790 942000)
+      :unmatched-syntax nil)
+)
+  :file "!home!czh!文档!valgrind!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

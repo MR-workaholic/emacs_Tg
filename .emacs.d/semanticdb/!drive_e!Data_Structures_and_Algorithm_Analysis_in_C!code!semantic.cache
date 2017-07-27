@@ -1,0 +1,871 @@
+;; Object code/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "code/"
+  :tables (list 
+   (semanticdb-table "list.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ElementType" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [9 33])
+            ("_List_H" variable (:constant-flag t) nil [99 106])
+            ("Node" type
+               (:prototype t
+                :type "struct")
+                nil [116 128])
+            ("PtrToNode" type
+               (:typedef ("Node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "Node"
+                :type "typedef")
+                nil [137 168])
+            ("List" type
+               (:typedef ("PtrToNode" type (:type "class") nil nil)
+                :superclasses "PtrToNode"
+                :type "typedef")
+                nil [177 200])
+            ("Position" type
+               (:typedef ("PtrToNode" type (:type "class") nil nil)
+                :superclasses "PtrToNode"
+                :type "typedef")
+                nil [209 236])
+            ("MakeEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [262 270]))                  
+                :type ("List" type (:type "class") nil nil))
+                nil [246 271])
+            ("IsEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [293 301]))                  
+                :type "int")
+                nil [280 302])
+            ("IsLast" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [323 334])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [335 343]))                  
+                :type "int")
+                nil [311 344])
+            ("Find" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [368 382])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [383 391]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [353 392])
+            ("Delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [414 428])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [429 437]))                  
+                :type "void")
+                nil [401 438])
+            ("FindPrevious" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [470 484])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [485 493]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [447 494])
+            ("Insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [516 530])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [531 538])
+                    ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [539 551]))                  
+                :type "void")
+                nil [503 552])
+            ("DeleteList" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [578 586]))                  
+                :type "void")
+                nil [561 587])
+            ("Header" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [613 621]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [596 622])
+            ("First" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [647 655]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [631 656])
+            ("Advance" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [683 695]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [665 696])
+            ("Retrieve" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [727 739]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [705 740]))          
+    :file "list.h"
+    :pointmax 784
+    :fsize 783
+    :lastmodtime '(18592 10384 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_List_H")
+          )
+
+    )
+   (semanticdb-table "list.c"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("list.h" include nil nil [1 26])
+            ("stdlib.h" include (:system-flag t) nil [27 54])
+            ("fatal.h" include nil nil [55 81])
+            ("Node" type
+               (:members 
+                  ( ("Element" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [167 187])
+                    ("Next" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [200 217]))                  
+                :type "struct")
+                nil [133 228])
+            ("MakeEmpty" function
+               (:arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [262 270]))                  
+                :type ("List" type (:type "class") nil nil))
+                nil [238 526])
+            ("IsEmpty" function
+               (:arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [622 630]))                  
+                :type "int")
+                nil [601 686])
+            ("IsLast" function
+               (:arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [864 875])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [876 884]))                  
+                :type "int")
+                nil [852 940])
+            ("Find" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1068 1082])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1083 1091]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [1045 1263])
+            ("Delete" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1507 1521])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1522 1530]))                  
+                :type "void")
+                nil [1486 1902])
+            ("FindPrevious" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2085 2099])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2100 2108]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [2054 2286])
+            ("Insert" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2502 2516])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2517 2524])
+                    ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2525 2537]))                  
+                :type "void")
+                nil [2481 2829])
+            ("DeleteList" function
+               (:arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3322 3330]))                  
+                :type "void")
+                nil [3297 3597])
+            ("Header" function
+               (:arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3642 3650]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [3617 3692])
+            ("First" function
+               (:arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3726 3734]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [3702 3782])
+            ("Advance" function
+               (:arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3818 3830]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [3792 3878])
+            ("Retrieve" function
+               (:arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3918 3930]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [3888 3981]))          
+    :file "list.c"
+    :pointmax 3975
+    :fsize 3988
+    :lastmodtime '(22485 26484 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "fatal.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("Error" variable (:constant-flag t) nil [49 54])
+            ("FatalError" variable (:constant-flag t) nil [95 105]))          
+    :file "fatal.h"
+    :pointmax 157
+    :fsize 156
+    :lastmodtime '(18592 10876 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("Error" (spp-arg-list ("Str") 54 . 61) . ((symbol "FatalError" 69 . 79) (semantic-list "( Str )" 79 . 86)))
+          ("FatalError" (spp-arg-list ("Str") 105 . 112) . 
+              ((symbol "fprintf" 115 . 122) (semantic-list "( stderr, \"%s\\n\", Str )" 122 . 145) (punctuation "," 145 . 146) (symbol "exit" 147 . 151) (semantic-list "( 1 )" 151 . 156)))
+          )
+
+    )
+   (semanticdb-table "stackli.c"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stackli.h" include nil nil [1 29])
+            ("fatal.h" include nil nil [30 56])
+            ("stdlib.h" include (:system-flag t) nil [57 84])
+            ("Node" type
+               (:members 
+                  ( ("Element" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [128 148])
+                    ("Next" variable (:type ("PtrToNode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [161 178]))                  
+                :type "struct")
+                nil [94 189])
+            ("IsEmpty" function
+               (:arguments 
+                  ( ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [245 254]))                  
+                :type "int")
+                nil [224 310])
+            ("CreateStack" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [382 388]))                  
+                :type ("Stack" type (:type "class") nil nil))
+                nil [355 634])
+            ("MakeEmpty" function
+               (:arguments 
+                  ( ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [668 677]))                  
+                :type "void")
+                nil [644 866])
+            ("DisposeStack" function
+               (:arguments 
+                  ( ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [913 922]))                  
+                :type "void")
+                nil [886 993])
+            ("Push" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1047 1061])
+                    ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1062 1071]))                  
+                :type "void")
+                nil [1028 1420])
+            ("Top" function
+               (:arguments 
+                  ( ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1490 1499]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [1465 1692])
+            ("Pop" function
+               (:arguments 
+                  ( ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1755 1764]))                  
+                :type "void")
+                nil [1737 2047]))          
+    :file "stackli.c"
+    :pointmax 2058
+    :fsize 2057
+    :lastmodtime '(13546 19462 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "stackli.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ElementType" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [9 33])
+            ("_Stack_h" variable (:constant-flag t) nil [100 108])
+            ("Node" type
+               (:prototype t
+                :type "struct")
+                nil [118 130])
+            ("PtrToNode" type
+               (:typedef ("Node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "Node"
+                :type "typedef")
+                nil [139 170])
+            ("Stack" type
+               (:typedef ("PtrToNode" type (:type "class") nil nil)
+                :superclasses "PtrToNode"
+                :type "typedef")
+                nil [179 203])
+            ("IsEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [226 235]))                  
+                :type "int")
+                nil [213 236])
+            ("CreateStack" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [264 270]))                  
+                :type ("Stack" type (:type "class") nil nil))
+                nil [245 271])
+            ("DisposeStack" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [299 308]))                  
+                :type "void")
+                nil [280 309])
+            ("MakeEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [334 343]))                  
+                :type "void")
+                nil [318 344])
+            ("Push" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [364 378])
+                    ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [379 388]))                  
+                :type "void")
+                nil [353 389])
+            ("Top" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [415 424]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [398 425])
+            ("Pop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("S" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [444 453]))                  
+                :type "void")
+                nil [434 454]))          
+    :file "stackli.h"
+    :pointmax 498
+    :fsize 497
+    :lastmodtime '(13407 52774 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_Stack_h")
+          )
+
+    )
+   (semanticdb-table "queue.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ElementType" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [9 33])
+            ("_Queue_h" variable (:constant-flag t) nil [100 108])
+            ("QueueRecord" type
+               (:prototype t
+                :type "struct")
+                nil [118 137])
+            ("Queue" type
+               (:typedef ("QueueRecord" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "QueueRecord"
+                :type "typedef")
+                nil [146 180])
+            ("IsEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [203 212]))                  
+                :type "int")
+                nil [190 213])
+            ("IsFull" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [234 243]))                  
+                :type "int")
+                nil [222 244])
+            ("CreateQueue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("MaxElements" variable (:type "int") (reparse-symbol arg-sub-list) [272 289]))                  
+                :type ("Queue" type (:type "class") nil nil))
+                nil [253 290])
+            ("DisposeQueue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [318 327]))                  
+                :type "void")
+                nil [299 328])
+            ("MakeEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [353 362]))                  
+                :type "void")
+                nil [337 363])
+            ("Enqueue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [386 400])
+                    ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [401 410]))                  
+                :type "void")
+                nil [372 411])
+            ("Front" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [439 448]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [420 449])
+            ("Dequeue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [472 481]))                  
+                :type "void")
+                nil [458 482])
+            ("FrontAndDequeue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [520 529]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [491 530]))          
+    :file "queue.h"
+    :pointmax 573
+    :fsize 572
+    :lastmodtime '(13407 52708 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_Queue_h")
+          )
+
+    )
+   (semanticdb-table "queue.c"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("queue.h" include nil nil [1 27])
+            ("fatal.h" include nil nil [28 54])
+            ("stdlib.h" include (:system-flag t) nil [55 82])
+            ("MinQueueSize" variable (:constant-flag t) nil [100 112])
+            ("QueueRecord" type
+               (:members 
+                  ( ("Capacity" variable (:type "int") (reparse-symbol classsubparts) [169 182])
+                    ("Front" variable (:type "int") (reparse-symbol classsubparts) [210 220])
+                    ("Rear" variable (:type "int") (reparse-symbol classsubparts) [233 242])
+                    ("Size" variable (:type "int") (reparse-symbol classsubparts) [255 264])
+                    ("Array" variable
+                       (:pointer 1
+                        :type ("ElementType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [298 317]))                  
+                :type "struct")
+                nil [128 328])
+            ("IsEmpty" function
+               (:arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [384 393]))                  
+                :type "int")
+                nil [363 446])
+            ("IsFull" function
+               (:arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [486 495]))                  
+                :type "int")
+                nil [466 558])
+            ("CreateQueue" function
+               (:arguments 
+                  ( ("MaxElements" variable (:type "int") (reparse-symbol arg-sub-list) [595 612]))                  
+                :type ("Queue" type (:type "class") nil nil))
+                nil [568 1130])
+            ("MakeEmpty" function
+               (:arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1189 1198]))                  
+                :type "void")
+                nil [1165 1294])
+            ("DisposeQueue" function
+               (:arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1341 1350]))                  
+                :type "void")
+                nil [1314 1487])
+            ("Succ" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Value" variable (:type "int") (reparse-symbol arg-sub-list) [1548 1558])
+                    ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1559 1568]))                  
+                :type "int")
+                nil [1523 1682])
+            ("Enqueue" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1714 1728])
+                    ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1729 1738]))                  
+                :type "void")
+                nil [1692 1986])
+            ("Front" function
+               (:arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2035 2044]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [2008 2241])
+            ("Dequeue" function
+               (:arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2273 2282]))                  
+                :type "void")
+                nil [2251 2493])
+            ("FrontAndDequeue" function
+               (:arguments 
+                  ( ("Q" variable (:type ("Queue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2540 2549]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [2503 2856]))          
+    :file "queue.c"
+    :pointmax 2821
+    :fsize 2820
+    :lastmodtime '(12815 34224 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MinQueueSize" . ((semantic-list "( 5 )" 113 . 118)))
+          )
+
+    )
+   (semanticdb-table "tree.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ElementType" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [9 33])
+            ("_Tree_H" variable (:constant-flag t) nil [100 107])
+            ("TreeNode" type
+               (:prototype t
+                :type "struct")
+                nil [117 133])
+            ("Position" type
+               (:typedef ("TreeNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "TreeNode"
+                :type "typedef")
+                nil [142 176])
+            ("SearchTree" type
+               (:typedef ("TreeNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "TreeNode"
+                :type "typedef")
+                nil [185 221])
+            ("MakeEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [253 267]))                  
+                :type ("SearchTree" type (:type "class") nil nil))
+                nil [231 268])
+            ("Find" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [292 306])
+                    ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [307 321]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [277 322])
+            ("FindMin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [349 363]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [331 364])
+            ("FindMax" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [391 405]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [373 406])
+            ("Insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [434 448])
+                    ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [449 463]))                  
+                :type ("SearchTree" type (:type "class") nil nil))
+                nil [415 464])
+            ("Delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [492 506])
+                    ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [507 521]))                  
+                :type ("SearchTree" type (:type "class") nil nil))
+                nil [473 522])
+            ("Retrieve" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [553 565]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [531 566]))          
+    :file "tree.h"
+    :pointmax 609
+    :fsize 608
+    :lastmodtime '(13407 52814 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_Tree_H")
+          )
+
+    )
+   (semanticdb-table "tree.c"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("tree.h" include nil nil [1 26])
+            ("stdlib.h" include (:system-flag t) nil [27 54])
+            ("fatal.h" include nil nil [55 81])
+            ("TreeNode" type
+               (:members 
+                  ( ("Element" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [129 149])
+                    ("Left" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol classsubparts) [162 179])
+                    ("Right" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol classsubparts) [192 210]))                  
+                :type "struct")
+                nil [91 221])
+            ("MakeEmpty" function
+               (:arguments 
+                  ( ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [286 300]))                  
+                :type ("SearchTree" type (:type "class") nil nil))
+                nil [256 505])
+            ("Find" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [573 587])
+                    ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [588 602]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [550 892])
+            ("FindMin" function
+               (:arguments 
+                  ( ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [963 977]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [937 1191])
+            ("FindMax" function
+               (:arguments 
+                  ( ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1262 1276]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [1236 1423])
+            ("Insert" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1495 1509])
+                    ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1510 1524]))                  
+                :type ("SearchTree" type (:type "class") nil nil))
+                nil [1468 2258])
+            ("Delete" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2330 2344])
+                    ("T" variable (:type ("SearchTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2345 2359]))                  
+                :type ("SearchTree" type (:type "class") nil nil))
+                nil [2303 3402])
+            ("Retrieve" function
+               (:arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3452 3464]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [3422 3515]))          
+    :file "tree.c"
+    :pointmax 3516
+    :fsize 3515
+    :lastmodtime '(12815 34228 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "avltree.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ElementType" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [9 33])
+            ("_AvlTree_H" variable (:constant-flag t) nil [103 113])
+            ("AvlNode" type
+               (:prototype t
+                :type "struct")
+                nil [123 138])
+            ("Position" type
+               (:typedef ("AvlNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "AvlNode"
+                :type "typedef")
+                nil [147 180])
+            ("AvlTree" type
+               (:typedef ("AvlNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "AvlNode"
+                :type "typedef")
+                nil [189 221])
+            ("MakeEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [250 261]))                  
+                :type ("AvlTree" type (:type "class") nil nil))
+                nil [231 262])
+            ("Find" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [286 300])
+                    ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [301 312]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [271 313])
+            ("FindMin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [340 351]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [322 352])
+            ("FindMax" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [379 390]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [361 391])
+            ("Insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [416 430])
+                    ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [431 442]))                  
+                :type ("AvlTree" type (:type "class") nil nil))
+                nil [400 443])
+            ("Delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [468 482])
+                    ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [483 494]))                  
+                :type ("AvlTree" type (:type "class") nil nil))
+                nil [452 495])
+            ("Retrieve" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [526 538]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [504 539]))          
+    :file "avltree.h"
+    :pointmax 584
+    :fsize 583
+    :lastmodtime '(13407 52500 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_AvlTree_H")
+          )
+
+    )
+   (semanticdb-table "avltree.c"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("avltree.h" include nil nil [1 29])
+            ("stdlib.h" include (:system-flag t) nil [30 57])
+            ("fatal.h" include nil nil [58 84])
+            ("AvlNode" type
+               (:members 
+                  ( ("Element" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [131 151])
+                    ("Left" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol classsubparts) [164 178])
+                    ("Right" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol classsubparts) [191 206])
+                    ("Height" variable (:type "int") (reparse-symbol classsubparts) [219 235]))                  
+                :type "struct")
+                nil [94 246])
+            ("MakeEmpty" function
+               (:arguments 
+                  ( ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [283 294]))                  
+                :type ("AvlTree" type (:type "class") nil nil))
+                nil [256 499])
+            ("Find" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [532 546])
+                    ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [547 558]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [509 848])
+            ("FindMin" function
+               (:arguments 
+                  ( ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [884 895]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [858 1109])
+            ("FindMax" function
+               (:arguments 
+                  ( ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1145 1156]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [1119 1303])
+            ("Height" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1365 1377]))                  
+                :type "int")
+                nil [1338 1503])
+            ("Max" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Lhs" variable (:type "int") (reparse-symbol arg-sub-list) [1547 1555])
+                    ("Rhs" variable (:type "int") (reparse-symbol arg-sub-list) [1556 1565]))                  
+                :type "int")
+                nil [1523 1627])
+            ("SingleRotateWithLeft" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("K2" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1900 1913]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [1854 2234])
+            ("SingleRotateWithRight" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("K1" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2495 2508]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [2448 2830])
+            ("DoubleRotateWithLeft" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("K3" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3133 3146]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [3087 3358])
+            ("DoubleRotateWithRight" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("K1" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3648 3661]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [3601 3875])
+            ("Insert" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3935 3949])
+                    ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3950 3961]))                  
+                :type ("AvlTree" type (:type "class") nil nil))
+                nil [3911 5305])
+            ("Delete" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5349 5363])
+                    ("T" variable (:type ("AvlTree" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5364 5375]))                  
+                :type ("AvlTree" type (:type "class") nil nil))
+                nil [5325 5490])
+            ("Retrieve" function
+               (:arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5530 5542]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [5500 5593]))          
+    :file "avltree.c"
+    :pointmax 5594
+    :fsize 5593
+    :lastmodtime '(12815 34218 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "testque.c"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("queue.h" include nil nil [20 38])
+            ("main" function (:type "int") nil [40 452]))          
+    :file "testque.c"
+    :pointmax 453
+    :fsize 452
+    :lastmodtime '(12815 34226 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!Data_Structures_and_Algorithm_Analysis_in_C!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

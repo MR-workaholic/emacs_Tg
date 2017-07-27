@@ -1,0 +1,18 @@
+;; Object prog-mode/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "prog-mode/"
+  :tables (list 
+   (semanticdb-table ".yas-setup.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file ".yas-setup.el"
+    :pointmax 82
+    :fsize 81
+    :lastmodtime '(22352 6483 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!emacs!.emacs.d!elpa!yasnippet-20160530.1721!snippets!prog-mode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,21 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "nginx.conf"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("nobody" variable (:type ("user" type (:type "class") nil nil)) nil [3 16])
+            ("log" variable (:type "int") nil [79 83])
+            ("notice" variable (:type ("log" type (:type "class") nil nil)) nil [107 119])
+            ("info" variable (:type ("log" type (:type "class") nil nil)) nil [143 153])
+            ("pid" variable (:type "int") nil [178 182]))          
+      :file "nginx.conf"
+      :pointmax 3351
+      :fsize 3350
+      :lastmodtime '(22792 40895 770089 714000)
+      :unmatched-syntax '((semantic-list 280 . 3350) (symbol 275 . 279) (semantic-list 192 . 272) (symbol 185 . 191) (punctuation 177 . 178) (symbol 172 . 177) (punctuation 171 . 172) (symbol 167 . 171) (symbol 156 . 159) (punctuation 155 . 156) (punctuation 142 . 143) (symbol 137 . 142) (punctuation 136 . 137) (symbol 132 . 136) (symbol 121 . 130) (punctuation 120 . 121) (punctuation 106 . 107) (symbol 101 . 106) (punctuation 100 . 101) (symbol 96 . 100) (symbol 85 . 94) (punctuation 84 . 85) (punctuation 78 . 79) (symbol 73 . 78) (punctuation 72 . 73) (symbol 68 . 72) (symbol 57 . 66) (punctuation 56 . 57) (NEW 51 . 54) (punctuation 49 . 50) (punctuation 36 . 37) (number 35 . 36) (symbol 17 . 33) (punctuation 2 . 3))))
+  :file "!usr!local!nginx!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

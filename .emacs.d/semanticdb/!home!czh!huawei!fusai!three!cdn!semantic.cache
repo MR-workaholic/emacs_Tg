@@ -1,0 +1,1465 @@
+;; Object cdn/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cdn/"
+  :tables
+  (list
+    (semanticdb-table "deploy.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("deploy.h" include nil nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [41 61])
+            ("topomap" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("Vertex" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [63 93])
+            ("consumervec" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("ConsumerNode" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [140 180])
+            ("serverInfoVec" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("ServerInfo" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [181 221])
+            ("consumerDemandmap" variable
+               (:typemodifiers ("static")
+                :type ("multimap" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [223 279])
+            ("sentoutmap" variable
+               (:typemodifiers ("static")
+                :type ("multimap" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [315 365])
+            ("level2Map" variable
+               (:typemodifiers ("static")
+                :type ("multimap" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [374 423])
+            ("level3Map" variable
+               (:typemodifiers ("static")
+                :type ("multimap" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [443 492])
+            ("level2RawMap" variable
+               (:typemodifiers ("static")
+                :type ("map" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [493 527])
+            ("alternative_set" variable
+               (:typemodifiers ("static")
+                :type ("set" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [528 560])
+            ("lock" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [570 605])
+            ("crash" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [628 664])
+            ("rest" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [686 721])
+            ("restDemandmap" variable
+               (:typemodifiers ("static")
+                :type ("multimap" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [741 794])
+            ("ori_topomap" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("Vertex" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [838 872])
+            ("nodeAmount" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [885 907])
+            ("linkAmount" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [908 930])
+            ("consumerAmount" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [931 957])
+            ("maxServerPrice" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [958 984])
+            ("serverPriceCursor" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [985 1014])
+            ("maxOutput" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1015 1036])
+            ("consumerDemand" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [1054 1084])
+            ("isTimeOut" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [1099 1129])
+            ("initServerAmount" variable
+               (:typemodifiers ("static")
+                :default-value "7"
+                :type "int")
+                nil [1136 1168])
+            ("line" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1185 1201])
+            ("str_topo" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1202 1233])
+            ("T_Min" variable
+               (:typemodifiers ("static")
+                :default-value "500.0"
+                :type "float")
+                nil [1235 1262])
+            ("T" variable
+               (:typemodifiers ("static")
+                :default-value "100.0"
+                :type "float")
+                nil [1263 1286])
+            ("delta" variable
+               (:typemodifiers ("static")
+                :default-value "0.90"
+                :type "float")
+                nil [1287 1313])
+            ("countLog" variable
+               (:default-value "0"
+                :type "int")
+                nil [1425 1442])
+            ("Log" function (:type "void") nil [1443 1483])
+            ("Table" type
+               (:members 
+                  ( ("isAleadyInQueue" variable (:type "bool") (reparse-symbol classsubparts) [1504 1525])
+                    ("disValue" variable (:type "int") (reparse-symbol classsubparts) [1553 1566])
+                    ("pathValue" variable (:type "int") (reparse-symbol classsubparts) [1568 1582])
+                    ("flowValue" variable (:type "int") (reparse-symbol classsubparts) [1584 1598])
+                    ("Table" function
+                       (:constructor-flag t
+                        :type ("Table" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1600 1712]))                  
+                :type "struct")
+                nil [1487 1715])
+            ("Vertex" type
+               (:members 
+                  ( ("nodeId" variable (:type "int") (reparse-symbol classsubparts) [1763 1774])
+                    ("deployPrice" variable (:type "int") (reparse-symbol classsubparts) [1797 1813])
+                    ("sendout" variable (:type "int") (reparse-symbol classsubparts) [1827 1839])
+                    ("edgeLink" variable
+                       (:pointer 1
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1852 1867])
+                    ("Vertex" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1898 1904])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1905 1911]))                          
+                        :type ("Vertex" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1891 1979]))                  
+                :type "struct")
+                nil [1717 1982])
+            ("Edge" type
+               (:members 
+                  ( ("nodeId" variable (:type "int") (reparse-symbol classsubparts) [2000 2011])
+                    ("sumFlow" variable (:type "int") (reparse-symbol classsubparts) [2048 2060])
+                    ("guideFlow" variable (:type "int") (reparse-symbol classsubparts) [2089 2103])
+                    ("leftFlow" variable (:type "int") (reparse-symbol classsubparts) [2130 2143])
+                    ("price" variable (:type "int") (reparse-symbol classsubparts) [2170 2180])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2211 2222])
+                    ("oppositeEdge" variable
+                       (:pointer 1
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2250 2269])
+                    ("Edge" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2294 2300])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2301 2307])
+                            ("z" variable (:type "int") (reparse-symbol arg-sub-list) [2308 2314])
+                            ("o" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("Edge" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2315 2329]))                          
+                        :type ("Edge" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2289 2438]))                  
+                :type "struct")
+                nil [1985 2442])
+            ("FlowVertex" type
+               (:members 
+                  ( ("nodeId" variable (:type "int") (reparse-symbol classsubparts) [2466 2477])
+                    ("edgeLink" variable
+                       (:pointer 1
+                        :type ("FlowEdge" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2480 2499])
+                    ("FlowVertex" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2514 2520]))                          
+                        :type ("FlowVertex" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2503 2561]))                  
+                :type "struct")
+                nil [2444 2564])
+            ("FlowEdge" type
+               (:members 
+                  ( ("nodeId" variable (:type "int") (reparse-symbol classsubparts) [2586 2597])
+                    ("flow" variable (:type "int") (reparse-symbol classsubparts) [2600 2609])
+                    ("isAlive" variable (:type "bool") (reparse-symbol classsubparts) [2612 2625])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("FlowEdge" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2628 2643])
+                    ("FlowEdge" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2656 2662])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2663 2669]))                          
+                        :type ("FlowEdge" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2647 2738]))                  
+                :type "struct")
+                nil [2566 2741])
+            ("ConsumerNode" type
+               (:members 
+                  ( ("nodeId" variable (:type "int") (reparse-symbol classsubparts) [2767 2778])
+                    ("conNodeId" variable (:type "int") (reparse-symbol classsubparts) [2781 2795])
+                    ("demand" variable (:type "int") (reparse-symbol classsubparts) [2798 2809])
+                    ("ConsumerNode" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2826 2832])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2833 2839])
+                            ("z" variable (:type "int") (reparse-symbol arg-sub-list) [2840 2846]))                          
+                        :type ("ConsumerNode" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2813 2900])
+                    ("==" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ConsumerNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2922 2946]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2906 2999]))                  
+                :type "struct")
+                nil [2743 3002])
+            ("ServerInfo" type
+               (:members 
+                  ( ("serverInfoID" variable (:type "int") (reparse-symbol classsubparts) [3025 3042])
+                    ("output" variable (:type "int") (reparse-symbol classsubparts) [3044 3055])
+                    ("price" variable (:type "int") (reparse-symbol classsubparts) [3057 3067])
+                    ("ServerInfo" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3081 3087])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3088 3094])
+                            ("z" variable (:type "int") (reparse-symbol arg-sub-list) [3095 3101]))                          
+                        :type ("ServerInfo" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [3070 3150])
+                    ("<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ServerInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3168 3190]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3153 3232]))                  
+                :type "struct")
+                nil [3004 3235])
+            ("AddEdgeLink" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3256 3263])
+                    ("" variable (:type ("edgeLink" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3263 3272])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3273 3279])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3280 3286])
+                    ("z" variable (:type "int") (reparse-symbol arg-sub-list) [3287 3293])
+                    ("o" variable
+                       (:pointer 1
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3294 3302]))                  
+                :type ("Edge" type (:type "class") nil nil))
+                nil [3238 3548])
+            ("AddFlowEdgeLink" function
+               (:arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FlowEdge" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3571 3582])
+                    ("" variable (:type ("flowEdgeLink" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3582 3595])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3596 3602])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3603 3609]))                  
+                :type "void")
+                nil [3550 3835])
+            ("FreeEdgeLink" function
+               (:arguments 
+                  ( ("map" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Vertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3855 3875]))                  
+                :type "void")
+                nil [3837 4080])
+            ("FreeFlowEdgeLink" function
+               (:arguments 
+                  ( ("flowMap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("FlowVertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4104 4132]))                  
+                :type "void")
+                nil [4082 4353])
+            ("CreateFlowMap" function
+               (:arguments 
+                  ( ("rtopoMap" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("Vertex" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [4415 4439])
+                    ("flowMap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("FlowVertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4440 4468])
+                    ("amount" variable (:type "int") (reparse-symbol arg-sub-list) [4469 4480])
+                    ("usefulServerMap" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [4481 4511]))                  
+                :type "void")
+                nil [4396 5088])
+            ("RetNextAliveFlowEdge" function
+               (:arguments 
+                  ( ("flowMap" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("FlowVertex" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5126 5153])
+                    ("nodeID" variable (:type "int") (reparse-symbol arg-sub-list) [5154 5165]))                  
+                :type ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [5090 5359])
+            ("ChangeFlowEdge" function
+               (:arguments 
+                  ( ("flowMap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("FlowVertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5381 5409])
+                    ("src" variable (:type "int") (reparse-symbol arg-sub-list) [5410 5418])
+                    ("dest" variable (:type "int") (reparse-symbol arg-sub-list) [5419 5428])
+                    ("increment" variable (:type "int") (reparse-symbol arg-sub-list) [5429 5443]))                  
+                :type "void")
+                nil [5361 5614])
+            ("RetConsumerID" function
+               (:arguments 
+                  ( ("consumerVec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("ConsumerNode" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5634 5667])
+                    ("nodeID" variable (:type "int") (reparse-symbol arg-sub-list) [5668 5679]))                  
+                :type "int")
+                nil [5616 5888])
+            ("CreateOutput" function
+               (:arguments 
+                  ( ("flowMap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("FlowVertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5910 5938])
+                    ("usefulServerMap" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5939 5969])
+                    ("consumerVec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("ConsumerNode" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5970 6003])
+                    ("surNode" variable (:type "int") (reparse-symbol arg-sub-list) [6004 6016]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [5890 7953])
+            ("UpdateEdgeElement" function
+               (:arguments 
+                  ( ("edgePtr" variable
+                       (:pointer 1
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8019 8033]))                  
+                :type "void")
+                nil [7996 8289])
+            ("UpdateEdge" function
+               (:arguments 
+                  ( ("map" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Vertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8307 8327])
+                    ("curNode" variable (:type "int") (reparse-symbol arg-sub-list) [8328 8340])
+                    ("nextNode" variable (:type "int") (reparse-symbol arg-sub-list) [8341 8354])
+                    ("increment" variable (:type "int") (reparse-symbol arg-sub-list) [8355 8369])
+                    ("ungratifiedConsumerSet" variable
+                       (:reference 1
+                        :type ("set" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8370 8403]))                  
+                :type "void")
+                nil [8291 8793])
+            ("maxflow" function
+               (:arguments 
+                  ( ("temptopomap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Vertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8807 8835])
+                    ("demand" variable (:type "int") (reparse-symbol arg-sub-list) [8836 8847])
+                    ("isDemand" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [8848 8863])
+                    ("srcNode" variable (:type "int") (reparse-symbol arg-sub-list) [8864 8876])
+                    ("targetNode" variable (:type "int") (reparse-symbol arg-sub-list) [8877 8892])
+                    ("usefulServerMap" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8893 8924])
+                    ("ungratifiedConsumerSet" variable
+                       (:reference 1
+                        :type ("set" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8924 8957]))                  
+                :type "int")
+                nil [8795 10431])
+            ("dijkstra" function
+               (:arguments 
+                  ( ("map" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("Vertex" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [10447 10466])
+                    ("recordVec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Table" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10467 10492])
+                    ("srcNode" variable (:type "int") (reparse-symbol arg-sub-list) [10493 10505])
+                    ("targetNode" variable (:type "int") (reparse-symbol arg-sub-list) [10506 10521]))                  
+                :type "bool")
+                nil [10433 12643])
+            ("construct_temp_topo" function
+               (:arguments 
+                  ( ("tempMap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Vertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12670 12694])
+                    ("gene" variable (:type ("set" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [12695 12709]))                  
+                :type "void")
+                nil [12645 14019])
+            ("get_data" function
+               (:arguments 
+                  ( ("topo" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14035 14060]))                  
+                :type "void")
+                nil [14021 17382])
+            ("chrom" variable
+               (:dereference 1
+                :type ("Chrom" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [17435 17512])
+            ("Chrom" type
+               (:members 
+                  ( ("gene" variable (:type ("set" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [17451 17465])
+                    ("cost" variable (:type "float") (reparse-symbol classsubparts) [17479 17490]))                  
+                :type "struct")
+                nil [17435 17512])
+            ("round_gradient" function
+               (:arguments 
+                  ( ("iifmap" variable (:type ("multimap" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("pair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [17618 17657]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [17589 18076])
+            ("check_serout" function
+               (:arguments 
+                  ( ("gene" variable (:type ("set" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [18123 18137])
+                    ("consumerneed" variable (:type "int") (reparse-symbol arg-sub-list) [18138 18155]))                  
+                :type "bool")
+                nil [18105 18784])
+            ("choose" function
+               (:arguments 
+                  ( ("choose" variable
+                       (:reference 1
+                        :type ("set" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18814 18831])
+                    ("grad" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [18831 18850])
+                    ("number" variable (:type "int") (reparse-symbol arg-sub-list) [18850 18861]))                  
+                :type "void")
+                nil [18802 19126])
+            ("geneinsertchoose" function
+               (:arguments 
+                  ( ("choose" variable (:type ("set" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [19175 19191])
+                    ("iifmmap" variable (:type ("multimap" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("pair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [19192 19232])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [19232 19242]))                  
+                :type "void")
+                nil [19153 19597])
+            ("geneinsertchooseforlevel1" function
+               (:arguments 
+                  ( ("choose" variable (:type ("set" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [19630 19646])
+                    ("iifmmap" variable (:type ("multimap" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("pair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [19647 19687])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [19688 19698])
+                    ("tempLevel2RawMap" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19699 19731]))                  
+                :type "void")
+                nil [19599 20340])
+            ("initchrom" function
+               (:arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [20371 20381]))                  
+                :type "bool")
+                nil [20356 24021])
+            ("initpop" function (:type "void") nil [24032 24150])
+            ("calServerCost" function
+               (:arguments 
+                  ( ("usefulServerMap" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [24182 24212]))                  
+                :type "int")
+                nil [24164 24686])
+            ("cal_cost" function
+               (:arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [24712 24722]))                  
+                :type "void")
+                nil [24698 27101])
+            ("numChange" function
+               (:arguments 
+                  ( ("target" variable (:type "float") (reparse-symbol arg-sub-list) [27120 27133]))                  
+                :type "float")
+                nil [27104 27176])
+            ("select" function (:type "bool") nil [27197 28862])
+            ("findbestn" function
+               (:arguments 
+                  ( ("map" variable
+                       (:reference 1
+                        :type ("multimap" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil)
+                                  ("set" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28901 28933])
+                    ("chrom" variable
+                       (:dereference 1
+                        :type ("Chrom" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28934 28948])
+                    ("number" variable (:type "int") (reparse-symbol arg-sub-list) [28949 28960])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [28961 28967]))                  
+                :type "void")
+                nil [28886 29267])
+            ("insertnonechoose" function
+               (:arguments 
+                  ( ("chromtemp" variable
+                       (:reference 1
+                        :type ("set" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29311 29331])
+                    ("nonechoose" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29331 29355])
+                    ("randsize" variable (:type "int") (reparse-symbol arg-sub-list) [29356 29369]))                  
+                :type "void")
+                nil [29289 29720])
+            ("cro2chrom" function
+               (:arguments 
+                  ( ("chrom1" variable (:type ("Chrom" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29739 29752])
+                    ("chrom2" variable (:type ("Chrom" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29753 29766]))                  
+                :type "bool")
+                nil [29724 31534])
+            ("cross" function (:type "void") nil [31543 33226])
+            ("_0to1" function (:type "void") nil [33241 33563])
+            ("_1to0" function (:type "void") nil [33577 34492])
+            ("mutate" function (:type "void") nil [34500 36025])
+            ("CreateLevel2Map" function
+               (:arguments 
+                  ( ("targetMap" variable
+                       (:reference 1
+                        :type ("multimap" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36049 36092])
+                    ("tempMap" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36093 36116]))                  
+                :type "void")
+                nil [36028 37521])
+            ("CreateLevel3Map" function
+               (:arguments 
+                  ( ("targetMap" variable
+                       (:reference 1
+                        :type ("multimap" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37544 37587]))                  
+                :type "void")
+                nil [37523 38407])
+            ("alterset" function (:type "void") nil [38420 38965])
+            ("handleTimeOut" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [38991 38997]))                  
+                :type "void")
+                nil [38972 39051])
+            ("asolution" function
+               (:arguments 
+                  ( ("rMap" variable
+                       (:reference 1
+                        :type ("multimap" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39068 39101])
+                    ("rVec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [39102 39120])
+                    ("dataVec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [39121 39141])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [39142 39148]))                  
+                :type "void")
+                nil [39053 39340])
+            ("deploy_server" function
+               (:arguments 
+                  ( ("topo" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39374 39400])
+                    ("line_num" variable (:type "int") (reparse-symbol arg-sub-list) [39401 39414])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39415 39431]))                  
+                :type "void")
+                nil [39355 49128]))          
+      :file "deploy.cpp"
+      :pointmax 49129
+      :fsize 52854
+      :lastmodtime '(22776 38751 567425 896000)
+      :unmatched-syntax nil)
+    (semanticdb-table "deploy.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__ROUTE_H__" variable (:constant-flag t) nil [29 40])
+            ("lib_io.h" include nil nil [42 61])
+            ("iostream" include (:system-flag t) nil [62 81])
+            ("fstream" include (:system-flag t) nil [82 100])
+            ("sstream" include (:system-flag t) nil [101 119])
+            ("vector" include (:system-flag t) nil [120 137])
+            ("string" include (:system-flag t) nil [138 155])
+            ("map" include (:system-flag t) nil [156 170])
+            ("set" include (:system-flag t) nil [171 185])
+            ("time.h" include (:system-flag t) nil [186 203])
+            ("cmath" include (:system-flag t) nil [204 220])
+            ("queue" include (:system-flag t) nil [221 237])
+            ("stack" include (:system-flag t) nil [238 254])
+            ("cstdlib" include (:system-flag t) nil [255 273])
+            ("algorithm" include (:system-flag t) nil [274 294])
+            ("unistd.h" include (:system-flag t) nil [295 314])
+            ("signal.h" include (:system-flag t) nil [315 334])
+            ("INFINITE" variable (:constant-flag t) nil [344 352])
+            ("ENDING" variable (:constant-flag t) nil [369 375])
+            ("MIN" variable (:constant-flag t) nil [389 392])
+            ("MAX" variable (:constant-flag t) nil [423 426])
+            ("POS" variable (:constant-flag t) nil [457 460])
+            ("NEG" variable (:constant-flag t) nil [489 492])
+            ("MAXX" variable (:constant-flag t) nil [521 525])
+            ("pc" variable (:constant-flag t) nil [538 540])
+            ("pm" variable (:constant-flag t) nil [553 555])
+            ("num" variable (:constant-flag t) nil [568 571])
+            ("EXTRA2" variable (:constant-flag t) nil [583 589])
+            ("EXTRA1" variable (:constant-flag t) nil [608 614])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [622 642])
+            ("Table" type
+               (:prototype t
+                :type "struct")
+                nil [644 657])
+            ("Edge" type
+               (:prototype t
+                :type "struct")
+                nil [658 670])
+            ("Vertex" type
+               (:prototype t
+                :type "struct")
+                nil [671 685])
+            ("FlowEdge" type
+               (:prototype t
+                :type "struct")
+                nil [686 702])
+            ("FlowVertex" type
+               (:prototype t
+                :type "struct")
+                nil [703 721])
+            ("ConsumerNode" type
+               (:prototype t
+                :type "struct")
+                nil [722 742])
+            ("Chrom" type
+               (:prototype t
+                :type "struct")
+                nil [743 756])
+            ("ServerInfo" type
+               (:prototype t
+                :type "struct")
+                nil [757 775])
+            ("AddEdgeLink" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [796 803])
+                    ("" variable (:type ("edgeLink" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [803 812])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [813 819])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [820 826])
+                    ("z" variable (:type "int") (reparse-symbol arg-sub-list) [827 833])
+                    ("o" variable
+                       (:pointer 1
+                        :default-value "NULL"
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [834 848]))                  
+                :type ("Edge" type (:type "class") nil nil))
+                nil [778 850])
+            ("AddFlowEdgeLink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FlowEdge" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [872 883])
+                    ("" variable (:type ("flowEdgeLink" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [883 896])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [897 903])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [904 910]))                  
+                :type "void")
+                nil [851 911])
+            ("FreeEdgeLink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("map" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Vertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [930 950]))                  
+                :type "void")
+                nil [912 951])
+            ("FreeFlowEdgeLink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("flowMap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("FlowVertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [974 1002]))                  
+                :type "void")
+                nil [952 1003])
+            ("CreateFlowMap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rtopoMap" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("Vertex" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1023 1047])
+                    ("flowMap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("FlowVertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1048 1076])
+                    ("amount" variable (:type "int") (reparse-symbol arg-sub-list) [1077 1088])
+                    ("usefulServerMap" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1089 1119]))                  
+                :type "void")
+                nil [1004 1120])
+            ("RetNextAliveFlowEdge" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("flowMap" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("FlowVertex" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1157 1184])
+                    ("nodeID" variable (:type "int") (reparse-symbol arg-sub-list) [1185 1196]))                  
+                :type ("pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1121 1197])
+            ("ChangeFlowEdge" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("flowMap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("FlowVertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1218 1246])
+                    ("src" variable (:type "int") (reparse-symbol arg-sub-list) [1247 1255])
+                    ("dest" variable (:type "int") (reparse-symbol arg-sub-list) [1256 1265])
+                    ("increment" variable (:type "int") (reparse-symbol arg-sub-list) [1266 1280]))                  
+                :type "void")
+                nil [1198 1281])
+            ("RetConsumerID" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("consumerVec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("ConsumerNode" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1300 1333])
+                    ("nodeID" variable (:type "int") (reparse-symbol arg-sub-list) [1334 1345]))                  
+                :type "int")
+                nil [1282 1346])
+            ("CreateOutput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("flowMap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("FlowVertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1367 1395])
+                    ("usefulServerMap" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1396 1426])
+                    ("consumerVec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("ConsumerNode" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1427 1460])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1461 1465]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1347 1466])
+            ("UpdateEdgeElement" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("edgePtr" variable
+                       (:pointer 1
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1490 1504]))                  
+                :type "void")
+                nil [1467 1505])
+            ("UpdateEdge" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("map" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Vertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1522 1542])
+                    ("curNode" variable (:type "int") (reparse-symbol arg-sub-list) [1543 1555])
+                    ("nextNode" variable (:type "int") (reparse-symbol arg-sub-list) [1556 1569])
+                    ("increment" variable (:type "int") (reparse-symbol arg-sub-list) [1570 1584])
+                    ("ungratifiedConsumerSet" variable
+                       (:reference 1
+                        :type ("set" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1585 1618]))                  
+                :type "void")
+                nil [1506 1619])
+            ("dijkstra" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("map" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("Vertex" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1634 1653])
+                    ("recordVec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Table" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1654 1679])
+                    ("srcNode" variable (:type "int") (reparse-symbol arg-sub-list) [1680 1692])
+                    ("targetNode" variable (:type "int") (reparse-symbol arg-sub-list) [1693 1708]))                  
+                :type "bool")
+                nil [1620 1709])
+            ("maxflow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("temptopomap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Vertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1722 1750])
+                    ("demand" variable (:type "int") (reparse-symbol arg-sub-list) [1751 1762])
+                    ("isDemand" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1763 1778])
+                    ("srcNode" variable (:type "int") (reparse-symbol arg-sub-list) [1779 1791])
+                    ("targetNode" variable (:type "int") (reparse-symbol arg-sub-list) [1792 1807])
+                    ("usefulServerMap" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1808 1839])
+                    ("ungratifiedConsumerSet" variable
+                       (:reference 1
+                        :type ("set" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1840 1873]))                  
+                :type "int")
+                nil [1710 1874])
+            ("construct_temp_topo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tempMap" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Vertex" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1900 1924])
+                    ("gene" variable (:type ("set" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1925 1939]))                  
+                :type "void")
+                nil [1875 1940])
+            ("get_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("topo" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1956 1982]))                  
+                :type "void")
+                nil [1942 1983])
+            ("round_gradient" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("iifmap" variable (:type ("multimap" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("pair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2013 2052]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1984 2053])
+            ("check_serout" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("gene" variable (:type ("set" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2072 2086])
+                    ("consumerneed" variable (:type "int") (reparse-symbol arg-sub-list) [2087 2104]))                  
+                :type "bool")
+                nil [2054 2105])
+            ("choose" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("choose" variable
+                       (:reference 1
+                        :type ("set" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2118 2135])
+                    ("grad" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2135 2154])
+                    ("number" variable (:type "int") (reparse-symbol arg-sub-list) [2154 2165]))                  
+                :type "void")
+                nil [2106 2166])
+            ("geneinsertchoose" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("choose" variable (:type ("set" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2189 2205])
+                    ("iifmmap" variable (:type ("multimap" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("pair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2206 2246])
+                    ("index" variable (:type "int") (reparse-symbol arg-sub-list) [2246 2256]))                  
+                :type "void")
+                nil [2167 2257])
+            ("initchrom" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [2273 2283]))                  
+                :type "bool")
+                nil [2258 2284])
+            ("initpop" function
+               (:prototype-flag t
+                :type "void")
+                nil [2285 2300])
+            ("cal_cost" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [2315 2325]))                  
+                :type "void")
+                nil [2301 2326])
+            ("select" function
+               (:prototype-flag t
+                :type "bool")
+                nil [2327 2341])
+            ("findbestn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("map" variable
+                       (:reference 1
+                        :type ("multimap" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil)
+                                  ("set" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2357 2389])
+                    ("chrom" variable
+                       (:dereference 1
+                        :type ("Chrom" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2390 2404])
+                    ("number" variable (:type "int") (reparse-symbol arg-sub-list) [2405 2416])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2417 2423]))                  
+                :type "void")
+                nil [2342 2424])
+            ("insertnonechoose" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("chromtemp" variable
+                       (:reference 1
+                        :type ("set" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2447 2467])
+                    ("nonechoose" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2467 2491])
+                    ("randsize" variable (:type "int") (reparse-symbol arg-sub-list) [2492 2505]))                  
+                :type "void")
+                nil [2425 2506])
+            ("cro2chrom" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("chrom1" variable (:type ("Chrom" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2522 2535])
+                    ("chrom2" variable (:type ("Chrom" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2535 2548]))                  
+                :type "bool")
+                nil [2507 2549])
+            ("cross" function
+               (:prototype-flag t
+                :type "void")
+                nil [2550 2563])
+            ("_0to1" function
+               (:prototype-flag t
+                :type "void")
+                nil [2564 2577])
+            ("_1to0" function
+               (:prototype-flag t
+                :type "void")
+                nil [2578 2591])
+            ("mutate" function
+               (:prototype-flag t
+                :type "void")
+                nil [2592 2606])
+            ("CreateLevel2Map" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("targetMap" variable
+                       (:reference 1
+                        :type ("multimap" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2628 2671]))                  
+                :type "void")
+                nil [2607 2672])
+            ("CreateLevel3Map" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("targetMap" variable
+                       (:reference 1
+                        :type ("multimap" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2694 2737]))                  
+                :type "void")
+                nil [2673 2738])
+            ("alterset" function
+               (:prototype-flag t
+                :type "void")
+                nil [2739 2755])
+            ("handleTimeOut" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [2775 2781]))                  
+                :type "void")
+                nil [2756 2782])
+            ("asolution" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rMap" variable
+                       (:reference 1
+                        :type ("multimap" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2798 2831])
+                    ("rVec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2832 2850])
+                    ("dataVec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2851 2871])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2872 2878]))                  
+                :type "void")
+                nil [2783 2879])
+            ("calServerCost" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("usefulServerMap" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2898 2928]))                  
+                :type "int")
+                nil [2880 2929])
+            ("deploy_server" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("graph" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2952 2979])
+                    ("edge_num" variable (:type "int") (reparse-symbol arg-sub-list) [2980 2993])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2994 3010]))                  
+                :type "void")
+                nil [2933 3011]))          
+      :file "deploy.h"
+      :pointmax 3023
+      :fsize 3039
+      :lastmodtime '(22776 37920 757798 74000)
+      :unmatched-syntax '((punctuation 882 . 883) (punctuation 802 . 803))
+      :lexical-table 
+        '(("ENDING" . ((semantic-list "(20)" 376 . 380)))
+          ("POS" (spp-arg-list ("a") 460 . 463) . 
+              ((semantic-list "(a)" 464 . 467) (punctuation ">" 467 . 468) (semantic-list "(0)" 468 . 471) (punctuation "?" 471 . 472) (semantic-list "(a)" 472 . 475) (punctuation ":" 475 . 476) (punctuation "-" 476 . 477) (semantic-list "(a)" 477 . 480)))
+          ("MAXX" . ((number "200" 526 . 529)))
+          ("MAX" (spp-arg-list ("a" "b") 426 . 432) . 
+              ((semantic-list "(a)" 433 . 436) (punctuation "<" 436 . 437) (semantic-list "(b)" 437 . 440) (punctuation "?" 440 . 441) (semantic-list "(b)" 441 . 444) (punctuation ":" 444 . 445) (semantic-list "(a)" 445 . 448)))
+          ("EXTRA1" . ((semantic-list "(num)" 615 . 620)))
+          ("MIN" (spp-arg-list ("a" "b") 392 . 398) . 
+              ((semantic-list "(a)" 399 . 402) (punctuation "<" 402 . 403) (semantic-list "(b)" 403 . 406) (punctuation "?" 406 . 407) (semantic-list "(a)" 407 . 410) (punctuation ":" 410 . 411) (semantic-list "(b)" 411 . 414)))
+          ("EXTRA2" . ((semantic-list "(num + 1)" 590 . 599)))
+          ("__ROUTE_H__")
+          ("pm" . ((number "0.9" 556 . 559)))
+          ("INFINITE" . ((semantic-list "(10000)" 353 . 360)))
+          ("NEG" (spp-arg-list ("a") 492 . 495) . 
+              ((semantic-list "(a)" 496 . 499) (punctuation ">" 499 . 500) (semantic-list "(0)" 500 . 503) (punctuation "?" 503 . 504) (punctuation "-" 504 . 505) (semantic-list "(a)" 505 . 508) (punctuation ":" 508 . 509) (semantic-list "(a)" 509 . 512)))
+          ("pc" . ((number "0.9" 541 . 544)))
+          ("num" . ((number "20" 572 . 574)))
+          )
+))
+  :file "!home!czh!huawei!fusai!three!cdn!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

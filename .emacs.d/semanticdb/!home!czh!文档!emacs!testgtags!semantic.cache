@@ -1,0 +1,112 @@
+;; Object testgtags/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testgtags/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("iostream" include (:system-flag t) nil [19 38])
+            ("string" include (:system-flag t) nil [39 56])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [58 78])
+            ("Fun" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [99 104]))                  
+                :type "void")
+                nil [88 105])
+            ("Base" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [137 144])
+                    ("f" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [147 202])
+                    ("g" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [205 260])
+                    ("h" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [263 318]))                  
+                :type "class")
+                nil [125 321])
+            ("Driver" type
+               (:superclasses 
+                  ( ("Base" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [351 358])
+                    ("f" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [361 419])
+                    ("g1" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [422 481])
+                    ("h1" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [484 543]))                  
+                :type "class")
+                nil [323 547])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [558 567])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [568 581]))                  
+                :type "int")
+                nil [549 996]))          
+      :file "main.cpp"
+      :pointmax 997
+      :fsize 1046
+      :lastmodtime '(22578 18592 808936 456000)
+      :unmatched-syntax nil)
+    (semanticdb-table "testboost.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [21 54])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [56 76])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [87 96])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [97 110]))                  
+                :type "int")
+                nil [78 285]))          
+      :file "testboost.cpp"
+      :pointmax 286
+      :fsize 285
+      :lastmodtime '(22552 24551 574579 482000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "Makefile"
+      :pointmax 51
+      :fsize 50
+      :lastmodtime '(22574 48031 323261 676000)
+      :unmatched-syntax '((symbol 46 . 50) (symbol 44 . 45) (punctuation 43 . 44) (symbol 41 . 42) (punctuation 40 . 41) (symbol 36 . 39) (punctuation 35 . 36) (symbol 31 . 35) (punctuation 29 . 30) (punctuation 28 . 29) (symbol 27 . 28) (punctuation 24 . 25) (symbol 19 . 24) (symbol 11 . 18) (symbol 6 . 10) (punctuation 4 . 5) (punctuation 3 . 4) (symbol 2 . 3) (punctuation 1 . 2)))
+)
+  :file "!home!czh!文档!emacs!testgtags!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

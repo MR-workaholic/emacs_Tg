@@ -1,0 +1,14 @@
+;; Object applications/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "applications/"
+  :tables
+  (list
+    (semanticdb-table "eclipse.desktop"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "eclipse.desktop"
+      :pointmax 205
+      :unmatched-syntax '((symbol 196 . 203) (symbol 184 . 195) (symbol 172 . 183) (symbol 161 . 171) (punctuation 160 . 161) (symbol 153 . 160) (symbol 149 . 152) (punctuation 148 . 149) (symbol 144 . 148) (punctuation 143 . 144) (symbol 136 . 143) (punctuation 135 . 136) (symbol 124 . 135) (punctuation 123 . 124) (symbol 120 . 123) (punctuation 119 . 120) (symbol 115 . 119) (punctuation 114 . 115) (punctuation 113 . 114) (symbol 109 . 113) (symbol 103 . 108) (punctuation 102 . 103) (symbol 94 . 102) (symbol 86 . 93) (punctuation 85 . 86) (symbol 78 . 85) (punctuation 77 . 78) (symbol 66 . 77) (punctuation 65 . 66) (symbol 62 . 65) (punctuation 61 . 62) (symbol 57 . 61) (punctuation 56 . 57) (punctuation 55 . 56) (symbol 51 . 55) (symbol 39 . 50) (punctuation 38 . 39) (symbol 34 . 38) (symbol 22 . 33) (punctuation 21 . 22) (symbol 17 . 21) (semantic-list 1 . 16) (symbol 103 . 108) (punctuation 102 . 103) (symbol 94 . 102) (symbol 86 . 93) (punctuation 85 . 86) (symbol 78 . 85) (punctuation 77 . 78) (symbol 66 . 77) (punctuation 65 . 66) (symbol 62 . 65) (punctuation 61 . 62) (symbol 57 . 61) (punctuation 56 . 57) (punctuation 55 . 56) (symbol 51 . 55) (symbol 39 . 50) (punctuation 38 . 39) (symbol 34 . 38) (symbol 22 . 33) (punctuation 21 . 22) (symbol 17 . 21) (semantic-list 1 . 16))))
+  :file "!usr!share!applications!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

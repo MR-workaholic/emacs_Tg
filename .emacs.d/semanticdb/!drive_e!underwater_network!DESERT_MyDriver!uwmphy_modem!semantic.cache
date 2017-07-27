@@ -1,0 +1,1037 @@
+;; Object uwmphy_modem/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "uwmphy_modem/"
+  :tables (list 
+   (semanticdb-table "uwmphy_modem.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("UWMPHY_MODEM_H" variable (:constant-flag t) nil [1872 1886])
+            ("uwmdriver.h" include nil nil [1889 1911])
+            ("uwal.h" include (:system-flag t) nil [1912 1929])
+            ("hdr-uwal.h" include (:system-flag t) nil [1930 1951])
+            ("uwip-module.h" include (:system-flag t) nil [1952 1976])
+            ("mac.h" include (:system-flag t) nil [1977 1993])
+            ("mphy.h" include (:system-flag t) nil [1994 2011])
+            ("stdlib.h" include (:system-flag t) nil [2014 2033])
+            ("iostream" include (:system-flag t) nil [2034 2053])
+            ("stdio.h" include (:system-flag t) nil [2054 2072])
+            ("fstream" include (:system-flag t) nil [2073 2091])
+            ("string.h" include (:system-flag t) nil [2092 2111])
+            ("errno.h" include (:system-flag t) nil [2112 2130])
+            ("cstring" include (:system-flag t) nil [2131 2149])
+            ("sstream" include (:system-flag t) nil [2150 2168])
+            ("sys/types.h" include (:system-flag t) nil [2169 2191])
+            ("sys/stat.h" include (:system-flag t) nil [2192 2213])
+            ("fcntl.h" include (:system-flag t) nil [2214 2232])
+            ("unistd.h" include (:system-flag t) nil [2233 2252])
+            ("cmath" include (:system-flag t) nil [2253 2269])
+            ("time.h" include (:system-flag t) nil [2270 2287])
+            ("_MTBL" variable (:constant-flag t) nil [2298 2303])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2415 2435])
+            ("CheckTimer" type
+               (:prototype t
+                :type "class")
+                nil [2460 2477])
+            ("DropTimer" type
+               (:prototype t
+                :type "class")
+                nil [2479 2495])
+            ("UWMPhy_modem" type
+               (:superclasses 
+                  ( ("MPhy" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("CheckTimer" friend nil (reparse-symbol classsubparts) [3263 3286])
+                    ("DropTimer" friend nil (reparse-symbol classsubparts) [3293 3315])
+                    ("public" label nil (reparse-symbol classsubparts) [3318 3325])
+                    ("UWMPhy_modem" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3516 3528]))                          
+                        :type ("UWMPhy_modem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3503 3529])
+                    ("UWMPhy_modem" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3568 3584])
+                    ("recv" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3824 3832]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3806 3833])
+                    ("command" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [4153 4157])
+                            ("" variable
+                               (:pointer 2
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4158 4176]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4133 4177])
+                    ("getID" function (:type "int") (reparse-symbol classsubparts) [4265 4301])
+                    ("getPeriod" function (:type "double") (reparse-symbol classsubparts) [4494 4541])
+                    ("getPathToDevice" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4691 4752])
+                    ("getDebug" function (:type "int") (reparse-symbol classsubparts) [4873 4916])
+                    ("getLogFile" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5045 5099])
+                    ("getLogLevel" function (:type ("log_level_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5259 5329])
+                    ("getEpoch" function
+                       (:typemodifiers ("inline")
+                        :type "unsigned long int")
+                        (reparse-symbol classsubparts) [5494 5550])
+                    ("getKeepOnline" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5561 5611])
+                    ("getDeafTime" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [5631 5674])
+                    ("updatePktRx" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6050 6058]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6033 6059])
+                    ("protected" label nil (reparse-symbol classsubparts) [6061 6071])
+                    ("pcheckTmr" variable
+                       (:pointer 1
+                        :type ("CheckTimer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6075 6097])
+                    ("pmDriver" variable
+                       (:pointer 1
+                        :type ("UWMdriver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6167 6187])
+                    ("pDropTimer" variable
+                       (:pointer 1
+                        :type ("DropTimer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6250 6272])
+                    ("ID" variable (:type "int") (reparse-symbol classsubparts) [6276 6283])
+                    ("period" variable (:type "double") (reparse-symbol classsubparts) [6386 6400])
+                    ("modemTxBuff" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6450 6477])
+                    ("t" variable (:type "int") (reparse-symbol classsubparts) [6626 6632])
+                    ("PktRx" variable
+                       (:pointer 1
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6711 6725])
+                    ("pToDevice" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6773 6795])
+                    ("debug_" variable (:type "int") (reparse-symbol classsubparts) [6892 6903])
+                    ("outLog" variable (:type ("std::ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6995 7016])
+                    ("logFile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7108 7128])
+                    ("loglevel_" variable (:type "int") (reparse-symbol classsubparts) [7206 7220])
+                    ("SetModemID" variable (:type "int") (reparse-symbol classsubparts) [7304 7319])
+                    ("UseKeepOnline" variable (:type "int") (reparse-symbol classsubparts) [7430 7448])
+                    ("DeafTime" variable (:type "int") (reparse-symbol classsubparts) [7451 7464])
+                    ("setConnections" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("CheckTimer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8128 8140])
+                            ("" variable
+                               (:pointer 1
+                                :type ("UWMdriver" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8141 8152])
+                            ("" variable
+                               (:pointer 1
+                                :type ("DropTimer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8153 8164]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8108 8165])
+                    ("start" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8424 8445])
+                    ("stop" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [8618 8638])
+                    ("check_modem" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("modem_state_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9085 9121])
+                    ("startTx" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9321 9329]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9300 9330])
+                    ("endTx" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9723 9731]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9704 9732])
+                    ("startRx" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10124 10132]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10103 10133])
+                    ("endRx" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10423 10431]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10404 10432])
+                    ("popTxBuff" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10597 10617])
+                    ("getTxDuration" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10896 10904]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [10867 10907])
+                    ("getModulationType" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11201 11209]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11171 11212]))                  
+                :type "class")
+                nil [3091 11219])
+            ("CheckTimer" type
+               (:superclasses 
+                  ( ("TimerHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11472 11479])
+                    ("CheckTimer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("pmModem_" variable
+                               (:pointer 1
+                                :type ("UWMPhy_modem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11636 11659]))                          
+                        :type ("CheckTimer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11625 11853])
+                    ("protected" label nil (reparse-symbol classsubparts) [11855 11865])
+                    ("expire" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("Event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12010 12019]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [11990 12020])
+                    ("pmModem" variable
+                       (:pointer 1
+                        :type ("UWMPhy_modem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12024 12046]))                  
+                :type "class")
+                nil [11431 12166])
+            ("DropTimer" type
+               (:superclasses 
+                  ( ("TimerHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12209 12216])
+                    ("DropTimer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("pModem_" variable
+                               (:pointer 1
+                                :type ("UWMPhy_modem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12231 12253]))                          
+                        :type ("DropTimer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12221 12306])
+                    ("protected" label nil (reparse-symbol classsubparts) [12307 12317])
+                    ("expire" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("Event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12342 12351]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12322 12352])
+                    ("pModem" variable
+                       (:pointer 1
+                        :type ("UWMPhy_modem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [12357 12378]))                  
+                :type "class")
+                nil [12169 12381]))          
+    :file "uwmphy_modem.h"
+    :pointmax 12412
+    :fsize 12411
+    :lastmodtime '(22415 5406 0 0)
+    :unmatched-syntax '((punctuation 3315 . 3316) (punctuation 3286 . 3287))
+    :lexical-table 
+        '(("_MTBL" . ((number "5" 2304 . 2305)))
+          ("UWMPHY_MODEM_H")
+          )
+
+    )
+   (semanticdb-table "uwmdriver.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("UWMDRIVER_H" variable (:constant-flag t) nil [1960 1971])
+            ("uwmconnector.h" include nil nil [1973 1998])
+            ("uwminterpreter.h" include nil nil [1999 2026])
+            ("stdlib.h" include (:system-flag t) nil [2028 2047])
+            ("iostream" include (:system-flag t) nil [2048 2067])
+            ("stdio.h" include (:system-flag t) nil [2068 2086])
+            ("fstream" include (:system-flag t) nil [2087 2105])
+            ("string.h" include (:system-flag t) nil [2106 2125])
+            ("cstring" include (:system-flag t) nil [2126 2144])
+            ("sstream" include (:system-flag t) nil [2145 2163])
+            ("sys/types.h" include (:system-flag t) nil [2164 2186])
+            ("sys/stat.h" include (:system-flag t) nil [2187 2208])
+            ("fcntl.h" include (:system-flag t) nil [2209 2227])
+            ("unistd.h" include (:system-flag t) nil [2228 2247])
+            ("cmath" include (:system-flag t) nil [2248 2264])
+            ("MAX_LOG_LEVEL" variable (:constant-flag t) nil [2274 2287])
+            ("MODEM_STATES" type
+               (:members 
+                  ( ("MODEM_IDLE" variable
+                       (:constant-flag t
+                        :default-value (2327 2328)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2314 2328])
+                    ("MODEM_TX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2332 2341])
+                    ("MODEM_RX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2344 2353])
+                    ("MODEM_IDLE_RX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2356 2370])
+                    ("MODEM_CFG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2373 2383])
+                    ("MODEM_TX_PAUSED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2386 2402])
+                    ("MODEM_TX_RX" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2405 2417])
+                    ("MODEM_RESET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2420 2432])
+                    ("MODEM_QUIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2435 2447]))                  
+                :type "enum")
+                nil [2292 2448])
+            ("LOG_LEVEL" type
+               (:members 
+                  ( ("LOG_LEVEL_ERROR" variable
+                       (:constant-flag t
+                        :default-value (2487 2488)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2469 2488])
+                    ("LOG_LEVEL_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2492 2507])
+                    ("LOG_LEVEL_DEBUG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2510 2527]))                  
+                :type "enum")
+                nil [2450 2528])
+            ("log_level_t" type
+               (:typedef ("LOG_LEVEL" type (:type "enum") nil nil)
+                :superclasses "LOG_LEVEL"
+                :type "typedef")
+                nil [2530 2565])
+            ("modem_state_t" type
+               (:typedef ("MODEM_STATES" type (:type "enum") nil nil)
+                :superclasses "MODEM_STATES"
+                :type "typedef")
+                nil [2567 2607])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2609 2629])
+            ("UWMPhy_modem" type
+               (:prototype t
+                :type "class")
+                nil [2657 2676])
+            ("UWMcodec" type
+               (:prototype t
+                :type "class")
+                nil [2678 2693])
+            ("UWMdriver" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3112 3119])
+                    ("UWMdriver" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("UWMPhy_modem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3271 3285]))                          
+                        :type ("UWMdriver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3261 3286])
+                    ("UWMdriver" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3325 3338])
+                    ("modemSetID" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3342 3372])
+                    ("start" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3519 3544])
+                    ("stop" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3713 3737])
+                    ("modemTx" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3999 4026])
+                    ("modemTxBurst" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4286 4318])
+                    ("modemTxPBM" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4578 4608])
+                    ("updateStatus" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("modem_state_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5038 5079])
+                    ("setID" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ID_" variable (:type "int") (reparse-symbol arg-sub-list) [5395 5403]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5377 5416])
+                    ("resetModemStatus" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5810 5834])
+                    ("updateTx" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [6422 6426])
+                            ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6427 6439]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6408 6440])
+                    ("updateRx" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7210 7214])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [7215 7219])
+                            ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7220 7232]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7196 7233])
+                    ("getID" function (:type "int") (reparse-symbol classsubparts) [7323 7357])
+                    ("getStatus" function (:type ("modem_state_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7454 7506])
+                    ("getRxPayload" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7893 7950])
+                    ("getSrc" function (:type "int") (reparse-symbol classsubparts) [8337 8373])
+                    ("getDstPktRx" function (:type "int") (reparse-symbol classsubparts) [8772 8830])
+                    ("getDebug" function
+                       (:typemodifiers ("inline")
+                        :type ("log_level_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8948 9009])
+                    ("setModemID" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("set" variable (:type "bool") (reparse-symbol arg-sub-list) [9160 9169]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9137 9189])
+                    ("getModemID" function
+                       (:typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9298 9343])
+                    ("getLogLevel" function
+                       (:prototype-flag t
+                        :type ("log_level_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9497 9523])
+                    ("getLogFile" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9662 9687])
+                    ("emptyModemQueue" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [9701 9736])
+                    ("getKeepOnlineMode" function
+                       (:typemodifiers ("virtual" "inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9740 9800])
+                    ("setKeepOnlineMode" function
+                       (:typemodifiers ("virtual" "inline")
+                        :arguments 
+                          ( ("ko" variable (:type "bool") (reparse-symbol arg-sub-list) [9842 9850]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9804 9869])
+                    ("setResetModemQueue" function
+                       (:typemodifiers ("virtual" "inline")
+                        :arguments 
+                          ( ("reset_m_queue" variable (:type "bool") (reparse-symbol arg-sub-list) [9920 9939]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9881 9974])
+                    ("getResetModemQueue" function
+                       (:typemodifiers ("virtual" "inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [9986 10052])
+                    ("printOnLog" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("log_level" variable (:type ("log_level_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10074 10096])
+                            ("module" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10096 10110])
+                            ("message" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10111 10126]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10058 10127])
+                    ("protected" label nil (reparse-symbol classsubparts) [10138 10148])
+                    ("pmModem" variable
+                       (:pointer 1
+                        :type ("UWMPhy_modem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10152 10174])
+                    ("pmInterpreter" variable
+                       (:pointer 1
+                        :type ("UWMinterpreter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10244 10274])
+                    ("pmConnector" variable
+                       (:pointer 1
+                        :type ("UWMconnector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10449 10475])
+                    ("ID" variable (:type "int") (reparse-symbol classsubparts) [10622 10629])
+                    ("status" variable (:type ("modem_state_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10901 10922])
+                    ("KeepOnline" variable (:type "bool") (reparse-symbol classsubparts) [11082 11098])
+                    ("ResetModemQueue" variable (:type "bool") (reparse-symbol classsubparts) [11104 11125])
+                    ("payload_tx" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11200 11223])
+                    ("dest" variable (:type "int") (reparse-symbol classsubparts) [11392 11401])
+                    ("payload_rx" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11651 11674])
+                    ("src" variable (:type "int") (reparse-symbol classsubparts) [11950 11958])
+                    ("dstPktRx" variable (:type "int") (reparse-symbol classsubparts) [12232 12245])
+                    ("SetModemID" variable (:type "bool") (reparse-symbol classsubparts) [12532 12548])
+                    ("debug_" variable (:type "int") (reparse-symbol classsubparts) [12650 12661])
+                    ("outLog" variable (:type ("std::ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12745 12766])
+                    ("setConnections" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("UWMinterpreter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13410 13426])
+                            ("" variable
+                               (:pointer 1
+                                :type ("UWMconnector" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13427 13441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13390 13442])
+                    ("modemTxManager" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [13709 13743]))                  
+                :type "class")
+                nil [3094 13756]))          
+    :file "uwmdriver.h"
+    :pointmax 13782
+    :fsize 13781
+    :lastmodtime '(22415 11043 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX_LOG_LEVEL" . ((number "2" 2288 . 2289)))
+          ("UWMDRIVER_H")
+          )
+
+    )
+   (semanticdb-table "uwmconnector.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("UWMCONNECTOR_H" variable (:constant-flag t) nil [1908 1922])
+            ("sys/types.h" include (:system-flag t) nil [1924 1946])
+            ("sys/stat.h" include (:system-flag t) nil [1947 1968])
+            ("fcntl.h" include (:system-flag t) nil [1969 1987])
+            ("stdio.h" include (:system-flag t) nil [1988 2006])
+            ("stdlib.h" include (:system-flag t) nil [2007 2026])
+            ("string.h" include (:system-flag t) nil [2027 2046])
+            ("errno.h" include (:system-flag t) nil [2047 2065])
+            ("termios.h" include (:system-flag t) nil [2066 2086])
+            ("pthread.h" include (:system-flag t) nil [2087 2107])
+            ("unistd.h" include (:system-flag t) nil [2108 2127])
+            ("iostream" include (:system-flag t) nil [2128 2147])
+            ("fstream" include (:system-flag t) nil [2148 2166])
+            ("sstream" include (:system-flag t) nil [2167 2185])
+            ("queue" include (:system-flag t) nil [2187 2203])
+            ("_MODEM_OK" variable (:constant-flag t) nil [2213 2222])
+            ("_MAX_MSG_LENGTH" variable (:constant-flag t) nil [2303 2318])
+            ("_MAX_QUEUE_LENGTH" variable (:constant-flag t) nil [2430 2447])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2519 2539])
+            ("UWMdriver" type
+               (:prototype t
+                :type "class")
+                nil [2601 2617])
+            ("msgModem" type
+               (:members 
+                  ( ("msg_rx" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2640 2654])
+                    ("msg_length" variable (:type "int") (reparse-symbol classsubparts) [2688 2703]))                  
+                :type "struct")
+                nil [2620 2744])
+            ("UWMconnector" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3047 3054])
+                    ("queueMsg" variable (:type ("queue" type
+                         (:template-specifier 
+                            ( ("msgModem" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3058 3083])
+                    ("UWMconnector" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("UWMdriver" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3433 3444])
+                            ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3444 3456]))                          
+                        :type ("UWMconnector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3420 3457])
+                    ("UWMconnector" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3496 3512])
+                    ("openConnection" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3668 3701])
+                    ("closeConnection" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3772 3803])
+                    ("writeToModem" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3989 4001]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3964 4006])
+                    ("readFromModem" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4172 4200])
+                    ("protected" label nil (reparse-symbol classsubparts) [4215 4225])
+                    ("pmDriver" variable
+                       (:pointer 1
+                        :type ("UWMdriver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4245 4265])
+                    ("pathToDevice" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4343 4368]))                  
+                :type "class")
+                nil [3017 4427]))          
+    :file "uwmconnector.h"
+    :pointmax 4457
+    :fsize 4456
+    :lastmodtime '(22353 25581 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_MAX_MSG_LENGTH" . ((semantic-list "(0x1000)" 2319 . 2327)))
+          ("UWMCONNECTOR_H")
+          ("_MODEM_OK" . ((number "1" 2223 . 2224)))
+          ("_MAX_QUEUE_LENGTH" . ((number "20" 2448 . 2450)))
+          )
+
+    )
+   (semanticdb-table "uwminterpreter.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("UWMINTERPRETER_H" variable (:constant-flag t) nil [1903 1919])
+            ("UWMdriver" type
+               (:prototype t
+                :type "class")
+                nil [1982 1998])
+            ("UWMinterpreter" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2733 2740])
+                    ("UWMinterpreter" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("UWMdriver" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2892 2903]))                          
+                        :type ("UWMinterpreter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2877 2904])
+                    ("UWMinterpreter" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2941 2959])
+                    ("protected" label nil (reparse-symbol classsubparts) [3166 3176])
+                    ("pmDriver" variable
+                       (:pointer 1
+                        :type ("UWMdriver" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3181 3201])
+                    ("debug_" variable (:type "int") (reparse-symbol classsubparts) [3283 3294]))                  
+                :type "class")
+                nil [2709 3379]))          
+    :file "uwminterpreter.h"
+    :pointmax 3409
+    :fsize 3408
+    :lastmodtime '(22353 25581 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UWMINTERPRETER_H")
+          )
+
+    )
+   (semanticdb-table "uwmphy_modem.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("uwmphy_modem.h" include nil nil [1771 1796])
+            ("UWMPhy_modem" function
+               (:constructor-flag t
+                :parent "UWMPhy_modem"
+                :arguments 
+                  ( ("pToDevice_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1825 1848]))                  
+                :type ("UWMPhy_modem" type (:type "class") nil nil))
+                nil [1798 2358])
+            ("UWMPhy_modem" function
+               (:destructor-flag t
+                :parent "UWMPhy_modem"
+                :type "void")
+                nil [2360 2393])
+            ("command" function
+               (:parent "UWMPhy_modem"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2421 2430])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2431 2454]))                  
+                :type "int")
+                nil [2395 2755])
+            ("updatePktRx" function
+               (:parent "UWMPhy_modem"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2788 2798]))                  
+                :type "void")
+                nil [2757 2817])
+            ("recv" function
+               (:parent "UWMPhy_modem"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2843 2853]))                  
+                :type "void")
+                nil [2819 4217])
+            ("setConnections" function
+               (:parent "UWMPhy_modem"
+                :arguments 
+                  ( ("pcheckTmr_" variable
+                       (:pointer 1
+                        :type ("CheckTimer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4254 4277])
+                    ("pmDriver_" variable
+                       (:pointer 1
+                        :type ("UWMdriver" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4278 4299])
+                    ("pDropTimer_" variable
+                       (:pointer 1
+                        :type ("DropTimer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4300 4323]))                  
+                :type "void")
+                nil [4220 4411])
+            ("start" function
+               (:parent "UWMPhy_modem"
+                :type "void")
+                nil [4413 5395])
+            ("stop" function
+               (:parent "UWMPhy_modem"
+                :type "void")
+                nil [5397 5621])
+            ("check_modem" function
+               (:parent "UWMPhy_modem"
+                :type ("modem_state_t" type (:type "class") nil nil))
+                nil [5623 6611])
+            ("startTx" function
+               (:parent "UWMPhy_modem"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6640 6650]))                  
+                :type "void")
+                nil [6613 6885])
+            ("endTx" function
+               (:parent "UWMPhy_modem"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6912 6922]))                  
+                :type "void")
+                nil [6887 7041])
+            ("startRx" function
+               (:parent "UWMPhy_modem"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7070 7080]))                  
+                :type "void")
+                nil [7043 7192])
+            ("endRx" function
+               (:parent "UWMPhy_modem"
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7219 7229]))                  
+                :type "void")
+                nil [7194 7748])
+            ("popTxBuff" function
+               (:pointer 1
+                :parent "UWMPhy_modem"
+                :type ("Packet" type (:type "class") nil nil))
+                nil [7750 7935])
+            ("expire" function
+               (:parent "CheckTimer"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7961 7970]))                  
+                :type "void")
+                nil [7937 8038])
+            ("expire" function
+               (:parent "DropTimer"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8063 8072]))                  
+                :type "void")
+                nil [8040 8123]))          
+    :file "uwmphy_modem.cc"
+    :pointmax 8124
+    :fsize 8123
+    :lastmodtime '(22415 10457 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "uwmconnector.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("uwmconnector.h" include nil nil [1787 1812])
+            ("uwmdriver.h" include nil nil [1813 1835])
+            ("cctype" include (:system-flag t) nil [1837 1854])
+            ("hexdump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1877 1894])
+                    ("str" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1895 1911]))                  
+                :type "void")
+                nil [1857 2388])
+            ("hex2bin" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hex" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2417 2433]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2390 2738])
+            ("UWMconnector" function
+               (:constructor-flag t
+                :parent "UWMconnector"
+                :arguments 
+                  ( ("pmDriver_" variable
+                       (:pointer 1
+                        :type ("UWMdriver" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2768 2789])
+                    ("pathToDevice_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2790 2816]))                  
+                :type ("UWMconnector" type (:type "class") nil nil))
+                nil [2741 2906])
+            ("UWMconnector" function
+               (:destructor-flag t
+                :parent "UWMconnector"
+                :type "void")
+                nil [2908 2941])
+            ("closeConnection" function
+               (:parent "UWMconnector"
+                :type "void")
+                nil [2948 2987])
+            ("readFromModem" function
+               (:parent "UWMconnector"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2994 3247]))          
+    :file "uwmconnector.cc"
+    :pointmax 3249
+    :fsize 3248
+    :lastmodtime '(22414 60367 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "uwmdriver.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("uwmdriver.h" include nil nil [1765 1787])
+            ("uwmphy_modem.h" include nil nil [1788 1813])
+            ("UWMdriver" function
+               (:constructor-flag t
+                :parent "UWMdriver"
+                :arguments 
+                  ( ("pmModem_" variable
+                       (:pointer 1
+                        :type ("UWMPhy_modem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1836 1859]))                  
+                :type ("UWMdriver" type (:type "class") nil nil))
+                nil [1815 2148])
+            ("UWMdriver" function
+               (:destructor-flag t
+                :parent "UWMdriver"
+                :type "void")
+                nil [2152 2178])
+            ("setConnections" function
+               (:parent "UWMdriver"
+                :arguments 
+                  ( ("pmInterpreter_" variable
+                       (:pointer 1
+                        :type ("UWMinterpreter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2211 2242])
+                    ("pmConnector_" variable
+                       (:pointer 1
+                        :type ("UWMconnector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2243 2270]))                  
+                :type "void")
+                nil [2180 2341])
+            ("getLogFile" function
+               (:parent "UWMdriver"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [2343 2415])
+            ("getLogLevel" function
+               (:parent "UWMdriver"
+                :type ("log_level_t" type (:type "class") nil nil))
+                nil [2417 2492])
+            ("resetModemStatus" function
+               (:parent "UWMdriver"
+                :type "void")
+                nil [2494 2555])
+            ("updateTx" function
+               (:parent "UWMdriver"
+                :arguments 
+                  ( ("d" variable (:type "int") (reparse-symbol arg-sub-list) [2584 2590])
+                    ("ptx" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2591 2607]))                  
+                :type "void")
+                nil [2559 2644])
+            ("updateRx" function
+               (:parent "UWMdriver"
+                :arguments 
+                  ( ("s" variable (:type "int") (reparse-symbol arg-sub-list) [2673 2679])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [2680 2686])
+                    ("prx" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2687 2703]))                  
+                :type "void")
+                nil [2648 2756])
+            ("printOnLog" function
+               (:parent "UWMdriver"
+                :arguments 
+                  ( ("log_level" variable (:type ("log_level_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2785 2807])
+                    ("module" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2807 2821])
+                    ("message" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2822 2837]))                  
+                :type "void")
+                nil [2758 3148]))          
+    :file "uwmdriver.cc"
+    :pointmax 3150
+    :fsize 3149
+    :lastmodtime '(22415 7943 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!underwater_network!DESERT_MyDriver!uwmphy_modem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

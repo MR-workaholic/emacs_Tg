@@ -1,0 +1,36 @@
+;; Object clean-aindent-mode-20150816.2029/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "clean-aindent-mode-20150816.2029/"
+  :tables (list 
+   (semanticdb-table "clean-aindent-mode-autoloads.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "clean-aindent-mode-autoloads.el"
+    :pointmax 1728
+    :fsize 1727
+    :lastmodtime '(22354 35238 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "clean-aindent-mode-pkg.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "clean-aindent-mode-pkg.el"
+    :pointmax 122
+    :fsize 122
+    :lastmodtime '(22354 35238 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "clean-aindent-mode.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "clean-aindent-mode.el"
+    :pointmax 10987
+    :fsize 10986
+    :lastmodtime '(22354 35238 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!emacs!.emacs.d!elpa!clean-aindent-mode-20150816.2029!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

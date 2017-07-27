@@ -1,0 +1,64 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "tellwait.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("sigflag" variable
+               (:typemodifiers ("static" "volatile")
+                :type ("sig_atomic_t" type (:type "class") nil nil))
+                nil [20 57])
+            ("newmask" variable
+               (:typemodifiers ("static")
+                :type ("sigset_t" type (:type "class") nil nil))
+                nil [91 134])
+            ("oldmask" variable
+               (:typemodifiers ("static")
+                :type ("sigset_t" type (:type "class") nil nil))
+                nil [91 134])
+            ("zeromask" variable
+               (:typemodifiers ("static")
+                :type ("sigset_t" type (:type "class") nil nil))
+                nil [91 134])
+            ("sig_usr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [156 166]))                  
+                :type "void")
+                nil [136 233])
+            ("TELL_WAIT" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [250 255]))                  
+                :type "void")
+                nil [235 673])
+            ("TELL_PARENT" function
+               (:arguments 
+                  ( ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [692 702]))                  
+                :type "void")
+                nil [675 757])
+            ("WAIT_PARENT" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [776 781]))                  
+                :type "void")
+                nil [759 999])
+            ("TELL_CHILD" function
+               (:arguments 
+                  ( ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1017 1027]))                  
+                :type "void")
+                nil [1001 1082])
+            ("WAIT_CHILD" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1100 1105]))                  
+                :type "void")
+                nil [1084 1322]))          
+      :file "tellwait.c"
+      :pointmax 1323
+      :fsize 1322
+      :lastmodtime '(21290 18067 0 0)
+      :unmatched-syntax nil))
+  :file "!home!czh!Advanced_Programming_in_the_Unix_Environment!apue.3e!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

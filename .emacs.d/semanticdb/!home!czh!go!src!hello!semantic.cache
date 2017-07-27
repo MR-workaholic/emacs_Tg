@@ -1,0 +1,17 @@
+;; Object hello/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hello/"
+  :tables
+  (list
+    (semanticdb-table "hello.go"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("main" function (:type ("func" type (:type "class") nil nil)) nil [29 74]))          
+      :file "hello.go"
+      :pointmax 75
+      :fsize 74
+      :lastmodtime '(22801 38607 607639 158000)
+      :unmatched-syntax '((string 22 . 27) (symbol 15 . 21) (symbol 9 . 13) (symbol 1 . 8) (string 22 . 27) (symbol 15 . 21) (symbol 9 . 13) (symbol 1 . 8))))
+  :file "!home!czh!go!src!hello!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

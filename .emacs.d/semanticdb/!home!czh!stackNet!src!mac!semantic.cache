@@ -1,0 +1,541 @@
+;; Object mac/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mac/"
+  :tables
+  (list
+    (semanticdb-table "aloha.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [1 18])
+            ("hsm.h" include nil nil [19 35])
+            ("message.h" include nil nil [36 56])
+            ("module.h" include nil nil [57 76])
+            ("sap.h" include nil nil [77 93])
+            ("schedule.h" include nil nil [94 115])
+            ("UPPER_LAYER" variable (:constant-flag t) nil [125 136])
+            ("UPPER_PROTOCOL" variable (:constant-flag t) nil [147 161])
+            ("CURRENT_LAYER" variable (:constant-flag t) nil [172 185])
+            ("CURRENT_PROTOCOL" variable (:constant-flag t) nil [196 212])
+            ("LOWER_LAYER" variable (:constant-flag t) nil [223 234])
+            ("LOWER_PROTOCOL" variable (:constant-flag t) nil [245 259])
+            ("MAX_TIMEOUT_COUNT" variable (:constant-flag t) nil [271 288])
+            ("BROADCAST_ADDERSS" variable (:constant-flag t) nil [300 317])
+            ("PACKET_TYPE_DATA" variable (:constant-flag t) nil [331 347])
+            ("PACKET_TYPE_ACK" variable (:constant-flag t) nil [358 373])
+            ("aloha" type
+               (:members 
+                  ( ("msg::MsgSendDataReq" using (:type ("msg::MsgSendDataReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [421 447])
+                    ("msg::MsgSendAckReq" using (:type ("msg::MsgSendAckReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [448 473])
+                    ("msg::MsgSendDataRsp" using (:type ("msg::MsgSendDataRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [474 500])
+                    ("msg::MsgSendAckRsp" using (:type ("msg::MsgSendAckRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [501 526])
+                    ("msg::MsgRecvDataNtf" using (:type ("msg::MsgRecvDataNtf" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [527 553])
+                    ("msg::MsgTimeOut" using (:type ("msg::MsgTimeOut" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [554 576])
+                    ("msg::MsgSendAckNtf" using (:type ("msg::MsgSendAckNtf" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [577 602])
+                    ("pkt::Packet" using (:type ("pkt::Packet" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [604 622])
+                    ("Top" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [649 660])
+                    ("Idle" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [661 673])
+                    ("WaitRsp" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [674 689])
+                    ("WaitAck" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [690 705])
+                    ("WaitVbf" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [706 721])
+                    ("AlohaHeader" type
+                       (:members 
+                          ( ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [782 795])
+                            ("src" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [800 812])
+                            ("dst" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [817 829]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [757 832])
+                    ("Aloha" type
+                       (:superclasses 
+                          ( ("mod::Module" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [909 916])
+                            ("Aloha" function
+                               (:constructor-flag t
+                                :type ("Aloha" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [921 955])
+                            ("Init" function
+                               (:typemodifiers ("static")
+                                :type "void")
+                                (reparse-symbol classsubparts) [960 1009])
+                            ("SendDown" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgSendDataReq" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1028 1056]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1014 1057])
+                            ("SendUp" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgRecvDataNtf" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1074 1102]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1062 1103])
+                            ("ReSendDown" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1108 1126])
+                            ("HandleReceiveData" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgRecvDataNtf" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1155 1183]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1132 1184])
+                            ("HandleSendAckReq" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgSendAckNtf" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1211 1238]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1189 1239])
+                            ("ReceiveAck" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgRecvDataNtf" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1261 1289]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1245 1292])
+                            ("HandleTimeouMsg" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgTimeOut" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1318 1342]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1297 1345])
+                            ("IsDataPacket" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgRecvDataNtf" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1368 1396]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1350 1397])
+                            ("IsAckPacket" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgRecvDataNtf" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1419 1447]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1402 1448])
+                            ("IsSendAck" function
+                               (:arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgSendAckNtf" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1468 1498]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1453 1592])
+                            ("HandleTimeout" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgTimeOut" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1617 1641]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1598 1807])
+                            ("private" label nil (reparse-symbol classsubparts) [1809 1817])
+                            ("GetLastSendDataReq" function
+                               (:typemodifiers ("inline")
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1822 1893])
+                            ("SaveLastSendDataReq" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("last" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgSendDataReq" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1930 1962]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1898 2001])
+                            ("IncreaseTimeoutCount" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2007 2063])
+                            ("ClearTimeoutCount" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2068 2123])
+                            ("private" label nil (reparse-symbol classsubparts) [2124 2132])
+                            ("last_data_" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("MsgSendDataReq" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2137 2168])
+                            ("last_timer_" variable (:type "int") (reparse-symbol classsubparts) [2174 2190])
+                            ("timeout_count_" variable (:type "int") (reparse-symbol classsubparts) [2195 2214])
+                            ("mid_" variable (:type "char") (reparse-symbol classsubparts) [2220 2230]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [834 2233])
+                    ("Top" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil)
+                                          ("MsgRecvDataNtf" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2319 2380])
+                            ("HSM_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2395 2410]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2385 2411])
+                            ("HSM_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgRecvDataNtf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2426 2441]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2416 2442]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2259 2445])
+                    ("Idle" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil)
+                                          ("MsgRecvDataNtf" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2489 2550])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2568 2583])
+                                    ("" variable (:type ("WaitRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2584 2592])
+                                    ("" variable (:type ("Aloha::SendDown" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2594 2610]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2556 2611])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgRecvDataNtf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2628 2643])
+                                    ("" variable (:type ("WaitVbf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2644 2652])
+                                    ("" variable (:type ("Aloha::SendUp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2654 2668])
+                                    ("" variable (:type ("Aloha::IsDataPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2670 2690]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2616 2691]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2447 2694])
+                    ("WaitRsp" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendAckRsp" type nil nil nil)
+                                          ("MsgSendDataRsp" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2744 2804])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendAckRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2822 2836])
+                                    ("" variable (:type ("Idle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2837 2842]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2810 2843])
+                            ("HSM_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2860 2875])
+                                    ("" variable (:type ("WaitAck" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2876 2884]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2848 2885]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2696 2888])
+                    ("WaitAck" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgRecvDataNtf" type nil nil nil)
+                                          ("MsgTimeOut" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2938 2995])
+                            ("HSM_TRANSIT_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgRecvDataNtf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3019 3034])
+                                    ("" variable (:type ("Idle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3035 3040])
+                                    ("" variable (:type ("Aloha::ReceiveAck" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3042 3060])
+                                    ("" variable (:type ("Aloha::IsAckPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3084 3103]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3001 3104])
+                            ("HSM_TRANSIT_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgTimeOut" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3129 3140])
+                                    ("" variable (:type ("WaitRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3141 3149])
+                                    ("" variable (:type ("Aloha::HandleTimeouMsg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3151 3174])
+                                    ("" variable (:type ("Aloha::HandleTimeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3200 3221])
+                                    ("" variable (:type ("Idle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3222 3227]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3109 3228]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2890 3231])
+                    ("WaitVbf" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendAckNtf" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3281 3325])
+                            ("HSM_TRANSIT_TRANSIT" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendAckNtf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3351 3365])
+                                    ("" variable (:type ("WaitRsp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3366 3374])
+                                    ("" variable (:type ("Aloha::HandleSendAckReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3376 3400])
+                                    ("" variable (:type ("Aloha::IsSendAck" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3426 3443])
+                                    ("" variable (:type ("Idle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3444 3449]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3331 3450]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3233 3453])
+                    ("SendDown" function
+                       (:parent "Aloha"
+                        :arguments 
+                          ( ("req" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3514 3545]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3493 4141])
+                    ("SendUp" function
+                       (:parent "Aloha"
+                        :arguments 
+                          ( ("ntf" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgRecvDataNtf" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4162 4193]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4143 4321])
+                    ("ReSendDown" function
+                       (:parent "Aloha"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4323 4516])
+                    ("HandleSendAckReq" function
+                       (:parent "Aloha"
+                        :arguments 
+                          ( ("ntf" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgSendAckNtf" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4547 4577]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4518 4946])
+                    ("IsDataPacket" function
+                       (:parent "Aloha"
+                        :arguments 
+                          ( ("ntf" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgRecvDataNtf" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4973 5004]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [4948 5241])
+                    ("IsAckPacket" function
+                       (:parent "Aloha"
+                        :arguments 
+                          ( ("ntf" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgRecvDataNtf" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5267 5298]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5243 5533]))                  
+                :type "namespace")
+                nil [377 5585]))          
+      :file "aloha.cc"
+      :pointmax 5610
+      :fsize 5609
+      :lastmodtime '(22551 44228 0 0)
+      :unmatched-syntax '((semantic-list 5569 . 5582) (symbol 5554 . 5569) (semantic-list 5546 . 5553) (symbol 5535 . 5546) (punctuation 3425 . 3426) (punctuation 3375 . 3376) (punctuation 3199 . 3200) (punctuation 3150 . 3151) (punctuation 3083 . 3084) (punctuation 3041 . 3042) (punctuation 2669 . 2670) (punctuation 2653 . 2654) (punctuation 2593 . 2594))
+      :lexical-table 
+        '(("CURRENT_PROTOCOL" . ((number "2" 213 . 214)))
+          ("LOWER_LAYER" . ((number "1" 235 . 236)))
+          ("LOWER_PROTOCOL" . ((number "1" 260 . 261)))
+          ("PACKET_TYPE_DATA" . ((number "0" 348 . 349)))
+          ("UPPER_LAYER" . ((number "3" 137 . 138)))
+          ("UPPER_PROTOCOL" . ((number "1" 162 . 163)))
+          ("CURRENT_LAYER" . ((number "2" 186 . 187)))
+          ("MAX_TIMEOUT_COUNT" . ((number "8" 289 . 290)))
+          ("PACKET_TYPE_ACK" . ((number "1" 374 . 375)))
+          ("BROADCAST_ADDERSS" . ((number "255" 318 . 321)))
+          )
+))
+  :file "!home!czh!stackNet!src!mac!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

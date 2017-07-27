@@ -1,0 +1,24 @@
+;; Object apue.3e/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "apue.3e/"
+  :tables
+  (list
+    (semanticdb-table "README"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "README"
+      :pointmax 307
+      :fsize 306
+      :lastmodtime '(20859 13826 0 0)
+      :unmatched-syntax '((number 302 . 306) (symbol 294 . 301) (symbol 289 . 293) (symbol 283 . 288) (punctuation 280 . 281) (symbol 277 . 280) (punctuation 276 . 277) (symbol 268 . 276) (punctuation 267 . 268) (symbol 264 . 267) (symbol 261 . 263) (symbol 253 . 260) (symbol 249 . 252) (symbol 245 . 248) (punctuation 243 . 244) (symbol 232 . 243) (punctuation 230 . 231) (symbol 221 . 230) (symbol 214 . 220) (symbol 207 . 213) (punctuation 186 . 187) (symbol 182 . 186) (symbol 178 . 181) (punctuation 176 . 177) (symbol 169 . 176) (symbol 164 . 168) (symbol 160 . 163) (symbol 156 . 159) (punctuation 154 . 155) (symbol 150 . 154) (symbol 143 . 149) (symbol 135 . 142) (punctuation 133 . 134) (symbol 129 . 133) (symbol 125 . 128) (punctuation 122 . 123) (semantic-list 93 . 122) (string 86 . 92) (symbol 81 . 85) (punctuation 79 . 80) (symbol 70 . 79) (symbol 64 . 69) (symbol 61 . 63) (punctuation 59 . 60) (string 52 . 59) (symbol 47 . 51) (punctuation 45 . 46) (symbol 38 . 45) (symbol 35 . 37) (punctuation 32 . 33) (symbol 22 . 32) (symbol 15 . 21) (symbol 10 . 14) (symbol 6 . 9) (symbol 1 . 5)))
+    (semanticdb-table "makemessage"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "makemessage"
+      :pointmax 666
+      :fsize 671
+      :lastmodtime '(22524 25820 625950 779000)
+      :unmatched-syntax '((number 664 . 665) (symbol 658 . 663) (semantic-list 652 . 657) (punctuation 650 . 651) (punctuation 649 . 650) (punctuation 648 . 649) (punctuation 646 . 647) (symbol 642 . 646) (symbol 635 . 641) (string 629 . 634) (symbol 622 . 628) (FOR 618 . 621) (symbol 611 . 617) (punctuation 609 . 610) (number 608 . 609) (punctuation 607 . 608) (symbol 599 . 607) (string 526 . 598) (symbol 516 . 525) (symbol 508 . 515) (punctuation 506 . 507) (semantic-list 503 . 506) (symbol 499 . 503) (number 497 . 498) (symbol 491 . 496) (semantic-list 480 . 490) (punctuation 478 . 479) (punctuation 477 . 478) (punctuation 476 . 477) (punctuation 474 . 475) (semantic-list 471 . 474) (symbol 467 . 471) (symbol 460 . 466) (string 449 . 459) (symbol 442 . 448) (FOR 438 . 441) (symbol 431 . 437) (punctuation 429 . 430) (number 427 . 429) (punctuation 426 . 427) (symbol 418 . 426) (symbol 411 . 417) (symbol 406 . 410) (number 404 . 405) (symbol 395 . 403) (symbol 392 . 394) (punctuation 390 . 391) (symbol 385 . 390) (punctuation 383 . 384) (symbol 375 . 383) (symbol 370 . 374) (punctuation 369 . 370) (symbol 365 . 368) (punctuation 363 . 364) (symbol 361 . 363) (punctuation 360 . 361) (symbol 357 . 360) (punctuation 356 . 357) (symbol 353 . 356) (punctuation 352 . 353) (symbol 347 . 351) (punctuation 346 . 347) (symbol 342 . 345) (punctuation 341 . 342) (symbol 333 . 340) (punctuation 332 . 333) (symbol 326 . 331) (punctuation 325 . 326) (symbol 321 . 324) (punctuation 320 . 321) (punctuation 319 . 320) (punctuation 318 . 319) (symbol 317 . 318) (punctuation 316 . 317) (symbol 306 . 314) (symbol 304 . 305) (punctuation 303 . 304) (symbol 301 . 302) (punctuation 300 . 301) (symbol 292 . 300) (symbol 278 . 290) (punctuation 277 . 278) (symbol 270 . 276) (punctuation 269 . 270) (symbol 264 . 268) (punctuation 263 . 264) (symbol 255 . 262) (punctuation 254 . 255) (punctuation 253 . 254) (punctuation 252 . 253) (symbol 251 . 252) (punctuation 250 . 251) (symbol 245 . 249) (punctuation 244 . 245) (symbol 240 . 243) (string 167 . 239) (symbol 157 . 166) (symbol 148 . 156) (punctuation 146 . 147) (semantic-list 143 . 146) (symbol 139 . 143) (symbol 131 . 138) (symbol 124 . 130) (string 49 . 123) (symbol 39 . 48) (symbol 31 . 38) (punctuation 29 . 30) (semantic-list 26 . 29) (symbol 22 . 26) (punctuation 20 . 21) (punctuation 19 . 20) (punctuation 18 . 19) (punctuation 17 . 18) (punctuation 16 . 17) (punctuation 15 . 16) (punctuation 13 . 14) (punctuation 12 . 13) (punctuation 11 . 12) (punctuation 10 . 11) (punctuation 9 . 10) (punctuation 8 . 9) (punctuation 6 . 7) (punctuation 5 . 6) (punctuation 4 . 5) (punctuation 3 . 4) (punctuation 2 . 3) (punctuation 1 . 2))))
+  :file "!home!czh!Advanced_Programming_in_the_Unix_Environment!apue.3e!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

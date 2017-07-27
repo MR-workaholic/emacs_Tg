@@ -1,0 +1,176 @@
+;; Object 链表简单操作/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "链表简单操作/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [75 94])
+            ("vector" include (:system-flag t) nil [95 112])
+            ("algorithm" include (:system-flag t) nil [113 133])
+            ("stack" include (:system-flag t) nil [134 150])
+            ("set" include (:system-flag t) nil [151 165])
+            ("multiset" include (:system-flag t) nil [166 185])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [187 207])
+            ("ListNode" type
+               (:typedef ("ListNode" type (:type "struct") nil nil)
+                :superclasses "ListNode"
+                :type "typedef")
+                nil [209 276])
+            ("ListNode" type
+               (:members 
+                  ( ("data" variable (:type "int") (reparse-symbol classsubparts) [237 246])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [249 264]))                  
+                :type "struct")
+                nil [209 276])
+            ("printLink" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [307 319]))                  
+                :type "void")
+                nil [292 478])
+            ("printLink_have" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [514 526]))                  
+                :type "void")
+                nil [494 679])
+            ("reverse_Link" function
+               (:arguments 
+                  ( ("Link" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [751 766]))                  
+                :type "void")
+                nil [733 1659])
+            ("chkPalindrome" function
+               (:arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1698 1710]))                  
+                :type "bool")
+                nil [1679 2467])
+            ("isPalindrome" function
+               (:arguments 
+                  ( ("pHead" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2503 2519]))                  
+                :type "bool")
+                nil [2485 3166])
+            ("oddNumberAbandon" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3207 3213]))                  
+                :type "int")
+                nil [3186 3937])
+            ("findMedianSortedArrays" function
+               (:arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4004 4011])
+                    ("m" variable (:type "int") (reparse-symbol arg-sub-list) [4012 4018])
+                    ("B" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4019 4026])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4027 4033]))                  
+                :type "double")
+                nil [3974 5825])
+            ("findMedianSortedArrayswithset" function
+               (:arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5864 5871])
+                    ("m" variable (:type "int") (reparse-symbol arg-sub-list) [5871 5877])
+                    ("B" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5877 5884])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [5884 5890]))                  
+                :type "double")
+                nil [5827 6638])
+            ("ReverseList" function
+               (:pointer 1
+                :arguments 
+                  ( ("pHead" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6679 6695]))                  
+                :type ("ListNode" type (:type "class") nil nil))
+                nil [6657 6912])
+            ("FindKthToTail" function
+               (:pointer 1
+                :arguments 
+                  ( ("pListHead" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6961 6981])
+                    ("k" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6982 6997]))                  
+                :type ("ListNode" type (:type "class") nil nil))
+                nil [6937 7397])
+            ("Merge" function
+               (:pointer 1
+                :arguments 
+                  ( ("pHead1" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7427 7444])
+                    ("pHead2" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7445 7462]))                  
+                :type ("ListNode" type (:type "class") nil nil))
+                nil [7411 8207])
+            ("EntryNodeOfLoop" function
+               (:pointer 1
+                :arguments 
+                  ( ("pHead" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8259 8275]))                  
+                :type ("ListNode" type (:type "class") nil nil))
+                nil [8233 9168])
+            ("partition" function
+               (:pointer 1
+                :arguments 
+                  ( ("pHead" variable
+                       (:pointer 1
+                        :type ("ListNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9233 9249])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [9250 9256]))                  
+                :type ("ListNode" type (:type "class") nil nil))
+                nil [9213 9965])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9976 9985])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9986 9999]))                  
+                :type "int")
+                nil [9967 11075]))          
+    :file "main.cpp"
+    :pointmax 11076
+    :fsize 12053
+    :lastmodtime '(22391 40410 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!NOWCODER!链表简单操作!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,104 @@
+;; Object feeders/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "feeders/"
+  :tables
+  (list
+    (semanticdb-table "feeder_example.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [228 237])
+            ("subprocess" include nil nil [238 255])
+            ("yaml" include nil nil [257 268])
+            ("tornado" include nil nil [269 297])
+            ("" code nil nil [325 351])
+            ("quake.feeders.persist_tool" include nil nil [352 402])
+            ("get_conf" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [418 422]))              ) nil [405 486])
+            ("read_lines" function (:arguments 
+              ( ("file_path" variable nil (reparse-symbol function_parameters) [503 512])
+                ("start_line" variable nil (reparse-symbol function_parameters) [514 524])
+                ("end_line" variable nil (reparse-symbol function_parameters) [526 534]))              ) nil [488 826])
+            ("project_root" variable nil nil [828 908])
+            ("conf_path" variable nil nil [909 961])
+            ("CONF" variable nil nil [962 993])
+            ("LOOP_INTERVAL" variable nil nil [995 1041])
+            ("ExampleFeeder" type
+               (:documentation "Feeder样例"
+                :superclasses ("object")
+                :members 
+                  ( ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1112 1116]))                          )
+                        (reparse-symbol indented_block_body) [1104 1216]))                  
+                :type "class")
+                nil [1052 1216])
+            ("ExampleHandler" type
+               (:documentation "回调接口样例"
+                :superclasses ("web.RequestHandler")
+                :members 
+                  ( ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1290 1294])
+                            ("args" variable nil (reparse-symbol function_parameters) [1296 1301])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1303 1311]))                          
+                        :documentation "
+        1. 从self.get_query_argument中获取回调接口中的参数(参数形式为key-value对),例: 从http://www.baidu.com?spider_id=123中
+        获取spider_id, `spider_id = self.get_query_argument('spider_id')`.
+
+        2. 从self.request.body中获取图谱请求的数据.
+
+        3. 更改回调状态到文件或者其他.
+        ")
+                        (reparse-symbol indented_block_body) [1281 2250]))                  
+                :type "class")
+                nil [1218 2250])
+            ("CompanyNameFeederManager" type
+               (:superclasses ("BaseFeederManager")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"
+        :param loop_time:     int    轮询时间间隔(单位: s)
+        \"\"\"" code nil (reparse-symbol indented_block_body) [2358 2424])
+                            ("super" code nil (reparse-symbol indented_block_body) [2433 2490])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2593 2675])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2756 2787]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2321 2325])
+                            ("loop_time" variable nil (reparse-symbol function_parameters) [2327 2336])
+                            ("conf_path" variable nil (reparse-symbol function_parameters) [2338 2347]))                          
+                        :documentation "
+        :param loop_time:     int    轮询时间间隔(单位: s)
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2308 2788])
+                    ("loop" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("gen.coroutine" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2821 2825]))                          
+                        :documentation "
+        将轮询任务写在此处.
+        以下为例子:
+        ")
+                        (reparse-symbol indented_block_body) [2793 3233]))                  
+                :type "class")
+                nil [2252 3233])
+            ("main" function nil nil [3268 3538])
+            ("if" code nil nil [3540 3578]))          
+      :file "feeder_example.py"
+      :pointmax 3579
+      :fsize 3868
+      :lastmodtime '(22892 14180 408358 394000)
+      :unmatched-syntax nil)
+    (semanticdb-table "persist_tool.py"
+      :file "persist_tool.py"
+      :fsize 767
+      :lastmodtime '(22892 14180 408358 394000)))
+  :file "!home!harlan!PythonPro!quake!quake!feeders!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

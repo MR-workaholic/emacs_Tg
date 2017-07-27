@@ -1,0 +1,32 @@
+;; Object websocket-20161022.2054/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "websocket-20161022.2054/"
+  :tables
+  (list
+    (semanticdb-table "websocket-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "websocket-autoloads.el"
+      :pointmax 373
+      :fsize 372
+      :lastmodtime '(22557 36571 807834 665000)
+      :unmatched-syntax nil)
+    (semanticdb-table "websocket-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "websocket-pkg.el"
+      :pointmax 137
+      :fsize 136
+      :lastmodtime '(22557 36571 839834 564000)
+      :unmatched-syntax nil)
+    (semanticdb-table "websocket.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "websocket.el"
+      :pointmax 46930
+      :fsize 46933
+      :lastmodtime '(22557 36571 687835 44000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!websocket-20161022.2054!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

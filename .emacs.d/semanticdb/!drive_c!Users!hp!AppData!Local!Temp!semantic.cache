@@ -1,0 +1,27 @@
+;; Object Temp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Temp/"
+  :tables (list 
+   (semanticdb-table "bubbles-default-2-10-10-scores"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "bubbles-default-2-10-10-scores"
+    :pointmax 44
+    :fsize 44
+    :lastmodtime '(22424 32357 0 0)
+    :unmatched-syntax '((punctuation 42 . 43) (symbol 40 . 42) (punctuation 39 . 40) (symbol 37 . 39) (punctuation 36 . 37) (symbol 34 . 36) (punctuation 33 . 34) (number 27 . 31) (number 24 . 26) (punctuation 23 . 24) (number 21 . 23) (punctuation 20 . 21) (number 18 . 20) (number 15 . 17) (symbol 11 . 14) (symbol 7 . 10) (number 1 . 6))
+    )
+   (semanticdb-table "snake-scores"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "snake-scores"
+    :pointmax 173
+    :fsize 176
+    :lastmodtime '(22424 32465 0 0)
+    :unmatched-syntax '((punctuation 171 . 172) (symbol 169 . 171) (punctuation 168 . 169) (symbol 166 . 168) (punctuation 165 . 166) (symbol 163 . 165) (punctuation 162 . 163) (number 156 . 160) (number 153 . 155) (punctuation 152 . 153) (number 150 . 152) (punctuation 149 . 150) (number 147 . 149) (number 144 . 146) (symbol 140 . 143) (symbol 136 . 139) (number 130 . 135) (punctuation 128 . 129) (symbol 126 . 128) (punctuation 125 . 126) (symbol 123 . 125) (punctuation 122 . 123) (symbol 120 . 122) (punctuation 119 . 120) (number 113 . 117) (number 110 . 112) (punctuation 109 . 110) (number 107 . 109) (punctuation 106 . 107) (number 104 . 106) (number 101 . 103) (symbol 97 . 100) (symbol 93 . 96) (number 87 . 92) (punctuation 85 . 86) (symbol 83 . 85) (punctuation 82 . 83) (symbol 80 . 82) (punctuation 79 . 80) (symbol 77 . 79) (punctuation 76 . 77) (number 70 . 74) (number 67 . 69) (punctuation 66 . 67) (number 64 . 66) (punctuation 63 . 64) (number 61 . 63) (number 58 . 60) (symbol 54 . 57) (symbol 50 . 53) (number 44 . 49) (punctuation 42 . 43) (symbol 40 . 42) (punctuation 39 . 40) (symbol 37 . 39) (punctuation 36 . 37) (symbol 34 . 36) (punctuation 33 . 34) (number 27 . 31) (number 24 . 26) (punctuation 23 . 24) (number 21 . 23) (punctuation 20 . 21) (number 18 . 20) (number 15 . 17) (symbol 11 . 14) (symbol 7 . 10) (number 1 . 6))
+    )
+   )
+  :file "!drive_c!Users!hp!AppData!Local!Temp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

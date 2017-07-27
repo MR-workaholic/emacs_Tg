@@ -1,0 +1,378 @@
+;; Object 动态规划/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "动态规划/"
+  :tables (list 
+   (semanticdb-table "maxcurrency.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [92 111])
+            ("vector" include (:system-flag t) nil [112 129])
+            ("string" include (:system-flag t) nil [130 147])
+            ("sstream" include (:system-flag t) nil [148 166])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [168 188])
+            ("currency" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [189 217])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [228 237])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [238 251]))                  
+                :type "int")
+                nil [219 1196]))          
+    :file "maxcurrency.cpp"
+    :pointmax 1065
+    :fsize 1335
+    :lastmodtime '(22510 16487 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ChangeMaking.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [30 49])
+            ("vector" include (:system-flag t) nil [50 67])
+            ("string" include (:system-flag t) nil [68 85])
+            ("sstream" include (:system-flag t) nil [86 104])
+            ("INF" variable (:constant-flag t) nil [113 116])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [126 146])
+            ("money" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [147 172])
+            ("target" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [173 191])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [202 211])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [212 225]))                  
+                :type "int")
+                nil [193 1170]))          
+    :file "ChangeMaking.cpp"
+    :pointmax 1171
+    :fsize 1248
+    :lastmodtime '(22510 18152 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("INF" . ((semantic-list "(10000)" 117 . 124)))
+          )
+
+    )
+   (semanticdb-table "KnifingClub.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [81 100])
+            ("vector" include (:system-flag t) nil [101 118])
+            ("string" include (:system-flag t) nil [119 136])
+            ("sstream" include (:system-flag t) nil [137 155])
+            ("MIN" variable (:constant-flag t) nil [164 167])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [173 193])
+            ("len" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [224 239])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [250 259])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [260 273]))                  
+                :type "int")
+                nil [241 1222]))          
+    :file "KnifingClub.cpp"
+    :pointmax 1227
+    :fsize 1346
+    :lastmodtime '(22510 21520 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MIN" . ((semantic-list "(0)" 168 . 171)))
+          )
+
+    )
+   (semanticdb-table "KnapsackDP.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("arr1" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "int")
+                nil [142 174])
+            ("arr2" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "int")
+                nil [175 211])
+            ("weight" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("arr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [238 243])
+                    ("" variable (:type ("arr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [244 249]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [212 279])
+            ("value" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("arr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [305 310])
+                    ("" variable (:type ("arr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [311 316]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [280 346])
+            ("W" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "int")
+                nil [347 363])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [374 383])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [384 397]))                  
+                :type "int")
+                nil [365 950]))          
+    :file "KnapsackDP.cpp"
+    :pointmax 951
+    :fsize 990
+    :lastmodtime '(22510 25450 0 0)
+    :unmatched-syntax '((number 360 . 361) (semantic-list 335 . 344) (SIZEOF 329 . 335) (punctuation 328 . 329) (semantic-list 322 . 328) (SIZEOF 316 . 322) (punctuation 315 . 316) (semantic-list 268 . 277) (SIZEOF 262 . 268) (punctuation 261 . 262) (semantic-list 255 . 261) (SIZEOF 249 . 255) (punctuation 248 . 249))
+    )
+   (semanticdb-table "ClimbLadderandDivivsionDP.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [39 58])
+            ("vector" include (:system-flag t) nil [59 76])
+            ("INF" variable (:constant-flag t) nil [85 88])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [98 118])
+            ("target" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [119 137])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [148 157])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [158 171]))                  
+                :type "int")
+                nil [139 1318]))          
+    :file "ClimbLadderandDivivsionDP.cpp"
+    :pointmax 1319
+    :fsize 1432
+    :lastmodtime '(22511 49566 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("INF" . ((semantic-list "(10000)" 89 . 96)))
+          )
+
+    )
+   (semanticdb-table "Combination.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [75 94])
+            ("vector" include (:system-flag t) nil [95 112])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [114 134])
+            ("N" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [135 151])
+            ("M" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [135 151])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [163 172])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [173 186]))                  
+                :type "int")
+                nil [154 565]))          
+    :file "Combination.cpp"
+    :pointmax 542
+    :fsize 642
+    :lastmodtime '(22513 7330 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CollectCoin.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [63 82])
+            ("vector" include (:system-flag t) nil [83 100])
+            ("NOPATH" variable (:constant-flag t) nil [109 115])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [121 141])
+            ("N" variable (:type "int") nil [142 151])
+            ("M" variable (:type "int") nil [142 151])
+            ("matrix" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("vector" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [152 180])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [955 964])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [965 978]))                  
+                :type "int")
+                nil [946 2200]))          
+    :file "CollectCoin.cpp"
+    :pointmax 2039
+    :fsize 2358
+    :lastmodtime '(22514 14474 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NOPATH" . ((semantic-list "(2)" 116 . 119)))
+          )
+
+    )
+   (semanticdb-table "StrDecode.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [110 129])
+            ("vector" include (:system-flag t) nil [130 147])
+            ("string" include (:system-flag t) nil [148 165])
+            ("sstream" include (:system-flag t) nil [166 184])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [186 206])
+            ("Codes" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [207 232])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [243 252])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [253 266]))                  
+                :type "int")
+                nil [234 938])
+            ("count" variable (:type "int") nil [418 443])
+            ("result" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("count" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [490 496]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [471 502]))          
+    :file "StrDecode.cpp"
+    :pointmax 786
+    :fsize 1058
+    :lastmodtime '(22514 11113 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "MaxMultiply.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [30 49])
+            ("vector" include (:system-flag t) nil [50 67])
+            ("string" include (:system-flag t) nil [68 85])
+            ("sstream" include (:system-flag t) nil [86 104])
+            ("MIN" variable (:constant-flag t) nil [113 116])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [127 147])
+            ("input_vec" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [149 178])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [189 198])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [199 212]))                  
+                :type "int")
+                nil [180 1178]))          
+    :file "MaxMultiply.cpp"
+    :pointmax 1179
+    :fsize 1265
+    :lastmodtime '(22514 22532 0 0)
+    :unmatched-syntax '((number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321) (number 895 . 896) (number 614 . 615) (semantic-list "(-10000)" 318 . 321))
+    :lexical-table 
+        '(("MIN" . ((semantic-list "(-10000)" 117 . 125)))
+          )
+
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!NOWCODER!动态规划!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

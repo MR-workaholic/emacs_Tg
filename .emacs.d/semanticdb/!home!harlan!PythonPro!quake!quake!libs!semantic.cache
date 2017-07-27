@@ -1,0 +1,53 @@
+;; Object libs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libs/"
+  :tables
+  (list
+    (semanticdb-table "reg_utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("change_string" function (:arguments 
+              ( ("strings" variable nil (reparse-symbol function_parameters) [70 77])
+                ("index" variable nil (reparse-symbol function_parameters) [79 84])
+                ("result" variable nil (reparse-symbol function_parameters) [86 92]))              ) nil [52 161])
+            ("check_sum" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [177 178]))              ) nil [163 705])
+            ("get_next_num" function
+               (:documentation "
+    根据给定的注册号，返回下一个注册号。
+    :param now:                 string      旧注册号
+    :param change_type:         bool        更改type_num为下一个,如果type已经是5,返回None
+    :param change_area:         bool        更改area_num为下一个
+    :return:                    string      下一个注册号,如果没有,返回None
+    "
+                :arguments 
+                  ( ("now" variable nil (reparse-symbol function_parameters) [724 727])
+                    ("change_type" variable nil (reparse-symbol function_parameters) [729 740])
+                    ("change_area" variable nil (reparse-symbol function_parameters) [748 759]))                  )
+                nil [707 1643])
+            ("get_next_reg" function
+               (:documentation "
+    return next reg number or none
+
+    :rtype: str
+    :type reg: str
+    :param reg: prev reg number
+
+    example:
+    >>> get_next_reg('469005600278420')
+    '469005700278422'
+    >>> get_next_reg('440101300277972')
+    None
+    "
+                :arguments 
+                  ( ("reg" variable nil (reparse-symbol function_parameters) [1662 1665]))                  )
+                nil [1645 2418])
+            ("if" code nil nil [2420 2522]))          
+      :file "reg_utils.py"
+      :pointmax 2522
+      :fsize 2645
+      :lastmodtime '(22892 14180 464357 414000)
+      :unmatched-syntax '((NAME 409 . 410) (IF 426 . 428) (ELSE 447 . 451) (NAME 327 . 328) (IF 345 . 347) (ELSE 367 . 371))))
+  :file "!home!harlan!PythonPro!quake!quake!libs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

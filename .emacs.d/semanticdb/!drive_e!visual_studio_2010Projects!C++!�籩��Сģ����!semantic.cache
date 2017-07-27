@@ -1,0 +1,190 @@
+;; Object 风暴周小模拟题/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "风暴周小模拟题/"
+  :tables (list 
+   (semanticdb-table "题目1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("algorithm" include (:system-flag t) nil [60 80])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [82 102])
+            ("main" function (:type "int") nil [104 694]))          
+    :file "题目1.cpp"
+    :pointmax 695
+    :fsize 732
+    :lastmodtime '(22359 51057 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "题目2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [22 42])
+            ("main" function (:type "int") nil [44 291]))          
+    :file "题目2.cpp"
+    :pointmax 343
+    :fsize 317
+    :lastmodtime '(22359 51714 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "题目3.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("isPrime" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [74 80]))                  
+                :type "int")
+                nil [62 309])
+            ("getResult" function
+               (:arguments 
+                  ( ("ulDataInput" variable (:type "long") (reparse-symbol arg-sub-list) [334 351]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [312 662])
+            ("main" function (:type "int") nil [664 1013]))          
+    :file "题目3.cpp"
+    :pointmax 1014
+    :fsize 1086
+    :lastmodtime '(22359 56020 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "练习1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [22 42])
+            ("main" function (:type "int") nil [44 166]))          
+    :file "练习1.cpp"
+    :pointmax 155
+    :fsize 181
+    :lastmodtime '(22359 62197 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "exam1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [22 42])
+            ("solve" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [54 60]))                  
+                :type "int")
+                nil [44 151])
+            ("main" function (:type "int") nil [153 268]))          
+    :file "exam1.cpp"
+    :pointmax 261
+    :fsize 294
+    :lastmodtime '(22360 4081 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "exam2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("algorithm" include (:system-flag t) nil [39 59])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [61 81])
+            ("Vector_Largethan" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [111 118])
+                    ("Vector_Largethan" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("max" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [138 152]))                          
+                        :type ("Vector_Largethan" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [121 165])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [185 192]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [168 222])
+                    ("private" label nil (reparse-symbol classsubparts) [225 233])
+                    ("m_max" variable (:type "int") (reparse-symbol classsubparts) [236 246]))                  
+                :type "class")
+                nil [85 249])
+            ("Fibonanci" function
+               (:arguments 
+                  ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [265 273]))                  
+                :type "int")
+                nil [251 388])
+            ("Fibonanci_resolve" function
+               (:arguments 
+                  ( ("tar" variable (:type "int") (reparse-symbol arg-sub-list) [412 420])
+                    ("vec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [421 437])
+                    ("res" variable (:type "int") (reparse-symbol arg-sub-list) [438 446]))                  
+                :type "int")
+                nil [390 883])
+            ("main" function (:type "int") nil [885 1360]))          
+    :file "exam2.cpp"
+    :pointmax 1361
+    :fsize 1443
+    :lastmodtime '(22361 5495 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "exam3.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("set" include (:system-flag t) nil [41 55])
+            ("math.h" include (:system-flag t) nil [56 73])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [75 95])
+            ("main" function (:type "int") nil [97 853]))          
+    :file "exam3.cpp"
+    :pointmax 733
+    :fsize 915
+    :lastmodtime '(22361 10508 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "exam1.obj"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "exam1.obj"
+    :pointmax 175930
+    :fsize 175929
+    :lastmodtime '(22360 3792 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!C++!风暴周小模拟题!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

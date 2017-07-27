@@ -1,0 +1,16 @@
+;; Object passnothing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "passnothing/"
+  :tables
+  (list
+    (semanticdb-table "testlib.cc"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "testlib.cc"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22564 18924 691720 254000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapterc!python-cc-ctypes!passnothing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

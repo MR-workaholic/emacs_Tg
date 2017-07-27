@@ -1,0 +1,380 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables (list 
+   (semanticdb-table "ev_epoll.c"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("errno.h" include (:system-flag t) nil [1 19])
+            ("stdio.h" include (:system-flag t) nil [20 38])
+            ("string.h" include (:system-flag t) nil [39 58])
+            ("sys/epoll.h" include (:system-flag t) nil [59 81])
+            ("event.h" include nil nil [82 100])
+            ("MAX_FD" variable (:constant-flag t) nil [110 116])
+            ("epoll_fd" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [134 158])
+            ("epoll_add" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("fd_set_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [181 194]))                  
+                :type "int")
+                nil [160 195])
+            ("epoll_mod" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("fd_set_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [217 230]))                  
+                :type "int")
+                nil [196 231])
+            ("epoll_del" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("fd_set_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [253 266]))                  
+                :type "int")
+                nil [232 267])
+            ("epoll_run" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [289 305]))                  
+                :type "int")
+                nil [268 306])
+            ("epoll_init" function
+               (:arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [323 339]))                  
+                :type "int")
+                nil [308 669])
+            ("epoll_add" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("fd_set_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [692 705]))                  
+                :type "int")
+                nil [671 1137])
+            ("epoll_mod" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("fd_set_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1160 1173]))                  
+                :type "int")
+                nil [1139 1728])
+            ("epoll_del" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("fd_set_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1751 1764]))                  
+                :type "int")
+                nil [1730 1833])
+            ("epoll_run" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1856 1872]))                  
+                :type "int")
+                nil [1835 2550]))          
+    :file "ev_epoll.c"
+    :pointmax 2551
+    :fsize 2550
+    :lastmodtime '(22486 49532 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX_FD" . ((symbol "MAX_EVENT_COUNT" 117 . 132)))
+          )
+
+    )
+   (semanticdb-table "event.c"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("event.h" include nil nil [1 19])
+            ("assert.h" include (:system-flag t) nil [20 39])
+            ("stdio.h" include (:system-flag t) nil [40 58])
+            ("sys/time.h" include (:system-flag t) nil [59 80])
+            ("loop" variable
+               (:typemodifiers ("static")
+                :type ("ev_loop_t" type (:type "class") nil nil))
+                nil [82 104])
+            ("epoll_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("ev_loop_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128 144]))                  
+                :type "int")
+                nil [106 145])
+            ("m_fdchange" variable (:constant-flag t) nil [155 165])
+            ("m_fdchangecnt" variable (:constant-flag t) nil [195 208])
+            ("m_fdset" variable (:constant-flag t) nil [239 246])
+            ("m_fdsetcnt" variable (:constant-flag t) nil [276 286])
+            ("m_fdpending" variable (:constant-flag t) nil [317 328])
+            ("m_fdpendingcnt" variable (:constant-flag t) nil [358 372])
+            ("m_timers" variable (:constant-flag t) nil [403 411])
+            ("m_timer" variable (:constant-flag t) nil [438 445])
+            ("m_timercnt" variable (:constant-flag t) nil [475 485])
+            ("m_timeout" variable (:constant-flag t) nil [515 524])
+            ("m_mntime" variable (:constant-flag t) nil [553 561])
+            ("m_backend" variable (:constant-flag t) nil [590 599])
+            ("m_beadd" variable (:constant-flag t) nil [628 635])
+            ("m_bedel" variable (:constant-flag t) nil [670 677])
+            ("m_bemod" variable (:constant-flag t) nil [712 719])
+            ("m_berun" variable (:constant-flag t) nil [754 761])
+            ("ev_uptime" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "int")
+                nil [789 812])
+            ("ev_change" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "int")
+                nil [813 836])
+            ("ev_pending" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "int")
+                nil [837 861])
+            ("ev_init" function (:type "int") nil [863 1030])
+            ("ev_uptime" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1032 1458])
+            ("ev_change" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1460 1897])
+            ("ev_pending" function
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1899 2089])
+            ("ev_run" function (:type "int") nil [2091 2370])
+            ("ev_io_start" function
+               (:arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2388 2399]))                  
+                :type "int")
+                nil [2372 2932])
+            ("ev_io_stop" function
+               (:arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2949 2960]))                  
+                :type "int")
+                nil [2934 3690])
+            ("PARENT" variable (:constant-flag t) nil [3700 3706])
+            ("LEFT" variable (:constant-flag t) nil [3732 3736])
+            ("RIGHT" variable (:constant-flag t) nil [3764 3769])
+            ("ev_timer_start" function
+               (:arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_timer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3810 3824]))                  
+                :type "int")
+                nil [3791 4378])
+            ("ev_timer_stop" function
+               (:arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_timer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4398 4412]))                  
+                :type "int")
+                nil [4380 5102])
+            ("ev_feed" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [5116 5123])
+                    ("events" variable (:type "int") (reparse-symbol arg-sub-list) [5124 5135]))                  
+                :type "int")
+                nil [5104 5345])
+            ("ev_timeout" function (:type "int") nil [5347 5447])
+            ("ev_hook" function
+               (:arguments 
+                  ( ("h" variable (:type ("hook" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5461 5468])
+                    ("t" variable (:type "int") (reparse-symbol arg-sub-list) [5469 5475]))                  
+                :type "int")
+                nil [5449 5588]))          
+    :file "event.c"
+    :pointmax 5589
+    :fsize 5588
+    :lastmodtime '(22486 49532 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("m_fdchangecnt" . ((semantic-list "(loop.fd_change_cnt)" 210 . 230)))
+          ("m_timers" . ((semantic-list "(loop.heap)" 418 . 429)))
+          ("m_fdset" . ((semantic-list "(loop.fd_set)" 254 . 267)))
+          ("m_fdpending" . ((semantic-list "(loop.fd_pending)" 332 . 349)))
+          ("LEFT" (spp-arg-list ("i") 3736 . 3739) . ((semantic-list "(2 * (i) + 1)" 3742 . 3755)))
+          ("m_bemod" . ((semantic-list "(loop.backend_mod)" 727 . 745)))
+          ("m_timercnt" . ((semantic-list "(loop.timer_cnt)" 490 . 506)))
+          ("m_backend" . ((semantic-list "(loop.backend)" 605 . 619)))
+          ("m_bedel" . ((semantic-list "(loop.backend_del)" 685 . 703)))
+          ("m_beadd" . ((semantic-list "(loop.backend_add)" 643 . 661)))
+          ("m_timer" . ((semantic-list "(m_timers[0])" 453 . 466)))
+          ("m_mntime" . ((semantic-list "(loop.mn_now)" 568 . 581)))
+          ("m_fdchange" . ((semantic-list "(loop.fd_change)" 170 . 186)))
+          ("m_fdsetcnt" . ((semantic-list "(loop.fd_set_cnt)" 291 . 308)))
+          ("m_fdpendingcnt" . ((semantic-list "(loop.fd_pending_cnt)" 373 . 394)))
+          ("RIGHT" (spp-arg-list ("i") 3769 . 3772) . ((semantic-list "(2 * ((i) + 1))" 3774 . 3789)))
+          ("m_timeout" . ((semantic-list "(loop.timeout)" 530 . 544)))
+          ("m_berun" . ((semantic-list "(loop.backend_run)" 769 . 787)))
+          ("PARENT" (spp-arg-list ("i") 3706 . 3709) . ((semantic-list "(((i)-1) / 2)" 3710 . 3723)))
+          )
+
+    )
+   (semanticdb-table "sap.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sap.h" include nil nil [1 17])
+            ("iostream" include (:system-flag t) nil [18 37])
+            ("schedule.h" include nil nil [38 59])
+            ("sap" type
+               (:members 
+                  ( ("Init" function
+                       (:parent "SapBase"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [78 133])
+                    ("SendReq" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [156 178])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [179 194])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [195 208]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [134 400])
+                    ("SendRsp" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [424 446])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [447 462])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [463 476]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [402 726])
+                    ("SendNtf" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [750 772])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [773 788])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [789 802]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [728 1052])
+                    ("RecvReq" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1076 1098]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1054 1119])
+                    ("RecvRsp" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1142 1164]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1120 1185])
+                    ("RecvNtf" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1208 1230]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1186 1251])
+                    ("DispatchReq" function
+                       (:parent "SapList"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1278 1300])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1301 1316])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1317 1330]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1252 1599])
+                    ("DispatchRsp" function
+                       (:parent "SapList"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1627 1649])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1650 1665])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1666 1679]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1601 1948])
+                    ("DispatchNtf" function
+                       (:parent "SapList"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1976 1998])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1999 2014])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2015 2028]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1950 2297]))                  
+                :type "namespace")
+                nil [61 2299]))          
+    :file "sap.cc"
+    :pointmax 2300
+    :fsize 2299
+    :lastmodtime '(22486 49532 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!underwater_network!HSM_stack!stack!src!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,799 @@
+;; Object testdev/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testdev/"
+  :tables
+  (list
+    (semanticdb-table "clientsocket.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("clientsocket.h" include nil nil [26 51])
+            ("hex_to_num" variable (:constant-flag t) nil [60 70])
+            ("hex_table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{'0', '1', '2', '3', '4', '5', '6', '7',
+                                 '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'}"
+                :type "char")
+                nil [128 274])
+            ("lengthPerBag" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "1032"
+                :type "int")
+                nil [276 313])
+            ("tid" variable (:type ("pthread_t" type (:type "class") nil nil)) nil [315 329])
+            ("readset" variable (:type ("fd_set" type (:type "class") nil nil)) nil [330 345])
+            ("maxfd" variable (:type "int") nil [346 356])
+            ("Byte2Hex" function
+               (:arguments 
+                  ( ("hex" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [373 383])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [384 400])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [401 413]))                  
+                :type "void")
+                nil [359 577])
+            ("Hex2Byte" function
+               (:arguments 
+                  ( ("dst" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [593 603])
+                    ("hex" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [604 620])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [621 633]))                  
+                :type "void")
+                nil [579 770])
+            ("IOData" type
+               (:members 
+                  ( ("fd" variable (:type "int") (reparse-symbol classsubparts) [817 824])
+                    ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [829 840])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [845 856]))                  
+                :type "struct")
+                nil [789 877])
+            ("IODataPtr" type
+               (:typedef ("IOData" type (:type "struct") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [789 877])
+            ("IOData" type
+               (:typedef ("IOData" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [789 877])
+            ("ReadQueue" variable (:type ("queue" type
+                 (:template-specifier 
+                    ( ("IODataPtr" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [879 906])
+            ("WriteQueue" variable (:type ("queue" type
+                 (:template-specifier 
+                    ( ("IODataPtr" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [907 935])
+            ("WriteCB" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [963 974]))                  
+                :type "int")
+                nil [937 1448])
+            ("WriteCB4pt" function
+               (:parent "ClientSocket"
+                :type "void")
+                nil [1450 1966])
+            ("ReadCB" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1993 2004]))                  
+                :type "int")
+                nil [1968 3476])
+            ("ReadCB4pt" function
+               (:pointer 1
+                :parent "ClientSocket"
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3508 3518]))                  
+                :type "void")
+                nil [3478 4761])
+            ("Init" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("hostname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4787 4803])
+                    ("port" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4804 4816]))                  
+                :type "bool")
+                nil [4763 6394])
+            ("Free" function
+               (:parent "ClientSocket"
+                :type "bool")
+                nil [6396 6498])
+            ("Write" function
+               (:parent "ClientSocket"
+                :type "void")
+                nil [6500 6635])
+            ("GetFd" function
+               (:parent "ClientSocket"
+                :type "int")
+                nil [6637 6678])
+            ("Setnonblock" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("fd" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6711 6719]))                  
+                :type "void")
+                nil [6680 6822])
+            ("Readn" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [6852 6859])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6860 6870])
+                    ("n_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6871 6885]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [6824 7568])
+            ("Writen" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [7599 7606])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7607 7617])
+                    ("n_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7618 7632]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [7570 8071])
+            ("ClientSocket::m_Instance" variable
+               (:pointer 1
+                :default-value "new ClientSocket()"
+                :type ("ClientSocket" type (:type "class") nil nil))
+                nil [8098 8158])
+            ("ClientSocket::gc" variable (:type ("ClientSocket::GC" type (:type "class") nil nil)) nil [8159 8193])
+            ("pyc_Init" function
+               (:arguments 
+                  ( ("hostname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8209 8225])
+                    ("port" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8226 8238]))                  
+                :type "bool")
+                nil [8195 8328])
+            ("pyc_Write" function
+               (:arguments 
+                  ( ("content" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8344 8358]))                  
+                :type "int")
+                nil [8330 8592])
+            ("pyc_isRead" function (:type "int") nil [8594 8642])
+            ("pyc_Read" function
+               (:pointer 1
+                :type "char")
+                nil [8644 9499])
+            ("wrap_pyc_Init" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9525 9540])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9541 9556]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [9501 10063])
+            ("wrap_pyc_Write" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10090 10105])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10106 10121]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [10065 12211])
+            ("wrap_pyc_isRead" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12239 12254])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12255 12270]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [12213 12379])
+            ("wrap_pyc_Read" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12405 12420])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12421 12436]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [12381 12661])
+            ("myClientsocketMethods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    {\"pyc_Init\", wrap_pyc_Init, METH_VARARGS, \"Init the client socket\"},
+    {\"pyc_Write\", wrap_pyc_Write, METH_VARARGS, \"write to the socket\"},
+    {\"pyc_Read\", wrap_pyc_Read, METH_VARARGS, \"read from the socket\"},
+    {\"pyc_isRead\", wrap_pyc_isRead, METH_VARARGS, \"check readability of the socket\"},
+    {NULL, NULL}
+  }"
+                :type ("PyMethodDef" type (:type "class") nil nil))
+                nil [12663 13035])
+            ("initmyClientsocket" function (:type "void") nil [13083 13189]))          
+      :file "clientsocket.cc"
+      :pointmax 13190
+      :fsize 13647
+      :lastmodtime '(22573 41494 693552 18000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("hex_to_num" (spp-arg-list ("c") 70 . 73) . ((semantic-list "((unsigned char)(c >= 'A' ? c - 'A' + 10 : c - '0'))" 74 . 126)))
+          )
+)
+    (semanticdb-table "clientsocket.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_CLIENTSOCKET_H_" variable (:constant-flag t) nil [34 50])
+            ("Python.h" include (:system-flag t) nil [52 71])
+            ("cstdlib" include (:system-flag t) nil [72 90])
+            ("string.h" include (:system-flag t) nil [91 110])
+            ("errno.h" include (:system-flag t) nil [111 129])
+            ("fcntl.h" include (:system-flag t) nil [130 148])
+            ("netdb.h" include (:system-flag t) nil [149 167])
+            ("sys/socket.h" include (:system-flag t) nil [168 191])
+            ("sys/types.h" include (:system-flag t) nil [192 214])
+            ("unistd.h" include (:system-flag t) nil [215 234])
+            ("queue" include (:system-flag t) nil [235 251])
+            ("iostream" include (:system-flag t) nil [252 271])
+            ("string" include (:system-flag t) nil [272 289])
+            ("pthread.h" include (:system-flag t) nil [290 310])
+            ("sys/select.h" include (:system-flag t) nil [311 334])
+            ("event.h" include nil nil [335 353])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [362 373])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [380 400])
+            ("ClientSocket" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [423 430])
+                    ("GetInstance" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("ClientSocket" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [435 503])
+                    ("Init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("hostname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [519 535])
+                            ("port" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [536 548]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [509 549])
+                    ("Free" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [554 566])
+                    ("Write" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [571 584])
+                    ("GetFd" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [589 601])
+                    ("private" label nil (reparse-symbol classsubparts) [603 611])
+                    ("ClientSocket" function (:type "int") (reparse-symbol classsubparts) [616 655])
+                    ("ClientSocket" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [661 740])
+                    ("ReadCB" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("ev_io_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [764 774]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [746 775])
+                    ("WriteCB" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("ev_io_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [799 809]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [780 810])
+                    ("Setnonblock" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [839 845]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [815 846])
+                    ("Readn" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [872 876])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [877 883])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [884 891]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [851 892])
+                    ("Writen" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [919 923])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [924 930])
+                            ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [931 938]))                          
+                        :type ("ssize_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [897 939])
+                    ("ReadCB4pt" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [967 974]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [944 975])
+                    ("WriteCB4pt" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [980 998])
+                    ("private" label nil (reparse-symbol classsubparts) [1001 1009])
+                    ("m_Instance" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("ClientSocket" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1014 1046])
+                    ("GC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1065 1072])
+                            ("GC" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1081 1219]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [1051 1227])
+                    ("gc" variable
+                       (:typemodifiers ("static")
+                        :type ("GC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1233 1246])
+                    ("fd_" variable (:type "int") (reparse-symbol classsubparts) [1252 1260])
+                    ("server_addr_" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1265 1285])
+                    ("server_port_" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1290 1310])
+                    ("read_io_" variable (:type ("ev_io_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1317 1334])
+                    ("write_io_" variable (:type ("ev_io_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1339 1357]))                  
+                :type "class")
+                nil [402 1360]))          
+      :file "clientsocket.h"
+      :pointmax 1389
+      :fsize 1388
+      :lastmodtime '(22573 39785 700617 727000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_CLIENTSOCKET_H_")
+          ("BUFFER_SIZE" . ((number "1032" 374 . 378)))
+          )
+)
+    (semanticdb-table "event.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_EVENT_H_" variable (:constant-flag t) nil [27 36])
+            ("ev_hook" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("hook" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2559 2564])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2565 2569]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2547 2570])
+            ("hook" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2531 2546])
+            ("ev_timeout" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2504 2521])
+            ("ev_feed" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2483 2490])
+                    ("events" variable (:type "int") (reparse-symbol arg-sub-list) [2491 2502]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2471 2503])
+            ("ev_stop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2455 2469])
+            ("ev_run" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2441 2454])
+            ("ev_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2426 2440])
+            ("ev_timer_stop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_timer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2409 2423]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2391 2424])
+            ("ev_timer_start" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_timer_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2375 2389]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2356 2390])
+            ("ev_io_stop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2343 2354]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2328 2355])
+            ("ev_io_start" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2315 2326]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2299 2327])
+            ("ev_loop_s" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("fd_change" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1780 1811])
+                    ("fd_change_cnt" variable (:type "int") (reparse-symbol classsubparts) [1816 1834])
+                    ("fd_set" variable
+                       (:dereference 1
+                        :type ("fd_set_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1856 1889])
+                    ("fd_set_cnt" variable (:type "int") (reparse-symbol classsubparts) [1894 1909])
+                    ("fd_pending" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1915 1952])
+                    ("fd_pending_cnt" variable (:type "int") (reparse-symbol classsubparts) [1957 1976])
+                    ("heap" variable
+                       (:dereference 1
+                        :type ("heap_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1982 2011])
+                    ("timer_cnt" variable (:type "int") (reparse-symbol classsubparts) [2016 2030])
+                    ("mn_now" variable (:type ("ev_tstamp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2035 2052])
+                    ("timeout" variable (:type "int") (reparse-symbol classsubparts) [2057 2069])
+                    ("backend" variable (:type "int") (reparse-symbol classsubparts) [2075 2087])
+                    ("backend_add" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("fd_set_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2111 2124]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2092 2125])
+                    ("backend_mod" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("fd_set_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2149 2162]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2130 2163])
+                    ("backend_del" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("fd_set_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2187 2200]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2168 2201])
+                    ("backend_run" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("loop" variable
+                               (:pointer 1
+                                :type ("ev_loop_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2225 2241]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2206 2242])
+                    ("before_run" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2248 2269])
+                    ("after_run" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2274 2294]))                  )
+                (reparse-symbol extern-c-contents) [1714 2297])
+            ("ev_loop_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("ev_loop_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1678 1713])
+            ("backend" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("BACKEND_EPOLL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1639 1653])
+                    ("BACKEND_SELECT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1658 1673]))                  )
+                (reparse-symbol extern-c-contents) [1620 1676])
+            ("MAX_EVENT_COUNT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1599 1614])
+            ("heap_s" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("at" variable (:type ("ev_tstamp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1550 1563])
+                    ("timer" variable
+                       (:pointer 1
+                        :type ("ev_timer_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1568 1586]))                  )
+                (reparse-symbol extern-c-contents) [1530 1589])
+            ("heap_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("heap_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1500 1529])
+            ("fd_set_s" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("fd" variable (:type "int") (reparse-symbol classsubparts) [1422 1429])
+                    ("active" variable (:type "int") (reparse-symbol classsubparts) [1434 1445])
+                    ("reify" variable (:type "int") (reparse-symbol classsubparts) [1450 1460])
+                    ("events" variable (:type "int") (reparse-symbol classsubparts) [1465 1476])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1481 1495]))                  )
+                (reparse-symbol extern-c-contents) [1400 1498])
+            ("fd_set_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("fd_set_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1366 1399])
+            ("ev_timer_init" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [952 965])
+            ("ev_io_init" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [449 459])
+            ("EV_WRITE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [426 434])
+            ("EV_READ" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [405 412])
+            ("EV_ERROR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [383 391])
+            ("ev_timer_s" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("active" variable (:type "int") (reparse-symbol classsubparts) [307 318])
+                    ("timeout" variable (:type ("ev_tstamp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [323 341])
+                    ("cb" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("ev_timer_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [356 369]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [346 370]))                  )
+                (reparse-symbol extern-c-contents) [283 373])
+            ("ev_timer_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("ev_timer_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [245 282])
+            ("ev_tstamp" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("double"))
+                (reparse-symbol extern-c-contents) [219 244])
+            ("ev_io_s" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("active" variable (:type "int") (reparse-symbol classsubparts) [131 142])
+                    ("fd" variable (:type "int") (reparse-symbol classsubparts) [147 154])
+                    ("event" variable (:type "int") (reparse-symbol classsubparts) [159 169])
+                    ("cb" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("ev_io_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [184 194]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [174 195])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [200 214]))                  )
+                (reparse-symbol extern-c-contents) [110 217])
+            ("ev_io_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("ev_io_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [78 109]))          
+      :file "event.h"
+      :pointmax 2622
+      :fsize 2621
+      :lastmodtime '(22551 44226 0 0)
+      :unmatched-syntax '((TYPEDEF 2523 . 2530))
+      :lexical-table 
+        '(("EV_READ" . ((number "0x01" 413 . 417)))
+          ("ev_timer_init" (spp-arg-list ("ev" "timeout_" "cb_") 965 . 984) . 
+              ((DO "do" 1029 . 1031) (semantic-list "{                                                                       \\
+        (ev)->active  = 0;                                                     \\
+        (ev)->timeout = (timeout_);                                            \\
+        (ev)->cb      = (cb_);                                                 \\
+    }" 1032 . 1354) (WHILE "while" 1355 . 1360) (semantic-list "(0)" 1361 . 1364)))
+          ("_EVENT_H_")
+          ("MAX_EVENT_COUNT" . ((number "512" 1615 . 1618)))
+          ("ev_io_init" (spp-arg-list ("ev" "fd_" "event_" "cb_") 459 . 481) . 
+              ((DO "do" 526 . 528) (semantic-list "{                                                                       \\
+        (ev)->active = 0;                                                      \\
+        (ev)->fd     = (fd_);                                                  \\
+        (ev)->event  = (event_);                                               \\
+        (ev)->cb     = (cb_);                                                  \\
+    }" 529 . 932) (WHILE "while" 933 . 938) (semantic-list "(0)" 939 . 942)))
+          ("EV_ERROR" . ((number "0x00" 392 . 396)))
+          ("EV_WRITE" . ((number "0x02" 435 . 439)))
+          )
+)
+    (semanticdb-table "test.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("myClientsocket" include nil nil [24 45])
+            ("sys" include nil nil [46 56])
+            ("select" include nil nil [57 70])
+            ("time" include nil nil [71 93])
+            ("diskwalk_api" include nil nil [94 127])
+            ("re" include nil nil [128 137])
+            ("ConfigParser" include nil nil [138 175])
+            ("cmd" variable nil nil [194 220])
+            ("confitem" variable nil nil [221 234])
+            ("myDevice" type
+               (:members 
+                  ( ("initDevice" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [273 277]))                          )
+                        (reparse-symbol indented_block_body) [258 2885]))                  
+                :type "class")
+                nil [237 2885])
+            ("main" function nil nil [2887 4200])
+            ("if" code nil nil [4202 4433]))          
+      :file "test.py"
+      :pointmax 4433
+      :fsize 4432
+      :lastmodtime '(22573 43137 626147 933000)
+      :unmatched-syntax nil)
+    (semanticdb-table "diskwalk_api.py"
+      :file "diskwalk_api.py"
+      :fsize 1064
+      :lastmodtime '(22561 24037 268889 0))
+
+)
+  :file "!home!czh!stack!testdev!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

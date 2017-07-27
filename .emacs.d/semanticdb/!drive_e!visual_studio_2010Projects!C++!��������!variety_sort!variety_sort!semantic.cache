@@ -1,0 +1,774 @@
+;; Object variety_sort/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "variety_sort/"
+  :tables (list 
+   (semanticdb-table "variety_sort.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdafx.h" include nil nil [42 61])
+            ("iostream" include (:system-flag t) nil [62 81])
+            ("Constant.h" include nil nil [82 103])
+            ("SingletonFactory.h" include nil nil [104 133])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [135 155])
+            ("get_num" function
+               (:pointer 1
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [177 183]))                  
+                :type "int")
+                nil [164 267])
+            ("show_num" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [292 299])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [300 306]))                  
+                :type "void")
+                nil [278 371])
+            ("_tmain" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [384 393])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("_TCHAR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [394 409]))                  
+                :type "int")
+                nil [373 794]))          
+    :file "variety_sort.cpp"
+    :pointmax 795
+    :fsize 872
+    :lastmodtime '(22357 36834 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "stdafx.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("targetver.h" include nil nil [78 100])
+            ("stdio.h" include (:system-flag t) nil [102 120])
+            ("tchar.h" include (:system-flag t) nil [121 139]))          
+    :file "stdafx.h"
+    :pointmax 168
+    :fsize 233
+    :lastmodtime '(22354 42349 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Constant.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_CONSTANT_H_" variable (:constant-flag t) nil [30 42])
+            ("FactoryEnum" type
+               (:typedef ("FACTORYTag" type (:type "enum") nil nil)
+                :superclasses "FACTORYTag"
+                :type "typedef")
+                nil [44 193])
+            ("FACTORYTag" type
+               (:members 
+                  ( ("kFactory_bubble" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [71 87])
+                    ("kFactory_selection" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [89 108])
+                    ("kFactory_insertion" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [110 129])
+                    ("kFactory_quick" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [131 146])
+                    ("kFactory_heap" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [148 162])
+                    ("kFactory_radix" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [164 181]))                  
+                :type "enum")
+                nil [44 193]))          
+    :file "Constant.h"
+    :pointmax 202
+    :fsize 216
+    :lastmodtime '(22487 25922 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_CONSTANT_H_")
+          )
+
+    )
+   (semanticdb-table "SingletonFactory.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_SINGLETONFACTORY_H_" variable (:constant-flag t) nil [38 58])
+            ("iostream" include (:system-flag t) nil [60 79])
+            ("Constant.h" include nil nil [81 102])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [104 124])
+            ("SingletonFactory" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [176 183])
+                    ("GetInstance" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("factory" variable (:type ("FactoryEnum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [223 243]))                          
+                        :type ("SingletonFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [186 244])
+                    ("Sort" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [264 271])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [272 278]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [246 283])
+                    ("swap" function
+                       (:arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [311 318])
+                            ("i" variable (:type "int") (reparse-symbol arg-sub-list) [319 325])
+                            ("j" variable (:type "int") (reparse-symbol arg-sub-list) [326 332]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [301 387])
+                    ("protected" label nil (reparse-symbol classsubparts) [389 399])
+                    ("SingletonFactory" function
+                       (:constructor-flag t
+                        :type ("SingletonFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [401 444])
+                    ("SingletonFactory" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [446 475])
+                    ("private" label nil (reparse-symbol classsubparts) [477 485])
+                    ("m_Instance" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("SingletonFactory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [487 523])
+                    ("GC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [572 579])
+                            ("GC" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [582 705]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [559 709])
+                    ("gc" variable
+                       (:typemodifiers ("static")
+                        :type ("GC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [711 724]))                  
+                :type "class")
+                nil [151 727]))          
+    :file "SingletonFactory.h"
+    :pointmax 731
+    :fsize 800
+    :lastmodtime '(22487 25986 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_SINGLETONFACTORY_H_")
+          )
+
+    )
+   (semanticdb-table "targetver.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SDKDDKVer.h" include
+               (:system-flag t
+                :truefile "e:/visual_studio_2010Projects/C++/各种排序/variety_sort/variety_sort/targetver.h")
+                nil [151 173]))          
+    :file "targetver.h"
+    :pointmax 174
+    :fsize 236
+    :lastmodtime '(21997 30024 0 0)
+    :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+    )
+   (semanticdb-table "FactoryBubble.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_FACTORYBUBBLE_H" variable (:constant-flag t) nil [34 50])
+            ("iostream" include (:system-flag t) nil [52 71])
+            ("SingletonFactory.h" include nil nil [72 101])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [103 123])
+            ("FactoryBubble" type
+               (:superclasses 
+                  ( ("SingletonFactory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("SingletonFactory" friend nil (reparse-symbol classsubparts) [192 221])
+                    ("public" label nil (reparse-symbol classsubparts) [224 231])
+                    ("Sort" function
+                       (:arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [243 250])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [251 257]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [233 660])
+                    ("protected" label nil (reparse-symbol classsubparts) [720 730])
+                    ("FactoryBubble" function
+                       (:constructor-flag t
+                        :type ("FactoryBubble" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [732 753])
+                    ("FactoryBubble" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [755 781])
+                    ("private" label nil (reparse-symbol classsubparts) [783 791])
+                    ("m_InstanceBubble" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("FactoryBubble" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [793 832])
+                    ("GC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [881 888])
+                            ("GC" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [891 1039]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [868 1043])
+                    ("gc" variable
+                       (:typemodifiers ("static")
+                        :type ("GC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1045 1058]))                  
+                :type "class")
+                nil [143 1061]))          
+    :file "FactoryBubble.h"
+    :pointmax 1070
+    :fsize 1189
+    :lastmodtime '(22354 52952 0 0)
+    :unmatched-syntax '((punctuation 221 . 222))
+    :lexical-table 
+        '(("_FACTORYBUBBLE_H")
+          )
+
+    )
+   (semanticdb-table "FactoryHeap.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_FACTORYHEAP_H" variable (:constant-flag t) nil [32 46])
+            ("iostream" include (:system-flag t) nil [48 67])
+            ("SingletonFactory.h" include nil nil [68 97])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [99 119])
+            ("FactoryHeap" type
+               (:superclasses 
+                  ( ("SingletonFactory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("SingletonFactory" friend nil (reparse-symbol classsubparts) [184 213])
+                    ("public" label nil (reparse-symbol classsubparts) [216 223])
+                    ("Sort" function
+                       (:arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [235 242])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [243 249]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [225 448])
+                    ("protected" label nil (reparse-symbol classsubparts) [450 460])
+                    ("FactoryHeap" function
+                       (:constructor-flag t
+                        :type ("FactoryHeap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [462 480])
+                    ("FactoryHeap" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [483 503])
+                    ("private" label nil (reparse-symbol classsubparts) [505 513])
+                    ("m_InstanceHeap" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("FactoryHeap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [516 551])
+                    ("GC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [567 574])
+                            ("GC" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [577 717]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [554 721])
+                    ("gc" variable
+                       (:typemodifiers ("static")
+                        :type ("GC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [724 737])
+                    ("Heap_Tree" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [755 762])
+                            ("beg" variable (:type "int") (reparse-symbol arg-sub-list) [763 771])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [772 778]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [740 779]))                  
+                :type "class")
+                nil [137 786])
+            ("Heap_Tree" function
+               (:parent "FactoryHeap"
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [816 823])
+                    ("beg" variable (:type "int") (reparse-symbol arg-sub-list) [824 832])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [833 839]))                  
+                :type "void")
+                nil [788 1083]))          
+    :file "FactoryHeap.h"
+    :pointmax 1093
+    :fsize 1242
+    :lastmodtime '(22354 52870 0 0)
+    :unmatched-syntax '((punctuation 213 . 214))
+    :lexical-table 
+        '(("_FACTORYHEAP_H")
+          )
+
+    )
+   (semanticdb-table "FactoryInsertion.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_FACTORYINSERTION_H" variable (:constant-flag t) nil [37 56])
+            ("iostream" include (:system-flag t) nil [58 77])
+            ("SingletonFactory.h" include nil nil [78 107])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [109 129])
+            ("FactoryInsertion" type
+               (:superclasses 
+                  ( ("SingletonFactory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("SingletonFactory" friend nil (reparse-symbol classsubparts) [204 233])
+                    ("public" label nil (reparse-symbol classsubparts) [236 243])
+                    ("Sort" function
+                       (:arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [255 262])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [263 269]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [245 542])
+                    ("protected" label nil (reparse-symbol classsubparts) [604 614])
+                    ("FactoryInsertion" function
+                       (:constructor-flag t
+                        :type ("FactoryInsertion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [616 639])
+                    ("FactoryInsertion" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [641 670])
+                    ("private" label nil (reparse-symbol classsubparts) [672 680])
+                    ("m_InstanceInsertion" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("FactoryInsertion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [682 727])
+                    ("GC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [776 783])
+                            ("GC" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [786 946]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [763 950])
+                    ("gc" variable
+                       (:typemodifiers ("static")
+                        :type ("GC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [952 965]))                  
+                :type "class")
+                nil [152 968]))          
+    :file "FactoryInsertion.h"
+    :pointmax 977
+    :fsize 1071
+    :lastmodtime '(22354 52880 0 0)
+    :unmatched-syntax '((punctuation 233 . 234))
+    :lexical-table 
+        '(("_FACTORYINSERTION_H")
+          )
+
+    )
+   (semanticdb-table "FactoryQuick.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_FACTORYQUICK_H" variable (:constant-flag t) nil [33 48])
+            ("iostream" include (:system-flag t) nil [51 70])
+            ("SingletonFactory.h" include nil nil [71 100])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [102 122])
+            ("FactoryQuick" type
+               (:superclasses 
+                  ( ("SingletonFactory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("SingletonFactory" friend nil (reparse-symbol classsubparts) [189 218])
+                    ("public" label nil (reparse-symbol classsubparts) [221 228])
+                    ("Sort" function
+                       (:arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [240 247])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [248 254]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [230 293])
+                    ("protected" label nil (reparse-symbol classsubparts) [295 305])
+                    ("FactoryQuick" function
+                       (:constructor-flag t
+                        :type ("FactoryQuick" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [307 326])
+                    ("FactoryQuick" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [329 346])
+                    ("private" label nil (reparse-symbol classsubparts) [349 357])
+                    ("m_InstanceQuick" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("FactoryQuick" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [360 397])
+                    ("GC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [413 420])
+                            ("GC" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [423 567]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [400 571])
+                    ("gc" variable
+                       (:typemodifiers ("static")
+                        :type ("GC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [574 587])
+                    ("quick_sort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [604 611])
+                            ("start" variable (:type "int") (reparse-symbol arg-sub-list) [612 622])
+                            ("end" variable (:type "int") (reparse-symbol arg-sub-list) [623 631]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [589 632])
+                    ("quick_sort_clothes" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [658 665])
+                            ("start" variable (:type "int") (reparse-symbol arg-sub-list) [666 676])
+                            ("end" variable (:type "int") (reparse-symbol arg-sub-list) [677 685]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [634 686]))                  
+                :type "class")
+                nil [141 689])
+            ("quick_sort_clothes" function
+               (:parent "FactoryQuick"
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [729 736])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [737 747])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [748 756]))                  
+                :type "void")
+                nil [691 906])
+            ("quick_sort" function
+               (:parent "FactoryQuick"
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [937 944])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [945 955])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [956 964]))                  
+                :type "int")
+                nil [908 1608]))          
+    :file "FactoryQuick.h"
+    :pointmax 1616
+    :fsize 1800
+    :lastmodtime '(22354 52890 0 0)
+    :unmatched-syntax '((punctuation 346 . 347) (punctuation 326 . 327) (punctuation 218 . 219))
+    :lexical-table 
+        '(("_FACTORYQUICK_H")
+          )
+
+    )
+   (semanticdb-table "FactorySelection.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_FACTORYSELECTION_H" variable (:constant-flag t) nil [37 56])
+            ("iostream" include (:system-flag t) nil [58 77])
+            ("SingletonFactory.h" include nil nil [78 107])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [109 129])
+            ("FactorySelection" type
+               (:superclasses 
+                  ( ("SingletonFactory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("SingletonFactory" friend nil (reparse-symbol classsubparts) [204 233])
+                    ("public" label nil (reparse-symbol classsubparts) [236 243])
+                    ("Sort" function
+                       (:arguments 
+                          ( ("L" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [255 262])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [263 269]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [245 432])
+                    ("protected" label nil (reparse-symbol classsubparts) [494 504])
+                    ("FactorySelection" function
+                       (:constructor-flag t
+                        :type ("FactorySelection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [506 529])
+                    ("FactorySelection" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [531 560])
+                    ("private" label nil (reparse-symbol classsubparts) [562 570])
+                    ("m_InstanceSelection" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("FactorySelection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [572 617])
+                    ("GC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [666 673])
+                            ("GC" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [676 836]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [653 840])
+                    ("gc" variable
+                       (:typemodifiers ("static")
+                        :type ("GC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [842 855]))                  
+                :type "class")
+                nil [152 858]))          
+    :file "FactorySelection.h"
+    :pointmax 867
+    :fsize 936
+    :lastmodtime '(22354 52901 0 0)
+    :unmatched-syntax '((punctuation 233 . 234))
+    :lexical-table 
+        '(("_FACTORYSELECTION_H")
+          )
+
+    )
+   (semanticdb-table "SingletonFactory.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdafx.h" include nil nil [1 20])
+            ("SingletonFactory.h" include nil nil [21 50])
+            ("FactoryInsertion.h" include nil nil [51 80])
+            ("FactorySelection.h" include nil nil [81 110])
+            ("FactoryBubble.h" include nil nil [111 137])
+            ("FactoryHeap.h" include nil nil [138 162])
+            ("FactoryQuick.h" include nil nil [163 188])
+            ("FactoryRadix.h" include nil nil [189 214])
+            ("SingletonFactory::m_Instance" variable
+               (:pointer 1
+                :type ("SingletonFactory" type (:type "class") nil nil))
+                nil [253 307])
+            ("SingletonFactory::gc" variable (:type ("SingletonFactory::GC" type (:type "class") nil nil)) nil [308 350])
+            ("FactoryBubble::m_InstanceBubble" variable
+               (:pointer 1
+                :type ("FactoryBubble" type (:type "class") nil nil))
+                nil [352 406])
+            ("FactoryBubble::gc" variable (:type ("FactoryBubble::GC" type (:type "class") nil nil)) nil [407 443])
+            ("FactorySelection::m_InstanceSelection" variable
+               (:pointer 1
+                :type ("FactorySelection" type (:type "class") nil nil))
+                nil [445 508])
+            ("FactorySelection::gc" variable (:type ("FactorySelection::GC" type (:type "class") nil nil)) nil [509 551])
+            ("FactoryInsertion::m_InstanceInsertion" variable
+               (:pointer 1
+                :type ("FactoryInsertion" type (:type "class") nil nil))
+                nil [553 616])
+            ("FactoryInsertion::gc" variable (:type ("FactoryInsertion::GC" type (:type "class") nil nil)) nil [617 659])
+            ("FactoryHeap::m_InstanceHeap" variable
+               (:pointer 1
+                :type ("FactoryHeap" type (:type "class") nil nil))
+                nil [661 709])
+            ("FactoryHeap::gc" variable (:type ("FactoryHeap::GC" type (:type "class") nil nil)) nil [710 742])
+            ("FactoryQuick::m_InstanceQuick" variable
+               (:pointer 1
+                :type ("FactoryQuick" type (:type "class") nil nil))
+                nil [744 795])
+            ("FactoryQuick::gc" variable (:type ("FactoryQuick::GC" type (:type "class") nil nil)) nil [796 830])
+            ("FactoryRadix::m_InstanceRadix" variable
+               (:pointer 1
+                :type ("FactoryRadix" type (:type "class") nil nil))
+                nil [832 883])
+            ("FactoryRadix::gc" variable (:type ("FactoryRadix::GC" type (:type "class") nil nil)) nil [884 918])
+            ("GetInstance" function
+               (:pointer 1
+                :parent "SingletonFactory"
+                :arguments 
+                  ( ("factory" variable (:type ("FactoryEnum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [969 989]))                  
+                :type ("SingletonFactory" type (:type "class") nil nil))
+                nil [921 2480]))          
+    :file "SingletonFactory.cpp"
+    :pointmax 2481
+    :fsize 2635
+    :lastmodtime '(22487 31689 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "FactoryRadix.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_FACTORYRADIX_H_" variable (:constant-flag t) nil [34 50])
+            ("iostream" include (:system-flag t) nil [52 71])
+            ("SingletonFactory.h" include nil nil [72 101])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [103 123])
+            ("FactoryRadix" type
+               (:superclasses 
+                  ( ("SingletonFactory" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("SingletonFactory" friend nil (reparse-symbol classsubparts) [192 221])
+                    ("public" label nil (reparse-symbol classsubparts) [224 231])
+                    ("Sort" function
+                       (:arguments 
+                          ( ("List" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [244 254])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [255 261]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [234 2540])
+                    ("protected" label nil (reparse-symbol classsubparts) [2542 2552])
+                    ("FactoryRadix" function
+                       (:constructor-flag t
+                        :type ("FactoryRadix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2557 2573])
+                    ("FactoryRadix" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2578 2603])
+                    ("private" label nil (reparse-symbol classsubparts) [2605 2613])
+                    ("m_InstanceRadix" variable
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("FactoryRadix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2618 2655])
+                    ("GC" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2708 2715])
+                            ("GC" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2722 2895]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [2694 2903])
+                    ("gc" variable
+                       (:typemodifiers ("static")
+                        :type ("GC" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2908 2921])
+                    ("Node" type
+                       (:typedef ("Node" type (:type "struct") nil nil)
+                        :superclasses "Node"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2925 3001])
+                    ("LinkList" type
+                       (:typedef ("Node" type (:type "struct") nil nil)
+                        :pointer 1
+                        :superclasses "Node"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2925 3001])
+                    ("Node" type
+                       (:members 
+                          ( ("Element" variable (:type "int") (reparse-symbol classsubparts) [2953 2965])
+                            ("Next" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2970 2981]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2925 3001])
+                    ("initBucket" function
+                       (:arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("LinkList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3021 3032])
+                            ("" variable (:type ("Bucket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3032 3039])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3040 3046]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3005 3260]))                  
+                :type "class")
+                nil [143 3265]))          
+    :file "FactoryRadix.h"
+    :pointmax 1984
+    :fsize 3515
+    :lastmodtime '(22487 31403 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_FACTORYRADIX_H_")
+          )
+
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!C++!各种排序!variety_sort!variety_sort!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

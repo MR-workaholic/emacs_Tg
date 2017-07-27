@@ -1,0 +1,194 @@
+;; Object 极客学院算法/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "极客学院算法/"
+  :tables (list 
+   (semanticdb-table "search.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("iostream" include (:system-flag t) nil [41 60])
+            ("vector" include (:system-flag t) nil [61 78])
+            ("algorithm" include (:system-flag t) nil [79 99])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [101 121])
+            ("binary_search" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [298 307])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [308 314])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [315 323]))                  
+                :type "int")
+                nil [280 704])
+            ("lower_bound" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [783 792])
+                    ("low" variable (:type "int") (reparse-symbol arg-sub-list) [793 801])
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) [802 811])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [812 820]))                  
+                :type "int")
+                nil [767 1100])
+            ("upper_bound" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1166 1175])
+                    ("low" variable (:type "int") (reparse-symbol arg-sub-list) [1176 1184])
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) [1185 1194])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [1195 1203]))                  
+                :type "int")
+                nil [1150 1484])
+            ("findValue" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1536 1558])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [1559 1567]))                  
+                :type ("std::pair" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1506 2483])
+            ("findElements" function
+               (:arguments 
+                  ( ("first" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2517 2536])
+                    ("second" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2537 2557]))                  
+                :type "void")
+                nil [2499 3188])
+            ("roateArray" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3236 3253])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3254 3262]))                  
+                :type "bool")
+                nil [3220 3901])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3913 3922])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3923 3936]))                  
+                :type "int")
+                nil [3904 5016]))          
+    :file "search.cpp"
+    :pointmax 5017
+    :fsize 5632
+    :lastmodtime '(22462 50325 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "greed.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("string" include (:system-flag t) nil [39 56])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [58 78])
+            ("MaxSumarray" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [129 146]))                  
+                :type "int")
+                nil [113 623])
+            ("candy" function
+               (:arguments 
+                  ( ("ratings" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [801 822]))                  
+                :type "int")
+                nil [791 1354])
+            ("candy2" function
+               (:arguments 
+                  ( ("ratings" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1367 1388]))                  
+                :type "int")
+                nil [1356 1904])
+            ("canJunp" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2024 2041]))                  
+                :type "bool")
+                nil [2011 2468])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2480 2489])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2490 2503]))                  
+                :type "int")
+                nil [2471 3000]))          
+    :file "greed.cpp"
+    :pointmax 3001
+    :fsize 3602
+    :lastmodtime '(22478 51726 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!NOWCODER!极客学院算法!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

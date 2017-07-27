@@ -1,0 +1,16 @@
+;; Object tutorial/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tutorial/"
+  :tables
+  (list
+    (semanticdb-table "scrapy.cfg"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "scrapy.cfg"
+      :pointmax 261
+      :fsize 260
+      :lastmodtime '(22883 31672 946233 743000)
+      :unmatched-syntax '((symbol 252 . 260) (punctuation 250 . 251) (symbol 242 . 249) (punctuation 223 . 224) (symbol 219 . 223) (punctuation 217 . 218) (symbol 213 . 216) (punctuation 212 . 213) (semantic-list 203 . 211) (symbol 193 . 201) (punctuation 192 . 193) (symbol 184 . 192) (punctuation 182 . 183) (DEFAULT 174 . 181) (semantic-list 163 . 173) (punctuation 113 . 114) (symbol 108 . 113) (punctuation 106 . 107) (punctuation 104 . 105) (symbol 101 . 104) (symbol 93 . 100) (semantic-list 84 . 92) (symbol 80 . 83) (symbol 74 . 79) (symbol 62 . 73) (symbol 57 . 61) (symbol 53 . 56) (punctuation 51 . 52) (punctuation 49 . 50) (symbol 36 . 48) (symbol 29 . 35) (punctuation 27 . 28) (symbol 25 . 27) (symbol 17 . 24) (symbol 3 . 16) (punctuation 1 . 2))))
+  :file "!home!harlan!PythonPro!FirstPro!tutorial!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

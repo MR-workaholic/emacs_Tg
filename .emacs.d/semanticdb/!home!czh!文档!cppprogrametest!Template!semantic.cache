@@ -1,0 +1,191 @@
+;; Object Template/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Template/"
+  :tables
+  (list
+    (semanticdb-table "template.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("string.h" include (:system-flag t) nil [39 58])
+            ("memory" include (:system-flag t) nil [59 76])
+            ("string" include (:system-flag t) nil [77 94])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [96 116])
+            ("compare" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151 162])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163 174]))                  )
+                nil [118 271])
+            ("compare" function
+               (:template 
+                  ( ("unsigned int" type nil nil nil)
+                    ("unsigned int" type nil nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [326 344])
+                    ("" variable
+                       (:constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [349 367]))                  )
+                nil [273 405])
+            ("Blob" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [471 478])
+                    ("value_type" type
+                       (:typedef ("T" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [481 502])
+                    ("size_type" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [533 553])
+                    ("Blob" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Blob" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [556 563])
+                    ("Blob" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("s" variable (:type ("initializer_list" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [571 593]))                          
+                        :type ("Blob" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [566 594])
+                    ("size" function (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [598 644])
+                    ("isEmpty" function (:type "bool") (reparse-symbol classsubparts) [648 693])
+                    ("push_back" function
+                       (:arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [712 727]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [697 760])
+                    ("pop_back" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [764 780])
+                    ("back" function
+                       (:prototype-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [784 794])
+                    ("[]" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("i" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [811 823]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [797 824])
+                    ("private" label nil (reparse-symbol classsubparts) [826 834])
+                    ("data" variable (:type ("shared_ptr" type
+                         (:template-specifier 
+                            ( ("vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [837 864])
+                    ("check" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [878 890])
+                            ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [891 909]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [867 916]))                  )
+                nil [438 920])
+            ("Blob" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Blob" type (:type "class") nil nil)
+                :parent "Blob"
+                :constructor-flag t)
+                nil [956 1027])
+            ("Blob" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("Blob" type (:type "class") nil nil)
+                :arguments 
+                  ( ("s" variable (:type ("initializer_list" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1064 1086]))                  
+                :parent "Blob"
+                :constructor-flag t)
+                nil [1029 1122])
+            ("check" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("i" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1207 1219])
+                    ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1220 1238]))                  
+                :parent "Blob")
+                nil [1166 1307])
+            ("back" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :parent "Blob")
+                nil [1309 1400])
+            ("[]" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1446 1458]))                  
+                :parent "Blob"
+                :operator-flag t)
+                nil [1402 1521])
+            ("pop_back" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :parent "Blob")
+                nil [1523 1617])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1669 1678])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1679 1692]))                  
+                :type "int")
+                nil [1660 2069]))          
+      :file "template.cpp"
+      :pointmax 2070
+      :fsize 2069
+      :lastmodtime '(22825 7117 156095 245000)
+      :unmatched-syntax nil))
+  :file "!home!czh!文档!cppprogrametest!Template!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

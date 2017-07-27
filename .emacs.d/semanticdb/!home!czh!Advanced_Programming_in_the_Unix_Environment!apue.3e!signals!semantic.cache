@@ -1,0 +1,43 @@
+;; Object signals/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "signals/"
+  :tables
+  (list
+    (semanticdb-table "sigusr"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "sigusr"
+      :pointmax 13841
+      :fsize 13840
+      :lastmodtime '(22524 25665 839261 410000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sigusr.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("sig_usr" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [40 44]))                  
+                :type "void")
+                nil [20 45])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [91 96]))                  
+                :type "int")
+                nil [82 276])
+            ("sig_usr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [298 308]))                  
+                :type "void")
+                nil [278 509]))          
+      :file "sigusr.c"
+      :pointmax 510
+      :fsize 509
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil))
+  :file "!home!czh!Advanced_Programming_in_the_Unix_Environment!apue.3e!signals!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

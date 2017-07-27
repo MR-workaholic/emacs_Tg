@@ -1,0 +1,38 @@
+;; Object passnothing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "passnothing/"
+  :tables
+  (list
+    (semanticdb-table "testlib.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("myPrint" function (:type "void") nil [41 88]))          
+      :file "testlib.c"
+      :pointmax 89
+      :fsize 88
+      :lastmodtime '(22564 19364 525169 169000)
+      :unmatched-syntax nil)
+    (semanticdb-table "pytestlib.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ctypes" include nil nil [24 37])
+            ("testlib" variable nil nil [39 76])
+            ("testlib" code nil nil [77 94]))          
+      :file "pytestlib.py"
+      :pointmax 95
+      :fsize 94
+      :lastmodtime '(22564 19656 486130 957000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "Makefile"
+      :pointmax 107
+      :fsize 106
+      :lastmodtime '(22564 19495 497600 623000)
+      :unmatched-syntax '((symbol 98 . 106) (punctuation 97 . 98) (number 95 . 97) (symbol 88 . 95) (punctuation 87 . 88) (symbol 84 . 87) (punctuation 83 . 84) (symbol 80 . 83) (punctuation 79 . 80) (symbol 78 . 79) (punctuation 77 . 78) (number 74 . 76) (symbol 67 . 74) (punctuation 66 . 67) (symbol 59 . 66) (punctuation 58 . 59) (symbol 55 . 58) (punctuation 54 . 55) (symbol 53 . 54) (punctuation 52 . 53) (symbol 44 . 50) (punctuation 43 . 44) (symbol 40 . 42) (punctuation 39 . 40) (symbol 32 . 39) (symbol 30 . 31) (punctuation 29 . 30) (symbol 27 . 28) (punctuation 26 . 27) (symbol 19 . 26) (symbol 14 . 18) (punctuation 13 . 14) (symbol 9 . 12) (punctuation 6 . 7) (symbol 1 . 6))))
+  :file "!home!czh!PULSD!chapterc!python-c-ctypes!passnothing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

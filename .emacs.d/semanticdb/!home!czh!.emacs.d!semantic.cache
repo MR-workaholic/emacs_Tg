@@ -1,0 +1,16 @@
+;; Object .emacs.d/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file ".emacs.d/"
+  :tables
+  (list
+    (semanticdb-table "session.106a216bf23d6a385149788147063300800000015640066"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "session.106a216bf23d6a385149788147063300800000015640066"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22860 53172 846624 854000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

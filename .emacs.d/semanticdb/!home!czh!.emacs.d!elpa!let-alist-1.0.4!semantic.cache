@@ -1,0 +1,32 @@
+;; Object let-alist-1.0.4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "let-alist-1.0.4/"
+  :tables
+  (list
+    (semanticdb-table "let-alist-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "let-alist-autoloads.el"
+      :pointmax 1393
+      :fsize 1392
+      :lastmodtime '(22557 18106 66187 477000)
+      :unmatched-syntax nil)
+    (semanticdb-table "let-alist-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "let-alist-pkg.el"
+      :pointmax 197
+      :fsize 196
+      :lastmodtime '(22557 18106 94187 389000)
+      :unmatched-syntax nil)
+    (semanticdb-table "let-alist.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "let-alist.el"
+      :pointmax 5653
+      :fsize 5652
+      :lastmodtime '(22557 18105 934187 894000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!let-alist-1.0.4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

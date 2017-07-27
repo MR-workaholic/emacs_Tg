@@ -1,0 +1,221 @@
+;; Object String/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "String/"
+  :tables
+  (list
+    (semanticdb-table "MyString.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MyString.h" include nil nil [1 22])
+            ("string.h" include (:system-flag t) nil [23 42])
+            ("increment" variable
+               (:typemodifiers ("static")
+                :default-value "10"
+                :type "int")
+                nil [44 70])
+            ("SetCapacity" function
+               (:parent "MyString"
+                :type "void")
+                nil [72 185])
+            ("MyString" function
+               (:constructor-flag t
+                :parent "MyString"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [206 222]))                  
+                :type ("MyString" type (:type "class") nil nil))
+                nil [187 562])
+            ("MyString" function
+               (:constructor-flag t
+                :parent "MyString"
+                :arguments 
+                  ( ("obj" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [583 603]))                  
+                :type ("MyString" type (:type "class") nil nil))
+                nil [564 733])
+            ("MyString" function
+               (:destructor-flag t
+                :parent "MyString"
+                :type "void")
+                nil [735 835])
+            ("=" function
+               (:operator-flag t
+                :parent "MyString"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [866 886]))                  
+                :type ("MyString" type (:type "class") nil nil))
+                nil [837 1181])
+            ("+" function
+               (:operator-flag t
+                :parent "MyString"
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1212 1232]))                  
+                :type ("MyString" type (:type "class") nil nil))
+                nil [1183 1505])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1532 1549])
+                    ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MyString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1550 1570]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [1507 1605]))          
+      :file "MyString.cpp"
+      :pointmax 1606
+      :fsize 1754
+      :lastmodtime '(22786 5093 9095 814000)
+      :unmatched-syntax nil)
+    (semanticdb-table "MyString.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_MYSTRING_H_" variable (:constant-flag t) nil [30 42])
+            ("iostream" include (:system-flag t) nil [44 63])
+            ("MyString" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [81 88])
+                    ("MyString" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "NULL"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [100 120]))                          
+                        :type ("MyString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [91 122])
+                    ("MyString" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [155 171]))                          
+                        :type ("MyString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [146 172])
+                    ("MyString" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [186 198])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [233 249]))                          
+                        :type ("MyString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [214 250])
+                    ("+" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [288 304]))                          
+                        :type ("MyString" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [269 305])
+                    ("getSize" function (:type "unsigned int") (reparse-symbol classsubparts) [308 353])
+                    ("getCapacity" function (:type "unsigned int") (reparse-symbol classsubparts) [356 409])
+                    ("begin" function
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [412 448])
+                    ("end" function
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [451 493])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [528 542])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MyString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [543 559]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [496 560])
+                    ("private" label nil (reparse-symbol classsubparts) [564 572])
+                    ("_data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [575 587])
+                    ("_size" variable (:type "unsigned int") (reparse-symbol classsubparts) [590 609])
+                    ("_capacity" variable (:type "unsigned int") (reparse-symbol classsubparts) [612 635])
+                    ("SetCapacity" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [638 657]))                  
+                :type "class")
+                nil [65 661]))          
+      :file "MyString.h"
+      :pointmax 671
+      :fsize 744
+      :lastmodtime '(22765 37214 173763 82000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_MYSTRING_H_")
+          )
+)
+    (semanticdb-table "TestString.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MyString.h" include nil nil [1 22])
+            ("iostream" include (:system-flag t) nil [23 42])
+            ("PrintMyString" function
+               (:arguments 
+                  ( ("obj" variable (:type ("MyString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63 76]))                  
+                :type "void")
+                nil [44 194])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [205 214])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [215 228]))                  
+                :type "int")
+                nil [196 505]))          
+      :file "TestString.cpp"
+      :pointmax 506
+      :fsize 505
+      :lastmodtime '(22764 40441 285586 52000)
+      :unmatched-syntax nil))
+  :file "!home!czh!文档!cppprogrametest!String!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

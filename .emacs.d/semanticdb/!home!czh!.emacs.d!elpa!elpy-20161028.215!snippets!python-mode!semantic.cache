@@ -1,0 +1,16 @@
+;; Object python-mode/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python-mode/"
+  :tables
+  (list
+    (semanticdb-table ".yas-setup.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file ".yas-setup.el"
+      :pointmax 2850
+      :fsize 2849
+      :lastmodtime '(22556 36420 649909 126000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!elpy-20161028.215!snippets!python-mode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

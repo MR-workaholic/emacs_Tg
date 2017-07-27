@@ -1,0 +1,32 @@
+;; Object pyvenv-20160527.442/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pyvenv-20160527.442/"
+  :tables
+  (list
+    (semanticdb-table "pyvenv-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "pyvenv-autoloads.el"
+      :pointmax 2026
+      :fsize 2025
+      :lastmodtime '(22556 26987 347436 270000)
+      :unmatched-syntax nil)
+    (semanticdb-table "pyvenv-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "pyvenv-pkg.el"
+      :pointmax 176
+      :fsize 175
+      :lastmodtime '(22556 26987 395436 511000)
+      :unmatched-syntax nil)
+    (semanticdb-table "pyvenv.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "pyvenv.el"
+      :pointmax 17963
+      :fsize 17962
+      :lastmodtime '(22556 26986 515432 97000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!pyvenv-20160527.442!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

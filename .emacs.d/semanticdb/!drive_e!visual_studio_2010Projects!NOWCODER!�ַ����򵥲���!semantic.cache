@@ -1,0 +1,140 @@
+;; Object ×Ö·û´®¼òµ¥²Ù×÷/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "×Ö·û´®¼òµ¥²Ù×÷/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [88 106])
+            ("string" include (:system-flag t) nil [107 123])
+            ("cctype" include (:system-flag t) nil [124 140])
+            ("vector" include (:system-flag t) nil [141 157])
+            ("map" include (:system-flag t) nil [158 171])
+            ("algorithm" include (:system-flag t) nil [172 191])
+            ("sstream" include (:system-flag t) nil [192 209])
+            ("math.h" include (:system-flag t) nil [210 226])
+            ("set" include (:system-flag t) nil [227 240])
+            ("stack" include (:system-flag t) nil [241 256])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [258 278])
+            ("printString" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [297 307]))                  
+                :type "void")
+                nil [280 397])
+            ("replaceSpace" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [489 499])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [499 510]))                  
+                :type "void")
+                nil [471 1139])
+            ("rotateString" function
+               (:arguments 
+                  ( ("A" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1245 1254])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1255 1261])
+                    ("p" variable (:type "int") (reparse-symbol arg-sub-list) [1262 1268]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1225 1543])
+            ("LeftRotateString" function
+               (:arguments 
+                  ( ("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1581 1592])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1593 1599]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1557 1965])
+            ("error_record" function (:type "void") nil [1976 4108])
+            ("hextodec" function (:type "void") nil [4157 5041])
+            ("StrToInt" function
+               (:arguments 
+                  ( ("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5066 5077]))                  
+                :type "int")
+                nil [5053 5634])
+            ("str_fenge" function (:type "void") nil [5706 6145])
+            ("ReverseSentence" function
+               (:arguments 
+                  ( ("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6181 6192]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [6158 6782])
+            ("Permutation" function
+               (:arguments 
+                  ( ("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6953 6964]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [6926 7984])
+            ("Permutation1" function
+               (:arguments 
+                  ( ("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8023 8034]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7995 9145])
+            ("checkPalindrome" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [9179 9185]))                  
+                :type "bool")
+                nil [9158 10471])
+            ("reversenum" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [10500 10506]))                  
+                :type "int")
+                nil [10485 11188])
+            ("string2vec" function
+               (:arguments 
+                  ( ("str" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11214 11225])
+                    ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11226 11244]))                  
+                :type "void")
+                nil [11198 11886])
+            ("isBomb" function
+               (:arguments 
+                  ( ("vec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("char" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [11900 11917]))                  
+                :type "bool")
+                nil [11888 12062])
+            ("judgecards" function
+               (:arguments 
+                  ( ("istr" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12082 12094]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [12064 12953])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [12968 12977])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12978 12991]))                  
+                :type "int")
+                nil [12959 15081]))          
+    :file "main.cpp"
+    :pointmax 15083
+    :fsize 16582
+    :lastmodtime '(22453 45019 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!NOWCODER!×Ö·û´®¼òµ¥²Ù×÷!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

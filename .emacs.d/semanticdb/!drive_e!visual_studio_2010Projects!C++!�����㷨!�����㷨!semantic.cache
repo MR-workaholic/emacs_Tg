@@ -1,0 +1,182 @@
+;; Object 泛型算法/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "泛型算法/"
+  :tables (list 
+   (semanticdb-table "泛型算法.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdafx.h" include nil nil [34 53])
+            ("algorithm" include (:system-flag t) nil [54 74])
+            ("vector" include (:system-flag t) nil [75 92])
+            ("iostream" include (:system-flag t) nil [93 112])
+            ("string" include (:system-flag t) nil [113 130])
+            ("iterator" include (:system-flag t) nil [131 150])
+            ("fstream" include (:system-flag t) nil [151 169])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [171 191])
+            ("textwords" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "vector"
+                :type "typedef")
+                nil [194 227])
+            ("process_vocab" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("textwords" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [248 267]))                  
+                :type "void")
+                nil [229 268])
+            ("LessThan" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [328 335])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("s1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [353 371])
+                            ("s2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [371 389]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [337 432]))                  
+                :type "class")
+                nil [312 437])
+            ("GreaterThan" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [470 477])
+                    ("GreaterThan" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("sz" variable (:type "int") (reparse-symbol arg-sub-list) [491 498]))                          
+                        :type ("GreaterThan" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [479 512])
+                    ("size" function (:type "int") (reparse-symbol classsubparts) [515 540])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("s1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [559 576]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [543 609])
+                    ("private" label nil (reparse-symbol classsubparts) [610 618])
+                    ("_size" variable (:type "int") (reparse-symbol classsubparts) [620 630]))                  
+                :type "class")
+                nil [450 633])
+            ("PrintElem" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [660 667])
+                    ("PrintElem" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("lineLen" variable (:type "int") (reparse-symbol arg-sub-list) [679 691]))                          
+                        :type ("PrintElem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [669 725])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("elem" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [745 764]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [729 863])
+                    ("_cnt" variable (:type "int") (reparse-symbol classsubparts) [875 897])
+                    ("_line_length" variable (:type "int") (reparse-symbol classsubparts) [875 897]))                  
+                :type "class")
+                nil [642 901])
+            ("diff_type" variable (:type ("difference_type" type (:type "class") nil nil)) nil [929 955])
+            ("_tmain" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [991 1000])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("_TCHAR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1001 1016]))                  
+                :type "int")
+                nil [980 2330])
+            ("process_vocab" function
+               (:arguments 
+                  ( ("prec" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("textwords" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2354 2378]))                  
+                :type "void")
+                nil [2335 3705]))          
+    :file "泛型算法.cpp"
+    :pointmax 3707
+    :fsize 4159
+    :lastmodtime '(22351 63645 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "stdafx.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdafx.h" include nil nil [77 96]))          
+    :file "stdafx.cpp"
+    :pointmax 147
+    :fsize 213
+    :lastmodtime '(21860 7601 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "stdafx.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("targetver.h" include (:truefile "e:/visual_studio_2010Projects/C++/泛型算法/泛型算法/stdafx.h") nil [78 100])
+            ("stdio.h" include
+               (:system-flag t
+                :truefile "e:/visual_studio_2010Projects/C++/泛型算法/泛型算法/stdafx.h")
+                nil [102 120])
+            ("tchar.h" include
+               (:system-flag t
+                :truefile "e:/visual_studio_2010Projects/C++/泛型算法/泛型算法/stdafx.h")
+                nil [121 139]))          
+    :file "stdafx.h"
+    :pointmax 167
+    :fsize 231
+    :lastmodtime '(22351 61985 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "targetver.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SDKDDKVer.h" include
+               (:truefile "e:/visual_studio_2010Projects/C++/泛型算法/泛型算法/targetver.h"
+                :system-flag t)
+                nil [151 173]))          
+    :file "targetver.h"
+    :pointmax 174
+    :fsize 236
+    :lastmodtime '(21860 7601 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!C++!泛型算法!泛型算法!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

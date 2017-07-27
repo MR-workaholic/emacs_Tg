@@ -1,0 +1,888 @@
+;; Object code/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "code/"
+  :tables (list 
+   (semanticdb-table "MyExperiment.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("MyExperiment.h" include nil nil [1 26])
+            ("fstream" include (:system-flag t) nil [27 45])
+            ("math.h" include (:system-flag t) nil [46 63])
+            ("ns3" using (:type ("ns3" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [64 84])
+            ("NS_LOG_COMPONENT_DEFINE" function
+               (:prototype-flag t
+                :type "int")
+                nil [85 127])
+            ("DataRecorder" function
+               (:constructor-flag t
+                :parent "DataRecorder"
+                :arguments 
+                  ( ("dstp" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [156 179])
+                    ("dsd" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [179 201])
+                    ("dss" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [201 223])
+                    ("dse" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [223 245]))                  
+                :type ("DataRecorder" type (:type "class") nil nil))
+                nil [129 430])
+            ("Experiment" function
+               (:constructor-flag t
+                :parent "Experiment"
+                :type ("Experiment" type (:type "class") nil nil))
+                nil [433 1368])
+            ("ReceivePacket" function
+               (:parent "DataRecorder"
+                :arguments 
+                  ( ("packet" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Packet" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1404 1424])
+                    ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1425 1440]))                  
+                :type "void")
+                nil [1370 1875])
+            ("SendPacket" function
+               (:parent "DataRecorder"
+                :arguments 
+                  ( ("packet" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Packet" type (:constant-flag t) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1907 1932])
+                    ("proto" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1932 1947]))                  
+                :type "void")
+                nil [1876 1974])
+            ("SendPacket2" function
+               (:parent "DataRecorder"
+                :arguments 
+                  ( ("packet" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Packet" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2007 2027])
+                    ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2028 2043]))                  
+                :type "void")
+                nil [1975 2070])
+            ("DataOutput" function
+               (:parent "DataRecorder"
+                :arguments 
+                  ( ("avgs" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2102 2116])
+                    ("simtime" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2116 2129])
+                    ("nc" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("NodeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2129 2153])
+                    ("x" variable (:type "double") (reparse-symbol arg-sub-list) [2153 2162]))                  
+                :type "void")
+                nil [2071 3634])
+            ("ResetData" function
+               (:parent "DataRecorder"
+                :arguments 
+                  ( ("simtime" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3665 3678])
+                    ("moduledatarate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3678 3702]))                  
+                :type "void")
+                nil [3636 4484])
+            ("UpdatePositionsMy" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("nodes" variable
+                       (:reference 1
+                        :type ("NodeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4524 4545])
+                    ("sink" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [4545 4560]))                  
+                :type "void")
+                nil [4488 5270])
+            ("PoissonTraffic" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("sender" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5304 5321])
+                    ("receiver" variable
+                       (:reference 1
+                        :type ("NodeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5321 5345])
+                    ("urv" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("UniformRandomVariable" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5345 5376])
+                    ("erv" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("ExponentialRandomVariable" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5376 5411]))                  
+                :type "void")
+                nil [5272 5925])
+            ("DifferentCw" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("nc" variable
+                       (:reference 1
+                        :type ("NodeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5956 5974])
+                    ("sink" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5974 5989]))                  
+                :type "void")
+                nil [5927 6784])
+            ("DifferentCwFix" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("nc" variable
+                       (:reference 1
+                        :type ("NodeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6818 6836])
+                    ("sink" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [6836 6851]))                  
+                :type "void")
+                nil [6786 7466])
+            ("DifferentCw2" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("nc" variable
+                       (:reference 1
+                        :type ("NodeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7498 7516])
+                    ("sink" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [7516 7531]))                  
+                :type "void")
+                nil [7468 8752])
+            ("DifferentP" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("nc" variable
+                       (:reference 1
+                        :type ("NodeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8781 8799])
+                    ("sink" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [8799 8814]))                  
+                :type "void")
+                nil [8753 9608])
+            ("DifferentP2" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("nc" variable
+                       (:reference 1
+                        :type ("NodeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9638 9656])
+                    ("sink" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Node" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [9656 9671]))                  
+                :type "void")
+                nil [9609 10858])
+            ("Run" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("pos" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("ListPositionAllocator" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [10882 10913])
+                    ("dstp" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10913 10936])
+                    ("dsd" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10936 10958])
+                    ("dss" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10958 10980])
+                    ("dse" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10980 11002])
+                    ("xlabel" variable (:type "double") (reparse-symbol arg-sub-list) [11002 11016]))                  
+                :type "void")
+                nil [10859 16620])
+            ("changeLineType" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16642 16662])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16663 16683])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16684 16704])
+                    ("d" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16705 16725])
+                    ("" variable (:type ("Gnuplot2dDataset" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [16726 16748])
+                    ("style" variable (:type ("Style" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16749 16761]))                  
+                :type "void")
+                nil [16622 16762])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [16774 16783])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16783 16795]))                  
+                :type "int")
+                nil [16764 25692])
+            ("changeLineType" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25714 25734])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25735 25755])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25756 25776])
+                    ("d" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25777 25797])
+                    ("" variable (:type ("Gnuplot2dDataset" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [25798 25820])
+                    ("style" variable (:type ("Style" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25821 25833]))                  
+                :type "void")
+                nil [25694 25934]))          
+    :file "MyExperiment.cc"
+    :pointmax 25937
+    :fsize 26074
+    :lastmodtime '(22329 12038 0 0)
+    :unmatched-syntax '((punctuation 25820 . 25821) (punctuation 25819 . 25820) (punctuation 16748 . 16749) (punctuation 16747 . 16748) (string 110 . 125))
+    )
+   (semanticdb-table "MyExperiment.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("MY_EXPERIMENT_H" variable (:constant-flag t) nil [33 48])
+            ("ns3/network-module.h" include nil nil [50 81])
+            ("ns3/stats-module.h" include nil nil [82 111])
+            ("ns3/uan-module.h" include nil nil [112 139])
+            ("ns3/core-module.h" include nil nil [140 168])
+            ("ns3/network-module.h" include nil nil [169 200])
+            ("ns3/mobility-module.h" include nil nil [201 233])
+            ("ns3/stats-module.h" include nil nil [234 263])
+            ("ns3/applications-module.h" include nil nil [264 300])
+            ("ns3/energy-module.h" include nil nil [301 331])
+            ("ns3" using (:type ("ns3" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [333 353])
+            ("DataRecorder" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [377 384])
+                    ("DataRecorder" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("dstp" variable
+                               (:pointer 1
+                                :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [399 422])
+                            ("dsd" variable
+                               (:pointer 1
+                                :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [422 444])
+                            ("dss" variable
+                               (:pointer 1
+                                :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [444 466])
+                            ("dse" variable
+                               (:pointer 1
+                                :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [466 488]))                          
+                        :type ("DataRecorder" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [386 489])
+                    ("ReceivePacket" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("packet" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [510 529])
+                            ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [530 545]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [491 546])
+                    ("SendPacket" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("packet" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type (:constant-flag t) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [564 589])
+                            ("proto" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [590 605]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [548 606])
+                    ("ResetData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("simtime" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [623 636])
+                            ("moduledatarate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [636 660]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [608 661])
+                    ("DataOutput" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("avgs" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [679 693])
+                            ("simtime" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [693 706])
+                            ("nc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("NodeContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [706 730])
+                            ("x" variable (:type "double") (reparse-symbol arg-sub-list) [730 739]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [663 740])
+                    ("SendPacket2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("packet" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [759 779])
+                            ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [780 795]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [742 796])
+                    ("m_dstp" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [799 824])
+                    ("m_dsd" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [826 850])
+                    ("m_dss" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [852 876])
+                    ("m_dse" variable
+                       (:pointer 1
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [878 902])
+                    ("private" label nil (reparse-symbol classsubparts) [904 912])
+                    ("m_avgThroughtput" variable (:type "double") (reparse-symbol classsubparts) [916 940])
+                    ("m_totalReceivedBytes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [942 972])
+                    ("m_totalSentPackets" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [974 1002])
+                    ("m_totalReceivedPackets" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1004 1036])
+                    ("m_totalDelay" variable (:type "double") (reparse-symbol classsubparts) [1038 1058])
+                    ("m_sentTimes" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("UanAddress" type nil nil nil)
+                              ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1065 1107])
+                    ("m_eachDelays" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("UanAddress" type nil nil nil)
+                              ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1109 1152])
+                    ("m_throughtputs" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1154 1189])
+                    ("m_sentPackets" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1191 1227])
+                    ("m_receivedPackets" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1229 1269])
+                    ("m_delays" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1271 1300])
+                    ("m_fairness" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1302 1333])
+                    ("m_eachPackets" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("UanAddress" type nil nil nil)
+                              ("uint32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1335 1379]))                  
+                :type "class")
+                nil [355 1382])
+            ("Experiment" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1403 1410])
+                    ("Run" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pos" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("ListPositionAllocator" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1422 1453])
+                            ("dstp" variable
+                               (:pointer 1
+                                :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1453 1476])
+                            ("dsd" variable
+                               (:pointer 1
+                                :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1476 1498])
+                            ("dss" variable
+                               (:pointer 1
+                                :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1498 1520])
+                            ("dse" variable
+                               (:pointer 1
+                                :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1520 1542])
+                            ("xlabel" variable (:type "double") (reparse-symbol arg-sub-list) [1542 1556]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1412 1557])
+                    ("PoissonTraffic" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sender" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1579 1596])
+                            ("receiver" variable
+                               (:reference 1
+                                :type ("NodeContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1596 1620])
+                            ("urv" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("UniformRandomVariable" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1620 1651])
+                            ("erv" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("ExponentialRandomVariable" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1651 1686]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1559 1687])
+                    ("UpdatePositionsMy" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nodes" variable
+                               (:reference 1
+                                :type ("NodeContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1713 1734])
+                            ("sink" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1734 1749]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1689 1750])
+                    ("ResetData" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1752 1770])
+                    ("DifferentCw" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nc" variable
+                               (:reference 1
+                                :type ("NodeContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1789 1807])
+                            ("sink" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1807 1822]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1772 1823])
+                    ("DifferentCw2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nc" variable
+                               (:reference 1
+                                :type ("NodeContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1844 1862])
+                            ("sink" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1862 1877]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1826 1878])
+                    ("DifferentP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nc" variable
+                               (:reference 1
+                                :type ("NodeContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1896 1914])
+                            ("sink" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1914 1929]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1880 1930])
+                    ("DifferentP2" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nc" variable
+                               (:reference 1
+                                :type ("NodeContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1949 1967])
+                            ("sink" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1967 1982]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1932 1983])
+                    ("DifferentCwFix" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nc" variable
+                               (:reference 1
+                                :type ("NodeContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2005 2023])
+                            ("sink" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Node" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2023 2038]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1985 2039])
+                    ("m_numNodes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2063 2083])
+                    ("m_moduleDataRate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2135 2161])
+                    ("m_depth" variable (:type "double") (reparse-symbol classsubparts) [2202 2217])
+                    ("m_boundary" variable (:type "double") (reparse-symbol classsubparts) [2282 2300])
+                    ("m_lambdaMin" variable (:type "double") (reparse-symbol classsubparts) [2352 2371])
+                    ("m_lambdaMax" variable (:type "double") (reparse-symbol classsubparts) [2409 2428])
+                    ("m_lambdaStep" variable (:type "double") (reparse-symbol classsubparts) [2466 2486])
+                    ("m_lambda" variable (:type "double") (reparse-symbol classsubparts) [2523 2539])
+                    ("m_packetSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2541 2563])
+                    ("m_avgs" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2615 2631])
+                    ("m_cwMin" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2705 2722])
+                    ("m_cwMax" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2750 2767])
+                    ("m_cwStep" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2795 2813])
+                    ("m_cw" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2840 2854])
+                    ("m_txPower" variable (:type "double") (reparse-symbol classsubparts) [2882 2901])
+                    ("m_slotTime" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2903 2919])
+                    ("m_simTime" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2921 2936])
+                    ("m_MaxPropDelayMin" variable (:type "double") (reparse-symbol classsubparts) [3001 3026])
+                    ("m_MaxPropDelayMax" variable (:type "double") (reparse-symbol classsubparts) [3028 3053])
+                    ("m_MaxPropDelayStep" variable (:type "double") (reparse-symbol classsubparts) [3055 3081])
+                    ("m_MaxPropDelay" variable (:type "double") (reparse-symbol classsubparts) [3083 3105])
+                    ("m_MaxBurstMin" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3108 3131])
+                    ("m_MaxBurstMax" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3133 3156])
+                    ("m_MaxBurstStep" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3158 3182])
+                    ("m_MaxBurst" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3184 3204])
+                    ("m_QueueLimitMin" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3207 3232])
+                    ("m_QueueLimitMax" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3234 3259])
+                    ("m_QueueLimitStep" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3261 3287])
+                    ("m_QueueLimit" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3289 3311])
+                    ("m_SlotTimeMin" variable (:type "double") (reparse-symbol classsubparts) [3314 3335])
+                    ("m_SlotTimeMax" variable (:type "double") (reparse-symbol classsubparts) [3337 3358])
+                    ("m_SlotTimeStep" variable (:type "double") (reparse-symbol classsubparts) [3360 3382])
+                    ("m_SlotTime" variable (:type "double") (reparse-symbol classsubparts) [3384 3402])
+                    ("m_chartType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3406 3430])
+                    ("m_gnudatfile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3433 3458])
+                    ("m_asciitracefile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3529 3558])
+                    ("m_bhCfgFile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3626 3650])
+                    ("m_macType" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3677 3699])
+                    ("Experiment" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Experiment" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3702 3716]))                  
+                :type "class")
+                nil [1384 3719]))          
+    :file "MyExperiment.h"
+    :pointmax 3728
+    :fsize 3727
+    :lastmodtime '(22328 7096 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MY_EXPERIMENT_H")
+          )
+
+    )
+   (semanticdb-table "uan-mac-cw.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("uan-mac-cw.h" include nil nil [822 845])
+            ("ns3/attribute.h" include nil nil [846 872])
+            ("ns3/uinteger.h" include nil nil [873 898])
+            ("ns3/double.h" include nil nil [899 922])
+            ("ns3/nstime.h" include nil nil [923 946])
+            ("uan-header-sim.h" include nil nil [947 974])
+            ("ns3/uan-header-common.h" include nil nil [975 1009])
+            ("ns3/trace-source-accessor.h" include nil nil [1010 1048])
+            ("ns3/log.h" include nil nil [1049 1069])
+            ("ns3" type
+               (:members 
+                  ( ("NS_LOG_COMPONENT_DEFINE" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1088 1125])
+                    ("NS_OBJECT_ENSURE_REGISTERED" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("UanMacCw" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1156 1165]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1127 1166])
+                    ("UanMacCw" function
+                       (:constructor-flag t
+                        :parent "UanMacCw"
+                        :type ("UanMacCw" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1168 1332])
+                    ("UanMacCw" function
+                       (:destructor-flag t
+                        :parent "UanMacCw"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1334 1360])
+                    ("Clear" function
+                       (:parent "UanMacCw"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1362 1583])
+                    ("DoDispose" function
+                       (:parent "UanMacCw"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1585 1652])
+                    ("GetTypeId" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1682 1687]))                          
+                        :type ("TypeId" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1654 3006])
+                    ("GetAddress" function
+                       (:parent "UanMacCw"
+                        :type ("Address" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3008 3069])
+                    ("SetAddress" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("addr" variable (:type ("UanAddress" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3098 3114]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3071 3138])
+                    ("Enqueue" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("packet" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3164 3183])
+                            ("dest" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Address" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3184 3204])
+                            ("protocolNumber" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3205 3229]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3140 5623])
+                    ("SetForwardUpCb" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("cb" variable (:type ("Callback" type
+                                 (:template-specifier 
+                                    ( ("void" type nil nil nil)
+                                      ("Ptr" type nil nil nil)
+                                      ("UanAddress" type
+                                         (:reference 1
+                                          :constant-flag t)
+                                          nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [5656 5706]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5625 5732])
+                    ("AttachPhy" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("phy" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("UanPhy" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [5760 5776]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5734 5995])
+                    ("GetBroadcast" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6029 6034]))                          
+                        :type ("Address" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5997 6082])
+                    ("NotifyRxStart" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6115 6120]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6085 6336])
+                    ("NotifyRxEndOk" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6367 6372]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6337 6618])
+                    ("NotifyRxEndError" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6652 6657]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6619 6903])
+                    ("NotifyCcaStart" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6935 6940]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6904 7156])
+                    ("NotifyCcaEnd" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7186 7191]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7157 7408])
+                    ("NotifyTxStart" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("duration" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7439 7453]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7409 7850])
+                    ("AssignStreams" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("stream" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7885 7900]))                          
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7852 7980])
+                    ("EndTx" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8004 8009]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7982 8492])
+                    ("SetCw" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("cw" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8515 8527]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8493 8544])
+                    ("SetSlotTime" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("duration" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8573 8587]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8545 8616])
+                    ("GetCw" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8643 8648]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8617 8667])
+                    ("GetSlotTime" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8696 8701]))                          
+                        :type ("Time" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8668 8726])
+                    ("PhyRxPacketGood" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("packet" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [8759 8778])
+                            ("sinr" variable (:type "double") (reparse-symbol arg-sub-list) [8779 8791])
+                            ("mode" variable (:type ("UanTxMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8792 8807]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8727 9178])
+                    ("PhyRxPacketError" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("packet" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Packet" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [9212 9231])
+                            ("sinr" variable (:type "double") (reparse-symbol arg-sub-list) [9232 9244]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9179 9249])
+                    ("SaveTimer" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9276 9281]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9250 9634])
+                    ("StartTimer" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9662 9667]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9635 10073])
+                    ("SendPacket" function
+                       (:parent "UanMacCw"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10102 10107]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10075 10388]))                  
+                :type "namespace")
+                nil [1071 10391]))          
+    :file "uan-mac-cw.cc"
+    :pointmax 10409
+    :fsize 10408
+    :lastmodtime '(22270 17197 0 0)
+    :unmatched-syntax '((string 1113 . 1123))
+    )
+   (semanticdb-table "uan-mac-cw.h"
+    :file "uan-mac-cw.h"
+    :fsize 5689
+    :lastmodtime '(22270 17939 0 0)
+    )
+   )
+  :file "!drive_e!hengÂÛÎÄ!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

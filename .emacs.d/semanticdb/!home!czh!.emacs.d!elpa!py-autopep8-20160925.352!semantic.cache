@@ -1,0 +1,32 @@
+;; Object py-autopep8-20160925.352/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "py-autopep8-20160925.352/"
+  :tables
+  (list
+    (semanticdb-table "py-autopep8-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "py-autopep8-autoloads.el"
+      :pointmax 782
+      :fsize 781
+      :lastmodtime '(22557 34681 869806 979000)
+      :unmatched-syntax nil)
+    (semanticdb-table "py-autopep8-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "py-autopep8-pkg.el"
+      :pointmax 143
+      :fsize 142
+      :lastmodtime '(22557 34681 893806 903000)
+      :unmatched-syntax nil)
+    (semanticdb-table "py-autopep8.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "py-autopep8.el"
+      :pointmax 5916
+      :fsize 5915
+      :lastmodtime '(22557 34681 673807 598000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!py-autopep8-20160925.352!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,392 @@
+;; Object ein-20161030.1637/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ein-20161030.1637/"
+  :tables
+  (list
+    (semanticdb-table "ein-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-autoloads.el"
+      :pointmax 11615
+      :fsize 11614
+      :lastmodtime '(22557 36584 979793 41000)
+      :unmatched-syntax nil)
+    (semanticdb-table "debug-ein.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "debug-ein.el"
+      :pointmax 2235
+      :fsize 2234
+      :lastmodtime '(22557 36582 179801 889000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-ac.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-ac.el"
+      :pointmax 8983
+      :fsize 8982
+      :lastmodtime '(22557 36582 443801 55000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-cell-edit.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-cell-edit.el"
+      :pointmax 6461
+      :fsize 6460
+      :lastmodtime '(22557 36582 307801 485000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-cell-output.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-cell-output.el"
+      :pointmax 5764
+      :fsize 5763
+      :lastmodtime '(22557 36582 519800 815000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-cell.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-cell.el"
+      :pointmax 50472
+      :fsize 50473
+      :lastmodtime '(22557 36582 467800 979000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-completer.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-completer.el"
+      :pointmax 4576
+      :fsize 4575
+      :lastmodtime '(22557 36582 935799 500000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-connect.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-connect.el"
+      :pointmax 14895
+      :fsize 14894
+      :lastmodtime '(22557 36582 859799 740000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-console.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-console.el"
+      :pointmax 8819
+      :fsize 8818
+      :lastmodtime '(22557 36582 619800 499000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-contents-api.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-contents-api.el"
+      :pointmax 18922
+      :fsize 18921
+      :lastmodtime '(22557 36582 975799 374000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-core.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-core.el"
+      :pointmax 10533
+      :fsize 10532
+      :lastmodtime '(22557 36582 951799 450000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-dev.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-dev.el"
+      :pointmax 12127
+      :fsize 12126
+      :lastmodtime '(22557 36583 3799 285000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-events.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-events.el"
+      :pointmax 2160
+      :fsize 2159
+      :lastmodtime '(22557 36583 103798 969000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-helm.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-helm.el"
+      :pointmax 5566
+      :fsize 5565
+      :lastmodtime '(22557 36582 415801 143000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-iexec.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-iexec.el"
+      :pointmax 2610
+      :fsize 2609
+      :lastmodtime '(22557 36582 823799 854000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-ipdb.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-ipdb.el"
+      :pointmax 5552
+      :fsize 5551
+      :lastmodtime '(22557 36582 391801 219000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-ipynb-mode.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-ipynb-mode.el"
+      :pointmax 1772
+      :fsize 1771
+      :lastmodtime '(22557 36582 367801 295000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-jedi.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-jedi.el"
+      :pointmax 3153
+      :fsize 3152
+      :lastmodtime '(22557 36582 723800 170000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-junk.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-junk.el"
+      :pointmax 3040
+      :fsize 3039
+      :lastmodtime '(22557 36582 543800 739000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-kernel.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-kernel.el"
+      :pointmax 35902
+      :fsize 35901
+      :lastmodtime '(22557 36582 323801 434000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-kernelinfo.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-kernelinfo.el"
+      :pointmax 3822
+      :fsize 3821
+      :lastmodtime '(22557 36582 227801 737000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-kill-ring.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-kill-ring.el"
+      :pointmax 1969
+      :fsize 1968
+      :lastmodtime '(22557 36582 279801 573000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-loaddefs.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-loaddefs.el"
+      :pointmax 11286
+      :fsize 11285
+      :lastmodtime '(22557 36581 951802 610000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-log.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-log.el"
+      :pointmax 3544
+      :fsize 3543
+      :lastmodtime '(22557 36582 255801 649000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-multilang-fontify.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-multilang-fontify.el"
+      :pointmax 2943
+      :fsize 2942
+      :lastmodtime '(22557 36582 27802 369000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-multilang.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-multilang.el"
+      :pointmax 11164
+      :fsize 11163
+      :lastmodtime '(22557 36582 883799 664000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-node.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-node.el"
+      :pointmax 2261
+      :fsize 2260
+      :lastmodtime '(22557 36582 671800 334000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-notebook.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-notebook.el"
+      :pointmax 71063
+      :fsize 71062
+      :lastmodtime '(22557 36582 907799 589000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-notebooklist.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-notebooklist.el"
+      :pointmax 35164
+      :fsize 35163
+      :lastmodtime '(22557 36582 643800 423000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-notification.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-notification.el"
+      :pointmax 14790
+      :fsize 14789
+      :lastmodtime '(22557 36583 51799 134000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-org.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-org.el"
+      :pointmax 4296
+      :fsize 4295
+      :lastmodtime '(22557 36581 919802 711000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-output-area.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-output-area.el"
+      :pointmax 3929
+      :fsize 3928
+      :lastmodtime '(22557 36582 339801 383000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-pager.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-pager.el"
+      :pointmax 2586
+      :fsize 2585
+      :lastmodtime '(22557 36582 595800 575000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-pkg.el"
+      :pointmax 181
+      :fsize 180
+      :lastmodtime '(22557 36582 127802 53000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-pseudo-console.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-pseudo-console.el"
+      :pointmax 1452
+      :fsize 1451
+      :lastmodtime '(22557 36582 151801 978000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-python.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-python.el"
+      :pointmax 2269
+      :fsize 2268
+      :lastmodtime '(22557 36582 695800 259000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-pytools.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-pytools.el"
+      :pointmax 13222
+      :fsize 13221
+      :lastmodtime '(22557 36581 975802 534000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-query.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-query.el"
+      :pointmax 3608
+      :fsize 3607
+      :lastmodtime '(22557 36582 747800 94000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-scratchsheet.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-scratchsheet.el"
+      :pointmax 1834
+      :fsize 1833
+      :lastmodtime '(22557 36583 79799 45000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-shared-output.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-shared-output.el"
+      :pointmax 9780
+      :fsize 9779
+      :lastmodtime '(22557 36582 567800 663000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-smartrep.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-smartrep.el"
+      :pointmax 1895
+      :fsize 1894
+      :lastmodtime '(22557 36582 203801 813000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-subpackages.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-subpackages.el"
+      :pointmax 2877
+      :fsize 2876
+      :lastmodtime '(22557 36582 75802 218000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-traceback.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-traceback.el"
+      :pointmax 6504
+      :fsize 6503
+      :lastmodtime '(22557 36582 771800 18000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-utils.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-utils.el"
+      :pointmax 21245
+      :fsize 21244
+      :lastmodtime '(22557 36582 491800 903000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-websocket.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-websocket.el"
+      :pointmax 5414
+      :fsize 5413
+      :lastmodtime '(22557 36583 27799 209000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein-worksheet.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein-worksheet.el"
+      :pointmax 39829
+      :fsize 39828
+      :lastmodtime '(22557 36582 799799 930000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ein.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ein.el"
+      :pointmax 4451
+      :fsize 4450
+      :lastmodtime '(22557 36582 51802 294000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ob-ein.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "ob-ein.el"
+      :pointmax 7067
+      :fsize 7066
+      :lastmodtime '(22557 36582 103802 129000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!ein-20161030.1637!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

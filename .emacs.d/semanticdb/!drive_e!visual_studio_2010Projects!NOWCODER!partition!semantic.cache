@@ -1,0 +1,101 @@
+;; Object partition/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "partition/"
+  :tables (list 
+   (semanticdb-table ".projectile"
+    :major-mode 'c++-mode
+    :tags nil
+    :file ".projectile"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(22348 11735 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("string" include (:system-flag t) nil [39 56])
+            ("sstream" include (:system-flag t) nil [57 75])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [77 97])
+            ("swap" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [110 127])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [128 134])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [135 141]))                  
+                :type "void")
+                nil [100 214])
+            ("partition" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [231 248])
+                    ("begin" variable (:type "int") (reparse-symbol arg-sub-list) [249 259])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [260 268]))                  
+                :type "int")
+                nil [216 952])
+            ("findkthmax" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [985 1002])
+                    ("kthmin" variable (:type "int") (reparse-symbol arg-sub-list) [1003 1014])
+                    ("begin" variable (:type "int") (reparse-symbol arg-sub-list) [1015 1025])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [1026 1034]))                  
+                :type "int")
+                nil [970 1275])
+            ("three_way_partition" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1389 1406])
+                    ("target" variable (:type "int") (reparse-symbol arg-sub-list) [1407 1418]))                  
+                :type "void")
+                nil [1364 1783])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1794 1803])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1804 1817]))                  
+                :type "int")
+                nil [1785 2280]))          
+    :file "main.cpp"
+    :pointmax 2280
+    :fsize 2445
+    :lastmodtime '(22501 5816 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!NOWCODER!partition!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,32 @@
+;; Object request-20160822.1659/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "request-20160822.1659/"
+  :tables
+  (list
+    (semanticdb-table "request-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "request-autoloads.el"
+      :pointmax 366
+      :fsize 365
+      :lastmodtime '(22557 36570 307839 405000)
+      :unmatched-syntax nil)
+    (semanticdb-table "request-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "request-pkg.el"
+      :pointmax 119
+      :fsize 118
+      :lastmodtime '(22557 36570 335839 317000)
+      :unmatched-syntax nil)
+    (semanticdb-table "request.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "request.el"
+      :pointmax 52346
+      :fsize 52345
+      :lastmodtime '(22557 36570 203839 734000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!request-20160822.1659!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

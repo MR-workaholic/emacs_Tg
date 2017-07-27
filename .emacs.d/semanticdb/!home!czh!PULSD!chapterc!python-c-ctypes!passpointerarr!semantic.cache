@@ -1,0 +1,43 @@
+;; Object passpointerarr/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "passpointerarr/"
+  :tables
+  (list
+    (semanticdb-table "testlib.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("arrayFunc" function
+               (:arguments 
+                  ( ("sum" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [37 46])
+                    ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [47 58]))                  
+                :type "void")
+                nil [22 139]))          
+      :file "testlib.c"
+      :pointmax 140
+      :fsize 139
+      :lastmodtime '(22564 27219 343044 786000)
+      :unmatched-syntax nil)
+    (semanticdb-table "pytestlib.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ctypes" include nil nil [24 37])
+            ("result" variable nil nil [38 61])
+            ("array" code nil nil [62 86])
+            ("parray" variable nil nil [87 184])
+            ("a" variable nil nil [223 276])
+            ("print" code nil nil [277 313]))          
+      :file "pytestlib.py"
+      :pointmax 314
+      :fsize 313
+      :lastmodtime '(22564 27947 293442 826000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapterc!python-c-ctypes!passpointerarr!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

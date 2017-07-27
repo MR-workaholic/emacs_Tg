@@ -1,0 +1,48 @@
+;; Object seq-2.19/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "seq-2.19/"
+  :tables
+  (list
+    (semanticdb-table "seq-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "seq-autoloads.el"
+      :pointmax 400
+      :fsize 399
+      :lastmodtime '(22557 18104 150193 532000)
+      :unmatched-syntax nil)
+    (semanticdb-table "seq-24.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "seq-24.el"
+      :pointmax 17588
+      :fsize 17589
+      :lastmodtime '(22557 18103 902194 316000)
+      :unmatched-syntax nil)
+    (semanticdb-table "seq-25.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "seq-25.el"
+      :pointmax 17685
+      :fsize 17684
+      :lastmodtime '(22557 18103 978194 75000)
+      :unmatched-syntax nil)
+    (semanticdb-table "seq-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "seq-pkg.el"
+      :pointmax 185
+      :fsize 184
+      :lastmodtime '(22557 18103 926194 240000)
+      :unmatched-syntax nil)
+    (semanticdb-table "seq.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "seq.el"
+      :pointmax 1541
+      :fsize 1540
+      :lastmodtime '(22557 18103 954194 151000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!seq-2.19!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

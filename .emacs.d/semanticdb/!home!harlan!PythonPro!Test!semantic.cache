@@ -1,0 +1,38 @@
+;; Object Test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Test/"
+  :tables
+  (list
+    (semanticdb-table "glance.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scrapy" include nil nil [1 14])
+            ("QuotesSpider" type
+               (:superclasses ("scrapy.Spider")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [56 71])
+                    ("start_urls" variable nil (reparse-symbol indented_block_body) [76 145])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [161 165])
+                            ("response" variable nil (reparse-symbol function_parameters) [167 175]))                          )
+                        (reparse-symbol indented_block_body) [151 633]))                  
+                :type "class")
+                nil [17 633]))          
+      :file "glance.py"
+      :pointmax 633
+      :fsize 632
+      :lastmodtime '(22883 30968 41718 383000)
+      :unmatched-syntax nil)
+    (semanticdb-table "glance.json"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "glance.json"
+      :pointmax 1737
+      :fsize 1736
+      :lastmodtime '(22883 31090 560039 823000)
+      :unmatched-syntax '((semantic-list 1 . 1737) (semantic-list 1 . 1737))))
+  :file "!home!harlan!PythonPro!Test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

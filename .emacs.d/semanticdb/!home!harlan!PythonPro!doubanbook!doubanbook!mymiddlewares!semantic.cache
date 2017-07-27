@@ -1,0 +1,402 @@
+;; Object mymiddlewares/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mymiddlewares/"
+  :tables
+  (list
+    (semanticdb-table "gsxtgeetestmiddleware.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("selenium" include nil nil [16 46])
+            ("selenium.webdriver.common.action_chains" include nil nil [47 111])
+            ("selenium.webdriver.support.ui" include nil nil [112 167])
+            ("selenium.webdriver.support" include nil nil [168 232])
+            ("selenium.webdriver.common.by" include nil nil [233 276])
+            ("selenium.common.exceptions" include nil nil [277 346])
+            ("time" include nil nil [347 358])
+            ("PIL.Image" include nil nil [359 384])
+            ("re" include nil nil [385 394])
+            ("cStringIO" include nil nil [395 411])
+            ("urllib2" include nil nil [412 426])
+            ("random" include nil nil [427 440])
+            ("scrapy.http" include nil nil [441 477])
+            ("urllib" include nil nil [478 504])
+            ("GsxtGeetestMiddleware" type
+               (:superclasses ("object")
+                :members 
+                  ( ("target_url" variable nil (reparse-symbol indented_block_body) [548 596])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [648 697]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [615 619])
+                            ("br_name" variable nil (reparse-symbol function_parameters) [621 628]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [602 697])
+                    ("process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [722 726])
+                            ("request" variable nil (reparse-symbol function_parameters) [728 735])
+                            ("spider" variable nil (reparse-symbol function_parameters) [737 743]))                          )
+                        (reparse-symbol indented_block_body) [702 6617])
+                    ("s" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6628 6632])
+                            ("int" variable nil (reparse-symbol function_parameters) [6634 6637]))                          )
+                        (reparse-symbol indented_block_body) [6622 6664])
+                    ("get_merge_image" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6689 6693])
+                            ("filename" variable nil (reparse-symbol function_parameters) [6695 6703])
+                            ("location_list" variable nil (reparse-symbol function_parameters) [6705 6718]))                          )
+                        (reparse-symbol indented_block_body) [6669 7702])
+                    ("get_token" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7721 7725])
+                            ("div" variable nil (reparse-symbol function_parameters) [7727 7730]))                          )
+                        (reparse-symbol indented_block_body) [7707 7957])
+                    ("get_image" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7976 7980])
+                            ("div" variable nil (reparse-symbol function_parameters) [7982 7985]))                          )
+                        (reparse-symbol indented_block_body) [7962 9172])
+                    ("is_similar" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9192 9196])
+                            ("image1" variable nil (reparse-symbol function_parameters) [9198 9204])
+                            ("image2" variable nil (reparse-symbol function_parameters) [9206 9212])
+                            ("x" variable nil (reparse-symbol function_parameters) [9214 9215])
+                            ("y" variable nil (reparse-symbol function_parameters) [9217 9218]))                          )
+                        (reparse-symbol indented_block_body) [9177 9486])
+                    ("get_diff_location" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9513 9517])
+                            ("image1" variable nil (reparse-symbol function_parameters) [9519 9525])
+                            ("image2" variable nil (reparse-symbol function_parameters) [9527 9533]))                          )
+                        (reparse-symbol indented_block_body) [9491 9756])
+                    ("get_track" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9775 9779])
+                            ("length" variable nil (reparse-symbol function_parameters) [9781 9787]))                          )
+                        (reparse-symbol indented_block_body) [9761 10348]))                  
+                :type "class")
+                nil [507 10348]))          
+      :file "gsxtgeetestmiddleware.py"
+      :pointmax 10348
+      :fsize 11057
+      :lastmodtime '(22893 48939 920420 653000)
+      :unmatched-syntax nil)
+    (semanticdb-table "autoproxy.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("urllib2" include nil nil [26 40])
+            ("logging" include nil nil [41 55])
+            ("threading" include nil nil [56 72])
+            ("math" include nil nil [73 84])
+            ("re" include nil nil [85 94])
+            ("time" include nil nil [95 106])
+            ("bs4" include nil nil [108 137])
+            ("twisted.internet" include nil nil [138 172])
+            ("twisted.internet.error" include nil nil [173 314])
+            ("logger" variable nil nil [316 352])
+            ("AutoProxyMiddleware" type
+               (:superclasses ("object")
+                :members 
+                  ( ("EXCEPTIONS_TO_CHANGE" variable nil (reparse-symbol indented_block_body) [395 568])
+                    ("_settings" variable nil (reparse-symbol indented_block_body) [574 942])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [992 1024])
+                            ("for" code nil (reparse-symbol indented_block_body) [1033 1116])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1173 1188])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1197 1217])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1226 1243])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1252 1275])
+                            ("self" code nil (reparse-symbol indented_block_body) [1285 1307])
+                            ("self" code nil (reparse-symbol indented_block_body) [1316 1358])
+                            ("logger" code nil (reparse-symbol indented_block_body) [1367 1408]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [961 965])
+                            ("proxy_set" variable nil (reparse-symbol function_parameters) [967 976]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [948 1409])
+                    ("from_crawler" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1448 1451])
+                            ("crawler" variable nil (reparse-symbol function_parameters) [1453 1460]))                          )
+                        (reparse-symbol indented_block_body) [1414 1522])
+                    ("process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1547 1551])
+                            ("request" variable nil (reparse-symbol function_parameters) [1553 1560])
+                            ("spider" variable nil (reparse-symbol function_parameters) [1562 1568]))                          )
+                        (reparse-symbol indented_block_body) [1527 1966])
+                    ("process_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1992 1996])
+                            ("request" variable nil (reparse-symbol function_parameters) [1998 2005])
+                            ("response" variable nil (reparse-symbol function_parameters) [2007 2015])
+                            ("spider" variable nil (reparse-symbol function_parameters) [2017 2023]))                          )
+                        (reparse-symbol indented_block_body) [1971 3219])
+                    ("process_exception" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3246 3250])
+                            ("request" variable nil (reparse-symbol function_parameters) [3252 3259])
+                            ("exception" variable nil (reparse-symbol function_parameters) [3261 3270])
+                            ("spider" variable nil (reparse-symbol function_parameters) [3272 3278]))                          )
+                        (reparse-symbol indented_block_body) [3224 3686])
+                    ("invaild_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3709 3713])
+                            ("proxy" variable nil (reparse-symbol function_parameters) [3715 3720]))                          
+                        :documentation "
+        将代理设为invaild。如果之前该代理已下载超过200页（默认）的资源，则暂时不设置，仅切换代理，并减少其计数。
+        ")
+                        (reparse-symbol indented_block_body) [3691 4135])
+                    ("change_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4216 4220]))                          
+                        :documentation "
+        切换代理。
+        ")
+                        (reparse-symbol indented_block_body) [4199 4944])
+                    ("set_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4963 4967])
+                            ("request" variable nil (reparse-symbol function_parameters) [4969 4976]))                          
+                        :documentation "
+        设置代理。
+        ")
+                        (reparse-symbol indented_block_body) [4949 5204])
+                    ("len_valid_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5296 5300]))                          
+                        :documentation "
+        计算可用代理的数量
+        ")
+                        (reparse-symbol indented_block_body) [5276 5472])
+                    ("valid_proxyes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5495 5499]))                          
+                        :documentation "
+        可用代理列表
+        ")
+                        (reparse-symbol indented_block_body) [5477 5680])
+                    ("extend_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5702 5706]))                          
+                        :documentation "
+        扩展代理。测试代理是异步的。
+        ")
+                        (reparse-symbol indented_block_body) [5685 5827])
+                    ("append_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5849 5853])
+                            ("p" variable nil (reparse-symbol function_parameters) [5855 5856]))                          
+                        :documentation "
+        辅助函数，将测试通过的代理添加到列表
+        ")
+                        (reparse-symbol indented_block_body) [5832 5975])
+                    ("fetch_new_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6000 6004]))                          
+                        :documentation "
+        获取新的代理，目前从三个网站抓取代理，每个网站开一个线程抓取代理。
+        ")
+                        (reparse-symbol indented_block_body) [5980 6358])
+                    ("test_proxyes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6380 6384])
+                            ("proxyes" variable nil (reparse-symbol function_parameters) [6386 6393])
+                            ("wait" variable nil (reparse-symbol function_parameters) [6395 6399]))                          
+                        :documentation "
+        测试代理可通性。测试网址、特征码以及测试线程数均可设置。
+        ")
+                        (reparse-symbol indented_block_body) [6363 7151])
+                    ("_has_valid_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7177 7181]))                          )
+                        (reparse-symbol indented_block_body) [7156 7269])
+                    ("_is_enabled_for_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7302 7306])
+                            ("request" variable nil (reparse-symbol function_parameters) [7308 7315]))                          )
+                        (reparse-symbol indented_block_body) [7274 7382]))                  
+                :type "class")
+                nil [355 7382])
+            ("ProxyValidate" type
+               (:documentation "
+    测试代理线程类
+    "
+                :superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [7501 7538])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7547 7573])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7582 7598]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7469 7473])
+                            ("autoproxy" variable nil (reparse-symbol function_parameters) [7475 7484])
+                            ("part" variable nil (reparse-symbol function_parameters) [7486 7490]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7456 7599])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7612 7616]))                          )
+                        (reparse-symbol indented_block_body) [7604 7656])
+                    ("test_proxyes" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7678 7682])
+                            ("proxyes" variable nil (reparse-symbol function_parameters) [7684 7691]))                          )
+                        (reparse-symbol indented_block_body) [7661 7888])
+                    ("check_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7909 7913])
+                            ("proxy" variable nil (reparse-symbol function_parameters) [7915 7920]))                          )
+                        (reparse-symbol indented_block_body) [7893 8389]))                  
+                :type "class")
+                nil [7384 8389])
+            ("ProxyFetch" type
+               (:superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [8474 8508])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8517 8539])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8548 8562]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8445 8449])
+                            ("proxyes" variable nil (reparse-symbol function_parameters) [8451 8458])
+                            ("url" variable nil (reparse-symbol function_parameters) [8460 8463]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8432 8563])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8576 8580]))                          )
+                        (reparse-symbol indented_block_body) [8568 8660])
+                    ("fetch_proxy_from_xici" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8691 8695]))                          )
+                        (reparse-symbol indented_block_body) [8665 9450])
+                    ("fetch_proxy_from_ip3336" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9483 9487]))                          )
+                        (reparse-symbol indented_block_body) [9455 10293])
+                    ("fetch_proxy_from_kxdaili" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10327 10331]))                          )
+                        (reparse-symbol indented_block_body) [10298 11161])
+                    ("get_soup" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11179 11183])
+                            ("url" variable nil (reparse-symbol function_parameters) [11185 11188]))                          )
+                        (reparse-symbol indented_block_body) [11166 11743]))                  
+                :type "class")
+                nil [8391 11743])
+            ("if" code nil nil [11745 11799]))          
+      :file "autoproxy.py"
+      :pointmax 11799
+      :fsize 12306
+      :lastmodtime '(22893 55719 297050 257000)
+      :unmatched-syntax '((INDENT_BLOCK 11039 . 11137) (NEWLINE 11038 . 11039) (COLON 11037 . 11038) (TRY 10420 . 10423) (AS 11033 . 11035) (INDENT_BLOCK 10189 . 10269) (NEWLINE 10188 . 10189) (COLON 10187 . 10188) (TRY 9577 . 9580) (AS 10183 . 10185) (INDENT_BLOCK 9348 . 9426) (NEWLINE 9347 . 9348) (COLON 9346 . 9347) (TRY 8772 . 8775) (AS 9342 . 9344) (INDENT_BLOCK 10819 . 10900) (NEWLINE 10818 . 10819) (COLON 10817 . 10818) (TRY 10221 . 10224) (AS 10813 . 10815) (INDENT_BLOCK 9990 . 10070) (NEWLINE 9989 . 9990) (COLON 9988 . 9989) (TRY 9399 . 9402) (AS 9984 . 9986) (INDENT_BLOCK 9170 . 9248) (NEWLINE 9169 . 9170) (COLON 9168 . 9169) (TRY 8615 . 8618) (AS 9164 . 9166) (INDENT_BLOCK 10819 . 10900) (NEWLINE 10818 . 10819) (COLON 10817 . 10818) (TRY 10221 . 10224) (AS 10813 . 10815) (INDENT_BLOCK 9990 . 10070) (NEWLINE 9989 . 9990) (COLON 9988 . 9989) (TRY 9399 . 9402) (AS 9984 . 9986) (INDENT_BLOCK 9170 . 9248) (NEWLINE 9169 . 9170) (COLON 9168 . 9169) (TRY 8615 . 8618) (AS 9164 . 9166)))
+    (semanticdb-table "greenpoolproxy.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("GreenPoolProxyDownloaderMiddleware" type
+               (:documentation "Use proxy for exact cookiejar"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [137 196])
+                            ("self" variable nil (reparse-symbol indented_block_body) [216 268])
+                            ("self" variable nil (reparse-symbol indented_block_body) [287 334])
+                            ("self" variable nil (reparse-symbol indented_block_body) [356 412])
+                            ("self" variable nil (reparse-symbol indented_block_body) [458 728]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [112 116])
+                            ("settings" variable nil (reparse-symbol function_parameters) [118 126]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [99 729])
+                    ("from_crawler" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [768 771])
+                            ("crawler" variable nil (reparse-symbol function_parameters) [773 780]))                          )
+                        (reparse-symbol indented_block_body) [734 820])
+                    ("proxies" variable nil (reparse-symbol indented_block_body) [825 837])
+                    ("fullset" variable nil (reparse-symbol indented_block_body) [842 854])
+                    ("agent" variable nil (reparse-symbol indented_block_body) [859 881])
+                    ("_get_proxies_sync" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [909 913]))                          )
+                        (reparse-symbol indented_block_body) [887 2101])
+                    ("get_random_proxy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2127 2131]))                          )
+                        (reparse-symbol indented_block_body) [2106 2384])
+                    ("process_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2410 2414])
+                            ("request" variable nil (reparse-symbol function_parameters) [2416 2423])
+                            ("response" variable nil (reparse-symbol function_parameters) [2425 2433])
+                            ("spider" variable nil (reparse-symbol function_parameters) [2435 2441]))                          )
+                        (reparse-symbol indented_block_body) [2389 2841])
+                    ("process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2866 2870])
+                            ("request" variable nil (reparse-symbol function_parameters) [2872 2879])
+                            ("spider" variable nil (reparse-symbol function_parameters) [2881 2887]))                          )
+                        (reparse-symbol indented_block_body) [2846 4366]))                  
+                :type "class")
+                nil [4 4366]))          
+      :file "greenpoolproxy.py"
+      :pointmax 4367
+      :fsize 4462
+      :lastmodtime '(22893 64241 359066 958000)
+      :unmatched-syntax '((NAME 3096 . 3101) (IF 3126 . 3128) (ELSE 3153 . 3157) (INDENT_BLOCK 2065 . 2101) (NEWLINE 2064 . 2065) (COLON 2063 . 2064) (TRY 994 . 997) (AS 2059 . 2061))))
+  :file "!home!harlan!PythonPro!doubanbook!doubanbook!mymiddlewares!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

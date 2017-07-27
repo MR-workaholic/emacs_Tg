@@ -1,0 +1,160 @@
+;; Object proc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "proc/"
+  :tables
+  (list
+    (semanticdb-table "fork1"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "fork1"
+      :pointmax 13913
+      :fsize 13912
+      :lastmodtime '(22532 39025 260487 831000)
+      :unmatched-syntax nil)
+    (semanticdb-table "fork1.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("globvar" variable
+               (:default-value "6"
+                :type "int")
+                nil [20 37])
+            ("buf" variable
+               (:dereference 1
+                :default-value "\"a write to stdout\\n\""
+                :type "char")
+                nil [83 118])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [129 134]))                  
+                :type "int")
+                nil [120 627]))          
+      :file "fork1.c"
+      :pointmax 629
+      :fsize 628
+      :lastmodtime '(22527 1680 1457 252000)
+      :unmatched-syntax nil)
+    (semanticdb-table "vfork1.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("globvar" variable
+               (:default-value "6"
+                :type "int")
+                nil [20 37])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [93 98]))                  
+                :type "int")
+                nil [84 537]))          
+      :file "vfork1.c"
+      :pointmax 538
+      :fsize 537
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "wait1.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("sys/wait.h" include (:system-flag t) nil [19 40])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [51 56]))                  
+                :type "int")
+                nil [42 827]))          
+      :file "wait1.c"
+      :pointmax 828
+      :fsize 827
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tellwait2.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("charatatime" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44 51]))                  
+                :type "void")
+                nil [20 52])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [63 68]))                  
+                :type "int")
+                nil [54 337])
+            ("charatatime" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [363 373]))                  
+                :type "void")
+                nil [339 502]))          
+      :file "tellwait2.c"
+      :pointmax 503
+      :fsize 502
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "exec1.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("sys/wait.h" include (:system-flag t) nil [19 40])
+            ("env_init" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{ \"USER=unknown\", \"PATH=/tmp\", NULL }"
+                :type "char")
+                nil [42 99])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [110 115]))                  
+                :type "int")
+                nil [101 723]))          
+      :file "exec1.c"
+      :pointmax 724
+      :fsize 723
+      :lastmodtime '(22532 38981 576409 575000)
+      :unmatched-syntax nil)
+    (semanticdb-table "nice.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("errno.h" include (:system-flag t) nil [19 37])
+            ("sys/time.h" include (:system-flag t) nil [38 59])
+            ("count" variable (:type "unsigned long long") nil [200 225])
+            ("end" variable (:type ("timeval" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [226 245])
+            ("checktime" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [262 272]))                  
+                :type "void")
+                nil [247 441])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [452 461])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [462 475]))                  
+                :type "int")
+                nil [443 1381]))          
+      :file "nice.c"
+      :pointmax 1382
+      :fsize 1381
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil))
+  :file "!home!czh!Advanced_Programming_in_the_Unix_Environment!apue.3e!proc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

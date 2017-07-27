@@ -1,0 +1,91 @@
+;; Object chapter4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter4/"
+  :tables
+  (list
+    (semanticdb-table "useshelve.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("shelve" include nil nil [24 37])
+            ("apache_log_parser_regex" include nil nil [38 68])
+            ("logFile" variable nil nil [70 103])
+            ("shelveFile" variable nil nil [104 140])
+            ("for" code nil nil [142 341])
+            ("logFile" code nil nil [342 357])
+            ("shelveFile" code nil nil [358 376]))          
+      :file "useshelve.py"
+      :pointmax 377
+      :fsize 376
+      :lastmodtime '(22558 59646 163977 142000)
+      :unmatched-syntax nil)
+    (semanticdb-table "apache_log_parser_regex.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+USAGE:
+
+apache_log_parser_regex.py some_log_file
+
+This script take one command line argument
+'''" code nil nil [23 123])
+            ("sys" include nil nil [124 134])
+            ("re" include nil nil [135 144])
+            ("log_line_re" variable nil nil [146 309])
+            ("lineParse" function (:arguments 
+              ( ("line" variable nil (reparse-symbol function_parameters) [326 330]))              ) nil [312 661])
+            ("generate_log_report" function (:arguments 
+              ( ("inFile" variable nil (reparse-symbol function_parameters) [687 693]))              ) nil [663 1249])
+            ("if" code nil nil [1250 1592]))          
+      :file "apache_log_parser_regex.py"
+      :pointmax 1592
+      :fsize 1591
+      :lastmodtime '(22558 57396 291798 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "access.s"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "access.s"
+      :pointmax 12289
+      :fsize 12288
+      :lastmodtime '(22558 59713 938844 648000)
+      :unmatched-syntax nil)
+    (semanticdb-table "usegdchart.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("gdchart" include nil nil [24 38])
+            ("shelve" include nil nil [39 52])
+            ("shelveFile" variable nil nil [54 90])
+            ("items_list" variable nil nil [91 146])
+            ("items_list" code nil nil [147 164])
+            ("bytes_sent" variable nil nil [165 204])
+            ("ip_addresses" variable nil nil [205 246])
+            ("chart" variable nil nil [248 269])
+            ("chart" variable nil nil [270 287])
+            ("chart" variable nil nil [288 306])
+            ("chart" variable nil nil [307 331])
+            ("chart" variable nil nil [332 358])
+            ("chart" variable nil nil [359 386])
+            ("chart" variable nil nil [387 414])
+            ("chart" variable nil nil [415 450])
+            ("chart" code nil nil [451 476])
+            ("chart" code nil nil [477 506])
+            ("chart" code nil nil [507 537])
+            ("shelveFile" code nil nil [539 557]))          
+      :file "usegdchart.py"
+      :pointmax 558
+      :fsize 557
+      :lastmodtime '(22558 62729 381164 300000)
+      :unmatched-syntax nil)
+    (semanticdb-table "usepdf.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("subprocess" include nil nil [23 40])
+            ("datetime" include nil nil [41 56]))          
+      :file "usepdf.py"
+      :pointmax 57
+      :fsize 56
+      :lastmodtime '(22559 446 264358 399000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapter4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,126 @@
+;; Object 栈的相关操作/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "栈的相关操作/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("stack" include (:system-flag t) nil [21 37])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [39 59])
+            ("stack1" variable
+               (:typemodifiers ("static")
+                :type ("stack" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [81 106])
+            ("stack2" variable
+               (:typemodifiers ("static")
+                :type ("stack" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [107 132])
+            ("push" function
+               (:arguments 
+                  ( ("node" variable (:type "int") (reparse-symbol arg-sub-list) [144 153]))                  
+                :type "void")
+                nil [134 179])
+            ("pop" function (:type "int") nil [181 413])
+            ("MyStack" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [450 457])
+                    ("MyStack" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [468 477]))                          
+                        :type ("MyStack" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [460 540])
+                    ("push" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [555 565]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [545 566])
+                    ("pop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [569 580])
+                    ("top" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [583 593])
+                    ("min" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [596 606])
+                    ("empty" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [609 622])
+                    ("full" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [625 637])
+                    ("private" label nil (reparse-symbol classsubparts) [639 647])
+                    ("m_size" variable (:type "int") (reparse-symbol classsubparts) [650 662])
+                    ("stack" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [665 676])
+                    ("m_top" variable (:type "int") (reparse-symbol classsubparts) [679 690]))                  
+                :type "class")
+                nil [434 694])
+            ("push" function
+               (:parent "MyStack"
+                :arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [719 729]))                  
+                :type "void")
+                nil [698 852])
+            ("pop" function
+               (:parent "MyStack"
+                :type "void")
+                nil [856 1053])
+            ("top" function
+               (:parent "MyStack"
+                :type "int")
+                nil [1057 1227])
+            ("empty" function
+               (:parent "MyStack"
+                :type "bool")
+                nil [1231 1333])
+            ("full" function
+               (:parent "MyStack"
+                :type "bool")
+                nil [1337 1446])
+            ("min" function
+               (:parent "MyStack"
+                :type "int")
+                nil [1450 1806])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1820 1829])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1830 1843]))                  
+                :type "int")
+                nil [1811 2094]))          
+    :file "main.cpp"
+    :pointmax 2095
+    :fsize 2279
+    :lastmodtime '(22367 29633 0 0)
+    :unmatched-syntax '((punctuation 540 . 541) (number 1862 . 1864) (number 1862 . 1864) (punctuation 540 . 541) (number 1862 . 1864) (number 1862 . 1864) (number 1862 . 1864))
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!NOWCODER!栈的相关操作!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,25 @@
+;; Object 原串翻转/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "原串翻转/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("main" function (:type "int") nil [62 290]))          
+    :file "main.cpp"
+    :pointmax 291
+    :fsize 310
+    :lastmodtime '(22363 51627 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!NOWCODER!原串翻转!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

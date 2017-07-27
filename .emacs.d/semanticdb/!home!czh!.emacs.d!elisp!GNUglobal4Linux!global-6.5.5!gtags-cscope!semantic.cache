@@ -1,0 +1,16 @@
+;; Object gtags-cscope/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gtags-cscope/"
+  :tables
+  (list
+    (semanticdb-table "mypopen.o"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "mypopen.o"
+      :pointmax 15937
+      :fsize 15936
+      :lastmodtime '(22522 65467 158483 507000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elisp!GNUglobal4Linux!global-6.5.5!gtags-cscope!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

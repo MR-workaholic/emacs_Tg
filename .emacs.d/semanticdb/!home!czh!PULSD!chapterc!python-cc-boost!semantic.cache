@@ -1,0 +1,27 @@
+;; Object python-cc-boost/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python-cc-boost/"
+  :tables
+  (list
+    (semanticdb-table "funcs.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("boost/python.hpp" include (:system-flag t) nil [1 28])
+            ("sayHello" function
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [30 88])
+            ("BOOST_PYTHON_MODULE" function
+               (:arguments 
+                  ( ("" variable (:type ("example" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110 118]))                  
+                :type "int")
+                nil [90 183]))          
+      :file "funcs.cc"
+      :pointmax 184
+      :fsize 183
+      :lastmodtime '(22564 11617 351648 157000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapterc!python-cc-boost!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

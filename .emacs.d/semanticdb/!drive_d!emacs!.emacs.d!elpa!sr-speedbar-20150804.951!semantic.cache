@@ -1,0 +1,36 @@
+;; Object sr-speedbar-20150804.951/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sr-speedbar-20150804.951/"
+  :tables (list 
+   (semanticdb-table "sr-speedbar-autoloads.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "sr-speedbar-autoloads.el"
+    :pointmax 936
+    :fsize 935
+    :lastmodtime '(22352 241 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sr-speedbar-pkg.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "sr-speedbar-pkg.el"
+    :pointmax 81
+    :fsize 81
+    :lastmodtime '(22352 240 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sr-speedbar.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "sr-speedbar.el"
+    :pointmax 24992
+    :fsize 24991
+    :lastmodtime '(22352 240 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!emacs!.emacs.d!elpa!sr-speedbar-20150804.951!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

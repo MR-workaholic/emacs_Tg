@@ -1,0 +1,36 @@
+;; Object yasnippet-20160530.1721/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "yasnippet-20160530.1721/"
+  :tables (list 
+   (semanticdb-table "yasnippet-autoloads.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "yasnippet-autoloads.el"
+    :pointmax 1763
+    :fsize 1762
+    :lastmodtime '(22352 6529 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yasnippet-pkg.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "yasnippet-pkg.el"
+    :pointmax 250
+    :fsize 249
+    :lastmodtime '(22352 6445 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yasnippet.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "yasnippet.el"
+    :pointmax 188777
+    :fsize 188778
+    :lastmodtime '(22352 6528 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!emacs!.emacs.d!elpa!yasnippet-20160530.1721!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

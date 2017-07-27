@@ -1,0 +1,86 @@
+;; Object shexingshuzu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "shexingshuzu/"
+  :tables (list 
+   (semanticdb-table "shexingshuzu.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 19])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [22 42])
+            ("fuzhi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [55 63])
+                    ("aval" variable (:type "int") (reparse-symbol arg-sub-list) [64 73])
+                    ("bs" variable (:type "int") (reparse-symbol arg-sub-list) [74 81])
+                    ("be" variable (:type "int") (reparse-symbol arg-sub-list) [82 89])
+                    ("aorb" variable (:type "int") (reparse-symbol arg-sub-list) [90 99])
+                    ("startnum" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [100 114])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [115 123]))                  
+                :type "void")
+                nil [44 124])
+            ("print_arr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [209 217])
+                    ("N" variable (:type "int") (reparse-symbol arg-sub-list) [218 224])
+                    ("M" variable (:type "int") (reparse-symbol arg-sub-list) [225 231]))                  
+                :type "void")
+                nil [194 232])
+            ("main" function (:type "int") nil [234 3143])
+            ("judge" function
+               (:arguments 
+                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [3156 3164])
+                    ("N" variable (:type "int") (reparse-symbol arg-sub-list) [3165 3171]))                  
+                :type "bool")
+                nil [3145 3349])
+            ("print_arr" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3366 3374])
+                    ("N" variable (:type "int") (reparse-symbol arg-sub-list) [3375 3381])
+                    ("M" variable (:type "int") (reparse-symbol arg-sub-list) [3382 3388]))                  
+                :type "void")
+                nil [3351 3518])
+            ("fuzhi" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3531 3539])
+                    ("aval" variable (:type "int") (reparse-symbol arg-sub-list) [3540 3549])
+                    ("bs" variable (:type "int") (reparse-symbol arg-sub-list) [3550 3557])
+                    ("be" variable (:type "int") (reparse-symbol arg-sub-list) [3558 3565])
+                    ("aorb" variable (:type "int") (reparse-symbol arg-sub-list) [3566 3575])
+                    ("startnum" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3576 3590])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [3591 3599]))                  
+                :type "void")
+                nil [3520 4419]))          
+    :file "shexingshuzu.cpp"
+    :pointmax 4582
+    :fsize 4727
+    :lastmodtime '(22364 5799 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!C++!腾讯题目一道_蛇形数组!shexingshuzu!shexingshuzu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

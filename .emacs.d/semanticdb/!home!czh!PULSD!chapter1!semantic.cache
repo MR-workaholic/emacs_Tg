@@ -1,0 +1,47 @@
+;; Object chapter1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter1/"
+  :tables
+  (list
+    (semanticdb-table "pysysinfo_func.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("subprocess" include nil nil [63 80])
+            ("uname_func" function nil nil [96 263])
+            ("disk_func" function nil nil [278 464])
+            ("main" function nil nil [509 554])
+            ("main" code nil nil [555 561]))          
+      :file "pysysinfo_func.py"
+      :pointmax 562
+      :fsize 561
+      :lastmodtime '(22558 38387 800548 774000)
+      :unmatched-syntax nil)
+    (semanticdb-table "new_pysysinfo.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pysysinfo_func_2" include nil nil [54 92])
+            ("subprocess" include nil nil [93 110])
+            ("tmp_space" function nil nil [113 277])
+            ("main" function nil nil [279 323])
+            ("if" code nil nil [324 362]))          
+      :file "new_pysysinfo.py"
+      :pointmax 362
+      :fsize 361
+      :lastmodtime '(22558 39994 823517 390000)
+      :unmatched-syntax nil)
+    (semanticdb-table "pysysinfo_func_2.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("subprocess" include nil nil [63 80])
+            ("uname_func" function nil nil [96 263])
+            ("disk_func" function nil nil [278 464])
+            ("main" function nil nil [509 554])
+            ("if" code nil nil [564 602]))          
+      :file "pysysinfo_func_2.py"
+      :pointmax 602
+      :fsize 601
+      :lastmodtime '(22558 39146 669680 956000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapter1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

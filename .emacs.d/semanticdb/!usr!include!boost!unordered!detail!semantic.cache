@@ -1,0 +1,1954 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "equivalent.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_UNORDERED_DETAIL_EQUIVALENT_HPP_INCLUDED" variable (:constant-flag t) nil [312 358])
+            ("boost/config.hpp" include (:system-flag t) nil [360 387])
+            ("boost/unordered/detail/table.hpp" include (:system-flag t) nil [444 487])
+            ("boost/unordered/detail/extract_key.hpp" include (:system-flag t) nil [488 537])
+            ("boost" type
+               (:members 
+                  ( ("unordered" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("grouped_node" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [603 657])
+                                    ("grouped_ptr_node" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [662 708])
+                                    ("grouped_table_impl" type
+                                       (:template 
+                                          ( ("Types" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [713 765])
+                                    ("grouped_node" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("allocator" variable (:type ("boost::unordered::detail::rebind_wrap::type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [912 1003])
+                                            ("node_pointer" variable (:type ("boost::unordered::detail::allocator_traits::pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1031 1120])
+                                            ("link_pointer" type
+                                               (:typedef ("node_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1129 1163])
+                                            ("next_" variable (:type ("link_pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1173 1192])
+                                            ("group_prev_" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1201 1226])
+                                            ("hash_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1235 1253])
+                                            ("grouped_node" function
+                                               (:constructor-flag t
+                                                :type ("grouped_node" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1263 1359])
+                                            ("init" function
+                                               (:arguments 
+                                                  ( ("self" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1379 1397]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1369 1449])
+                                            ("private" label nil (reparse-symbol classsubparts) [1455 1463])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("grouped_node" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1496 1516]))                                                  
+                                                :type ("grouped_node" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1472 1517]))                                          
+                                        :superclasses 
+                                          ( ("boost::unordered::detail::value_base" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [771 1524])
+                                    ("grouped_ptr_node" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("value_type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1641 1662])
+                                            ("bucket_base" type
+                                               (:typedef ("boost::unordered::detail::ptr_bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1671 1728])
+                                            ("node_pointer" type
+                                               (:typedef ("grouped_ptr_node" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :pointer 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1737 1779])
+                                            ("link_pointer" type
+                                               (:typedef ("ptr_bucket" type (:type "class") nil nil)
+                                                :pointer 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1788 1821])
+                                            ("group_prev_" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1831 1856])
+                                            ("hash_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1865 1883])
+                                            ("value_base_" variable (:type ("boost::unordered::detail::value_base" type
+                                                 (:template-specifier 
+                                                    ( ("T" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [1892 1944])
+                                            ("grouped_ptr_node" function
+                                               (:constructor-flag t
+                                                :type ("grouped_ptr_node" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1954 2061])
+                                            ("init" function
+                                               (:arguments 
+                                                  ( ("self" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2081 2099]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2071 2151])
+                                            ("address" function
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2161 2210])
+                                            ("value" function (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2219 2270])
+                                            ("value_ptr" function
+                                               (:pointer 1
+                                                :type ("value_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2279 2338])
+                                            ("private" label nil (reparse-symbol classsubparts) [2344 2352])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("grouped_ptr_node" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2389 2413]))                                                  
+                                                :type ("grouped_ptr_node" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2361 2414]))                                          
+                                        :superclasses 
+                                          ( ("boost::unordered::detail::ptr_bucket" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1530 2421])
+                                    ("pick_grouped_node2" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil)
+                                            ("NodePtr" type (:type "class") nil nil)
+                                            ("BucketPtr" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("node" type
+                                               (:typedef ("boost::unordered::detail::grouped_node" type
+                                                     (:template-specifier 
+                                                        ( ("A" type nil nil nil)
+                                                          ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2642 2700])
+                                            ("node_pointer" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2856 2877])
+                                            ("bucket" type
+                                               (:typedef ("boost::unordered::detail::bucket" type
+                                                     (:template-specifier 
+                                                        ( ("node_pointer" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2887 2949])
+                                            ("link_pointer" type
+                                               (:typedef ("node_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2958 2992]))                                          )
+                                        (reparse-symbol namespacesubparts) [2526 2999])
+                                    ("pick_grouped_node2" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("node" type
+                                               (:typedef ("boost::unordered::detail::grouped_ptr_node" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3192 3251])
+                                            ("bucket" type
+                                               (:typedef ("boost::unordered::detail::ptr_bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3260 3312])
+                                            ("link_pointer" type
+                                               (:typedef ("bucket" type (:type "class") nil nil)
+                                                :pointer 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3321 3350]))                                          
+                                        :template-specifier 
+                                          ( ("A" type nil nil nil)
+                                            ("T" type nil nil nil)
+                                            ("boost::unordered::detail::grouped_ptr_node" type (:pointer 1) nil nil)
+                                            ("boost::unordered::detail::ptr_bucket" type (:pointer 1) nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3005 3357])
+                                    ("pick_grouped_node" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("tentative_node_traits" variable (:type "int") (reparse-symbol classsubparts) [3634 3656])
+                                            ("tentative_bucket_traits" variable (:type "int") (reparse-symbol classsubparts) [3851 3875])
+                                            ("pick" variable (:type "int") (reparse-symbol classsubparts) [4026 4031])
+                                            ("node" type
+                                               (:typedef ("pick::node" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4041 4074])
+                                            ("bucket" type
+                                               (:typedef ("pick::bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4083 4120])
+                                            ("link_pointer" type
+                                               (:typedef ("pick::link_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4129 4178]))                                          )
+                                        (reparse-symbol namespacesubparts) [3363 4185])
+                                    ("multiset" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil)
+                                            ("H" type (:type "class") nil nil)
+                                            ("P" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("types" type
+                                               (:typedef ("boost::unordered::detail::multiset" type
+                                                     (:template-specifier 
+                                                        ( ("A" type nil nil nil)
+                                                          ("T" type nil nil nil)
+                                                          ("H" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4283 4344])
+                                            ("allocator" type
+                                               (:typedef ("A" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4354 4374])
+                                            ("value_type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4383 4404])
+                                            ("hasher" type
+                                               (:typedef ("H" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4413 4430])
+                                            ("key_equal" type
+                                               (:typedef ("P" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4439 4459])
+                                            ("key_type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4468 4487])
+                                            ("traits" type
+                                               (:typedef ("boost::unordered::detail::allocator_traits" type
+                                                     (:template-specifier 
+                                                        ( ("allocator" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4497 4566])
+                                            ("pick" type
+                                               (:typedef ("boost::unordered::detail::pick_grouped_node" type
+                                                     (:template-specifier 
+                                                        ( ("allocator" type nil nil nil)
+                                                          ("value_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4575 4667])
+                                            ("node" type
+                                               (:typedef ("pick::node" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4676 4709])
+                                            ("bucket" type
+                                               (:typedef ("pick::bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4718 4755])
+                                            ("link_pointer" type
+                                               (:typedef ("pick::link_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4764 4813])
+                                            ("table" type
+                                               (:typedef ("boost::unordered::detail::grouped_table_impl" type
+                                                     (:template-specifier 
+                                                        ( ("types" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4823 4889])
+                                            ("extractor" type
+                                               (:typedef ("boost::unordered::detail::set_extractor" type
+                                                     (:template-specifier 
+                                                        ( ("value_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4898 4968])
+                                            ("policy" type
+                                               (:typedef ("boost::unordered::detail::pick_policy::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4978 5049]))                                          )
+                                        (reparse-symbol namespacesubparts) [4191 5056])
+                                    ("multimap" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("K" type (:type "class") nil nil)
+                                            ("M" type (:type "class") nil nil)
+                                            ("H" type (:type "class") nil nil)
+                                            ("P" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("types" type
+                                               (:typedef ("boost::unordered::detail::multimap" type
+                                                     (:template-specifier 
+                                                        ( ("A" type nil nil nil)
+                                                          ("K" type nil nil nil)
+                                                          ("M" type nil nil nil)
+                                                          ("H" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5166 5230])
+                                            ("allocator" type
+                                               (:typedef ("A" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5240 5260])
+                                            ("value_type" type
+                                               (:typedef ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("K" type (:constant-flag t) nil nil)
+                                                          ("M" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5269 5310])
+                                            ("hasher" type
+                                               (:typedef ("H" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5319 5336])
+                                            ("key_equal" type
+                                               (:typedef ("P" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5345 5365])
+                                            ("key_type" type
+                                               (:typedef ("K" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5374 5393])
+                                            ("traits" type
+                                               (:typedef ("boost::unordered::detail::allocator_traits" type
+                                                     (:template-specifier 
+                                                        ( ("allocator" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5403 5472])
+                                            ("pick" type
+                                               (:typedef ("boost::unordered::detail::pick_grouped_node" type
+                                                     (:template-specifier 
+                                                        ( ("allocator" type nil nil nil)
+                                                          ("value_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5481 5577])
+                                            ("node" type
+                                               (:typedef ("pick::node" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5586 5619])
+                                            ("bucket" type
+                                               (:typedef ("pick::bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5628 5665])
+                                            ("link_pointer" type
+                                               (:typedef ("pick::link_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5674 5723])
+                                            ("table" type
+                                               (:typedef ("boost::unordered::detail::grouped_table_impl" type
+                                                     (:template-specifier 
+                                                        ( ("types" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5733 5799])
+                                            ("extractor" type
+                                               (:typedef ("boost::unordered::detail::map_extractor" type
+                                                     (:template-specifier 
+                                                        ( ("key_type" type nil nil nil)
+                                                          ("value_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5808 5900])
+                                            ("policy" type
+                                               (:typedef ("boost::unordered::detail::pick_policy::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5910 5981]))                                          )
+                                        (reparse-symbol namespacesubparts) [5062 5988])
+                                    ("grouped_table_impl" type
+                                       (:template 
+                                          ( ("Types" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("table" type
+                                               (:typedef ("boost::unordered::detail::table" type
+                                                     (:template-specifier 
+                                                        ( ("Types" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6105 6158])
+                                            ("value_type" type
+                                               (:typedef ("table::value_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6167 6213])
+                                            ("bucket" type
+                                               (:typedef ("table::bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6222 6260])
+                                            ("policy" type
+                                               (:typedef ("table::policy" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6269 6307])
+                                            ("node_pointer" type
+                                               (:typedef ("table::node_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6316 6366])
+                                            ("node_allocator" type
+                                               (:typedef ("table::node_allocator" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6375 6429])
+                                            ("node_allocator_traits" type
+                                               (:typedef ("table::node_allocator_traits" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6438 6506])
+                                            ("bucket_pointer" type
+                                               (:typedef ("table::bucket_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6515 6569])
+                                            ("link_pointer" type
+                                               (:typedef ("table::link_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6578 6628])
+                                            ("hasher" type
+                                               (:typedef ("table::hasher" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6637 6675])
+                                            ("key_equal" type
+                                               (:typedef ("table::key_equal" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6684 6728])
+                                            ("key_type" type
+                                               (:typedef ("table::key_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6737 6779])
+                                            ("node_constructor" type
+                                               (:typedef ("table::node_constructor" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6788 6846])
+                                            ("extractor" type
+                                               (:typedef ("table::extractor" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6855 6899])
+                                            ("iterator" type
+                                               (:typedef ("table::iterator" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6908 6950])
+                                            ("c_iterator" type
+                                               (:typedef ("table::c_iterator" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6959 7005])
+                                            ("grouped_table_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7059 7073])
+                                                    ("hf" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("hasher" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7090 7107])
+                                                    ("eq" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_equal" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7124 7144])
+                                                    ("a" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("node_allocator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7161 7185]))                                                  
+                                                :type ("grouped_table_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [7040 7228])
+                                            ("grouped_table_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("grouped_table_impl" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7257 7285]))                                                  
+                                                :type ("grouped_table_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [7238 7448])
+                                            ("grouped_table_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("grouped_table_impl" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7477 7505])
+                                                    ("a" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("node_allocator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7522 7546]))                                                  
+                                                :type ("grouped_table_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [7458 7617])
+                                            ("grouped_table_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("grouped_table_impl" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7646 7668])
+                                                    ("m" variable (:type ("boost::unordered::detail::move_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7685 7722]))                                                  
+                                                :type ("grouped_table_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [7627 7757])
+                                            ("grouped_table_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("grouped_table_impl" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7786 7808])
+                                                    ("a" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("node_allocator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7825 7849])
+                                                    ("m" variable (:type ("boost::unordered::detail::move_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7866 7903]))                                                  
+                                                :type ("grouped_table_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [7767 7982])
+                                            ("find_node_impl" function
+                                               (:template 
+                                                  ( ("Key" type (:type "class") nil nil)
+                                                    ("Pred" type (:type "class") nil nil))                                                  
+                                                :type ("iterator" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("key_hash" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8096 8117])
+                                                    ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Key" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8134 8147])
+                                                    ("eq" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Pred" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8164 8179]))                                                  )
+                                                (reparse-symbol classsubparts) [8014 8871])
+                                            ("count" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8899 8917]))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8881 9230])
+                                            ("equal_range" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9294 9312]))                                                  
+                                                :type ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("iterator" type nil nil nil)
+                                                          ("iterator" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [9240 9491])
+                                            ("equals" function
+                                               (:arguments 
+                                                  ( ("other" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("grouped_table_impl" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9534 9566]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [9522 10095])
+                                            ("group_equals" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("n1" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10130 10142])
+                                                    ("end1" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10143 10157])
+                                                    ("n2" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10174 10186])
+                                                    ("end2" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10187 10201]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [10105 11271])
+                                            ("find" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("n" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11298 11309])
+                                                    ("end" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11310 11323])
+                                                    ("v" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("value_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11324 11344]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [11281 11484])
+                                            ("count_equal" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("n" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11525 11536])
+                                                    ("end" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11537 11550])
+                                                    ("v" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("value_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [11563 11583]))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [11494 11734])
+                                            ("add_after_node" function
+                                               (:typemodifiers ("static" "inline")
+                                                :arguments 
+                                                  ( ("n" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11822 11837])
+                                                    ("pos" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11854 11871]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [11771 12061])
+                                            ("add_node" function
+                                               (:typemodifiers ("inline")
+                                                :arguments 
+                                                  ( ("a" variable
+                                                       (:reference 1
+                                                        :type ("node_constructor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12113 12133])
+                                                    ("key_hash" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12150 12171])
+                                                    ("pos" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12188 12201]))                                                  
+                                                :type ("iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [12071 13636])
+                                            ("emplace_impl" function
+                                               (:arguments 
+                                                  ( ("a" variable
+                                                       (:reference 1
+                                                        :type ("node_constructor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [13668 13688]))                                                  
+                                                :type ("iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [13646 14104])
+                                            ("emplace_impl_no_rehash" function
+                                               (:arguments 
+                                                  ( ("a" variable
+                                                       (:reference 1
+                                                        :type ("node_constructor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14142 14162]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [14114 14361])
+                                            ("emplace" function
+                                               (:template 
+                                                  ( ("BOOST_UNORDERED_EMPLACE_TEMPLATE" type nil nil nil))                                                  
+                                                :type ("iterator" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable (:type ("BOOST_UNORDERED_EMPLACE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14980 15009]))                                                  )
+                                                (reparse-symbol classsubparts) [14911 15197])
+                                            ("insert_range" function
+                                               (:template 
+                                                  ( ("I" type (:type "class") nil nil))                                                  
+                                                :type ("boost::unordered::detail::enable_if_forward::type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("i" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15555 15559])
+                                                    ("j" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15560 15564]))                                                  
+                                                :typemodifiers ("typename"))
+                                                (reparse-symbol classsubparts) [15435 16241])
+                                            ("insert_range" function
+                                               (:template 
+                                                  ( ("I" type (:type "class") nil nil))                                                  
+                                                :type ("boost::unordered::detail::disable_if_forward::type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("i" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16372 16376])
+                                                    ("j" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16377 16381]))                                                  
+                                                :typemodifiers ("typename"))
+                                                (reparse-symbol classsubparts) [16251 16579])
+                                            ("erase_key" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16741 16759]))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [16719 17919])
+                                            ("erase" function
+                                               (:arguments 
+                                                  ( ("r" variable (:type ("c_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17944 17957]))                                                  
+                                                :type ("iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [17929 18139])
+                                            ("erase_range" function
+                                               (:arguments 
+                                                  ( ("r1" variable (:type ("c_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18170 18184])
+                                                    ("r2" variable (:type ("c_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18185 18199]))                                                  
+                                                :type ("iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [18149 18356])
+                                            ("erase_nodes" function
+                                               (:arguments 
+                                                  ( ("i" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18391 18406])
+                                                    ("j" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18407 18422]))                                                  
+                                                :type ("link_pointer" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [18366 19463])
+                                            ("split_groups" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("i" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19506 19521])
+                                                    ("j" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19522 19537]))                                                  
+                                                :type ("link_pointer" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [19473 20290])
+                                            ("fill_buckets" function
+                                               (:template 
+                                                  ( ("NodeCreator" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("n" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20468 20479])
+                                                    ("dst" variable
+                                                       (:reference 1
+                                                        :type ("table" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [20480 20491])
+                                                    ("creator" variable
+                                                       (:reference 1
+                                                        :type ("NodeCreator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [20504 20525]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [20406 21311])
+                                            ("rehash_impl" function
+                                               (:arguments 
+                                                  ( ("num_buckets" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21383 21407]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [21366 21735])
+                                            ("place_in_bucket" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("dst" variable
+                                                       (:reference 1
+                                                        :type ("table" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [21896 21907])
+                                                    ("prev" variable (:type ("link_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21924 21942])
+                                                    ("end" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21943 21960]))                                                  
+                                                :type ("link_pointer" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [21860 22403]))                                          
+                                        :superclasses 
+                                          ( ("boost::unordered::detail::table" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5994 22410]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [579 22412]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [557 22413]))                  
+                :type "namespace")
+                nil [539 22414]))          
+      :file "equivalent.hpp"
+      :pointmax 22423
+      :fsize 22422
+      :lastmodtime '(22367 50491 0 0)
+      :unmatched-syntax '((punctuation 4024 . 4025) (symbol 4017 . 4024) (punctuation 4016 . 4017) (punctuation 4015 . 4016) (symbol 3992 . 4015) (TYPENAME 3983 . 3991) (punctuation 3969 . 3970) (symbol 3962 . 3969) (punctuation 3961 . 3962) (punctuation 3960 . 3961) (symbol 3939 . 3960) (TYPENAME 3930 . 3938) (punctuation 3916 . 3917) (symbol 3915 . 3916) (punctuation 3913 . 3914) (symbol 3912 . 3913) (punctuation 3911 . 3912) (symbol 3893 . 3911) (TYPEDEF 3885 . 3892) (punctuation 3849 . 3850) (symbol 3836 . 3840) (punctuation 3835 . 3836) (punctuation 3834 . 3835) (punctuation 3833 . 3834) (symbol 3822 . 3832) (punctuation 3821 . 3822) (punctuation 3820 . 3821) (symbol 3814 . 3820) (punctuation 3813 . 3814) (punctuation 3812 . 3813) (symbol 3803 . 3812) (punctuation 3802 . 3803) (punctuation 3801 . 3802) (symbol 3796 . 3801) (punctuation 3778 . 3779) (symbol 3777 . 3778) (punctuation 3776 . 3777) (symbol 3765 . 3776) (punctuation 3764 . 3765) (punctuation 3763 . 3764) (symbol 3757 . 3763) (punctuation 3756 . 3757) (punctuation 3755 . 3756) (symbol 3746 . 3755) (punctuation 3745 . 3746) (punctuation 3744 . 3745) (symbol 3739 . 3744) (TYPENAME 3730 . 3738) (punctuation 3716 . 3717) (symbol 3700 . 3716) (punctuation 3699 . 3700) (punctuation 3698 . 3699) (symbol 3692 . 3698) (punctuation 3691 . 3692) (punctuation 3690 . 3691) (symbol 3681 . 3690) (punctuation 3680 . 3681) (punctuation 3679 . 3680) (symbol 3674 . 3679) (TYPEDEF 3666 . 3673) (punctuation 3632 . 3633) (symbol 3619 . 3623) (punctuation 3618 . 3619) (punctuation 3617 . 3618) (punctuation 3616 . 3617) (punctuation 3614 . 3615) (symbol 3613 . 3614) (punctuation 3612 . 3613) (symbol 3596 . 3612) (punctuation 3595 . 3596) (punctuation 3594 . 3595) (symbol 3588 . 3594) (punctuation 3587 . 3588) (punctuation 3586 . 3587) (symbol 3577 . 3586) (punctuation 3576 . 3577) (punctuation 3575 . 3576) (symbol 3570 . 3575) (punctuation 3552 . 3553) (symbol 3551 . 3552) (punctuation 3550 . 3551) (symbol 3539 . 3550) (punctuation 3538 . 3539) (punctuation 3537 . 3538) (symbol 3531 . 3537) (punctuation 3530 . 3531) (punctuation 3529 . 3530) (symbol 3520 . 3529) (punctuation 3519 . 3520) (punctuation 3518 . 3519) (symbol 3513 . 3518) (TYPENAME 3504 . 3512) (punctuation 3490 . 3491) (symbol 3474 . 3490) (punctuation 3473 . 3474) (punctuation 3472 . 3473) (symbol 3466 . 3472) (punctuation 3465 . 3466) (punctuation 3464 . 3465) (symbol 3455 . 3464) (punctuation 3454 . 3455) (punctuation 3453 . 3454) (symbol 3448 . 3453) (TYPEDEF 3440 . 3447) (punctuation 2855 . 2856) (punctuation 2854 . 2855) (punctuation 2853 . 2854) (symbol 2840 . 2844) (punctuation 2839 . 2840) (punctuation 2838 . 2839) (punctuation 2837 . 2838) (symbol 2833 . 2837) (punctuation 2831 . 2832) (symbol 2830 . 2831) (punctuation 2829 . 2830) (symbol 2818 . 2829) (punctuation 2817 . 2818) (punctuation 2816 . 2817) (symbol 2810 . 2816) (punctuation 2809 . 2810) (punctuation 2808 . 2809) (symbol 2799 . 2808) (punctuation 2798 . 2799) (punctuation 2797 . 2798) (symbol 2792 . 2797) (TYPENAME 2783 . 2791) (punctuation 2769 . 2770) (symbol 2753 . 2769) (punctuation 2752 . 2753) (punctuation 2751 . 2752) (symbol 2745 . 2751) (punctuation 2744 . 2745) (punctuation 2743 . 2744) (symbol 2734 . 2743) (punctuation 2733 . 2734) (punctuation 2732 . 2733) (symbol 2727 . 2732) (TYPENAME 2718 . 2726) (TYPEDEF 2710 . 2717) (punctuation 1030 . 1031) (punctuation 1029 . 1030) (TYPENAME 1020 . 1028) (TYPEDEF 1012 . 1019) (punctuation 911 . 912) (punctuation 910 . 911) (TYPENAME 901 . 909) (TYPEDEF 893 . 900))
+      :lexical-table 
+        '(("BOOST_UNORDERED_DETAIL_EQUIVALENT_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "unique.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_UNORDERED_DETAIL_UNIQUE_HPP_INCLUDED" variable (:constant-flag t) nil [308 350])
+            ("boost/config.hpp" include (:system-flag t) nil [352 379])
+            ("boost/unordered/detail/table.hpp" include (:system-flag t) nil [436 479])
+            ("boost/unordered/detail/extract_key.hpp" include (:system-flag t) nil [480 529])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [530 566])
+            ("stdexcept" include (:system-flag t) nil [567 587])
+            ("boost" type
+               (:members 
+                  ( ("unordered" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("unique_node" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [653 706])
+                                    ("ptr_node" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [711 749])
+                                    ("table_impl" type
+                                       (:template 
+                                          ( ("Types" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [754 798])
+                                    ("unique_node" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("allocator" variable (:type ("boost::unordered::detail::rebind_wrap::type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [944 1034])
+                                            ("node_pointer" variable (:type ("boost::unordered::detail::allocator_traits::pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1062 1151])
+                                            ("link_pointer" type
+                                               (:typedef ("node_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1160 1194])
+                                            ("next_" variable (:type ("link_pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1204 1223])
+                                            ("hash_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1232 1250])
+                                            ("unique_node" function
+                                               (:constructor-flag t
+                                                :type ("unique_node" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1260 1328])
+                                            ("init" function
+                                               (:arguments 
+                                                  ( ("" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1348 1361]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1338 1381])
+                                            ("private" label nil (reparse-symbol classsubparts) [1387 1395])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("unique_node" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1427 1446]))                                                  
+                                                :type ("unique_node" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1404 1447]))                                          
+                                        :superclasses 
+                                          ( ("boost::unordered::detail::value_base" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [804 1454])
+                                    ("ptr_node" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("value_type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1563 1584])
+                                            ("bucket_base" type
+                                               (:typedef ("boost::unordered::detail::ptr_bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1593 1650])
+                                            ("node_pointer" type
+                                               (:typedef ("ptr_node" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :pointer 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1659 1693])
+                                            ("link_pointer" type
+                                               (:typedef ("ptr_bucket" type (:type "class") nil nil)
+                                                :pointer 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1702 1735])
+                                            ("hash_" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1745 1763])
+                                            ("value_base_" variable (:type ("boost::unordered::detail::value_base" type
+                                                 (:template-specifier 
+                                                    ( ("T" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [1772 1824])
+                                            ("ptr_node" function
+                                               (:constructor-flag t
+                                                :type ("ptr_node" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1834 1905])
+                                            ("init" function
+                                               (:arguments 
+                                                  ( ("" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1925 1938]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1915 1958])
+                                            ("address" function
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1968 2017])
+                                            ("value" function (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2026 2077])
+                                            ("value_ptr" function
+                                               (:pointer 1
+                                                :type ("value_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2086 2145])
+                                            ("private" label nil (reparse-symbol classsubparts) [2151 2159])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ptr_node" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2188 2204]))                                                  
+                                                :type ("ptr_node" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2168 2205]))                                          
+                                        :superclasses 
+                                          ( ("boost::unordered::detail::ptr_bucket" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1460 2212])
+                                    ("pick_node2" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil)
+                                            ("NodePtr" type (:type "class") nil nil)
+                                            ("BucketPtr" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("node" type
+                                               (:typedef ("boost::unordered::detail::unique_node" type
+                                                     (:template-specifier 
+                                                        ( ("A" type nil nil nil)
+                                                          ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2409 2466])
+                                            ("node_pointer" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2622 2643])
+                                            ("bucket" type
+                                               (:typedef ("boost::unordered::detail::bucket" type
+                                                     (:template-specifier 
+                                                        ( ("node_pointer" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2653 2715])
+                                            ("link_pointer" type
+                                               (:typedef ("node_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2724 2758]))                                          )
+                                        (reparse-symbol namespacesubparts) [2301 2765])
+                                    ("pick_node2" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("node" type
+                                               (:typedef ("boost::unordered::detail::ptr_node" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2942 2993])
+                                            ("bucket" type
+                                               (:typedef ("boost::unordered::detail::ptr_bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3002 3054])
+                                            ("link_pointer" type
+                                               (:typedef ("bucket" type (:type "class") nil nil)
+                                                :pointer 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3063 3092]))                                          
+                                        :template-specifier 
+                                          ( ("A" type nil nil nil)
+                                            ("T" type nil nil nil)
+                                            ("boost::unordered::detail::ptr_node" type (:pointer 1) nil nil)
+                                            ("boost::unordered::detail::ptr_bucket" type (:pointer 1) nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [2771 3099])
+                                    ("pick_node" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("tentative_node_traits" variable (:type "int") (reparse-symbol classsubparts) [3360 3382])
+                                            ("tentative_bucket_traits" variable (:type "int") (reparse-symbol classsubparts) [3577 3601])
+                                            ("pick" variable (:type "int") (reparse-symbol classsubparts) [3744 3749])
+                                            ("node" type
+                                               (:typedef ("pick::node" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3759 3792])
+                                            ("bucket" type
+                                               (:typedef ("pick::bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3801 3838])
+                                            ("link_pointer" type
+                                               (:typedef ("pick::link_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3847 3896]))                                          )
+                                        (reparse-symbol namespacesubparts) [3105 3903])
+                                    ("set" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil)
+                                            ("H" type (:type "class") nil nil)
+                                            ("P" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("types" type
+                                               (:typedef ("boost::unordered::detail::set" type
+                                                     (:template-specifier 
+                                                        ( ("A" type nil nil nil)
+                                                          ("T" type nil nil nil)
+                                                          ("H" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3996 4052])
+                                            ("allocator" type
+                                               (:typedef ("A" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4062 4082])
+                                            ("value_type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4091 4112])
+                                            ("hasher" type
+                                               (:typedef ("H" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4121 4138])
+                                            ("key_equal" type
+                                               (:typedef ("P" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4147 4167])
+                                            ("key_type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4176 4195])
+                                            ("traits" type
+                                               (:typedef ("boost::unordered::detail::allocator_traits" type
+                                                     (:template-specifier 
+                                                        ( ("allocator" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4205 4274])
+                                            ("pick" type
+                                               (:typedef ("boost::unordered::detail::pick_node" type
+                                                     (:template-specifier 
+                                                        ( ("allocator" type nil nil nil)
+                                                          ("value_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4283 4355])
+                                            ("node" type
+                                               (:typedef ("pick::node" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4364 4397])
+                                            ("bucket" type
+                                               (:typedef ("pick::bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4406 4443])
+                                            ("link_pointer" type
+                                               (:typedef ("pick::link_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4452 4501])
+                                            ("table" type
+                                               (:typedef ("boost::unordered::detail::table_impl" type
+                                                     (:template-specifier 
+                                                        ( ("types" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4511 4569])
+                                            ("extractor" type
+                                               (:typedef ("boost::unordered::detail::set_extractor" type
+                                                     (:template-specifier 
+                                                        ( ("value_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4578 4648])
+                                            ("policy" type
+                                               (:typedef ("boost::unordered::detail::pick_policy::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4658 4729]))                                          )
+                                        (reparse-symbol namespacesubparts) [3909 4736])
+                                    ("map" type
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("K" type (:type "class") nil nil)
+                                            ("M" type (:type "class") nil nil)
+                                            ("H" type (:type "class") nil nil)
+                                            ("P" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("types" type
+                                               (:typedef ("boost::unordered::detail::map" type
+                                                     (:template-specifier 
+                                                        ( ("A" type nil nil nil)
+                                                          ("K" type nil nil nil)
+                                                          ("M" type nil nil nil)
+                                                          ("H" type nil nil nil)
+                                                          ("P" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4841 4900])
+                                            ("allocator" type
+                                               (:typedef ("A" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4910 4930])
+                                            ("value_type" type
+                                               (:typedef ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("K" type (:constant-flag t) nil nil)
+                                                          ("M" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4939 4980])
+                                            ("hasher" type
+                                               (:typedef ("H" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4989 5006])
+                                            ("key_equal" type
+                                               (:typedef ("P" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5015 5035])
+                                            ("key_type" type
+                                               (:typedef ("K" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5044 5063])
+                                            ("traits" type
+                                               (:typedef ("boost::unordered::detail::allocator_traits" type
+                                                     (:template-specifier 
+                                                        ( ("allocator" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5073 5154])
+                                            ("pick" type
+                                               (:typedef ("boost::unordered::detail::pick_node" type
+                                                     (:template-specifier 
+                                                        ( ("allocator" type nil nil nil)
+                                                          ("value_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5163 5235])
+                                            ("node" type
+                                               (:typedef ("pick::node" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5244 5277])
+                                            ("bucket" type
+                                               (:typedef ("pick::bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5286 5323])
+                                            ("link_pointer" type
+                                               (:typedef ("pick::link_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5332 5381])
+                                            ("table" type
+                                               (:typedef ("boost::unordered::detail::table_impl" type
+                                                     (:template-specifier 
+                                                        ( ("types" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5391 5449])
+                                            ("extractor" type
+                                               (:typedef ("boost::unordered::detail::map_extractor" type
+                                                     (:template-specifier 
+                                                        ( ("key_type" type nil nil nil)
+                                                          ("value_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5458 5550])
+                                            ("policy" type
+                                               (:typedef ("boost::unordered::detail::pick_policy::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5560 5631]))                                          )
+                                        (reparse-symbol namespacesubparts) [4742 5638])
+                                    ("table_impl" type
+                                       (:template 
+                                          ( ("Types" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("table" type
+                                               (:typedef ("boost::unordered::detail::table" type
+                                                     (:template-specifier 
+                                                        ( ("Types" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5747 5800])
+                                            ("value_type" type
+                                               (:typedef ("table::value_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5809 5855])
+                                            ("bucket" type
+                                               (:typedef ("table::bucket" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5864 5902])
+                                            ("policy" type
+                                               (:typedef ("table::policy" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5911 5949])
+                                            ("node_pointer" type
+                                               (:typedef ("table::node_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5958 6008])
+                                            ("node_allocator" type
+                                               (:typedef ("table::node_allocator" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6017 6071])
+                                            ("node_allocator_traits" type
+                                               (:typedef ("table::node_allocator_traits" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6080 6148])
+                                            ("bucket_pointer" type
+                                               (:typedef ("table::bucket_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6157 6211])
+                                            ("link_pointer" type
+                                               (:typedef ("table::link_pointer" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6220 6270])
+                                            ("hasher" type
+                                               (:typedef ("table::hasher" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6279 6317])
+                                            ("key_equal" type
+                                               (:typedef ("table::key_equal" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6326 6370])
+                                            ("key_type" type
+                                               (:typedef ("table::key_type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6379 6421])
+                                            ("node_constructor" type
+                                               (:typedef ("table::node_constructor" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6430 6488])
+                                            ("extractor" type
+                                               (:typedef ("table::extractor" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6497 6541])
+                                            ("iterator" type
+                                               (:typedef ("table::iterator" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6550 6592])
+                                            ("c_iterator" type
+                                               (:typedef ("table::c_iterator" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6601 6647])
+                                            ("emplace_return" type
+                                               (:typedef ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("iterator" type nil nil nil)
+                                                          ("bool" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6657 6706])
+                                            ("table_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6752 6766])
+                                                    ("hf" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("hasher" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6783 6800])
+                                                    ("eq" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_equal" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6817 6837])
+                                                    ("a" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("node_allocator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6854 6878]))                                                  
+                                                :type ("table_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [6741 6921])
+                                            ("table_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("table_impl" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6942 6962]))                                                  
+                                                :type ("table_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [6931 7125])
+                                            ("table_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("table_impl" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7146 7166])
+                                                    ("a" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("node_allocator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7183 7207]))                                                  
+                                                :type ("table_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [7135 7278])
+                                            ("table_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("table_impl" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7299 7313])
+                                                    ("m" variable (:type ("boost::unordered::detail::move_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7330 7367]))                                                  
+                                                :type ("table_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [7288 7402])
+                                            ("table_impl" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("table_impl" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7423 7437])
+                                                    ("a" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("node_allocator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7454 7478])
+                                                    ("m" variable (:type ("boost::unordered::detail::move_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7495 7532]))                                                  
+                                                :type ("table_impl" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [7412 7611])
+                                            ("find_node_impl" function
+                                               (:template 
+                                                  ( ("Key" type (:type "class") nil nil)
+                                                    ("Pred" type (:type "class") nil nil))                                                  
+                                                :type ("iterator" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("key_hash" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7725 7746])
+                                                    ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Key" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7763 7776])
+                                                    ("eq" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Pred" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7793 7808]))                                                  )
+                                                (reparse-symbol classsubparts) [7643 8462])
+                                            ("count" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8490 8508]))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8472 8587])
+                                            ("at" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8612 8630]))                                                  
+                                                :type ("value_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8597 8906])
+                                            ("equal_range" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8970 8988]))                                                  
+                                                :type ("std::pair" type
+                                                     (:template-specifier 
+                                                        ( ("iterator" type nil nil nil)
+                                                          ("iterator" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol classsubparts) [8916 9162])
+                                            ("equals" function
+                                               (:arguments 
+                                                  ( ("other" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("table_impl" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9203 9227]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [9191 9574])
+                                            ("add_node" function
+                                               (:typemodifiers ("inline")
+                                                :arguments 
+                                                  ( ("a" variable
+                                                       (:reference 1
+                                                        :type ("node_constructor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [9653 9673])
+                                                    ("key_hash" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9690 9711]))                                                  
+                                                :type ("iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [9611 10575])
+                                            ("[]" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10608 10626]))                                                  
+                                                :type ("value_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [10585 11287])
+                                            ("emplace" function
+                                               (:template 
+                                                  ( ("BOOST_UNORDERED_EMPLACE_TEMPLATE" type nil nil nil))                                                  
+                                                :type ("emplace_return" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable (:type ("BOOST_UNORDERED_EMPLACE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11976 12005]))                                                  )
+                                                (reparse-symbol classsubparts) [11901 12375])
+                                            ("emplace_impl" function
+                                               (:template 
+                                                  ( ("BOOST_UNORDERED_EMPLACE_TEMPLATE" type nil nil nil))                                                  
+                                                :type ("emplace_return" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [12744 12762])
+                                                    ("" variable (:type ("BOOST_UNORDERED_EMPLACE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12775 12804]))                                                  )
+                                                (reparse-symbol classsubparts) [12664 13497])
+                                            ("emplace_impl_with_node" function
+                                               (:arguments 
+                                                  ( ("a" variable
+                                                       (:reference 1
+                                                        :type ("node_constructor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [13545 13565]))                                                  
+                                                :type ("emplace_return" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [13507 14051])
+                                            ("emplace_impl" function
+                                               (:template 
+                                                  ( ("BOOST_UNORDERED_EMPLACE_TEMPLATE" type nil nil nil))                                                  
+                                                :type ("emplace_return" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable (:type ("no_key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14141 14148])
+                                                    ("" variable (:type ("BOOST_UNORDERED_EMPLACE_ARGS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14149 14178]))                                                  )
+                                                (reparse-symbol classsubparts) [14061 14485])
+                                            ("insert_range" function
+                                               (:template 
+                                                  ( ("InputIt" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("i" variable (:type ("InputIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14784 14794])
+                                                    ("j" variable (:type ("InputIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14795 14805]))                                                  )
+                                                (reparse-symbol classsubparts) [14733 14920])
+                                            ("insert_range_impl" function
+                                               (:template 
+                                                  ( ("InputIt" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [14986 15004])
+                                                    ("i" variable (:type ("InputIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15005 15015])
+                                                    ("j" variable (:type ("InputIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15016 15026]))                                                  )
+                                                (reparse-symbol classsubparts) [14930 15741])
+                                            ("insert_range_impl2" function
+                                               (:template 
+                                                  ( ("InputIt" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("a" variable
+                                                       (:reference 1
+                                                        :type ("node_constructor" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [15808 15828])
+                                                    ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [15829 15847])
+                                                    ("i" variable (:type ("InputIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15860 15870])
+                                                    ("j" variable (:type ("InputIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15871 15881]))                                                  )
+                                                (reparse-symbol classsubparts) [15751 16442])
+                                            ("insert_range_impl" function
+                                               (:template 
+                                                  ( ("InputIt" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("" variable (:type ("no_key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16508 16515])
+                                                    ("i" variable (:type ("InputIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16516 16526])
+                                                    ("j" variable (:type ("InputIt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16527 16537]))                                                  )
+                                                (reparse-symbol classsubparts) [16452 16746])
+                                            ("erase_key" function
+                                               (:arguments 
+                                                  ( ("k" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("key_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [16908 16926]))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [16886 17987])
+                                            ("erase" function
+                                               (:arguments 
+                                                  ( ("r" variable (:type ("c_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18012 18025]))                                                  
+                                                :type ("iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [17997 18207])
+                                            ("erase_range" function
+                                               (:arguments 
+                                                  ( ("r1" variable (:type ("c_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18238 18252])
+                                                    ("r2" variable (:type ("c_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18253 18267]))                                                  
+                                                :type ("iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [18217 18424])
+                                            ("erase_nodes" function
+                                               (:arguments 
+                                                  ( ("i" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18451 18466])
+                                                    ("j" variable (:type ("node_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18467 18482]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [18434 18942])
+                                            ("fill_buckets" function
+                                               (:template 
+                                                  ( ("NodeCreator" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("n" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19120 19131])
+                                                    ("dst" variable
+                                                       (:reference 1
+                                                        :type ("table" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [19132 19143])
+                                                    ("creator" variable
+                                                       (:reference 1
+                                                        :type ("NodeCreator" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [19156 19177]))                                                  
+                                                :typemodifiers ("static"))
+                                                (reparse-symbol classsubparts) [19058 19540])
+                                            ("rehash_impl" function
+                                               (:arguments 
+                                                  ( ("num_buckets" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19612 19636]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [19595 19891])
+                                            ("place_in_bucket" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("dst" variable
+                                                       (:reference 1
+                                                        :type ("table" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [20052 20063])
+                                                    ("prev" variable (:type ("link_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20064 20082]))                                                  
+                                                :type ("link_pointer" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [20016 20534]))                                          
+                                        :superclasses 
+                                          ( ("boost::unordered::detail::table" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5644 20541]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [629 20543]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [607 20544]))                  
+                :type "namespace")
+                nil [589 20545]))          
+      :file "unique.hpp"
+      :pointmax 20554
+      :fsize 20553
+      :lastmodtime '(22367 50491 0 0)
+      :unmatched-syntax '((punctuation 3742 . 3743) (symbol 3735 . 3742) (punctuation 3734 . 3735) (punctuation 3733 . 3734) (symbol 3710 . 3733) (TYPENAME 3701 . 3709) (punctuation 3687 . 3688) (symbol 3680 . 3687) (punctuation 3679 . 3680) (punctuation 3678 . 3679) (symbol 3657 . 3678) (TYPENAME 3648 . 3656) (punctuation 3634 . 3635) (symbol 3633 . 3634) (punctuation 3631 . 3632) (symbol 3630 . 3631) (punctuation 3629 . 3630) (symbol 3619 . 3629) (TYPEDEF 3611 . 3618) (punctuation 3575 . 3576) (symbol 3562 . 3566) (punctuation 3561 . 3562) (punctuation 3560 . 3561) (punctuation 3559 . 3560) (symbol 3548 . 3558) (punctuation 3547 . 3548) (punctuation 3546 . 3547) (symbol 3540 . 3546) (punctuation 3539 . 3540) (punctuation 3538 . 3539) (symbol 3529 . 3538) (punctuation 3528 . 3529) (punctuation 3527 . 3528) (symbol 3522 . 3527) (punctuation 3504 . 3505) (symbol 3503 . 3504) (punctuation 3502 . 3503) (symbol 3491 . 3502) (punctuation 3490 . 3491) (punctuation 3489 . 3490) (symbol 3483 . 3489) (punctuation 3482 . 3483) (punctuation 3481 . 3482) (symbol 3472 . 3481) (punctuation 3471 . 3472) (punctuation 3470 . 3471) (symbol 3465 . 3470) (TYPENAME 3456 . 3464) (punctuation 3442 . 3443) (symbol 3426 . 3442) (punctuation 3425 . 3426) (punctuation 3424 . 3425) (symbol 3418 . 3424) (punctuation 3417 . 3418) (punctuation 3416 . 3417) (symbol 3407 . 3416) (punctuation 3406 . 3407) (punctuation 3405 . 3406) (symbol 3400 . 3405) (TYPEDEF 3392 . 3399) (punctuation 3358 . 3359) (symbol 3345 . 3349) (punctuation 3344 . 3345) (punctuation 3343 . 3344) (punctuation 3342 . 3343) (punctuation 3340 . 3341) (symbol 3339 . 3340) (punctuation 3338 . 3339) (symbol 3330 . 3338) (punctuation 3329 . 3330) (punctuation 3328 . 3329) (symbol 3322 . 3328) (punctuation 3321 . 3322) (punctuation 3320 . 3321) (symbol 3311 . 3320) (punctuation 3310 . 3311) (punctuation 3309 . 3310) (symbol 3304 . 3309) (punctuation 3286 . 3287) (symbol 3285 . 3286) (punctuation 3284 . 3285) (symbol 3273 . 3284) (punctuation 3272 . 3273) (punctuation 3271 . 3272) (symbol 3265 . 3271) (punctuation 3264 . 3265) (punctuation 3263 . 3264) (symbol 3254 . 3263) (punctuation 3253 . 3254) (punctuation 3252 . 3253) (symbol 3247 . 3252) (TYPENAME 3238 . 3246) (punctuation 3224 . 3225) (symbol 3208 . 3224) (punctuation 3207 . 3208) (punctuation 3206 . 3207) (symbol 3200 . 3206) (punctuation 3199 . 3200) (punctuation 3198 . 3199) (symbol 3189 . 3198) (punctuation 3188 . 3189) (punctuation 3187 . 3188) (symbol 3182 . 3187) (TYPEDEF 3174 . 3181) (punctuation 2621 . 2622) (punctuation 2620 . 2621) (punctuation 2619 . 2620) (symbol 2606 . 2610) (punctuation 2605 . 2606) (punctuation 2604 . 2605) (punctuation 2603 . 2604) (symbol 2599 . 2603) (punctuation 2597 . 2598) (symbol 2596 . 2597) (punctuation 2595 . 2596) (symbol 2584 . 2595) (punctuation 2583 . 2584) (punctuation 2582 . 2583) (symbol 2576 . 2582) (punctuation 2575 . 2576) (punctuation 2574 . 2575) (symbol 2565 . 2574) (punctuation 2564 . 2565) (punctuation 2563 . 2564) (symbol 2558 . 2563) (TYPENAME 2549 . 2557) (punctuation 2535 . 2536) (symbol 2519 . 2535) (punctuation 2518 . 2519) (punctuation 2517 . 2518) (symbol 2511 . 2517) (punctuation 2510 . 2511) (punctuation 2509 . 2510) (symbol 2500 . 2509) (punctuation 2499 . 2500) (punctuation 2498 . 2499) (symbol 2493 . 2498) (TYPENAME 2484 . 2492) (TYPEDEF 2476 . 2483) (punctuation 1061 . 1062) (punctuation 1060 . 1061) (TYPENAME 1051 . 1059) (TYPEDEF 1043 . 1050) (punctuation 943 . 944) (punctuation 942 . 943) (TYPENAME 933 . 941) (TYPEDEF 925 . 932))
+      :lexical-table 
+        '(("BOOST_UNORDERED_DETAIL_UNIQUE_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "util.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_UNORDERED_DETAIL_UTIL_HPP_INCLUDED" variable (:constant-flag t) nil [306 346])
+            ("boost/config.hpp" include (:system-flag t) nil [348 375])
+            ("boost/type_traits/is_convertible.hpp" include (:system-flag t) nil [432 479])
+            ("boost/type_traits/is_empty.hpp" include (:system-flag t) nil [480 521])
+            ("boost/iterator/iterator_categories.hpp" include (:system-flag t) nil [522 571])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [572 610])
+            ("boost/detail/select_type.hpp" include (:system-flag t) nil [611 650])
+            ("boost/move/move.hpp" include (:system-flag t) nil [651 681])
+            ("boost/preprocessor/seq/size.hpp" include (:system-flag t) nil [682 724])
+            ("boost/preprocessor/seq/enum.hpp" include (:system-flag t) nil [725 767])
+            ("boost/swap.hpp" include (:system-flag t) nil [768 793])
+            ("boost" type
+               (:members 
+                  ( ("unordered" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("minimum_max_load_factor" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "1e-3f"
+                                        :type "float")
+                                        (reparse-symbol namespacesubparts) [859 910])
+                                    ("default_bucket_count" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "11"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [915 966])
+                                    ("move_tag" type (:type "struct") (reparse-symbol namespacesubparts) [971 990])
+                                    ("empty_emplace" type (:type "struct") (reparse-symbol namespacesubparts) [995 1019])
+                                    ("func" type
+                                       (:members 
+                                          ( ("ignore_unused_variable_warning" function
+                                               (:template 
+                                                  ( ("T" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1120 1129]))                                                  
+                                                :typemodifiers ("inline"))
+                                                (reparse-symbol namespacesubparts) [1050 1132]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [1025 1138])
+                                    ("enable_if_forward" type
+                                       (:template 
+                                          ( ("I" type (:type "class") nil nil)
+                                            ("ReturnType" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("boost::enable_if_c" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1438 1631])
+                                    ("disable_if_forward" type
+                                       (:template 
+                                          ( ("I" type (:type "class") nil nil)
+                                            ("ReturnType" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("boost::disable_if_c" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1637 1832])
+                                    ("BOOST_UNORDERED_PRIMES" variable (:constant-flag t) (reparse-symbol namespacesubparts) [1938 1960])
+                                    ("prime_list_template" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("value" variable
+                                               (:dereference 1
+                                                :typemodifiers ("static")
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2427 2460])
+                                            ("length" variable
+                                               (:typemodifiers ("static")
+                                                :type ("std::ptrdiff_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2494 2529]))                                          )
+                                        (reparse-symbol namespacesubparts) [2368 2649])
+                                    ("prime_list_template::value" variable
+                                       (:dereference 1
+                                        :default-value "{
+        BOOST_PP_SEQ_ENUM(BOOST_UNORDERED_PRIMES)
+    }"
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2655 2787])
+                                    ("prime_list_template::length" variable
+                                       (:default-value "BOOST_PP_SEQ_SIZE(BOOST_UNORDERED_PRIMES)"
+                                        :type ("std::ptrdiff_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2817 2943])
+                                    ("prime_list" type
+                                       (:typedef ("prime_list_template" type
+                                             (:template-specifier 
+                                                ( ("std::size_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [2987 3039])
+                                    ("next_prime" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("num" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3091 3107]))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3061 3471])
+                                    ("prev_prime" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("num" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3523 3539]))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [3493 3904])
+                                    ("std::distance" variable (:type "int") (reparse-symbol namespacesubparts) [4069 4083])
+                                    ("insert_size" function
+                                       (:template 
+                                          ( ("I" type (:type "class") nil nil))                                          
+                                        :type ("boost::unordered::detail::enable_if_forward::type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("i" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4426 4430])
+                                            ("j" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4431 4435]))                                          
+                                        :typemodifiers ("inline" "typename"))
+                                        (reparse-symbol namespacesubparts) [4293 4483])
+                                    ("insert_size" function
+                                       (:template 
+                                          ( ("I" type (:type "class") nil nil))                                          
+                                        :type ("boost::unordered::detail::disable_if_forward::type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4623 4625])
+                                            ("" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4626 4628]))                                          
+                                        :typemodifiers ("inline" "typename"))
+                                        (reparse-symbol namespacesubparts) [4489 4658])
+                                    ("initial_size" function
+                                       (:template 
+                                          ( ("I" type (:type "class") nil nil))                                          
+                                        :type ("std::size_t" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("i" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4719 4723])
+                                            ("j" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4724 4728])
+                                            ("num_buckets" variable
+                                               (:default-value "boost"
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4737 4780])
+                                            ("" variable (:type ("unordered::detail::default_bucket_count" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4782 4822]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [4664 4973])
+                                    ("compressed_base" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("int" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("compressed_base" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5181 5192]))                                                  
+                                                :type ("compressed_base" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [5165 5202])
+                                            ("compressed_base" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5227 5232])
+                                                    ("" variable (:type ("move_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5233 5242]))                                                  
+                                                :type ("compressed_base" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [5211 5265])
+                                            ("get" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5275 5301])
+                                            ("get" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5310 5348]))                                          
+                                        :superclasses 
+                                          ( ("T" type
+                                               (:protection "private"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5079 5355])
+                                    ("uncompressed_base" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("int" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("uncompressed_base" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5459 5470]))                                                  
+                                                :type ("uncompressed_base" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [5441 5485])
+                                            ("uncompressed_base" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5512 5517])
+                                                    ("" variable (:type ("move_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5518 5527]))                                                  
+                                                :type ("uncompressed_base" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [5494 5555])
+                                            ("get" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5565 5592])
+                                            ("get" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5601 5640])
+                                            ("private" label nil (reparse-symbol classsubparts) [5645 5653])
+                                            ("value_" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5662 5671]))                                          )
+                                        (reparse-symbol namespacesubparts) [5365 5678])
+                                    ("then" variable (:type ("generate_base" type
+                                         (:prototype t
+                                          :superclasses 
+                                            ( ("boost::detail::if_true::BOOST_NESTED_TEMPLATE" type
+                                                 (:protection "unspecified"
+                                                  :type "class")
+                                                  nil nil))                                            
+                                          :type "struct")
+                                          nil nil)) (reparse-symbol namespacesubparts) [5688 6004])
+                                    ("compressed" type
+                                       (:template 
+                                          ( ("T1" type (:type "class") nil nil)
+                                            ("T2" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("base1" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6264 6275])
+                                            ("base2" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6323 6334])
+                                            ("first_type" type
+                                               (:typedef ("T1" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6344 6366])
+                                            ("second_type" type
+                                               (:typedef ("T2" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [6375 6398])
+                                            ("first" function (:type ("first_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6416 6500])
+                                            ("first" function (:type ("first_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6510 6612])
+                                            ("second" function (:type ("second_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6622 6708])
+                                            ("second" function (:type ("second_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6718 6822])
+                                            ("compressed" function
+                                               (:template 
+                                                  ( ("First" type (:type "class") nil nil)
+                                                    ("Second" type (:type "class") nil nil))                                                  
+                                                :type ("compressed" type (:type "struct") nil nil)
+                                                :arguments 
+                                                  ( ("x1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("First" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6894 6910])
+                                                    ("x2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Second" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6911 6928]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [6832 6966])
+                                            ("compressed" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("compressed" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6987 7007]))                                                  
+                                                :type ("compressed" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [6976 7060])
+                                            ("compressed" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("compressed" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7081 7095])
+                                                    ("m" variable (:type ("move_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7096 7107]))                                                  
+                                                :type ("compressed" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [7070 7166])
+                                            ("assign" function
+                                               (:arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("compressed" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7188 7208]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7176 7296])
+                                            ("move_assign" function
+                                               (:arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("compressed" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7323 7337]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7306 7451])
+                                            ("swap" function
+                                               (:arguments 
+                                                  ( ("x" variable
+                                                       (:reference 1
+                                                        :type ("compressed" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7479 7493]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7469 7605])
+                                            ("private" label nil (reparse-symbol classsubparts) [7611 7619])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("compressed" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7743 7761]))                                                  
+                                                :type ("compressed" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7721 7762]))                                          
+                                        :superclasses 
+                                          ( ("boost::unordered::detail::generate_base::type" type
+                                               (:protection "private"
+                                                :type "class")
+                                                nil nil)
+                                            ("boost::unordered::detail::generate_base::type" type
+                                               (:protection "private"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [6014 7769]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [835 7771]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [813 7772]))                  
+                :type "namespace")
+                nil [795 7773]))          
+      :file "util.hpp"
+      :pointmax 7782
+      :fsize 7781
+      :lastmodtime '(22367 50491 0 0)
+      :unmatched-syntax '((punctuation 6322 . 6323) (punctuation 6321 . 6322) (punctuation 6320 . 6321) (number 6319 . 6320) (punctuation 6317 . 6318) (symbol 6315 . 6317) (punctuation 6314 . 6315) (symbol 6301 . 6314) (TYPENAME 6292 . 6300) (TYPEDEF 6284 . 6291) (punctuation 6263 . 6264) (punctuation 6262 . 6263) (punctuation 6261 . 6262) (number 6260 . 6261) (punctuation 6258 . 6259) (symbol 6256 . 6258) (punctuation 6255 . 6256) (symbol 6242 . 6255) (TYPENAME 6233 . 6241) (TYPEDEF 6225 . 6232) (punctuation 4781 . 4782) (punctuation 4780 . 4781) (punctuation 4068 . 4069) (punctuation 4067 . 4068) (USING 4061 . 4066) (punctuation 1431 . 1432) (semantic-list 1429 . 1431) (punctuation 1423 . 1424) (symbol 1402 . 1423) (punctuation 1401 . 1402) (punctuation 1400 . 1401) (symbol 1395 . 1400) (punctuation 1381 . 1382) (symbol 1377 . 1381) (punctuation 1376 . 1377) (punctuation 1375 . 1376) (punctuation 1374 . 1375) (symbol 1373 . 1374) (punctuation 1372 . 1373) (symbol 1354 . 1372) (punctuation 1353 . 1354) (punctuation 1352 . 1353) (symbol 1347 . 1352) (TYPENAME 1338 . 1346) (punctuation 1324 . 1325) (symbol 1310 . 1324) (punctuation 1309 . 1310) (punctuation 1308 . 1309) (symbol 1303 . 1308) (punctuation 1293 . 1294) (symbol 1282 . 1292) (STRUCT 1275 . 1281) (punctuation 1269 . 1270) (symbol 1268 . 1269) (TYPENAME 1259 . 1267) (punctuation 1258 . 1259) (TEMPLATE 1249 . 1257))
+      :lexical-table 
+        '(("BOOST_UNORDERED_DETAIL_UTIL_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "fwd.hpp"
+      :file "fwd.hpp"
+      :fsize 531
+      :lastmodtime '(22367 50491 0 0))
+    (semanticdb-table "table.hpp"
+      :file "table.hpp"
+      :fsize 27533
+      :lastmodtime '(22367 50491 0 0))
+    (semanticdb-table "extract_key.hpp"
+      :file "extract_key.hpp"
+      :fsize 6160
+      :lastmodtime '(22367 50491 0 0)))
+  :file "!usr!include!boost!unordered!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

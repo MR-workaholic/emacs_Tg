@@ -1,0 +1,339 @@
+;; Object client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "client/"
+  :tables
+  (list
+    (semanticdb-table "MyClient.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_MYCLIENT_H_" variable (:constant-flag t) nil [30 42])
+            ("sys/socket.h" include (:system-flag t) nil [44 67])
+            ("sys/types.h" include (:system-flag t) nil [86 108])
+            ("netdb.h" include (:system-flag t) nil [109 127])
+            ("unistd.h" include (:system-flag t) nil [200 219])
+            ("fcntl.h" include (:system-flag t) nil [241 259])
+            ("ev++.h" include (:system-flag t) nil [282 299])
+            ("string" include (:system-flag t) nil [300 317])
+            ("strings.h" include (:system-flag t) nil [318 338])
+            ("iostream" include (:system-flag t) nil [359 378])
+            ("Method.h" include nil nil [379 398])
+            ("Method" type
+               (:prototype t
+                :type "class")
+                nil [400 413])
+            ("MyClient" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [432 439])
+                    ("MyClient" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pmethod" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("Method" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [451 473])
+                            ("serverIp" variable
+                               (:default-value "\"127.0.0.1\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [475 509])
+                            ("serverPort" variable
+                               (:default-value "\"54321\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [511 543]))                          
+                        :type ("MyClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [442 545])
+                    ("Init" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [548 560])
+                    ("StartStdinRead" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [563 585])
+                    ("StartSockWrite" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [588 610])
+                    ("StartStdoutWrite" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [613 637])
+                    ("Close" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [686 699])
+                    ("_loop" variable (:type ("ev::default_loop" type (:type "class") nil nil)) (reparse-symbol classsubparts) [702 725])
+                    ("private" label nil (reparse-symbol classsubparts) [728 736])
+                    ("_pmethod" variable
+                       (:pointer 1
+                        :type ("Method" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [739 756])
+                    ("_server_ip_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [759 783])
+                    ("_server_port_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [786 812])
+                    ("_stdin_watcher_" variable (:type ("ev::io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [931 954])
+                    ("_stdout_watcher_" variable (:type ("ev::io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [957 981])
+                    ("_sockin_watcher_" variable (:type ("ev::io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [984 1008])
+                    ("_sockout_watcher_" variable (:type ("ev::io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1011 1036])
+                    ("_socketfd" variable (:type "int") (reparse-symbol classsubparts) [1039 1053])
+                    ("SetNonblock" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1073 1078]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1056 1079]))                  
+                :type "class")
+                nil [415 1083]))          
+      :file "MyClient.h"
+      :pointmax 1093
+      :fsize 1092
+      :lastmodtime '(22767 11265 263836 553000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_MYCLIENT_H_")
+          )
+)
+    (semanticdb-table "Method.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_METHOD_H_" variable (:constant-flag t) nil [28 38])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("errno.h" include (:system-flag t) nil [86 104])
+            ("iostream" include (:system-flag t) nil [127 146])
+            ("ev++.h" include (:system-flag t) nil [147 164])
+            ("MyClient.h" include nil nil [165 186])
+            ("MAXLINE" variable (:constant-flag t) nil [196 203])
+            ("MyClient" type
+               (:prototype t
+                :type "class")
+                nil [212 227])
+            ("Method" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [253 260])
+                    ("Method" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Method" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [263 272])
+                    ("StdinCB" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("ev::io" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [296 305])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [306 310]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [275 311])
+                    ("StdoutCB" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("ev::io" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [336 345])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [346 350]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [314 351])
+                    ("SockinCB" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("ev::io" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [376 385])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [386 390]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [354 391])
+                    ("SockoutCB" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("ev::io" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [417 426])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [427 431]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [394 432])
+                    ("SetOwner" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("owner" variable
+                               (:pointer 1
+                                :type ("MyClient" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [449 465]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [435 466])
+                    ("private" label nil (reparse-symbol classsubparts) [468 476])
+                    ("_owner" variable
+                       (:pointer 1
+                        :type ("MyClient" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [479 496])
+                    ("_to" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [500 532])
+                    ("_fr" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [500 532])
+                    ("_to_in_index" variable (:type "int") (reparse-symbol classsubparts) [535 596])
+                    ("_to_out_index" variable (:type "int") (reparse-symbol classsubparts) [535 596])
+                    ("_fr_in_index" variable (:type "int") (reparse-symbol classsubparts) [535 596])
+                    ("_fr_out_index" variable (:type "int") (reparse-symbol classsubparts) [535 596])
+                    ("_eof_stdin" variable (:type "bool") (reparse-symbol classsubparts) [599 615]))                  
+                :type "class")
+                nil [239 619]))          
+      :file "Method.h"
+      :pointmax 628
+      :fsize 635
+      :lastmodtime '(22768 34190 403910 144000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_METHOD_H_")
+          ("MAXLINE" . ((semantic-list "(2048)" 204 . 210)))
+          )
+)
+    (semanticdb-table "MyClient.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MyClient.h" include nil nil [1 22])
+            ("MyClient" function
+               (:constructor-flag t
+                :parent "MyClient"
+                :arguments 
+                  ( ("pmethod" variable
+                       (:pointer 1
+                        :type ("Method" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43 59])
+                    ("serverIp" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60 81])
+                    ("serverPort" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82 105]))                  
+                :type ("MyClient" type (:type "class") nil nil))
+                nil [24 466])
+            ("Init" function
+               (:parent "MyClient"
+                :type "bool")
+                nil [468 1646])
+            ("StartStdinRead" function
+               (:parent "MyClient"
+                :type "void")
+                nil [1648 1816])
+            ("StartSockWrite" function
+               (:parent "MyClient"
+                :type "void")
+                nil [1818 2045])
+            ("StartStdoutWrite" function
+               (:parent "MyClient"
+                :type "void")
+                nil [2047 2277])
+            ("Close" function
+               (:parent "MyClient"
+                :type "void")
+                nil [2279 2325])
+            ("SetNonblock" function
+               (:parent "MyClient"
+                :arguments 
+                  ( ("fd" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2354 2362]))                  
+                :type "void")
+                nil [2327 2441]))          
+      :file "MyClient.cpp"
+      :pointmax 2442
+      :fsize 2441
+      :lastmodtime '(22767 31604 867297 647000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Method.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Method.h" include nil nil [1 20])
+            ("Method" function
+               (:constructor-flag t
+                :parent "Method"
+                :type ("Method" type (:type "class") nil nil))
+                nil [22 156])
+            ("SetOwner" function
+               (:parent "Method"
+                :arguments 
+                  ( ("owner" variable
+                       (:pointer 1
+                        :type ("MyClient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [180 196]))                  
+                :type "void")
+                nil [158 218])
+            ("StdinCB" function
+               (:parent "Method"
+                :arguments 
+                  ( ("w" variable
+                       (:reference 1
+                        :type ("ev::io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [241 251])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [252 264]))                  
+                :type "void")
+                nil [220 773])
+            ("SockinCB" function
+               (:parent "Method"
+                :arguments 
+                  ( ("w" variable
+                       (:reference 1
+                        :type ("ev::io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [797 807])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [808 820]))                  
+                :type "void")
+                nil [775 1352])
+            ("StdoutCB" function
+               (:parent "Method"
+                :arguments 
+                  ( ("w" variable
+                       (:reference 1
+                        :type ("ev::io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1376 1386])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [1386 1398]))                  
+                :type "void")
+                nil [1354 1832])
+            ("SockoutCB" function
+               (:parent "Method"
+                :arguments 
+                  ( ("w" variable
+                       (:reference 1
+                        :type ("ev::io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1857 1867])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [1867 1879]))                  
+                :type "void")
+                nil [1834 2436]))          
+      :file "Method.cpp"
+      :pointmax 2437
+      :fsize 2436
+      :lastmodtime '(22768 34519 845835 274000)
+      :unmatched-syntax nil)
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MyClient.h" include nil nil [1 22])
+            ("Method.h" include nil nil [23 42])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [53 62])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63 76]))                  
+                :type "int")
+                nil [44 218]))          
+      :file "main.cpp"
+      :pointmax 219
+      :fsize 218
+      :lastmodtime '(22767 13021 105977 920000)
+      :unmatched-syntax nil))
+  :file "!home!czh!libev!code!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

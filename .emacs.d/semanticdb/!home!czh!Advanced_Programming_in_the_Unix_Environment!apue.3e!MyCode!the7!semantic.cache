@@ -1,0 +1,27 @@
+;; Object the7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "the7/"
+  :tables
+  (list
+    (semanticdb-table "f7_4.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("../../include/apue.h" include nil nil [1 32])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [43 52])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53 66]))                  
+                :type "int")
+                nil [34 167]))          
+      :file "f7_4.c"
+      :pointmax 168
+      :fsize 167
+      :lastmodtime '(22524 43634 43125 311000)
+      :unmatched-syntax nil))
+  :file "!home!czh!Advanced_Programming_in_the_Unix_Environment!apue.3e!MyCode!the7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

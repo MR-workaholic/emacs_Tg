@@ -1,0 +1,234 @@
+;; Object company-20160522.1835/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "company-20160522.1835/"
+  :tables (list 
+   (semanticdb-table "company-autoloads.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-autoloads.el"
+    :pointmax 8995
+    :fsize 8994
+    :lastmodtime '(22354 19842 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-abbrev.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-abbrev.el"
+    :pointmax 1624
+    :fsize 1623
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-bbdb.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-bbdb.el"
+    :pointmax 2252
+    :fsize 2251
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-capf.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-capf.el"
+    :pointmax 7207
+    :fsize 7206
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-clang.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-clang.el"
+    :pointmax 12866
+    :fsize 12865
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-cmake.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-cmake.el"
+    :pointmax 7360
+    :fsize 7359
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-css.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-css.el"
+    :pointmax 19637
+    :fsize 19636
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-dabbrev-code.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-dabbrev-code.el"
+    :pointmax 4125
+    :fsize 4124
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-dabbrev.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-dabbrev.el"
+    :pointmax 8058
+    :fsize 8057
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-eclim.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-eclim.el"
+    :pointmax 7112
+    :fsize 7111
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-elisp.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-elisp.el"
+    :pointmax 8512
+    :fsize 8511
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-etags.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-etags.el"
+    :pointmax 3987
+    :fsize 3986
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-files.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-files.el"
+    :pointmax 4929
+    :fsize 4928
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-gtags.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-gtags.el"
+    :pointmax 4294
+    :fsize 4293
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-ispell.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-ispell.el"
+    :pointmax 2562
+    :fsize 2561
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-keywords.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-keywords.el"
+    :pointmax 14885
+    :fsize 14884
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-nxml.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-nxml.el"
+    :pointmax 5639
+    :fsize 5638
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-oddmuse.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-oddmuse.el"
+    :pointmax 2047
+    :fsize 2046
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-pkg.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-pkg.el"
+    :pointmax 258
+    :fsize 257
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-semantic.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-semantic.el"
+    :pointmax 6795
+    :fsize 6794
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-template.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-template.el"
+    :pointmax 8286
+    :fsize 8285
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-tempo.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-tempo.el"
+    :pointmax 2237
+    :fsize 2236
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-xcode.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-xcode.el"
+    :pointmax 4740
+    :fsize 4739
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-yasnippet.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-yasnippet.el"
+    :pointmax 5518
+    :fsize 5517
+    :lastmodtime '(22354 19840 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company.el"
+    :pointmax 119849
+    :fsize 119848
+    :lastmodtime '(22354 19839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!emacs!.emacs.d!elpa!company-20160522.1835!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

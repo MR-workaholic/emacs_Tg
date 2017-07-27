@@ -1,0 +1,457 @@
+;; Object threads/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "threads/"
+  :tables
+  (list
+    (semanticdb-table "threadid.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("pthread.h" include (:system-flag t) nil [19 39])
+            ("ntid" variable (:type ("pthread_t" type (:type "class") nil nil)) nil [41 56])
+            ("printids" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [72 86]))                  
+                :type "void")
+                nil [58 267])
+            ("thr_fn" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [283 293]))                  
+                :type "void")
+                nil [269 344])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [355 360]))                  
+                :type "int")
+                nil [346 529]))          
+      :file "threadid.c"
+      :pointmax 530
+      :fsize 529
+      :lastmodtime '(22539 14058 250094 455000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "Makefile"
+      :pointmax 729
+      :fsize 728
+      :lastmodtime '(21290 16875 0 0)
+      :unmatched-syntax '((symbol 725 . 728) (punctuation 724 . 725) (symbol 717 . 724) (punctuation 716 . 717) (symbol 712 . 716) (punctuation 711 . 712) (semantic-list 705 . 711) (symbol 704 . 705) (symbol 696 . 703) (semantic-list 689 . 694) (symbol 688 . 689) (semantic-list 680 . 687) (symbol 679 . 680) (symbol 677 . 678) (punctuation 676 . 677) (punctuation 675 . 676) (semantic-list 663 . 674) (symbol 662 . 663) (semantic-list 654 . 661) (symbol 653 . 654) (symbol 651 . 652) (punctuation 650 . 651) (symbol 647 . 649) (punctuation 644 . 645) (symbol 639 . 644) (semantic-list 629 . 637) (symbol 628 . 629) (semantic-list 618 . 627) (symbol 617 . 618) (punctuation 615 . 616) (symbol 614 . 615) (symbol 612 . 613) (punctuation 611 . 612) (symbol 609 . 610) (punctuation 608 . 609) (punctuation 607 . 608) (symbol 606 . 607) (semantic-list 597 . 605) (symbol 596 . 597) (semantic-list 591 . 595) (symbol 590 . 591) (semantic-list 579 . 588) (symbol 578 . 579) (symbol 576 . 577) (punctuation 575 . 576) (punctuation 574 . 575) (punctuation 572 . 573) (punctuation 571 . 572) (semantic-list 564 . 569) (symbol 563 . 564) (semantic-list 555 . 562) (symbol 554 . 555) (symbol 552 . 553) (punctuation 551 . 552) (symbol 545 . 551) (symbol 543 . 544) (punctuation 542 . 543) (symbol 536 . 542) (symbol 534 . 535) (punctuation 533 . 534) (symbol 527 . 533) (symbol 525 . 526) (punctuation 524 . 525) (symbol 518 . 524) (symbol 516 . 517) (punctuation 515 . 516) (symbol 504 . 515) (symbol 502 . 503) (punctuation 501 . 502) (symbol 494 . 501) (semantic-list 486 . 493) (symbol 485 . 486) (punctuation 483 . 484) (symbol 480 . 483) (symbol 470 . 478) (symbol 459 . 469) (symbol 451 . 458) (symbol 442 . 450) (punctuation 440 . 441) (symbol 434 . 439) (symbol 427 . 432) (symbol 423 . 426) (punctuation 422 . 423) (symbol 413 . 421) (punctuation 412 . 413) (punctuation 411 . 412) (symbol 402 . 411) (symbol 392 . 399) (punctuation 390 . 391) (symbol 386 . 389) (string 374 . 383) (string 360 . 373) (symbol 355 . 359) (symbol 349 . 354) (symbol 341 . 348) (punctuation 340 . 341) (punctuation 339 . 340) (symbol 330 . 339) (symbol 320 . 327) (punctuation 318 . 319) (symbol 314 . 317) (string 302 . 311) (string 288 . 301) (symbol 283 . 287) (symbol 277 . 282) (symbol 272 . 276) (punctuation 271 . 272) (symbol 267 . 270) (punctuation 266 . 267) (symbol 258 . 265) (punctuation 257 . 258) (punctuation 256 . 257) (symbol 247 . 256) (symbol 237 . 244) (punctuation 235 . 236) (symbol 231 . 234) (string 221 . 228) (string 207 . 220) (symbol 202 . 206) (symbol 196 . 201) (symbol 186 . 195) (punctuation 184 . 185) (symbol 178 . 183) (ELSE 171 . 175) (symbol 163 . 170) (punctuation 162 . 163) (punctuation 161 . 162) (symbol 152 . 161) (punctuation 148 . 149) (symbol 142 . 147) (string 132 . 139) (string 118 . 131) (symbol 113 . 117) (punctuation 111 . 112) (symbol 107 . 110) (semantic-list 95 . 105) (symbol 94 . 95) (punctuation 93 . 94) (symbol 86 . 93) (punctuation 85 . 86) (symbol 81 . 85) (punctuation 80 . 81) (semantic-list 74 . 80) (symbol 73 . 74) (symbol 65 . 72) (semantic-list 38 . 64) (symbol 37 . 38) (punctuation 60 . 61) (punctuation 52 . 53) (semantic-list 46 . 52) (punctuation 36 . 37) (symbol 28 . 36) (symbol 20 . 27) (punctuation 19 . 20) (punctuation 18 . 19) (symbol 9 . 18) (punctuation 7 . 8) (punctuation 6 . 7) (punctuation 5 . 6) (symbol 1 . 5)))
+    (semanticdb-table "exitstatus.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("pthread.h" include (:system-flag t) nil [19 39])
+            ("thr_fn1" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [56 66]))                  
+                :type "void")
+                nil [41 123])
+            ("thr_fn2" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [140 150]))                  
+                :type "void")
+                nil [125 211])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [222 227]))                  
+                :type "int")
+                nil [213 793]))          
+      :file "exitstatus.c"
+      :pointmax 794
+      :fsize 793
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "badexit2.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("pthread.h" include (:system-flag t) nil [19 39])
+            ("foo" type
+               (:members 
+                  ( ("a" variable (:type "int") (reparse-symbol classsubparts) [55 70])
+                    ("b" variable (:type "int") (reparse-symbol classsubparts) [55 70])
+                    ("c" variable (:type "int") (reparse-symbol classsubparts) [55 70])
+                    ("d" variable (:type "int") (reparse-symbol classsubparts) [55 70]))                  
+                :type "struct")
+                nil [41 73])
+            ("printfoo" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [89 103])
+                    ("fp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("foo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [104 125]))                  
+                :type "void")
+                nil [75 337])
+            ("thr_fn1" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [354 364]))                  
+                :type "void")
+                nil [339 462])
+            ("thr_fn2" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [479 489]))                  
+                :type "void")
+                nil [464 584])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [595 600]))                  
+                :type "int")
+                nil [586 1077]))          
+      :file "badexit2.c"
+      :pointmax 1078
+      :fsize 1077
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "cleanup.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("pthread.h" include (:system-flag t) nil [19 39])
+            ("cleanup" function
+               (:arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [54 64]))                  
+                :type "void")
+                nil [41 107])
+            ("thr_fn1" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [124 134]))                  
+                :type "void")
+                nil [109 422])
+            ("thr_fn2" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [439 449]))                  
+                :type "void")
+                nil [424 749])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [760 765]))                  
+                :type "int")
+                nil [751 1341]))          
+      :file "cleanup.c"
+      :pointmax 1342
+      :fsize 1341
+      :lastmodtime '(22540 8858 151087 658000)
+      :unmatched-syntax nil)
+    (semanticdb-table "mutex1.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("pthread.h" include (:system-flag t) nil [21 41])
+            ("foo" type
+               (:members 
+                  ( ("f_count" variable (:type "int") (reparse-symbol classsubparts) [57 81])
+                    ("f_lock" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [83 106])
+                    ("f_id" variable (:type "int") (reparse-symbol classsubparts) [108 129]))                  
+                :type "struct")
+                nil [43 163])
+            ("foo_alloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [188 195]))                  
+                :type ("foo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [165 471])
+            ("foo_hold" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("foo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [487 502]))                  
+                :type "void")
+                nil [473 628])
+            ("foo_rele" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("foo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [644 659]))                  
+                :type "void")
+                nil [630 922]))          
+      :file "mutex1.c"
+      :pointmax 923
+      :fsize 922
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "mutex2.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("pthread.h" include (:system-flag t) nil [21 41])
+            ("NHASH" variable (:constant-flag t) nil [51 56])
+            ("HASH" variable (:constant-flag t) nil [68 72])
+            ("fh" variable
+               (:pointer 1
+                :dereference 1
+                :type ("foo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [106 128])
+            ("hashlock" variable
+               (:default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [130 183])
+            ("foo" type
+               (:members 
+                  ( ("f_count" variable (:type "int") (reparse-symbol classsubparts) [199 223])
+                    ("f_lock" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [225 248])
+                    ("f_id" variable (:type "int") (reparse-symbol classsubparts) [250 271])
+                    ("f_next" variable
+                       (:pointer 1
+                        :type ("foo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [273 296]))                  
+                :type "struct")
+                nil [185 358])
+            ("foo_alloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [383 390]))                  
+                :type ("foo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [360 876])
+            ("foo_hold" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("foo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [892 907]))                  
+                :type "void")
+                nil [878 1033])
+            ("foo_find" function
+               (:pointer 1
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1057 1064]))                  
+                :type ("foo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1035 1309])
+            ("foo_rele" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("foo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1325 1340]))                  
+                :type "void")
+                nil [1311 2166]))          
+      :file "mutex2.c"
+      :pointmax 2167
+      :fsize 2166
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NHASH" . ((number "29" 57 . 59)))
+          ("HASH" (spp-arg-list ("id") 72 . 76) . ((semantic-list "(((unsigned long)id)%NHASH)" 77 . 104)))
+          )
+)
+    (semanticdb-table "timedlock.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("pthread.h" include (:system-flag t) nil [19 39])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [50 55]))                  
+                :type "int")
+                nil [41 791]))          
+      :file "timedlock.c"
+      :pointmax 792
+      :fsize 791
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "rwlock.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("pthread.h" include (:system-flag t) nil [21 41])
+            ("job" type
+               (:members 
+                  ( ("j_next" variable
+                       (:pointer 1
+                        :type ("job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [57 76])
+                    ("j_prev" variable
+                       (:pointer 1
+                        :type ("job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [78 97])
+                    ("j_id" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [99 116]))                  
+                :type "struct")
+                nil [43 194])
+            ("queue" type
+               (:members 
+                  ( ("q_head" variable
+                       (:pointer 1
+                        :type ("job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [212 236])
+                    ("q_tail" variable
+                       (:pointer 1
+                        :type ("job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [238 262])
+                    ("q_lock" variable (:type ("pthread_rwlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [264 288]))                  
+                :type "struct")
+                nil [196 291])
+            ("queue_init" function
+               (:arguments 
+                  ( ("qp" variable
+                       (:pointer 1
+                        :type ("queue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [338 355]))                  
+                :type "int")
+                nil [323 538])
+            ("job_insert" function
+               (:arguments 
+                  ( ("qp" variable
+                       (:pointer 1
+                        :type ("queue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [605 622])
+                    ("jp" variable
+                       (:pointer 1
+                        :type ("job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [623 638]))                  
+                :type "void")
+                nil [589 878])
+            ("job_append" function
+               (:arguments 
+                  ( ("qp" variable
+                       (:pointer 1
+                        :type ("queue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [945 962])
+                    ("jp" variable
+                       (:pointer 1
+                        :type ("job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [963 978]))                  
+                :type "void")
+                nil [929 1218])
+            ("job_remove" function
+               (:arguments 
+                  ( ("qp" variable
+                       (:pointer 1
+                        :type ("queue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1281 1298])
+                    ("jp" variable
+                       (:pointer 1
+                        :type ("job" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1299 1314]))                  
+                :type "void")
+                nil [1265 1710])
+            ("job_find" function
+               (:pointer 1
+                :arguments 
+                  ( ("qp" variable
+                       (:pointer 1
+                        :type ("queue" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1780 1797])
+                    ("id" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1798 1811]))                  
+                :type ("job" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1758 2044]))          
+      :file "rwlock.c"
+      :pointmax 2045
+      :fsize 2044
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil))
+  :file "!home!czh!Advanced_Programming_in_the_Unix_Environment!apue.3e!threads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

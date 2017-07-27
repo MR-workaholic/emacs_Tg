@@ -1,0 +1,41 @@
+;; Object libev/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libev/"
+  :tables
+  (list
+    (semanticdb-table "testLibev.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ev.h" include (:system-flag t) nil [37 52])
+            ("stdio.h" include (:system-flag t) nil [54 72])
+            ("stdin_watcher" variable (:type ("ev_io" type (:type "class") nil nil)) nil [162 182])
+            ("timeout_watcher" variable (:type ("ev_timer" type (:type "class") nil nil)) nil [183 208])
+            ("stdin_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev_io" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [340 353])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [353 355])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [356 368]))                  
+                :type "void")
+                nil [318 612])
+            ("timeout_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev_timer" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [684 700])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [700 702])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [703 715]))                  
+                :type "void")
+                nil [660 827])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [839 844]))                  
+                :type "int")
+                nil [829 1448]))          
+      :file "testLibev.cpp"
+      :pointmax 1449
+      :fsize 1448
+      :lastmodtime '(22765 59246 494196 716000)
+      :unmatched-syntax '((punctuation 699 . 700) (punctuation 352 . 353))))
+  :file "!home!czh!libev!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

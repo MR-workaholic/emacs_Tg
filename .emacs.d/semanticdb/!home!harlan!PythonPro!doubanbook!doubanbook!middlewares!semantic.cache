@@ -1,0 +1,95 @@
+;; Object middlewares/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "middlewares/"
+  :tables
+  (list
+    (semanticdb-table "gsxtgeetestmiddleware.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("selenium" include nil nil [1 31])
+            ("selenium.webdriver.common.action_chains" include nil nil [32 96])
+            ("selenium.webdriver.support.ui" include nil nil [97 152])
+            ("selenium.webdriver.support" include nil nil [153 217])
+            ("selenium.webdriver.common.by" include nil nil [218 261])
+            ("time" include nil nil [262 273])
+            ("PIL.Image" include nil nil [274 299])
+            ("re" include nil nil [300 309])
+            ("cStringIO" include nil nil [310 326])
+            ("urllib2" include nil nil [327 341])
+            ("random" include nil nil [342 355])
+            ("GsxtGeetestMiddleware" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [446 547]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [450 454])
+                            ("br_name" variable nil (reparse-symbol function_parameters) [456 463]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [437 584])
+                    ("process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [609 613])
+                            ("request" variable nil (reparse-symbol function_parameters) [615 622])
+                            ("spider" variable nil (reparse-symbol function_parameters) [624 630]))                          )
+                        (reparse-symbol indented_block_body) [589 4611])
+                    ("s" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4622 4626])
+                            ("int" variable nil (reparse-symbol function_parameters) [4628 4631]))                          )
+                        (reparse-symbol indented_block_body) [4616 4658])
+                    ("get_merge_image" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4683 4687])
+                            ("filename" variable nil (reparse-symbol function_parameters) [4689 4697])
+                            ("location_list" variable nil (reparse-symbol function_parameters) [4699 4712]))                          )
+                        (reparse-symbol indented_block_body) [4663 5696])
+                    ("get_token" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5715 5719])
+                            ("div" variable nil (reparse-symbol function_parameters) [5721 5724]))                          )
+                        (reparse-symbol indented_block_body) [5701 5951])
+                    ("get_image" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5970 5974])
+                            ("div" variable nil (reparse-symbol function_parameters) [5976 5979]))                          )
+                        (reparse-symbol indented_block_body) [5956 7166])
+                    ("is_similar" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7186 7190])
+                            ("image1" variable nil (reparse-symbol function_parameters) [7192 7198])
+                            ("image2" variable nil (reparse-symbol function_parameters) [7200 7206])
+                            ("x" variable nil (reparse-symbol function_parameters) [7208 7209])
+                            ("y" variable nil (reparse-symbol function_parameters) [7211 7212]))                          )
+                        (reparse-symbol indented_block_body) [7171 7480])
+                    ("get_diff_location" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7507 7511])
+                            ("image1" variable nil (reparse-symbol function_parameters) [7513 7519])
+                            ("image2" variable nil (reparse-symbol function_parameters) [7521 7527]))                          )
+                        (reparse-symbol indented_block_body) [7485 7750])
+                    ("get_track" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7769 7773])
+                            ("length" variable nil (reparse-symbol function_parameters) [7775 7781]))                          )
+                        (reparse-symbol indented_block_body) [7755 8346]))                  
+                :type "class")
+                nil [395 8346]))          
+      :file "gsxtgeetestmiddleware.py"
+      :pointmax 8346
+      :fsize 9069
+      :lastmodtime '(22888 32699 252829 5000)
+      :unmatched-syntax nil))
+  :file "!home!harlan!PythonPro!doubanbook!doubanbook!middlewares!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

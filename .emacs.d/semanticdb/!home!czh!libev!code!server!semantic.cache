@@ -1,0 +1,364 @@
+;; Object server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "server/"
+  :tables
+  (list
+    (semanticdb-table "MyServer.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_MYSERVER_H_" variable (:constant-flag t) nil [30 42])
+            ("sys/socket.h" include (:system-flag t) nil [44 67])
+            ("sys/types.h" include (:system-flag t) nil [100 122])
+            ("unistd.h" include (:system-flag t) nil [123 142])
+            ("fcntl.h" include (:system-flag t) nil [164 182])
+            ("netinet/in.h" include (:system-flag t) nil [183 206])
+            ("strings.h" include (:system-flag t) nil [230 250])
+            ("arpa/inet.h" include (:system-flag t) nil [271 293])
+            ("fcntl.h" include (:system-flag t) nil [322 340])
+            ("ev++.h" include (:system-flag t) nil [341 358])
+            ("string" include (:system-flag t) nil [359 376])
+            ("iostream" include (:system-flag t) nil [377 396])
+            ("Method.h" include nil nil [397 416])
+            ("LISTENQ" variable (:constant-flag t) nil [425 432])
+            ("Method" type
+               (:prototype t
+                :type "class")
+                nil [441 454])
+            ("Client" type
+               (:members 
+                  ( ("_clientaddr" variable (:type ("sockaddr_in" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [474 505])
+                    ("_socketfd" variable (:type "int") (reparse-symbol classsubparts) [508 522])
+                    ("_psockin_watcher" variable
+                       (:pointer 1
+                        :type ("ev::io" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [525 550])
+                    ("_psockout_watcher" variable
+                       (:pointer 1
+                        :type ("ev::io" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [553 579])
+                    ("_next" variable
+                       (:pointer 1
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [582 596])
+                    ("Client" function
+                       (:constructor-flag t
+                        :type ("Client" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [600 706]))                  
+                :type "struct")
+                nil [456 710])
+            ("MyServer" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [728 735])
+                    ("MyServer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pmethod" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("Method" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [747 769])
+                            ("host" variable
+                               (:default-value "\"127.0.0.1\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [771 801])
+                            ("port" variable
+                               (:default-value "\"54321\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [803 829]))                          
+                        :type ("MyServer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [738 831])
+                    ("Init" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [834 846])
+                    ("StartSockWrite" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [869 873]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [849 874])
+                    ("ServerCleanClient" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [900 904]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [877 905])
+                    ("_loop" variable (:type ("ev::default_loop" type (:type "class") nil nil)) (reparse-symbol classsubparts) [908 931])
+                    ("private" label nil (reparse-symbol classsubparts) [933 941])
+                    ("_pmethod" variable
+                       (:pointer 1
+                        :type ("Method" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [944 961])
+                    ("_host" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [964 982])
+                    ("_port" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [985 1003])
+                    ("_client_link" variable
+                       (:pointer 1
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1006 1027])
+                    ("_listenfd" variable (:type "int") (reparse-symbol classsubparts) [1032 1046])
+                    ("_listen_watcher" variable (:type ("ev::io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1049 1072])
+                    ("_serveraddr" variable (:type ("sockaddr_in" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1075 1106])
+                    ("SetNonblock" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1128 1134]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1111 1135])
+                    ("ListenCB" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("ev::io" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1152 1161])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1162 1166]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1138 1167]))                  
+                :type "class")
+                nil [712 1170]))          
+      :file "MyServer.h"
+      :pointmax 1180
+      :fsize 1179
+      :lastmodtime '(22768 31105 816714 767000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LISTENQ" . ((semantic-list "(1000)" 433 . 439)))
+          ("_MYSERVER_H_")
+          )
+)
+    (semanticdb-table "Method.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_METHOD_H_" variable (:constant-flag t) nil [28 38])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("errno.h" include (:system-flag t) nil [86 104])
+            ("map" include (:system-flag t) nil [127 141])
+            ("ev++.h" include (:system-flag t) nil [142 159])
+            ("iostream" include (:system-flag t) nil [160 179])
+            ("MyServer.h" include nil nil [180 201])
+            ("MAXLINE" variable (:constant-flag t) nil [211 218])
+            ("MyServer" type
+               (:prototype t
+                :type "class")
+                nil [227 242])
+            ("DataBuffer" type
+               (:members 
+                  ( ("_read_index" variable (:type "int") (reparse-symbol classsubparts) [266 282])
+                    ("_write_index" variable (:type "int") (reparse-symbol classsubparts) [285 302])
+                    ("_eof_read" variable (:type "bool") (reparse-symbol classsubparts) [305 320])
+                    ("_data" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [323 343])
+                    ("DataBuffer" function
+                       (:constructor-flag t
+                        :type ("DataBuffer" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [347 427]))                  
+                :type "struct")
+                nil [244 430])
+            ("Method" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [447 454])
+                    ("Method" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Method" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [457 466])
+                    ("SetOwner" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("MyServer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [483 493]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [469 494])
+                    ("SocketReadCB" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("ev::io" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [523 532])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [533 537]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [497 538])
+                    ("SocketWriteCB" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("ev::io" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [568 577])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [578 582]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [541 583])
+                    ("private" label nil (reparse-symbol classsubparts) [585 593])
+                    ("_owner" variable
+                       (:pointer 1
+                        :type ("MyServer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [596 613])
+                    ("_buffer" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("DataBuffer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [616 650])
+                    ("CleanClient" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [671 675]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [654 676]))                  
+                :type "class")
+                nil [432 680]))          
+      :file "Method.h"
+      :pointmax 689
+      :fsize 688
+      :lastmodtime '(22768 28551 649318 684000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_METHOD_H_")
+          ("MAXLINE" . ((semantic-list "(2048)" 219 . 225)))
+          )
+)
+    (semanticdb-table "MyServer.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MyServer.h" include nil nil [1 22])
+            ("MyServer" function
+               (:constructor-flag t
+                :parent "MyServer"
+                :arguments 
+                  ( ("pmethod" variable
+                       (:pointer 1
+                        :type ("Method" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43 59])
+                    ("host" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60 77])
+                    ("port" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78 95]))                  
+                :type ("MyServer" type (:type "class") nil nil))
+                nil [24 200])
+            ("Init" function
+               (:parent "MyServer"
+                :type "bool")
+                nil [202 792])
+            ("StartSockWrite" function
+               (:parent "MyServer"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [824 831]))                  
+                :type "bool")
+                nil [794 1368])
+            ("ServerCleanClient" function
+               (:parent "MyServer"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1403 1410]))                  
+                :type "void")
+                nil [1370 2250])
+            ("SetNonblock" function
+               (:parent "MyServer"
+                :arguments 
+                  ( ("fd" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2279 2287]))                  
+                :type "void")
+                nil [2252 2366])
+            ("ListenCB" function
+               (:parent "MyServer"
+                :arguments 
+                  ( ("w" variable
+                       (:reference 1
+                        :type ("ev::io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2393 2403])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [2404 2416]))                  
+                :type "void")
+                nil [2369 3222]))          
+      :file "MyServer.cpp"
+      :pointmax 3223
+      :fsize 3222
+      :lastmodtime '(22768 35600 393673 972000)
+      :unmatched-syntax nil)
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Method.h" include nil nil [1 20])
+            ("MyServer.h" include nil nil [21 42])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [53 62])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [63 76]))                  
+                :type "int")
+                nil [44 179]))          
+      :file "main.cpp"
+      :pointmax 180
+      :fsize 179
+      :lastmodtime '(22768 9130 436151 933000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Method.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Method.h" include nil nil [1 20])
+            ("Method" function
+               (:constructor-flag t
+                :parent "Method"
+                :type ("Method" type (:type "class") nil nil))
+                nil [22 57])
+            ("SetOwner" function
+               (:parent "Method"
+                :arguments 
+                  ( ("owner" variable
+                       (:pointer 1
+                        :type ("MyServer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81 97]))                  
+                :type "void")
+                nil [59 119])
+            ("SocketReadCB" function
+               (:parent "Method"
+                :arguments 
+                  ( ("w" variable
+                       (:reference 1
+                        :type ("ev::io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147 157])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [158 170]))                  
+                :type "void")
+                nil [121 953])
+            ("SocketWriteCB" function
+               (:parent "Method"
+                :arguments 
+                  ( ("w" variable
+                       (:reference 1
+                        :type ("ev::io" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [982 992])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [993 1005]))                  
+                :type "void")
+                nil [955 1725])
+            ("CleanClient" function
+               (:parent "Method"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1752 1759]))                  
+                :type "void")
+                nil [1727 1844]))          
+      :file "Method.cpp"
+      :pointmax 1845
+      :fsize 1844
+      :lastmodtime '(22768 35372 507047 440000)
+      :unmatched-syntax nil))
+  :file "!home!czh!libev!code!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,80 @@
+;; Object emacs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacs/"
+  :tables (list 
+   (semanticdb-table ".emacs"
+    :major-mode 'c++-mode
+    :tags nil
+    :file ".emacs"
+    :pointmax 12072
+    :fsize 13018
+    :lastmodtime '(22363 46955 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.php"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "test.php"
+    :pointmax 139
+    :fsize 163
+    :lastmodtime '(22346 60897 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("string" include (:system-flag t) nil [39 56])
+            ("pi" variable (:constant-flag t) nil [66 68])
+            ("a" variable (:type "int") nil [75 81])
+            ("main" function (:type "void") nil [83 321]))          
+    :file "test.cpp"
+    :pointmax 322
+    :fsize 349
+    :lastmodtime '(22352 11116 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("pi" . ((number "3.14" 69 . 73)))
+          )
+
+    )
+   (semanticdb-table ".recentf"
+    :major-mode 'c++-mode
+    :tags nil
+    :file ".recentf"
+    :pointmax 1676
+    :fsize 1707
+    :lastmodtime '(22424 48311 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.txt"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Q16" variable (:type "int") nil [83 87])
+            ("Q16" variable (:type "int") nil [124 128])
+            ("NetSarang" variable (:type "int") nil [158 168])
+            ("system32" variable (:type "int") nil [201 210])
+            ("Wbem" variable (:type "int") nil [245 250])
+            ("System" variable (:type "int") nil [328 335])
+            ("Progr" variable (:type "int") nil [338 344])
+            ("win32" variable (:type "int") nil [466 472])
+            ("bin" variable (:type "int") nil [489 493])
+            ("System" variable (:type "int") nil [511 518])
+            ("bin" variable (:type "int") nil [530 534])
+            ("bin" variable (:type "int") nil [550 554])
+            ("tools" variable (:type "int") nil [624 630])
+            ("app" variable (:type "int") nil [810 814])
+            ("bin" variable (:type "int") nil [845 849])
+            ("bin" variable (:type "int") nil [913 917]))          
+    :file "test.txt"
+    :pointmax 954
+    :fsize 971
+    :lastmodtime '(22354 40612 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!emacs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

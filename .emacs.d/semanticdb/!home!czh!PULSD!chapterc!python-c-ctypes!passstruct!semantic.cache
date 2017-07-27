@@ -1,0 +1,57 @@
+;; Object passstruct/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "passstruct/"
+  :tables
+  (list
+    (semanticdb-table "testlib.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("point" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [47 53])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [56 62]))                  
+                :type "struct")
+                nil [22 70])
+            ("point" type
+               (:typedef ("point" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [22 70])
+            ("addPoint" function
+               (:arguments 
+                  ( ("a" variable (:type ("point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87 95])
+                    ("b" variable (:type ("point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96 104]))                  
+                :type ("point" type (:type "class") nil nil))
+                nil [72 176]))          
+      :file "testlib.c"
+      :pointmax 177
+      :fsize 176
+      :lastmodtime '(22564 28503 43273 597000)
+      :unmatched-syntax nil)
+    (semanticdb-table "pytestlib.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ctypes" include nil nil [24 37])
+            ("point" type
+               (:superclasses ("ctypes.Structure")
+                :members 
+                  ( ("_fields_" variable nil (reparse-symbol indented_block_body) [75 128]))                  
+                :type "class")
+                nil [40 129])
+            ("a" variable nil nil [130 145])
+            ("b" variable nil nil [146 161])
+            ("testlib" variable nil nil [162 199])
+            ("testlib" variable nil nil [200 232])
+            ("c" variable nil nil [233 259])
+            ("print" code nil nil [260 298])
+            ("d" variable nil nil [299 318])
+            ("print" code nil nil [319 334])
+            ("print" code nil nil [335 348]))          
+      :file "pytestlib.py"
+      :pointmax 349
+      :fsize 348
+      :lastmodtime '(22564 29839 335675 658000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapterc!python-c-ctypes!passstruct!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

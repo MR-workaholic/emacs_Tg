@@ -1,0 +1,253 @@
+;; Object spiders/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spiders/"
+  :tables
+  (list
+    (semanticdb-table "GS_REG_GZ.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [179 190])
+            ("md5" include nil nil [191 201])
+            ("os" include nil nil [202 211])
+            ("time" include nil nil [212 223])
+            ("copy" include nil nil [224 249])
+            ("urllib" include nil nil [250 278])
+            ("scrapy" include nil nil [280 293])
+            ("yaml" include nil nil [294 305])
+            ("scrapy_redis.spiders" include nil nil [306 350])
+            ("quake.config" include nil nil [352 383])
+            ("quake.items" include nil nil [384 430])
+            ("quake.libs" include nil nil [431 467])
+            ("quake.libs.reg_utils" include nil nil [468 513])
+            ("quake.spider_logging" include nil nil [514 562])
+            ("GS_REG_GZ" type
+               (:documentation "spider to crawl Guizhou corporation's registration information"
+                :superclasses ("RedisSpider")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [672 690])
+                    ("YML_CONFIG" variable nil (reparse-symbol indented_block_body) [696 711])
+                    ("yml_path" variable nil (reparse-symbol indented_block_body) [716 766])
+                    ("if" code nil (reparse-symbol indented_block_body) [771 877])
+                    ("custom_settings" variable nil (reparse-symbol indented_block_body) [882 1325])
+                    ("the_logger" variable nil (reparse-symbol indented_block_body) [1331 1365])
+                    ("get_c_url" variable nil (reparse-symbol indented_block_body) [1371 1431])
+                    ("get_slide_url" variable nil (reparse-symbol indented_block_body) [1436 1485])
+                    ("check_slide_url" variable nil (reparse-symbol indented_block_body) [1490 1616])
+                    ("base_url" variable nil (reparse-symbol indented_block_body) [1621 1656])
+                    ("search_url" variable nil (reparse-symbol indented_block_body) [1661 1720])
+                    ("info_url" variable nil (reparse-symbol indented_block_body) [1725 1792])
+                    ("MAX_NOT_FOUND" variable nil (reparse-symbol indented_block_body) [1798 1849])
+                    ("MAX_RETRY_TIMES" variable nil (reparse-symbol indented_block_body) [1854 1909])
+                    ("feedback_url" variable nil (reparse-symbol indented_block_body) [1915 2086])
+                    ("get_time_string" function
+                       (:typemodifiers ("static")
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2092 2177])
+                    ("retry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2192 2196])
+                            ("failure" variable nil (reparse-symbol function_parameters) [2198 2205]))                          )
+                        (reparse-symbol indented_block_body) [2182 2718])
+                    ("man_retry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2737 2741])
+                            ("response" variable nil (reparse-symbol function_parameters) [2743 2751]))                          )
+                        (reparse-symbol indented_block_body) [2723 3207])
+                    ("_start_new" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3227 3231])
+                            ("args" variable nil (reparse-symbol function_parameters) [3233 3238])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3240 3248]))                          )
+                        (reparse-symbol indented_block_body) [3212 3560])
+                    ("start_new" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3579 3583])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3585 3593]))                          
+                        :documentation "
+        用企业名搜工商的时候，拿到的企业名可能是英文括号，
+        在搜的时候先转成中文括号，然后再搜，
+        但是写到结果里面第一行的公司名是解析出来公司名，并且将全角括号替换成半角括号
+        
+        names = ['侗乡信息科技']  # 个体工商户
+        names = ['福泉市佳鑫信息科技开发']  # 个人独资
+        names = ['双赢投资股份有限公司']  # 投资人大于5
+        names = ['贵州恒茂商贸有限公司']  # save_content报错情况
+        ")
+                        (reparse-symbol indented_block_body) [3565 4458])
+                    ("make_request_from_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4522 4526])
+                            ("data" variable nil (reparse-symbol function_parameters) [4528 4532]))                          
+                        :documentation "
+        Parameters
+        ----------
+        data : str
+            Company name encoding with UTF-8 from redis.
+
+        ")
+                        (reparse-symbol indented_block_body) [4495 4810])
+                    ("parse_cookie" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4832 4836])
+                            ("response" variable nil (reparse-symbol function_parameters) [4838 4846]))                          )
+                        (reparse-symbol indented_block_body) [4815 6264])
+                    ("parse_search_result" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6293 6297])
+                            ("response" variable nil (reparse-symbol function_parameters) [6299 6307]))                          )
+                        (reparse-symbol indented_block_body) [6269 11523])
+                    ("save_content" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11545 11549])
+                            ("response" variable nil (reparse-symbol function_parameters) [11551 11559]))                          )
+                        (reparse-symbol indented_block_body) [11528 11921])
+                    ("dummy_callback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11945 11949])
+                            ("response" variable nil (reparse-symbol function_parameters) [11951 11959]))                          )
+                        (reparse-symbol indented_block_body) [11926 11975]))                  
+                :type "class")
+                nil [565 11975]))          
+      :file "GS_REG_GZ.py"
+      :pointmax 11975
+      :fsize 12394
+      :lastmodtime '(22892 15253 938077 724000)
+      :unmatched-syntax '((INDENT_BLOCK 11770 . 11921) (NEWLINE 11769 . 11770) (COLON 11768 . 11769) (TRY 11570 . 11573) (AS 11764 . 11766) (INDENT_BLOCK 11345 . 11523) (NEWLINE 11344 . 11345) (COLON 11343 . 11344) (TRY 6385 . 6388) (AS 11339 . 11341) (INDENT_BLOCK 6158 . 6264) (NEWLINE 6157 . 6158) (COLON 6156 . 6157) (TRY 4896 . 4899) (AS 6152 . 6154)))
+    (semanticdb-table "GS_REG_CN.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scrapy" include nil nil [146 159])
+            ("json" include nil nil [160 171])
+            ("time" include nil nil [172 183])
+            ("re" include nil nil [184 193])
+            ("md5" include nil nil [194 204])
+            ("random" include nil nil [205 218])
+            ("os" include nil nil [219 228])
+            ("copy" include nil nil [229 254])
+            ("collections" include nil nil [255 290])
+            ("urllib" include nil nil [291 319])
+            ("urlparse" include nil nil [320 348])
+            ("yaml" include nil nil [350 361])
+            ("scrapy" include nil nil [362 392])
+            ("scrapy.selector" include nil nil [393 429])
+            ("scrapy_redis.spiders" include nil nil [430 474])
+            ("twisted.internet" include nil nil [475 518])
+            ("quake.request.multipart" include nil nil [520 591])
+            ("quake.items" include nil nil [592 638])
+            ("quake.config" include nil nil [639 670])
+            ("quake.libs" include nil nil [671 709])
+            ("quake.libs.reg_utils" include nil nil [710 755])
+            ("quake.spider_logging" include nil nil [756 804])
+            ("GS_REG_CN" type
+               (:documentation "spider to crawl Zhejiang corporation's registration information"
+                :superclasses ("RedisSpider")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [916 934])
+                    ("YML_CONFIG" variable nil (reparse-symbol indented_block_body) [940 955])
+                    ("yml_path" variable nil (reparse-symbol indented_block_body) [960 1010])
+                    ("if" code nil (reparse-symbol indented_block_body) [1015 1121])
+                    ("the_logger" variable nil (reparse-symbol indented_block_body) [1126 1160])
+                    ("get_c_url" variable nil (reparse-symbol indented_block_body) [1166 1225])
+                    ("get_slide_url" variable nil (reparse-symbol indented_block_body) [1230 1279])
+                    ("check_slide_url" variable nil (reparse-symbol indented_block_body) [1284 1410])
+                    ("base_url" variable nil (reparse-symbol indented_block_body) [1415 1461])
+                    ("search_url" variable nil (reparse-symbol indented_block_body) [1466 1528])
+                    ("feedback_url" variable nil (reparse-symbol indented_block_body) [1533 1704])
+                    ("custom_settings" variable nil (reparse-symbol indented_block_body) [1710 2303])
+                    ("get_time_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2329 2333]))                          )
+                        (reparse-symbol indented_block_body) [2309 2378])
+                    ("make_request_from_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2410 2414])
+                            ("data" variable nil (reparse-symbol function_parameters) [2416 2420]))                          )
+                        (reparse-symbol indented_block_body) [2383 2547])
+                    ("start_new" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2566 2570])
+                            ("cor_code" variable nil (reparse-symbol function_parameters) [2572 2580]))                          )
+                        (reparse-symbol indented_block_body) [2552 3005])
+                    ("retry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3020 3024])
+                            ("failure" variable nil (reparse-symbol function_parameters) [3026 3033]))                          )
+                        (reparse-symbol indented_block_body) [3010 3585])
+                    ("man_retry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3604 3608])
+                            ("response" variable nil (reparse-symbol function_parameters) [3610 3618]))                          )
+                        (reparse-symbol indented_block_body) [3590 4113])
+                    ("parse_cookie" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4135 4139])
+                            ("response" variable nil (reparse-symbol function_parameters) [4141 4149]))                          )
+                        (reparse-symbol indented_block_body) [4118 5244])
+                    ("parse_challenge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5269 5273])
+                            ("response" variable nil (reparse-symbol function_parameters) [5275 5283]))                          )
+                        (reparse-symbol indented_block_body) [5249 6751])
+                    ("call_after_pause" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6777 6781])
+                            ("response" variable nil (reparse-symbol function_parameters) [6783 6791]))                          )
+                        (reparse-symbol indented_block_body) [6756 7537])
+                    ("parse_teddy_result" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7565 7569])
+                            ("response" variable nil (reparse-symbol function_parameters) [7571 7579]))                          )
+                        (reparse-symbol indented_block_body) [7542 8854])
+                    ("search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8870 8874])
+                            ("response" variable nil (reparse-symbol function_parameters) [8876 8884]))                          )
+                        (reparse-symbol indented_block_body) [8859 10478])
+                    ("parse_search_result" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10507 10511])
+                            ("response" variable nil (reparse-symbol function_parameters) [10513 10521]))                          )
+                        (reparse-symbol indented_block_body) [10483 12641])
+                    ("save_content" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12663 12667])
+                            ("response" variable nil (reparse-symbol function_parameters) [12669 12677]))                          )
+                        (reparse-symbol indented_block_body) [12646 12864])
+                    ("dummy_callback" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12888 12892])
+                            ("response" variable nil (reparse-symbol function_parameters) [12894 12902]))                          )
+                        (reparse-symbol indented_block_body) [12869 12918]))                  
+                :type "class")
+                nil [807 12918]))          
+      :file "GS_REG_CN.py"
+      :pointmax 12918
+      :fsize 12979
+      :lastmodtime '(22892 15253 938077 724000)
+      :unmatched-syntax '((INDENT_BLOCK 12463 . 12641) (NEWLINE 12462 . 12463) (COLON 12461 . 12462) (TRY 10607 . 10610) (AS 12457 . 12459) (INDENT_BLOCK 10372 . 10478) (NEWLINE 10371 . 10372) (COLON 10370 . 10371) (TRY 8934 . 8937) (AS 10366 . 10368) (INDENT_BLOCK 8748 . 8854) (NEWLINE 8747 . 8748) (COLON 8746 . 8747) (TRY 7590 . 7593) (AS 8742 . 8744) (INDENT_BLOCK 7449 . 7537) (NEWLINE 7448 . 7449) (COLON 7447 . 7448) (TRY 6802 . 6805) (AS 7443 . 7445) (INDENT_BLOCK 6645 . 6751) (NEWLINE 6644 . 6645) (COLON 6643 . 6644) (TRY 5294 . 5297) (AS 6639 . 6641) (INDENT_BLOCK 5138 . 5244) (NEWLINE 5137 . 5138) (COLON 5136 . 5137) (TRY 4160 . 4163) (AS 5132 . 5134))))
+  :file "!home!harlan!PythonPro!quake!quake!spiders!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

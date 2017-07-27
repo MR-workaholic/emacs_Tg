@@ -1,0 +1,32 @@
+;; Object control/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "control/"
+  :tables
+  (list
+    (semanticdb-table "if.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_CONTROL_IF_HPP" variable (:constant-flag t) nil [408 441])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [444 492])
+            ("boost/preprocessor/control/iif.hpp" include (:system-flag t) nil [493 539])
+            ("boost/preprocessor/logical/bool.hpp" include (:system-flag t) nil [540 587])
+            ("BOOST_PP_IF" variable (:constant-flag t) nil [761 772])
+            ("BOOST_PP_IF_I" variable (:constant-flag t) nil [823 836]))          
+      :file "if.hpp"
+      :pointmax 907
+      :fsize 906
+      :lastmodtime '(22367 50479 0 0)
+      :unmatched-syntax '((punctuation 897 . 898) (punctuation 610 . 611) (punctuation 590 . 591) (punctuation 588 . 589) (punctuation 442 . 443) (punctuation 354 . 355) (punctuation 296 . 297) (punctuation 294 . 295) (punctuation 252 . 253) (punctuation 250 . 251) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_IF" (spp-arg-list ("cond" "t" "f") 772 . 784) . ((symbol "BOOST_PP_IF_I" 785 . 798) (semantic-list "(cond, t, f)" 798 . 810)))
+          ("BOOST_PREPROCESSOR_CONTROL_IF_HPP")
+          ("BOOST_PP_IF_I" (spp-arg-list ("cond" "t" "f") 836 . 848) . ((symbol "BOOST_PP_IIF" 849 . 861) (semantic-list "(BOOST_PP_BOOL(cond), t, f)" 861 . 888)))
+          )
+)
+    (semanticdb-table "iif.hpp"
+      :file "iif.hpp"
+      :fsize 1325
+      :lastmodtime '(22367 50479 0 0)))
+  :file "!usr!include!boost!preprocessor!control!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,249 @@
+;; Object Thread/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Thread/"
+  :tables
+  (list
+    (semanticdb-table "TestBoost.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [31 50])
+            ("boost/function.hpp" include (:system-flag t) nil [51 80])
+            ("boost/bind.hpp" include (:system-flag t) nil [81 106])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [107 139])
+            ("Test" type
+               (:superclasses 
+                  ( ("boost::noncopyable" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [175 182])
+                    ("ClassPrint" function (:type "void") (reparse-symbol classsubparts) [185 251])
+                    ("ClassPrintNum" function
+                       (:arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [274 280])
+                            ("b" variable (:type "int") (reparse-symbol arg-sub-list) [281 287]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [255 353])
+                    ("ReturnInt" function
+                       (:arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [371 377]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [357 399]))                  
+                :type "class")
+                nil [141 402])
+            ("FunctionPrint" function (:type "void") nil [404 469])
+            ("FunctionPrintNum" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [493 499])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [500 506]))                  
+                :type "void")
+                nil [471 568])
+            ("boost::function" using (:type ("boost::function" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [570 592])
+            ("boost::bind" using (:type ("boost::bind" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [593 611])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [624 633])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [634 647]))                  
+                :type "int")
+                nil [615 1083]))          
+      :file "TestBoost.cpp"
+      :pointmax 1084
+      :fsize 1083
+      :lastmodtime '(22785 63501 501563 378000)
+      :unmatched-syntax nil)
+    (semanticdb-table "MyThread.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_MYTHREAD_H_" variable (:constant-flag t) nil [30 42])
+            ("pthread.h" include (:system-flag t) nil [44 64])
+            ("boost/function.hpp" include (:system-flag t) nil [65 94])
+            ("boost/bind.hpp" include (:system-flag t) nil [95 120])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [121 153])
+            ("string" include (:system-flag t) nil [154 171])
+            ("ThreadCall" variable (:type "int") nil [205 216])
+            ("MyThread" type
+               (:superclasses 
+                  ( ("boost::noncopyable" type
+                       (:protection "unspecified"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [256 263])
+                    ("MyThread" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ThreadCall" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [275 293])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [294 313]))                          
+                        :type ("MyThread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [266 314])
+                    ("GetThreadName" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [317 351])
+                    ("GetThreadID" function
+                       (:prototype-flag t
+                        :type ("pthread_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [354 384])
+                    ("IsThreadStart" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [387 414])
+                    ("Start" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [417 429])
+                    ("SetFunction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("ThreadCall" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [449 460]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [432 461])
+                    ("private" label nil (reparse-symbol classsubparts) [463 471])
+                    ("_pid" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [474 489])
+                    ("_thread_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [492 517])
+                    ("_thread_start" variable (:type "bool") (reparse-symbol classsubparts) [520 539])
+                    ("_fun" variable (:type ("ThreadCall" type (:type "class") nil nil)) (reparse-symbol classsubparts) [542 558])
+                    ("StartThread" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [587 593]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [562 594]))                  
+                :type "class")
+                nil [218 662]))          
+      :file "MyThread.h"
+      :pointmax 671
+      :fsize 670
+      :lastmodtime '(22787 2282 771485 426000)
+      :unmatched-syntax '((punctuation 203 . 204) (semantic-list 201 . 203) (VOID 197 . 201) (punctuation 196 . 197) (symbol 188 . 196) (punctuation 187 . 188) (punctuation 186 . 187) (symbol 181 . 186) (TYPEDEF 173 . 180) (punctuation 203 . 204) (semantic-list 201 . 203) (VOID 197 . 201) (punctuation 196 . 197) (symbol 188 . 196) (punctuation 187 . 188) (punctuation 186 . 187) (symbol 181 . 186) (TYPEDEF 173 . 180))
+      :lexical-table 
+        '(("_MYTHREAD_H_")
+          )
+)
+    (semanticdb-table "MyThread.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("pthread.h" include (:system-flag t) nil [1 21])
+            ("string" include (:system-flag t) nil [22 39])
+            ("MyThread.h" include nil nil [40 61])
+            ("MyThread" function
+               (:constructor-flag t
+                :parent "MyThread"
+                :arguments 
+                  ( ("func" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ThreadCall" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82 105])
+                    ("threadName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106 136]))                  
+                :type ("MyThread" type (:type "class") nil nil))
+                nil [63 219])
+            ("GetThreadName" function
+               (:parent "MyThread"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [221 291])
+            ("GetThreadID" function
+               (:parent "MyThread"
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [293 351])
+            ("IsThreadStart" function
+               (:parent "MyThread"
+                :type "bool")
+                nil [353 417])
+            ("Start" function
+               (:parent "MyThread"
+                :type "int")
+                nil [419 648])
+            ("SetFunction" function
+               (:parent "MyThread"
+                :arguments 
+                  ( ("newFun" variable (:type ("ThreadCall" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [677 695]))                  
+                :type "void")
+                nil [650 716])
+            ("StartThread" function
+               (:pointer 1
+                :parent "MyThread"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [746 756]))                  
+                :type "void")
+                nil [718 892]))          
+      :file "MyThread.cpp"
+      :pointmax 893
+      :fsize 892
+      :lastmodtime '(22787 2334 752562 660000)
+      :unmatched-syntax nil)
+    (semanticdb-table "TestThread.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MyThread.h" include nil nil [1 22])
+            ("iostream" include (:system-flag t) nil [23 42])
+            ("boost/bind.hpp" include (:system-flag t) nil [43 68])
+            ("string" include (:system-flag t) nil [69 86])
+            ("time.h" include (:system-flag t) nil [87 104])
+            ("N" variable
+               (:constant-flag t
+                :default-value "5"
+                :type "int")
+                nil [106 122])
+            ("ThreadFunc" function
+               (:arguments 
+                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [140 151]))                  
+                :type "void")
+                nil [124 241])
+            ("PrintNum" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [257 263])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [264 270]))                  
+                :type "void")
+                nil [243 346])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [357 366])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [367 380]))                  
+                :type "int")
+                nil [348 1049]))          
+      :file "TestThread.cpp"
+      :pointmax 1050
+      :fsize 1049
+      :lastmodtime '(22809 39609 133077 411000)
+      :unmatched-syntax nil)
+)
+  :file "!home!czh!文档!cppprogrametest!Thread!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,18 @@
+;; Object NS3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "NS3/"
+  :tables (list 
+   (semanticdb-table "uan-animation.xml"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "uan-animation.xml"
+    :pointmax 5476312
+    :fsize 5476311
+    :lastmodtime '(22358 28076 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!NS_3_24_1!NS3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

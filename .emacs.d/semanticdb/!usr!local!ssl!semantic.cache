@@ -1,0 +1,16 @@
+;; Object ssl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ssl/"
+  :tables
+  (list
+    (semanticdb-table "openssl.cnf"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "openssl.cnf"
+      :pointmax 10772
+      :fsize 10771
+      :lastmodtime '(22776 51259 591038 513000)
+      :unmatched-syntax nil))
+  :file "!usr!local!ssl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

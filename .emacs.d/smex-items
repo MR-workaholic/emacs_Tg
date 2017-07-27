@@ -1,0 +1,23 @@
+
+;; ----- smex-history -----
+(
+ shell-command
+ eval-buffer
+ package-install
+ package-list-packages
+ load-file
+ emacs-lisp-mode
+ ido-mode
+)
+
+;; ----- smex-data -----
+(
+ (eval-buffer . 26)
+ (ido-mode . 1)
+ (emacs-lisp-mode . 1)
+ (load-file . 2)
+ (auto-complete-mode . 2)
+ (package-list-packages . 2)
+ (package-install . 1)
+ (shell-command . 1)
+)

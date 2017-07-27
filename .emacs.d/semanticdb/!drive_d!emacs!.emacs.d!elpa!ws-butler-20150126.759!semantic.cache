@@ -1,0 +1,36 @@
+;; Object ws-butler-20150126.759/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ws-butler-20150126.759/"
+  :tables (list 
+   (semanticdb-table "ws-butler-autoloads.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "ws-butler-autoloads.el"
+    :pointmax 1533
+    :fsize 1532
+    :lastmodtime '(22354 36271 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ws-butler-pkg.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "ws-butler-pkg.el"
+    :pointmax 101
+    :fsize 101
+    :lastmodtime '(22354 36270 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ws-butler.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "ws-butler.el"
+    :pointmax 9415
+    :fsize 9414
+    :lastmodtime '(22354 36270 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!emacs!.emacs.d!elpa!ws-butler-20150126.759!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

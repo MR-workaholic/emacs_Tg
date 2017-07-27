@@ -1,0 +1,1966 @@
+;; Object libev-4.24/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libev-4.24/"
+  :tables
+  (list
+    (semanticdb-table "ev.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("EV_H_" variable (:constant-flag t) nil [2132 2137])
+            ("EV_CPP" variable (:constant-flag t) nil [2167 2173])
+            ("EV_THROW" variable (:constant-flag t) nil [2252 2260]))          
+      :file "ev.h"
+      :pointmax 29489
+      :fsize 29488
+      :lastmodtime '(22627 15717 0 0)
+      :unmatched-syntax '((EXTERN "extern" 2329 . 29479) (EXTERN "extern" 2329 . 29480) (EXTERN "extern" 2329 . 29479) (EXTERN "extern" 2329 . 29480) (EXTERN "extern" 2329 . 29479))
+      :lexical-table 
+        '(("EV_MINPRI" . ((semantic-list "(EV_FEATURE_CONFIG ? -2 : 0)" 3098 . 3126)))
+          ("EV_ASYNC_ENABLE" . ((symbol "EV_FEATURE_WATCHERS" 4093 . 4112)))
+          ("EV_PROTOTYPES" . ((number "1" 6231 . 6232)))
+          ("EV_COMMON" . 
+              ((VOID "void" 7905 . 7909) (punctuation "*" 7910 . 7911) (symbol "data" 7911 . 7915) (punctuation ";" 7915 . 7916)))
+          ("ev_fork_set" (spp-arg-list ("ev") 22374 . 22378))
+          ("ev_signal_init" (spp-arg-list ("ev" "cb" "signum") 23004 . 23018) . 
+              ((DO "do" 23027 . 23029) (semantic-list "{ ev_init ((ev), (cb)); ev_signal_set ((ev), (signum)); }" 23030 . 23087) (WHILE "while" 23088 . 23093) (semantic-list "(0)" 23094 . 23097)))
+          ("ev_prepare_init" (spp-arg-list ("ev" "cb") 23466 . 23473) . 
+              ((DO "do" 23488 . 23490) (semantic-list "{ ev_init ((ev), (cb)); ev_prepare_set ((ev)); }" 23491 . 23539) (WHILE "while" 23540 . 23545) (semantic-list "(0)" 23546 . 23549)))
+          ("EV_FEATURE_WATCHERS" . ((semantic-list "((EV_FEATURES) & 16)" 2861 . 2881)))
+          ("EV_FEATURE_BACKENDS" . ((semantic-list "((EV_FEATURES) & 32)" 2910 . 2930)))
+          ("EV_P_")
+          ("EV_CB_DECLARE" (spp-arg-list ("type") 7969 . 7975) . 
+              ((VOID "void" 7976 . 7980) (semantic-list "(*cb)" 7981 . 7986) (semantic-list "(EV_P_ struct type *w, int revents)" 7986 . 8021) (punctuation ";" 8021 . 8022)))
+          ("EV_WATCHER" (spp-arg-list ("type") 9159 . 9165) . 
+              ((INT "int" 9172 . 9175) (symbol "active" 9176 . 9182) (punctuation ";" 9182 . 9183) (INT "int" 9204 . 9207) (symbol "pending" 9208 . 9215) (punctuation ";" 9215 . 9216) (symbol "EV_DECL_PRIORITY" 9237 . 9253) (symbol "EV_COMMON" 9273 . 9282) (symbol "EV_CB_DECLARE" 9299 . 9312) (semantic-list "(type)" 9313 . 9319)))
+          ("ev_child_set" (spp-arg-list ("ev" "pid_" "trace_") 21791 . 21807) . 
+              ((DO "do" 21816 . 21818) (semantic-list "{ (ev)->pid = (pid_); (ev)->flags = !!(trace_); }" 21819 . 21868) (WHILE "while" 21869 . 21874) (semantic-list "(0)" 21875 . 21878)))
+          ("ev_cleanup_set" (spp-arg-list ("ev") 22464 . 22468))
+          ("ev_child_init" (spp-arg-list ("ev" "cb" "pid" "trace") 23119 . 23136) . 
+              ((DO "do" 23143 . 23145) (semantic-list "{ ev_init ((ev), (cb)); ev_child_set ((ev),(pid),(trace)); }" 23146 . 23206) (WHILE "while" 23207 . 23212) (semantic-list "(0)" 23213 . 23216)))
+          ("ev_cleanup_init" (spp-arg-list ("ev" "cb") 23895 . 23902) . 
+              ((DO "do" 23917 . 23919) (semantic-list "{ ev_init ((ev), (cb)); ev_cleanup_set ((ev)); }" 23920 . 23968) (WHILE "while" 23969 . 23974) (semantic-list "(0)" 23975 . 23978)))
+          ("EV_PERIODIC_ENABLE" . ((symbol "EV_FEATURE_WATCHERS" 3338 . 3357)))
+          ("EV_INLINE" . ((STATIC "static" 6012 . 6018)))
+          ("ev_check_set" (spp-arg-list ("ev") 22202 . 22206))
+          ("ev_timer_init" (spp-arg-list ("ev" "cb" "after" "repeat") 22754 . 22774) . 
+              ((DO "do" 22778 . 22780) (semantic-list "{ ev_init ((ev), (cb)); ev_timer_set ((ev),(after),(repeat)); }" 22781 . 22844) (WHILE "while" 22845 . 22850) (semantic-list "(0)" 22851 . 22854)))
+          ("EV_H_")
+          ("EV_MULTIPLICITY" . ((symbol "EV_FEATURE_CONFIG" 3257 . 3274)))
+          ("EV_PREPARE_ENABLE" . ((symbol "EV_FEATURE_WATCHERS" 3494 . 3513)))
+          ("EV_FORK_ENABLE" . ((symbol "EV_FEATURE_WATCHERS" 3721 . 3740)))
+          ("EV_DEFAULT_UC_")
+          ("EV_API_DECL" . ((EXTERN "extern" 6103 . 6109)))
+          ("ev_embed_set" (spp-arg-list ("ev" "other_") 22289 . 22300) . 
+              ((DO "do" 22314 . 22316) (semantic-list "{ (ev)->other = (other_); }" 22317 . 22344) (WHILE "while" 22345 . 22350) (semantic-list "(0)" 22351 . 22354)))
+          ("ev_periodic_init" (spp-arg-list ("ev" "cb" "ofs" "ival" "rcb") 22879 . 22899) . 
+              ((DO "do" 22900 . 22902) (semantic-list "{ ev_init ((ev), (cb)); ev_periodic_set ((ev),(ofs),(ival),(rcb)); }" 22903 . 22971) (WHILE "while" 22972 . 22977) (semantic-list "(0)" 22978 . 22981)))
+          ("EVUNLOOP_ONE" . ((symbol "EVBREAK_ONE" 28741 . 28752)))
+          ("EV_DEFAULT_UC")
+          ("EV_VERSION_MINOR" . ((number "24" 6374 . 6376)))
+          ("EV_CB_INVOKE" (spp-arg-list ("watcher" "revents") 8072 . 8089) . 
+              ((semantic-list "(watcher)" 8090 . 8099) (punctuation "-" 8099 . 8100) (punctuation ">" 8100 . 8101) (symbol "cb" 8101 . 8103) (semantic-list "(EV_A_ (watcher), (revents))" 8104 . 8132)))
+          ("ev_idle_set" (spp-arg-list ("ev") 22027 . 22031))
+          ("ev_check_init" (spp-arg-list ("ev" "cb") 23571 . 23578) . 
+              ((DO "do" 23595 . 23597) (semantic-list "{ ev_init ((ev), (cb)); ev_check_set ((ev)); }" 23598 . 23644) (WHILE "while" 23645 . 23650) (semantic-list "(0)" 23651 . 23654)))
+          ("ev_signal_set" (spp-arg-list ("ev" "signum_") 21704 . 21716) . 
+              ((DO "do" 21728 . 21730) (semantic-list "{ (ev)->signum = (signum_); }" 21731 . 21760) (WHILE "while" 21761 . 21766) (semantic-list "(0)" 21767 . 21770)))
+          ("ev_prepare_set" (spp-arg-list ("ev") 22117 . 22121))
+          ("EVLOOP_NONBLOCK" . ((symbol "EVRUN_NOWAIT" 28624 . 28636)))
+          ("EV_CHILD_ENABLE" . ((symbol "EV_FEATURE_WATCHERS" 4009 . 4028)))
+          ("ev_set_cb" (spp-arg-list ("ev" "cb_") 25030 . 25038) . ((semantic-list "(ev_cb_ (ev) = (cb_), memmove (&((ev_watcher *)(ev))->cb, &ev_cb_ (ev), sizeof (ev_cb_ (ev))))" 25057 . 25151)))
+          ("EV_CHECK_ENABLE" . ((symbol "EV_FEATURE_WATCHERS" 3571 . 3590)))
+          ("EV_IDLE_ENABLE" . ((symbol "EV_FEATURE_WATCHERS" 3646 . 3665)))
+          ("ev_embed_init" (spp-arg-list ("ev" "cb" "other") 23676 . 23689) . 
+              ((DO "do" 23700 . 23702) (semantic-list "{ ev_init ((ev), (cb)); ev_embed_set ((ev),(other)); }" 23703 . 23757) (WHILE "while" 23758 . 23763) (semantic-list "(0)" 23764 . 23767)))
+          ("ev_cb" (spp-arg-list ("ev") 24451 . 24455) . ((semantic-list "(memmove (&ev_cb_ (ev), &((ev_watcher *)(ev))->cb, sizeof (ev_cb_ (ev))), (ev)->cb)" 24483 . 24566)))
+          ("ev_set_priority" (spp-arg-list ("ev" "pri") 24682 . 24690) . ((semantic-list "((ev), (pri))" 24703 . 24716)))
+          ("EV_SIGNAL_ENABLE" . ((symbol "EV_FEATURE_WATCHERS" 3881 . 3900)))
+          ("EV_ATOMIC_T" . ((symbol "sig_atomic_t" 4661 . 4673) (VOLATILE "volatile" 4674 . 4682)))
+          ("EV_A_")
+          ("EV_DEFAULT_")
+          ("EV_WATCHER_LIST" (spp-arg-list ("type") 9358 . 9364) . 
+              ((symbol "EV_WATCHER" 9371 . 9381) (semantic-list "(type)" 9382 . 9388) (STRUCT "struct" 9396 . 9402) (symbol "ev_watcher_list" 9403 . 9418) (punctuation "*" 9419 . 9420) (symbol "next" 9420 . 9424) (punctuation ";" 9424 . 9425)))
+          ("ev_async_set" (spp-arg-list ("ev") 22549 . 22553))
+          ("ev_io_init" (spp-arg-list ("ev" "cb" "fd" "events") 22635 . 22652) . 
+              ((DO "do" 22662 . 22664) (semantic-list "{ ev_init ((ev), (cb)); ev_io_set ((ev),(fd),(events)); }" 22665 . 22722) (WHILE "while" 22723 . 22728) (semantic-list "(0)" 22729 . 22732)))
+          ("ev_is_pending" (spp-arg-list ("ev") 24106 . 24110) . ((semantic-list "(0 + ((ev_watcher *)(void *)(ev))->pending)" 24130 . 24173)))
+          ("ev_is_active" (spp-arg-list ("ev") 24257 . 24261) . ((semantic-list "(0 + ((ev_watcher *)(void *)(ev))->active)" 24282 . 24324)))
+          ("ev_priority" (spp-arg-list ("ev") 24615 . 24619) . ((semantic-list "((ev), EV_MINPRI)" 24640 . 24657)))
+          ("ev_periodic_at" (spp-arg-list ("ev") 24937 . 24941) . ((semantic-list "(+((ev_watcher_time *)(ev))->at)" 24960 . 24992)))
+          ("EVUNLOOP_ALL" . ((symbol "EVBREAK_ALL" 28779 . 28790)))
+          ("EV_FEATURE_DATA" . ((semantic-list "((EV_FEATURES) &  2)" 2714 . 2734)))
+          ("EV_FEATURE_CONFIG" . ((semantic-list "((EV_FEATURES) &  4)" 2763 . 2783)))
+          ("EV_WATCHER_TIME" (spp-arg-list ("type") 9464 . 9470) . 
+              ((symbol "EV_WATCHER" 9477 . 9487) (semantic-list "(type)" 9488 . 9494) (symbol "ev_tstamp" 9502 . 9511) (symbol "at" 9512 . 9514) (punctuation ";" 9514 . 9515)))
+          ("ev_stat_set" (spp-arg-list ("ev" "path_" "interval_") 21898 . 21918) . 
+              ((DO "do" 21924 . 21926) (semantic-list "{ (ev)->path = (path_); (ev)->interval = (interval_); (ev)->wd = -2; }" 21927 . 21997) (WHILE "while" 21998 . 22003) (semantic-list "(0)" 22004 . 22007)))
+          ("ev_async_init" (spp-arg-list ("ev" "cb") 24000 . 24007) . 
+              ((DO "do" 24024 . 24026) (semantic-list "{ ev_init ((ev), (cb)); ev_async_set ((ev)); }" 24027 . 24073) (WHILE "while" 24074 . 24079) (semantic-list "(0)" 24080 . 24083)))
+          ("EVLOOP_ONESHOT" . ((symbol "EVRUN_ONCE" 28663 . 28673)))
+          ("EV_FEATURES" . ((number "0x7f" 2616 . 2620)))
+          ("EV_FEATURE_API" . ((semantic-list "((EV_FEATURES) &  8)" 2812 . 2832)))
+          ("EV_A")
+          ("EV_DEFAULT")
+          ("ev_init" (spp-arg-list ("ev" "cb_") 21108 . 21116) . 
+              ((DO "do" 21117 . 21119) (semantic-list "{			\\
+  ((ev_watcher *)(void *)(ev))->active  =	\\
+  ((ev_watcher *)(void *)(ev))->pending = 0;	\\
+  ev_set_priority ((ev), 0);			\\
+  ev_set_cb ((ev), cb_);			\\
+}" 21120 . 21280) (WHILE "while" 21281 . 21286) (semantic-list "(0)" 21287 . 21290)))
+          ("ev_timer_set" (spp-arg-list ("ev" "after_" "repeat_") 21432 . 21451) . 
+              ((DO "do" 21457 . 21459) (semantic-list "{ ((ev_watcher_time *)(ev))->at = (after_); (ev)->repeat = (repeat_); }" 21460 . 21531) (WHILE "while" 21532 . 21537) (semantic-list "(0)" 21538 . 21541)))
+          ("ev_periodic_set" (spp-arg-list ("ev" "ofs_" "ival_" "rcb_") 21565 . 21585) . 
+              ((DO "do" 21587 . 21589) (semantic-list "{ (ev)->offset = (ofs_); (ev)->interval = (ival_); (ev)->reschedule_cb = (rcb_); }" 21590 . 21672) (WHILE "while" 21673 . 21678) (semantic-list "(0)" 21679 . 21682)))
+          ("ev_idle_init" (spp-arg-list ("ev" "cb") 23359 . 23366) . 
+              ((DO "do" 23384 . 23386) (semantic-list "{ ev_init ((ev), (cb)); ev_idle_set ((ev)); }" 23387 . 23432) (WHILE "while" 23433 . 23438) (semantic-list "(0)" 23439 . 23442)))
+          ("EVUNLOOP_CANCEL" . ((symbol "EVBREAK_CANCEL" 28700 . 28714)))
+          ("EV_COMPAT3" . ((number "1" 2499 . 2500)))
+          ("EV_FEATURE_OS" . ((semantic-list "((EV_FEATURES) & 64)" 2959 . 2979)))
+          ("EV_CB" (spp-arg-list ("type" "name") 8185 . 8196) . 
+              ((VOID "void" 8197 . 8201) (symbol "name" 8202 . 8206) (semantic-list "(EV_P_ struct ev_ ## type *w, int revents)" 8207 . 8249)))
+          ("EV_DECL_PRIORITY")
+          ("ev_fork_init" (spp-arg-list ("ev" "cb") 23788 . 23795) . 
+              ((DO "do" 23813 . 23815) (semantic-list "{ ev_init ((ev), (cb)); ev_fork_set ((ev)); }" 23816 . 23861) (WHILE "while" 23862 . 23867) (semantic-list "(0)" 23868 . 23871)))
+          ("EV_CPP" (spp-arg-list ("x") 2173 . 2176) . ((symbol "x" 2177 . 2178)))
+          ("EV_THROW" . ((THROW "throw" 2261 . 2266) (semantic-list "()" 2267 . 2269)))
+          ("EV_FEATURE_CODE" . ((semantic-list "((EV_FEATURES) &  1)" 2665 . 2685)))
+          ("EV_MAXPRI" . ((semantic-list "(EV_FEATURE_CONFIG ? +2 : 0)" 3171 . 3199)))
+          ("EV_STAT_ENABLE" . ((symbol "EV_FEATURE_WATCHERS" 3413 . 3432)))
+          ("EV_CLEANUP_ENABLE" . ((symbol "EV_FEATURE_WATCHERS" 3802 . 3821)))
+          ("EV_WALK_ENABLE" . ((number "0" 4245 . 4246)))
+          ("EV_P" . ((VOID "void" 5682 . 5686)))
+          ("EV_VERSION_MAJOR" . ((number "4" 6347 . 6348)))
+          ("ev_io_set" (spp-arg-list ("ev" "fd_" "events_") 21309 . 21325) . 
+              ((DO "do" 21337 . 21339) (semantic-list "{ (ev)->fd = (fd_); (ev)->events = (events_) | EV__IOFDSET; }" 21340 . 21401) (WHILE "while" 21402 . 21407) (semantic-list "(0)" 21408 . 21411)))
+          ("ev_stat_init" (spp-arg-list ("ev" "cb" "path" "interval") 23237 . 23258) . 
+              ((DO "do" 23262 . 23264) (semantic-list "{ ev_init ((ev), (cb)); ev_stat_set ((ev),(path),(interval)); }" 23265 . 23328) (WHILE "while" 23329 . 23334) (semantic-list "(0)" 23335 . 23338)))
+          ("ev_cb_" (spp-arg-list ("ev") 24389 . 24393) . 
+              ((semantic-list "(ev)" 24420 . 24424) (punctuation "-" 24424 . 24425) (punctuation ">" 24425 . 24426) (symbol "cb" 24426 . 24428)))
+          )
+)
+    (semanticdb-table "ev.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("config.h" include nil nil [2263 2284])
+            ("EV_USE_CLOCK_SYSCALL" variable (:constant-flag t) nil [2659 2679])
+            ("EV_USE_MONOTONIC" variable (:constant-flag t) nil [2891 2907])
+            ("EV_USE_REALTIME" variable (:constant-flag t) nil [2956 2971])
+            ("EV_USE_NANOSLEEP" variable (:constant-flag t) nil [3137 3153])
+            ("EV_USE_SELECT" variable (:constant-flag t) nil [3321 3334])
+            ("EV_USE_POLL" variable (:constant-flag t) nil [3488 3499])
+            ("EV_USE_EPOLL" variable (:constant-flag t) nil [3669 3681])
+            ("EV_USE_KQUEUE" variable (:constant-flag t) nil [3851 3864])
+            ("EV_USE_PORT" variable (:constant-flag t) nil [4028 4039])
+            ("EV_USE_INOTIFY" variable (:constant-flag t) nil [4211 4225])
+            ("EV_USE_SIGNALFD" variable (:constant-flag t) nil [4397 4412])
+            ("EV_USE_EVENTFD" variable (:constant-flag t) nil [4557 4571])
+            ("stdlib.h" include (:system-flag t) nil [4592 4611])
+            ("string.h" include (:system-flag t) nil [4612 4631])
+            ("fcntl.h" include (:system-flag t) nil [4632 4650])
+            ("stddef.h" include (:system-flag t) nil [4651 4670])
+            ("stdio.h" include (:system-flag t) nil [4672 4690])
+            ("assert.h" include (:system-flag t) nil [4692 4711])
+            ("errno.h" include (:system-flag t) nil [4712 4730])
+            ("sys/types.h" include (:system-flag t) nil [4731 4753])
+            ("time.h" include (:system-flag t) nil [4754 4771])
+            ("limits.h" include (:system-flag t) nil [4772 4791])
+            ("signal.h" include (:system-flag t) nil [4793 4812])
+            ("ev.h" include nil nil [4847 4863])
+            ("sys/time.h" include (:system-flag t) nil [5062 5084])
+            ("sys/wait.h" include (:system-flag t) nil [5085 5107])
+            ("unistd.h" include (:system-flag t) nil [5108 5128])
+            ("_DARWIN_UNLIMITED_SELECT" variable (:constant-flag t) nil [5611 5635])
+            ("EV_NSIG" variable (:constant-flag t) nil [6358 6365])
+            ("EV_USE_FLOOR" variable (:constant-flag t) nil [6432 6444])
+            ("EV_PID_HASHSIZE" variable (:constant-flag t) nil [7923 7938])
+            ("EV_INOTIFY_HASHSIZE" variable (:constant-flag t) nil [8009 8028])
+            ("EV_VERIFY" variable (:constant-flag t) nil [8571 8580])
+            ("EV_USE_4HEAP" variable (:constant-flag t) nil [8644 8656])
+            ("EV_HEAP_CACHE_AT" variable (:constant-flag t) nil [8715 8731])
+            ("EV_USE_MONOTONIC" variable (:constant-flag t) nil [9769 9785])
+            ("EV_USE_REALTIME" variable (:constant-flag t) nil [9852 9867])
+            ("EV_USE_INOTIFY" variable (:constant-flag t) nil [9930 9944])
+            ("sys/select.h" include (:system-flag t) nil [10090 10115])
+            ("EV_FREQUENT_CHECK" variable (:constant-flag t) nil [11323 11340])
+            ("MIN_INTERVAL" variable (:constant-flag t) nil [11497 11509])
+            ("MIN_TIMEJUMP" variable (:constant-flag t) nil [11643 11655])
+            ("MAX_BLOCKTIME" variable (:constant-flag t) nil [11741 11754])
+            ("EV_TV_SET" variable (:constant-flag t) nil [11833 11842])
+            ("EV_TS_SET" variable (:constant-flag t) nil [11939 11948])
+            ("ECB_H" variable (:constant-flag t) nil [14326 14331])
+            ("ECB_VERSION" variable (:constant-flag t) nil [14376 14387])
+            ("inttypes.h" include (:system-flag t) nil [15066 15089])
+            ("ECB_PTRSIZE" variable (:constant-flag t) nil [15202 15213])
+            ("ECB_GCC_AMD64" variable (:constant-flag t) nil [15241 15254])
+            ("ECB_MSVC_AMD64" variable (:constant-flag t) nil [15312 15326])
+            ("ECB_GCC_VERSION" variable (:constant-flag t) nil [16112 16127])
+            ("ECB_CLANG_VERSION" variable (:constant-flag t) nil [16232 16249])
+            ("ECB_CLANG_BUILTIN" variable (:constant-flag t) nil [16458 16475])
+            ("ECB_CLANG_EXTENSION" variable (:constant-flag t) nil [16599 16618])
+            ("ECB_CPP" variable (:constant-flag t) nil [16640 16647])
+            ("ECB_CPP11" variable (:constant-flag t) nil [16674 16683])
+            ("ECB_C" variable (:constant-flag t) nil [16796 16801])
+            ("ECB_STDC_VERSION" variable (:constant-flag t) nil [16825 16841])
+            ("ECB_C99" variable (:constant-flag t) nil [16875 16882])
+            ("ECB_C11" variable (:constant-flag t) nil [16923 16930])
+            ("ECB_EXTERN_C" variable (:constant-flag t) nil [17097 17109])
+            ("ECB_EXTERN_C_BEG" variable (:constant-flag t) nil [17127 17143])
+            ("ECB_EXTERN_C_END" variable (:constant-flag t) nil [17154 17170])
+            ("pthread.h" include (:system-flag t) nil [24820 24844])
+            ("ECB_NEEDS_PTHREADS" variable (:constant-flag t) nil [24857 24875])
+            ("ECB_MEMORY_FENCE_NEEDS_PTHREADS" variable (:constant-flag t) nil [24890 24921])
+            ("ecb_mf_lock" variable
+               (:typemodifiers ("static")
+                :default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [24929 24992])
+            ("ECB_MEMORY_FENCE" variable (:constant-flag t) nil [25005 25021])
+            ("ECB_MEMORY_FENCE_ACQUIRE" variable (:constant-flag t) nil [25204 25228])
+            ("ECB_MEMORY_FENCE_RELEASE" variable (:constant-flag t) nil [25330 25354])
+            ("ecb_inline" variable (:constant-flag t) nil [25639 25649])
+            ("ecb_restrict" variable (:constant-flag t) nil [25788 25800])
+            ("ecb_bool" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [25809 25830])
+            ("ECB_CONCAT_" variable (:constant-flag t) nil [25840 25851])
+            ("ECB_CONCAT" variable (:constant-flag t) nil [25873 25883])
+            ("ECB_STRINGIFY_" variable (:constant-flag t) nil [25916 25930])
+            ("ECB_STRINGIFY" variable (:constant-flag t) nil [25946 25959])
+            ("ECB_STRINGIFY_EXPR" variable (:constant-flag t) nil [25989 26007])
+            ("ecb_function_" variable (:constant-flag t) nil [26055 26068])
+            ("ecb_attribute" variable (:constant-flag t) nil [26214 26227])
+            ("ecb_is_constant" variable (:constant-flag t) nil [26671 26686])
+            ("ecb_expect" variable (:constant-flag t) nil [26867 26877])
+            ("ecb_prefetch" variable (:constant-flag t) nil [27076 27088])
+            ("ecb_deprecated" variable (:constant-flag t) nil [27563 27577])
+            ("ecb_deprecated_message" variable (:constant-flag t) nil [27827 27849])
+            ("ecb_noinline" variable (:constant-flag t) nil [27960 27972])
+            ("ecb_unused" variable (:constant-flag t) nil [28020 28030])
+            ("ecb_const" variable (:constant-flag t) nil [28072 28081])
+            ("ecb_pure" variable (:constant-flag t) nil [28123 28131])
+            ("ecb_noreturn" variable (:constant-flag t) nil [28554 28566])
+            ("ecb_artificial" variable (:constant-flag t) nil [28810 28824])
+            ("ecb_hot" variable (:constant-flag t) nil [28835 28842])
+            ("ecb_cold" variable (:constant-flag t) nil [28853 28861])
+            ("ecb_expect_false" variable (:constant-flag t) nil [29094 29110])
+            ("ecb_expect_true" variable (:constant-flag t) nil [29150 29165])
+            ("ecb_likely" variable (:constant-flag t) nil [29255 29265])
+            ("ecb_unlikely" variable (:constant-flag t) nil [29306 29318])
+            ("ecb_ctz32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30061 30072]))                  
+                :type "int")
+                nil [30022 30073])
+            ("ecb_ctz32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30117 30128]))                  
+                :type "int")
+                nil [30076 30742])
+            ("ecb_ctz64" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30785 30796]))                  
+                :type "int")
+                nil [30746 30797])
+            ("ecb_ctz64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30841 30852]))                  
+                :type "int")
+                nil [30800 31082])
+            ("ecb_popcount32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31130 31141]))                  
+                :type "int")
+                nil [31086 31142])
+            ("ecb_popcount32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31191 31202]))                  
+                :type "int")
+                nil [31145 31376])
+            ("ecb_ld32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31418 31429]))                  
+                :type "int")
+                nil [31380 31430])
+            ("ecb_ld32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31471 31482]))                  
+                :type "int")
+                nil [31433 31868])
+            ("ecb_ld64" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31910 31921]))                  
+                :type "int")
+                nil [31872 31922])
+            ("ecb_ld64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31963 31974]))                  
+                :type "int")
+                nil [31925 32206])
+            ("ecb_is_pot32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32262 32273]))                  
+                :type ("ecb_bool" type (:type "class") nil nil))
+                nil [32215 32274])
+            ("ecb_is_pot32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32322 32333]))                  
+                :type ("ecb_bool" type (:type "class") nil nil))
+                nil [32275 32360])
+            ("ecb_is_pot64" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32408 32419]))                  
+                :type ("ecb_bool" type (:type "class") nil nil))
+                nil [32361 32420])
+            ("ecb_is_pot64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32468 32479]))                  
+                :type ("ecb_bool" type (:type "class") nil nil))
+                nil [32421 32506])
+            ("ecb_bitrev8" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32555 32566]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [32508 32567])
+            ("ecb_bitrev8" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32615 32626]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [32568 32723])
+            ("ecb_bitrev16" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32772 32783]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [32725 32784])
+            ("ecb_bitrev16" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32832 32843]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [32785 33096])
+            ("ecb_bitrev32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33145 33156]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [33098 33157])
+            ("ecb_bitrev32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33205 33216]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [33158 33528])
+            ("ecb_popcount64" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33677 33688]))                  
+                :type "int")
+                nil [33633 33689])
+            ("ecb_popcount64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33734 33745]))                  
+                :type "int")
+                nil [33690 33805])
+            ("ecb_rotl8" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33849 33860])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [33861 33880]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [33807 33881])
+            ("ecb_rotr8" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33924 33935])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [33936 33955]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [33882 33956])
+            ("ecb_rotl16" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33999 34010])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34011 34030]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [33957 34031])
+            ("ecb_rotr16" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34074 34085])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34086 34105]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [34032 34106])
+            ("ecb_rotl32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34149 34160])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34161 34180]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [34107 34181])
+            ("ecb_rotr32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34224 34235])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34236 34255]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [34182 34256])
+            ("ecb_rotl64" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34299 34310])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34311 34330]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [34257 34331])
+            ("ecb_rotr64" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34374 34385])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34386 34405]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [34332 34406])
+            ("ecb_rotl8" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34450 34461])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34462 34481]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [34408 34528])
+            ("ecb_rotr8" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34571 34582])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34583 34602]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [34529 34649])
+            ("ecb_rotl16" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34692 34703])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34704 34723]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [34650 34770])
+            ("ecb_rotr16" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34813 34824])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34825 34844]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [34771 34891])
+            ("ecb_rotl32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34934 34945])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34946 34965]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [34892 35012])
+            ("ecb_rotr32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35055 35066])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [35067 35086]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [35013 35133])
+            ("ecb_rotl64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35176 35187])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [35188 35207]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [35134 35254])
+            ("ecb_rotr64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35297 35308])
+                    ("count" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [35309 35328]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [35255 35375])
+            ("ecb_bswap16" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36068 36079]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [36022 36080])
+            ("ecb_bswap16" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36131 36142]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [36083 36180])
+            ("ecb_bswap32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36230 36241]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [36184 36242])
+            ("ecb_bswap32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36293 36304]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [36245 36384])
+            ("ecb_bswap64" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36434 36445]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [36388 36446])
+            ("ecb_bswap64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36497 36508]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [36449 36588])
+            ("ecb_unreachable" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [36847 36852]))                  
+                :type "void")
+                nil [36801 36853])
+            ("ecb_unreachable" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [36902 36907]))                  
+                :type "void")
+                nil [36856 36911])
+            ("ecb_assume" variable (:constant-flag t) nil [36998 37008])
+            ("ecb_byteorder_helper" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [37108 37113]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [37056 37114])
+            ("ecb_byteorder_helper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [37167 37172]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [37115 38046])
+            ("ecb_big_endian" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [38097 38102]))                  
+                :type ("ecb_bool" type (:type "class") nil nil))
+                nil [38048 38103])
+            ("ecb_big_endian" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [38153 38158]))                  
+                :type ("ecb_bool" type (:type "class") nil nil))
+                nil [38104 38208])
+            ("ecb_little_endian" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [38258 38263]))                  
+                :type ("ecb_bool" type (:type "class") nil nil))
+                nil [38209 38264])
+            ("ecb_little_endian" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [38314 38319]))                  
+                :type ("ecb_bool" type (:type "class") nil nil))
+                nil [38265 38369])
+            ("ecb_mod" variable (:constant-flag t) nil [38486 38493])
+            ("ecb_div_rd" variable (:constant-flag t) nil [38888 38898])
+            ("ecb_div_ru" variable (:constant-flag t) nil [38995 39005])
+            ("ecb_array_length" variable (:constant-flag t) nil [39363 39379])
+            ("ecb_binary16_to_binary32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39489 39500]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [39430 39501])
+            ("ecb_binary16_to_binary32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39561 39572]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [39502 40271])
+            ("ecb_binary32_to_binary16" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40332 40343]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [40273 40344])
+            ("ecb_binary32_to_binary16" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40404 40415]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [40345 42052])
+            ("ECB_STDFP" variable (:constant-flag t) nil [42956 42965])
+            ("string.h" include (:system-flag t) nil [42968 42989])
+            ("math.h" include (:system-flag t) nil [43064 43083])
+            ("ECB_INFINITY" variable (:constant-flag t) nil [43260 43272])
+            ("ECB_NAN" variable (:constant-flag t) nil [43349 43356])
+            ("ecb_ldexpf" variable (:constant-flag t) nil [43560 43570])
+            ("ecb_frexpf" variable (:constant-flag t) nil [43622 43632])
+            ("ecb_float_to_binary32" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [43788 43796]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [43732 43797])
+            ("ecb_float_to_binary32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [43858 43866]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [43800 44574])
+            ("ecb_binary32_to_float" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44683 44694]))                  
+                :type "float")
+                nil [44630 44695])
+            ("ecb_binary32_to_float" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44753 44764]))                  
+                :type "float")
+                nil [44698 45245])
+            ("ecb_double_to_binary64" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [45355 45364]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [45298 45365])
+            ("ecb_double_to_binary64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [45427 45436]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [45368 46217])
+            ("ecb_binary64_to_double" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46329 46340]))                  
+                :type "double")
+                nil [46274 46341])
+            ("ecb_binary64_to_double" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46401 46412]))                  
+                :type "double")
+                nil [46344 46912])
+            ("ecb_float_to_binary16" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [47018 47026]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [46962 47027])
+            ("ecb_float_to_binary16" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [47088 47096]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [47030 47169])
+            ("ecb_binary16_to_float" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47273 47284]))                  
+                :type "float")
+                nil [47220 47285])
+            ("ecb_binary16_to_float" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47343 47354]))                  
+                :type "float")
+                nil [47288 47427])
+            ("expect_false" variable (:constant-flag t) nil [48172 48184])
+            ("expect_true" variable (:constant-flag t) nil [48223 48234])
+            ("noinline" variable (:constant-flag t) nil [48274 48282])
+            ("inline_size" variable (:constant-flag t) nil [48315 48326])
+            ("inline_speed" variable (:constant-flag t) nil [48419 48431])
+            ("NUMPRI" variable (:constant-flag t) nil [48469 48475])
+            ("ABSPRI" variable (:constant-flag t) nil [48541 48547])
+            ("EMPTY" variable (:constant-flag t) nil [48635 48640])
+            ("EMPTY2" variable (:constant-flag t) nil [48710 48716])
+            ("W" type
+               (:typedef ("ev_watcher" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [48760 48782])
+            ("WL" type
+               (:typedef ("ev_watcher_list" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [48783 48811])
+            ("WT" type
+               (:typedef ("ev_watcher_time" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [48812 48840])
+            ("ev_active" variable (:constant-flag t) nil [48850 48859])
+            ("ev_at" variable (:constant-flag t) nil [48888 48893])
+            ("EV_FD_TO_WIN32_HANDLE" variable (:constant-flag t) nil [49327 49348])
+            ("EV_WIN32_HANDLE_TO_FD" variable (:constant-flag t) nil [49419 49440])
+            ("EV_WIN32_CLOSE_FD" variable (:constant-flag t) nil [49519 49536])
+            ("float.h" include (:system-flag t) nil [49829 49847])
+            ("ev_floor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("v" variable (:type ("ev_tstamp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49963 49975]))                  
+                :type ("ev_tstamp" type (:type "class") nil nil))
+                nil [49936 50772])
+            ("sys/utsname.h" include (:system-flag t) nil [50878 50903])
+            ("ev_linux_version" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [50968 50973]))                  
+                :type "unsigned int")
+                nil [50930 51435])
+            ("EV_THROW" variable (:type "int") nil [51695 51704])
+            ("ev_syserr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51849 51865]))                  
+                :type "void")
+                nil [51826 52156])
+            ("EV_THROW" variable
+               (:default-value "ev_realloc_emul"
+                :type "int")
+                nil [52647 52674])
+            ("ev_realloc" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [52812 52822])
+                    ("size" variable (:type "long") (reparse-symbol arg-sub-list) [52823 52833]))                  
+                :type "void")
+                nil [52780 53107])
+            ("ev_malloc" variable (:constant-flag t) nil [53117 53126])
+            ("ev_free" variable (:constant-flag t) nil [53164 53171])
+            ("EV_ANFD_REIFY" variable (:constant-flag t) nil [53335 53348])
+            ("ANFD" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("head" variable (:type ("WL" type (:type "class") nil nil)) (reparse-symbol classsubparts) [53408 53416])
+                          ("events" variable (:type "unsigned char") (reparse-symbol classsubparts) [53419 53440])
+                          ("reify" variable (:type "unsigned char") (reparse-symbol classsubparts) [53472 53492])
+                          ("emask" variable (:type "unsigned char") (reparse-symbol classsubparts) [53573 53593])
+                          ("unused" variable (:type "unsigned char") (reparse-symbol classsubparts) [53659 53680]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [53389 53893])
+            ("ANPENDING" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("w" variable (:type ("W" type (:type "class") nil nil)) (reparse-symbol classsubparts) [53969 53973])
+                          ("events" variable (:type "int") (reparse-symbol classsubparts) [53976 53987]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [53950 54050])
+            ("ANHE" type
+               (:typedef ("WT" type (:type "class") nil nil)
+                :type "typedef")
+                nil [54526 54542])
+            ("ANHE_w" variable (:constant-flag t) nil [54554 54560])
+            ("ANHE_at" variable (:constant-flag t) nil [54587 54594])
+            ("ANHE_at_cache" variable (:constant-flag t) nil [54624 54637])
+            ("ev_rt_now" variable
+               (:default-value "0"
+                :type ("ev_tstamp" type (:type "class") nil nil))
+                nil [55054 55078])
+            ("VAR" variable (:constant-flag t) nil [55158 55161])
+            ("ev_vars.h" include nil nil [55186 55210])
+            ("ev_default_loop_ptr" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [55227 55258])
+            ("EV_RELEASE_CB" variable (:constant-flag t) nil [55490 55503])
+            ("EV_ACQUIRE_CB" variable (:constant-flag t) nil [55521 55534])
+            ("EV_INVOKE_PENDING" variable (:constant-flag t) nil [55552 55569])
+            ("EVBREAK_RECURSE" variable (:constant-flag t) nil [55611 55626])
+            ("get_clock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [56091 56096]))                  
+                :type ("ev_tstamp" type (:type "class") nil nil))
+                nil [56058 56312])
+            ("MALLOC_ROUND" variable (:constant-flag t) nil [57016 57028])
+            ("array_nextsize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("elem" variable (:type "int") (reparse-symbol arg-sub-list) [57249 57258])
+                    ("cur" variable (:type "int") (reparse-symbol arg-sub-list) [57259 57267])
+                    ("cnt" variable (:type "int") (reparse-symbol arg-sub-list) [57268 57276]))                  
+                :type "int")
+                nil [57217 57696])
+            ("array_realloc" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("elem" variable (:type "int") (reparse-symbol arg-sub-list) [57745 57754])
+                    ("base" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [57755 57766])
+                    ("cur" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [57767 57776])
+                    ("cnt" variable (:type "int") (reparse-symbol arg-sub-list) [57777 57785]))                  
+                :type "void")
+                nil [57716 57873])
+            ("array_init_zero" variable (:constant-flag t) nil [57883 57898])
+            ("array_needsize" variable (:constant-flag t) nil [57979 57993])
+            ("array_free" variable (:constant-flag t) nil [58617 58627])
+            ("pendingcb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev_prepare" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58879 58897])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58897 58899])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [58900 58912]))                  
+                :type "void")
+                nil [58856 58916])
+            ("feed_reverse" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("W" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59434 59443])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59442 59444]))                  
+                :type "void")
+                nil [59402 59537])
+            ("feed_reverse_done" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59575 59584])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [59581 59593]))                  
+                :type "void")
+                nil [59539 59678])
+            ("queue_events" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("W" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59712 59721])
+                    ("" variable (:type ("events" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59721 59728])
+                    ("eventcnt" variable (:type "int") (reparse-symbol arg-sub-list) [59729 59742])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [59743 59752]))                  
+                :type "void")
+                nil [59680 59843])
+            ("fd_event_nocheck" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59962 59971])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [59968 59975])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [59976 59988]))                  
+                :type "void")
+                nil [59926 60198])
+            ("fd_event" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60365 60374])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [60371 60378])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [60379 60391]))                  
+                :type "void")
+                nil [60337 60499])
+            ("fd_reify" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60765 60770]))                  
+                :type "void")
+                nil [60738 62208])
+            ("fd_change" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62281 62290])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [62287 62294])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [62295 62305]))                  
+                :type "void")
+                nil [62253 62555])
+            ("fd_kill" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62673 62682])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [62679 62686]))                  
+                :type "void")
+                nil [62637 62849])
+            ("fd_valid" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [62957 62964]))                  
+                :type "int")
+                nil [62922 63074])
+            ("fd_ebadf" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63152 63157]))                  
+                :type "void")
+                nil [63130 63306])
+            ("fd_enomem" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63414 63419]))                  
+                :type "void")
+                nil [63391 63549])
+            ("fd_rearm_all" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63666 63671]))                  
+                :type "void")
+                nil [63640 63885])
+            ("fd_intern" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [63986 63993]))                  
+                :type "void")
+                nil [63957 64178])
+            ("HEAP0" variable (:constant-flag t) nil [66358 66363])
+            ("HPARENT" variable (:constant-flag t) nil [66374 66381])
+            ("UPHEAP_DONE" variable (:constant-flag t) nil [66404 66415])
+            ("downheap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("ANHE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66482 66493])
+                    ("N" variable (:type "int") (reparse-symbol arg-sub-list) [66494 66500])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [66501 66507]))                  
+                :type "void")
+                nil [66454 66918])
+            ("upheap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("ANHE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66976 66987])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [66988 66994]))                  
+                :type "void")
+                nil [66950 67286])
+            ("adjustheap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("ANHE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67376 67387])
+                    ("N" variable (:type "int") (reparse-symbol arg-sub-list) [67388 67394])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [67395 67401]))                  
+                :type "void")
+                nil [67347 67532])
+            ("reheap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("heap" variable
+                       (:pointer 1
+                        :type ("ANHE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67635 67646])
+                    ("N" variable (:type "int") (reparse-symbol arg-sub-list) [67647 67653]))                  
+                :type "void")
+                nil [67610 67889])
+            ("ANSIG" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("pending" variable (:type ("EV_ATOMIC_T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68042 68062])
+                          ("head" variable (:type ("WL" type (:type "class") nil nil)) (reparse-symbol classsubparts) [68100 68108]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [68023 68117])
+            ("signals" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ANSIG" type (:type "class") nil nil))
+                nil [68119 68154])
+            ("enable_secure" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [75671 75676]))                  
+                :type "int")
+                nil [75631 75786])
+            ("ev_loop_destroy" function
+               (:arguments 
+                  ( ("" variable (:type ("EV_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80620 80625]))                  
+                :type "void")
+                nil [80598 82792])
+            ("loop_fork" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82884 82889]))                  
+                :type "void")
+                nil [82856 83656])
+            ("ev_invoke" function
+               (:arguments 
+                  ( ("" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87850 87860])
+                    ("w" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [87856 87864])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [87865 87877]))                  
+                :type "void")
+                nil [87834 87913])
+            ("ev_invoke_pending" function
+               (:arguments 
+                  ( ("" variable (:type ("EV_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88115 88120]))                  
+                :type "void")
+                nil [88091 88495])
+            ("timers_reify" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89051 89056]))                  
+                :type "void")
+                nil [89020 90006])
+            ("timers_reschedule" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev_tstamp" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92491 92513])
+                    ("" variable (:type ("adjust" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92507 92514]))                  
+                :type "void")
+                nil [92460 92671])
+            ("time_update" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev_tstamp" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92828 92853])
+                    ("" variable (:type ("max_block" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92844 92854]))                  
+                :type "void")
+                nil [92797 94735])
+            ("ev_run" function
+               (:arguments 
+                  ( ("" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94749 94758])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [94755 94765]))                  
+                :type "int")
+                nil [94737 99504])
+            ("wlist_add" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("head" variable
+                       (:pointer 1
+                        :type ("WL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100215 100224])
+                    ("elem" variable (:type ("WL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100225 100233]))                  
+                :type "void")
+                nil [100187 100275])
+            ("wlist_del" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("head" variable
+                       (:pointer 1
+                        :type ("WL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100305 100314])
+                    ("elem" variable (:type ("WL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100315 100323]))                  
+                :type "void")
+                nil [100277 100491])
+            ("clear_pending" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("W" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100578 100587])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100586 100588]))                  
+                :type "void")
+                nil [100545 100707])
+            ("pri_adjust" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("W" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101030 101039])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101038 101040]))                  
+                :type "void")
+                nil [101001 101187])
+            ("ev_start" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("W" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101217 101226])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101225 101227])
+                    ("active" variable (:type "int") (reparse-symbol arg-sub-list) [101228 101239]))                  
+                :type "void")
+                nil [101189 101306])
+            ("ev_stop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("W" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101334 101343])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101342 101344]))                  
+                :type "void")
+                nil [101308 101384])
+            ("SA_RESTART" variable (:constant-flag t) nil [105999 106009])
+            ("ev_once" type
+               (:members 
+                  ( ("io" variable (:type ("ev_io" type (:type "class") nil nil)) (reparse-symbol classsubparts) [125188 125197])
+                    ("to" variable (:type ("ev_timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [125200 125212])
+                    ("cb" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [125226 125238])
+                            ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [125239 125249]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [125215 125250])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [125253 125263]))                  
+                :type "struct")
+                nil [125169 125266])
+            ("once_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125289 125301])
+                    ("once" variable
+                       (:pointer 1
+                        :type ("ev_once" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [125295 125316])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [125317 125329]))                  
+                :type "void")
+                nil [125268 125518])
+            ("once_cb_io" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev_io" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125544 125557])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125557 125559])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [125560 125572]))                  
+                :type "void")
+                nil [125520 125737])
+            ("once_cb_to" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev_timer" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125763 125779])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125779 125781])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [125782 125794]))                  
+                :type "void")
+                nil [125739 125959]))          
+      :file "ev.c"
+      :pointmax 129479
+      :fsize 129480
+      :lastmodtime '(22627 15908 0 0)
+      :unmatched-syntax '((semantic-list 126076 . 126605) (symbol 126067 . 126075) (semantic-list 125974 . 126066) (symbol 125966 . 125973) (VOID 125961 . 125965) (punctuation 125778 . 125779) (punctuation 125556 . 125557) (semantic-list 104322 . 104380) (symbol 104313 . 104321) (semantic-list 104293 . 104312) (symbol 104274 . 104292) (punctuation 104309 . 104310) (symbol 104264 . 104273) (punctuation 104309 . 104310) (semantic-list 103820 . 104262) (symbol 103811 . 103819) (semantic-list 103791 . 103810) (symbol 103776 . 103790) (punctuation 103807 . 103808) (VOID 103771 . 103775) (punctuation 103807 . 103808) (semantic-list 103266 . 103760) (symbol 103257 . 103265) (semantic-list 103237 . 103256) (symbol 103223 . 103236) (punctuation 103253 . 103254) (VOID 103218 . 103222) (punctuation 103253 . 103254) (semantic-list 102646 . 103207) (symbol 102637 . 102645) (semantic-list 102617 . 102636) (symbol 102602 . 102616) (punctuation 102633 . 102634) (VOID 102597 . 102601) (punctuation 102633 . 102634) (semantic-list 102225 . 102586) (symbol 102216 . 102224) (semantic-list 102199 . 102215) (symbol 102188 . 102198) (punctuation 102212 . 102213) (VOID 102183 . 102187) (punctuation 102212 . 102213) (semantic-list 101519 . 102172) (symbol 101510 . 101518) (semantic-list 101493 . 101509) (symbol 101481 . 101492) (punctuation 101506 . 101507) (VOID 101476 . 101480) (punctuation 101506 . 101507) (semantic-list 100755 . 100999) (symbol 100746 . 100754) (semantic-list 100730 . 100745) (symbol 100713 . 100729) (INT 100709 . 100712) (semantic-list 99828 . 100023) (symbol 99819 . 99827) (semantic-list 99812 . 99818) (symbol 99802 . 99811) (VOID 99797 . 99801) (semantic-list 99768 . 99795) (symbol 99759 . 99767) (semantic-list 99752 . 99758) (symbol 99741 . 99751) (VOID 99736 . 99740) (semantic-list 99702 . 99734) (symbol 99693 . 99701) (semantic-list 99686 . 99692) (symbol 99672 . 99685) (VOID 99667 . 99671) (semantic-list 99647 . 99665) (symbol 99638 . 99646) (semantic-list 99631 . 99637) (symbol 99622 . 99630) (VOID 99617 . 99621) (semantic-list 99597 . 99615) (symbol 99588 . 99596) (semantic-list 99581 . 99587) (symbol 99574 . 99580) (VOID 99569 . 99573) (semantic-list 99545 . 99567) (symbol 99536 . 99544) (semantic-list 99520 . 99535) (symbol 99511 . 99519) (VOID 99506 . 99510) (semantic-list 87961 . 88080) (symbol 87952 . 87960) (semantic-list 87945 . 87951) (symbol 87928 . 87944) (INT 87924 . 87927) (UNSIGNED 87915 . 87923) (semantic-list 87732 . 87751) (symbol 87723 . 87731) (semantic-list 87716 . 87722) (symbol 87703 . 87715) (VOID 87698 . 87702) (semantic-list 87126 . 87696) (symbol 87117 . 87125) (semantic-list 87096 . 87116) (symbol 87080 . 87095) (INT 87069 . 87072) (semantic-list 78168 . 80556) (symbol 78159 . 78167) (semantic-list 78132 . 78158) (symbol 78122 . 78131) (VOID 78117 . 78121) (STATIC 78110 . 78116) (semantic-list 77228 . 77249) (symbol 77219 . 77227) (semantic-list 77212 . 77218) (symbol 77201 . 77211) (INT 77197 . 77200) (UNSIGNED 77188 . 77196) (semantic-list 76915 . 77186) (symbol 76906 . 76914) (semantic-list 76899 . 76905) (symbol 76876 . 76898) (INT 76872 . 76875) (UNSIGNED 76863 . 76871) (semantic-list 76196 . 76852) (symbol 76187 . 76195) (semantic-list 76180 . 76186) (symbol 76156 . 76179) (INT 76152 . 76155) (UNSIGNED 76143 . 76151) (semantic-list 75848 . 76132) (symbol 75839 . 75847) (semantic-list 75832 . 75838) (symbol 75810 . 75831) (INT 75806 . 75809) (UNSIGNED 75797 . 75805) (semantic-list 75506 . 75536) (symbol 75497 . 75505) (semantic-list 75490 . 75496) (symbol 75473 . 75489) (INT 75469 . 75472) (semantic-list 75428 . 75458) (symbol 75419 . 75427) (semantic-list 75412 . 75418) (symbol 75395 . 75411) (INT 75391 . 75394) (semantic-list 60560 . 60636) (symbol 60551 . 60559) (semantic-list 60523 . 60550) (symbol 60506 . 60522) (VOID 60501 . 60505) (punctuation 59720 . 59721) (semantic-list 58984 . 59400) (symbol 58975 . 58983) (semantic-list 58946 . 58974) (symbol 58932 . 58945) (VOID 58927 . 58931) (punctuation 58896 . 58897) (semantic-list 56440 . 56925) (symbol 56431 . 56439) (semantic-list 56413 . 56430) (symbol 56404 . 56412) (VOID 56399 . 56403) (semantic-list 55772 . 56049) (symbol 55763 . 55771) (semantic-list 55756 . 55762) (symbol 55748 . 55755) (symbol 55738 . 55747) (symbol 55042 . 55053) (semantic-list 52761 . 52778) (symbol 52752 . 52760) (semantic-list 52707 . 52751) (symbol 52690 . 52706) (semantic-list 52719 . 52741) (semantic-list 52714 . 52719) (VOID 52685 . 52689) (semantic-list 52719 . 52741) (semantic-list 52714 . 52719) (semantic-list 52624 . 52646) (semantic-list 52616 . 52624) (punctuation 52615 . 52616) (VOID 52610 . 52614) (STATIC 52603 . 52609) (semantic-list 52220 . 52601) (symbol 52211 . 52219) (semantic-list 52188 . 52210) (symbol 52172 . 52187) (punctuation 52170 . 52171) (VOID 52165 . 52169) (STATIC 52158 . 52164) (semantic-list 51785 . 51806) (symbol 51776 . 51784) (semantic-list 51737 . 51775) (symbol 51720 . 51736) (VOID 51715 . 51719) (semantic-list 51677 . 51694) (semantic-list 51665 . 51677) (VOID 51660 . 51664) (STATIC 51653 . 51659) (string 47913 . 47977) (symbol 47907 . 47912) (punctuation 47905 . 47906) (symbol 42934 . 42945) (symbol 42926 . 42933) (punctuation 42924 . 42925) (punctuation 42923 . 42924) (semantic-list 42786 . 42916) (punctuation 42784 . 42785) (punctuation 42783 . 42784) (symbol 42769 . 42776) (symbol 42761 . 42768) (punctuation 42759 . 42760) (punctuation 42758 . 42759) (semantic-list "(_M_AMD64 || _M_X64)" 42743 . 42757) (symbol 42735 . 42742) (punctuation 42733 . 42734) (punctuation 42732 . 42733) (symbol 42724 . 42731) (symbol 42716 . 42723) (punctuation 42714 . 42715) (punctuation 42713 . 42714) (symbol 42700 . 42706) (symbol 42692 . 42699) (punctuation 42690 . 42691) (punctuation 42689 . 42690) (symbol 42674 . 42682) (symbol 42666 . 42673) (punctuation 42664 . 42665) (punctuation 42663 . 42664) (symbol 42648 . 42656) (symbol 42640 . 42647) (punctuation 42638 . 42639) (punctuation 42637 . 42638) (symbol 42622 . 42630) (symbol 42614 . 42621) (punctuation 42612 . 42613) (punctuation 42611 . 42612) (symbol 42596 . 42604) (symbol 42588 . 42595) (punctuation 42586 . 42587) (punctuation 42585 . 42586) (symbol 42569 . 42578) (symbol 42561 . 42568) (punctuation 42559 . 42560) (punctuation 42558 . 42559) (symbol 42543 . 42551) (symbol 42535 . 42542) (punctuation 42533 . 42534) (punctuation 42532 . 42533) (symbol 42516 . 42525) (symbol 42508 . 42515) (punctuation 42506 . 42507) (punctuation 42505 . 42506) (symbol 42496 . 42504) (symbol 42488 . 42495) (punctuation 42486 . 42487) (punctuation 42485 . 42486) (symbol 42469 . 42478) (punctuation 42467 . 42468) (punctuation 42466 . 42467) (symbol 42452 . 42465) (punctuation 42450 . 42451) (punctuation 42449 . 42450) (symbol 42441 . 42448) (punctuation 42439 . 42440) (punctuation 42438 . 42439) (symbol 42426 . 42437) (punctuation 42424 . 42425) (punctuation 42423 . 42424) (semantic-list "(__amd64 || __amd64__ || __x86_64 || __x86_64__)" 42403 . 42416) (punctuation 42401 . 42402) (punctuation 42400 . 42401) (symbol 42385 . 42393) (punctuation 42383 . 42384) (punctuation 42382 . 42383) (symbol 42375 . 42381) (punctuation 42373 . 42374) (punctuation 42372 . 42373))
+      :lexical-table 
+        '(("ecb_mod" (spp-arg-list ("m" "n") 38493 . 38498) . ((semantic-list "((m) < 0 ? ((n) - 1 - ((-1 - (m)) % (n))) : ((m) % (n)))" 38499 . 38555)))
+          ("ECB_INFINITY" . ((symbol "HUGE_VAL" 43273 . 43281)))
+          ("ANHE_at" (spp-arg-list ("he") 54594 . 54598) . 
+              ((semantic-list "(he)" 54605 . 54609) (punctuation "-" 54609 . 54610) (punctuation ">" 54610 . 54611) (symbol "at" 54611 . 54613)))
+          ("MALLOC_ROUND" . ((number "4096" 57029 . 57033)))
+          ("EV_USE_MONOTONIC" . ((number "0" 9786 . 9787)))
+          ("EV_TV_SET" (spp-arg-list ("tv" "t") 11842 . 11848) . 
+              ((DO "do" 11849 . 11851) (semantic-list "{ tv.tv_sec = (long)t; tv.tv_usec = (long)((t - tv.tv_sec) * 1e6); }" 11852 . 11920) (WHILE "while" 11921 . 11926) (semantic-list "(0)" 11927 . 11930)))
+          ("ECB_STRINGIFY_" (spp-arg-list ("a") 25930 . 25933) . ((punctuation "#" 25934 . 25935) (symbol "a" 25936 . 25937)))
+          ("ecb_prefetch" (spp-arg-list ("addr" "rw" "locality") 27088 . 27106))
+          ("ecb_const" . ((symbol "ecb_attribute" 28087 . 28100) (semantic-list "((__const__))" 28101 . 28114)))
+          ("ecb_expect_false" (spp-arg-list ("expr") 29110 . 29116) . ((symbol "ecb_expect" 29117 . 29127) (semantic-list "(!!(expr), 0)" 29128 . 29141)))
+          ("ECB_STDFP" . ((number "1" 42966 . 42967)))
+          ("inline_speed" . ((symbol "noinline" 48437 . 48445) (STATIC "static" 48446 . 48452)))
+          ("ev_active" (spp-arg-list ("w") 48859 . 48862) . 
+              ((semantic-list "((W)(w))" 48863 . 48871) (punctuation "-" 48871 . 48872) (punctuation ">" 48872 . 48873) (symbol "active" 48873 . 48879)))
+          ("HEAP0" . ((number "1" 66364 . 66365)))
+          ("UPHEAP_DONE" (spp-arg-list ("p" "k") 66415 . 66420) . ((semantic-list "(!(p))" 66421 . 66427)))
+          ("EV_USE_EPOLL" . ((number "0" 3682 . 3683)))
+          ("ECB_VERSION" . ((number "0x00010005" 14388 . 14398)))
+          ("ECB_CPP11" . ((semantic-list "(__cplusplus >= 201103L)" 16684 . 16708)))
+          ("ECB_C99" . ((semantic-list "(ECB_STDC_VERSION >= 199901L)" 16885 . 16914)))
+          ("ecb_expect" (spp-arg-list ("expr" "value") 26877 . 26889) . ((semantic-list "(expr)" 26898 . 26904)))
+          ("noinline" . ((symbol "ecb_noinline" 48293 . 48305)))
+          ("EV_INVOKE_PENDING" . ((symbol "ev_invoke_pending" 55570 . 55587) (semantic-list "(EV_A)" 55588 . 55594)))
+          ("array_init_zero" (spp-arg-list ("base" "count") 57898 . 57910) . ((symbol "memset" 57915 . 57921) (semantic-list "((void *)(base), 0, sizeof (*(base)) * (count))" 57922 . 57969)))
+          ("array_needsize" (spp-arg-list ("type" "base" "cur" "cnt" "init") 57993 . 58017) . 
+              ((IF "if" 58024 . 58026) (semantic-list "(expect_false ((cnt) > (cur)))" 58027 . 58057) (semantic-list "{								\\
+      ecb_unused int ocur_ = (cur);				\\
+      (base) = (type *)array_realloc				\\
+         (sizeof (type), (base), &(cur), (cnt));		\\
+      init ((base) + (ocur_), (cur) - ocur_);			\\
+    }" 58067 . 58268)))
+          ("EV_USE_POLL" . ((number "0" 3500 . 3501)))
+          ("EV_USE_PORT" . ((number "0" 4040 . 4041)))
+          ("EV_USE_FLOOR" . ((number "0" 6445 . 6446)))
+          ("EV_VERIFY" . ((semantic-list "(EV_FEATURE_API ? 1 : 0)" 8581 . 8605)))
+          ("ECB_H")
+          ("ECB_GCC_AMD64" . ((semantic-list "(__amd64 || __amd64__ || __x86_64 || __x86_64__)" 15255 . 15303)))
+          ("ECB_CPP" . ((semantic-list "(__cplusplus+0)" 16650 . 16665)))
+          ("ECB_EXTERN_C" . ((EXTERN "extern" 17110 . 17116)))
+          ("ECB_MEMORY_FENCE" . 
+              ((DO "do" 25022 . 25024) (semantic-list "{ pthread_mutex_lock (&ecb_mf_lock); pthread_mutex_unlock (&ecb_mf_lock); }" 25025 . 25100) (WHILE "while" 25101 . 25106) (semantic-list "(0)" 25107 . 25110)))
+          ("ecb_function_" . ((symbol "ecb_inline" 26069 . 26079)))
+          ("ecb_noinline" . ((symbol "ecb_attribute" 27973 . 27986) (semantic-list "((__noinline__))" 27987 . 28003)))
+          ("ecb_unused" . ((symbol "ecb_attribute" 28035 . 28048) (semantic-list "((__unused__))" 28049 . 28063)))
+          ("ECB_NAN" . ((symbol "ECB_INFINITY" 43357 . 43369)))
+          ("EMPTY2" (spp-arg-list ("a" "b") 48716 . 48721))
+          ("ev_free" (spp-arg-list ("ptr") 53171 . 53176) . ((symbol "ev_realloc" 53180 . 53190) (semantic-list "((ptr), 0)" 53191 . 53201)))
+          ("EV_USE_CLOCK_SYSCALL" . ((number "0" 2680 . 2681)))
+          ("EV_USE_EVENTFD" . ((number "0" 4572 . 4573)))
+          ("ECB_MSVC_AMD64" . ((semantic-list "(_M_AMD64 || _M_X64)" 15327 . 15347)))
+          ("ECB_NEEDS_PTHREADS" . ((number "1" 24876 . 24877)))
+          ("ECB_MEMORY_FENCE_NEEDS_PTHREADS" . ((number "1" 24922 . 24923)))
+          ("ecb_attribute" (spp-arg-list ("attrlist") 26227 . 26237))
+          ("EV_HEAP_CACHE_AT" . ((symbol "EV_FEATURE_DATA" 8732 . 8747)))
+          ("EV_FREQUENT_CHECK" . 
+              ((DO "do" 11341 . 11343) (semantic-list "{ }" 11344 . 11347) (WHILE "while" 11348 . 11353) (semantic-list "(0)" 11354 . 11357)))
+          ("EV_TS_SET" (spp-arg-list ("ts" "t") 11948 . 11954) . 
+              ((DO "do" 11955 . 11957) (semantic-list "{ ts.tv_sec = (long)t; ts.tv_nsec = (long)((t - ts.tv_sec) * 1e9); }" 11958 . 12026) (WHILE "while" 12027 . 12032) (semantic-list "(0)" 12033 . 12036)))
+          ("ECB_GCC_VERSION" (spp-arg-list ("major" "minor") 16127 . 16140) . ((semantic-list "(__GNUC__ > (major) || (__GNUC__ == (major) && __GNUC_MINOR__ >= (minor)))" 16141 . 16215)))
+          ("ECB_EXTERN_C_END")
+          ("ECB_CONCAT_" (spp-arg-list ("a" "b") 25851 . 25857) . ((spp-symbol-merge ((symbol "a" 25858 . 25859) (symbol "b" 25863 . 25864)) 25858 . 25864)))
+          ("ecb_is_constant" (spp-arg-list ("expr") 26686 . 26692) . ((number "0" 26702 . 26703)))
+          ("ecb_pure" . ((symbol "ecb_attribute" 28138 . 28151) (semantic-list "((__pure__))" 28152 . 28164)))
+          ("ANHE_w" (spp-arg-list ("he") 54560 . 54564) . ((semantic-list "(he)" 54572 . 54576)))
+          ("ANHE_at_cache" (spp-arg-list ("he") 54637 . 54641))
+          ("SA_RESTART" . ((number "0" 106010 . 106011)))
+          ("EV_USE_4HEAP" . ((symbol "EV_FEATURE_DATA" 8657 . 8672)))
+          ("ECB_STDC_VERSION" . ((symbol "__STDC_VERSION__" 16842 . 16858)))
+          ("ECB_EXTERN_C_BEG")
+          ("ecb_inline" . ((STATIC "static" 25650 . 25656)))
+          ("ECB_STRINGIFY_EXPR" (spp-arg-list ("expr") 26007 . 26013) . ((semantic-list "((expr), ECB_STRINGIFY_ (expr))" 26014 . 26045)))
+          ("ecb_deprecated" . ((symbol "ecb_attribute" 27578 . 27591) (semantic-list "((__deprecated__))" 27592 . 27610)))
+          ("inline_size" . ((symbol "ecb_inline" 48334 . 48344)))
+          ("NUMPRI" . ((semantic-list "(EV_MAXPRI - EV_MINPRI + 1)" 48476 . 48503)))
+          ("EMPTY")
+          ("ev_at" (spp-arg-list ("w") 48893 . 48896) . 
+              ((semantic-list "((WT)(w))" 48897 . 48906) (punctuation "-" 48906 . 48907) (punctuation ">" 48907 . 48908) (symbol "at" 48908 . 48910)))
+          ("EV_RELEASE_CB" . ((semantic-list "(void)" 55504 . 55510) (number "0" 55510 . 55511)))
+          ("EV_ACQUIRE_CB" . ((semantic-list "(void)" 55535 . 55541) (number "0" 55541 . 55542)))
+          ("HPARENT" (spp-arg-list ("k") 66381 . 66384) . ((semantic-list "((k) >> 1)" 66385 . 66395)))
+          ("EV_NSIG" . ((semantic-list "(8 * sizeof (sigset_t) + 1)" 6366 . 6393)))
+          ("MIN_INTERVAL" . ((number "0.0001220703125" 11511 . 11526)))
+          ("ecb_deprecated_message" (spp-arg-list ("msg") 27849 . 27854) . ((symbol "ecb_deprecated" 27855 . 27869)))
+          ("ecb_div_rd" (spp-arg-list ("val" "div") 38898 . 38907) . ((semantic-list "((val) < 0 ? - ((-(val) + (div) - 1) / (div)) : ((val)            ) / (div))" 38908 . 38984)))
+          ("ecb_array_length" (spp-arg-list ("name") 39379 . 39385) . ((semantic-list "(sizeof (name) / sizeof (name [0]))" 39386 . 39421)))
+          ("ABSPRI" (spp-arg-list ("w") 48547 . 48550) . ((semantic-list "(((W)w), 0)" 48551 . 48562)))
+          ("EV_WIN32_HANDLE_TO_FD" (spp-arg-list ("handle") 49440 . 49448) . ((symbol "_open_osfhandle" 49449 . 49464) (semantic-list "(handle, 0)" 49465 . 49476)))
+          ("EVBREAK_RECURSE" . ((number "0x80" 55627 . 55631)))
+          ("EV_INOTIFY_HASHSIZE" . 
+              ((symbol "EV_FEATURE_DATA" 8029 . 8044) (punctuation "?" 8045 . 8046) (number "16" 8047 . 8049) (punctuation ":" 8050 . 8051) (number "1" 8052 . 8053)))
+          ("MIN_TIMEJUMP" . ((number "1." 11657 . 11659)))
+          ("MAX_BLOCKTIME" . ((number "59.743" 11755 . 11761)))
+          ("ecb_likely" (spp-arg-list ("expr") 29265 . 29271) . ((symbol "ecb_expect_true" 29274 . 29289) (semantic-list "(expr)" 29291 . 29297)))
+          ("ecb_ldexpf" (spp-arg-list ("x" "e") 43570 . 43575) . 
+              ((semantic-list "(float)" 43576 . 43583) (symbol "ldexp" 43584 . 43589) (semantic-list "((double) (x), (e))" 43590 . 43609)))
+          ("EV_WIN32_CLOSE_FD" (spp-arg-list ("fd") 49536 . 49540) . ((symbol "close" 49541 . 49546) (semantic-list "(fd)" 49547 . 49551)))
+          ("ev_malloc" (spp-arg-list ("size") 53126 . 53132) . ((symbol "ev_realloc" 53133 . 53143) (semantic-list "(0, (size))" 53144 . 53155)))
+          ("ECB_C11" . ((semantic-list "(ECB_STDC_VERSION >= 201112L)" 16933 . 16962)))
+          ("ECB_MEMORY_FENCE_ACQUIRE" . ((symbol "ECB_MEMORY_FENCE" 25229 . 25245)))
+          ("ECB_MEMORY_FENCE_RELEASE" . ((symbol "ECB_MEMORY_FENCE" 25355 . 25371)))
+          ("ECB_CONCAT" (spp-arg-list ("a" "b") 25883 . 25889) . ((symbol "ECB_CONCAT_" 25890 . 25901) (semantic-list "(a, b)" 25901 . 25907)))
+          ("ecb_assume" (spp-arg-list ("cond") 37008 . 37014) . 
+              ((IF "if" 37015 . 37017) (semantic-list "(!(cond))" 37018 . 37027) (symbol "ecb_unreachable" 37028 . 37043) (semantic-list "()" 37044 . 37046) (punctuation ";" 37046 . 37047) (ELSE "else" 37048 . 37052) (number "0" 37053 . 37054)))
+          ("ecb_frexpf" (spp-arg-list ("x" "e") 43632 . 43637) . 
+              ((semantic-list "(float)" 43638 . 43645) (symbol "frexp" 43646 . 43651) (semantic-list "((double) (x), (e))" 43652 . 43671)))
+          ("EV_ANFD_REIFY" . ((number "1" 53349 . 53350)))
+          ("array_free" (spp-arg-list ("stem" "idx") 58627 . 58638) . 
+              ((symbol "ev_free" 58643 . 58650) (semantic-list "(stem ## s idx)" 58651 . 58666) (punctuation ";" 58666 . 58667) (spp-symbol-merge ((symbol "stem" 58668 . 58672) (symbol "cnt" 58676 . 58679)) 58668 . 58679) (symbol "idx" 58680 . 58683) (punctuation "=" 58684 . 58685) (spp-symbol-merge ((symbol "stem" 58686 . 58690) (symbol "max" 58694 . 58697)) 58686 . 58697) (symbol "idx" 58698 . 58701) (punctuation "=" 58702 . 58703) (number "0" 58704 . 58705) (punctuation ";" 58705 . 58706) (spp-symbol-merge ((symbol "stem" 58707 . 58711) (symbol "s" 58715 . 58716)) 58707 . 58716) (symbol "idx" 58717 . 58720) (punctuation "=" 58721 . 58722) (number "0" 58723 . 58724)))
+          ("ECB_CLANG_VERSION" (spp-arg-list ("major" "minor") 16249 . 16262) . ((semantic-list "(__clang_major__ > (major) || (__clang_major__ == (major) && __clang_minor__ >= (minor)))" 16263 . 16352)))
+          ("ECB_CLANG_EXTENSION" (spp-arg-list ("x") 16618 . 16621) . ((number "0" 16622 . 16623)))
+          ("ecb_restrict")
+          ("ecb_artificial")
+          ("ecb_hot")
+          ("ecb_cold")
+          ("expect_false" (spp-arg-list ("cond") 48184 . 48190) . ((symbol "ecb_expect_false" 48191 . 48207) (semantic-list "(cond)" 48208 . 48214)))
+          ("EV_FD_TO_WIN32_HANDLE" (spp-arg-list ("fd") 49348 . 49352) . ((symbol "_get_osfhandle" 49353 . 49367) (semantic-list "(fd)" 49368 . 49372)))
+          ("EV_USE_KQUEUE" . ((number "0" 3865 . 3866)))
+          ("_DARWIN_UNLIMITED_SELECT" . ((number "1" 5636 . 5637)))
+          ("EV_PID_HASHSIZE" . 
+              ((symbol "EV_FEATURE_DATA" 7939 . 7954) (punctuation "?" 7955 . 7956) (number "16" 7957 . 7959) (punctuation ":" 7960 . 7961) (number "1" 7962 . 7963)))
+          ("EV_USE_REALTIME" . ((number "0" 9868 . 9869)))
+          ("EV_USE_INOTIFY" . ((number "0" 9945 . 9946)))
+          ("ECB_C" . ((number "1" 16813 . 16814)))
+          ("ecb_div_ru" (spp-arg-list ("val" "div") 39005 . 39014) . ((semantic-list "((val) < 0 ? - ((-(val)            ) / (div)) : ((val) + (div) - 1) / (div))" 39015 . 39091)))
+          ("expect_true" (spp-arg-list ("cond") 48234 . 48240) . ((symbol "ecb_expect_true" 48242 . 48257) (semantic-list "(cond)" 48259 . 48265)))
+          ("EV_USE_NANOSLEEP" . ((number "0" 3154 . 3155)))
+          ("EV_USE_SELECT" . ((number "0" 3335 . 3336)))
+          ("EV_USE_SIGNALFD" . ((number "0" 4413 . 4414)))
+          ("ECB_PTRSIZE" . ((number "4" 15214 . 15215)))
+          ("ECB_CLANG_BUILTIN" (spp-arg-list ("x") 16475 . 16478) . ((number "0" 16479 . 16480)))
+          ("ECB_STRINGIFY" (spp-arg-list ("a") 25959 . 25962) . ((symbol "ECB_STRINGIFY_" 25963 . 25977) (semantic-list "(a)" 25977 . 25980)))
+          ("ecb_noreturn" . ((symbol "ecb_attribute" 28569 . 28582) (semantic-list "((__noreturn__))" 28583 . 28599)))
+          ("ecb_expect_true" (spp-arg-list ("expr") 29165 . 29171) . ((symbol "ecb_expect" 29173 . 29183) (semantic-list "(!!(expr), 1)" 29184 . 29197)))
+          ("ecb_unlikely" (spp-arg-list ("expr") 29318 . 29324) . ((symbol "ecb_expect_false" 29325 . 29341) (semantic-list "(expr)" 29342 . 29348)))
+          )
+)
+    (semanticdb-table "config.h"
+      :file "config.h"
+      :fsize 3537
+      :lastmodtime '(22765 58064 750975 193000))
+    (semanticdb-table "ev_vars.h"
+      :file "ev_vars.h"
+      :fsize 6229
+      :lastmodtime '(21519 30213 0 0))
+    (semanticdb-table "ev++.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("EVPP_H__" variable (:constant-flag t) nil [2124 2132])
+            ("ev.h" include nil nil [2167 2183])
+            ("EV_USE_STDEXCEPT" variable (:constant-flag t) nil [2226 2242])
+            ("stdexcept" include (:system-flag t) nil [2274 2295])
+            ("ev" type
+               (:members 
+                  ( ("tstamp" type
+                       (:typedef ("ev_tstamp" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2322 2347])
+                    ("" type
+                       (:members 
+                          ( ("UNDEF" variable
+                               (:constant-flag t
+                                :default-value (2373 2381)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2362 2381])
+                            ("NONE" variable
+                               (:constant-flag t
+                                :default-value (2398 2405)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2387 2405])
+                            ("READ" variable
+                               (:constant-flag t
+                                :default-value (2422 2429)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2411 2429])
+                            ("WRITE" variable
+                               (:constant-flag t
+                                :default-value (2446 2454)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2435 2454])
+                            ("TIMER" variable
+                               (:constant-flag t
+                                :default-value (2520 2528)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2509 2528])
+                            ("PERIODIC" variable
+                               (:constant-flag t
+                                :default-value (2545 2556)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2534 2556])
+                            ("SIGNAL" variable
+                               (:constant-flag t
+                                :default-value (2573 2582)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2562 2582])
+                            ("CHILD" variable
+                               (:constant-flag t
+                                :default-value (2599 2607)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2588 2607])
+                            ("STAT" variable
+                               (:constant-flag t
+                                :default-value (2624 2631)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2613 2631])
+                            ("IDLE" variable
+                               (:constant-flag t
+                                :default-value (2648 2655)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2637 2655])
+                            ("CHECK" variable
+                               (:constant-flag t
+                                :default-value (2672 2680)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2661 2680])
+                            ("PREPARE" variable
+                               (:constant-flag t
+                                :default-value (2697 2707)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2686 2707])
+                            ("FORK" variable
+                               (:constant-flag t
+                                :default-value (2724 2731)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2713 2731])
+                            ("ASYNC" variable
+                               (:constant-flag t
+                                :default-value (2748 2756)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2737 2756])
+                            ("EMBED" variable
+                               (:constant-flag t
+                                :default-value (2773 2781)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2762 2781])
+                            ("ERROR" variable
+                               (:constant-flag t
+                                :default-value (2853 2861)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2842 2861]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2351 2866])
+                    ("" type
+                       (:members 
+                          ( ("AUTO" variable
+                               (:constant-flag t
+                                :default-value (2895 2906)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2883 2906])
+                            ("NOENV" variable
+                               (:constant-flag t
+                                :default-value (2924 2936)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2912 2936])
+                            ("FORKCHECK" variable
+                               (:constant-flag t
+                                :default-value (2954 2970)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2942 2970])
+                            ("SELECT" variable
+                               (:constant-flag t
+                                :default-value (2989 3005)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2977 3005])
+                            ("POLL" variable
+                               (:constant-flag t
+                                :default-value (3023 3037)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3011 3037])
+                            ("EPOLL" variable
+                               (:constant-flag t
+                                :default-value (3055 3070)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3043 3070])
+                            ("KQUEUE" variable
+                               (:constant-flag t
+                                :default-value (3088 3104)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3076 3104])
+                            ("DEVPOLL" variable
+                               (:constant-flag t
+                                :default-value (3122 3139)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3110 3139])
+                            ("PORT" variable
+                               (:constant-flag t
+                                :default-value (3157 3171)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3145 3171]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2870 3176])
+                    ("" type
+                       (:members 
+                          ( ("NOWAIT" variable
+                               (:constant-flag t
+                                :default-value (3289 3301)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3278 3301])
+                            ("ONCE" variable
+                               (:constant-flag t
+                                :default-value (3318 3328)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3307 3328]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [3180 3333])
+                    ("how_t" type
+                       (:members 
+                          ( ("ONE" variable
+                               (:constant-flag t
+                                :default-value (3362 3373)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3356 3373])
+                            ("ALL" variable
+                               (:constant-flag t
+                                :default-value (3385 3396)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3379 3396]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [3337 3401])
+                    ("bad_loop" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("bad_loop" function
+                               (:constructor-flag t
+                                :type ("bad_loop" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [3501 3619]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3405 3631])
+                    ("EV_AX" variable (:constant-flag t) (reparse-symbol namespacesubparts) [3796 3801])
+                    ("EV_AX_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [3812 3818])
+                    ("loop_ref" type
+                       (:members 
+                          ( ("loop_ref" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EV_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3863 3868]))                                  
+                                :type ("loop_ref" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [3853 3935])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("loop_ref" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3959 3981]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3941 4095])
+                            ("!=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("loop_ref" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4119 4141]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4101 4254])
+                            ("run" function
+                               (:arguments 
+                                  ( ("flags" variable
+                                       (:default-value "0"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [4926 4939]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4916 4981])
+                            ("break_loop" function
+                               (:arguments 
+                                  ( ("how" variable
+                                       (:default-value "ONE"
+                                        :type ("how_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5004 5019]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4987 5070])
+                            ("post_fork" function (:type "void") (reparse-symbol classsubparts) [5076 5142])
+                            ("backend" function (:type "unsigned int") (reparse-symbol classsubparts) [5148 5231])
+                            ("now" function (:type ("tstamp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5237 5306])
+                            ("ref" function (:type "void") (reparse-symbol classsubparts) [5312 5366])
+                            ("unref" function (:type "void") (reparse-symbol classsubparts) [5372 5430])
+                            ("once" function
+                               (:arguments 
+                                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [5936 5943])
+                                    ("events" variable (:type "int") (reparse-symbol arg-sub-list) [5944 5955])
+                                    ("timeout" variable (:type ("tstamp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5956 5971])
+                                    ("cb" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [5983 5987])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol arg-sub-list) [5988 5995]))                                          
+                                        :type "void")
+                                        nil nil)
+                                    ("arg" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [5997 6010]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5925 6085])
+                            ("once" function
+                               (:template 
+                                  ( ("K" type (:type "class") nil nil)
+                                    ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [6171 6178])
+                                    ("events" variable (:type "int") (reparse-symbol arg-sub-list) [6179 6190])
+                                    ("timeout" variable (:type ("tstamp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6191 6206])
+                                    ("object" variable
+                                       (:pointer 1
+                                        :type ("K" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6207 6217]))                                  )
+                                (reparse-symbol classsubparts) [6114 6305])
+                            ("once" function
+                               (:template 
+                                  ( ("K" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [6381 6388])
+                                    ("events" variable (:type "int") (reparse-symbol arg-sub-list) [6389 6400])
+                                    ("timeout" variable (:type ("tstamp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6401 6416])
+                                    ("object" variable
+                                       (:pointer 1
+                                        :type ("K" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6417 6427]))                                  )
+                                (reparse-symbol classsubparts) [6348 6524])
+                            ("method_thunk" function
+                               (:template 
+                                  ( ("K" type (:type "class") nil nil)
+                                    ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [6602 6614])
+                                    ("arg" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [6615 6625]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [6530 6695])
+                            ("once" function
+                               (:template 
+                                  ( ("K" type (:type "class") nil nil)
+                                    ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [6790 6797])
+                                    ("events" variable (:type "int") (reparse-symbol arg-sub-list) [6798 6809])
+                                    ("timeout" variable (:type ("tstamp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6810 6825])
+                                    ("object" variable
+                                       (:pointer 1
+                                        :type ("K" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6826 6836]))                                  )
+                                (reparse-symbol classsubparts) [6736 6931])
+                            ("method_noargs_thunk" function
+                               (:template 
+                                  ( ("K" type (:type "class") nil nil)
+                                    ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [7013 7025])
+                                    ("arg" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [7026 7036]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [6937 7099])
+                            ("once" function
+                               (:template 
+                                  ( ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [7179 7186])
+                                    ("events" variable (:type "int") (reparse-symbol arg-sub-list) [7187 7198])
+                                    ("timeout" variable (:type ("tstamp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7199 7214]))                                  )
+                                (reparse-symbol classsubparts) [7138 7293])
+                            ("simpler_func_thunk" function
+                               (:template 
+                                  ( ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [7361 7373])
+                                    ("arg" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [7374 7384]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [7299 7427])
+                            ("once" function
+                               (:template 
+                                  ( ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [7505 7512])
+                                    ("events" variable (:type "int") (reparse-symbol arg-sub-list) [7513 7524])
+                                    ("timeout" variable (:type ("tstamp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7525 7540]))                                  )
+                                (reparse-symbol classsubparts) [7467 7620])
+                            ("simplest_func_thunk" function
+                               (:template 
+                                  ( ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [7686 7698])
+                                    ("arg" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [7699 7709]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [7626 7745])
+                            ("feed_fd_event" function
+                               (:arguments 
+                                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [7771 7778])
+                                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [7779 7791]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7751 7857])
+                            ("feed_signal_event" function
+                               (:arguments 
+                                  ( ("signum" variable (:type "int") (reparse-symbol arg-sub-list) [7887 7898]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7863 7963]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3829 8024])
+                    ("default_loop" type
+                       (:superclasses 
+                          ( ("loop_ref" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("default_loop" function
+                               (:throws ("bad_loop")
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("flags" variable
+                                       (:default-value "AUTO"
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [8508 8533]))                                  
+                                :type ("default_loop" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [8494 8762])
+                            ("private" label nil (reparse-symbol classsubparts) [8766 8774])
+                            ("default_loop" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("default_loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8793 8814]))                                  
+                                :type ("default_loop" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [8779 8815])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("default_loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8846 8867]))                                  
+                                :type ("default_loop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8820 8868]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [8455 8873])
+                    ("get_default_loop" function
+                       (:typemodifiers ("inline")
+                        :type ("loop_ref" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [8877 9018])
+                    ("EV_PX" variable (:constant-flag t) (reparse-symbol namespacesubparts) [9174 9179])
+                    ("EV_PX_" variable (:constant-flag t) (reparse-symbol namespacesubparts) [9190 9196])
+                    ("base" type
+                       (:template 
+                          ( ("ev_watcher" type (:type "class") nil nil)
+                            ("watcher" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("base" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("EV_PX" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9432 9438]))                                  
+                                :type ("base" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [9426 9539])
+                            ("set_" function
+                               (:arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [9556 9573])
+                                    ("cb" function
+                                       (:function-pointer t
+                                        :arguments 
+                                          ( ("ev_watcher" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9585 9603])
+                                            ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9603 9605])
+                                            ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [9606 9618]))                                          
+                                        :type "void")
+                                        nil nil))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9545 9728])
+                            ("set" function
+                               (:template 
+                                  ( ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [9817 9831]))                                  )
+                                (reparse-symbol classsubparts) [9759 9898])
+                            ("function_thunk" function
+                               (:template 
+                                  ( ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("ev_watcher" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9980 9998])
+                                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9998 10000])
+                                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [10001 10013]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [9904 10087])
+                            ("set" function
+                               (:template 
+                                  ( ("K" type (:type "class") nil nil)
+                                    ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("object" variable
+                                       (:pointer 1
+                                        :type ("K" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10184 10194]))                                  )
+                                (reparse-symbol classsubparts) [10116 10261])
+                            ("set" function
+                               (:template 
+                                  ( ("K" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("object" variable
+                                       (:pointer 1
+                                        :type ("K" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10336 10346]))                                  )
+                                (reparse-symbol classsubparts) [10304 10422])
+                            ("method_thunk" function
+                               (:template 
+                                  ( ("K" type (:type "class") nil nil)
+                                    ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("ev_watcher" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10512 10530])
+                                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10530 10532])
+                                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [10533 10545]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [10428 10647])
+                            ("set" function
+                               (:template 
+                                  ( ("K" type (:type "class") nil nil)
+                                    ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("object" variable
+                                       (:pointer 1
+                                        :type ("K" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10734 10744]))                                  )
+                                (reparse-symbol classsubparts) [10681 10818])
+                            ("method_noargs_thunk" function
+                               (:template 
+                                  ( ("K" type (:type "class") nil nil)
+                                    ("void" type nil nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("ev_watcher" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10900 10918])
+                                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10918 10920])
+                                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [10921 10933]))                                  
+                                :typemodifiers ("static"))
+                                (reparse-symbol classsubparts) [10824 11000])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("events" variable
+                                       (:default-value "EV_UNDEF"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [11023 11044]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11006 11171])
+                            ("is_active" function (:type "bool") (reparse-symbol classsubparts) [11177 11288])
+                            ("is_pending" function (:type "bool") (reparse-symbol classsubparts) [11294 11407])
+                            ("feed_event" function
+                               (:arguments 
+                                  ( ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [11430 11442]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11413 11533]))                          
+                        :superclasses 
+                          ( ("ev_watcher" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [9207 11538])
+                    ("now" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable (:type ("EV_P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11561 11566]))                          
+                        :type ("tstamp" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [11542 11609])
+                    ("delay" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("interval" variable (:type ("tstamp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11632 11648]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11613 11690])
+                    ("version_major" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [11694 11770])
+                    ("version_minor" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [11774 11850])
+                    ("supported_backends" function
+                       (:typemodifiers ("inline")
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [11854 11949])
+                    ("recommended_backends" function
+                       (:typemodifiers ("inline")
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [11953 12052])
+                    ("embeddable_backends" function
+                       (:typemodifiers ("inline")
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [12056 12153])
+                    ("set_allocator" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12184 12195]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12157 12271])
+                    ("set_syserr_cb" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("cb" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [12313 12329]))                                  
+                                :type "void")
+                                nil nil))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12275 12383])
+                    ("EV_CONSTRUCT" variable (:constant-flag t) (reparse-symbol namespacesubparts) [12795 12807])
+                    ("EV_BEGIN_WATCHER" variable (:constant-flag t) (reparse-symbol namespacesubparts) [13185 13201])
+                    ("EV_END_WATCHER" variable (:constant-flag t) (reparse-symbol namespacesubparts) [15800 15814]))                  
+                :type "namespace")
+                nil [2304 20438]))          
+      :file "ev++.h"
+      :pointmax 20448
+      :fsize 20447
+      :lastmodtime '(21905 21135 0 0)
+      :unmatched-syntax '((semantic-list 17047 . 17061) (semantic-list 16436 . 17047) (punctuation ">" 16436 . 16467) (symbol "timer" 16436 . 16467) (punctuation "," 16436 . 16467) (symbol "ev_timer" 16436 . 16467) (punctuation "<" 16436 . 16467) (symbol "base" 16436 . 16467) (punctuation ":" 16436 . 16467) (symbol "timer" 16436 . 16467) (STRUCT "struct" 16436 . 16467) (symbol 16436 . 16452) (symbol 16436 . 16452) (semantic-list 16424 . 16432) (semantic-list 15888 . 16424) (punctuation ">" 15888 . 15913) (symbol "io" 15888 . 15913) (punctuation "," 15888 . 15913) (symbol "ev_io" 15888 . 15913) (punctuation "<" 15888 . 15913) (symbol "base" 15888 . 15913) (punctuation ":" 15888 . 15913) (symbol "io" 15888 . 15913) (STRUCT "struct" 15888 . 15913) (symbol 15888 . 15904) (symbol 15888 . 15904) (semantic-list 12336 . 12338) (THROW 12330 . 12335) (semantic-list 12224 . 12226) (THROW 12218 . 12223) (semantic-list 12195 . 12217) (semantic-list 12190 . 12195) (punctuation 10917 . 10918) (punctuation 10529 . 10530) (punctuation 9997 . 9998) (punctuation 9602 . 9603) (spp-macro-undef 2793 . 2798))
+      :lexical-table 
+        '(("EV_USE_STDEXCEPT" . ((number "1" 2243 . 2244)))
+          ("EVPP_H__")
+          )
+))
+  :file "!home!czh!libev!libev-4.24!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

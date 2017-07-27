@@ -1,0 +1,117 @@
+;; Object doubanbook/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "doubanbook/"
+  :tables
+  (list
+    (semanticdb-table "middlewares.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scrapy" include nil nil [169 195])
+            ("random" include nil nil [196 209])
+            ("scrapy.downloadermiddlewares.useragent" include nil nil [210 280])
+            ("base64" include nil nil [281 294])
+            ("MyProxyMiddleware" type
+               (:superclasses ("object")
+                :members 
+                  ( ("IPPOOL" variable nil (reparse-symbol indented_block_body) [349 1838])
+                    ("process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1896 1900])
+                            ("request" variable nil (reparse-symbol function_parameters) [1902 1909])
+                            ("spider" variable nil (reparse-symbol function_parameters) [1911 1917]))                          )
+                        (reparse-symbol indented_block_body) [1876 2649]))                  
+                :type "class")
+                nil [297 2649])
+            ("RotateUserAgentMiddleware" type
+               (:superclasses ("UserAgentMiddleware")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2710 2738]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2735 2739])
+                            ("user_agent" variable nil (reparse-symbol function_parameters) [2741 2751]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2722 2794])
+                    ("process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2819 2823])
+                            ("request" variable nil (reparse-symbol function_parameters) [2825 2832])
+                            ("spider" variable nil (reparse-symbol function_parameters) [2834 2840]))                          )
+                        (reparse-symbol indented_block_body) [2799 3033])
+                    ("user_agent_list" variable nil (reparse-symbol indented_block_body) [3263 5357]))                  
+                :type "class")
+                nil [2651 5358])
+            ("DoubanbookSpiderMiddleware" type
+               (:superclasses ("object")
+                :members 
+                  ( ("from_crawler" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [5599 5602])
+                            ("crawler" variable nil (reparse-symbol function_parameters) [5604 5611]))                          )
+                        (reparse-symbol indented_block_body) [5565 5792])
+                    ("process_spider_input" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5822 5826])
+                            ("response" variable nil (reparse-symbol function_parameters) [5828 5836])
+                            ("spider" variable nil (reparse-symbol function_parameters) [5838 5844]))                          )
+                        (reparse-symbol indented_block_body) [5797 6026])
+                    ("process_spider_output" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6057 6061])
+                            ("response" variable nil (reparse-symbol function_parameters) [6063 6071])
+                            ("result" variable nil (reparse-symbol function_parameters) [6073 6079])
+                            ("spider" variable nil (reparse-symbol function_parameters) [6081 6087]))                          )
+                        (reparse-symbol indented_block_body) [6031 6311])
+                    ("process_spider_exception" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6345 6349])
+                            ("response" variable nil (reparse-symbol function_parameters) [6351 6359])
+                            ("exception" variable nil (reparse-symbol function_parameters) [6361 6370])
+                            ("spider" variable nil (reparse-symbol function_parameters) [6372 6378]))                          )
+                        (reparse-symbol indented_block_body) [6316 6617])
+                    ("process_start_requests" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6649 6653])
+                            ("start_requests" variable nil (reparse-symbol function_parameters) [6655 6669])
+                            ("spider" variable nil (reparse-symbol function_parameters) [6671 6677]))                          )
+                        (reparse-symbol indented_block_body) [6622 6969])
+                    ("spider_opened" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6992 6996])
+                            ("spider" variable nil (reparse-symbol function_parameters) [6998 7004]))                          )
+                        (reparse-symbol indented_block_body) [6974 7069]))                  
+                :type "class")
+                nil [5360 7069]))          
+      :file "middlewares.py"
+      :pointmax 7069
+      :fsize 7100
+      :lastmodtime '(22893 56395 522854 721000)
+      :unmatched-syntax nil)
+    (semanticdb-table "settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("BOT_NAME" variable nil nil [436 459])
+            ("SPIDER_MODULES" variable nil nil [461 500])
+            ("NEWSPIDER_MODULE" variable nil nil [501 540])
+            ("ROBOTSTXT_OBEY" variable nil nil [831 853])
+            ("DOWNLOAD_DELAY" variable nil nil [1147 1165])
+            ("COOKIES_ENABLED" variable nil nil [1329 1352]))          
+      :file "settings.py"
+      :pointmax 3670
+      :fsize 3709
+      :lastmodtime '(22893 56142 66097 37000)
+      :unmatched-syntax nil))
+  :file "!home!harlan!PythonPro!doubanbook!doubanbook!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

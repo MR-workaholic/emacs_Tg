@@ -1,0 +1,89 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "safe_bool.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_RANGE_SAFE_BOOL_INCLUDED_HPP" variable (:constant-flag t) nil [410 444])
+            ("boost/config.hpp" include (:system-flag t) nil [446 473])
+            ("boost/range/config.hpp" include (:system-flag t) nil [474 507])
+            ("boost" type
+               (:members 
+                  ( ("range_detail" type
+                       (:members 
+                          ( ("safe_bool" type
+                               (:template 
+                                  ( ("DataMemberPtr" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [609 616])
+                                    ("this_type" type
+                                       (:typedef ("safe_bool" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [621 649])
+                                    ("unspecified_bool_type" type
+                                       (:typedef ("DataMemberPtr" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1697 1741])
+                                    ("to_unspecified_bool" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable
+                                               (:constant-flag t
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [1795 1808])
+                                            ("p" variable (:type ("DataMemberPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1809 1825]))                                          
+                                        :type ("unspecified_bool_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1746 1863])
+                                    ("private" label nil (reparse-symbol classsubparts) [1871 1879])
+                                    ("safe_bool" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("safe_bool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1884 1896])
+                                    ("safe_bool" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("safe_bool" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1911 1928]))                                          
+                                        :type ("safe_bool" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1901 1929])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("safe_bool" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1949 1966]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1934 1967])
+                                    ("safe_bool" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1972 1985]))                                  )
+                                (reparse-symbol namespacesubparts) [561 1988]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [531 1995]))                  
+                :type "namespace")
+                nil [509 2023]))          
+      :file "safe_bool.hpp"
+      :pointmax 2068
+      :fsize 2067
+      :lastmodtime '(22367 50498 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_RANGE_SAFE_BOOL_INCLUDED_HPP")
+          )
+))
+  :file "!usr!include!boost!range!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

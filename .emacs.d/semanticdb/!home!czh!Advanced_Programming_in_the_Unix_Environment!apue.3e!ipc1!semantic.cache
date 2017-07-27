@@ -1,0 +1,47 @@
+;; Object ipc1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ipc1/"
+  :tables
+  (list
+    (semanticdb-table "pipe1.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29 34]))                  
+                :type "int")
+                nil [20 402]))          
+      :file "pipe1.c"
+      :pointmax 403
+      :fsize 402
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "pipe2.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("apue.h" include nil nil [1 18])
+            ("sys/wait.h" include (:system-flag t) nil [19 40])
+            ("DEF_PAGER" variable (:constant-flag t) nil [50 59])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [111 120])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [121 134]))                  
+                :type "int")
+                nil [102 1470]))          
+      :file "pipe2.c"
+      :pointmax 1471
+      :fsize 1470
+      :lastmodtime '(21290 18065 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEF_PAGER" . ((string "\"/bin/more\"" 60 . 71)))
+          )
+))
+  :file "!home!czh!Advanced_Programming_in_the_Unix_Environment!apue.3e!ipc1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

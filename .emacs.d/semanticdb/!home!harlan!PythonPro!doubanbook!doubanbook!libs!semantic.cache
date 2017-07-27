@@ -1,0 +1,42 @@
+;; Object libs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libs/"
+  :tables
+  (list
+    (semanticdb-table "slide_challenge.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("random" include nil nil [103 116])
+            ("json" include nil nil [117 128])
+            ("copy" include nil nil [129 140])
+            ("with" code nil nil [143 221])
+            ("gen_random_a_array" function (:arguments 
+              ( ("pos" variable nil (reparse-symbol function_parameters) [246 249]))              ) nil [223 1467])
+            ("gen_random_p_array" function (:arguments 
+              ( ("pos" variable nil (reparse-symbol function_parameters) [1492 1495]))              ) nil [1469 3462])
+            ("gen_pos_i_array" function (:arguments 
+              ( ("pos" variable nil (reparse-symbol function_parameters) [3484 3487]))              ) nil [3464 5336])
+            ("report_true" function (:arguments 
+              ( ("pos" variable nil (reparse-symbol function_parameters) [5354 5357])
+                ("arr" variable nil (reparse-symbol function_parameters) [5359 5362]))              ) nil [5338 5388])
+            ("gen_pos_array" function (:arguments 
+              ( ("pos" variable nil (reparse-symbol function_parameters) [5408 5411]))              ) nil [5390 5752])
+            ("encode_pos" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [5769 5770])
+                ("b" variable nil (reparse-symbol function_parameters) [5772 5773]))              ) nil [5754 6576])
+            ("c" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [6584 6585]))              ) nil [6578 7106])
+            ("d" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [7114 7115]))              ) nil [7108 7423])
+            ("e" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [7431 7432]))              ) nil [7425 7690])
+            ("encode_pos_arr" function (:arguments 
+              ( ("arr" variable nil (reparse-symbol function_parameters) [7711 7714]))              ) nil [7692 8064]))          
+      :file "slide_challenge.py"
+      :pointmax 8064
+      :fsize 8251
+      :lastmodtime '(22893 45506 940811 615000)
+      :unmatched-syntax '((NAME 6209 . 6210) (IF 6215 . 6217) (ELSE 6225 . 6229))))
+  :file "!home!harlan!PythonPro!doubanbook!doubanbook!libs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

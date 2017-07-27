@@ -1,0 +1,172 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables
+  (list
+    (semanticdb-table "uan-cw-example.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("UAN_CW_EXAMPLE_H" variable (:constant-flag t) nil [856 872])
+            ("ns3/network-module.h" include nil nil [874 905])
+            ("ns3/stats-module.h" include nil nil [906 935])
+            ("ns3/uan-module.h" include nil nil [936 963])
+            ("ns3" using (:type ("ns3" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [965 985])
+            ("Experiment" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1185 1192])
+                    ("Run" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uan" variable
+                               (:reference 1
+                                :type ("UanHelper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1434 1449]))                          
+                        :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1412 1450])
+                    ("ReceivePacket" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("socket" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Socket" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1579 1598]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1559 1599])
+                    ("UpdatePositions" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nodes" variable
+                               (:reference 1
+                                :type ("NodeContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1803 1824]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1781 1825])
+                    ("ResetData" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1876 1894])
+                    ("IncrementCw" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cw" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2046 2058]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2028 2059])
+                    ("m_numNodes" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2065 2085])
+                    ("m_dataRate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2138 2158])
+                    ("m_depth" variable (:type "double") (reparse-symbol classsubparts) [2198 2213])
+                    ("m_boundary" variable (:type "double") (reparse-symbol classsubparts) [2279 2297])
+                    ("m_packetSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2350 2372])
+                    ("m_bytesTotal" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2425 2447])
+                    ("m_cwMin" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2490 2507])
+                    ("m_cwMax" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2553 2570])
+                    ("m_cwStep" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2616 2634])
+                    ("m_avgs" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2685 2701])
+                    ("m_slotTime" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2810 2826])
+                    ("m_simTime" variable (:type ("Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2873 2888])
+                    ("m_gnudatfile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2954 2979])
+                    ("m_asciitracefile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3051 3080])
+                    ("m_bhCfgFile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3149 3173])
+                    ("m_data" variable (:type ("Gnuplot2dDataset" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3202 3226])
+                    ("m_throughputs" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3280 3314])
+                    ("Experiment" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Experiment" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3379 3393]))                  
+                :type "class")
+                nil [1166 3396]))          
+      :file "uan-cw-example.h"
+      :pointmax 3428
+      :fsize 3427
+      :lastmodtime '(22515 6301 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UAN_CW_EXAMPLE_H")
+          )
+)
+    (semanticdb-table "uan-cw-example.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("uan-cw-example.h" include nil nil [1905 1932])
+            ("ns3/core-module.h" include nil nil [1933 1961])
+            ("ns3/network-module.h" include nil nil [1962 1993])
+            ("ns3/mobility-module.h" include nil nil [1994 2026])
+            ("ns3/stats-module.h" include nil nil [2027 2056])
+            ("ns3/applications-module.h" include nil nil [2057 2093])
+            ("fstream" include (:system-flag t) nil [2095 2113])
+            ("ns3" using (:type ("ns3" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [2115 2135])
+            ("NS_LOG_COMPONENT_DEFINE" function
+               (:prototype-flag t
+                :type "int")
+                nil [2137 2178])
+            ("Experiment" function
+               (:constructor-flag t
+                :parent "Experiment"
+                :type ("Experiment" type (:type "class") nil nil))
+                nil [2180 2604])
+            ("ResetData" function
+               (:parent "Experiment"
+                :type "void")
+                nil [2606 2805])
+            ("IncrementCw" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("cw" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2837 2849]))                  
+                :type "void")
+                nil [2807 3338])
+            ("UpdatePositions" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("nodes" variable
+                       (:reference 1
+                        :type ("NodeContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3373 3394]))                  
+                :type "void")
+                nil [3339 3807])
+            ("ReceivePacket" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("socket" variable (:type ("Ptr" type
+                         (:template-specifier 
+                            ( ("Socket" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3841 3860]))                  
+                :type "void")
+                nil [3809 3992])
+            ("Run" function
+               (:parent "Experiment"
+                :arguments 
+                  ( ("uan" variable
+                       (:reference 1
+                        :type ("UanHelper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4028 4043]))                  
+                :type ("Gnuplot2dDataset" type (:type "class") nil nil))
+                nil [3994 8495])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8507 8516])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8517 8529]))                  
+                :type "int")
+                nil [8497 10668]))          
+      :file "uan-cw-example.cc"
+      :pointmax 10670
+      :fsize 10669
+      :lastmodtime '(22515 6301 0 0)
+      :unmatched-syntax nil))
+  :file "!home!czh!NS3_26!ns-allinone-3.26!ns-3.26!src!uan!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

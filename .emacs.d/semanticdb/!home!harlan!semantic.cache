@@ -1,0 +1,16 @@
+;; Object harlan/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "harlan/"
+  :tables
+  (list
+    (semanticdb-table ".emacs"
+      :major-mode 'c++-mode
+      :tags nil
+      :file ".emacs"
+      :pointmax 16653
+      :fsize 18044
+      :lastmodtime '(22883 17703 159559 13000)
+      :unmatched-syntax nil))
+  :file "!home!harlan!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

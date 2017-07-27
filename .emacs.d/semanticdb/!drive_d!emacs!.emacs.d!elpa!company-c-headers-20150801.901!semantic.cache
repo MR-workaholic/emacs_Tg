@@ -1,0 +1,36 @@
+;; Object company-c-headers-20150801.901/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "company-c-headers-20150801.901/"
+  :tables (list 
+   (semanticdb-table "company-c-headers-autoloads.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-c-headers-autoloads.el"
+    :pointmax 702
+    :fsize 701
+    :lastmodtime '(22354 19865 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-c-headers-pkg.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-c-headers-pkg.el"
+    :pointmax 140
+    :fsize 140
+    :lastmodtime '(22354 19865 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "company-c-headers.el"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "company-c-headers.el"
+    :pointmax 7245
+    :fsize 7244
+    :lastmodtime '(22354 19865 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_d!emacs!.emacs.d!elpa!company-c-headers-20150801.901!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

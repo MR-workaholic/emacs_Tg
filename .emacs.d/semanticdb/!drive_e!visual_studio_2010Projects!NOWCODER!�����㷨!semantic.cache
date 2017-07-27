@@ -1,0 +1,760 @@
+;; Object 回溯算法/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "回溯算法/"
+  :tables (list 
+   (semanticdb-table "n_queen.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [25 44])
+            ("math.h" include (:system-flag t) nil [45 62])
+            ("N" variable (:constant-flag t) nil [71 72])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [76 96])
+            ("sum" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [98 127])
+            ("queen" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "int")
+                nil [98 127])
+            ("show" function (:type "void") nil [179 375])
+            ("check" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [448 454]))                  
+                :type "bool")
+                nil [437 607])
+            ("n_solution" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [651 657]))                  
+                :type "void")
+                nil [635 1039])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1050 1059])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1060 1073]))                  
+                :type "int")
+                nil [1041 1186]))          
+    :file "n_queen.cpp"
+    :pointmax 1187
+    :fsize 1418
+    :lastmodtime '(22495 53127 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("N" . ((number "8" 73 . 74)))
+          )
+
+    )
+   (semanticdb-table "subset_sum.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [43 62])
+            ("vector" include (:system-flag t) nil [63 80])
+            ("string" include (:system-flag t) nil [81 98])
+            ("sstream" include (:system-flag t) nil [99 117])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [119 139])
+            ("count" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [141 162])
+            ("gvec" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [163 187])
+            ("target" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [188 206])
+            ("show" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [218 235]))                  
+                :type "void")
+                nil [208 364])
+            ("check" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [376 393]))                  
+                :type "int")
+                nil [366 622])
+            ("solution" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [638 655])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [656 662]))                  
+                :type "void")
+                nil [624 1032])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1044 1053])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1054 1067]))                  
+                :type "int")
+                nil [1035 1320]))          
+    :file "subset_sum.cpp"
+    :pointmax 1321
+    :fsize 1499
+    :lastmodtime '(22493 8971 0 0)
+    :unmatched-syntax '((punctuation 1322 . 1323) (punctuation 1321 . 1322))
+    )
+   (semanticdb-table "hamilton_circuit.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [79 98])
+            ("vector" include (:system-flag t) nil [99 116])
+            ("algorithm" include (:system-flag t) nil [117 137])
+            ("NUM" variable (:constant-flag t) nil [146 149])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [155 175])
+            ("gmap" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("vector" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [177 210])
+            ("IS_EXIST" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [211 232])
+            ("m_state" type
+               (:typedef ("STATE" type (:type "enum") nil nil)
+                :superclasses "STATE"
+                :type "typedef")
+                nil [234 319])
+            ("STATE" type
+               (:members 
+                  ( ("IS_ALIVE" variable
+                       (:constant-flag t
+                        :default-value (267 268)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [256 268])
+                    ("IS_SUCCEED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [272 283])
+                    ("IS_NOTALIVE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [286 298])
+                    ("IS_FAIL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [301 310]))                  
+                :type "enum")
+                nil [234 319])
+            ("check" function
+               (:arguments 
+                  ( ("vec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [335 351])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [352 358]))                  
+                :type ("m_state" type (:type "class") nil nil))
+                nil [321 683])
+            ("show" function
+               (:arguments 
+                  ( ("vec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [695 711]))                  
+                :type "void")
+                nil [685 856])
+            ("hsolution" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [873 890])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [891 897]))                  
+                :type "void")
+                nil [858 1351])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1362 1371])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1372 1385]))                  
+                :type "int")
+                nil [1353 2674]))          
+    :file "hamilton_circuit.cpp"
+    :pointmax 2675
+    :fsize 2914
+    :lastmodtime '(22493 14235 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NUM" . ((semantic-list "(6)" 150 . 153)))
+          )
+
+    )
+   (semanticdb-table "arrange.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [32 51])
+            ("vector" include (:system-flag t) nil [52 69])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [71 91])
+            ("m_vec" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [94 119])
+            ("show" function
+               (:arguments 
+                  ( ("vec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [131 147]))                  
+                :type "void")
+                nil [121 275])
+            ("asolution" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [292 309])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [310 316]))                  
+                :type "void")
+                nil [277 453])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [464 473])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [474 487]))                  
+                :type "int")
+                nil [455 728]))          
+    :file "arrange.cpp"
+    :pointmax 729
+    :fsize 788
+    :lastmodtime '(22493 10815 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "knapsack.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [58 77])
+            ("vector" include (:system-flag t) nil [78 95])
+            ("NUM" variable (:constant-flag t) nil [104 107])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [111 131])
+            ("weight" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [133 161])
+            ("value" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [162 189])
+            ("capacity" variable
+               (:typemodifiers ("static")
+                :type "float")
+                nil [190 212])
+            ("result" variable
+               (:typemodifiers ("static")
+                :type "float")
+                nil [213 233])
+            ("result_vec" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [234 264])
+            ("isOverweight" function
+               (:arguments 
+                  ( ("vec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [284 300]))                  
+                :type "bool")
+                nil [266 519])
+            ("count_result" function
+               (:arguments 
+                  ( ("vec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [539 555]))                  
+                :type "void")
+                nil [521 751])
+            ("ksolution" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [768 785])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [786 792]))                  
+                :type "void")
+                nil [753 970])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [981 990])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [991 1004]))                  
+                :type "int")
+                nil [972 1581]))          
+    :file "knapsack.cpp"
+    :pointmax 1582
+    :fsize 1709
+    :lastmodtime '(22493 16043 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NUM" . ((number "6" 108 . 109)))
+          )
+
+    )
+   (semanticdb-table "maze.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [410 429])
+            ("vector" include (:system-flag t) nil [430 447])
+            ("string" include (:system-flag t) nil [448 465])
+            ("sstream" include (:system-flag t) nil [466 484])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [488 508])
+            ("M" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [510 526])
+            ("N" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [510 526])
+            ("maze" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("vector" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [527 560])
+            ("stepnum" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [561 580])
+            ("result" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [581 619])
+            ("myoutput" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("pair" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [620 660])
+            ("DIR" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("tright" variable
+                             (:constant-flag t
+                              :default-value (688 689)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [679 689])
+                          ("tdown" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [693 699])
+                          ("tleft" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [702 708])
+                          ("tup" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [711 716]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [663 720])
+            ("chk" type
+               (:members 
+                  ( ("WALL" variable
+                       (:constant-flag t
+                        :default-value (749 750)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [742 750])
+                    ("ROAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [754 759])
+                    ("EXIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [762 768]))                  
+                :type "enum")
+                nil [730 769])
+            ("dir" variable
+               (:dereference 1
+                :type ("DIR" type (:type "class") nil nil))
+                nil [771 811])
+            ("check" function
+               (:arguments 
+                  ( ("pos" variable (:type ("pair" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [823 842])
+                    ("mdir" variable (:type ("DIR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [843 852]))                  
+                :type ("chk" type (:type "class") nil nil))
+                nil [813 1504])
+            ("msolution" function
+               (:arguments 
+                  ( ("vec" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("pair" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [1522 1550])
+                    ("mdir" variable (:type ("DIR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1551 1560]))                  
+                :type "void")
+                nil [1507 2496])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2507 2516])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2517 2530]))                  
+                :type "int")
+                nil [2498 3775]))          
+    :file "maze.cpp"
+    :pointmax 3776
+    :fsize 4115
+    :lastmodtime '(22494 38114 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "halfarrsub.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [35 54])
+            ("vector" include (:system-flag t) nil [55 72])
+            ("NUM" variable (:constant-flag t) nil [81 84])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [91 111])
+            ("vec_num" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [113 140])
+            ("isFinish" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "int")
+                nil [141 164])
+            ("result" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "int")
+                nil [165 191])
+            ("res_vec" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("char" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [192 220])
+            ("isEnd" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [239 245]))                  
+                :type "bool")
+                nil [221 246])
+            ("check" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [260 278]))                  
+                :type "void")
+                nil [249 597])
+            ("hasolution" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("char" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [615 633])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [634 640]))                  
+                :type "void")
+                nil [599 879])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [890 899])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [900 913]))                  
+                :type "int")
+                nil [881 1594]))          
+    :file "halfarrsub.cpp"
+    :pointmax 1595
+    :fsize 1718
+    :lastmodtime '(22499 17848 0 0)
+    :unmatched-syntax '((number 183 . 189) (number 161 . 162))
+    :lexical-table 
+        '(("NUM" . ((semantic-list "(10)" 85 . 89)))
+          )
+
+    )
+   (semanticdb-table "twosum.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [49 68])
+            ("vector" include (:system-flag t) nil [69 86])
+            ("string" include (:system-flag t) nil [87 104])
+            ("sstream" include (:system-flag t) nil [105 123])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [125 145])
+            ("nums" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [147 171])
+            ("result" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [172 198])
+            ("target" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [199 217])
+            ("isEnd" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [218 244])
+            ("check" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [257 274]))                  
+                :type "void")
+                nil [246 385])
+            ("tssolution" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [403 420])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [421 427]))                  
+                :type "void")
+                nil [387 646])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [657 666])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [667 680]))                  
+                :type "int")
+                nil [648 1038]))          
+    :file "twosum.cpp"
+    :pointmax 1039
+    :fsize 1145
+    :lastmodtime '(22503 47422 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ClimbLadderandDivision.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [39 58])
+            ("vector" include (:system-flag t) nil [59 76])
+            ("MAX" variable (:constant-flag t) nil [85 88])
+            ("OVER" variable (:constant-flag t) nil [105 109])
+            ("OK" variable (:constant-flag t) nil [122 124])
+            ("SUCCESS" variable (:constant-flag t) nil [137 144])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [150 170])
+            ("target" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [173 191])
+            ("Divisions" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("vector" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [192 230])
+            ("minstep" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "int")
+                nil [231 255])
+            ("result" variable
+               (:typemodifiers ("static")
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [256 282])
+            ("CLDsolution" function
+               (:arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [302 319])
+                    ("now" variable (:type "int") (reparse-symbol arg-sub-list) [320 328])
+                    ("step" variable (:type "int") (reparse-symbol arg-sub-list) [329 338])
+                    ("count" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [339 350]))                  
+                :type "void")
+                nil [285 704])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [715 724])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [725 738]))                  
+                :type "int")
+                nil [706 1840]))          
+    :file "ClimbLadderandDivision.cpp"
+    :pointmax 1841
+    :fsize 1955
+    :lastmodtime '(22511 43155 0 0)
+    :unmatched-syntax '((semantic-list "(10000)" 250 . 253))
+    :lexical-table 
+        '(("OK" . ((semantic-list "(2)" 125 . 128)))
+          ("MAX" . ((semantic-list "(10000)" 89 . 96)))
+          ("SUCCESS" . ((semantic-list "(3)" 145 . 148)))
+          ("OVER" . ((semantic-list "(1)" 110 . 113)))
+          )
+
+    )
+   )
+  :file "!drive_e!visual_studio_2010Projects!NOWCODER!回溯算法!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

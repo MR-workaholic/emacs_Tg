@@ -1,0 +1,51 @@
+;; Object passpointer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "passpointer/"
+  :tables
+  (list
+    (semanticdb-table "testlib.c"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("string.h" include (:system-flag t) nil [21 40])
+            ("StrReverse" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59 69]))                  
+                :type "char")
+                nil [42 297])
+            ("reverse" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [311 321]))                  
+                :type "int")
+                nil [299 493]))          
+      :file "testlib.c"
+      :pointmax 494
+      :fsize 509
+      :lastmodtime '(22564 25550 309546 597000)
+      :unmatched-syntax nil)
+    (semanticdb-table "pytestlib.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("ctypes" include nil nil [25 38])
+            ("copy" include nil nil [39 50])
+            ("s0" variable nil nil [52 64])
+            ("s1" variable nil nil [90 126])
+            ("testlib" variable nil nil [145 183])
+            ("testlib" code nil nil [184 203])
+            ("print" code nil nil [204 222])
+            ("print" code nil nil [223 247]))          
+      :file "pytestlib.py"
+      :pointmax 248
+      :fsize 247
+      :lastmodtime '(22564 26204 219700 731000)
+      :unmatched-syntax nil))
+  :file "!home!czh!PULSD!chapterc!python-c-ctypes!passpointer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

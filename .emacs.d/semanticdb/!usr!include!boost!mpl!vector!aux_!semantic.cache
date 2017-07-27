@@ -1,0 +1,88 @@
+;; Object aux_/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aux_/"
+  :tables
+  (list
+    (semanticdb-table "include_preprocessed.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("boost/mpl/aux_/config/typeof.hpp" include (:system-flag t) nil [365 408])
+            ("boost/mpl/aux_/config/ctps.hpp" include (:system-flag t) nil [409 450])
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:system-flag t) nil [451 500])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [501 548])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [550 587])
+            ("boost/preprocessor/stringize.hpp" include (:system-flag t) nil [588 631])
+            ("AUX778076_INCLUDE_DIR" variable (:constant-flag t) nil [907 928])
+            ("AUX778076_HEADER" variable (:constant-flag t) nil [1020 1036]))          
+      :file "include_preprocessed.hpp"
+      :pointmax 1657
+      :fsize 1656
+      :lastmodtime '(22367 50508 0 0)
+      :unmatched-syntax '((semantic-list 1498 . 1551) (symbol 1480 . 1498) (punctuation 1533 . 1534) (punctuation 1520 . 1521) (punctuation 1515 . 1516) (punctuation 1508 . 1509) (punctuation 1504 . 1505) (symbol 1472 . 1479) (punctuation 1533 . 1534) (punctuation 1520 . 1521) (punctuation 1515 . 1516) (punctuation 1508 . 1509) (punctuation 1504 . 1505) (punctuation 1468 . 1469)))
+    (semanticdb-table "at.hpp"
+      :file "at.hpp"
+      :fsize 2562
+      :lastmodtime '(22367 50507 0 0))
+    (semanticdb-table "front.hpp"
+      :file "front.hpp"
+      :fsize 1271
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "push_front.hpp"
+      :file "push_front.hpp"
+      :fsize 940
+      :lastmodtime '(22367 50507 0 0))
+    (semanticdb-table "pop_front.hpp"
+      :file "pop_front.hpp"
+      :fsize 921
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "push_back.hpp"
+      :file "push_back.hpp"
+      :fsize 896
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "pop_back.hpp"
+      :file "pop_back.hpp"
+      :fsize 916
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "back.hpp"
+      :file "back.hpp"
+      :fsize 1316
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "clear.hpp"
+      :file "clear.hpp"
+      :fsize 1202
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "O1_size.hpp"
+      :file "O1_size.hpp"
+      :fsize 1213
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "size.hpp"
+      :file "size.hpp"
+      :fsize 1095
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "empty.hpp"
+      :file "empty.hpp"
+      :fsize 1433
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "item.hpp"
+      :file "item.hpp"
+      :fsize 2461
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "iterator.hpp"
+      :file "iterator.hpp"
+      :fsize 2971
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "vector0.hpp"
+      :file "vector0.hpp"
+      :fsize 1306
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "begin_end.hpp"
+      :file "begin_end.hpp"
+      :fsize 1091
+      :lastmodtime '(22367 50508 0 0))
+    (semanticdb-table "tag.hpp"
+      :file "tag.hpp"
+      :fsize 744
+      :lastmodtime '(22367 50508 0 0)))
+  :file "!usr!include!boost!mpl!vector!aux_!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

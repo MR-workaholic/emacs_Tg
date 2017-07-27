@@ -1,0 +1,618 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "demo.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("netdb.h" include (:system-flag t) nil [1 19])
+            ("stdio.h" include (:system-flag t) nil [20 38])
+            ("string.h" include (:system-flag t) nil [39 58])
+            ("sys/socket.h" include (:system-flag t) nil [59 82])
+            ("sys/types.h" include (:system-flag t) nil [83 105])
+            ("string" include (:system-flag t) nil [106 123])
+            ("event.h" include nil nil [124 142])
+            ("hsm.h" include nil nil [143 159])
+            ("message.h" include nil nil [160 180])
+            ("module.h" include nil nil [181 200])
+            ("sap.h" include nil nil [201 217])
+            ("schedule.h" include nil nil [218 239])
+            ("m_fd" variable (:type "int") nil [267 291])
+            ("m_sock" variable (:type "int") nil [292 303])
+            ("read_stdin" function
+               (:arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ev_io_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [320 329]))                  
+                :type "int")
+                nil [305 680])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [691 696]))                  
+                :type "int")
+                nil [682 1256]))          
+    :file "demo.cc"
+    :pointmax 1257
+    :fsize 1256
+    :lastmodtime '(22486 49532 0 0)
+    :unmatched-syntax '((symbol 241 . 265))
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "Makefile"
+    :pointmax 479
+    :fsize 478
+    :lastmodtime '(22486 49532 0 0)
+    :unmatched-syntax '((symbol 474 . 478) (symbol 471 . 473) (punctuation 468 . 469) (charquote 467 . 468) (string 462 . 466) (symbol 459 . 461) (symbol 454 . 458) (punctuation 453 . 454) (string 447 . 452) (symbol 442 . 446) (punctuation 441 . 442) (punctuation 439 . 440) (symbol 434 . 438) (punctuation 431 . 432) (symbol 426 . 431) (semantic-list 416 . 423) (symbol 415 . 416) (punctuation 413 . 414) (symbol 412 . 413) (symbol 407 . 411) (symbol 405 . 406) (punctuation 404 . 405) (semantic-list 399 . 403) (symbol 398 . 399) (symbol 395 . 396) (punctuation 394 . 395) (symbol 386 . 394) (punctuation 385 . 386) (symbol 382 . 385) (symbol 377 . 378) (punctuation 376 . 377) (symbol 373 . 376) (punctuation 372 . 373) (symbol 369 . 372) (symbol 367 . 368) (punctuation 366 . 367) (symbol 363 . 366) (punctuation 362 . 363) (symbol 359 . 362) (symbol 357 . 358) (punctuation 356 . 357) (symbol 350 . 356) (punctuation 349 . 350) (symbol 346 . 349) (symbol 344 . 345) (punctuation 343 . 344) (symbol 335 . 343) (punctuation 334 . 335) (symbol 331 . 334) (symbol 326 . 327) (punctuation 325 . 326) (symbol 315 . 325) (punctuation 314 . 315) (symbol 311 . 314) (symbol 309 . 310) (punctuation 308 . 309) (symbol 303 . 308) (punctuation 302 . 303) (symbol 299 . 302) (symbol 297 . 298) (punctuation 296 . 297) (symbol 285 . 296) (punctuation 284 . 285) (symbol 281 . 284) (symbol 276 . 277) (punctuation 275 . 276) (symbol 267 . 275) (punctuation 266 . 267) (symbol 262 . 266) (symbol 260 . 261) (punctuation 259 . 260) (symbol 254 . 259) (punctuation 253 . 254) (symbol 249 . 253) (symbol 247 . 248) (punctuation 246 . 247) (symbol 242 . 246) (punctuation 240 . 241) (symbol 236 . 240) (symbol 230 . 234) (punctuation 228 . 229) (symbol 225 . 228) (semantic-list 215 . 222) (symbol 214 . 215) (punctuation 211 . 212) (symbol 210 . 211) (symbol 208 . 209) (punctuation 207 . 208) (punctuation 206 . 207) (symbol 205 . 206) (symbol 203 . 204) (punctuation 202 . 203) (semantic-list 194 . 201) (symbol 193 . 194) (semantic-list 187 . 192) (symbol 186 . 187) (symbol 182 . 184) (punctuation 181 . 182) (punctuation 180 . 181) (punctuation 178 . 179) (symbol 177 . 178) (punctuation 176 . 177) (punctuation 175 . 176) (semantic-list 165 . 172) (symbol 164 . 165) (punctuation 161 . 162) (symbol 160 . 161) (symbol 158 . 159) (punctuation 157 . 158) (punctuation 156 . 157) (symbol 155 . 156) (symbol 153 . 154) (punctuation 152 . 153) (semantic-list 144 . 151) (symbol 143 . 144) (semantic-list 138 . 142) (symbol 137 . 138) (symbol 134 . 135) (punctuation 133 . 134) (punctuation 132 . 133) (punctuation 130 . 131) (symbol 129 . 130) (punctuation 128 . 129) (punctuation 127 . 128) (symbol 122 . 125) (punctuation 121 . 122) (symbol 116 . 121) (punctuation 115 . 116) (symbol 102 . 114) (punctuation 101 . 102) (symbol 93 . 100) (punctuation 92 . 93) (punctuation 91 . 92) (symbol 90 . 91) (punctuation 89 . 90) (number 86 . 88) (punctuation 85 . 86) (punctuation 84 . 85) (symbol 83 . 84) (punctuation 82 . 83) (symbol 79 . 82) (punctuation 78 . 79) (punctuation 76 . 77) (symbol 70 . 75) (symbol 65 . 69) (punctuation 64 . 65) (symbol 62 . 63) (punctuation 61 . 62) (punctuation 59 . 60) (symbol 53 . 58) (punctuation 51 . 52) (punctuation 50 . 51) (symbol 49 . 50) (punctuation 47 . 48) (symbol 44 . 46) (symbol 41 . 42) (punctuation 40 . 41) (punctuation 38 . 39) (punctuation 37 . 38) (symbol 36 . 37) (punctuation 34 . 35) (symbol 30 . 33) (symbol 28 . 29) (punctuation 27 . 28) (symbol 23 . 26) (punctuation 21 . 22) (symbol 17 . 19) (punctuation 14 . 15) (symbol 5 . 13) (punctuation 3 . 4) (punctuation 1 . 2))
+    )
+   (semanticdb-table "channel"
+    :major-mode 'python-mode
+    :tags 
+        '( ("socket" include nil nil [48 61])
+            ("asyncio" include nil nil [62 76])
+            ("signal" include nil nil [77 90])
+            ("sys" include nil nil [91 101])
+            ("logging" include nil nil [102 116])
+            ("enum" include nil nil [118 141])
+            ("math" include nil nil [142 177])
+            ("random" include nil nil [178 214])
+            ("BUFSIZE" variable nil nil [216 239])
+            ("X_RANGE" variable nil nil [240 268])
+            ("Y_RANGE" variable nil nil [280 308])
+            ("Z_RANGE" variable nil nil [309 337])
+            ("SALINITY" variable nil nil [338 359])
+            ("TEMPERATURE" variable nil nil [380 401])
+            ("DEPTH" variable nil nil [420 440])
+            ("IDLE_ENERGY" variable nil nil [460 483])
+            ("RECV_ENERGY" variable nil nil [500 522])
+            ("SEND_ENERGY" variable nil nil [523 544])
+            ("FULL_ENERGY" variable nil nil [545 567])
+            ("GAPTIME" variable nil nil [587 609])
+            ("g_loop" variable nil nil [629 665])
+            ("g_nodes" variable nil nil [666 680])
+            ("g_id" variable nil nil [681 694])
+            ("g_packets" variable nil nil [695 709])
+            ("g_time" variable nil nil [710 726])
+            ("g_sink" variable nil nil [727 740])
+            ("Position" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("global" code nil (reparse-symbol indented_block_body) [791 804])
+                            ("if" code nil (reparse-symbol indented_block_body) [813 1358]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [776 780]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [763 1358])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1375 1379]))                          )
+                        (reparse-symbol indented_block_body) [1363 1439])
+                    ("get_random_x" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1461 1465]))                          )
+                        (reparse-symbol indented_block_body) [1444 1517])
+                    ("get_random_y" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1539 1543]))                          )
+                        (reparse-symbol indented_block_body) [1522 1595])
+                    ("get_random_z" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1617 1621]))                          )
+                        (reparse-symbol indented_block_body) [1600 1673])
+                    ("GetDistance" function (:arguments 
+                      ( ("slef" variable nil (reparse-symbol function_parameters) [1694 1698])
+                        ("pos" variable nil (reparse-symbol function_parameters) [1700 1703]))                      ) (reparse-symbol indented_block_body) [1678 1833]))                  
+                :type "class")
+                nil [743 1833])
+            ("Battery" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1882 1907]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1867 1871]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1854 1908]))                  
+                :type "class")
+                nil [1835 1908])
+            ("TxMode" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("'''
+        Declaration in ns3/src/uan/model/uan-tx-mode.h:156
+        Definition  in ns3/src/uan/model/uan-tx-mode.cc:132
+        unit:
+            datarate             : bps
+            phyrate              : sps (symbol per second)
+            cf(center frequence) : Hz
+            bw(band width)       : Hz
+        '''" code nil (reparse-symbol indented_block_body) [1993 2315])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2324 2348])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2357 2381])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2390 2413])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2422 2440])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2449 2467]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1941 1945])
+                            ("modetype" variable nil (reparse-symbol function_parameters) [1947 1955])
+                            ("datarate" variable nil (reparse-symbol function_parameters) [1957 1965])
+                            ("phyrate" variable nil (reparse-symbol function_parameters) [1967 1974])
+                            ("cf" variable nil (reparse-symbol function_parameters) [1976 1978])
+                            ("bw" variable nil (reparse-symbol function_parameters) [1980 1982]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1928 2468])
+                    ("GetModeType" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2489 2493]))                          )
+                        (reparse-symbol indented_block_body) [2473 2525])
+                    ("GetDataRate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2546 2550]))                          )
+                        (reparse-symbol indented_block_body) [2530 2582])
+                    ("GetPhyRate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2602 2606]))                          )
+                        (reparse-symbol indented_block_body) [2587 2637])
+                    ("GetCenterFreq" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2660 2664]))                          )
+                        (reparse-symbol indented_block_body) [2642 2690])
+                    ("GetBandWidth" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2712 2716]))                          )
+                        (reparse-symbol indented_block_body) [2695 2742]))                  
+                :type "class")
+                nil [1910 2742])
+            ("TxMode1" type
+               (:superclasses ("TxMode")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [2831 2873]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2816 2820]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2803 2874]))                  
+                :type "class")
+                nil [2776 2874])
+            ("TxMode2" type
+               (:superclasses ("TxMode")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [2931 2973]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2916 2920]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2903 2974]))                  
+                :type "class")
+                nil [2876 2974])
+            ("TxMode3" type
+               (:superclasses ("TxMode")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [3031 3073]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3016 3020]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3003 3074]))                  
+                :type "class")
+                nil [2976 3074])
+            ("TxMode4" type
+               (:superclasses ("TxMode")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [3131 3173]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3116 3120]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3103 3174]))                  
+                :type "class")
+                nil [3076 3174])
+            ("TxMode5" type
+               (:superclasses ("TxMode")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [3231 3273]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3216 3220]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3203 3274]))                  
+                :type "class")
+                nil [3176 3274])
+            ("PacketId" type
+               (:members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [3296 3302])
+                    ("GetId" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3335 3338]))                          )
+                        (reparse-symbol indented_block_body) [3308 3391]))                  
+                :type "class")
+                nil [3276 3391])
+            ("Packet" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3453 3487])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3496 3520])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3529 3548])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3557 3579])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3704 3723])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3732 3764])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3773 3792])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3801 3820])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3829 3848]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3424 3428])
+                            ("txnode" variable nil (reparse-symbol function_parameters) [3430 3436])
+                            ("data" variable nil (reparse-symbol function_parameters) [3438 3442]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3411 3849])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3865 3869])
+                            ("other" variable nil (reparse-symbol function_parameters) [3871 3876]))                          )
+                        (reparse-symbol indented_block_body) [3854 3911])
+                    ("GetSize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3928 3932]))                          )
+                        (reparse-symbol indented_block_body) [3916 3965])
+                    ("GetRxPower" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3985 3989]))                          )
+                        (reparse-symbol indented_block_body) [3970 4020])
+                    ("SendUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4036 4040])
+                            ("packet" variable nil (reparse-symbol function_parameters) [4042 4048]))                          )
+                        (reparse-symbol indented_block_body) [4025 4142])
+                    ("Transmit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4183 4187])
+                            ("packet" variable nil (reparse-symbol function_parameters) [4189 4195]))                          
+                        :decorators 
+                          ( ("asyncio.coroutine" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [4147 4273]))                  
+                :type "class")
+                nil [3393 4273])
+            ("Propagation" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [4471 4493]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4311 4315]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4298 4494])
+                    ("path_loss" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4513 4517])
+                            ("packet" variable nil (reparse-symbol function_parameters) [4519 4525]))                          )
+                        (reparse-symbol indented_block_body) [4499 4894])
+                    ("get_sound_speed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4919 4923])
+                            ("S" variable nil (reparse-symbol function_parameters) [4925 4926])
+                            ("T" variable nil (reparse-symbol function_parameters) [4928 4929])
+                            ("D" variable nil (reparse-symbol function_parameters) [4931 4932])
+                            ("equation" variable nil (reparse-symbol function_parameters) [4934 4942]))                          )
+                        (reparse-symbol indented_block_body) [4899 6312])
+                    ("delay" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6327 6331])
+                            ("packet" variable nil (reparse-symbol function_parameters) [6333 6339]))                          )
+                        (reparse-symbol indented_block_body) [6317 6750])
+                    ("atten" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6765 6769])
+                            ("freq" variable nil (reparse-symbol function_parameters) [6771 6775]))                          )
+                        (reparse-symbol indented_block_body) [6755 7218]))                  
+                :type "class")
+                nil [4275 7218])
+            ("Noise" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [7364 7381])
+                            ("self" variable nil (reparse-symbol indented_block_body) [7518 7535]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7250 7254]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7237 7536])
+                    ("GetNoise" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7554 7558])
+                            ("freq" variable nil (reparse-symbol function_parameters) [7560 7564]))                          )
+                        (reparse-symbol indented_block_body) [7541 8319]))                  
+                :type "class")
+                nil [7220 8319])
+            ("TransducerState" type
+               (:superclasses ("Enum")
+                :members 
+                  ( ("TX" variable nil (reparse-symbol indented_block_body) [8354 8360])
+                    ("RX" variable nil (reparse-symbol indented_block_body) [8365 8371]))                  
+                :type "class")
+                nil [8321 8372])
+            ("Transducer" type
+               (:members 
+                  ( ("'''
+    Declaration in ns3/src/uan/model/uan-transducer-hd.h
+    Half duplex implementation of transducer object
+    '''" code nil (reparse-symbol indented_block_body) [8396 8516])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [8554 8591])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8600 8622])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8631 8652]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8534 8538])
+                            ("phy" variable nil (reparse-symbol function_parameters) [8540 8543]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8521 8653])
+                    ("SendDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8671 8675])
+                            ("packet" variable nil (reparse-symbol function_parameters) [8677 8683]))                          )
+                        (reparse-symbol indented_block_body) [8658 8746])
+                    ("SendUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8762 8766])
+                            ("packet" variable nil (reparse-symbol function_parameters) [8768 8774]))                          )
+                        (reparse-symbol indented_block_body) [8751 8858])
+                    ("Receive" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8898 8902])
+                            ("packet" variable nil (reparse-symbol function_parameters) [8904 8910]))                          
+                        :decorators 
+                          ( ("asyncio.coroutine" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [8863 9492])
+                    ("Transmit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9533 9537])
+                            ("packet" variable nil (reparse-symbol function_parameters) [9539 9545]))                          
+                        :decorators 
+                          ( ("asyncio.coroutine" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [9497 10458]))                  
+                :type "class")
+                nil [8374 10458])
+            ("SinrDefaultCacl" type
+               (:members 
+                  ( ("DbToKp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10498 10502])
+                            ("db" variable nil (reparse-symbol function_parameters) [10504 10506]))                          )
+                        (reparse-symbol indented_block_body) [10487 10661])
+                    ("KpToDb" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10677 10681])
+                            ("kp" variable nil (reparse-symbol function_parameters) [10683 10685]))                          )
+                        (reparse-symbol indented_block_body) [10666 10839])
+                    ("CaclSinr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10857 10861])
+                            ("packet" variable nil (reparse-symbol function_parameters) [10863 10869])
+                            ("noise" variable nil (reparse-symbol function_parameters) [10871 10876])
+                            ("arrivallist" variable nil (reparse-symbol function_parameters) [10878 10889]))                          )
+                        (reparse-symbol indented_block_body) [10844 11360]))                  
+                :type "class")
+                nil [10460 11360])
+            ("PerDefaultCacl" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [11525 11540]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11401 11405]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [11388 11541])
+                    ("CaclPer" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11558 11562])
+                            ("packet" variable nil (reparse-symbol function_parameters) [11564 11570])
+                            ("sinr" variable nil (reparse-symbol function_parameters) [11572 11576])
+                            ("mode" variable nil (reparse-symbol function_parameters) [11578 11582]))                          )
+                        (reparse-symbol indented_block_body) [11546 11673]))                  
+                :type "class")
+                nil [11362 11673])
+            ("Channel" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [11722 11748])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11757 11777]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11707 11711]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [11694 11778])
+                    ("TxPacket" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11796 11800])
+                            ("packet" variable nil (reparse-symbol function_parameters) [11802 11808]))                          )
+                        (reparse-symbol indented_block_body) [11783 12588]))                  
+                :type "class")
+                nil [11675 12588])
+            ("g_channel" variable nil nil [12590 12611])
+            ("PhyId" type
+               (:members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [12631 12637])
+                    ("GetId" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [12670 12673]))                          )
+                        (reparse-symbol indented_block_body) [12643 12726]))                  
+                :type "class")
+                nil [12614 12726])
+            ("PhyState" type
+               (:superclasses ("Enum")
+                :members 
+                  ( ("IDLE" variable nil (reparse-symbol indented_block_body) [12754 12763])
+                    ("BUSY" variable nil (reparse-symbol indented_block_body) [12768 12777])
+                    ("RX" variable nil (reparse-symbol indented_block_body) [12782 12791])
+                    ("TX" variable nil (reparse-symbol indented_block_body) [12796 12805])
+                    ("SLEEP" variable nil (reparse-symbol indented_block_body) [12810 12819]))                  
+                :type "class")
+                nil [12728 12820])
+            ("Phy" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [12877 12905])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12914 12945])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12955 12986])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12995 13023])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13032 13059])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13068 13102])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13224 13244])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13355 13375])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13496 13515])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13644 13678])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13815 13850]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12850 12854])
+                            ("connection" variable nil (reparse-symbol function_parameters) [12856 12866]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [12837 13851])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13867 13871])
+                            ("other" variable nil (reparse-symbol function_parameters) [13873 13878]))                          )
+                        (reparse-symbol indented_block_body) [13856 13920])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13937 13941]))                          )
+                        (reparse-symbol indented_block_body) [13925 14014])
+                    ("fileno" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14030 14034]))                          )
+                        (reparse-symbol indented_block_body) [14019 14077])
+                    ("GetDepth" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14095 14099]))                          )
+                        (reparse-symbol indented_block_body) [14082 14133])
+                    ("GetDistance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14154 14158])
+                            ("node" variable nil (reparse-symbol function_parameters) [14160 14164]))                          )
+                        (reparse-symbol indented_block_body) [14138 14223])
+                    ("SendDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14241 14245])
+                            ("packet" variable nil (reparse-symbol function_parameters) [14247 14253]))                          )
+                        (reparse-symbol indented_block_body) [14228 14339])
+                    ("ParseRequest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14361 14365])
+                            ("request" variable nil (reparse-symbol function_parameters) [14367 14374]))                          )
+                        (reparse-symbol indented_block_body) [14344 14957])
+                    ("StartRxPacket" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15003 15007])
+                            ("packet" variable nil (reparse-symbol function_parameters) [15009 15015]))                          
+                        :decorators 
+                          ( ("asyncio.coroutine" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [14962 16296])
+                    ("SendPacket" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16339 16343])
+                            ("packet" variable nil (reparse-symbol function_parameters) [16345 16351]))                          
+                        :decorators 
+                          ( ("asyncio.coroutine" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16301 17017]))                  
+                :type "class")
+                nil [12822 17017])
+            ("create_node" function (:arguments 
+              ( ("conn" variable nil (reparse-symbol function_parameters) [17035 17039]))              ) nil [17019 17123])
+            ("run_node" function
+               (:decorators 
+                  ( ("asyncio.coroutine" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("conn" variable nil (reparse-symbol function_parameters) [17157 17161]))                  )
+                nil [17125 17602])
+            ("main" function (:decorators 
+              ( ("asyncio.coroutine" function (:type "decorator") nil nil))              ) nil [17604 18017])
+            ("SignalHandler" function (:arguments 
+              ( ("signum" variable nil (reparse-symbol function_parameters) [18037 18043])
+                ("frame" variable nil (reparse-symbol function_parameters) [18045 18050]))              ) nil [18019 18105])
+            ("if" code nil nil [18107 18316]))          
+    :file "channel"
+    :pointmax 18317
+    :fsize 18316
+    :lastmodtime '(22486 49532 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "config.yaml"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "config.yaml"
+    :pointmax 217
+    :fsize 216
+    :lastmodtime '(22486 49532 0 0)
+    :unmatched-syntax '((number 214 . 215) (punctuation 212 . 213) (symbol 207 . 212) (number 200 . 202) (punctuation 198 . 199) (symbol 191 . 198) (punctuation 185 . 186) (symbol 180 . 185) (semantic-list 169 . 178) (punctuation 167 . 168) (symbol 159 . 167) (number 148 . 154) (punctuation 146 . 147) (symbol 138 . 146) (symbol 126 . 133) (punctuation 125 . 126) (symbol 122 . 125) (punctuation 121 . 122) (punctuation 119 . 120) (symbol 115 . 119) (punctuation 109 . 110) (symbol 101 . 109) (symbol 94 . 97) (punctuation 92 . 93) (symbol 86 . 92) (symbol 78 . 81) (punctuation 76 . 77) (symbol 70 . 76) (symbol 62 . 65) (punctuation 60 . 61) (symbol 54 . 60) (symbol 44 . 49) (punctuation 42 . 43) (symbol 36 . 42) (symbol 23 . 31) (punctuation 21 . 22) (symbol 15 . 21) (punctuation 9 . 10) (symbol 1 . 9))
+    )
+   )
+  :file "!drive_e!underwater_network!HSM_stack!stack!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

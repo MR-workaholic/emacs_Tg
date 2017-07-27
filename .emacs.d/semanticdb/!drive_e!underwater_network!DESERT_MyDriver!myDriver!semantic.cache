@@ -1,0 +1,16 @@
+;; Object myDriver/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "myDriver/"
+  :tables (list 
+    (semanticdb-table "myDriver.h"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "myDriver.h"
+    :pointmax 1
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!drive_e!underwater_network!DESERT_MyDriver!myDriver!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

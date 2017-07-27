@@ -1,0 +1,40 @@
+;; Object elpy-20161028.215/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "elpy-20161028.215/"
+  :tables
+  (list
+    (semanticdb-table "elpy-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "elpy-autoloads.el"
+      :pointmax 1198
+      :fsize 1197
+      :lastmodtime '(22556 36424 241896 866000)
+      :unmatched-syntax nil)
+    (semanticdb-table "elpy-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "elpy-pkg.el"
+      :pointmax 264
+      :fsize 263
+      :lastmodtime '(22556 36422 137904 316000)
+      :unmatched-syntax nil)
+    (semanticdb-table "elpy-refactor.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "elpy-refactor.el"
+      :pointmax 11563
+      :fsize 11562
+      :lastmodtime '(22556 36422 161904 234000)
+      :unmatched-syntax nil)
+    (semanticdb-table "elpy.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "elpy.el"
+      :pointmax 147022
+      :fsize 147021
+      :lastmodtime '(22556 36419 465912 690000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!elpy-20161028.215!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

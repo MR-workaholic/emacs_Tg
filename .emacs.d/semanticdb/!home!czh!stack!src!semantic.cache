@@ -1,0 +1,16 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "config.yaml"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "config.yaml"
+      :pointmax 367
+      :fsize 366
+      :lastmodtime '(22555 42104 0 0)
+      :unmatched-syntax '((semantic-list 357 . 366) (punctuation 355 . 356) (symbol 347 . 355) (punctuation 341 . 342) (symbol 338 . 341) (number 335 . 336) (punctuation 333 . 334) (symbol 328 . 333) (number 321 . 323) (punctuation 319 . 320) (symbol 312 . 319) (punctuation 306 . 307) (symbol 301 . 306) (number 295 . 298) (punctuation 293 . 294) (symbol 273 . 293) (number 266 . 268) (punctuation 264 . 265) (symbol 251 . 264) (number 242 . 246) (punctuation 240 . 241) (symbol 236 . 240) (number 226 . 231) (punctuation 224 . 225) (symbol 214 . 224) (number 207 . 209) (punctuation 205 . 206) (symbol 201 . 205) (number 192 . 196) (number 190 . 192) (number 183 . 190) (punctuation 181 . 182) (symbol 174 . 181) (punctuation 168 . 169) (symbol 156 . 168) (number 148 . 154) (punctuation 146 . 147) (symbol 138 . 146) (symbol 126 . 133) (punctuation 125 . 126) (symbol 122 . 125) (punctuation 121 . 122) (punctuation 119 . 120) (symbol 115 . 119) (punctuation 109 . 110) (symbol 101 . 109) (symbol 94 . 97) (punctuation 92 . 93) (symbol 86 . 92) (symbol 78 . 81) (punctuation 76 . 77) (symbol 70 . 76) (symbol 62 . 65) (punctuation 60 . 61) (symbol 54 . 60) (symbol 44 . 49) (punctuation 42 . 43) (symbol 36 . 42) (symbol 23 . 31) (punctuation 21 . 22) (symbol 15 . 21) (punctuation 9 . 10) (symbol 1 . 9))))
+  :file "!home!czh!stack!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

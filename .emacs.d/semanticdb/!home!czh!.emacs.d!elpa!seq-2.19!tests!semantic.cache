@@ -1,0 +1,16 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables
+  (list
+    (semanticdb-table "seq-tests.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "seq-tests.el"
+      :pointmax 13741
+      :fsize 13740
+      :lastmodtime '(22557 18103 842194 505000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!seq-2.19!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

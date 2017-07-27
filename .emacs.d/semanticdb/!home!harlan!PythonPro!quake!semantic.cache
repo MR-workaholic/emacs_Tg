@@ -1,0 +1,16 @@
+;; Object quake/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "quake/"
+  :tables
+  (list
+    (semanticdb-table "README.md"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "README.md"
+      :pointmax 34
+      :fsize 91
+      :lastmodtime '(22892 15253 922078 83000)
+      :unmatched-syntax '((symbol 11 . 34) (symbol 3 . 9) (punctuation 1 . 2))))
+  :file "!home!harlan!PythonPro!quake!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

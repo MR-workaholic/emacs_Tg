@@ -1,0 +1,32 @@
+;; Object find-file-in-project-20161026.145/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "find-file-in-project-20161026.145/"
+  :tables
+  (list
+    (semanticdb-table "find-file-in-project-autoloads.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "find-file-in-project-autoloads.el"
+      :pointmax 6060
+      :fsize 6059
+      :lastmodtime '(22556 27405 384926 553000)
+      :unmatched-syntax nil)
+    (semanticdb-table "find-file-in-project-pkg.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "find-file-in-project-pkg.el"
+      :pointmax 229
+      :fsize 228
+      :lastmodtime '(22556 27405 408926 612000)
+      :unmatched-syntax nil)
+    (semanticdb-table "find-file-in-project.el"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "find-file-in-project.el"
+      :pointmax 33114
+      :fsize 33113
+      :lastmodtime '(22556 27404 688924 839000)
+      :unmatched-syntax nil))
+  :file "!home!czh!.emacs.d!elpa!find-file-in-project-20161026.145!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
