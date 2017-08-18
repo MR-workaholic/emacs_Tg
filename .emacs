@@ -249,7 +249,7 @@
 (semantic-add-system-include "/usr/include/x86_64-linux-gnu" 'c++-mode)
 (semantic-add-system-include "/usr/include" 'c++-mode)
 ;(semantic-add-system-include "/home/czh/Advanced_Programming_in_the_Unix_Environment/apue.3e/include" 'c++-mode)
-(semantic-add-system-include "/usr/local/include" 'c++-mode) ;;程序加了libev库之后会代码提示不正常，将该库头文件所在的文件夹拉到最下边就解决问题了
+(semantic-add-system-include "/usr/local/include" 'c++-mode) ;;程序加了libev库之后会代码提示不正常，将该库头文件所在的文件夹拉到最下边就解决问题了, 虽然还会提示Wrong type argument: number-or-marker-p，但工作正常
 
 
 ;---------------------------------
