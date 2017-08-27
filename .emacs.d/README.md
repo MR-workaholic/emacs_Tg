@@ -1,3 +1,4 @@
+我为啥沿用了这个readme文档
 [![Build Status](https://travis-ci.org/purcell/emacs.d.png?branch=master)](https://travis-ci.org/purcell/emacs.d)
 
 # A reasonable Emacs config
