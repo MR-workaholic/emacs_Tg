@@ -65,7 +65,7 @@
       :file "cdefs.h"
       :pointmax 15413
       :fsize 15412
-      :lastmodtime '(22288 5417 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__LEAF_ATTR")
@@ -509,7 +509,7 @@
       :file "types.h"
       :pointmax 6688
       :fsize 6687
-      :lastmodtime '(22288 5411 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax '((symbol 5213 . 5232) (symbol 5205 . 5212) (punctuation 5204 . 5205) (punctuation 5202 . 5203) (punctuation 5201 . 5202) (symbol 2365 . 2379) (symbol 2357 . 2364) (punctuation 2356 . 2357) (punctuation 2354 . 2355) (punctuation 2353 . 2354))
       :lexical-table 
         '(("__pid_t_defined")
@@ -752,7 +752,7 @@
       :file "stat.h"
       :pointmax 16295
       :fsize 16294
-      :lastmodtime '(22288 5412 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax '((punctuation 14281 . 14282) (symbol 14243 . 14248) (punctuation 14242 . 14243) (symbol 14234 . 14241) (punctuation 14232 . 14233) (symbol 14226 . 14232) (symbol 14217 . 14225) (punctuation 14206 . 14207) (symbol 14200 . 14206) (punctuation 14199 . 14200) (CHAR 14194 . 14198) (CONST 14188 . 14193) (punctuation 14186 . 14187) (symbol 14182 . 14186) (INT 14178 . 14181) (punctuation 14176 . 14177) (symbol 14171 . 14176) (INT 14167 . 14170) (symbol 14155 . 14165) (INT 14151 . 14154) (EXTERN 14144 . 14150) (punctuation 14141 . 14142) (symbol 14108 . 14113) (punctuation 14107 . 14108) (symbol 14099 . 14106) (punctuation 14090 . 14091) (symbol 14084 . 14090) (symbol 14075 . 14083) (punctuation 14073 . 14074) (symbol 14067 . 14073) (punctuation 14066 . 14067) (CHAR 14061 . 14065) (CONST 14055 . 14060) (punctuation 14053 . 14054) (symbol 14048 . 14053) (INT 14044 . 14047) (symbol 14034 . 14042) (INT 14030 . 14033) (EXTERN 14023 . 14029) (punctuation 14014 . 14015) (symbol 13975 . 13981) (INT 13971 . 13974) (punctuation 13969 . 13970) (symbol 13959 . 13969) (punctuation 13958 . 13959) (symbol 13951 . 13957) (STRUCT 13944 . 13950) (punctuation 13938 . 13939) (symbol 13928 . 13938) (punctuation 13927 . 13928) (CHAR 13922 . 13926) (CONST 13916 . 13921) (punctuation 13914 . 13915) (symbol 13906 . 13914) (INT 13902 . 13905) (punctuation 13900 . 13901) (symbol 13895 . 13900) (INT 13891 . 13894) (symbol 13877 . 13889) (INT 13873 . 13876) (EXTERN 13866 . 13872) (punctuation 13864 . 13865) (symbol 13826 . 13836) (punctuation 13825 . 13826) (symbol 13818 . 13824) (STRUCT 13811 . 13817) (punctuation 13800 . 13801) (symbol 13790 . 13800) (punctuation 13789 . 13790) (CHAR 13784 . 13788) (CONST 13778 . 13783) (punctuation 13776 . 13777) (symbol 13771 . 13776) (INT 13767 . 13770) (symbol 13755 . 13765) (INT 13751 . 13754) (EXTERN 13744 . 13750) (punctuation 13742 . 13743) (symbol 13704 . 13714) (punctuation 13703 . 13704) (symbol 13696 . 13702) (STRUCT 13689 . 13695) (punctuation 13679 . 13680) (symbol 13669 . 13679) (punctuation 13668 . 13669) (CHAR 13663 . 13667) (CONST 13657 . 13662) (punctuation 13655 . 13656) (symbol 13650 . 13655) (INT 13646 . 13649) (symbol 13635 . 13644) (INT 13631 . 13634) (EXTERN 13624 . 13630) (punctuation 13622 . 13623) (symbol 13582 . 13592) (punctuation 13581 . 13582) (symbol 13574 . 13580) (STRUCT 13567 . 13573) (punctuation 13565 . 13566) (symbol 13557 . 13565) (INT 13553 . 13556) (punctuation 13551 . 13552) (symbol 13546 . 13551) (INT 13542 . 13545) (symbol 13530 . 13540) (INT 13526 . 13529) (EXTERN 13519 . 13525) (punctuation 12752 . 12753) (symbol 12713 . 12719) (INT 12709 . 12712) (punctuation 12707 . 12708) (symbol 12697 . 12707) (punctuation 12696 . 12697) (symbol 12691 . 12695) (STRUCT 12684 . 12690) (punctuation 12673 . 12674) (symbol 12663 . 12673) (punctuation 12662 . 12663) (CHAR 12657 . 12661) (CONST 12651 . 12656) (punctuation 12649 . 12650) (symbol 12641 . 12649) (INT 12637 . 12640) (punctuation 12635 . 12636) (symbol 12630 . 12635) (INT 12626 . 12629) (symbol 12614 . 12624) (INT 12610 . 12613) (EXTERN 12603 . 12609) (punctuation 12601 . 12602) (symbol 12563 . 12573) (punctuation 12562 . 12563) (symbol 12557 . 12561) (STRUCT 12550 . 12556) (punctuation 12541 . 12542) (symbol 12531 . 12541) (punctuation 12530 . 12531) (CHAR 12525 . 12529) (CONST 12519 . 12524) (punctuation 12517 . 12518) (symbol 12512 . 12517) (INT 12508 . 12511) (symbol 12498 . 12506) (INT 12494 . 12497) (EXTERN 12487 . 12493) (punctuation 12485 . 12486) (symbol 12447 . 12457) (punctuation 12446 . 12447) (symbol 12441 . 12445) (STRUCT 12434 . 12440) (punctuation 12426 . 12427) (symbol 12416 . 12426) (punctuation 12415 . 12416) (CHAR 12410 . 12414) (CONST 12404 . 12409) (punctuation 12402 . 12403) (symbol 12397 . 12402) (INT 12393 . 12396) (symbol 12384 . 12391) (INT 12380 . 12383) (EXTERN 12373 . 12379) (punctuation 12371 . 12372) (symbol 12331 . 12341) (punctuation 12330 . 12331) (symbol 12325 . 12329) (STRUCT 12318 . 12324) (punctuation 12316 . 12317) (symbol 12308 . 12316) (INT 12304 . 12307) (punctuation 12302 . 12303) (symbol 12297 . 12302) (INT 12293 . 12296) (symbol 12283 . 12291) (INT 12279 . 12282) (EXTERN 12272 . 12278) (punctuation 11184 . 11185) (number 11173 . 11174) (symbol 11165 . 11172) (symbol 11156 . 11164) (STRUCT 11149 . 11155) (CONST 11143 . 11148) (punctuation 11141 . 11142) (symbol 11137 . 11141) (INT 11133 . 11136) (symbol 11123 . 11131) (INT 11119 . 11122) (EXTERN 11112 . 11118) (punctuation 11002 . 11003) (symbol 10965 . 10972) (INT 10961 . 10964) (punctuation 10951 . 10952) (number 10949 . 10950) (symbol 10941 . 10948) (symbol 10932 . 10940) (STRUCT 10925 . 10931) (CONST 10919 . 10924) (punctuation 10909 . 10910) (symbol 10903 . 10909) (punctuation 10902 . 10903) (CHAR 10897 . 10901) (CONST 10891 . 10896) (punctuation 10889 . 10890) (symbol 10885 . 10889) (INT 10881 . 10884) (symbol 10870 . 10879) (INT 10866 . 10869) (EXTERN 10859 . 10865) (punctuation 10740 . 10741) (symbol 10704 . 10710) (symbol 10695 . 10703) (punctuation 10693 . 10694) (symbol 10687 . 10693) (punctuation 10686 . 10687) (CHAR 10681 . 10685) (CONST 10675 . 10680) (punctuation 10673 . 10674) (symbol 10669 . 10673) (INT 10665 . 10668) (symbol 10655 . 10663) (INT 10651 . 10654) (EXTERN 10644 . 10650) (punctuation 10469 . 10470) (symbol 10433 . 10439) (symbol 10424 . 10432) (punctuation 10422 . 10423) (symbol 10416 . 10422) (punctuation 10415 . 10416) (CHAR 10410 . 10414) (CONST 10404 . 10409) (symbol 10396 . 10402) (INT 10392 . 10395) (EXTERN 10385 . 10391) (punctuation 10302 . 10303) (symbol 10272 . 10277) (symbol 10264 . 10271) (punctuation 10256 . 10257) (symbol 10250 . 10256) (symbol 10241 . 10249) (punctuation 10239 . 10240) (symbol 10233 . 10239) (punctuation 10232 . 10233) (CHAR 10227 . 10231) (CONST 10221 . 10226) (punctuation 10219 . 10220) (symbol 10215 . 10219) (INT 10211 . 10214) (symbol 10202 . 10209) (INT 10198 . 10201) (EXTERN 10191 . 10197) (punctuation 9987 . 9988) (symbol 9952 . 9957) (symbol 9944 . 9951) (punctuation 9942 . 9943) (symbol 9936 . 9942) (symbol 9927 . 9935) (punctuation 9925 . 9926) (symbol 9919 . 9925) (punctuation 9918 . 9919) (CHAR 9913 . 9917) (CONST 9907 . 9912) (symbol 9900 . 9905) (INT 9896 . 9899) (EXTERN 9889 . 9895) (punctuation 9623 . 9624) (symbol 9587 . 9593) (symbol 9578 . 9586) (punctuation 9576 . 9577) (symbol 9570 . 9576) (punctuation 9569 . 9570) (CHAR 9564 . 9568) (CONST 9558 . 9563) (punctuation 9556 . 9557) (symbol 9552 . 9556) (INT 9548 . 9551) (symbol 9539 . 9546) (INT 9535 . 9538) (EXTERN 9528 . 9534) (punctuation 9349 . 9350) (symbol 9313 . 9319) (symbol 9304 . 9312) (punctuation 9302 . 9303) (symbol 9296 . 9302) (punctuation 9295 . 9296) (CHAR 9290 . 9294) (CONST 9284 . 9289) (symbol 9277 . 9282) (INT 9273 . 9276) (EXTERN 9266 . 9272) (punctuation 9187 . 9188) (VOID 9174 . 9178) (symbol 9164 . 9172) (symbol 9155 . 9163) (EXTERN 9148 . 9154) (punctuation 9015 . 9016) (symbol 9000 . 9006) (symbol 8991 . 8999) (symbol 8984 . 8989) (symbol 8975 . 8983) (EXTERN 8968 . 8974) (punctuation 8834 . 8835) (symbol 8792 . 8798) (INT 8788 . 8791) (punctuation 8779 . 8780) (symbol 8773 . 8779) (symbol 8764 . 8772) (punctuation 8762 . 8763) (symbol 8756 . 8762) (punctuation 8755 . 8756) (CHAR 8750 . 8754) (CONST 8744 . 8749) (punctuation 8742 . 8743) (symbol 8738 . 8742) (INT 8734 . 8737) (symbol 8724 . 8732) (INT 8720 . 8723) (EXTERN 8713 . 8719) (punctuation 8596 . 8597) (symbol 8581 . 8587) (symbol 8572 . 8580) (punctuation 8570 . 8571) (symbol 8566 . 8570) (INT 8562 . 8565) (symbol 8554 . 8560) (INT 8550 . 8553) (EXTERN 8543 . 8549) (punctuation 8444 . 8445) (symbol 8408 . 8414) (symbol 8399 . 8407) (punctuation 8397 . 8398) (symbol 8391 . 8397) (punctuation 8390 . 8391) (CHAR 8385 . 8389) (CONST 8379 . 8384) (symbol 8371 . 8377) (INT 8367 . 8370) (EXTERN 8360 . 8366) (punctuation 8199 . 8200) (symbol 8163 . 8169) (symbol 8154 . 8162) (punctuation 8152 . 8153) (symbol 8146 . 8152) (punctuation 8145 . 8146) (CHAR 8140 . 8144) (CONST 8134 . 8139) (symbol 8127 . 8132) (INT 8123 . 8126) (EXTERN 8116 . 8122) (punctuation 7981 . 7982) (symbol 7943 . 7948) (punctuation 7931 . 7932) (symbol 7924 . 7930) (STRUCT 7917 . 7923) (punctuation 7909 . 7910) (symbol 7903 . 7909) (punctuation 7891 . 7892) (CHAR 7886 . 7890) (CONST 7880 . 7885) (symbol 7871 . 7878) (INT 7867 . 7870) (EXTERN 7860 . 7866) (punctuation 7606 . 7607) (symbol 7573 . 7578) (punctuation 7561 . 7562) (symbol 7556 . 7560) (STRUCT 7549 . 7555) (punctuation 7543 . 7544) (symbol 7537 . 7543) (punctuation 7525 . 7526) (CHAR 7520 . 7524) (CONST 7514 . 7519) (symbol 7507 . 7512) (INT 7503 . 7506) (EXTERN 7496 . 7502) (punctuation 7283 . 7284) (symbol 7244 . 7250) (INT 7240 . 7243) (punctuation 7238 . 7239) (symbol 7233 . 7238) (punctuation 7221 . 7222) (symbol 7214 . 7220) (STRUCT 7207 . 7213) (punctuation 7197 . 7198) (symbol 7191 . 7197) (punctuation 7179 . 7180) (CHAR 7174 . 7178) (CONST 7168 . 7173) (punctuation 7166 . 7167) (symbol 7162 . 7166) (INT 7158 . 7161) (symbol 7147 . 7156) (INT 7143 . 7146) (EXTERN 7136 . 7142) (punctuation 6845 . 6846) (symbol 6806 . 6812) (INT 6802 . 6805) (punctuation 6800 . 6801) (symbol 6795 . 6800) (punctuation 6783 . 6784) (symbol 6778 . 6782) (STRUCT 6771 . 6777) (punctuation 6763 . 6764) (symbol 6757 . 6763) (punctuation 6745 . 6746) (CHAR 6740 . 6744) (CONST 6734 . 6739) (punctuation 6732 . 6733) (symbol 6728 . 6732) (INT 6724 . 6727) (symbol 6715 . 6722) (INT 6711 . 6714) (EXTERN 6704 . 6710) (punctuation 6492 . 6493) (symbol 6462 . 6467) (punctuation 6461 . 6462) (symbol 6454 . 6460) (STRUCT 6447 . 6453) (punctuation 6445 . 6446) (symbol 6441 . 6445) (INT 6437 . 6440) (symbol 6428 . 6435) (INT 6424 . 6427) (EXTERN 6417 . 6423) (punctuation 6415 . 6416) (symbol 6382 . 6387) (punctuation 6370 . 6371) (symbol 6363 . 6369) (STRUCT 6356 . 6362) (punctuation 6349 . 6350) (symbol 6343 . 6349) (punctuation 6331 . 6332) (CHAR 6326 . 6330) (CONST 6320 . 6325) (symbol 6312 . 6318) (INT 6308 . 6311) (EXTERN 6301 . 6307) (punctuation 5944 . 5945) (symbol 5914 . 5919) (punctuation 5913 . 5914) (symbol 5908 . 5912) (STRUCT 5901 . 5907) (punctuation 5899 . 5900) (symbol 5895 . 5899) (INT 5891 . 5894) (symbol 5884 . 5889) (INT 5880 . 5883) (EXTERN 5873 . 5879) (punctuation 5746 . 5747) (symbol 5713 . 5718) (punctuation 5701 . 5702) (symbol 5696 . 5700) (STRUCT 5689 . 5695) (punctuation 5684 . 5685) (symbol 5678 . 5684) (punctuation 5666 . 5667) (CHAR 5661 . 5665) (CONST 5655 . 5660) (symbol 5649 . 5653) (INT 5645 . 5648) (EXTERN 5638 . 5644))
       :lexical-table 
         '(("S_IWUSR" . ((symbol "__S_IWRITE" 4451 . 4461)))
@@ -813,7 +813,7 @@
       :file "termios.h"
       :pointmax 75
       :fsize 74
-      :lastmodtime '(22288 5416 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_SYS_TERMIOS_H")
@@ -848,7 +848,7 @@
       :file "ioctl.h"
       :pointmax 1740
       :fsize 1739
-      :lastmodtime '(22288 5417 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_SYS_IOCTL_H" . ((number "1" 832 . 833)))
@@ -889,7 +889,7 @@
       :file "sysmacros.h"
       :pointmax 2279
       :fsize 2278
-      :lastmodtime '(22288 5412 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax '((LONG 1188 . 1192) (UNSIGNED 1179 . 1187) (EXTERN 1172 . 1178) (symbol 1158 . 1171) (symbol 1045 . 1058) (symbol 932 . 945))
       :lexical-table 
         '(("_SYS_SYSMACROS_H" . ((number "1" 891 . 892)))
@@ -1011,7 +1011,7 @@
       :file "select.h"
       :pointmax 4198
       :fsize 4197
-      :lastmodtime '(22288 5417 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("FD_ZERO" (spp-arg-list ("fdsetp") 2847 . 2855) . ((symbol "__FD_ZERO" 2857 . 2866) (semantic-list "(fdsetp)" 2867 . 2875)))
@@ -1299,7 +1299,7 @@
       :file "time.h"
       :pointmax 6674
       :fsize 6673
-      :lastmodtime '(22288 5409 0 0)
+      :lastmodtime '(22852 17638 0 0)
       :unmatched-syntax '((spp-macro-def 3420 . 3431) (spp-macro-def 3244 . 3258) (spp-macro-def 3130 . 3141))
       :lexical-table 
         '(("TIMEVAL_TO_TIMESPEC" (spp-arg-list ("tv" "ts") 1234 . 1242) . ((semantic-list "{                                   \\
@@ -1377,7 +1377,7 @@
       :file "ttydefaults.h"
       :pointmax 3569
       :fsize 3568
-      :lastmodtime '(22288 5416 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("CEOL" . ((string "'\\0'" 2550 . 2554)))
@@ -1618,7 +1618,7 @@
       :file "ucontext.h"
       :pointmax 5386
       :fsize 5385
-      :lastmodtime '(22288 5403 0 0)
+      :lastmodtime '(22852 17633 0 0)
       :unmatched-syntax '((symbol 2966 . 2979) (spp-macro-def 2208 . 2215) (spp-macro-def 2165 . 2176) (spp-macro-def 2119 . 2129) (spp-macro-def 2080 . 2087) (spp-macro-def 2038 . 2048) (spp-macro-def 1956 . 1963) (spp-macro-def 1920 . 1927) (spp-macro-def 1884 . 1891) (spp-macro-def 1848 . 1855) (spp-macro-def 1812 . 1819) (spp-macro-def 1776 . 1783) (spp-macro-def 1740 . 1747) (spp-macro-def 1704 . 1711) (spp-macro-def 1668 . 1675) (spp-macro-def 1632 . 1639) (spp-macro-def 1596 . 1603) (spp-macro-def 1560 . 1567) (spp-macro-def 1524 . 1531) (spp-macro-def 1488 . 1495) (spp-macro-def 1452 . 1459) (spp-macro-def 1416 . 1423) (spp-macro-def 1381 . 1387) (spp-macro-def 1347 . 1353) (LONG 1088 . 1092) (TYPEDEF 1080 . 1087) (symbol 1066 . 1079))
       :lexical-table 
         '(("REG_RDX" . ((symbol "REG_RDX" 1784 . 1791)))
@@ -1651,7 +1651,7 @@
     (semanticdb-table "signal.h"
       :file "signal.h"
       :fsize 20
-      :lastmodtime '(22288 5402 0 0))
+      :lastmodtime '(22852 17632 0 0))
     (semanticdb-table "socket.h"
       :major-mode 'c++-mode
       :tags 
@@ -2023,7 +2023,7 @@
       :file "socket.h"
       :pointmax 10450
       :fsize 10449
-      :lastmodtime '(22288 5418 0 0)
+      :lastmodtime '(22852 17649 0 0)
       :unmatched-syntax '((semantic-list "(sockaddr_x25)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_un)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_ns)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_iso)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_ipx)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_inarp)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_in6)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_in)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_eon)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_dl)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_ax25)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_at)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr)" 3287 . 3306) (symbol "__SOCKADDR_ONETYPE" 3287 . 3306) (semantic-list "(sockaddr_x25)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_un)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_ns)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_iso)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_ipx)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_inarp)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_in6)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_in)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_eon)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_dl)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_ax25)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr_at)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (semantic-list "(sockaddr)" 3081 . 3100) (symbol "__SOCKADDR_ONETYPE" 3081 . 3100) (spp-macro-def 1843 . 1852) (spp-macro-def 1761 . 1768) (spp-macro-def 1694 . 1701))
       :lexical-table 
         '(("SHUT_RD" . ((symbol "SHUT_RD" 1703 . 1710)))
@@ -2148,10 +2148,225 @@
       :file "uio.h"
       :pointmax 4695
       :fsize 4694
-      :lastmodtime '(22288 5417 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_SYS_UIO_H" . ((number "1" 828 . 829)))
+          )
+)
+    (semanticdb-table "shm.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_SYS_SHM_H" variable (:constant-flag t) nil [817 827])
+            ("features.h" include (:system-flag t) nil [831 852])
+            ("__need_size_t" variable (:constant-flag t) nil [862 875])
+            ("stddef.h" include (:system-flag t) nil [876 895])
+            ("sys/ipc.h" include (:system-flag t) nil [949 969])
+            ("bits/shm.h" include (:system-flag t) nil [1041 1062])
+            ("__need_time_t" variable (:constant-flag t) nil [1118 1131])
+            ("time.h" include (:system-flag t) nil [1132 1149])
+            ("pid_t" type
+               (:typedef ("__pid_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1195 1217])
+            ("__pid_t_defined" variable (:constant-flag t) nil [1228 1243])
+            ("shmdt" function
+               (:type "int"
+                :arguments 
+                  ( ("__shmaddr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1814 1836]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1796 1845])
+            ("shmat" function
+               (:type "void"
+                :arguments 
+                  ( ("__shmid" variable (:type "int") (reparse-symbol arg-sub-list) [1694 1706])
+                    ("__shmaddr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1707 1729])
+                    ("__shmflg" variable (:type "int") (reparse-symbol arg-sub-list) [1730 1743]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1674 1757])
+            ("shmget" function
+               (:type "int"
+                :arguments 
+                  ( ("__key" variable (:type ("key_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1585 1597])
+                    ("__size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1598 1612])
+                    ("__shmflg" variable (:type "int") (reparse-symbol arg-sub-list) [1613 1626]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1566 1635])
+            ("shmctl" function
+               (:type "int"
+                :arguments 
+                  ( ("__shmid" variable (:type "int") (reparse-symbol arg-sub-list) [1474 1486])
+                    ("__cmd" variable (:type "int") (reparse-symbol arg-sub-list) [1487 1497])
+                    ("__buf" variable
+                       (:pointer 1
+                        :type ("shmid_ds" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1498 1521]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1455 1530]))          
+      :file "shm.h"
+      :pointmax 1883
+      :fsize 1882
+      :lastmodtime '(22852 17649 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__pid_t_defined")
+          ("__need_time_t")
+          ("__need_size_t")
+          ("_SYS_SHM_H" . ((number "1" 828 . 829)))
+          )
+)
+    (semanticdb-table "ipc.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_SYS_IPC_H" variable (:constant-flag t) nil [817 827])
+            ("features.h" include (:system-flag t) nil [831 852])
+            ("bits/ipctypes.h" include (:system-flag t) nil [1084 1110])
+            ("bits/ipc.h" include (:system-flag t) nil [1111 1132])
+            ("uid_t" type
+               (:typedef ("__uid_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1158 1180])
+            ("__uid_t_defined" variable (:constant-flag t) nil [1190 1205])
+            ("gid_t" type
+               (:typedef ("__gid_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1238 1260])
+            ("__gid_t_defined" variable (:constant-flag t) nil [1270 1285])
+            ("mode_t" type
+               (:typedef ("__mode_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1319 1343])
+            ("__mode_t_defined" variable (:constant-flag t) nil [1353 1369])
+            ("key_t" type
+               (:typedef ("__key_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1402 1424])
+            ("__key_t_defined" variable (:constant-flag t) nil [1434 1449])
+            ("ftok" function
+               (:type ("key_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__pathname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1537 1560])
+                    ("__proj_id" variable (:type "int") (reparse-symbol arg-sub-list) [1561 1575]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1518 1584]))          
+      :file "ipc.h"
+      :pointmax 1622
+      :fsize 1621
+      :lastmodtime '(22852 17649 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SYS_IPC_H" . ((number "1" 828 . 829)))
+          ("__gid_t_defined")
+          ("__mode_t_defined")
+          ("__uid_t_defined")
+          ("__key_t_defined")
+          )
+)
+    (semanticdb-table "sem.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_SYS_SEM_H" variable (:constant-flag t) nil [817 827])
+            ("features.h" include (:system-flag t) nil [831 852])
+            ("__need_size_t" variable (:constant-flag t) nil [862 875])
+            ("stddef.h" include (:system-flag t) nil [876 895])
+            ("sys/ipc.h" include (:system-flag t) nil [949 969])
+            ("bits/sem.h" include (:system-flag t) nil [1041 1062])
+            ("__need_timespec" variable (:constant-flag t) nil [1090 1105])
+            ("time.h" include (:system-flag t) nil [1106 1124])
+            ("sembuf" type
+               (:members 
+                  ( ("sem_num" variable (:type "unsigned short int") (reparse-symbol classsubparts) [1341 1368])
+                    ("sem_op" variable (:type "short int") (reparse-symbol classsubparts) [1394 1411])
+                    ("sem_flg" variable (:type "short int") (reparse-symbol classsubparts) [1441 1459]))                  
+                :type "struct")
+                nil [1323 1484])
+            ("semtimedop" function
+               (:type "int"
+                :arguments 
+                  ( ("__semid" variable (:type "int") (reparse-symbol arg-sub-list) [1892 1904])
+                    ("__sops" variable
+                       (:pointer 1
+                        :type ("sembuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1905 1927])
+                    ("__nsops" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1928 1943])
+                    ("__timeout" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1953 1986]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1869 1995])
+            ("semop" function
+               (:type "int"
+                :arguments 
+                  ( ("__semid" variable (:type "int") (reparse-symbol arg-sub-list) [1748 1760])
+                    ("__sops" variable
+                       (:pointer 1
+                        :type ("sembuf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1761 1783])
+                    ("__nsops" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1784 1799]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1730 1808])
+            ("semget" function
+               (:type "int"
+                :arguments 
+                  ( ("__key" variable (:type ("key_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1651 1663])
+                    ("__nsems" variable (:type "int") (reparse-symbol arg-sub-list) [1664 1676])
+                    ("__semflg" variable (:type "int") (reparse-symbol arg-sub-list) [1677 1690]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1632 1699])
+            ("semctl" function
+               (:type "int"
+                :arguments 
+                  ( ("__semid" variable (:type "int") (reparse-symbol arg-sub-list) [1557 1569])
+                    ("__semnum" variable (:type "int") (reparse-symbol arg-sub-list) [1570 1583])
+                    ("__cmd" variable (:type "int") (reparse-symbol arg-sub-list) [1584 1594])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1595 1599]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1538 1608]))          
+      :file "sem.h"
+      :pointmax 2040
+      :fsize 2039
+      :lastmodtime '(22852 17649 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__need_size_t")
+          ("_SYS_SEM_H" . ((number "1" 828 . 829)))
+          ("__need_timespec")
           )
 ))
   :file "!usr!include!x86_64-linux-gnu!sys!semantic.cache"

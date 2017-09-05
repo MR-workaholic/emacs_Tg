@@ -1354,41 +1354,920 @@
           )
 )
     (semanticdb-table "dll.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DLL_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [60 102])
+            ("YAML_CPP_API" variable (:constant-flag t) nil [1402 1414]))          
       :file "dll.h"
+      :pointmax 1494
       :fsize 1493
-      :lastmodtime '(21784 46492 0 0))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 325 . 329) (symbol 318 . 324) (punctuation 317 . 318) (semantic-list 178 . 265))
+      :lexical-table 
+        '(("YAML_CPP_API")
+          ("DLL_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
     (semanticdb-table "noncopyable.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("NONCOPYABLE_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [68 118])
+            ("yaml-cpp/dll.h" include nil nil [354 379])
+            ("YAML" type
+               (:members 
+                  ( ("noncopyable" variable (:type ("YAML_CPP_API" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [438 622]))                  
+                :type "namespace")
+                nil [381 624]))          
       :file "noncopyable.h"
+      :pointmax 688
       :fsize 687
-      :lastmodtime '(21784 46492 0 0))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 341 . 345) (symbol 334 . 340) (punctuation 333 . 334) (semantic-list 194 . 281))
+      :lexical-table 
+        '(("NONCOPYABLE_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
     (semanticdb-table "binary.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BASE64_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [63 108])
+            ("string" include (:system-flag t) nil [344 361])
+            ("vector" include (:system-flag t) nil [362 379])
+            ("yaml-cpp/dll.h" include nil nil [381 406])
+            ("YAML" type
+               (:members 
+                  ( ("EncodeBase64" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [463 489])
+                            ("size" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [528 545]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [438 546])
+                    ("DecodeBase64" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("input" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [600 625]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("unsigned char" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [560 626])
+                    ("Binary" variable (:type ("YAML_CPP_API" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [628 1878]))                  
+                :type "namespace")
+                nil [408 1880]))          
       :file "binary.h"
+      :pointmax 1939
       :fsize 1938
-      :lastmodtime '(21784 46492 0 0))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 547 . 559) (symbol 425 . 437) (symbol 331 . 335) (symbol 324 . 330) (punctuation 323 . 324) (semantic-list 184 . 271))
+      :lexical-table 
+        '(("BASE64_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
     (semanticdb-table "emitterdef.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("EMITTERDEF_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [67 116])
+            ("YAML" type
+               (:members 
+                  ( ("EmitterNodeType" type
+                       (:members 
+                          ( ("value" type
+                               (:members 
+                                  ( ("NoType" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [409 416])
+                                    ("Property" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [417 426])
+                                    ("Scalar" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [427 434])
+                                    ("FlowSeq" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [435 443])
+                                    ("BlockSeq" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [444 453])
+                                    ("FlowMap" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [454 462])
+                                    ("BlockMap" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [463 473]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [396 474]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [369 477]))                  
+                :type "namespace")
+                nil [352 479]))          
       :file "emitterdef.h"
+      :pointmax 542
       :fsize 541
-      :lastmodtime '(21784 46492 0 0))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 339 . 343) (symbol 332 . 338) (punctuation 331 . 332) (semantic-list 192 . 279))
+      :lexical-table 
+        '(("EMITTERDEF_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
     (semanticdb-table "emittermanip.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("EMITTERMANIP_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [69 120])
+            ("string" include (:system-flag t) nil [356 373])
+            ("YAML" type
+               (:members 
+                  ( ("EMITTER_MANIP" type
+                       (:members 
+                          ( ("Auto" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [441 446])
+                            ("TagByKind" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [449 459])
+                            ("Newline" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [462 470])
+                            ("EmitNonAscii" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [500 513])
+                            ("EscapeNonAscii" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [516 531])
+                            ("SingleQuoted" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [584 597])
+                            ("DoubleQuoted" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [600 613])
+                            ("Literal" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [616 624])
+                            ("YesNoBool" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [651 661])
+                            ("TrueFalseBool" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [680 694])
+                            ("OnOffBool" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [713 723])
+                            ("UpperCase" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [742 752])
+                            ("LowerCase" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [771 781])
+                            ("CamelCase" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [799 809])
+                            ("LongBool" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [828 837])
+                            ("ShortBool" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [857 867])
+                            ("Dec" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [906 910])
+                            ("Hex" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [913 917])
+                            ("Oct" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [920 924])
+                            ("BeginDoc" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [955 964])
+                            ("EndDoc" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [967 974])
+                            ("BeginSeq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1005 1014])
+                            ("EndSeq" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1017 1024])
+                            ("Flow" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1027 1032])
+                            ("Block" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1035 1041])
+                            ("BeginMap" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1067 1076])
+                            ("EndMap" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1079 1086])
+                            ("Key" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1089 1093])
+                            ("Value" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1096 1102])
+                            ("LongKey" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [1178 1187]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [392 1188])
+                    ("_Indent" type
+                       (:members 
+                          ( ("_Indent" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("value_" variable (:type "int") (reparse-symbol arg-sub-list) [1217 1228]))                                  
+                                :type ("_Indent" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1209 1247])
+                            ("value" variable (:type "int") (reparse-symbol classsubparts) [1250 1260]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1190 1263])
+                    ("Indent" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [1287 1297]))                          
+                        :type ("_Indent" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1265 1324])
+                    ("_Alias" type
+                       (:members 
+                          ( ("_Alias" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("content_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1351 1379]))                                  
+                                :type ("_Alias" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1344 1402])
+                            ("content" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1405 1425]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1326 1428])
+                    ("Alias" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("content" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1450 1476]))                          
+                        :type ("_Alias" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1430 1504])
+                    ("_Anchor" type
+                       (:members 
+                          ( ("_Anchor" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("content_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1533 1561]))                                  
+                                :type ("_Anchor" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1525 1584])
+                            ("content" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1587 1607]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1506 1610])
+                    ("Anchor" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("content" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1634 1660]))                          
+                        :type ("_Anchor" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1612 1689])
+                    ("_Tag" type
+                       (:members 
+                          ( ("Type" type
+                               (:members 
+                                  ( ("value" type
+                                       (:members 
+                                          ( ("Verbatim" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1738 1747])
+                                            ("PrimaryHandle" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1748 1762])
+                                            ("NamedHandle" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1763 1776]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [1725 1777]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [1707 1782])
+                            ("_Tag" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("prefix_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1800 1827])
+                                    ("content_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1828 1856])
+                                    ("type_" variable (:type ("Type::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1873 1891]))                                  
+                                :type ("_Tag" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1795 1950])
+                            ("prefix" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1953 1972])
+                            ("content" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1975 1995])
+                            ("type" variable (:type ("Type::value" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1998 2015]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1691 2018])
+                    ("VerbatimTag" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("content" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2044 2070]))                          
+                        :type ("_Tag" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2020 2124])
+                    ("LocalTag" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("content" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2147 2173]))                          
+                        :type ("_Tag" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2126 2232])
+                    ("LocalTag" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("prefix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2255 2281])
+                            ("content" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2282 2308]))                          
+                        :type ("_Tag" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2234 2369])
+                    ("SecondaryTag" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("content" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2396 2422]))                          
+                        :type ("_Tag" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2371 2479])
+                    ("_Comment" type
+                       (:members 
+                          ( ("_Comment" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("content_" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2510 2538]))                                  
+                                :type ("_Comment" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2501 2561])
+                            ("content" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2564 2584]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2481 2587])
+                    ("Comment" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("content" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2613 2639]))                          
+                        :type ("_Comment" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2589 2669])
+                    ("_Precision" type
+                       (:members 
+                          ( ("_Precision" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("floatPrecision_" variable (:type "int") (reparse-symbol arg-sub-list) [2704 2724])
+                                    ("doublePrecision_" variable (:type "int") (reparse-symbol arg-sub-list) [2725 2746]))                                  
+                                :type ("_Precision" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2693 2824])
+                            ("floatPrecision" variable (:type "int") (reparse-symbol classsubparts) [2828 2847])
+                            ("doublePrecision" variable (:type "int") (reparse-symbol classsubparts) [2850 2870]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2671 2873])
+                    ("FloatPrecision" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2908 2914]))                          
+                        :type ("_Precision" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2875 2944])
+                    ("DoublePrecision" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2980 2986]))                          
+                        :type ("_Precision" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2946 3016])
+                    ("Precision" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3046 3052]))                          
+                        :type ("_Precision" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3018 3081]))                  
+                :type "namespace")
+                nil [375 3083]))          
       :file "emittermanip.h"
+      :pointmax 3148
       :fsize 3147
-      :lastmodtime '(21784 46492 0 0))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((EXPLICIT 1786 . 1794) (symbol 343 . 347) (symbol 336 . 342) (punctuation 335 . 336) (semantic-list 196 . 283))
+      :lexical-table 
+        '(("EMITTERMANIP_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
     (semanticdb-table "null.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("NULL_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [61 104])
+            ("yaml-cpp/dll.h" include nil nil [340 365])
+            ("YAML" type
+               (:members 
+                  ( ("Node" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [384 395])
+                    ("_Null" variable (:type ("YAML_CPP_API" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [397 426])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Null" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [450 463])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Null" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [464 477]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [427 494])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Null" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [518 531])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("_Null" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [532 545]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [495 563])
+                    ("IsNull" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("node" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [590 607]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [578 608])
+                    ("Null" variable (:type ("_Null" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [647 658]))                  
+                :type "namespace")
+                nil [367 660]))          
       :file "null.h"
+      :pointmax 717
       :fsize 716
-      :lastmodtime '(21784 46492 0 0))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 634 . 646) (EXTERN 627 . 633) (symbol 565 . 577) (symbol 327 . 331) (symbol 320 . 326) (punctuation 319 . 320) (semantic-list 180 . 267))
+      :lexical-table 
+        '(("NULL_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
     (semanticdb-table "ostream_wrapper.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("OSTREAM_WRAPPER_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [72 126])
+            ("string" include (:system-flag t) nil [362 379])
+            ("vector" include (:system-flag t) nil [380 397])
+            ("yaml-cpp/dll.h" include nil nil [399 424])
+            ("YAML" type
+               (:members 
+                  ( ("ostream_wrapper" variable (:type ("YAML_CPP_API" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [443 1229])
+                    ("<<" function
+                       (:template 
+                          ( ("std::size_t" type nil nil nil))                          
+                        :type ("ostream_wrapper" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("ostream_wrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1291 1315])
+                            ("" variable
+                               (:constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1351 1367]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1231 1420])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("ostream_wrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1457 1481])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1517 1540]))                          
+                        :type ("ostream_wrapper" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1422 1582])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("stream" variable
+                               (:reference 1
+                                :type ("ostream_wrapper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1619 1643])
+                            ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [1644 1652]))                          
+                        :type ("ostream_wrapper" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1584 1697]))                  
+                :type "namespace")
+                nil [426 1699]))          
       :file "ostream_wrapper.h"
+      :pointmax 1767
       :fsize 1766
-      :lastmodtime '(21784 46492 0 0))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((semantic-list 1367 . 1370) (semantic-list 1361 . 1367) (symbol 349 . 353) (symbol 342 . 348) (punctuation 341 . 342) (semantic-list 202 . 289))
+      :lexical-table 
+        '(("OSTREAM_WRAPPER_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
     (semanticdb-table "mark.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MARK_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [61 104])
+            ("yaml-cpp/dll.h" include nil nil [340 365])
+            ("YAML" type
+               (:members 
+                  ( ("Mark" variable (:type ("YAML_CPP_API" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [384 651]))                  
+                :type "namespace")
+                nil [367 653]))          
       :file "mark.h"
+      :pointmax 710
       :fsize 709
-      :lastmodtime '(21784 46492 0 0))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 327 . 331) (symbol 320 . 326) (punctuation 319 . 320) (semantic-list 180 . 267))
+      :lexical-table 
+        '(("MARK_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
     (semanticdb-table "traits.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TRAITS_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [63 108])
+            ("YAML" type
+               (:members 
+                  ( ("is_numeric" type
+                       (:members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (418 423)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [410 423]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [403 426]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [381 429])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (486 490)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [478 490]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [471 493]))                          
+                        :template-specifier 
+                          ( ("char" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [431 496])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (561 565)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [553 565]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [546 568]))                          
+                        :template-specifier 
+                          ( ("unsigned char" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [497 571])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (626 630)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [618 630]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [611 633]))                          
+                        :template-specifier 
+                          ( ("int" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [572 636])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (700 704)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [692 704]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [685 707]))                          
+                        :template-specifier 
+                          ( ("unsigned int" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [637 710])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (770 774)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [762 774]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [755 777]))                          
+                        :template-specifier 
+                          ( ("long int" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [711 780])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (849 853)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [841 853]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [834 856]))                          
+                        :template-specifier 
+                          ( ("unsigned long int" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [781 859])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (920 924)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [912 924]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [905 927]))                          
+                        :template-specifier 
+                          ( ("short int" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [860 930])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (1000 1004)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [992 1004]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [985 1007]))                          
+                        :template-specifier 
+                          ( ("unsigned short int" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [931 1010])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (1267 1271)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1259 1271]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1252 1274]))                          
+                        :template-specifier 
+                          ( ("long long" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1207 1277])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (1347 1351)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1339 1351]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1332 1354]))                          
+                        :template-specifier 
+                          ( ("unsigned long long" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1278 1357])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (1421 1425)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1413 1425]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1406 1428]))                          
+                        :template-specifier 
+                          ( ("float" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1365 1431])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (1489 1493)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1481 1493]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1474 1496]))                          
+                        :template-specifier 
+                          ( ("double" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1432 1499])
+                    ("is_numeric" type
+                       (:type "struct"
+                        :members 
+                          ( ("" type
+                               (:members 
+                                  ( ("value" variable
+                                       (:constant-flag t
+                                        :default-value (1562 1566)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1554 1566]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1547 1569]))                          
+                        :template-specifier 
+                          ( ("long double" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1500 1572])
+                    ("enable_if_c" type
+                       (:members 
+                          ( ("type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1629 1644]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1606 1647])
+                    ("enable_if_c" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :template-specifier 
+                          ( ("false" type nil nil nil)
+                            ("T" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1649 1700])
+                    ("enable_if" type
+                       (:superclasses 
+                          ( ("enable_if_c" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1740 1797])
+                    ("disable_if_c" type
+                       (:members 
+                          ( ("type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1855 1870]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1831 1873])
+                    ("disable_if_c" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :template-specifier 
+                          ( ("true" type nil nil nil)
+                            ("T" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1875 1926])
+                    ("disable_if" type
+                       (:superclasses 
+                          ( ("disable_if_c" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1966 2025]))                  
+                :type "namespace")
+                nil [344 2027]))          
       :file "traits.h"
+      :pointmax 2086
       :fsize 2085
-      :lastmodtime '(21784 46492 0 0)))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((punctuation 1964 . 1965) (VOID 1960 . 1964) (punctuation 1958 . 1959) (symbol 1956 . 1957) (CLASS 1950 . 1955) (punctuation 1948 . 1949) (symbol 1944 . 1948) (CLASS 1938 . 1943) (punctuation 1937 . 1938) (TEMPLATE 1928 . 1936) (punctuation 1829 . 1830) (VOID 1825 . 1829) (punctuation 1823 . 1824) (symbol 1821 . 1822) (CLASS 1815 . 1820) (punctuation 1813 . 1814) (BOOL 1809 . 1813) (punctuation 1808 . 1809) (TEMPLATE 1799 . 1807) (punctuation 1738 . 1739) (VOID 1734 . 1738) (punctuation 1732 . 1733) (symbol 1730 . 1731) (CLASS 1724 . 1729) (punctuation 1722 . 1723) (symbol 1718 . 1722) (CLASS 1712 . 1717) (punctuation 1711 . 1712) (TEMPLATE 1702 . 1710) (punctuation 1604 . 1605) (VOID 1600 . 1604) (punctuation 1598 . 1599) (symbol 1596 . 1597) (CLASS 1590 . 1595) (punctuation 1588 . 1589) (BOOL 1584 . 1588) (punctuation 1583 . 1584) (TEMPLATE 1574 . 1582) (punctuation 379 . 380) (TYPENAME 371 . 379) (punctuation 370 . 371) (TEMPLATE 361 . 369) (symbol 331 . 335) (symbol 324 . 330) (punctuation 323 . 324) (semantic-list 184 . 271))
+      :lexical-table 
+        '(("TRAITS_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+))
   :file "!usr!include!yaml-cpp!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

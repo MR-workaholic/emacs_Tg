@@ -4803,7 +4803,1581 @@ public:\\
       :lexical-table 
         '(("BOOST_TT_DETAIL_ICE_NOT_HPP_INCLUDED")
           )
-))
+)
+    (semanticdb-table "size_t_trait_def.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("boost/type_traits/detail/template_arity_spec.hpp" include (:system-flag t) nil [310 369])
+            ("boost/type_traits/integral_constant.hpp" include (:system-flag t) nil [370 420])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [421 465])
+            ("boost/mpl/size_t.hpp" include (:system-flag t) nil [466 497])
+            ("cstddef" include (:system-flag t) nil [499 517])
+            ("BOOST_TT_AUX_SIZE_T_BASE" variable (:constant-flag t) nil [548 572])
+            ("BOOST_TT_AUX_SIZE_T_TRAIT_VALUE_DECL" variable (:constant-flag t) nil [633 669])
+            ("BOOST_TT_AUX_SIZE_T_TRAIT_DEF1" variable (:constant-flag t) nil [688 718])
+            ("BOOST_TT_AUX_SIZE_T_TRAIT_SPEC1" variable (:constant-flag t) nil [953 984])
+            ("BOOST_TT_AUX_SIZE_T_TRAIT_PARTIAL_SPEC1_1" variable (:constant-flag t) nil [1178 1219]))          
+      :file "size_t_trait_def.hpp"
+      :pointmax 1352
+      :fsize 1351
+      :lastmodtime '(22367 50484 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TT_AUX_SIZE_T_TRAIT_VALUE_DECL" (spp-arg-list ("C") 669 . 672))
+          ("BOOST_TT_AUX_SIZE_T_TRAIT_PARTIAL_SPEC1_1" (spp-arg-list ("param" "trait" "spec" "C") 1219 . 1239) . 
+              ((TEMPLATE "template" 1242 . 1250) (punctuation "<" 1250 . 1251) (symbol "param" 1252 . 1257) (punctuation ">" 1258 . 1259) (STRUCT "struct" 1260 . 1266) (symbol "trait" 1267 . 1272) (punctuation "<" 1272 . 1273) (symbol "spec" 1273 . 1277) (punctuation ">" 1277 . 1278) (punctuation ":" 1285 . 1286) (PUBLIC "public" 1287 . 1293) (punctuation ":" 1294 . 1295) (punctuation ":" 1295 . 1296) (symbol "boost" 1296 . 1301) (punctuation ":" 1301 . 1302) (punctuation ":" 1302 . 1303) (symbol "integral_constant" 1303 . 1320) (punctuation "<" 1320 . 1321) (symbol "std" 1321 . 1324) (punctuation ":" 1324 . 1325) (punctuation ":" 1325 . 1326) (symbol "size_t" 1326 . 1332) (punctuation "," 1332 . 1333) (symbol "C" 1333 . 1334) (punctuation ">" 1334 . 1335) (semantic-list "{ \\
+}" 1338 . 1343) (punctuation ";" 1343 . 1344)))
+          ("BOOST_TT_AUX_SIZE_T_TRAIT_DEF1" (spp-arg-list ("trait" "T" "C") 718 . 729) . 
+              ((TEMPLATE "template" 732 . 740) (punctuation "<" 740 . 741) (TYPENAME "typename" 742 . 750) (symbol "T" 751 . 752) (punctuation ">" 753 . 754) (STRUCT "struct" 755 . 761) (symbol "trait" 762 . 767) (punctuation ":" 774 . 775) (PUBLIC "public" 776 . 782) (punctuation ":" 783 . 784) (punctuation ":" 784 . 785) (symbol "boost" 785 . 790) (punctuation ":" 790 . 791) (punctuation ":" 791 . 792) (symbol "integral_constant" 792 . 809) (punctuation "<" 809 . 810) (symbol "std" 810 . 813) (punctuation ":" 813 . 814) (punctuation ":" 814 . 815) (symbol "size_t" 815 . 821) (punctuation "," 821 . 822) (symbol "C" 822 . 823) (punctuation ">" 823 . 824) (semantic-list "{ \\
+public:\\
+    BOOST_MPL_AUX_LAMBDA_SUPPORT(1,trait,(T)) \\
+}" 827 . 889) (punctuation ";" 889 . 890) (symbol "BOOST_TT_AUX_TEMPLATE_ARITY_SPEC" 895 . 927) (semantic-list "(1,trait)" 927 . 936)))
+          ("BOOST_TT_AUX_SIZE_T_BASE" (spp-arg-list ("C") 572 . 575) . 
+              ((PUBLIC "public" 576 . 582) (punctuation ":" 583 . 584) (punctuation ":" 584 . 585) (symbol "boost" 585 . 590) (punctuation ":" 590 . 591) (punctuation ":" 591 . 592) (symbol "integral_constant" 592 . 609) (punctuation "<" 609 . 610) (symbol "std" 610 . 613) (punctuation ":" 613 . 614) (punctuation ":" 614 . 615) (symbol "size_t" 615 . 621) (punctuation "," 621 . 622) (symbol "C" 622 . 623) (punctuation ">" 623 . 624)))
+          ("BOOST_TT_AUX_SIZE_T_TRAIT_SPEC1" (spp-arg-list ("trait" "spec" "C") 984 . 998) . 
+              ((TEMPLATE "template" 1001 . 1009) (punctuation "<" 1009 . 1010) (punctuation ">" 1010 . 1011) (STRUCT "struct" 1012 . 1018) (symbol "trait" 1019 . 1024) (punctuation "<" 1024 . 1025) (symbol "spec" 1025 . 1029) (punctuation ">" 1029 . 1030) (punctuation ":" 1037 . 1038) (PUBLIC "public" 1039 . 1045) (punctuation ":" 1046 . 1047) (punctuation ":" 1047 . 1048) (symbol "boost" 1048 . 1053) (punctuation ":" 1053 . 1054) (punctuation ":" 1054 . 1055) (symbol "integral_constant" 1055 . 1072) (punctuation "<" 1072 . 1073) (symbol "std" 1073 . 1076) (punctuation ":" 1076 . 1077) (punctuation ":" 1077 . 1078) (symbol "size_t" 1078 . 1084) (punctuation "," 1084 . 1085) (symbol "C" 1085 . 1086) (punctuation ">" 1086 . 1087) (semantic-list "{ \\
+public:\\
+    BOOST_MPL_AUX_LAMBDA_SUPPORT_SPEC(1,trait,(spec)) \\
+}" 1090 . 1160) (punctuation ";" 1160 . 1161)))
+          )
+)
+    (semanticdb-table "size_t_trait_undef.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "size_t_trait_undef.hpp"
+      :pointmax 436
+      :fsize 435
+      :lastmodtime '(22367 50484 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "is_function_ptr_helper.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TT_DETAIL_IS_FUNCTION_PTR_HELPER_HPP_INCLUDED" variable (:constant-flag t) nil [539 590])
+            ("boost/type_traits/config.hpp" include (:system-flag t) nil [592 631])
+            ("boost" type
+               (:members 
+                  ( ("type_traits" type
+                       (:members 
+                          ( ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [942 947])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [948 961]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [920 963]))                                  )
+                                (reparse-symbol namespacesubparts) [865 966])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1146 1151])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1152 1164]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1124 1166]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1063 1169])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1257 1262])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1263 1275]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1235 1277]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1170 1280])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1377 1382])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1383 1395]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1355 1397]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1281 1400])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1501 1506])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1507 1519]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1479 1521]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1401 1524])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1637 1642])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1643 1655]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1615 1657]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1525 1660])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1777 1782])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1783 1795]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1755 1797]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1661 1800])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1929 1934])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1935 1947]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1907 1949]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1801 1952])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2085 2090])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2091 2103]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2063 2105]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1953 2108])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2253 2258])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2259 2271]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2231 2273]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2109 2276])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2425 2430])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2431 2443]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2403 2445]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2277 2448])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2609 2614])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2615 2627]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2587 2629]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2449 2632])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2797 2802])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2803 2815]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2775 2817]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2633 2820])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [2997 3002])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3003 3015]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2975 3017]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2821 3020])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [3201 3206])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3207 3219]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3179 3221]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3021 3224])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [3417 3422])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3423 3435]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3395 3437]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3225 3440])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [3637 3642])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3643 3655]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3615 3657]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3441 3660])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [3869 3874])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3875 3887]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3847 3889]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3661 3892])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [4105 4110])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4111 4123]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4083 4125]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3893 4128])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [4353 4358])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4359 4371]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4331 4373]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4129 4376])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [4605 4610])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4611 4623]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4583 4625]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4377 4628])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [4869 4874])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4875 4887]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [4847 4889]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4629 4892])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [5137 5142])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5143 5155]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [5115 5157]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4893 5160])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [5419 5424])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5425 5437]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [5397 5439]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [5161 5442])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [5705 5710])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5711 5723]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [5683 5725]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [5443 5728])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [6005 6010])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6011 6023]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [5983 6025]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [5729 6028])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [6309 6314])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6315 6327]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6287 6329]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [6029 6332])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [6627 6632])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6633 6645]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6605 6647]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [6333 6650])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [6949 6954])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6955 6967]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6927 6969]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [6651 6972])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [7285 7290])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7291 7303]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7263 7305]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [6973 7308])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [7625 7630])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7631 7643]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7603 7645]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7309 7648])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [7979 7984])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7985 7997]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7957 7999]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7649 8002])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [8337 8342])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8343 8355]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8315 8357]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8003 8360])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [8709 8714])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8715 8727]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8687 8729]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8361 8732])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [9085 9090])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9091 9103]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [9063 9105]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8733 9108])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [9475 9480])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9481 9493]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [9453 9495]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [9109 9498])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [9869 9874])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9875 9887]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [9847 9889]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [9499 9892])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [10277 10282])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10283 10295]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [10255 10297]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [9893 10300])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [10689 10694])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10695 10707]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [10667 10709]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [10301 10712])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [11115 11120])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11121 11133]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [11093 11135]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [10713 11138])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [11545 11550])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11551 11563]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [11523 11565]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [11139 11568])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [11989 11994])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11995 12007]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [11967 12009]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [11569 12012])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [12437 12442])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12443 12455]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [12415 12457]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [12013 12460])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil)
+                                    ("T20" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [12899 12904])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12905 12917]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [12877 12919]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [12461 12922])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil)
+                                    ("T20" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [13365 13370])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13371 13383]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [13343 13385]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [12923 13388])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil)
+                                    ("T20" type (:type "class") nil nil)
+                                    ("T21" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [13845 13850])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13851 13863]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [13823 13865]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [13389 13868])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil)
+                                    ("T20" type (:type "class") nil nil)
+                                    ("T21" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [14329 14334])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14335 14347]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [14307 14349]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [13869 14352])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil)
+                                    ("T20" type (:type "class") nil nil)
+                                    ("T21" type (:type "class") nil nil)
+                                    ("T22" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [14827 14832])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14833 14845]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [14805 14847]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [14353 14850])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil)
+                                    ("T20" type (:type "class") nil nil)
+                                    ("T21" type (:type "class") nil nil)
+                                    ("T22" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [15329 15334])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15335 15347]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [15307 15349]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [14851 15352])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil)
+                                    ("T20" type (:type "class") nil nil)
+                                    ("T21" type (:type "class") nil nil)
+                                    ("T22" type (:type "class") nil nil)
+                                    ("T23" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [15845 15850])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15851 15863]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [15823 15865]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [15353 15868])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil)
+                                    ("T20" type (:type "class") nil nil)
+                                    ("T21" type (:type "class") nil nil)
+                                    ("T22" type (:type "class") nil nil)
+                                    ("T23" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [16365 16370])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16371 16383]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [16343 16385]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [15869 16388])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil)
+                                    ("T20" type (:type "class") nil nil)
+                                    ("T21" type (:type "class") nil nil)
+                                    ("T22" type (:type "class") nil nil)
+                                    ("T23" type (:type "class") nil nil)
+                                    ("T24" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [16899 16904])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16905 16917]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [16877 16919]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [16389 16922])
+                            ("is_function_ptr_helper" type
+                               (:template 
+                                  ( ("R" type (:type "class") nil nil)
+                                    ("T0" type (:type "class") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil)
+                                    ("T3" type (:type "class") nil nil)
+                                    ("T4" type (:type "class") nil nil)
+                                    ("T5" type (:type "class") nil nil)
+                                    ("T6" type (:type "class") nil nil)
+                                    ("T7" type (:type "class") nil nil)
+                                    ("T8" type (:type "class") nil nil)
+                                    ("T9" type (:type "class") nil nil)
+                                    ("T10" type (:type "class") nil nil)
+                                    ("T11" type (:type "class") nil nil)
+                                    ("T12" type (:type "class") nil nil)
+                                    ("T13" type (:type "class") nil nil)
+                                    ("T14" type (:type "class") nil nil)
+                                    ("T15" type (:type "class") nil nil)
+                                    ("T16" type (:type "class") nil nil)
+                                    ("T17" type (:type "class") nil nil)
+                                    ("T18" type (:type "class") nil nil)
+                                    ("T19" type (:type "class") nil nil)
+                                    ("T20" type (:type "class") nil nil)
+                                    ("T21" type (:type "class") nil nil)
+                                    ("T22" type (:type "class") nil nil)
+                                    ("T23" type (:type "class") nil nil)
+                                    ("T24" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [17437 17442])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17443 17455]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [17415 17457]))                                  
+                                :template-specifier 
+                                  ( ("R" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [16923 17460]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [840 17676]))                  
+                :type "namespace")
+                nil [822 17703]))          
+      :file "is_function_ptr_helper.hpp"
+      :pointmax 18436
+      :fsize 18435
+      :lastmodtime '(22367 50484 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TT_DETAIL_IS_FUNCTION_PTR_HELPER_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "ice_eq.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TT_DETAIL_ICE_EQ_HPP_INCLUDED" variable (:constant-flag t) nil [398 433])
+            ("boost/config.hpp" include (:system-flag t) nil [435 462])
+            ("boost" type
+               (:members 
+                  ( ("type_traits" type
+                       (:members 
+                          ( ("ice_eq" type
+                               (:template 
+                                  ( ("int" type nil nil nil)
+                                    ("int" type nil nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [575 580])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [581 599]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [553 601]))                                  )
+                                (reparse-symbol namespacesubparts) [507 604])
+                            ("ice_ne" type
+                               (:template 
+                                  ( ("int" type nil nil nil)
+                                    ("int" type nil nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [674 679])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [680 698]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [652 700]))                                  )
+                                (reparse-symbol namespacesubparts) [606 703])
+                            ("ice_eq::value" variable (:type "bool") (reparse-symbol namespacesubparts) [752 810])
+                            ("ice_ne::value" variable (:type "bool") (reparse-symbol namespacesubparts) [811 869]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [482 879]))                  
+                :type "namespace")
+                nil [464 906]))          
+      :file "ice_eq.hpp"
+      :pointmax 973
+      :fsize 972
+      :lastmodtime '(22367 50484 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TT_DETAIL_ICE_EQ_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "has_binary_operator.hpp"
+      :file "has_binary_operator.hpp"
+      :fsize 9622
+      :lastmodtime '(22367 50484 0 0))
+    (semanticdb-table "has_prefix_operator.hpp"
+      :file "has_prefix_operator.hpp"
+      :fsize 8245
+      :lastmodtime '(22367 50484 0 0))
+    (semanticdb-table "has_postfix_operator.hpp"
+      :file "has_postfix_operator.hpp"
+      :fsize 7760
+      :lastmodtime '(22367 50484 0 0)))
   :file "!usr!include!boost!type_traits!detail!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

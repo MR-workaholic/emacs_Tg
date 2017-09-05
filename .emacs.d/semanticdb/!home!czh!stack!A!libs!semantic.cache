@@ -1,0 +1,292 @@
+;; Object libs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libs/"
+  :tables
+  (list
+    (semanticdb-table "libev_tool.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("libev_tool.h" include nil nil [1 24])
+            ("LibevTool" function
+               (:constructor-flag t
+                :parent "LibevTool"
+                :type ("LibevTool" type (:type "class") nil nil))
+                nil [26 73])
+            ("Writen" function
+               (:parent "LibevTool"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [101 108])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [109 119])
+                    ("n_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120 134]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [75 595])
+            ("Readn" function
+               (:parent "LibevTool"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [622 629])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [630 640])
+                    ("n_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [641 655]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [597 1338])
+            ("Setnonblock" function
+               (:parent "LibevTool"
+                :arguments 
+                  ( ("fd" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1368 1376]))                  
+                :type "void")
+                nil [1340 1487]))          
+      :file "libev_tool.cc"
+      :pointmax 1488
+      :fsize 1581
+      :lastmodtime '(22931 55932 853970 418000)
+      :unmatched-syntax nil)
+    (semanticdb-table "client.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("client.h" include nil nil [1 20])
+            ("clientLink" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("client" type (:type "class") nil nil))
+                nil [21 47])
+            ("addClient" function
+               (:arguments 
+                  ( ("cli" variable
+                       (:pointer 1
+                        :type ("client" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64 76]))                  
+                :type "void")
+                nil [49 213])
+            ("cleanClient" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [232 239]))                  
+                :type "void")
+                nil [215 957])
+            ("clientwritecb" function
+               (:arguments 
+                  ( ("ev_io" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [978 991])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [991 993])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [994 1006]))                  
+                :type "void")
+                nil [959 1526])
+            ("cliwrite" function
+               (:arguments 
+                  ( ("cli" variable
+                       (:pointer 1
+                        :type ("client" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1543 1555]))                  
+                :type "void")
+                nil [1529 1780]))          
+      :file "client.cc"
+      :pointmax 1781
+      :fsize 2063
+      :lastmodtime '(22941 11393 824845 540000)
+      :unmatched-syntax '((punctuation 990 . 991) (punctuation 990 . 991) (punctuation 990 . 991) (punctuation 990 . 991)))
+    (semanticdb-table "routetable.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("routetable.h" include nil nil [1 24])
+            ("updateEntry" function
+               (:parent "RouteTable"
+                :arguments 
+                  ( ("" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("Entry" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [55 69])
+                    ("p" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70 81])
+                    ("n" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82 92]))                  
+                :type "bool")
+                nil [26 946])
+            ("addEntry" function
+               (:parent "RouteTable"
+                :arguments 
+                  ( ("e" variable
+                       (:reference 1
+                        :type ("Entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [973 982]))                  
+                :type "void")
+                nil [947 1011])
+            ("clearEntry" function
+               (:parent "RouteTable"
+                :type "void")
+                nil [1012 1065])
+            ("RouteTable" function
+               (:constructor-flag t
+                :parent "RouteTable"
+                :type ("RouteTable" type (:type "class") nil nil))
+                nil [1067 1237])
+            ("handleRouteTable" function
+               (:parent "RouteTable"
+                :arguments 
+                  ( ("recv" variable
+                       (:reference 1
+                        :type ("RouteTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1273 1290])
+                    ("incre" variable
+                       (:reference 1
+                        :type ("RouteTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1291 1309]))                  
+                :type "void")
+                nil [1239 1553])
+            ("findNextNode" function
+               (:parent "RouteTable"
+                :arguments 
+                  ( ("dest" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1588 1601]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1555 1800])
+            ("findNeighNode" function
+               (:parent "RouteTable"
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("uint8_t" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1801 2027])
+            ("print" function
+               (:parent "RouteTable"
+                :type "void")
+                nil [2136 2496])
+            ("toArray" function
+               (:parent "RouteTable"
+                :arguments 
+                  ( ("pArray" variable
+                       (:dereference 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2522 2541]))                  
+                :type "void")
+                nil [2497 3039]))          
+      :file "routetable.cc"
+      :pointmax 3040
+      :fsize 3039
+      :lastmodtime '(22932 18983 80662 100000)
+      :unmatched-syntax nil)
+    (semanticdb-table "tools.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("tools.h" include nil nil [1 19])
+            ("sys/stat.h" include (:system-flag t) nil [20 41])
+            ("sys/types.h" include (:system-flag t) nil [42 64])
+            ("unistd.h" include (:system-flag t) nil [65 84])
+            ("vector" include (:system-flag t) nil [85 102])
+            ("string" include (:system-flag t) nil [103 120])
+            ("FENGEFU" variable (:constant-flag t) nil [130 137])
+            ("R_OK" variable (:constant-flag t) nil [152 156])
+            ("W_OK" variable (:constant-flag t) nil [201 205])
+            ("X_OK" variable (:constant-flag t) nil [251 255])
+            ("F_OK" variable (:constant-flag t) nil [303 307])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [339 357])
+            ("std::string" using (:type ("std::string" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [358 376])
+            ("MkdirResult" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("HAVEFILE" variable
+                             (:constant-flag t
+                              :default-value (406 407)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [395 407])
+                          ("HAVENOFILE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [411 422])
+                          ("CREATEDONE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [425 436])
+                          ("CREATEFAIL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [439 451]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [378 463])
+            ("mkdirimpl" function
+               (:arguments 
+                  ( ("path" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [488 500]))                  
+                :type ("MkdirResult" type (:type "class") nil nil))
+                nil [466 722])
+            ("mkdirfun" function
+               (:arguments 
+                  ( ("userpath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [737 758]))                  
+                :type "int")
+                nil [724 1652])
+            ("rand_num" function
+               (:arguments 
+                  ( ("Min" variable (:type "int") (reparse-symbol arg-sub-list) [1667 1675])
+                    ("Max" variable (:type "int") (reparse-symbol arg-sub-list) [1676 1684]))                  
+                :type "int")
+                nil [1654 1769]))          
+      :file "tools.cc"
+      :pointmax 1770
+      :fsize 1769
+      :lastmodtime '(22946 18411 100084 774000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FENGEFU" . ((semantic-list "('/')" 138 . 143)))
+          ("R_OK" . ((semantic-list "(4)" 157 . 160)))
+          ("F_OK" . ((semantic-list "(0)" 308 . 311)))
+          ("W_OK" . ((semantic-list "(2)" 206 . 209)))
+          ("X_OK" . ((semantic-list "(1)" 256 . 259)))
+          )
+)
+    (semanticdb-table "trace.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("trace.h" include nil nil [1 19])
+            ("config.h" include nil nil [20 39])
+            ("tools.h" include nil nil [40 58])
+            ("time.h" include nil nil [59 76])
+            ("string" include (:system-flag t) nil [77 94])
+            ("std::string" using (:type ("std::string" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [97 115])
+            ("Init" function
+               (:parent "Trace"
+                :type "void")
+                nil [117 810])
+            ("Trace" function
+               (:destructor-flag t
+                :parent "Trace"
+                :type "void")
+                nil [813 847])
+            ("Log" function
+               (:parent "Trace"
+                :arguments 
+                  ( ("layerID" variable (:type "int") (reparse-symbol arg-sub-list) [865 877])
+                    ("protocolID" variable (:type "int") (reparse-symbol arg-sub-list) [878 893])
+                    ("srcID" variable (:type "int") (reparse-symbol arg-sub-list) [894 904])
+                    ("destID" variable (:type "int") (reparse-symbol arg-sub-list) [905 916])
+                    ("packetID" variable (:type "int") (reparse-symbol arg-sub-list) [917 930])
+                    ("packetLen" variable (:type "int") (reparse-symbol arg-sub-list) [931 945])
+                    ("type" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [946 958])
+                    ("status" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [959 973]))                  
+                :type "void")
+                nil [849 1240]))          
+      :file "trace.cc"
+      :pointmax 1241
+      :fsize 1240
+      :lastmodtime '(22946 28442 490745 313000)
+      :unmatched-syntax nil))
+  :file "!home!czh!stack!A!libs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

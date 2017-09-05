@@ -1,0 +1,130 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+
+    (semanticdb-table "sap.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sap.h" include nil nil [1 17])
+            ("iostream" include (:system-flag t) nil [18 37])
+            ("schedule.h" include nil nil [38 59])
+            ("sap" type
+               (:members 
+                  ( ("Init" function
+                       (:parent "SapBase"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [78 133])
+                    ("SendReq" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [156 178])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [179 194])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [195 208]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [134 400])
+                    ("SendRsp" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [424 446])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [447 462])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [463 476]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [402 726])
+                    ("SendNtf" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [750 772])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [773 788])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [789 802]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [728 1052])
+                    ("RecvReq" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1076 1098]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1054 1119])
+                    ("RecvRsp" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1142 1164]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1120 1185])
+                    ("RecvNtf" function
+                       (:parent "SapBase"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1208 1230]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1186 1251])
+                    ("DispatchReq" function
+                       (:parent "SapList"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1278 1300])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1301 1316])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1317 1330]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1252 1599])
+                    ("DispatchRsp" function
+                       (:parent "SapList"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1627 1649])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1650 1665])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1666 1679]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1601 1948])
+                    ("DispatchNtf" function
+                       (:parent "SapList"
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MessagePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1976 1998])
+                            ("layer" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1999 2014])
+                            ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2015 2028]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1950 2297]))                  
+                :type "namespace")
+                nil [61 2299]))          
+      :file "sap.cc"
+      :pointmax 2300
+      :fsize 2299
+      :lastmodtime '(22941 11393 824845 540000)
+      :unmatched-syntax nil))
+  :file "!home!czh!stack!A!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

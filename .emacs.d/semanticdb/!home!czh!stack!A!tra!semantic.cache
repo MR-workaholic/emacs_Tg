@@ -1,0 +1,67 @@
+;; Object tra/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tra/"
+  :tables
+  (list
+    (semanticdb-table "udp.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [1 20])
+            ("stdlib.h" include (:system-flag t) nil [21 40])
+            ("stdio.h" include (:system-flag t) nil [41 59])
+            ("string.h" include (:system-flag t) nil [60 79])
+            ("errno.h" include (:system-flag t) nil [80 98])
+            ("sys/shm.h" include (:system-flag t) nil [99 119])
+            ("sys/types.h" include (:system-flag t) nil [120 142])
+            ("sys/ipc.h" include (:system-flag t) nil [143 163])
+            ("sys/sem.h" include (:system-flag t) nil [164 184])
+            ("pthread.h" include (:system-flag t) nil [185 205])
+            ("app_datapackage.h" include nil nil [206 234])
+            ("definefile.h" include nil nil [235 258])
+            ("iostream" include (:system-flag t) nil [259 277])
+            ("hsm.h" include nil nil [279 295])
+            ("message.h" include nil nil [296 316])
+            ("module.h" include nil nil [317 336])
+            ("sap.h" include nil nil [337 353])
+            ("schedule.h" include nil nil [354 375])
+            ("client.h" include nil nil [376 395])
+            ("CURRENT_PID" variable (:constant-flag t) nil [405 416])
+            ("MAX_TIMEOUT_COUNT" variable (:constant-flag t) nil [427 444])
+            ("BROADCAST_ADDERSS" variable (:constant-flag t) nil [456 473])
+            ("PACKET_TYPE_DATA" variable (:constant-flag t) nil [487 503])
+            ("PACKET_TYPE_ACK" variable (:constant-flag t) nil [514 529])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [533 553])
+            ("semun" type
+               (:members 
+                  ( ("val" variable (:type "int") (reparse-symbol classsubparts) [569 577]))                  
+                :type "union")
+                nil [554 580])
+            ("UIClient" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("client" type (:type "class") nil nil))
+                nil [604 628])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [630 650])
+            ("udp" type (:type "namespace") nil [651 6512]))          
+      :file "udp.cc"
+      :pointmax 6535
+      :fsize 6534
+      :lastmodtime '(22949 3966 993453 963000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CURRENT_PID" . ((number "1" 417 . 418)))
+          ("PACKET_TYPE_DATA" . ((number "0" 504 . 505)))
+          ("MAX_TIMEOUT_COUNT" . ((number "8" 445 . 446)))
+          ("PACKET_TYPE_ACK" . ((number "1" 530 . 531)))
+          ("BROADCAST_ADDERSS" . ((number "255" 474 . 477)))
+          )
+))
+  :file "!home!czh!stack!A!tra!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

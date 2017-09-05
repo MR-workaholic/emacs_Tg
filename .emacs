@@ -3,9 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(safe-local-variable-values (quote ((encoding . utf-8))))
- '(show-paren-mode t))
- 
+ '(show-paren-mode t)) 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -249,7 +247,7 @@
 (semantic-add-system-include "/usr/include/x86_64-linux-gnu" 'c++-mode)
 (semantic-add-system-include "/usr/include" 'c++-mode)
 ;(semantic-add-system-include "/home/czh/Advanced_Programming_in_the_Unix_Environment/apue.3e/include" 'c++-mode)
-(semantic-add-system-include "/usr/local/include" 'c++-mode) ;;程序加了libev库之后会代码提示不正常，将该库头文件所在的文件夹拉到最下边就解决问题了, 虽然还会提示Wrong type argument: number-or-marker-p，但工作正常
+(semantic-add-system-include "/usr/local/include" 'c++-mode)
 
 
 ;---------------------------------
@@ -283,11 +281,11 @@
  /usr/include/x86_64-linux-gnu/c++/5
  /usr/include/c++/5/backward
  /usr/lib/gcc/x86_64-linux-gnu/5/include
- /usr/local/include
  /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed
  /usr/include/x86_64-linux-gnu
  /usr/include
- ;/home/czh/Advanced_Programming_in_the_Unix_Environment/apue.3e/include"
+ /home/czh/Advanced_Programming_in_the_Unix_Environment/apue.3e/include
+ /usr/local/include"
      )
   )
 
@@ -480,7 +478,7 @@
 
 ;; (package-initialize)
 (add-to-list 'exec-path "~/.local/bin")
-(add-to-list 'load-path "/home/harlan/.emacs.d/elpa/pyvenv-20160527.442")
+(add-to-list 'load-path "/home/czh/.emacs.d/elpa/pyvenv-20160527.442")
 (require 'pyvenv)
 (elpy-enable)
 
@@ -500,15 +498,15 @@
 ;;  linux golang ide
 ;----------------------------------------
 
-(add-to-list 'load-path "/home/harlan/.emacs.d/go-mode.el-master")
+(add-to-list 'load-path "/home/czh/.emacs.d/go-mode.el-master")
 (require 'go-mode-autoloads)
 
-;;(setenv "GOPATH" "/home/harlan/go")
+;;(setenv "GOPATH" "/home/czh/go")
 
 
 ;;下面两个十分重要，否则emacs找不到go运行的程序
 ;;(setq exec-path (cons "/usr/local/go/bin" exec-path))  ;;估计也可以去掉，搜索系统的PATH即可了
-(add-to-list 'exec-path "/home/harlan/go/bin")
+(add-to-list 'exec-path "/home/czh/go/bin")
 ;;保存文件的时候对该源文件做一下gofmt
 ;(add-hook 'before-save-hook 'gofmt-before-save) ;;下面的代码有包括hook功能了，故这个设置可以屏蔽掉
 

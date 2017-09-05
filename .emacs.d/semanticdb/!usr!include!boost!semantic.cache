@@ -2834,9 +2834,92 @@
           )
 )
     (semanticdb-table "aligned_storage.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ALIGNED_STORAGE_HPP" variable (:constant-flag t) nil [541 566])
+            ("cstddef" include (:system-flag t) nil [568 586])
+            ("boost/config.hpp" include nil nil [607 634])
+            ("boost/detail/workaround.hpp" include nil nil [635 673])
+            ("boost/type_traits/alignment_of.hpp" include nil nil [674 719])
+            ("boost/type_traits/type_with_alignment.hpp" include nil nil [720 772])
+            ("boost/type_traits/is_pod.hpp" include nil nil [773 812])
+            ("boost/mpl/eval_if.hpp" include nil nil [814 846])
+            ("boost/mpl/identity.hpp" include nil nil [847 880])
+            ("boost/type_traits/detail/bool_trait_def.hpp" include nil nil [882 936])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("aligned_storage" type
+                               (:members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1034 1051])
+                                            ("" variable (:type ("alignment_of_max_align" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1052 1076])
+                                            ("" variable (:type ("boost::alignment_of::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1079 1122]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [1005 1123])
+                                    ("aligned_storage_imp" type
+                                       (:template 
+                                          ( ("std::size_t" type nil nil nil)
+                                            ("std::size_t" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("data_" variable (:type ("data_t" type
+                                                 (:prototype t
+                                                  :type "union")
+                                                  nil nil)) (reparse-symbol classsubparts) [1279 1572])
+                                            ("data_t" type
+                                               (:members 
+                                                  ( ("buf" variable
+                                                       (:dereference 1
+                                                        :type "char")
+                                                        (reparse-symbol classsubparts) [1306 1322])
+                                                    ("align_" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1547 1559]))                                                  
+                                                :type "union")
+                                                (reparse-symbol classsubparts) [1279 1572])
+                                            ("address" function
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1577 1649]))                                          )
+                                        (reparse-symbol namespacesubparts) [1180 1652])
+                                    ("aligned_storage_imp" type
+                                       (:template 
+                                          ( ("std::size_t" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("address" function
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1767 1802]))                                          
+                                        :template-specifier 
+                                          ( ("0u" type nil nil nil)
+                                            ("alignment_" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1654 1805]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [976 1808]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [957 1809])
+                    ("private" label nil (reparse-symbol namespacesubparts) [1981 2017])
+                    ("boost::detail::aligned_storage::aligned_storage_imp" variable (:type "int") (reparse-symbol namespacesubparts) [2018 2961])
+                    ("BOOST_TT_AUX_BOOL_C_BASE" function
+                       (:arguments 
+                          ( ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3262 3267]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3237 3317]))                  
+                :type "namespace")
+                nil [938 3323])
+            ("boost/type_traits/detail/bool_trait_undef.hpp" include nil nil [3344 3400]))          
       :file "aligned_storage.hpp"
+      :pointmax 3438
       :fsize 3437
-      :lastmodtime '(22367 50452 0 0))
+      :lastmodtime '(22367 50452 0 0)
+      :unmatched-syntax '((punctuation 3317 . 3318) (punctuation 3232 . 3233) (punctuation 3230 . 3231) (symbol 3220 . 3230) (punctuation 3219 . 3220) (symbol 3214 . 3219) (punctuation 3213 . 3214) (symbol 3194 . 3213) (punctuation 3193 . 3194) (punctuation 3192 . 3193) (symbol 3177 . 3192) (punctuation 3176 . 3177) (punctuation 3175 . 3176) (symbol 3169 . 3175) (punctuation 3168 . 3169) (punctuation 3167 . 3168) (symbol 3162 . 3167) (punctuation 3161 . 3162) (punctuation 3160 . 3161) (punctuation 3158 . 3159) (symbol 3152 . 3158) (STRUCT 3145 . 3151) (punctuation 3143 . 3144) (symbol 3133 . 3143) (symbol 3126 . 3132) (punctuation 3125 . 3126) (punctuation 3124 . 3125) (symbol 3121 . 3124) (punctuation 3119 . 3120) (symbol 3114 . 3119) (symbol 3107 . 3113) (punctuation 3106 . 3107) (punctuation 3105 . 3106) (symbol 3102 . 3105) (punctuation 3101 . 3102) (TEMPLATE 3092 . 3100) (punctuation 2017 . 2018) (punctuation 1954 . 1955) (symbol 1938 . 1953) (CLASS 1932 . 1937) (punctuation 1930 . 1931) (semantic-list 1925 . 1929) (symbol 1919 . 1925) (number 1927 . 1928) (punctuation 1926 . 1927) (punctuation 1918 . 1919) (punctuation 1917 . 1918) (symbol 1914 . 1917) (number 1927 . 1928) (punctuation 1926 . 1927) (punctuation 1912 . 1913) (symbol 1901 . 1911) (symbol 1894 . 1900) (punctuation 1893 . 1894) (punctuation 1892 . 1893) (symbol 1889 . 1892) (punctuation 1887 . 1888) (symbol 1877 . 1882) (symbol 1870 . 1876) (punctuation 1869 . 1870) (punctuation 1868 . 1869) (symbol 1865 . 1868) (punctuation 1857 . 1858) (TEMPLATE 1848 . 1856) (punctuation 1546 . 1547) (punctuation 1545 . 1546) (punctuation 1544 . 1545) (punctuation 1530 . 1531) (symbol 1520 . 1530) (punctuation 1519 . 1520) (symbol 1500 . 1519) (punctuation 1499 . 1500) (punctuation 1498 . 1499) (symbol 1493 . 1498) (punctuation 1492 . 1493) (punctuation 1491 . 1492) (punctuation 1489 . 1490) (punctuation 1475 . 1476) (symbol 1465 . 1474) (punctuation 1464 . 1465) (punctuation 1463 . 1464) (symbol 1457 . 1463) (punctuation 1456 . 1457) (punctuation 1455 . 1456) (symbol 1450 . 1455) (punctuation 1449 . 1450) (punctuation 1448 . 1449) (punctuation 1446 . 1447) (symbol 1438 . 1446) (punctuation 1437 . 1438) (punctuation 1436 . 1437) (symbol 1433 . 1436) (punctuation 1432 . 1433) (punctuation 1431 . 1432) (symbol 1426 . 1431) (punctuation 1425 . 1426) (punctuation 1424 . 1425) (punctuation 1422 . 1423) (semantic-list 1405 . 1409) (symbol 1399 . 1405) (number 1407 . 1408) (punctuation 1406 . 1407) (punctuation 1398 . 1399) (punctuation 1397 . 1398) (symbol 1394 . 1397) (number 1407 . 1408) (punctuation 1406 . 1407) (punctuation 1392 . 1393) (punctuation 1391 . 1392) (symbol 1380 . 1390) (punctuation 1364 . 1365) (symbol 1355 . 1364) (punctuation 1354 . 1355) (punctuation 1353 . 1354) (symbol 1350 . 1353) (punctuation 1349 . 1350) (punctuation 1348 . 1349) (symbol 1343 . 1348) (punctuation 1342 . 1343) (punctuation 1341 . 1342) (TYPENAME 1332 . 1340) (punctuation 1078 . 1079) (punctuation 1077 . 1078) (punctuation 1075 . 1076))
+      :lexical-table 
+        '(("BOOST_ALIGNED_STORAGE_HPP")
+          )
+)
     (semanticdb-table "swap.hpp"
       :file "swap.hpp"
       :fsize 374
@@ -3238,6 +3321,230 @@
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_CHECKED_DELETE_HPP")
+          )
+)
+    (semanticdb-table "utility.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_UTILITY_HPP" variable (:constant-flag t) nil [430 447])
+            ("boost/utility/addressof.hpp" include (:system-flag t) nil [449 487])
+            ("boost/utility/base_from_member.hpp" include (:system-flag t) nil [488 533])
+            ("boost/utility/binary.hpp" include (:system-flag t) nil [534 569])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [570 608])
+            ("boost/utility/identity_type.hpp" include (:system-flag t) nil [609 651])
+            ("boost/checked_delete.hpp" include (:system-flag t) nil [652 687])
+            ("boost/next_prior.hpp" include (:system-flag t) nil [688 719])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [720 752]))          
+      :file "utility.hpp"
+      :pointmax 783
+      :fsize 782
+      :lastmodtime '(22367 50452 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_UTILITY_HPP")
+          )
+)
+    (semanticdb-table "next_prior.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_NEXT_PRIOR_HPP_INCLUDED" variable (:constant-flag t) nil [495 524])
+            ("iterator" include (:system-flag t) nil [526 545])
+            ("boost/type_traits/is_unsigned.hpp" include (:system-flag t) nil [669 713])
+            ("boost/type_traits/integral_promotion.hpp" include (:system-flag t) nil [714 765])
+            ("boost/type_traits/make_signed.hpp" include (:system-flag t) nil [766 810])
+            ("boost/type_traits/has_plus.hpp" include (:system-flag t) nil [811 852])
+            ("boost/type_traits/has_plus_assign.hpp" include (:system-flag t) nil [853 901])
+            ("boost/type_traits/has_minus.hpp" include (:system-flag t) nil [902 944])
+            ("boost/type_traits/has_minus_assign.hpp" include (:system-flag t) nil [945 994])
+            ("boost" type
+               (:members 
+                  ( ("next_prior_detail" type
+                       (:members 
+                          ( ("next_impl2" type
+                               (:members 
+                                  ( ("call" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1510 1514])
+                                            ("n" variable (:type ("Distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1515 1526]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1496 1584]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1472 1587])
+                            ("next_impl2" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("Distance" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("call" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1690 1694])
+                                            ("n" variable (:type ("Distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1695 1706]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1676 1740]))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil)
+                                    ("Distance" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1589 1743])
+                            ("next_impl1" type
+                               (:superclasses 
+                                  ( ("next_impl2" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1848 1909])
+                            ("next_impl1" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("Distance" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("call" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2012 2016])
+                                            ("n" variable (:type ("Distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2017 2028]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1998 2074]))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil)
+                                    ("Distance" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1911 2077])
+                            ("prior_impl3" type
+                               (:members 
+                                  ( ("call" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2541 2545])
+                                            ("n" variable (:type ("Distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2546 2557]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2527 2616]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2502 2619])
+                            ("prior_impl3" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("Distance" type (:type "class") nil nil)
+                                    ("PromotedDistance" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("call" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2768 2772])
+                                            ("n" variable (:type ("Distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2773 2784]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2754 2988]))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil)
+                                    ("Distance" type nil nil nil)
+                                    ("PromotedDistance" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2621 2991])
+                            ("prior_impl2" type
+                               (:superclasses 
+                                  ( ("prior_impl3" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3085 3148])
+                            ("prior_impl2" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("Distance" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("call" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3252 3256])
+                                            ("n" variable (:type ("Distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3257 3268]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3238 3302]))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil)
+                                    ("Distance" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3150 3305])
+                            ("prior_impl1" type
+                               (:superclasses 
+                                  ( ("prior_impl2" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3412 3475])
+                            ("prior_impl1" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("Distance" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("call" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3579 3583])
+                                            ("n" variable (:type ("Distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3584 3595]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3565 3641]))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil)
+                                    ("Distance" type nil nil nil)
+                                    ("true" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3477 3644]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1352 3647])
+                    ("next" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3713 3717]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [3680 3733])
+                    ("next" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("Distance" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3784 3788])
+                            ("n" variable (:type ("Distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3789 3800]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [3735 3873])
+                    ("prior" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3909 3913]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [3875 3929])
+                    ("prior" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("Distance" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3981 3985])
+                            ("n" variable (:type ("Distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3986 3997]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [3931 4071]))                  
+                :type "namespace")
+                nil [996 4074]))          
+      :file "next_prior.hpp"
+      :pointmax 4136
+      :fsize 4135
+      :lastmodtime '(22367 50451 0 0)
+      :unmatched-syntax '((punctuation 3410 . 3411) (symbol 3404 . 3409) (punctuation 3403 . 3404) (punctuation 3402 . 3403) (punctuation 3401 . 3402) (symbol 3392 . 3400) (punctuation 3390 . 3391) (symbol 3389 . 3390) (punctuation 3387 . 3388) (symbol 3371 . 3387) (punctuation 3369 . 3370) (symbol 3354 . 3368) (BOOL 3349 . 3353) (punctuation 3347 . 3348) (symbol 3339 . 3347) (TYPENAME 3330 . 3338) (punctuation 3328 . 3329) (symbol 3327 . 3328) (TYPENAME 3318 . 3326) (punctuation 3316 . 3317) (TEMPLATE 3308 . 3316) (punctuation 3083 . 3084) (symbol 3077 . 3082) (punctuation 3076 . 3077) (punctuation 3075 . 3076) (punctuation 3074 . 3075) (symbol 3065 . 3073) (punctuation 3063 . 3064) (symbol 3062 . 3063) (punctuation 3060 . 3061) (symbol 3051 . 3060) (punctuation 3049 . 3050) (symbol 3040 . 3048) (BOOL 3035 . 3039) (punctuation 3033 . 3034) (symbol 3025 . 3033) (TYPENAME 3016 . 3024) (punctuation 3014 . 3015) (symbol 3013 . 3014) (TYPENAME 3004 . 3012) (punctuation 3002 . 3003) (TEMPLATE 2994 . 3002) (punctuation 2500 . 2501) (symbol 2301 . 2306) (punctuation 2300 . 2301) (punctuation 2299 . 2300) (punctuation 2298 . 2299) (symbol 2281 . 2297) (punctuation 2279 . 2280) (symbol 2268 . 2279) (punctuation 2266 . 2267) (symbol 2259 . 2265) (BOOL 2254 . 2258) (punctuation 2206 . 2207) (symbol 2202 . 2206) (punctuation 2201 . 2202) (punctuation 2200 . 2201) (punctuation 2199 . 2200) (symbol 2190 . 2198) (punctuation 2188 . 2189) (symbol 2170 . 2188) (TYPENAME 2161 . 2169) (punctuation 2159 . 2160) (symbol 2142 . 2158) (TYPENAME 2133 . 2141) (punctuation 2127 . 2128) (symbol 2119 . 2127) (TYPENAME 2110 . 2118) (punctuation 2104 . 2105) (symbol 2103 . 2104) (TYPENAME 2094 . 2102) (punctuation 2088 . 2089) (TEMPLATE 2080 . 2088) (punctuation 1846 . 1847) (symbol 1840 . 1845) (punctuation 1839 . 1840) (punctuation 1838 . 1839) (punctuation 1837 . 1838) (symbol 1828 . 1836) (punctuation 1826 . 1827) (symbol 1825 . 1826) (punctuation 1823 . 1824) (symbol 1808 . 1823) (punctuation 1806 . 1807) (symbol 1792 . 1805) (BOOL 1787 . 1791) (punctuation 1785 . 1786) (symbol 1777 . 1785) (TYPENAME 1768 . 1776) (punctuation 1766 . 1767) (symbol 1765 . 1766) (TYPENAME 1756 . 1764) (punctuation 1754 . 1755) (TEMPLATE 1746 . 1754) (punctuation 1470 . 1471) (symbol 1464 . 1469) (punctuation 1463 . 1464) (punctuation 1462 . 1463) (punctuation 1461 . 1462) (symbol 1452 . 1460) (punctuation 1450 . 1451) (symbol 1449 . 1450) (punctuation 1447 . 1448) (symbol 1439 . 1447) (punctuation 1437 . 1438) (symbol 1429 . 1436) (BOOL 1424 . 1428) (punctuation 1422 . 1423) (symbol 1414 . 1422) (TYPENAME 1405 . 1413) (punctuation 1403 . 1404) (symbol 1402 . 1403) (TYPENAME 1393 . 1401) (punctuation 1391 . 1392) (TEMPLATE 1383 . 1391))
+      :lexical-table 
+        '(("BOOST_NEXT_PRIOR_HPP_INCLUDED")
           )
 ))
   :file "!usr!include!boost!semantic.cache"

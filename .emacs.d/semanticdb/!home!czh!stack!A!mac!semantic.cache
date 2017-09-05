@@ -1,0 +1,102 @@
+;; Object mac/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mac/"
+  :tables
+  (list
+    (semanticdb-table "aloha.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [1 18])
+            ("hsm.h" include nil nil [19 35])
+            ("message.h" include nil nil [36 56])
+            ("module.h" include nil nil [57 76])
+            ("sap.h" include nil nil [77 93])
+            ("schedule.h" include nil nil [94 115])
+            ("tools.h" include nil nil [116 134])
+            ("CURRENT_PID" variable (:constant-flag t) nil [144 155])
+            ("MAX_TIMEOUT_COUNT" variable (:constant-flag t) nil [168 185])
+            ("BROADCAST_ADDERSS" variable (:constant-flag t) nil [196 213])
+            ("PACKET_TYPE_DATA" variable (:constant-flag t) nil [226 242])
+            ("PACKET_TYPE_ACK" variable (:constant-flag t) nil [253 268])
+            ("aloha" type (:type "namespace") nil [272 7112]))          
+      :file "aloha.cc"
+      :pointmax 7137
+      :fsize 7136
+      :lastmodtime '(22947 53588 752447 23000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CURRENT_PID" . ((number "2" 156 . 157)))
+          ("PACKET_TYPE_DATA" . ((number "0" 243 . 244)))
+          ("MAX_TIMEOUT_COUNT" . ((number "3" 186 . 187)))
+          ("PACKET_TYPE_ACK" . ((number "1" 269 . 270)))
+          ("BROADCAST_ADDERSS" . ((number "255" 214 . 217)))
+          )
+)
+    (semanticdb-table "simple_aloha.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [1 18])
+            ("hsm.h" include nil nil [19 35])
+            ("message.h" include nil nil [36 56])
+            ("module.h" include nil nil [57 76])
+            ("sap.h" include nil nil [77 93])
+            ("schedule.h" include nil nil [94 115])
+            ("client.h" include nil nil [116 135])
+            ("app_datapackage.h" include nil nil [136 164])
+            ("CURRENT_PROTOCOL" variable (:constant-flag t) nil [174 190])
+            ("MAX_TIMEOUT_COUNT" variable (:constant-flag t) nil [201 218])
+            ("BROADCAST_ADDERSS" variable (:constant-flag t) nil [229 246])
+            ("PACKET_TYPE_DATA" variable (:constant-flag t) nil [259 275])
+            ("PACKET_TYPE_ACK" variable (:constant-flag t) nil [286 301])
+            ("UIClient" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("client" type (:type "class") nil nil))
+                nil [305 329])
+            ("simple_aloha" type (:type "namespace") nil [330 3689]))          
+      :file "simple_aloha.cc"
+      :pointmax 3721
+      :fsize 3720
+      :lastmodtime '(22947 53588 752447 23000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CURRENT_PROTOCOL" . ((number "4" 191 . 192)))
+          ("PACKET_TYPE_DATA" . ((number "0" 276 . 277)))
+          ("MAX_TIMEOUT_COUNT" . ((number "3" 219 . 220)))
+          ("PACKET_TYPE_ACK" . ((number "1" 302 . 303)))
+          ("BROADCAST_ADDERSS" . ((number "255" 247 . 250)))
+          )
+)
+    (semanticdb-table "fama.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [1 18])
+            ("sap.h" include nil nil [19 35])
+            ("hsm.h" include nil nil [36 52])
+            ("module.h" include nil nil [53 72])
+            ("message.h" include nil nil [73 93])
+            ("schedule.h" include nil nil [94 115])
+            ("CURRENT_PROTOCOL" variable (:constant-flag t) nil [125 141])
+            ("MAX_TIMEOUT_COUNT" variable (:constant-flag t) nil [153 170])
+            ("BROADCAST_ADDERSS" variable (:constant-flag t) nil [182 199])
+            ("PACKET_TYPE_DATA" variable (:constant-flag t) nil [213 229])
+            ("PACKET_TYPE_RTS" variable (:constant-flag t) nil [240 255])
+            ("PACKET_TYPE_CTS" variable (:constant-flag t) nil [267 282])
+            ("fama" type (:type "namespace") nil [287 10456]))          
+      :file "fama.cc"
+      :pointmax 10480
+      :fsize 10511
+      :lastmodtime '(22947 53588 752447 23000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CURRENT_PROTOCOL" . ((number "3" 142 . 143)))
+          ("PACKET_TYPE_RTS" . ((number "1" 257 . 258)))
+          ("PACKET_TYPE_DATA" . ((number "0" 230 . 231)))
+          ("MAX_TIMEOUT_COUNT" . ((number "8" 171 . 172)))
+          ("PACKET_TYPE_CTS" . ((number "2" 284 . 285)))
+          ("BROADCAST_ADDERSS" . ((number "255" 200 . 203)))
+          )
+))
+  :file "!home!czh!stack!A!mac!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

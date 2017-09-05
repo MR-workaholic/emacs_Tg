@@ -1,0 +1,109 @@
+;; Object list/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "list/"
+  :tables
+  (list
+    (semanticdb-table "for_each_i.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_LIST_LIST_FOR_EACH_I_HPP" variable (:constant-flag t) nil [418 461])
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:system-flag t) nil [464 513])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [514 562])
+            ("boost/preprocessor/list/adt.hpp" include (:system-flag t) nil [563 606])
+            ("boost/preprocessor/repetition/for.hpp" include (:system-flag t) nil [607 656])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [657 702])
+            ("boost/preprocessor/tuple/rem.hpp" include (:system-flag t) nil [703 747])
+            ("BOOST_PP_LIST_FOR_EACH_I" variable (:constant-flag t) nil [1088 1112])
+            ("BOOST_PP_LIST_FOR_EACH_I_I" variable (:constant-flag t) nil [1190 1216])
+            ("BOOST_PP_LIST_FOR_EACH_I_P" variable (:constant-flag t) nil [1596 1622])
+            ("BOOST_PP_LIST_FOR_EACH_I_O" variable (:constant-flag t) nil [1941 1967])
+            ("BOOST_PP_LIST_FOR_EACH_I_M" variable (:constant-flag t) nil [2409 2435])
+            ("BOOST_PP_LIST_FOR_EACH_I_M_I" variable (:constant-flag t) nil [2510 2538])
+            ("BOOST_PP_LIST_FOR_EACH_I_M_D" variable (:constant-flag t) nil [2603 2631])
+            ("BOOST_PP_LIST_FOR_EACH_I_R" variable (:constant-flag t) nil [2982 3008])
+            ("BOOST_PP_LIST_FOR_EACH_I_R_I" variable (:constant-flag t) nil [3094 3122]))          
+      :file "for_each_i.hpp"
+      :pointmax 3290
+      :fsize 3289
+      :lastmodtime '(22367 50480 0 0)
+      :unmatched-syntax '((punctuation 3280 . 3281) (punctuation 2719 . 2720) (punctuation 2684 . 2685) (punctuation 2682 . 2683) (punctuation 2592 . 2593) (punctuation 2137 . 2138) (punctuation 1689 . 1690) (punctuation 1365 . 1366) (punctuation 783 . 784) (punctuation 750 . 751) (punctuation 748 . 749) (punctuation 462 . 463) (punctuation 354 . 355) (punctuation 296 . 297) (punctuation 294 . 295) (punctuation 252 . 253) (punctuation 250 . 251) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_LIST_FOR_EACH_I_I" (spp-arg-list ("macro" "data" "list") 1216 . 1235) . ((symbol "BOOST_PP_FOR" 1236 . 1248) (semantic-list "((macro, data, list, 0), BOOST_PP_LIST_FOR_EACH_I_P, BOOST_PP_LIST_FOR_EACH_I_O, BOOST_PP_LIST_FOR_EACH_I_M)" 1248 . 1356)))
+          ("BOOST_PP_LIST_FOR_EACH_I_R_I" (spp-arg-list ("r" "macro" "data" "list") 3122 . 3144) . ((spp-symbol-merge ((symbol "BOOST_PP_FOR_" 3145 . 3158) (symbol "r" 3162 . 3163)) 3145 . 3163) (semantic-list "((macro, data, list, 0), BOOST_PP_LIST_FOR_EACH_I_P, BOOST_PP_LIST_FOR_EACH_I_O, BOOST_PP_LIST_FOR_EACH_I_M)" 3163 . 3271)))
+          ("BOOST_PP_LIST_FOR_EACH_I_M_D" (spp-arg-list ("r" "m" "d" "l" "i") 2631 . 2646) . ((symbol "m" 2647 . 2648) (semantic-list "(r, d, i, BOOST_PP_LIST_FIRST(l))" 2648 . 2681)))
+          ("BOOST_PP_LIST_FOR_EACH_I_M" (spp-arg-list ("r" "x") 2435 . 2441) . ((symbol "BOOST_PP_LIST_FOR_EACH_I_M_I" 2442 . 2470) (semantic-list "(r, BOOST_PP_TUPLE_REM_4 x)" 2470 . 2497)))
+          ("BOOST_PP_LIST_FOR_EACH_I_O" (spp-arg-list ("r" "x") 1967 . 1973) . ((semantic-list "(BOOST_PP_TUPLE_ELEM(4, 0, x), BOOST_PP_TUPLE_ELEM(4, 1, x), BOOST_PP_LIST_REST(BOOST_PP_TUPLE_ELEM(4, 2, x)), BOOST_PP_INC(BOOST_PP_TUPLE_ELEM(4, 3, x)))" 1974 . 2128)))
+          ("BOOST_PP_LIST_FOR_EACH_I_P" (spp-arg-list ("r" "x") 1622 . 1628) . ((symbol "BOOST_PP_LIST_IS_CONS" 1629 . 1650) (semantic-list "(BOOST_PP_TUPLE_ELEM(4, 2, x))" 1650 . 1680)))
+          ("BOOST_PP_LIST_FOR_EACH_I_M_I" (spp-arg-list ("r" "x_e") 2538 . 2546) . ((symbol "BOOST_PP_LIST_FOR_EACH_I_M_D" 2547 . 2575) (semantic-list "(r, x_e)" 2575 . 2583)))
+          ("BOOST_PREPROCESSOR_LIST_LIST_FOR_EACH_I_HPP")
+          ("BOOST_PP_LIST_FOR_EACH_I_R" (spp-arg-list ("r" "macro" "data" "list") 3008 . 3030) . ((symbol "BOOST_PP_LIST_FOR_EACH_I_R_I" 3031 . 3059) (semantic-list "(r, macro, data, list)" 3059 . 3081)))
+          ("BOOST_PP_LIST_FOR_EACH_I" (spp-arg-list ("macro" "data" "list") 1112 . 1131) . ((symbol "BOOST_PP_LIST_FOR_EACH_I_I" 1132 . 1158) (semantic-list "(macro, data, list)" 1158 . 1177)))
+          )
+)
+    (semanticdb-table "transform.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_LIST_TRANSFORM_HPP" variable (:constant-flag t) nil [412 449])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [452 500])
+            ("boost/preprocessor/list/fold_right.hpp" include (:system-flag t) nil [501 551])
+            ("boost/preprocessor/tuple/elem.hpp" include (:system-flag t) nil [552 597])
+            ("boost/preprocessor/tuple/rem.hpp" include (:system-flag t) nil [598 642])
+            ("BOOST_PP_LIST_TRANSFORM" variable (:constant-flag t) nil [915 938])
+            ("BOOST_PP_LIST_TRANSFORM_I" variable (:constant-flag t) nil [1009 1034])
+            ("BOOST_PP_LIST_TRANSFORM_O" variable (:constant-flag t) nil [1430 1455])
+            ("BOOST_PP_LIST_TRANSFORM_O_I" variable (:constant-flag t) nil [1545 1572])
+            ("BOOST_PP_LIST_TRANSFORM_O_D" variable (:constant-flag t) nil [1646 1673])
+            ("BOOST_PP_LIST_TRANSFORM_D" variable (:constant-flag t) nil [2020 2045])
+            ("BOOST_PP_LIST_TRANSFORM_D_I" variable (:constant-flag t) nil [2124 2151]))          
+      :file "transform.hpp"
+      :pointmax 2306
+      :fsize 2305
+      :lastmodtime '(22367 50479 0 0)
+      :unmatched-syntax '((punctuation 2296 . 2297) (punctuation 1771 . 1772) (punctuation 1737 . 1738) (punctuation 1735 . 1736) (punctuation 1635 . 1636) (punctuation 1170 . 1171) (punctuation 677 . 678) (punctuation 645 . 646) (punctuation 643 . 644) (punctuation 450 . 451) (punctuation 354 . 355) (punctuation 296 . 297) (punctuation 294 . 295) (punctuation 252 . 253) (punctuation 250 . 251) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_LIST_TRANSFORM_D_I" (spp-arg-list ("d" "op" "data" "list") 2151 . 2170) . ((symbol "BOOST_PP_TUPLE_ELEM" 2171 . 2190) (semantic-list "(3, 2, BOOST_PP_LIST_FOLD_RIGHT_ ## d(BOOST_PP_LIST_TRANSFORM_O, (op, data, BOOST_PP_NIL), list))" 2190 . 2287)))
+          ("BOOST_PP_LIST_TRANSFORM" (spp-arg-list ("op" "data" "list") 938 . 954) . ((symbol "BOOST_PP_LIST_TRANSFORM_I" 955 . 980) (semantic-list "(op, data, list)" 980 . 996)))
+          ("BOOST_PP_LIST_TRANSFORM_I" (spp-arg-list ("op" "data" "list") 1034 . 1050) . ((symbol "BOOST_PP_TUPLE_ELEM" 1051 . 1070) (semantic-list "(3, 2, BOOST_PP_LIST_FOLD_RIGHT(BOOST_PP_LIST_TRANSFORM_O, (op, data, BOOST_PP_NIL), list))" 1070 . 1161)))
+          ("BOOST_PP_LIST_TRANSFORM_O_D" (spp-arg-list ("d" "op" "data" "res" "elem") 1673 . 1697) . ((semantic-list "(op, data, (op(d, data, elem), res))" 1698 . 1734)))
+          ("BOOST_PREPROCESSOR_LIST_TRANSFORM_HPP")
+          ("BOOST_PP_LIST_TRANSFORM_O_I" (spp-arg-list ("d" "im" "elem") 1572 . 1585) . ((symbol "BOOST_PP_LIST_TRANSFORM_O_D" 1586 . 1613) (semantic-list "(d, im, elem)" 1613 . 1626)))
+          ("BOOST_PP_LIST_TRANSFORM_O" (spp-arg-list ("d" "odr" "elem") 1455 . 1469) . ((symbol "BOOST_PP_LIST_TRANSFORM_O_I" 1470 . 1497) (semantic-list "(d, BOOST_PP_TUPLE_REM_3 odr, elem)" 1497 . 1532)))
+          ("BOOST_PP_LIST_TRANSFORM_D" (spp-arg-list ("d" "op" "data" "list") 2045 . 2064) . ((symbol "BOOST_PP_LIST_TRANSFORM_D_I" 2065 . 2092) (semantic-list "(d, op, data, list)" 2092 . 2111)))
+          )
+)
+    (semanticdb-table "append.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_LIST_APPEND_HPP" variable (:constant-flag t) nil [409 443])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [446 494])
+            ("boost/preprocessor/list/fold_right.hpp" include (:system-flag t) nil [495 545])
+            ("BOOST_PP_LIST_APPEND" variable (:constant-flag t) nil [746 766])
+            ("BOOST_PP_LIST_APPEND_I" variable (:constant-flag t) nil [814 836])
+            ("BOOST_PP_LIST_APPEND_O" variable (:constant-flag t) nil [917 939])
+            ("BOOST_PP_LIST_APPEND_D" variable (:constant-flag t) nil [1169 1191])
+            ("BOOST_PP_LIST_APPEND_D_I" variable (:constant-flag t) nil [1247 1271]))          
+      :file "append.hpp"
+      :pointmax 1360
+      :fsize 1359
+      :lastmodtime '(22367 50479 0 0)
+      :unmatched-syntax '((punctuation 1350 . 1351) (punctuation 989 . 990) (punctuation 958 . 959) (punctuation 956 . 957) (punctuation 906 . 907) (punctuation 577 . 578) (punctuation 548 . 549) (punctuation 546 . 547) (punctuation 444 . 445) (punctuation 354 . 355) (punctuation 296 . 297) (punctuation 294 . 295) (punctuation 252 . 253) (punctuation 250 . 251) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_LIST_APPEND_D_I" (spp-arg-list ("d" "a" "b") 1271 . 1280) . ((spp-symbol-merge ((symbol "BOOST_PP_LIST_FOLD_RIGHT_" 1281 . 1306) (symbol "d" 1310 . 1311)) 1281 . 1311) (semantic-list "(BOOST_PP_LIST_APPEND_O, b, a)" 1311 . 1341)))
+          ("BOOST_PP_LIST_APPEND" (spp-arg-list ("a" "b") 766 . 772) . ((symbol "BOOST_PP_LIST_APPEND_I" 773 . 795) (semantic-list "(a, b)" 795 . 801)))
+          ("BOOST_PP_LIST_APPEND_O" (spp-arg-list ("d" "s" "x") 939 . 948) . ((semantic-list "(x, s)" 949 . 955)))
+          ("BOOST_PP_LIST_APPEND_D" (spp-arg-list ("d" "a" "b") 1191 . 1200) . ((symbol "BOOST_PP_LIST_APPEND_D_I" 1201 . 1225) (semantic-list "(d, a, b)" 1225 . 1234)))
+          ("BOOST_PREPROCESSOR_LIST_APPEND_HPP")
+          ("BOOST_PP_LIST_APPEND_I" (spp-arg-list ("a" "b") 836 . 842) . ((symbol "BOOST_PP_LIST_FOLD_RIGHT" 843 . 867) (semantic-list "(BOOST_PP_LIST_APPEND_O, b, a)" 867 . 897)))
+          )
+)
+    (semanticdb-table "adt.hpp"
+      :file "adt.hpp"
+      :fsize 2171
+      :lastmodtime '(22367 50480 0 0))
+    (semanticdb-table "fold_right.hpp"
+      :file "fold_right.hpp"
+      :fsize 1326
+      :lastmodtime '(22367 50480 0 0)))
+  :file "!usr!include!boost!preprocessor!list!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

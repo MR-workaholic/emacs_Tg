@@ -1562,8 +1562,7 @@
       :unmatched-syntax '((symbol 5814 . 5826) (punctuation 1750 . 1751) (semantic-list 1683 . 1750) (punctuation 1681 . 1682) (semantic-list 1678 . 1681) (CHAR 1674 . 1678) (CONST 1668 . 1673) (punctuation 1667 . 1668) (symbol 1660 . 1667) (STRUCT 1653 . 1659) (punctuation 1651 . 1652) (symbol 1650 . 1651) (symbol 1643 . 1649) (punctuation 1642 . 1643) (punctuation 1641 . 1642) (symbol 1638 . 1641) (punctuation 1637 . 1638) (TEMPLATE 1628 . 1636) (punctuation 1595 . 1596) (symbol 343 . 347) (symbol 336 . 342) (punctuation 335 . 336) (semantic-list 196 . 283))
       :lexical-table 
         '(("NODE_CONVERT_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
-          ("type"nil ;; bogus macro found.
-)
+          ("type" . (nil))
           ("negative_op")
           )
 )
@@ -1825,13 +1824,133 @@
           )
 )
     (semanticdb-table "ptr.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VALUE_PTR_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [66 114])
+            ("yaml-cpp/dll.h" include nil nil [350 375])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [376 407])
+            ("YAML" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("node" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [445 456])
+                            ("node_ref" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [457 472])
+                            ("node_data" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [473 489])
+                            ("memory" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [490 503])
+                            ("memory_holder" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [504 524])
+                            ("shared_node" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("node" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [526 570])
+                            ("shared_node_ref" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("node_ref" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [571 623])
+                            ("shared_node_data" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("node_data" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [624 678])
+                            ("shared_memory_holder" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("memory_holder" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [679 741])
+                            ("shared_memory" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("memory" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [742 790]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [426 792]))                  
+                :type "namespace")
+                nil [409 794]))          
       :file "ptr.h"
+      :pointmax 856
       :fsize 855
-      :lastmodtime '(21784 46492 0 0))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 337 . 341) (symbol 330 . 336) (punctuation 329 . 330) (semantic-list 190 . 277))
+      :lexical-table 
+        '(("VALUE_PTR_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+)
     (semanticdb-table "type.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VALUE_TYPE_H_62B23520_7C8E_11DE_8A39_0800200C9A66" variable (:constant-flag t) nil [67 116])
+            ("YAML" type
+               (:members 
+                  ( ("NodeType" type
+                       (:members 
+                          ( ("value" type
+                               (:members 
+                                  ( ("Undefined" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [402 412])
+                                    ("Null" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [413 418])
+                                    ("Scalar" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [419 426])
+                                    ("Sequence" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [427 436])
+                                    ("Map" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [437 442]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [389 443]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [369 446]))                  
+                :type "namespace")
+                nil [352 448]))          
       :file "type.h"
+      :pointmax 511
       :fsize 510
-      :lastmodtime '(21784 46492 0 0)))
+      :lastmodtime '(21784 46492 0 0)
+      :unmatched-syntax '((symbol 339 . 343) (symbol 332 . 338) (punctuation 331 . 332) (semantic-list 192 . 279))
+      :lexical-table 
+        '(("VALUE_TYPE_H_62B23520_7C8E_11DE_8A39_0800200C9A66")
+          )
+))
   :file "!usr!include!yaml-cpp!node!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

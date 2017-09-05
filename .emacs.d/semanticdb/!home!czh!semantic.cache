@@ -7,9 +7,9 @@
       :major-mode 'c++-mode
       :tags nil
       :file ".emacs"
-      :pointmax 16637
-      :fsize 18028
-      :lastmodtime '(22802 35642 732531 414000)
+      :pointmax 16639
+      :fsize 18030
+      :lastmodtime '(22803 10467 557169 390000)
       :unmatched-syntax nil))
   :file "!home!czh!semantic.cache"
   :semantic-tag-version "2.0"

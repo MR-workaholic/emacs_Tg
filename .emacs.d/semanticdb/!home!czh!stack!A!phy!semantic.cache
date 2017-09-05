@@ -1,0 +1,558 @@
+;; Object phy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "phy/"
+  :tables
+  (list
+    (semanticdb-table "clisocket_sim.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("netdb.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("sys/socket.h" include (:system-flag t) nil [40 63])
+            ("sys/types.h" include (:system-flag t) nil [64 86])
+            ("unistd.h" include (:system-flag t) nil [87 106])
+            ("driver.h" include nil nil [108 127])
+            ("schedule.h" include nil nil [128 149])
+            ("clientsocket.h" include nil nil [150 175])
+            ("boost/regex.hpp" include (:system-flag t) nil [177 203])
+            ("cassert" include (:system-flag t) nil [204 222])
+            ("string" include (:system-flag t) nil [223 240])
+            ("cstring" include (:system-flag t) nil [241 259])
+            ("string" include (:system-flag t) nil [260 277])
+            ("dap.h" include nil nil [278 294])
+            ("driver.h" include nil nil [295 314])
+            ("hsm.h" include nil nil [337 353])
+            ("message.h" include nil nil [354 374])
+            ("packet.h" include nil nil [375 394])
+            ("schedule.h" include nil nil [395 416])
+            ("stdlib.h" include (:system-flag t) nil [417 436])
+            ("client.h" include nil nil [437 456])
+            ("app_datapackage.h" include nil nil [457 485])
+            ("CURRENT_PID" variable (:constant-flag t) nil [495 506])
+            ("PER_MSG_SIZE" variable (:constant-flag t) nil [517 529])
+            ("UIClient" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("client" type (:type "class") nil nil))
+                nil [536 560])
+            ("clisocket_sim" type (:type "namespace") nil [562 16678]))          
+      :file "clisocket_sim.cc"
+      :pointmax 16679
+      :fsize 17046
+      :lastmodtime '(22953 29861 804942 632000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CURRENT_PID" . ((number "4" 507 . 508)))
+          ("PER_MSG_SIZE" . ((number "1032" 530 . 534)))
+          )
+)
+    (semanticdb-table "aquasent.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("boost/regex.hpp" include (:system-flag t) nil [1 27])
+            ("cassert" include (:system-flag t) nil [28 46])
+            ("string" include (:system-flag t) nil [47 64])
+            ("cstring" include (:system-flag t) nil [65 83])
+            ("string" include (:system-flag t) nil [84 101])
+            ("dap.h" include nil nil [102 118])
+            ("driver.h" include nil nil [119 138])
+            ("event.h" include nil nil [139 157])
+            ("hsm.h" include nil nil [158 174])
+            ("message.h" include nil nil [175 195])
+            ("packet.h" include nil nil [196 215])
+            ("schedule.h" include nil nil [216 237])
+            ("serial.h" include nil nil [238 257])
+            ("CURRENT_PID" variable (:constant-flag t) nil [267 278])
+            ("aquasent" type (:type "namespace") nil [282 16661]))          
+      :file "aquasent.cc"
+      :pointmax 16689
+      :fsize 16700
+      :lastmodtime '(22951 61453 534705 351000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MODEM_ERROR" (spp-arg-list ("XX") 750 . 754) . ((symbol "XX" 755 . 757) (semantic-list "(MMERR, \"\\\\$MMERR,([0-9]+)\")" 757 . 785)))
+          ("CURRENT_PID" . ((number "2" 279 . 280)))
+          ("MODEM_DATA" (spp-arg-list ("XX") 830 . 834) . 
+              ((symbol "XX" 897 . 899) (semantic-list "(MMRXA, \"\\\\$MMRXA,([0-9]+),([0-9]+),(.*)\")" 899 . 941) (symbol "XX" 978 . 980) (semantic-list "(MMRXD, \"\\\\$MMRXD,([0-9]+),([0-9]+),(.*)\")" 980 . 1022)))
+          ("MODEM_TDN" (spp-arg-list ("XX") 1041 . 1045) . ((symbol "XX" 1046 . 1048) (semantic-list "(MMTDN, \"\\\\$MMTDN,([0-9]+),([0-9]+)\")" 1048 . 1085)))
+          ("COMMAND_RESPONSE" (spp-arg-list ("XX") 1381 . 1385) . 
+              ((symbol "XX" 1448 . 1450) (semantic-list "(CMD_HHCTD,         \"$HHCTD\\r\\n\",            \"\\\\$MMOKY,HHCTD\")" 1450 . 1512) (symbol "XX" 1535 . 1537) (semantic-list "(CMD_ESCAPE,        \"%s\\r\\n\",                \"\\\\$MMOKY\")" 1537 . 1593) (symbol "XX" 1622 . 1624) (semantic-list "(CMD_HHCRR_MID,     \"$HHCRR,MID\\r\\n\",        \"\\\\$MMOKY,HHCRR,MID,([0-9]+)\")" 1624 . 1699) (symbol "XX" 1709 . 1711) (semantic-list "(CMD_HHCRR_BD,      \"$HHCRR,BD\\r\\n\",         \"\\\\$MMOKY,HHCRR,BD,([0-9]+)\")" 1711 . 1785) (symbol "XX" 1796 . 1798) (semantic-list "(CMD_HHCRR_ECHO,    \"$HHCRR,ECHO\\r\\n\",       \"\\\\$MMOKY,HHCRR,ECHO,([0-9])\")" 1798 . 1873) (symbol "XX" 1883 . 1885) (semantic-list "(CMD_HHCRR_MMCHK,   \"$HHCRR,MMCHK\\r\\n\",      \"\\\\$MMOKY,HHCRR,MMCHK,([0-9])\")" 1885 . 1961) (symbol "XX" 1970 . 1972) (semantic-list "(CMD_HHCRR_PGAP,    \"$HHCRR,PGAP\\r\\n\",       \"\\\\$MMOKY,HHCRR,PGAP,([0-9]+)\")" 1972 . 2048) (symbol "XX" 2057 . 2059) (semantic-list "(CMD_HHCRR_ESC,     \"$HHCRR,ESC\\r\\n\",        \"\\\\$MMOKY,HHCRR,ESC,(.+)\")" 2059 . 2130) (symbol "XX" 2144 . 2146) (semantic-list "(CMD_HHCRR_RXFMT,   \"$HHCRR,RXFMT\\r\\n\",      \"\\\\$MMOKY,HHCRR,RXFMT,([0-9])\")" 2146 . 2222) (symbol "XX" 2231 . 2233) (semantic-list "(CMD_HHCRR_TXDONE,  \"$HHCRR,TXDONE\\r\\n\",     \"\\\\$MMOKY,HHCRR,TXDONE,([0-9])\")" 2233 . 2310) (symbol "XX" 2318 . 2320) (semantic-list "(CMD_HHCRR_UIMODE,  \"$HHCRR,UIMODE\\r\\n\",     \"\\\\$MMOKY,HHCRR,UIMODE,([A-Z]+)\")" 2320 . 2398) (symbol "XX" 2405 . 2407) (semantic-list "(CMD_HHCRR_CMDTERM, \"$HHCRR,CMDTERM\\r\\n\",    \"\\\\$MMOKY,HHCRR,CMDTERM,(.*)\")" 2407 . 2482) (symbol "XX" 2492 . 2494) (semantic-list "(CMD_HHCRR_DEBUG_R, \"$HHCRR,DEBUG,R\\r\\n\",    \"\\\\$MMOKY,HHCRR,DEBUG,(.*)\")" 2494 . 2567) (symbol "XX" 2579 . 2581) (semantic-list "(CMD_HHCRR_DEBUG_T, \"$HHCRR,DEBUG,T\\r\\n\",    \"\\\\$MMOKY,HHCRR,DEBUG,(.*)\")" 2581 . 2654) (symbol "XX" 2666 . 2668) (semantic-list "(CMD_HHCRR_ERRPKT,  \"$HHCRR,ERRPKT\\r\\n\",     \"\\\\$MMOKY,HHCRR,ERRPKT,([0-9]+)\")" 2668 . 2746) (symbol "XX" 2753 . 2755) (semantic-list "(CMD_HHCRR_RTC,     \"$HHCRR,RTC\\r\\n\",        \"\\\\$MMOKY,HHCRR,RTC,(.*)\")" 2755 . 2826) (symbol "XX" 2840 . 2842) (semantic-list "(CMD_HHCRR_GDT,     \"$HHCRR,GDT\\r\\n\",        \"\\\\$MMOKY,HHCRR,GDT,([0-9]+)\")" 2842 . 2917) (symbol "XX" 2927 . 2929) (semantic-list "(CMD_HHCRR_NUMCHL,  \"$HHCRR,NUMCHL\\r\\n\",     \"\\\\$MMOKY,HHCRR,NUMCHL,([0-9]+)\")" 2929 . 3007) (symbol "XX" 3014 . 3016) (semantic-list "(CMD_HHCRR_RXGAIN,  \"$HHCRR,RXGAIN\\r\\n\",     \"\\\\$MMOKY,HHCRR,RXGAIN,([0-9]+)\")" 3016 . 3094) (symbol "XX" 3101 . 3103) (semantic-list "(CMD_HHCRR_TXPWR,   \"$HHCRR,TXPWR\\r\\n\",      \"\\\\$MMOKY,HHCRR,TXPWR,([-0-9]+)\")" 3103 . 3181) (symbol "XX" 3188 . 3190) (semantic-list "(CMD_HHCRR_RXFLG,   \"$HHCRR,RXFLG\\r\\n\",      \"\\\\$MMOKY,HHCRR,RXFLG,(*)\")" 3190 . 3262) (symbol "XX" 3275 . 3277) (semantic-list "(CMD_HHCRR_TXDST,   \"$HHCRR,TXDST\\r\\n\",      \"\\\\$MMOKY,HHCRR,TXDST,([0-9]+)\")" 3277 . 3354) (symbol "XX" 3362 . 3364) (semantic-list "(CMD_HHCRR_TXMODE,  \"$HHCRR,TXMODE\\r\\n\",     \"\\\\$MMOKY,HHCRR,TXMODE,([0-9]+)\")" 3364 . 3442) (symbol "XX" 3449 . 3451) (semantic-list "(CMD_HHCRR_TXTYPE,  \"$HHCRR,TXTYPE\\r\\n\",     \"\\\\$MMOKY,HHCRR,TXTYPE,([0-9]+)\")" 3451 . 3529) (symbol "XX" 3536 . 3538) (semantic-list "(CMD_HHCRR_BIV_C5,  \"$HHCRR,BIV,C5\\r\\n\",     \"\\\\$MMOKY,HHCRR,BIV,C5,(.*)\")" 3538 . 3612) (symbol "XX" 3623 . 3625) (semantic-list "(CMD_HHCRR_BIV_C7,  \"$HHCRR,BIV,C7\\r\\n\",     \"\\\\$MMOKY,HHCRR,BIV,C7,(.*)\")" 3625 . 3699) (symbol "XX" 3710 . 3712) (semantic-list "(CMD_HHCRR_LSMODE,  \"$HHCRR,LSMODE\\r\\n\",     \"\\\\$MMOKY,HHCRR,LSMODE,([0-9])\")" 3712 . 3789) (symbol "XX" 3797 . 3799) (semantic-list "(CMD_HHCRR_TSTDB,   \"$HHCRR,TSTDB\\r\\n\",      \"\\\\$MMOKY,HHCRR,TSTDB,([0-9]+)\")" 3799 . 3876) (symbol "XX" 3884 . 3886) (semantic-list "(CMD_HHCRW_MID,     \"$HHCRW,MID,%d\\r\\n\",     \"\\\\$MMOKY,HHCRW,MID\")" 3886 . 3952) (symbol "XX" 3971 . 3973) (semantic-list "(CMD_HHCRW_BD,      \"$HHCRW,BD,%d\\r\\n\",      \"\\\\$MMOKY,HHCRW,BD\")" 3973 . 4038) (symbol "XX" 4058 . 4060) (semantic-list "(CMD_HHCRW_ECHO,    \"$HHCRW,ECHO,%d\\r\\n\",    \"\\\\$MMOKY,HHCRW,ECHO\")" 4060 . 4127) (symbol "XX" 4145 . 4147) (semantic-list "(CMD_HHCRW_MMCHK,   \"$HHCRW,MMCHK,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,MMCHK\")" 4147 . 4215) (symbol "XX" 4232 . 4234) (semantic-list "(CMD_HHCRW_PGAP,    \"$HHCRW,PGAP,%d\\r\\n\",    \"\\\\$MMOKY,HHCRW,PGAP\")" 4234 . 4301) (symbol "XX" 4319 . 4321) (semantic-list "(CMD_HHCRW_ESC,     \"$HHCRW,ESC,%s\\r\\n\",     \"\\\\$MMOKY,HHCRW,ESC\")" 4321 . 4387) (symbol "XX" 4406 . 4408) (semantic-list "(CMD_HHCRW_RXFMT,   \"$HHCRW,RXFMT,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,RXFMT\")" 4408 . 4476) (symbol "XX" 4493 . 4495) (semantic-list "(CMD_HHCRW_TXDONE,  \"$HHCRW,TXDONE,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,TXDONE\")" 4495 . 4564) (symbol "XX" 4580 . 4582) (semantic-list "(CMD_HHCRW_UIMODE,  \"$HHCRW,UIMODE,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,UIMODE\")" 4582 . 4651) (symbol "XX" 4667 . 4669) (semantic-list "(CMD_HHCRW_CMDTERM, \"$HHCRW,CMDTERM,%s\\r\\n\", \"\\\\$MMOKY,HHCRW,CMDTERM\")" 4669 . 4739) (symbol "XX" 4754 . 4756) (semantic-list "(CMD_HHCRW_DEBUG_R, \"$HHCRW,DEBUG,R,%d\\r\\n\", \"\\\\$MMOKY,HHCRW,DEBUG\")" 4756 . 4824) (symbol "XX" 4841 . 4843) (semantic-list "(CMD_HHCRW_DEBUG_T, \"$HHCRW,DEBUG,T,%d\\r\\n\", \"\\\\$MMOKY,HHCRW,DEBUG\")" 4843 . 4911) (symbol "XX" 4928 . 4930) (semantic-list "(CMD_HHCRW_RTC,     \"$HHCRW,RTC,%s\\r\\n\",     \"\\\\$MMOKY,HHCRW,RTC\")" 4930 . 4996) (symbol "XX" 5015 . 5017) (semantic-list "(CMD_HHCRW_GDT,     \"$HHCRW,GDT,%d\\r\\n\",     \"\\\\$MMOKY,HHCRW,GDT\")" 5017 . 5083) (symbol "XX" 5102 . 5104) (semantic-list "(CMD_HHCRW_RXGAIN,  \"$HHCRW,RXGAIN,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,RXGAIN\")" 5104 . 5173) (symbol "XX" 5189 . 5191) (semantic-list "(CMD_HHCRW_TXPWR,   \"$HHCRW,TXPWR,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,TXPWR\")" 5191 . 5259) (symbol "XX" 5276 . 5278) (semantic-list "(CMD_HHCRW_RXFLG,   \"$HHCRW,RXFLG,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,RXFLG\")" 5278 . 5346) (symbol "XX" 5363 . 5365) (semantic-list "(CMD_HHCRW_TXDST,   \"$HHCRW,TXDST,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,TXDST\")" 5365 . 5433) (symbol "XX" 5450 . 5452) (semantic-list "(CMD_HHCRW_TXMODE,  \"$HHCRW,TXMODE,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,TXMODE\")" 5452 . 5521) (symbol "XX" 5537 . 5539) (semantic-list "(CMD_HHCRW_TXTYPE,  \"$HHCRW,TXTYPE,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,TXTYPE\")" 5539 . 5608) (symbol "XX" 5624 . 5626) (semantic-list "(CMD_HHCRW_LSMODE,  \"$HHCRW,LSMODE,%d\\r\\n\",  \"\\\\$MMOKY,HHCRW,LSMODE\")" 5626 . 5695) (symbol "XX" 5711 . 5713) (semantic-list "(CMD_HHCRW_TSTDB,   \"$HHCRW,TSTDB,%d\\r\\n\",   \"\\\\$MMOKY,HHCRW,TSTDB\")" 5713 . 5781) (symbol "XX" 5798 . 5800) (semantic-list "(CMD_HHCRW_FXN,     \"$HHCRW,FXN,%s\\r\\n\",     \"\\\\$MMOKY,HHCRW,FXN\")" 5800 . 5866)))
+          ("hex_to_num" (spp-arg-list ("c") 6232 . 6235) . ((semantic-list "((unsigned char)(c >= 'A' ? c - 'A' + 10 : c - '0'))" 6236 . 6288)))
+          ("SENDDATA_COMMAND" (spp-arg-list ("XX") 1111 . 1115) . 
+              ((symbol "XX" 1172 . 1174) (semantic-list "(CMD_HHTXD, \"$HHTXD,%d,%d,%d,%s\\r\\n\", \"\\\\$MMOKY,HHTXD,([0-9]+)\")" 1174 . 1238) (symbol "XX" 1253 . 1255) (semantic-list "(CMD_HHTXA, \"$HHTXA,%d,%d,%d,%s\\r\\n\", \"\\\\$MMOKY,HHTXA,([0-9]+)\")" 1255 . 1319)))
+          )
+)
+    (semanticdb-table "simulate.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("netdb.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("sys/socket.h" include (:system-flag t) nil [40 63])
+            ("sys/types.h" include (:system-flag t) nil [64 86])
+            ("unistd.h" include (:system-flag t) nil [87 106])
+            ("string" include (:system-flag t) nil [107 124])
+            ("memory" include (:system-flag t) nil [125 142])
+            ("driver.h" include nil nil [143 162])
+            ("schedule.h" include nil nil [163 184])
+            ("clientsocket.h" include nil nil [185 210])
+            ("CURRENT_PROTOCOL" variable (:constant-flag t) nil [220 236])
+            ("std::string" using (:type ("std::string" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [239 257])
+            ("std::weak_ptr" using (:type ("std::weak_ptr" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [258 278])
+            ("sim_channel" type
+               (:members 
+                  ( ("msg::MsgSendDataReq" using (:type ("msg::MsgSendDataReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [349 375])
+                    ("msg::MsgSendAckReq" using (:type ("msg::MsgSendAckReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [376 401])
+                    ("msg::MsgSendDataRsp" using (:type ("msg::MsgSendDataRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [402 428])
+                    ("msg::MsgSendAckRsp" using (:type ("msg::MsgSendAckRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [429 454])
+                    ("msg::MsgRecvDataNtf" using (:type ("msg::MsgRecvDataNtf" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [455 481])
+                    ("msg::MsgTimeOut" using (:type ("msg::MsgTimeOut" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [482 504])
+                    ("msg::MsgPosReq" using (:type ("msg::MsgPosReq" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [505 526])
+                    ("msg::MsgPosRsp" using (:type ("msg::MsgPosRsp" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [527 548])
+                    ("pkt::Packet" using (:type ("pkt::Packet" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [550 568])
+                    ("msg::Position" using (:type ("msg::Position" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [569 589])
+                    ("PacketType" type
+                       (:members 
+                          ( ("PACKET_TYPE_DATA" variable
+                               (:constant-flag t
+                                :default-value (632 633)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [613 633])
+                            ("PACKET_TYPE_POSITION_REQ" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [639 664])
+                            ("PACKET_TYPE_POSITION_RSP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [669 694])
+                            ("PACKET_TYPE_ENERGY_REQ" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [699 722])
+                            ("PACKET_TYPE_ENERGY_RSP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [727 750])
+                            ("PACKET_TYPE_STATE_REQ" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [755 777])
+                            ("PACKET_TYPE_STATE_RSP" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [782 804]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [591 807])
+                    ("DataOrAck" type
+                       (:typedef ("" type
+                             (:members 
+                                ( ("Data" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [827 832])
+                                  ("Ack" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [837 842]))                                
+                              :type "enum")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [809 852])
+                    ("Top" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [856 867])
+                    ("Idle" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [868 880])
+                    ("WaitRsp" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [881 896])
+                    ("SimulateChannelHeader" type
+                       (:members 
+                          ( ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [933 946]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [898 949])
+                    ("SimulateChannel" type
+                       (:superclasses 
+                          ( ("drv::Driver" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1042 1049])
+                            ("SimulateChannel" function
+                               (:constructor-flag t
+                                :type ("SimulateChannel" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1054 1098])
+                            ("Init" function (:type "void") (reparse-symbol classsubparts) [1103 1589])
+                            ("SendDown" function
+                               (:template 
+                                  ( ("ReqType" type (:type "class") nil nil)
+                                    ("RspType" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("ReqType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1767 1788]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [1704 1789])
+                            ("SendPosReq" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1795 1813])
+                            ("RespondPosReq" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgPosReq" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1837 1860]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1818 1861])
+                            ("SendUp" function
+                               (:arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("MsgRecvDataNtf" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1879 1910]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1867 1964])
+                            ("HandleDataNtf" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("IOData" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1989 2009]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1970 2010])
+                            ("HandlePosRsp" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Ptr" type
+                                             (:template-specifier 
+                                                ( ("IOData" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2033 2053]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2015 2054])
+                            ("Notify" function (:type "void") (reparse-symbol classsubparts) [2060 2590])
+                            ("GetChannel" function
+                               (:typemodifiers ("inline")
+                                :type ("ClientSocketPtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2596 2846])
+                            ("GetFd" function
+                               (:typemodifiers ("inline")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2852 3037])
+                            ("IsConnected" function
+                               (:typemodifiers ("inline")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3043 3173])
+                            ("Write" function
+                               (:typemodifiers ("inline")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3179 3331])
+                            ("private" label nil (reparse-symbol classsubparts) [3333 3341])
+                            ("position_" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3346 3365])
+                            ("has_req_for_pos_" variable (:type "bool") (reparse-symbol classsubparts) [3370 3392])
+                            ("channelWPtr_" variable (:type ("weak_ptr" type
+                                 (:template-specifier 
+                                    ( ("ClientSocket" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3427 3463]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [951 3467])
+                    ("Top" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil)
+                                          ("MsgRecvDataNtf" type nil nil nil)
+                                          ("MsgPosReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3529 3601])
+                            ("HSM_DEFER" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3617 3632]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3607 3633])
+                            ("HSM_WORK" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgRecvDataNtf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3647 3662])
+                                    ("" variable (:type ("SimulateChannel::SendUp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3664 3688]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3638 3689])
+                            ("HSM_WORK" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgPosReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3703 3713])
+                                    ("" variable (:type ("SimulateChannel::RespondPosReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3715 3746]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3694 3747]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3469 3750])
+                    ("Idle" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("reactions" type
+                               (:typedef ("hsm_vector" type
+                                     (:template-specifier 
+                                        ( ("MsgSendDataReq" type nil nil nil)
+                                          ("MsgSendAckReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3794 3854])
+                            ("HSM_WORK" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendDataReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3869 3884]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3860 3947])
+                            ("HSM_WORK" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("MsgSendAckReq" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3961 3975]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [3952 4036]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3752 4260])
+                    ("Busy" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4262 4302])
+                    ("Tx" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4304 4340])
+                    ("Rx" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4341 4377])
+                    ("Sleep" type
+                       (:superclasses 
+                          ( ("hsm::State" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [4378 4417])
+                    ("SendDown" function
+                       (:template 
+                          ( ("ReqType" type (:type "class") nil nil)
+                            ("RspType" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("req" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("ReqType" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4496 4520]))                          
+                        :parent "SimulateChannel")
+                        (reparse-symbol namespacesubparts) [4420 5097])
+                    ("RespondPosReq" function
+                       (:parent "SimulateChannel"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("MsgPosReq" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5136 5159]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5100 5555])
+                    ("SendPosReq" function
+                       (:parent "SimulateChannel"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5557 5945])
+                    ("HandleDataNtf" function
+                       (:parent "SimulateChannel"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("IOData" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5983 6007]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5947 6286])
+                    ("HandlePosRsp" function
+                       (:parent "SimulateChannel"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("IOData" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6323 6347]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6288 6888]))                  
+                :type "namespace")
+                nil [280 6966]))          
+      :file "simulate.cc"
+      :pointmax 6967
+      :fsize 7052
+      :lastmodtime '(22953 28760 428397 532000)
+      :unmatched-syntax nil)
+    (semanticdb-table "qpskclient.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [1 18])
+            ("queue" include (:system-flag t) nil [19 35])
+            ("stdint.h" include (:system-flag t) nil [36 55])
+            ("math.h" include (:system-flag t) nil [56 73])
+            ("driver.h" include nil nil [74 93])
+            ("schedule.h" include nil nil [94 115])
+            ("clientsocket.h" include nil nil [116 141])
+            ("hsm.h" include nil nil [142 158])
+            ("message.h" include nil nil [159 179])
+            ("packet.h" include nil nil [180 199])
+            ("CURRENT_PID" variable (:constant-flag t) nil [211 222])
+            ("qpskclient" type (:type "namespace") nil [226 16182]))          
+      :file "qpskclient.cc"
+      :pointmax 16183
+      :fsize 16674
+      :lastmodtime '(22955 30683 65719 781000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CURRENT_PID" . ((number "8" 223 . 224)))
+          )
+)
+    (semanticdb-table "fskclient.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("driver.h" include nil nil [1 20])
+            ("schedule.h" include nil nil [21 42])
+            ("clientsocket.h" include nil nil [43 68])
+            ("hsm.h" include nil nil [69 85])
+            ("message.h" include nil nil [86 106])
+            ("packet.h" include nil nil [107 126])
+            ("stdlib.h" include (:system-flag t) nil [127 146])
+            ("string" include (:system-flag t) nil [147 164])
+            ("client.h" include nil nil [166 185])
+            ("app_datapackage.h" include nil nil [186 214])
+            ("CURRENT_PID" variable (:constant-flag t) nil [224 235])
+            ("PER_MSG_SIZE" variable (:constant-flag t) nil [247 259])
+            ("UIClient" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("client" type (:type "class") nil nil))
+                nil [266 290])
+            ("fskclient" type (:type "namespace") nil [292 14729]))          
+      :file "fskclient.cc"
+      :pointmax 14730
+      :fsize 15085
+      :lastmodtime '(22955 50641 324531 922000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CURRENT_PID" . ((number "16" 236 . 238)))
+          ("PER_MSG_SIZE" . ((number "1032" 260 . 264)))
+          )
+))
+  :file "!home!czh!stack!A!phy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

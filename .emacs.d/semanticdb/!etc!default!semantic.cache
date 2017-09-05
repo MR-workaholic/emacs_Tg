@@ -1,0 +1,16 @@
+;; Object default/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "default/"
+  :tables
+  (list
+    (semanticdb-table "rcS"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "rcS"
+      :pointmax 621
+      :fsize 620
+      :lastmodtime '(22450 49710 721051 305000)
+      :unmatched-syntax '((symbol 618 . 620) (punctuation 617 . 618) (symbol 610 . 617) (punctuation 609 . 610) (symbol 604 . 608) (symbol 597 . 603) (symbol 581 . 596) (symbol 576 . 580) (symbol 564 . 575) (symbol 557 . 563) (symbol 543 . 556) (punctuation 541 . 542) (symbol 537 . 539) (punctuation 536 . 537) (symbol 529 . 536) (punctuation 528 . 529) (symbol 520 . 527) (symbol 515 . 519) (symbol 511 . 514) (symbol 504 . 510) (symbol 496 . 503) (symbol 491 . 495) (symbol 488 . 490) (punctuation 486 . 487) (symbol 482 . 484) (punctuation 481 . 482) (symbol 471 . 481) (punctuation 470 . 471) (symbol 460 . 469) (symbol 456 . 459) (symbol 451 . 455) (symbol 447 . 450) (symbol 441 . 446) (symbol 438 . 440) (symbol 434 . 437) (symbol 431 . 433) (symbol 425 . 430) (symbol 419 . 424) (symbol 415 . 418) (DO 412 . 414) (punctuation 410 . 411) (symbol 406 . 408) (punctuation 405 . 406) (symbol 398 . 405) (punctuation 397 . 398) (symbol 389 . 396) (number 386 . 388) (symbol 383 . 385) (symbol 378 . 382) (symbol 374 . 377) (IF 371 . 373) (symbol 366 . 370) (symbol 359 . 365) (CONTINUE 350 . 358) (punctuation 348 . 349) (symbol 344 . 348) (symbol 337 . 343) (symbol 329 . 336) (symbol 323 . 328) (punctuation 321 . 322) (number 318 . 319) (punctuation 317 . 318) (symbol 310 . 317) (punctuation 309 . 310) (symbol 301 . 308) (symbol 297 . 300) (symbol 288 . 296) (string 277 . 287) (symbol 274 . 276) (number 272 . 273) (punctuation 271 . 272) (punctuation 269 . 270) (symbol 263 . 269) (symbol 257 . 262) (string 253 . 256) (punctuation 251 . 252) (punctuation 249 . 250) (symbol 245 . 249) (symbol 243 . 244) (symbol 238 . 242) (symbol 232 . 237) (symbol 227 . 231) (symbol 220 . 226) (symbol 216 . 219) (punctuation 215 . 216) (symbol 212 . 214) (symbol 206 . 211) (DELETE 199 . 205) (punctuation 197 . 198) (punctuation 194 . 195) (symbol 187 . 194) (string 173 . 186) (symbol 169 . 172) (symbol 166 . 168) (symbol 158 . 165) (symbol 153 . 157) (symbol 148 . 152) (punctuation 146 . 147) (punctuation 144 . 145) (punctuation 142 . 143) (symbol 138 . 142) (symbol 131 . 137) (semantic-list 127 . 130) (symbol 124 . 127) (number 128 . 129) (symbol 120 . 123) (number 128 . 129) (symbol 116 . 119) (symbol 106 . 115) (symbol 100 . 105) (symbol 94 . 99) (symbol 82 . 93) (symbol 78 . 81) (punctuation 76 . 77) (punctuation 74 . 75) (punctuation 72 . 73) (symbol 71 . 72) (punctuation 70 . 71) (symbol 67 . 70) (punctuation 66 . 67) (symbol 63 . 66) (punctuation 62 . 63) (symbol 59 . 61) (symbol 51 . 58) (symbol 47 . 50) (FOR 43 . 46) (symbol 34 . 42) (symbol 26 . 33) (punctuation 24 . 25) (punctuation 22 . 23) (symbol 18 . 21) (punctuation 17 . 18) (DEFAULT 10 . 17) (punctuation 9 . 10) (symbol 6 . 9) (punctuation 5 . 6) (punctuation 3 . 4) (punctuation 1 . 2))))
+  :file "!etc!default!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

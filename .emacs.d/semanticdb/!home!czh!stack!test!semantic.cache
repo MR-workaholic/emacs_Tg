@@ -1,0 +1,91 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables
+  (list
+    (semanticdb-table "testmkdir.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("sys/stat.h" include (:system-flag t) nil [1 22])
+            ("sys/types.h" include (:system-flag t) nil [23 45])
+            ("iostream" include (:system-flag t) nil [46 65])
+            ("unistd.h" include (:system-flag t) nil [66 85])
+            ("string" include (:system-flag t) nil [86 103])
+            ("vector" include (:system-flag t) nil [104 121])
+            ("R_OK" variable (:constant-flag t) nil [131 135])
+            ("W_OK" variable (:constant-flag t) nil [178 182])
+            ("X_OK" variable (:constant-flag t) nil [226 230])
+            ("F_OK" variable (:constant-flag t) nil [276 280])
+            ("FENGEFU" variable (:constant-flag t) nil [317 324])
+            ("std::string" using (:type ("std::string" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [332 350])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [351 369])
+            ("START_FROM_ROOT" variable
+               (:default-value "false"
+                :type "bool")
+                nil [372 401])
+            ("path_element" variable (:type ("vector" type
+                 (:template-specifier 
+                    ( ("string" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [402 430])
+            ("MkdirResult" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("HAVEFILE" variable
+                             (:constant-flag t
+                              :default-value (459 460)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [448 460])
+                          ("HAVENOFILE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [464 475])
+                          ("CREATEDONE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [478 489])
+                          ("CREATEFAIL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [492 504]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [432 516])
+            ("mkdirfun" function
+               (:arguments 
+                  ( ("path" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [539 551]))                  
+                :type ("MkdirResult" type (:type "class") nil nil))
+                nil [518 979])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [990 999])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1000 1013]))                  
+                :type "int")
+                nil [981 1921]))          
+      :file "testmkdir.cc"
+      :pointmax 1922
+      :fsize 1921
+      :lastmodtime '(22946 15511 88380 267000)
+      :unmatched-syntax '((semantic-list 1142 . 1145) (semantic-list 1142 . 1145))
+      :lexical-table 
+        '(("R_OK" . ((number "4" 136 . 137)))
+          ("FENGEFU" . ((semantic-list "('/')" 325 . 330)))
+          ("F_OK" . ((number "0" 281 . 282)))
+          ("W_OK" . ((number "2" 183 . 184)))
+          ("X_OK" . ((number "1" 231 . 232)))
+          )
+))
+  :file "!home!czh!stack!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

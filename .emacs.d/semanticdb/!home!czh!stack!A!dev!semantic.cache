@@ -1,0 +1,56 @@
+;; Object dev/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dev/"
+  :tables
+  (list
+    (semanticdb-table "clientsocket.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("netdb.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("sys/socket.h" include (:system-flag t) nil [40 63])
+            ("sys/types.h" include (:system-flag t) nil [64 86])
+            ("schedule.h" include nil nil [88 109])
+            ("clientsocket.h" include nil nil [110 135])
+            ("ClientSocket::clientsocketmap_" variable (:type ("ClientSocketMap" type (:type "class") nil nil)) nil [183 230])
+            ("ReadCB" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("ev_io" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [258 271])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [271 273])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [274 286]))                  
+                :type "void")
+                nil [232 1403])
+            ("NewClient" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("hostname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1445 1461])
+                    ("port" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1462 1474]))                  
+                :type ("ClientSocketPtr" type (:type "class") nil nil))
+                nil [1405 1958])
+            ("Init" function
+               (:parent "ClientSocket"
+                :arguments 
+                  ( ("hostname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1985 2001])
+                    ("port" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2002 2014]))                  
+                :type "bool")
+                nil [1961 3475])
+            ("targetClient" variable (:type "int") nil [3468 3473])
+            ("true" variable (:type "int") nil [3572 3577])
+            ("ev_io_start" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("LibevTool::Instance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3681 3702])
+                    ("" variable (:type ("GetLoop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3703 3712])
+                    ("" variable (:type ("write_io_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3715 3725]))                  
+                :type "int")
+                nil [3669 3726])
+            ("fd_" variable (:type "int") nil [3765 3769]))          
+      :file "clientsocket.cc"
+      :pointmax 3773
+      :fsize 4068
+      :lastmodtime '(22953 2517 988588 195000)
+      :unmatched-syntax nil))
+  :file "!home!czh!stack!A!dev!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

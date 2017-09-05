@@ -8,34 +8,57 @@
       :tags 
         '( ("ev.h" include (:system-flag t) nil [37 52])
             ("stdio.h" include (:system-flag t) nil [54 72])
-            ("stdin_watcher" variable (:type ("ev_io" type (:type "class") nil nil)) nil [162 182])
-            ("timeout_watcher" variable (:type ("ev_timer" type (:type "class") nil nil)) nil [183 208])
+            ("MAXSIZE" variable (:constant-flag t) nil [93 100])
+            ("stdin_watcher" variable (:type ("ev_io" type (:type "class") nil nil)) nil [183 203])
+            ("timeout_watcher" variable (:type ("ev_timer" type (:type "class") nil nil)) nil [204 229])
+            ("prepare_watcher" variable (:type ("ev_prepare" type (:type "class") nil nil)) nil [230 257])
+            ("check_watcher" variable (:type ("ev_check" type (:type "class") nil nil)) nil [258 281])
             ("stdin_cb" function
                (:typemodifiers ("static")
                 :arguments 
-                  ( ("ev_io" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [340 353])
-                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [353 355])
-                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [356 368]))                  
+                  ( ("ev_io" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [413 426])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [426 428])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [429 441]))                  
                 :type "void")
-                nil [318 612])
+                nil [391 828])
             ("timeout_cb" function
                (:typemodifiers ("static")
                 :arguments 
-                  ( ("ev_timer" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [684 700])
-                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [700 702])
-                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [703 715]))                  
+                  ( ("ev_timer" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [900 916])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [916 918])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [919 931]))                  
                 :type "void")
-                nil [660 827])
+                nil [876 1043])
+            ("ev_prepare_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev_prepare" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1072 1090])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1090 1092])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [1093 1105]))                  
+                :type "void")
+                nil [1045 1222])
+            ("ev_check_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev_check" variable (:type ("EV_P_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1248 1264])
+                    ("" variable (:type ("w" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1264 1266])
+                    ("revents" variable (:type "int") (reparse-symbol arg-sub-list) [1267 1279]))                  
+                :type "void")
+                nil [1224 1433])
             ("main" function
                (:arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [839 844]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1490 1495]))                  
                 :type "int")
-                nil [829 1448]))          
+                nil [1480 2288]))          
       :file "testLibev.cpp"
-      :pointmax 1449
-      :fsize 1448
-      :lastmodtime '(22765 59246 494196 716000)
-      :unmatched-syntax '((punctuation 699 . 700) (punctuation 352 . 353))))
+      :pointmax 2289
+      :fsize 2368
+      :lastmodtime '(22921 47934 803442 127000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAXSIZE" . ((number "1024" 101 . 105)))
+          )
+))
   :file "!home!czh!libev!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")
